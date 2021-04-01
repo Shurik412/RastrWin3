@@ -56,6 +56,10 @@ class GettingParameterAttribute:
 
 
 class GettingParameter:
+    """
+
+    """
+
     def __init__(self, rastr_win, table, column, key=None, switch_command_line=False):
         self.rastr_win = rastr_win
         self.column_name = column
@@ -82,6 +86,10 @@ class GettingParameter:
 
 
 class GetTableCommonInfo:
+    """
+
+    """
+
     def __init__(self, rastr_win, switch_command_line=False, path_file_log=False):
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table_name_com_cxema)
