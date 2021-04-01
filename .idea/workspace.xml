@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/calculation/dyn_rgm_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/calculation/dyn_rgm_ekv_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/export_in_excel/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/export_in_excel/export_data_rustab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/off_and_on_object/object_on_off.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/off_and_on_object/object_on_off.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/variables/variable_parametrs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/Create_DRM_v6.2.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/Create_DRM_v6.2.vbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617279363811</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent">
+      <created>1617284263979</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617284263979</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +231,7 @@
     <MESSAGE value="Add in class GetTabelCommonInfo -&gt; create file log events" />
     <MESSAGE value="Add file removal_marked_objects.py -&gt; class RemoveSelObjects" />
     <MESSAGE value="corr full" />
-    <option name="LAST_COMMIT_MESSAGE" value="corr full" />
+    <MESSAGE value="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent" />
   </component>
 </project>
