@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/R_modules/variables/removal_marked_objects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/getting_parameters/get_parameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/getting_parameters/get_parameter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617275081070</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add in class GetTabelCommonInfo -&gt; create file log events">
+      <created>1617276812398</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617276812398</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +207,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="Add file Create_DRM_v6.2.vbs" />
     <MESSAGE value="add class GetTableCommonInfo in file get_parameter.py&#10;add file and dir.fl =&gt; R_models/Table_Parametrs/ =&gt; file Tables_and_parametrs.py (add tables &quot;com_cxema&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class GetTableCommonInfo in file get_parameter.py&#10;add file and dir.fl =&gt; R_models/Table_Parametrs/ =&gt; file Tables_and_parametrs.py (add tables &quot;com_cxema&quot;)" />
+    <MESSAGE value="Add in class GetTabelCommonInfo -&gt; create file log events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add in class GetTabelCommonInfo -&gt; create file log events" />
   </component>
 </project>
