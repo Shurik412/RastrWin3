@@ -82,21 +82,35 @@ class GettingParameter:
 
 
 class GetTableCommonInfo:
-    def __init__(self, rastr_win, switch_command_line=False, return_log=False):
+    def __init__(self, rastr_win, switch_command_line=False, path_file_log=False):
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table_name_com_cxema)
         self.switch_command_line = switch_command_line
-        self.return_log = return_log
+        self.path_file_log = path_file_log
+        if path_file_log is not False:
+            self.file_log = open(path_file_log, 'w')
 
     def get(self):
-        print(f'Общая информация: {table_name_com_cxema}')
+        if self.path_file_log is not False:
+            self.file_log.write(f'Таблица: Общая информация -> {table_name_com_cxema}\n')
+            print(f'Таблица: Общая информация -> {table_name_com_cxema}')
+        else:
+            print(f'Таблица: Общая информация -> {table_name_com_cxema}')
         for key_ in table_com_cxema:
             column = self.table.Cols(key_)
             parametr = column.Z(0)
-            if type(parametr) == float:
-                print(f'{table_com_cxema[key_]} = {"%.2f" % (parametr)}')
+            if self.path_file_log is not False:
+                if type(parametr) == float:
+                    self.file_log.write(f'{table_com_cxema[key_]} = {"%.2f" % parametr}\n')
+                    print(f'{table_com_cxema[key_]} = {"%.2f" % parametr}')
+                else:
+                    self.file_log.write(f'{table_com_cxema[key_]} = {parametr}\n')
+                    print(f'{table_com_cxema[key_]} = {parametr}')
             else:
-                print(f'{table_com_cxema[key_]} = {parametr}')
+                if type(parametr) == float:
+                    print(f'{table_com_cxema[key_]} = {"%.2f" % parametr}')
+                else:
+                    print(f'{table_com_cxema[key_]} = {parametr}')
 
 
 if __name__ == '__main__':

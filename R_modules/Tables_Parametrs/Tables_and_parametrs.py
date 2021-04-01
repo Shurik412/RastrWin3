@@ -36,5 +36,7 @@ if __name__ == '__main__':
               shablon=shablon_file_regime,
               switch_command_line=True)
 
-    get_t = GetTableCommonInfo(rastr_win=rastr)
+    get_t = GetTableCommonInfo(rastr_win=rastr,
+                               switch_command_line=True,
+                               path_file_log=r'C:\Users\Ohrimenko_AG\Desktop\EquivalentPy\com_cxema_log.txt')
     get_t.get()
