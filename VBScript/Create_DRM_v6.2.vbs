@@ -8,7 +8,6 @@
 
 r=Setlocale("en-us")
 rrr=1
-
 Time_1 = Timer()
 
 Set spShell = CreateObject("WScript.Shell")
@@ -2193,7 +2192,7 @@ Sub Vikluchatel()
     k = vet.FindNextSel(-1)
 	While k<>(-1) ' убирает sel-узла если на ВЛ с одной стороны выделен узел
 		iq1 = vet.Cols("iq").z(k)
-		uzl.Setsel("ny=" & iq1)
+		uzl.SetSel("ny=" & iq1)
 		k2 = uzl.FindNextSel(-1)
 		If k2<>(-1) Then
 			uzl.cols("sel").z(k2) = 0
@@ -2206,7 +2205,7 @@ Sub Vikluchatel()
 
     While k<>(-1) ' убирает sel-узла если на ВЛ с одной стороны выделен узел
 		ip1 = vet.Cols("ip").z(k)
-		uzl.Setsel "ny=" & ip1
+		uzl.SetSel "ny=" & ip1
 		k2 = uzl.FindNextSel(-1)
 		If k2<>(-1) Then
 			uzl.cols("sel").z(k2) = 0

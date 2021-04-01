@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from R_modules.Tables_Parametrs.Tables_and_parametrs import table_com_cxema, table_name_com_cxema
+
 
 class GettingParameterInstance:
     """
@@ -51,6 +53,50 @@ class GettingParameterAttribute:
                 return parameter
             else:
                 return print(f'Не найден параметр с таким номеров в таблице "{self.table.Description}".')
+
+
+class GettingParameter:
+    def __init__(self, rastr_win, table, column, key=None, switch_command_line=False):
+        self.rastr_win = rastr_win
+        self.column_name = column
+        self.table = self.rastr_win.Tables(table)
+        self.column = self.table.Cols(column)
+        if key is not None:
+            self.table.SetSel(key)
+            self.row_id = self.table.FindNextSel(-1)
+            if self.row_id != (-1):
+                self.row_id = self.row_id
+            else:
+                self.row_id = None
+        else:
+            self.row_id = None
+        self.switch_command_line = switch_command_line
+
+    def get(self, row_id=None):
+        if self.row_id == (-1):
+            return print(f'Ошибка: return FindNextSel = (-1)')
+        if row_id is not None:
+            return self.column.Z(row_id)
+        else:
+            return self.column.Z(self.row_id)
+
+
+class GetTableCommonInfo:
+    def __init__(self, rastr_win, switch_command_line=False, return_log=False):
+        self.rastr_win = rastr_win
+        self.table = self.rastr_win.Tables(table_name_com_cxema)
+        self.switch_command_line = switch_command_line
+        self.return_log = return_log
+
+    def get(self):
+        print(f'Общая информация: {table_name_com_cxema}')
+        for key_ in table_com_cxema:
+            column = self.table.Cols(key_)
+            parametr = column.Z(0)
+            if type(parametr) == float:
+                print(f'{table_com_cxema[key_]} = {"%.2f" % (parametr)}')
+            else:
+                print(f'{table_com_cxema[key_]} = {parametr}')
 
 
 if __name__ == '__main__':
