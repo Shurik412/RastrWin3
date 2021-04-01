@@ -44,7 +44,7 @@ if __name__ == '__main__':
     from R_modules.load_and_save_file.shablons_dir import shablon_file_dynamic, shablon_file_scenario, \
         shablon_file_automation, shablon_file_regime
     from R_modules.directory_rastrwin.dir_test_rastr import file_RUSTab_9_rst, file_RUSTab_9_scn
-    from R_modules.calculation.dyn_rgm_calc import SteadyState
+    from R_modules.calculation.dyn_rgm_ekv_calc import SteadyState
     from R_modules.getting_parameters.get_parameter import GettingParameterAttribute
     from icecream import ic
 

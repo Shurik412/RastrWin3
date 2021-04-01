@@ -2381,7 +2381,7 @@ Sub Ukraine()
     k=vet.FindNextSel(-1)
     While k<>(-1)
         ip1=vet.Cols("ip").z(k)
-        uzl.Setsel "ny="&ip1
+        uzl.SetSel "ny="&ip1
         k2=uzl.FindNextSel(-1)
         If k2<>-1 Then
             uzl.cols("sel").z(k2)=1
@@ -2393,13 +2393,13 @@ Sub Ukraine()
     k=vet.FindNextSel(-1)
     While k<>(-1)
         iq1=vet.Cols("iq").z(k)
-        uzl.Setsel "ny="&iq1
+        uzl.SetSel "ny="&iq1
         k2=uzl.FindNextSel(-1)
         If k2<>-1 Then
             uzl.cols("sel").z(k2)=1
         End If
         ip1=vet.Cols("ip").z(k)
-        uzl.Setsel "ny="&ip1
+        uzl.SetSel "ny="&ip1
         k2=uzl.FindNextSel(-1)
         If k2<>-1 Then
             uzl.cols("sel").z(k2)=1

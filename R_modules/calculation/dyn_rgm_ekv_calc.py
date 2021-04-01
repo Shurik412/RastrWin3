@@ -15,7 +15,7 @@ class SteadyState:
     """
 
     def __init__(self, rastr_win, par='', switch_command_line=False):
-        self.RastrWin = rastr_win
+        self.rastr_win = rastr_win
         self.par = par
         self.switch_command_line = switch_command_line
 
@@ -27,8 +27,8 @@ class SteadyState:
             start_time = time()
         else:
             start_time = 0
-        print(f'Запуск расчета УР:')
-        kod = self.RastrWin.Rgm(self.par)
+        print(f'Запуск "Расчет режима":')
+        kod = self.rastr_win.Rgm(self.par)
         if self.switch_command_line is not False:
             print(f'\tСообщение о результатх расчета УР: {kod}')
             if kod != 0:
@@ -98,12 +98,44 @@ class Dynamic:
                 f'\tВремя расчета ЭМПП: {strftime("M: %M [минут] S: %S [секунд]", localtime(time_calc))} (Seconds: {"%.2f" % (time_calc)} [секунд])')
 
 
+class Equivalent:
+    """
+    Эквивалентирование – упрощение электрической сети
+    """
+
+    def __init__(self, rastr_win, switch_command_line=False):
+        self.rastr_win = rastr_win
+        self.par = par
+        self.switch_command_line = switch_command_line
+
+    def __bool__(self):
+        return self.switch_command_line
+
+    def ekv(self, par=""):
+        if self.switch_command_line is not False:
+            start_time = time()
+        else:
+            start_time = 0
+        print(f'Запуск "Эквивалентирование режима":')
+        kod = self.rastr_win.Ekv(par)
+        if self.switch_command_line is not False:
+            print(f'\tСообщение о результатх расчета УР: {kod}')
+            if kod != 0:
+                print('\t\tРежим не сбалансирован!')
+            elif kod == 0:
+                print('\t\tРасчет УР завершен успешно!')
+        if self.switch_command_line is not False:
+            time_calc = time() - start_time
+            print(
+                f'\tВремя расчета режима: {strftime("M: %M [минут] S: %S [секунд]", localtime(time_calc))} (Seconds: {"%.2f" % (time_calc)} [секунд])')
+        return kod
+
+
 if __name__ == '__main__':
     import win32com.client
     from R_modules.load_and_save_file.load_file_rastrwin import load_file
     from R_modules.directory_rastrwin.dir_test_rastr import file_RUSTab_9_rst as file_rst, \
-         file_RUSTab_9_scn as file_scn
-
+        file_RUSTab_9_scn as file_scn
     from R_modules.load_and_save_file.shablons_dir import shablon_file_dynamic, shablon_file_scenario
     from R_modules.export_in_excel.export_data_rustab import ExportDataRUSTab
     from openpyxl import Workbook

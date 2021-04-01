@@ -3,7 +3,7 @@ import win32com.client
 from openpyxl import load_workbook
 from R_modules.load_and_save_file.load_file_rastrwin import load_file
 from R_modules.load_and_save_file.shablons_dir import shablon_file_dynamic, shablon_file_scenario
-from R_modules.calculation.dyn_rgm_calc import Dynamic, SteadyState
+from R_modules.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
 from R_modules.export_in_excel.export_data_rustab import ExportDataRUSTab
 from R_modules.export_in_excel.chart import ChartExcelOtherSheet
 from openpyxl.chart import ScatterChart

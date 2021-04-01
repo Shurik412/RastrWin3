@@ -6,7 +6,7 @@ from R_modules.load_and_save_file.shablons_dir import shablon_file_dynamic as sh
 from R_modules.export_in_excel.export_data_rustab import ExportDataRUSTab
 from settingsKostrGRES import dir_file_rst, dir_file_scn, list_manual, list_scn, dict_repairs, dict_output_results, \
     dict_cell_chart, dir_fileSaveExcel, list_scn_name_AO
-from R_modules.calculation.dyn_rgm_calc import Dynamic, SteadyState
+from R_modules.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
 from openpyxl import Workbook
 from R_modules.export_in_excel.chart import ChartExcelOtherSheet
 from openpyxl.utils import get_column_letter
