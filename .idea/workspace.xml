@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALAR_simulation/Comparison_result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALAR_simulation/settingsKostrGRES.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALAR_simulation/settings_alar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurostag/eurostag_excel/create_excel_NO_PSS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurostag/eurostag_excel/create_excel_with_PSS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAPV_simulation/create_graphs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAPV_simulation/settings_OAPV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_modules/Archive/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_modules/Archive/export_data_rastrwin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_modules/Archive/export_data_rustab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_modules/Archive/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_modules/calculation/dyn_rgm_calc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_modules/corr_of_dir_links_and_names/DirFileAndName.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_modules/directory_rastrwin/dir_test_rastr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +52,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617117446274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1617117854497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617117854497</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +72,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
