@@ -7,6 +7,7 @@ from R_modules.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
 from R_modules.export_in_excel.export_data_rustab import ExportDataRUSTab
 from R_modules.export_in_excel.chart import ChartExcelOtherSheet
 from openpyxl.chart import ScatterChart
+from icecream import ic
 
 # import emoji
 
@@ -59,13 +60,13 @@ node1 = ws_scn["T25"].value
 node2 = ws_scn["AE25"].value
 
 # ***** Время расчета
-t_ras = ws_scn["N20"].value
+t_ras = float(ws_scn["N20"].value)
 
 # ***** < multiplication by -1 > *****
-direction_regim_one_ps_one = ws_load['I4'].value
-direction_regim_one_ps_two = ws_load['I5'].value
-direction_regim_two_ps_one = ws_load['I6'].value
-direction_regim_two_ps_two = ws_load['I7'].value
+direction_regim_one_ps_one = float(ws_load['I4'].value)
+direction_regim_one_ps_two = float(ws_load['I5'].value)
+direction_regim_two_ps_one = float(ws_load['I6'].value)
+direction_regim_two_ps_two = float(ws_load['I7'].value)
 
 title_1_1 = wb['Раздел 1.1']['A1'].value
 p_ps_one_1_1 = wb['Раздел 1.1']['B3'].value
@@ -191,18 +192,25 @@ for index, (angleU_node2, t) in enumerate(angleU_r1_scn1_node2):
 for i in range(start_row, ws_1.max_row + 1):
     ws_1[f'J{i}'] = f'=I{i}-G{i}'
 
-for i in range(start_row, ws_1.max_row + 1):
+ic(ws_1.max_row - 2)
+ic(ws_1.max_row)
+for i in range(start_row, ws_1.max_row - 2):
+    ic(i)
     p_1_1_1 = ws_1[f'B{i}'].value
-    ws_1[f'B{i}'] = p_1_1_1 * direction_regim_one_ps_one
+    j = float(p_1_1_1) * direction_regim_one_ps_one
+    ws_1[f'B{i}'] = j
 
     q_1_1_1 = ws_1[f'C{i}'].value
-    ws_1[f'C{i}'] = q_1_1_1 * direction_regim_one_ps_one
+    j = float(q_1_1_1) * direction_regim_one_ps_one
+    ws_1[f'C{i}'] = j
 
     p_1_1_2 = ws_1[f'D{i}'].value
-    ws_1[f'D{i}'] = p_1_1_2 * direction_regim_one_ps_two
+    j = float(p_1_1_2) * direction_regim_one_ps_two
+    ws_1[f'D{i}'] = j
 
     q_1_1_2 = ws_1[f'E{i}'].value
-    ws_1[f'E{i}'] = q_1_1_2 * direction_regim_one_ps_two
+    j = float(q_1_1_2) * direction_regim_one_ps_two
+    ws_1[f'E{i}'] = j
 
 wb_w.save(filename=file_excel)
 
@@ -264,16 +272,20 @@ for i in range(start_row, ws_2.max_row + 1):
 
 for i in range(start_row, ws_2.max_row + 1):
     p_1_2_1 = ws_2[f'B{i}'].value
-    ws_2[f'B{i}'] = p_1_2_1 * direction_regim_one_ps_one
+    j = p_1_2_1 * direction_regim_one_ps_one
+    ws_2[f'B{i}'] = j
 
     q_1_2_1 = ws_2[f'C{i}'].value
-    ws_2[f'C{i}'] = q_1_2_1 * direction_regim_one_ps_one
+    j = q_1_2_1 * direction_regim_one_ps_one
+    ws_2[f'C{i}'] = j
 
     p_1_2_2 = ws_2[f'D{i}'].value
-    ws_2[f'D{i}'] = p_1_2_2 * direction_regim_one_ps_two
+    j = p_1_2_2 * direction_regim_one_ps_two
+    ws_2[f'D{i}'] = j
 
     q_1_2_2 = ws_2[f'E{i}'].value
-    ws_2[f'E{i}'] = q_1_2_2 * direction_regim_one_ps_two
+    j = q_1_2_2 * direction_regim_one_ps_two
+    ws_2[f'E{i}'] = j
 
 wb_w.save(filename=file_excel)
 
@@ -335,16 +347,20 @@ for i in range(start_row, ws_3.max_row + 1):
 
 for i in range(start_row, ws_3.max_row + 1):
     p_2_1_1 = ws_3[f'B{i}'].value
-    ws_3[f'B{i}'] = p_2_1_1 * direction_regim_one_ps_one
+    j = p_2_1_1 * direction_regim_one_ps_one
+    ws_3[f'B{i}'] = j
 
     q_2_1_1 = ws_3[f'C{i}'].value
-    ws_3[f'C{i}'] = q_2_1_1 * direction_regim_one_ps_one
+    j = q_2_1_1 * direction_regim_one_ps_one
+    ws_3[f'C{i}'] = j
 
     p_2_1_2 = ws_3[f'D{i}'].value
-    ws_3[f'D{i}'] = p_2_1_2 * direction_regim_one_ps_two
+    j = p_2_1_2 * direction_regim_one_ps_two
+    ws_3[f'D{i}'] = j
 
     q_2_1_2 = ws_3[f'E{i}'].value
-    ws_3[f'E{i}'] = q_2_1_2 * direction_regim_one_ps_two
+    j = q_2_1_2 * direction_regim_one_ps_two
+    ws_3[f'E{i}'] = j
 
 wb_w.save(filename=file_excel)
 
@@ -406,16 +422,20 @@ for i in range(start_row, ws_4.max_row + 1):
 
 for i in range(start_row, ws_4.max_row + 1):
     p_2_2_1 = ws_4[f'B{i}'].value
-    ws_4[f'B{i}'] = p_2_2_1 * direction_regim_one_ps_one
+    j = p_2_2_1 * direction_regim_one_ps_one
+    ws_4[f'B{i}'] = j
 
     q_2_2_1 = ws_4[f'C{i}'].value
-    ws_4[f'C{i}'] = q_2_2_1 * direction_regim_one_ps_one
+    j = q_2_2_1 * direction_regim_one_ps_one
+    ws_4[f'C{i}'] = j
 
     p_2_2_2 = ws_4[f'D{i}'].value
-    ws_4[f'D{i}'] = p_2_2_2 * direction_regim_one_ps_two
+    j = p_2_2_2 * direction_regim_one_ps_two
+    ws_4[f'D{i}'] = j
 
     q_2_2_2 = ws_4[f'E{i}'].value
-    ws_4[f'E{i}'] = q_2_2_2 * direction_regim_one_ps_two
+    j = q_2_2_2 * direction_regim_one_ps_two
+    ws_4[f'E{i}'] = j
 
 wb_w.save(filename=file_excel)
 
