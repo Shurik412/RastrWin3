@@ -6,10 +6,11 @@ from tabl_com_cxema import tb_com_cxema, par_tb_com_cxema
 from R_modules.getting_parameters.get_parameter import GettingParameterAttribute, GettingParameter, GetTableCommonInfo
 from R_modules.calculation.dyn_rgm_ekv_calc import SteadyState
 from R_modules.Tables_Parametrs.Tables_and_parametrs import table_node, table_vetv, table_generator, table_name_node, \
-    table_name_vetv, table_name_generator
+    table_name_vetv, table_name_generator,
 from R_modules.variables.removal_marked_objects import RemoveSelObjects
 from R_modules.calculation.dyn_rgm_ekv_calc import Equivalent
 from R_modules.object_rastr import RASTR
+from R_modules.settings_parametrs.settings_ekv import SetEkviv
 
 
 print('*********************************************')
@@ -32,6 +33,7 @@ remove_obj_sel.remove_sel_node()
 remove_obj_sel.remove_sel_vetv()
 remove_obj_sel.remove_sel_generator()
 
-settings_com_ekviv =
-
+settings_com_ekviv = SetEkviv(rastr_win=RASTR)
+settings_com_ekviv.set(selekv=)
 equivalent.ekv()
+

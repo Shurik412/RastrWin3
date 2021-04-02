@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\OAPV_simulation\test_napr.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\R_modules\Tables_Parametrs\Tables_and_parametrs.py">
           <value>
             <Attribute>

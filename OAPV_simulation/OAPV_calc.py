@@ -7,6 +7,7 @@ from R_modules.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
 from R_modules.export_in_excel.export_data_rustab import ExportDataRUSTab
 from R_modules.export_in_excel.chart import ChartExcelOtherSheet
 from openpyxl.chart import ScatterChart
+
 # import emoji
 
 file_excel = r'L:\SER\Охрименко\03. RastrWin3\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
@@ -19,6 +20,7 @@ start_row = 5
 wb = load_workbook(filename=file_excel, data_only=True)
 ws_settings = wb['Settings Macro']
 ws_scn = wb['Сценарий']
+ws_load = wb['Нагрузочные режимы']
 
 dir_name_scn_one = rf'{ws_settings["B7"].value}\{ws_settings["B8"].value}'
 dir_name_scn_two = rf'{ws_settings["B7"].value}\{ws_settings["B9"].value}'
@@ -58,6 +60,12 @@ node2 = ws_scn["AE25"].value
 
 # ***** Время расчета
 t_ras = ws_scn["N20"].value
+
+# ***** < multiplication by -1 > *****
+direction_regim_one_ps_one = ws_load['I4'].value
+direction_regim_one_ps_two = ws_load['I5'].value
+direction_regim_two_ps_one = ws_load['I6'].value
+direction_regim_two_ps_two = ws_load['I7'].value
 
 title_1_1 = wb['Раздел 1.1']['A1'].value
 p_ps_one_1_1 = wb['Раздел 1.1']['B3'].value
@@ -183,6 +191,19 @@ for index, (angleU_node2, t) in enumerate(angleU_r1_scn1_node2):
 for i in range(start_row, ws_1.max_row + 1):
     ws_1[f'J{i}'] = f'=I{i}-G{i}'
 
+for i in range(start_row, ws_1.max_row + 1):
+    p_1_1_1 = ws_1[f'B{i}'].value
+    ws_1[f'B{i}'] = p_1_1_1 * direction_regim_one_ps_one
+
+    q_1_1_1 = ws_1[f'C{i}'].value
+    ws_1[f'C{i}'] = q_1_1_1 * direction_regim_one_ps_one
+
+    p_1_1_2 = ws_1[f'D{i}'].value
+    ws_1[f'D{i}'] = p_1_1_2 * direction_regim_one_ps_two
+
+    q_1_1_2 = ws_1[f'E{i}'].value
+    ws_1[f'E{i}'] = q_1_1_2 * direction_regim_one_ps_two
+
 wb_w.save(filename=file_excel)
 
 # 2. ********************* Режим 1 сценарий 2 ******************
@@ -240,6 +261,19 @@ for index, (angleU_node2, t) in enumerate(angleU_r1_scn2_node2):
 
 for i in range(start_row, ws_2.max_row + 1):
     ws_2[f'J{i}'] = f'=I{i}-G{i}'
+
+for i in range(start_row, ws_2.max_row + 1):
+    p_1_2_1 = ws_2[f'B{i}'].value
+    ws_2[f'B{i}'] = p_1_2_1 * direction_regim_one_ps_one
+
+    q_1_2_1 = ws_2[f'C{i}'].value
+    ws_2[f'C{i}'] = q_1_2_1 * direction_regim_one_ps_one
+
+    p_1_2_2 = ws_2[f'D{i}'].value
+    ws_2[f'D{i}'] = p_1_2_2 * direction_regim_one_ps_two
+
+    q_1_2_2 = ws_2[f'E{i}'].value
+    ws_2[f'E{i}'] = q_1_2_2 * direction_regim_one_ps_two
 
 wb_w.save(filename=file_excel)
 
@@ -299,6 +333,19 @@ for index, (angleU_node2, t) in enumerate(angleU_r2_scn1_node2):
 for i in range(start_row, ws_3.max_row + 1):
     ws_3[f'J{i}'] = f'=I{i}-G{i}'
 
+for i in range(start_row, ws_3.max_row + 1):
+    p_2_1_1 = ws_3[f'B{i}'].value
+    ws_3[f'B{i}'] = p_2_1_1 * direction_regim_one_ps_one
+
+    q_2_1_1 = ws_3[f'C{i}'].value
+    ws_3[f'C{i}'] = q_2_1_1 * direction_regim_one_ps_one
+
+    p_2_1_2 = ws_3[f'D{i}'].value
+    ws_3[f'D{i}'] = p_2_1_2 * direction_regim_one_ps_two
+
+    q_2_1_2 = ws_3[f'E{i}'].value
+    ws_3[f'E{i}'] = q_2_1_2 * direction_regim_one_ps_two
+
 wb_w.save(filename=file_excel)
 
 # 4. ********************* Режим 2 сценарий 2 ******************
@@ -356,6 +403,19 @@ for index, (angleU_node2, t) in enumerate(angleU_r2_scn2_node2):
 
 for i in range(start_row, ws_4.max_row + 1):
     ws_4[f'J{i}'] = f'=I{i}-G{i}'
+
+for i in range(start_row, ws_4.max_row + 1):
+    p_2_2_1 = ws_4[f'B{i}'].value
+    ws_4[f'B{i}'] = p_2_2_1 * direction_regim_one_ps_one
+
+    q_2_2_1 = ws_4[f'C{i}'].value
+    ws_4[f'C{i}'] = q_2_2_1 * direction_regim_one_ps_one
+
+    p_2_2_2 = ws_4[f'D{i}'].value
+    ws_4[f'D{i}'] = p_2_2_2 * direction_regim_one_ps_two
+
+    q_2_2_2 = ws_4[f'E{i}'].value
+    ws_4[f'E{i}'] = q_2_2_2 * direction_regim_one_ps_two
 
 wb_w.save(filename=file_excel)
 
