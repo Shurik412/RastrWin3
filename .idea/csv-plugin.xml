@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\R_modules\settings_parametrs\settings_ekv.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

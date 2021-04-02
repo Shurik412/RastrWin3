@@ -61,19 +61,27 @@ table_com_ekviv = {'selekv': 'Отмеченные узлы: (Отмеч)',
                    'otm_n': 'Отмечать узлы после эквивалентирования (Отм)'}
 
 if __name__ == '__main__':
-    import win32com.client
-    from R_modules.load_and_save_file.load_file_rastrwin import load_file
-    from R_modules.load_and_save_file.shablons_dir import shablon_file_regime
-    from R_modules.getting_parameters.get_parameter import GettingParameter, GetTableCommonInfo
+    # import win32com.client
+    # from R_modules.load_and_save_file.load_file_rastrwin import load_file
+    # from R_modules.load_and_save_file.shablons_dir import shablon_file_regime
+    # from R_modules.getting_parameters.get_parameter import GettingParameter, GetTableCommonInfo
+    #
+    # rastr = win32com.client.Dispatch('Astra.Rastr')
+    #
+    # load_file(rastr_win=rastr,
+    #           file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\cx195.rg2',
+    #           shablon=shablon_file_regime,
+    #           switch_command_line=True)
+    #
+    # get_t = GetTableCommonInfo(rastr_win=rastr,
+    #                            switch_command_line=True,
+    #                            path_file_log=r'C:\Users\Ohrimenko_AG\Desktop\EquivalentPy\com_cxema_log.txt')
+    # get_t.get()
+    from icecream import ic
 
-    rastr = win32com.client.Dispatch('Astra.Rastr')
+    l = []
+    for key in table_com_ekviv.keys():
+        l.append(key)
 
-    load_file(rastr_win=rastr,
-              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\cx195.rg2',
-              shablon=shablon_file_regime,
-              switch_command_line=True)
-
-    get_t = GetTableCommonInfo(rastr_win=rastr,
-                               switch_command_line=True,
-                               path_file_log=r'C:\Users\Ohrimenko_AG\Desktop\EquivalentPy\com_cxema_log.txt')
-    get_t.get()
+    ic(l[1])
+    # ic(table_com_ekviv.keys())
