@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from R_modules.load_and_save_file.shablons_dir import shablon_file_dynamic
+from R_modules.object_rastr import RASTR
 from os import path
 
 
-def save_file(rastr_win, file_path='', shablon=shablon_file_dynamic, switch_command_line=False):
+def save_file(rastr_win=RASTR, file_path='', shablon=shablon_file_dynamic, switch_command_line=False):
     """
     Сохраняет информацию из рабочей области в файле name по шаблону shablon
     :param rastr_win: объект RastrWin = win32com.client.Dispatch("Astra.Rastr")

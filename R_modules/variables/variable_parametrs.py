@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from R_modules.object_rastr import RASTR
+
 
 class FindNextSel:
     """
@@ -8,7 +10,7 @@ class FindNextSel:
     tables = 'Generator'
     """
 
-    def __init__(self, rastr_win, table, key):
+    def __init__(self, table, key, rastr_win=RASTR):
         self.RastrWin = rastr_win
         self.Tables = self.RastrWin.Tables(str(table))
         self.Tables.SetSel(f'{key}')
@@ -27,7 +29,7 @@ class VariableSetSel:
     Пример: key = 'Num=51700241'
     """
 
-    def __init__(self, rastr_win, table, column, key=None, switch_command_line=False):
+    def __init__(self, table, column, rastr_win=RASTR, key=None, switch_command_line=False):
         self.rastr_win = rastr_win
         self.column_name = column
         self.table = self.rastr_win.Tables(table)
@@ -68,7 +70,7 @@ class VariableRowId:
     это (index => от 0 до ...)
     """
 
-    def __init__(self, rastr_win, table, column, row_id=None, switch_command_line=False):
+    def __init__(self, table, column, rastr_win=RASTR, row_id=None, switch_command_line=False):
         self.rastr_win = rastr_win
         self.table_name = table
         self.column_name = column
@@ -99,7 +101,7 @@ class VariableDefRowId:
     это (index => от 0 до ...)
     """
 
-    def __init__(self, rastr_win, table, switch_command_line=False):
+    def __init__(self, table, rastr_win=RASTR, switch_command_line=False):
         self.rastr_win = rastr_win
         self.table_name = table
         self.table = self.rastr_win.Tables(table)

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from R_modules.Tables_Parametrs.Tables_and_parametrs import table_com_cxema, table_name_com_cxema
+from R_modules.object_rastr import RASTR
 
 
 class GettingParameterInstance:
@@ -7,9 +8,9 @@ class GettingParameterInstance:
     Возвращает значение строки по номеру.
     """
 
-    def __init__(self, rastr_win, tables, key, switch_command_line=False):
+    def __init__(self, table, key, rastr_win=RASTR, switch_command_line=False):
         self.RastrWin = rastr_win
-        self.Tables = self.RastrWin.Tables(tables)
+        self.Tables = self.RastrWin.Tables(table)
         self.key = key
         self.Tables.SetSel(key)
         self.switch_command_line = switch_command_line
@@ -27,7 +28,7 @@ class GettingParameterAttribute:
     """
     """
 
-    def __init__(self, rastr_win, table, switch_command_line=False):
+    def __init__(self, table, rastr_win=RASTR, switch_command_line=False):
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)
         self.switch_command_line = switch_command_line
@@ -60,7 +61,7 @@ class GettingParameter:
 
     """
 
-    def __init__(self, rastr_win, table, column, key=None, switch_command_line=False):
+    def __init__(self, table, column, rastr_win=RASTR, key=None, switch_command_line=False):
         self.rastr_win = rastr_win
         self.column_name = column
         self.table = self.rastr_win.Tables(table)
@@ -90,7 +91,7 @@ class GetTableCommonInfo:
 
     """
 
-    def __init__(self, rastr_win, switch_command_line=False, path_file_log=False):
+    def __init__(self, rastr_win=RASTR, switch_command_line=False, path_file_log=False):
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table_name_com_cxema)
         self.switch_command_line = switch_command_line

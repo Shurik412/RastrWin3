@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
+from R_modules.object_rastr import RASTR
+
 
 class SwitchLine:
     """ """
 
-    def __init__(self, rastr_win, table='vetv', switch_command_line=False):
+    def __init__(self, rastr_win=RASTR, table='vetv', switch_command_line=False):
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)
         self.switch_command_line = switch_command_line

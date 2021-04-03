@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from openpyxl.chart import Reference, Series
+from R_modules.export_in_excel.openpyxl_chart_obj import SCATTER_CHART
 
 
 class ChartExcel:
-    def __init__(self, work_sheet, chart_obj,
+    def __init__(self, work_sheet, chart_obj=SCATTER_CHART,
                  chart_title='График', x_axis_title='Ось Х', y_axis_title='Ось Y',
                  width_chart=15, height_chart=7.5,
                  switch_command_line=False):
@@ -49,7 +50,8 @@ class ChartExcelOtherSheet:
     legend_position: позиция легенды на графике
         - r - справа, l - слева, t - сверху , b - снизу.
     """
-    def __init__(self, work_sheet, chart_obj, work_book,
+
+    def __init__(self, work_sheet, work_book, chart_obj=SCATTER_CHART,
                  chart_title='График', x_axis_title='Ось Х', y_axis_title='Ось Y',
                  width_chart=15, height_chart=7.5,
                  legend_position='r',

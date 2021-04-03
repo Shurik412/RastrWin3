@@ -2,6 +2,7 @@
 
 from R_modules.Tables_Parametrs.Tables_and_parametrs import table_name_com_ekviv, table_com_ekviv
 from R_modules.variables.variable_parametrs import VariableDefRowId
+from R_modules.object_rastr import RASTR
 
 
 class SetEkviv(VariableDefRowId):
@@ -10,7 +11,7 @@ class SetEkviv(VariableDefRowId):
     параметров настройки "Эквивалент"
     """
 
-    def __init__(self, rastr_win, table=table_name_com_ekviv):
+    def __init__(self, rastr_win=RASTR, table=table_name_com_ekviv):
         self.rastr_win = rastr_win
         self.list_key = []
         for key in table_com_ekviv.keys():
@@ -60,4 +61,3 @@ if __name__ == '__main__':
             zmax=85)
     save_file(rastr_win=RASTR, file_path=r'C:\Users\Ohrimenko_AG\Desktop\65\t.rg2', shablon=shablon_file_regime,
               switch_command_line=True)
-

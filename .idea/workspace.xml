@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/R_modules/export_in_excel/openpyxl_chart_obj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/calculation/dyn_rgm_ekv_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/calculation/dyn_rgm_ekv_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/export_in_excel/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/export_in_excel/chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/export_in_excel/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/export_in_excel/export_data_rustab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/getting_parameters/get_parameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/getting_parameters/get_parameter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/load_and_save_file/load_file_rastrwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/load_and_save_file/load_file_rastrwin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/load_and_save_file/save_file_rastrwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/load_and_save_file/save_file_rastrwin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/off_and_on_object/object_on_off.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/off_and_on_object/object_on_off.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/variables/group_correction.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/variables/group_correction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/variables/removal_marked_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/variables/removal_marked_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/variables/variable_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

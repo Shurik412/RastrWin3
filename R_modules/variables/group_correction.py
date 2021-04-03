@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from R_modules.object_rastr import RASTR
+
 
 class GroupCorr:
     """
@@ -13,7 +15,7 @@ class GroupCorr:
                                 formula=< pn*1.15 >)
     """
 
-    def __init__(self, rastr_win, table, column, switch_command_line=False):
+    def __init__(self, table, column, rastr_win=RASTR, switch_command_line=False):
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)
         self.column = self.table.Cols(column)

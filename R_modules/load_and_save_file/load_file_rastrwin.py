@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from R_modules.load_and_save_file.shablons_dir import shablon_file_automation, shablon_file_dynamic, \
     shablon_file_regime, shablon_file_scenario
+from R_modules.object_rastr import RASTR
 from os import path
 
 
-def load_file(rastr_win, rg_kod=1, file_path='', shablon=shablon_file_automation, switch_command_line=False):
+def load_file(rastr_win=RASTR, rg_kod=1, file_path='', shablon=shablon_file_automation, switch_command_line=False):
     """
       par: RG_KOD – числовое значение, определяет режим загрузки при наличии таблицы
                в рабочей области и может быть одним из следующих:
@@ -33,7 +34,7 @@ class LoadRUSTab:
     """
     """
 
-    def __init__(self, rastr_win, shablon=shablon_file_automation, rg_kod=1, switch_command_line=False):
+    def __init__(self, rastr_win=RASTR, shablon=shablon_file_automation, rg_kod=1, switch_command_line=False):
         self.rastr_win = rastr_win
         self.shablon = shablon
         self.rg_kod = int(rg_kod)
@@ -48,9 +49,9 @@ class LoadRUSTab:
         self.rastr_win.Load(self.rg_kod, file_path, self.shablon)
         if self.switch_command_line is not None:
             print(f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shablon)}".\n'
-                  f'\t\t - cуществующие данные не изменились!')
+                  f'\t\t - существующие данные не изменились!')
 
-    def loadNewFile(self):
+    def load_new_file(self):
         self.rastr_win.NewFile(self.shablon)
         if self.switch_command_line is not None:
             print(f'Очищена рабочая область по шаблону: "{path.basename(self.shablon)}".')
@@ -72,5 +73,5 @@ if __name__ == '__main__':
                            switch_command_line=True)
     load_file.load(file_path='C:\\Users\\Ohrimenko_AG\\Documents\\RastrWin3\\test-rastr\\RUSTab\\test9.rst')
 
-    load_file.loadNewFile()
+    load_file.load_new_file()
     load_file.load_shablon_automation()

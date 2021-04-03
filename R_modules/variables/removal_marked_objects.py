@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from R_modules.Tables_Parametrs.Tables_and_parametrs import table_name_node, table_name_vetv, table_name_generator
+from R_modules.object_rastr import RASTR
 
 
 class RemoveSelObjects:
@@ -9,7 +10,7 @@ class RemoveSelObjects:
     Также убирает галочки (отчетки) sel по заданой таблице.
     """
 
-    def __init__(self, rastr_win, switch_command_line=False):
+    def __init__(self, rastr_win=RASTR, switch_command_line=False):
         self.rastr_win = rastr_win
 
     def remove_sel(self, table, column='sel'):

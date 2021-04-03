@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from R_modules.variables.variable_parametrs import VariableRowId
+from R_modules.object_rastr import RASTR
 from time import time, localtime, strftime
 
 
@@ -14,7 +15,7 @@ class SteadyState:
     с измененными значениями узловых мощностей и модулей напряжения).
     """
 
-    def __init__(self, rastr_win, par='', switch_command_line=False):
+    def __init__(self, rastr_win=RASTR, par='', switch_command_line=False):
         self.rastr_win = rastr_win
         self.par = par
         self.switch_command_line = switch_command_line
@@ -51,7 +52,7 @@ class Dynamic:
     switch_result = False
     """
 
-    def __init__(self, rastr_win, calc_time=1, snap_max_count=1, switch_command_line=False):
+    def __init__(self, rastr_win=RASTR, calc_time=1, snap_max_count=1, switch_command_line=False):
         self.rastr_win = rastr_win
         self.calc_time = calc_time
         self.snap_max_count = snap_max_count
@@ -103,9 +104,8 @@ class Equivalent:
     Эквивалентирование – упрощение электрической сети
     """
 
-    def __init__(self, rastr_win, switch_command_line=False):
+    def __init__(self, rastr_win=RASTR, switch_command_line=False):
         self.rastr_win = rastr_win
-        self.par = par
         self.switch_command_line = switch_command_line
 
     def __bool__(self):

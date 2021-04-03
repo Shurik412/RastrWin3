@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from R_modules.object_rastr import RASTR
 
 
 class ExportDataRUSTab:
@@ -9,7 +10,7 @@ class ExportDataRUSTab:
     :param key : str => ('Num=51700088')
     """
 
-    def __init__(self, rastr_win, table, switch_command_line=False):
+    def __init__(self, table, rastr_win=RASTR, switch_command_line=False):
         self.table_name = table
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)
