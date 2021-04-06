@@ -134,7 +134,7 @@ class SetDynamic(VariableDefRowId):
     def __init__(self, rastr_win=RASTR, table=table_name_com_dynamics, switch_command_line=False):
         self.rastr_win = rastr_win
         self.list_key = []
-        for key in table_com_regim.keys():
+        for key in table_com_dynamics.keys():
             self.list_key.append(key)
         self.switch_command_line = switch_command_line
 
@@ -166,6 +166,7 @@ class SetDynamic(VariableDefRowId):
             itz_ogr_max='',
             itz_ogr_min='',
             min_nodes_in_island=''):
+
         VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(neb_p))
 
 
