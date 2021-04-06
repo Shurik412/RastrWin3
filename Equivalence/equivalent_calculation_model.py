@@ -34,6 +34,18 @@ remove_obj_sel.remove_sel_vetv()
 remove_obj_sel.remove_sel_generator()
 
 settings_com_ekviv = SetEkviv(rastr_win=RASTR)
-settings_com_ekviv.set(selekv=)
+settings_com_ekviv.set(selekv=0,
+                       met_ekv=0,
+                       tip_ekv=0,
+                       ekvgen=0,
+                       tip_gen=1,
+                       kfc_x='',
+                       pot_gen=0,
+                       kpn='',
+                       tip_sxn=0,
+                       smart=0,
+                       zmax=1000,
+                       otm_n=0)
 equivalent.ekv()
+
 
