@@ -137,37 +137,70 @@ class SetDynamic(VariableDefRowId):
         for key in table_com_dynamics.keys():
             self.list_key.append(key)
         self.switch_command_line = switch_command_line
-
         VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=switch_command_line)
 
     def set(self,
-            neb_p=1.000,
-            it_max=500,
-            start=0,
-            flot=1,
-            dv_min=0.5,
-            dv_max=2.000,
-            dd_max=5157,
-            status=0,
-            rr=0,
-            wt='',
-            gen_p=0,
-            method=0,
-            method_ogr=0,
-            print_mode=0,
-            qmax=0,
-            min_x='',
-            calc_tr=0,
-            nag_p=0,
-            rem_breaker=0,
-            gram=0,
-            ctrl_baza=0,
-            itz='',
-            itz_ogr_max='',
-            itz_ogr_min='',
-            min_nodes_in_island=''):
+            t_ras=5,
+            h_int=0.01,
+            h_min=0.01,
+            h_max=0.01,
+            h_out=0.01,
+            mint=0,
+            smint=0,
+            int_epsilon=0.0001,
+            inform_on_step_change=0,
+            tf=0.02,
+            dEf=0.001,
+            npf=10,
+            valid=0,
+            dempfrec=0,
+            corrT=0,
+            is_demp=0,
+            frSXNtoY=0.3,
+            SXNTolerance='',
+            SnapPath='c:\\tmp\\',
+            MaxResultFiles='',
+            SnapTemplate='<count>.sna',
+            SnapAutoLoad=1,
+            SnapMaxCount=6,
+            TripGeneratorOnSpeed='',
+            PickupDropout=0,
+            RealtimeCSV=0,
+            PeriodAngle=0,
+            ResultFlowDirection=0,
+            TreatWarningsAsErrors=0,
+            EventProcess=0):
 
-        VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(neb_p))
+        VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(t_ras))
+        VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=float(h_int))
+        VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=0, value=float(h_min))
+        VariableDefRowId.make_changes(self, column=self.list_key[3], row_id=0, value=float(h_max))
+        VariableDefRowId.make_changes(self, column=self.list_key[4], row_id=0, value=float(h_out))
+        VariableDefRowId.make_changes(self, column=self.list_key[5], row_id=0, value=int(mint))
+        VariableDefRowId.make_changes(self, column=self.list_key[6], row_id=0, value=int(smint))
+        VariableDefRowId.make_changes(self, column=self.list_key[7], row_id=0, value=float(int_epsilon))
+        VariableDefRowId.make_changes(self, column=self.list_key[8], row_id=0, value=float(inform_on_step_change))
+        VariableDefRowId.make_changes(self, column=self.list_key[9], row_id=0, value=float(tf))
+        VariableDefRowId.make_changes(self, column=self.list_key[10], row_id=0, value=float(dEf))
+        VariableDefRowId.make_changes(self, column=self.list_key[11], row_id=0, value=float(npf))
+        VariableDefRowId.make_changes(self, column=self.list_key[12], row_id=0, value=float(valid))
+        VariableDefRowId.make_changes(self, column=self.list_key[13], row_id=0, value=float(dempfrec))
+        VariableDefRowId.make_changes(self, column=self.list_key[14], row_id=0, value=float(corrT))
+        VariableDefRowId.make_changes(self, column=self.list_key[15], row_id=0, value=float(is_demp))
+        VariableDefRowId.make_changes(self, column=self.list_key[16], row_id=0, value=float(frSXNtoY))
+        VariableDefRowId.make_changes(self, column=self.list_key[17], row_id=0, value=float(SXNTolerance))
+        VariableDefRowId.make_changes(self, column=self.list_key[18], row_id=0, value=str(SnapPath))
+        VariableDefRowId.make_changes(self, column=self.list_key[19], row_id=0, value=float(MaxResultFiles))
+        VariableDefRowId.make_changes(self, column=self.list_key[20], row_id=0, value=str(SnapTemplate))
+        VariableDefRowId.make_changes(self, column=self.list_key[21], row_id=0, value=float(SnapAutoLoad))
+        VariableDefRowId.make_changes(self, column=self.list_key[22], row_id=0, value=float(SnapMaxCount))
+        VariableDefRowId.make_changes(self, column=self.list_key[23], row_id=0, value=float(TripGeneratorOnSpeed))
+        VariableDefRowId.make_changes(self, column=self.list_key[24], row_id=0, value=float(PickupDropout))
+        VariableDefRowId.make_changes(self, column=self.list_key[25], row_id=0, value=float(RealtimeCSV))
+        VariableDefRowId.make_changes(self, column=self.list_key[26], row_id=0, value=float(PeriodAngle))
+        VariableDefRowId.make_changes(self, column=self.list_key[27], row_id=0, value=float(ResultFlowDirection))
+        VariableDefRowId.make_changes(self, column=self.list_key[28], row_id=0, value=float(TreatWarningsAsErrors))
+        VariableDefRowId.make_changes(self, column=self.list_key[29], row_id=0, value=float(EventProcess))
 
 
 if __name__ == '__main__':
