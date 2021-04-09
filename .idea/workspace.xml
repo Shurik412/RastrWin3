@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/disconnection_of_lines_between_areas.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/disconnection_of_lines_between_areas.vbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_rastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_rastr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617826699162</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add doc. class SetDynamic module settings_ekv.py">
+      <created>1617958558455</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958558455</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Rename settings_ekv.py in settings_rastr.py">
+      <created>1617958639488</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958639488</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,6 +324,8 @@
     <MESSAGE value="Corr SetEkviv file settings_ekv.py" />
     <MESSAGE value="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;" />
     <MESSAGE value="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set" />
+    <MESSAGE value="Add doc. class SetDynamic module settings_ekv.py" />
+    <MESSAGE value="Rename settings_ekv.py in settings_rastr.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename settings_ekv.py in settings_rastr.py" />
   </component>
 </project>

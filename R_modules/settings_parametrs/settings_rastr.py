@@ -1,27 +1,15 @@
 # -*- coding: utf-8 -*-
 
 from R_modules.Tables_Parametrs.Tables_and_parametrs import table_name_com_ekviv, table_com_ekviv, table_name_com_regim, \
-    table_com_regim, table_com_dynamics, table_name_com_dynamics
+    table_com_regim, table_com_dynamics, table_name_com_dynamics, table_name_alt_unit, table_alt_unit, \
+    table_name_ut_common, table_ut_common
 from R_modules.variables.variable_parametrs import VariableDefRowId
 from R_modules.object_rastr import RASTR
-from R_modules.Tables_Parametrs.Tables_and_parametrs import table_com_dynamics
 
 
 class SetEkviv(VariableDefRowId):
     """
     Класс выставляет параметров настройки "Эквивалент"
-    selekv=0 => Отмеченные узлы:
-    met_ekv=0 => Метод эквивалентирования
-    tip_ekv=0 => Тип эквивалентирования
-    ekvgen=0 => Эквивалент узлов с фикс V
-    tip_gen=1 => Тип эквивалентирования генераторов
-    kfc_x='' => Коэффициент для Xg_ген
-    pot_gen=0 => Учет потерь при разносе генерации:
-    kpn='' => Доля нагрузки, пересчитываемая в шунт
-    tip_sxn=0 => Учитывать СХН при эквивалентировании
-    smart=0 => "Умное" эквивалентирование :
-    zmax=1000 => Удаление ветвей с сопротивлением большим:
-    otm_n=0 => Отмечать узлы после эквивалентирования
     """
 
     def __init__(self, rastr_win=RASTR, table=table_name_com_ekviv):
@@ -44,6 +32,23 @@ class SetEkviv(VariableDefRowId):
             smart=0,
             zmax=1000,
             otm_n=0):
+        """
+        Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):
+
+        :param selekv: Отмеченные узлы: (Отмеч)
+        :param met_ekv: Метод эквивалентирования (Мет Экв)
+        :param tip_ekv: Тип эквивалентирования (Тип Экв)
+        :param ekvgen: Эквивалент узлов с фикс V (фиксV)
+        :param tip_gen: Тип эквивалентирования генераторов (Тип Ген)
+        :param kfc_x: Коэффициент для Xg_ген (К_X_Ген)
+        :param pot_gen: Учет потерь при разносе генерации: (dP_Ген)
+        :param kpn: Доля нагрузки, пересчитываемая в шунт (d_наг)
+        :param tip_sxn: Учитывать СХН при эквивалентировании (СХН)
+        :param smart: "Умное" эквивалентирование : (Smart)
+        :param zmax: Удаление ветвей с сопротивлением большим: (Z_max)
+        :param otm_n: Отмечать узлы после эквивалентирования (Отм)
+        """
+
         VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=selekv)
         VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=met_ekv)
         VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=0, value=tip_ekv)
@@ -61,8 +66,6 @@ class SetEkviv(VariableDefRowId):
 class SetRegim(VariableDefRowId):
     """
     Класс выставляет параметров настройки "Общие параметры режима"
-
-
     """
 
     def __init__(self, rastr_win=RASTR, table=table_name_com_regim, switch_command_line=False):
@@ -100,6 +103,35 @@ class SetRegim(VariableDefRowId):
             itz_ogr_max='',
             itz_ogr_min='',
             min_nodes_in_island=''):
+        """
+        Параметры настройки "Общие параметры режима" (таблица "Режим": com_regim):
+
+        :param neb_p: Точность расчета (dP)
+        :param it_max: Максимальное число итераций (It)
+        :param start: Стартовый алгоритм (Start)
+        :param flot: Плоский старт (Пл.старт)
+        :param dv_min: Мин. допустимое снижение V (dV-)
+        :param dv_max: Макс. допустимое превышение V (dV+)
+        :param dd_max: Макс. допустимый угол по связи (dDelta)
+        :param status: Состояние расчета режима (Статус)
+        :param rr: Учет частоты: (W)
+        :param wt: Отклонение частоты (dF)
+        :param gen_p: Пересчитывать P/Q узла по P ген (Ген->P)
+        :param method: Метод Расчета (Метод)
+        :param method_ogr: Метод учета ограничений Q (Метод учета ограничений Q)
+        :param print_mode: Уровень печати (Печать)
+        :param qmax: Точный метод расчета Qmax (Qmax)
+        :param min_x: Сопротивление выключателя (ое на 10-6) (Min_X)
+        :param calc_tr: Пересчет АТ/3х обм. трансформаторов (Транс.)
+        :param nag_p: Пересчитывать (P/Q) нагрузки узла по ВРДО (Наг->P)
+        :param rem_breaker: Удаление выключателей из схемы: (Выкл)
+        :param gram: Пересчет мощности генератора по ГРАМ: (Грам)
+        :param ctrl_baza: Автоматическое создание БУ (БУ)
+        :param itz: Стартовый метод: число итераций (Z_it)
+        :param itz_ogr_max: Стартовый метод: Учет Qmax с итерации (Z_it_max)
+        :param itz_ogr_min: Стартовый метод: Учет Qmin с итерации (Z_it_min)
+        :param min_nodes_in_island: Минимальное число узлов в острове (Min_nodes)
+        """
         VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(neb_p))
         VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=it_max)
         VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=0, value=start)
@@ -172,7 +204,8 @@ class SetDynamic(VariableDefRowId):
             TreatWarningsAsErrors=0,
             EventProcess=0):
         """
-        Параметры настройки "Общие данные для расчета динамики" (таблица: com_dynamics):
+        Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):
+
         :param t_ras: Время расчета (Tras)
         :param h_int: Начальный шаг интегрирования (H_инт)
         :param h_min: Минимальный шаг интегрирования (H_мин)
@@ -203,7 +236,6 @@ class SetDynamic(VariableDefRowId):
         :param ResultFlowDirection: Положительное направление результатов (Положительное направление результатов)
         :param TreatWarningsAsErrors: Считать предупреждения ошибками (Предупреждение=Ошибка)
         :param EventProcess: Метод обработки дискретных изменений (Дискретные изменения)
- 
         """
         VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(t_ras))
         VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=float(h_int))
@@ -237,6 +269,111 @@ class SetDynamic(VariableDefRowId):
         VariableDefRowId.make_changes(self, column=self.list_key[29], row_id=0, value=float(EventProcess))
 
 
+class AltUnit(VariableDefRowId):
+    """
+    Класс выставляет параметров настройки "Описание альтернативных единиц измерения"
+    """
+
+    def __init__(self, rastr_win=RASTR, table=table_name_alt_unit, switch_command_line=False):
+        self.rastr_win = rastr_win
+        self.list_key = []
+        for key in table_com_dynamics.keys():
+            self.list_key.append(key)
+        self.switch_command_line = switch_command_line
+        VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=switch_command_line)
+
+    def set(self,
+            row_id=0,
+            Active='',
+            Unit='',
+            Alt='',
+            Formula='',
+            Prec='',
+            Tabl=''):
+        VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=row_id, value=int(Active))
+        VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=row_id, value=str(Unit))
+        VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=row_id, value=str(Alt))
+        VariableDefRowId.make_changes(self, column=self.list_key[3], row_id=row_id, value=str(Formula))
+        VariableDefRowId.make_changes(self, column=self.list_key[4], row_id=row_id, value=str(Prec))
+        VariableDefRowId.make_changes(self, column=self.list_key[5], row_id=row_id, value=str(Tabl))
+
+
+class UtCommon(VariableDefRowId):
+    """
+    Класс выставляет параметров настройки "Описание альтернативных единиц измерения"
+    """
+
+    def __init__(self, rastr_win=RASTR, table=table_name_alt_unit, switch_command_line=False):
+        self.rastr_win = rastr_win
+        self.list_key = []
+        for key in table_com_dynamics.keys():
+            self.list_key.append(key)
+        self.switch_command_line = switch_command_line
+        VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=switch_command_line)
+
+    def set(self,
+            maxs=5,
+            maxv=2,
+            maxd=2,
+            maxa=10,
+            iter=100,
+            tip=0,
+            f_ots=0,
+            add_d=0,
+            ekstr=0,
+            kfc=1.000,
+            sum_kfc='',
+            ds=0,
+            it='',
+            Status=0,
+            KorrT=25,
+            KorrPer='',
+            KorrVib='',
+            enable_contr=0,
+            dis_v_contr=0,
+            dis_p_contr=0,
+            dis_i_contr=0,
+            ss_calc=0,
+            criterion=0,
+            no_crit_d_ba=0,
+            no_crit_d_coa=0,
+            no_crit_d_ga=0,
+            save_files_filter=0,
+            save_files_path=0,
+            stop_u_n=0,
+            dyn_find_pred=0):
+        VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(maxs))
+        VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=float(maxv))
+        VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=0, value=float(maxd))
+        VariableDefRowId.make_changes(self, column=self.list_key[3], row_id=0, value=float(maxa))
+        VariableDefRowId.make_changes(self, column=self.list_key[4], row_id=0, value=float(iter))
+        VariableDefRowId.make_changes(self, column=self.list_key[5], row_id=0, value=float(tip))
+        VariableDefRowId.make_changes(self, column=self.list_key[6], row_id=0, value=float(f_ots))
+        VariableDefRowId.make_changes(self, column=self.list_key[7], row_id=0, value=float(add_d))
+        VariableDefRowId.make_changes(self, column=self.list_key[8], row_id=0, value=float(ekstr))
+        VariableDefRowId.make_changes(self, column=self.list_key[9], row_id=0, value=float(kfc))
+        VariableDefRowId.make_changes(self, column=self.list_key[10], row_id=0, value=float(sum_kfc))
+        VariableDefRowId.make_changes(self, column=self.list_key[11], row_id=0, value=float(ds))
+        VariableDefRowId.make_changes(self, column=self.list_key[12], row_id=0, value=float(it))
+        VariableDefRowId.make_changes(self, column=self.list_key[13], row_id=0, value=float(Status))
+        VariableDefRowId.make_changes(self, column=self.list_key[14], row_id=0, value=float(KorrT))
+        VariableDefRowId.make_changes(self, column=self.list_key[15], row_id=0, value=float(KorrPer))
+        VariableDefRowId.make_changes(self, column=self.list_key[16], row_id=0, value=float(KorrVib))
+        VariableDefRowId.make_changes(self, column=self.list_key[17], row_id=0, value=float(enable_contr))
+        VariableDefRowId.make_changes(self, column=self.list_key[18], row_id=0, value=float(dis_v_contr))
+        VariableDefRowId.make_changes(self, column=self.list_key[19], row_id=0, value=float(dis_p_contr))
+        VariableDefRowId.make_changes(self, column=self.list_key[20], row_id=0, value=float(dis_i_contr))
+        VariableDefRowId.make_changes(self, column=self.list_key[21], row_id=0, value=float(ss_calc))
+        VariableDefRowId.make_changes(self, column=self.list_key[21], row_id=0, value=float(criterion))
+        VariableDefRowId.make_changes(self, column=self.list_key[22], row_id=0, value=float(no_crit_d_ba))
+        VariableDefRowId.make_changes(self, column=self.list_key[23], row_id=0, value=float(no_crit_d_coa))
+        VariableDefRowId.make_changes(self, column=self.list_key[24], row_id=0, value=float(no_crit_d_ga))
+        VariableDefRowId.make_changes(self, column=self.list_key[25], row_id=0, value=float(save_files_filter))
+        VariableDefRowId.make_changes(self, column=self.list_key[26], row_id=0, value=float(save_files_path))
+        VariableDefRowId.make_changes(self, column=self.list_key[27], row_id=0, value=float(stop_u_n))
+        VariableDefRowId.make_changes(self, column=self.list_key[28], row_id=0, value=float(dyn_find_pred))
+
+
 if __name__ == '__main__':
     # import win32com.client
     from R_modules.load_and_save_file.load_file_rastrwin import load_file
@@ -248,6 +385,7 @@ if __name__ == '__main__':
     # rastr = win32com.client.Dispatch('Astra.Rastr')
     load_file(rastr_win=RASTR, file_path=test_195_rg, shablon=shablon_file_regime)
     set = SetEkviv(rastr_win=RASTR)
+
     set.set(selekv=1,
             smart=1,
             zmax=85)
