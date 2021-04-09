@@ -277,7 +277,7 @@ class AltUnit(VariableDefRowId):
     def __init__(self, rastr_win=RASTR, table=table_name_alt_unit, switch_command_line=False):
         self.rastr_win = rastr_win
         self.list_key = []
-        for key in table_com_dynamics.keys():
+        for key in table_alt_unit.keys():
             self.list_key.append(key)
         self.switch_command_line = switch_command_line
         VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=switch_command_line)
@@ -303,10 +303,10 @@ class UtCommon(VariableDefRowId):
     Класс выставляет параметров настройки "Описание альтернативных единиц измерения"
     """
 
-    def __init__(self, rastr_win=RASTR, table=table_name_alt_unit, switch_command_line=False):
+    def __init__(self, rastr_win=RASTR, table=table_name_ut_common, switch_command_line=False):
         self.rastr_win = rastr_win
         self.list_key = []
-        for key in table_com_dynamics.keys():
+        for key in table_ut_common.keys():
             self.list_key.append(key)
         self.switch_command_line = switch_command_line
         VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=switch_command_line)
@@ -375,14 +375,12 @@ class UtCommon(VariableDefRowId):
 
 
 if __name__ == '__main__':
-    # import win32com.client
     from R_modules.load_and_save_file.load_file_rastrwin import load_file
     from R_modules.load_and_save_file.shablons_dir import shablon_file_regime
     from R_modules.load_and_save_file.shablons_dir import test_195_rg
     from R_modules.object_rastr import RASTR
     from R_modules.load_and_save_file.save_file_rastrwin import save_file
 
-    # rastr = win32com.client.Dispatch('Astra.Rastr')
     load_file(rastr_win=RASTR, file_path=test_195_rg, shablon=shablon_file_regime)
     set = SetEkviv(rastr_win=RASTR)
 

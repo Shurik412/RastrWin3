@@ -177,6 +177,11 @@ table_ut_common = {
     'dyn_find_pred': 'Динамика: поиск предела (Динамика: поиск предела)'
 }
 
+
+
+
+
+
 if __name__ == '__main__':
     # import win32com.client
     # from R_modules.load_and_save_file.load_file_rastrwin import load_file
