@@ -4,6 +4,7 @@ from R_modules.Tables_Parametrs.Tables_and_parametrs import table_name_com_ekviv
     table_com_regim, table_com_dynamics, table_name_com_dynamics
 from R_modules.variables.variable_parametrs import VariableDefRowId
 from R_modules.object_rastr import RASTR
+from R_modules.Tables_Parametrs.Tables_and_parametrs import table_com_dynamics
 
 
 class SetEkviv(VariableDefRowId):
@@ -170,7 +171,40 @@ class SetDynamic(VariableDefRowId):
             ResultFlowDirection=0,
             TreatWarningsAsErrors=0,
             EventProcess=0):
-
+        """
+        Параметры настройки "Общие данные для расчета динамики" (таблица: com_dynamics):
+        :param t_ras: Время расчета (Tras)
+        :param h_int: Начальный шаг интегрирования (H_инт)
+        :param h_min: Минимальный шаг интегрирования (H_мин)
+        :param h_max: Максимальный шаг интегрирования (H_макс)
+        :param h_out: Шаг печати (H_печ)
+        :param mint: Основной метод интегрирования (Осн.Метод)
+        :param smint: Стартовый метод интегрирования (Старт.Метод)
+        :param int_epsilon: Точность шага интегрирования (dInt)
+        :param inform_on_step_change: Информировать об изменении шага (Выводить шаг)
+        :param tf: Постоянная сглаживания угловой скорости (частоты) узла (Tf)
+        :param dEf: Точность балансировки эдс при учете явнополюсности (dEf)
+        :param npf: Макс число пересчетов УР на шаге при учете явнополюсности (Ит)
+        :param valid: Контроль входных параметров (Контр.)
+        :param dempfrec: Демпфирование в уравнениях движения (Демпф)
+        :param corrT: Корректировать Т в парковских моделях (Корр Т)
+        :param is_demp: Учет демп. момента в моделях с демп контурами (Уч Демп)
+        :param frSXNtoY: Напряжения перехода с СХН на шунт (V_минСХРН)
+        :param SXNTolerance: Допустимый небаланс СХН (SXNTol)
+        :param SnapPath: Выходной каталог файлов результатов (Кат. результатов)
+        :param MaxResultFiles: Максимальное кол-во файлов результатов (Макс. файлов)
+        :param SnapTemplate: Шаблон имени выходного файла (Шаблон имени)
+        :param SnapAutoLoad: Автозагрузка последнего результата (Автозагрузка)
+        :param SnapMaxCount: Максимальное кол-во слотов результатов (Макс. рез-тов)
+        :param TripGeneratorOnSpeed: Отключать генератор при превышении скорости % (Уставка автоматов безопасности)
+        :param PickupDropout: Информировать о пуске/возврате автоматики (Информировать о пуске/возврате автоматики)
+        :param RealtimeCSV: Выводить контролируемые величины в CSV (Выводить контролируемые величины в CSV)
+        :param PeriodAngle: Отображать углы в диапазоне +/-180 (Отображать углы в диапазоне +/-180)
+        :param ResultFlowDirection: Положительное направление результатов (Положительное направление результатов)
+        :param TreatWarningsAsErrors: Считать предупреждения ошибками (Предупреждение=Ошибка)
+        :param EventProcess: Метод обработки дискретных изменений (Дискретные изменения)
+ 
+        """
         VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(t_ras))
         VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=float(h_int))
         VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=0, value=float(h_min))

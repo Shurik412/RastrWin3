@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VBScript/disconnection_of_lines_between_areas.vbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VBScript/disconnection_of_lines_between_areas.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/disconnection_of_lines_between_areas.vbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617708850091</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set">
+      <created>1617826699162</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617826699162</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +309,7 @@
     <MESSAGE value="Corr OAPV_calc.py -&gt; add new function" />
     <MESSAGE value="Corr SetEkviv file settings_ekv.py" />
     <MESSAGE value="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;" />
+    <MESSAGE value="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set" />
   </component>
 </project>

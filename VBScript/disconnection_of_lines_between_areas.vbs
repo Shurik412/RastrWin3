@@ -17,7 +17,11 @@ vet.cols("sel").calc("0")
 uzl.cols("sel").calc("0")
 
 'uzl.SetSel("(na=801 | na=803 | na=804 | na=805 | na=806 | na=807 | na=813 | na=817 | na=819 | na=820 | na=402 | na=403 | na=404 | na=405 | na=407 | na=408 | na=409 | na=529 | na=513 | na=510 | na=517 | na=532 | na=511 | na=526 | na=515 | na=517 | na=523 | na=519| na=521 | na=518 | na=527 | na=532 | na=527 | na=532 | na=524 | na=526 | na=516)")
-uzl.SetSel("(na=518)")
+'uzl.SetSel("(na=518)")
+
+'uzl.SetSel("(na=801 | na=804 | na=805 | na=806 | na=807 | na=817 | na=819 | na=820 | na=402 | na=403 | na=404 | na=405 | na=407 | na=408 | na=409 | na=518)")
+
+uzl.SetSel("(na=804 | na=518)")
 
 uzl.cols("sel").calc("1")
 
