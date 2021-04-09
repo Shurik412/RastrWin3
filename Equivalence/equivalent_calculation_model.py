@@ -7,7 +7,7 @@ from R_modules.calculation.dyn_rgm_ekv_calc import SteadyState
 from R_modules.variables.removal_marked_objects import RemoveSelObjects
 from R_modules.calculation.dyn_rgm_ekv_calc import Equivalent
 from R_modules.object_rastr import RASTR
-from R_modules.settings_parametrs.settings_ekv import SetEkviv
+from R_modules.settings_parametrs.settings_rastr import SetEkviv
 
 
 print('*********************************************')
