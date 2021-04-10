@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="changing the package structure including the name of the package files and folders">
-      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/calculation/dyn_rgm_ekv_calc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/calculation/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/calculation/equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/calculation/regim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/export/export_data_rustab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/getting/get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/loading/load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/loading/save.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/object_rastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/AstraRastr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/settings/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/settings/calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/switch/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/switch/node.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="changing the package structure">
+      <change afterPath="$PROJECT_DIR$/RastrWin/settings/alt_unit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWin/settings/dynamic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWin/settings/equivalence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWin/settings/regim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWin/settings/ut_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWin/settings/calculation.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWin/switch/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/switch/vetv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/tables/tablesAttributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/tables/tablesAttributes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWin/variables/group_correction.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/variables/group_correction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWin/variables/removal_marked_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/variables/removal_marked_objects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWin/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/variables/variable_parametrs.py" afterDir="false" />
     </list>
@@ -278,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618091659663</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="changing the package structure">
+      <created>1618092134411</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618092134412</updated>
+    </task>
+    <task id="LOCAL-00015" summary="changing the package structure">
+      <created>1618092142743</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1618092142743</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +310,7 @@
     <MESSAGE value="Add file object_rastr.py -&gt; RASTR;&#10;Add class SetEkviv and file settings_ekv.py" />
     <MESSAGE value="Corr OAPV_calc.py -&gt; add new function" />
     <MESSAGE value="changing the package structure including the name of the package files and folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing the package structure including the name of the package files and folders" />
+    <MESSAGE value="changing the package structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing the package structure" />
   </component>
 </project>

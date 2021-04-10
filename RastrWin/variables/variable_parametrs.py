@@ -127,7 +127,7 @@ if __name__ == '__main__':
     from RastrWin.loading.load import load_file
     from RastrWin.loading.shablon import shablon_file_dynamic as sh_rst, \
         shablon_file_scenario as sh_scn, shablon_file_automation as sh_dfw
-    from RastrWin.calculation.dyn_rgm_ekv_calc import Dynamic
+    from RastrWin.calculation.dynamic import Dynamic
     from RastrWin.directory_rastrwin.dir_test_rastr import file_RUSTab_9_rst, file_RUSTab_9_scn
     from icecream import ic
 

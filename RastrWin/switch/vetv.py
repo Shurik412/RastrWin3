@@ -48,7 +48,7 @@ if __name__ == '__main__':
     from RastrWin.loading.shablon import shablon_file_dynamic, shablon_file_scenario, \
         shablon_file_automation, shablon_file_regime
     from RastrWin.directory_rastrwin.dir_test_rastr import file_RUSTab_9_rst, file_RUSTab_9_scn
-    from RastrWin.calculation.dyn_rgm_ekv_calc import SteadyState
+    from RastrWin.calculation.regim import SteadyState
     from RastrWin.getting.get import GettingParameterAttribute
     from icecream import ic
 

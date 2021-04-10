@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from RastrWin.tables.tablesAttributes import table_name_node, table_name_vetv, table_name_generator
+from RastrWin.tables.tablesAttributes import node_table, vetv_table, generator_table
 from RastrWin.AstraRastr import RASTR
 
 
@@ -19,16 +19,16 @@ class RemoveSelObjects:
         table.Cols(column).Calc('0')
 
     def remove_sel_node(self):
-        table = self.rastr_win.Tables(table_name_node)
+        table = self.rastr_win.Tables(node_table)
         table.SetSel('')
         table.Cols('sel').Cals('0')
 
     def remove_sel_vetv(self):
-        table = self.rastr_win.Tables(table_name_vetv)
+        table = self.rastr_win.Tables(vetv_table)
         table.SetSel('')
         table.Cols('sel').Cals('0')
 
     def remove_sel_generator(self):
-        table = self.rastr_win.Tables(table_name_generator)
+        table = self.rastr_win.Tables(generator_table)
         table.SetSel('')
         table.Cols('sel').Cals('0')
