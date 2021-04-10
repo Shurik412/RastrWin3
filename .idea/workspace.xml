@@ -2,9 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWin/calculation/regim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWin/switch/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_rastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_rastr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALAR_simulation/Comparison_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/Comparison_result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALAR_simulation/settingsKostrGRES.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/settingsKostrGRES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALAR_simulation/settings_alar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/settings_alar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Archive/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/calculation/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Archive/export_data_rastrwin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Archive/export_data_rustab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Archive/tabl_com_cxema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Archive/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/tables/tablesAttributes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/calculation/equivalent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/calculation/dyn_rgm_ekv_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/calculation/dyn_rgm_ekv_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/corr_of_dir_links_and_names/DirFileAndName.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/directory_rastrwin/DirFileAndName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/directory_rastrwin/dir_test_rastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/directory_rastrwin/dir_test_rastr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/export_in_excel/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/excel/chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/export_in_excel/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/export/export_data_rustab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/export_in_excel/openpyxl_chart_obj.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/getting_parameters/get_parameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/getting/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/load_and_save_file/load_file_rastrwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/loading/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/load_and_save_file/save_file_rastrwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/loading/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/load_and_save_file/shablons_dir.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/loading/shablon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/object_rastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/object_rastr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/off_and_on_object/object_on_off.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/switch/vetv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/settings_parametrs/settings_rastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/settings/calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/timer/timer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/variables/group_correction.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/variables/group_correction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/variables/removal_marked_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/variables/removal_marked_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_modules/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWin/variables/variable_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +68,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -40,7 +77,8 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Archive" />
+      <recent name="C:\Users\Александр\PycharmProjects\RastrWin3\RastrWin\directory_rastrwin" />
+      <recent name="C:\Users\Александр\PycharmProjects\RastrWin3\RastrWin\excel" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Tables_Parametrs" />
     </key>
   </component>
@@ -108,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="settings_rastr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="settings_ekv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,7 +158,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\settings_parametrs\settings_rastr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +192,7 @@
       <list>
         <item itemvalue="Python.OAPV_calc" />
         <item itemvalue="Python.test_napr" />
-        <item itemvalue="Python.settings_rastr" />
+        <item itemvalue="Python.settings_ekv" />
         <item itemvalue="Python.Tables_and_parametrs" />
         <item itemvalue="Python.get_parameter" />
       </list>
@@ -253,49 +291,7 @@
       <option name="project" value="LOCAL" />
       <updated>1617357186166</updated>
     </task>
-    <task id="LOCAL-00013" summary="Corr SetEkviv file settings_ekv.py">
-      <created>1617686754115</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1617686754115</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;">
-      <created>1617691801282</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1617691801282</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;">
-      <created>1617708850091</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1617708850091</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set">
-      <created>1617826699162</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1617826699162</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Add doc. class SetDynamic module settings_ekv.py">
-      <created>1617958558455</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1617958558455</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Rename settings_ekv.py in settings_rastr.py">
-      <created>1617958639488</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1617958639488</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,11 +317,6 @@
     <MESSAGE value="Add in file Tables_and_parametrs.py -&gt; table com_ekviv -&gt; Общие параметры эквивалентирования" />
     <MESSAGE value="Add file object_rastr.py -&gt; RASTR;&#10;Add class SetEkviv and file settings_ekv.py" />
     <MESSAGE value="Corr OAPV_calc.py -&gt; add new function" />
-    <MESSAGE value="Corr SetEkviv file settings_ekv.py" />
-    <MESSAGE value="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;" />
-    <MESSAGE value="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set" />
-    <MESSAGE value="Add doc. class SetDynamic module settings_ekv.py" />
-    <MESSAGE value="Rename settings_ekv.py in settings_rastr.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename settings_ekv.py in settings_rastr.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr OAPV_calc.py -&gt; add new function" />
   </component>
 </project>

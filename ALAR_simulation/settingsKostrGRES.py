@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-# L:\SER\Охрименко\03. RastrWin3\01.Dynamic_KAES\DRM_ZimaMax2020.rst
+# L:\SER\Охрименко\03. RastrWin\01.Dynamic_KAES\DRM_ZimaMax2020.rst
 
-# file_name_rst = 'C:\\Users\\Ohrimenko_AG\\Documents\\RastrWin3\\test-rastr\\RUSTab\\test9.rst'
-# file_name_scn = 'C:\\Users\\Ohrimenko_AG\\Documents\\RastrWin3\\test-rastr\\RUSTab\\test9.scn'
+# file_name_rst = 'C:\\Users\\Ohrimenko_AG\\Documents\\RastrWin\\test-rastr\\RUSTab\\test9.rst'
+# file_name_scn = 'C:\\Users\\Ohrimenko_AG\\Documents\\RastrWin\\test-rastr\\RUSTab\\test9.scn'
 
-dir_file_rst = 'L:\\SER\\Охрименко\\03. RastrWin3\\02.Dynamic_KosrGRES\\DRM_ZimaMax2020.rst'
-dir_file_scn = 'L:\\SER\\Охрименко\\03. RastrWin3\\02.Dynamic_KosrGRES'
+dir_file_rst = 'L:\\SER\\Охрименко\\03. RastrWin\\02.Dynamic_KosrGRES\\DRM_ZimaMax2020.rst'
+dir_file_scn = 'L:\\SER\\Охрименко\\03. RastrWin\\02.Dynamic_KosrGRES'
 
-dir_fileSaveExcel = r'L:\SER\Охрименко\03. RastrWin3\02.Dynamic_KosrGRES\Результаты'
+dir_fileSaveExcel = r'L:\SER\Охрименко\03. RastrWin\02.Dynamic_KosrGRES\Результаты'
 
 # ************ Ремонтные схемы *************
 dict_repairs = {1: ['0', '0', '0', 'Норм_схема'],

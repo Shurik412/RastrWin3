@@ -1,10 +1,8 @@
-from R_modules.export_in_excel.chart import ChartExcelOtherSheet
+from RastrWin.excel.chart import ChartExcelOtherSheet
 from openpyxl.chart import ScatterChart
 from openpyxl import load_workbook
-from icecream import ic
 
-
-file_excel = r'L:\SER\Охрименко\03. RastrWin3\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
+file_excel = r'L:\SER\Охрименко\03. RastrWin\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
 
 list_coordinates_of_graphs = [('B2', 'S2', 'AJ2', 'BB2', 'Раздел 1.1'),
                               ('B36', 'S36', 'AJ36', 'BB36', 'Раздел 1.2'),
@@ -88,7 +86,7 @@ dict_name_chart = {'Раздел 1.1': (
         ag_u_ps_two_2_2, d_ag_2_2)}
 wb.close()
 
-file_excel = r'L:\SER\Охрименко\03. RastrWin3\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
+file_excel = r'L:\SER\Охрименко\03. RastrWin\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
 wb_w = load_workbook(filename=file_excel)
 ws_graphs = wb_w['Графики']
 set_width_line_pt = 1.5

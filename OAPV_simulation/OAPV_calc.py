@@ -1,17 +1,17 @@
 from create_file_scn import CreateActionsSCN
 import win32com.client
 from openpyxl import load_workbook
-from R_modules.load_and_save_file.load_file_rastrwin import load_file
-from R_modules.load_and_save_file.shablons_dir import shablon_file_dynamic, shablon_file_scenario
-from R_modules.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
-from R_modules.export_in_excel.export_data_rustab import ExportDataRUSTab
-from R_modules.export_in_excel.chart import ChartExcelOtherSheet
+from RastrWin.loading.load import load_file
+from RastrWin.loading.shablon import shablon_file_dynamic, shablon_file_scenario
+from RastrWin.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
+from RastrWin.export.export_data_rustab import ExportDataRUSTab
+from RastrWin.excel.chart import ChartExcelOtherSheet
 from openpyxl.chart import ScatterChart
 from icecream import ic
 
 # import emoji
 
-file_excel = r'L:\SER\Охрименко\03. RastrWin3\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
+file_excel = r'L:\SER\Охрименко\03. RastrWin\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
 
 list_coordinates_of_graphs = [('B2', 'S2', 'AJ2', 'BB2', 'Раздел 1.1'),
                               ('B36', 'S36', 'AJ36', 'BB36', 'Раздел 1.2'),
