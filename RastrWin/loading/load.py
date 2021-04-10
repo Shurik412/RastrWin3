@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWin.loading.shablon import shablon_file_automation, shablon_file_dynamic, \
     shablon_file_regime, shablon_file_scenario
-from RastrWin.object_rastr import RASTR
+from RastrWin.AstraRastr import RASTR
 from os import path
 
 

@@ -6,7 +6,7 @@ from RastrWin.getting.get import GetTableCommonInfo
 from RastrWin.calculation.dyn_rgm_ekv_calc import SteadyState
 from RastrWin.variables.removal_marked_objects import RemoveSelObjects
 from RastrWin.calculation.dyn_rgm_ekv_calc import Equivalent
-from RastrWin.object_rastr import RASTR
+from RastrWin.AstraRastr import RASTR
 from RastrWin.settings.calculation import SetEkviv
 
 

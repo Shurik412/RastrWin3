@@ -3,7 +3,8 @@ import win32com.client
 from openpyxl import load_workbook
 from RastrWin.loading.load import load_file
 from RastrWin.loading.shablon import shablon_file_dynamic, shablon_file_scenario
-from RastrWin.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
+from RastrWin.calculation.regim import SteadyState
+from RastrWin.calculation.dynamic import Dynamic
 from RastrWin.export.export_data_rustab import ExportDataRUSTab
 from RastrWin.excel.chart import ChartExcelOtherSheet
 from openpyxl.chart import ScatterChart

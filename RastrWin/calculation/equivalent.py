@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from RastrWin.object_rastr import RASTR
+from RastrWin.AstraRastr import RASTR
 from time import time, localtime, strftime
 
 

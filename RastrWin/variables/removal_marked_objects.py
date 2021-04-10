@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWin.tables.tablesAttributes import table_name_node, table_name_vetv, table_name_generator
-from RastrWin.object_rastr import RASTR
+from RastrWin.AstraRastr import RASTR
 
 
 class RemoveSelObjects:

@@ -1,7 +1,7 @@
 import win32com.client
 from RastrWin.loading.load import load_file, shablon_file_regime, shablon_file_automation, \
     shablon_file_dynamic
-from RastrWin.calculation.dyn_rgm_ekv_calc import SteadyState
+from RastrWin.calculation.regim import SteadyState
 from RastrWin.variables.variable_parametrs import VariableDefRowId, VariableSetSel, FindNextSel
 from RastrWin.loading.save import save_file
 from RastrWin.variables.group_correction import GroupCorr

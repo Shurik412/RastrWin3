@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from RastrWin.object_rastr import RASTR
+from RastrWin.AstraRastr import RASTR
 from RastrWin.variables.variable_parametrs import VariableDefRowId
 from RastrWin.tables.tablesAttributes import com_ekviv_table, com_ekviv_attributes, com_regim_table, \
     com_regim_attributes, com_dynamics_attributes, com_dynamics_table, alt_unit_attributes, alt_unit_table, \
@@ -378,7 +378,7 @@ if __name__ == '__main__':
     from RastrWin.loading.load import load_file
     from RastrWin.loading.shablon import shablon_file_regime
     from RastrWin.loading.shablon import test_195_rg
-    from RastrWin.object_rastr import RASTR
+    from RastrWin.AstraRastr import RASTR
     from RastrWin.loading.save import save_file
 
     load_file(rastr_win=RASTR, file_path=test_195_rg, shablon=shablon_file_regime)
