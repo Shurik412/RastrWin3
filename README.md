@@ -11,7 +11,7 @@
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install RastrWinLib.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install RastrWinLib. !!! At the moment this function is not available !!!
 
 ```bash
 pip install RastrWinLib
