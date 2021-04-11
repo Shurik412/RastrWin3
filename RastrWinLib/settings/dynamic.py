@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.variables.variable_parametrs import VariableDefRowId
 from RastrWinLib.tables.tables_attributes import com_dynamics_table, com_dynamics_attributes
+from RastrWinLib.variables.variable_parametrs import VariableDefRowId
 
 
 class SetDynamic(VariableDefRowId):
@@ -15,10 +15,11 @@ class SetDynamic(VariableDefRowId):
         for key in com_dynamics_attributes.keys():
             self.list_key.append(key)
         self.switch_command_line = switch_command_line
-        VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=switch_command_line)
+        self.variable_def_rowid = VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table,
+                                                            switch_command_line=switch_command_line)
 
     def set(self,
-            t_ras=5,
+            t_ras=5.0,
             h_int=0.01,
             h_min=0.01,
             h_max=0.01,
@@ -82,33 +83,39 @@ class SetDynamic(VariableDefRowId):
         :param TreatWarningsAsErrors: Считать предупреждения ошибками (Предупреждение=Ошибка)
         :param EventProcess: Метод обработки дискретных изменений (Дискретные изменения)
         """
-        VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=float(t_ras))
-        VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=float(h_int))
-        VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=0, value=float(h_min))
-        VariableDefRowId.make_changes(self, column=self.list_key[3], row_id=0, value=float(h_max))
-        VariableDefRowId.make_changes(self, column=self.list_key[4], row_id=0, value=float(h_out))
-        VariableDefRowId.make_changes(self, column=self.list_key[5], row_id=0, value=int(mint))
-        VariableDefRowId.make_changes(self, column=self.list_key[6], row_id=0, value=int(smint))
-        VariableDefRowId.make_changes(self, column=self.list_key[7], row_id=0, value=float(int_epsilon))
-        VariableDefRowId.make_changes(self, column=self.list_key[8], row_id=0, value=float(inform_on_step_change))
-        VariableDefRowId.make_changes(self, column=self.list_key[9], row_id=0, value=float(tf))
-        VariableDefRowId.make_changes(self, column=self.list_key[10], row_id=0, value=float(dEf))
-        VariableDefRowId.make_changes(self, column=self.list_key[11], row_id=0, value=float(npf))
-        VariableDefRowId.make_changes(self, column=self.list_key[12], row_id=0, value=float(valid))
-        VariableDefRowId.make_changes(self, column=self.list_key[13], row_id=0, value=float(dempfrec))
-        VariableDefRowId.make_changes(self, column=self.list_key[14], row_id=0, value=float(corrT))
-        VariableDefRowId.make_changes(self, column=self.list_key[15], row_id=0, value=float(is_demp))
-        VariableDefRowId.make_changes(self, column=self.list_key[16], row_id=0, value=float(frSXNtoY))
-        VariableDefRowId.make_changes(self, column=self.list_key[17], row_id=0, value=float(SXNTolerance))
-        VariableDefRowId.make_changes(self, column=self.list_key[18], row_id=0, value=str(SnapPath))
-        VariableDefRowId.make_changes(self, column=self.list_key[19], row_id=0, value=float(MaxResultFiles))
-        VariableDefRowId.make_changes(self, column=self.list_key[20], row_id=0, value=str(SnapTemplate))
-        VariableDefRowId.make_changes(self, column=self.list_key[21], row_id=0, value=float(SnapAutoLoad))
-        VariableDefRowId.make_changes(self, column=self.list_key[22], row_id=0, value=float(SnapMaxCount))
-        VariableDefRowId.make_changes(self, column=self.list_key[23], row_id=0, value=float(TripGeneratorOnSpeed))
-        VariableDefRowId.make_changes(self, column=self.list_key[24], row_id=0, value=float(PickupDropout))
-        VariableDefRowId.make_changes(self, column=self.list_key[25], row_id=0, value=float(RealtimeCSV))
-        VariableDefRowId.make_changes(self, column=self.list_key[26], row_id=0, value=float(PeriodAngle))
-        VariableDefRowId.make_changes(self, column=self.list_key[27], row_id=0, value=float(ResultFlowDirection))
-        VariableDefRowId.make_changes(self, column=self.list_key[28], row_id=0, value=float(TreatWarningsAsErrors))
-        VariableDefRowId.make_changes(self, column=self.list_key[29], row_id=0, value=float(EventProcess))
+        self.variable_def_rowid.make_changes(column=self.list_key[0], row_id=0, value=float(t_ras))
+        self.variable_def_rowid.make_changes(column=self.list_key[1], row_id=0, value=float(h_int))
+        self.variable_def_rowid.make_changes(column=self.list_key[2], row_id=0, value=float(h_min))
+        self.variable_def_rowid.make_changes(column=self.list_key[3], row_id=0, value=float(h_max))
+        self.variable_def_rowid.make_changes(column=self.list_key[4], row_id=0, value=float(h_out))
+        self.variable_def_rowid.make_changes(column=self.list_key[5], row_id=0, value=int(mint))
+        self.variable_def_rowid.make_changes(column=self.list_key[6], row_id=0, value=int(smint))
+        self.variable_def_rowid.make_changes(column=self.list_key[7], row_id=0, value=float(int_epsilon))
+        self.variable_def_rowid.make_changes(column=self.list_key[8], row_id=0, value=float(inform_on_step_change))
+        self.variable_def_rowid.make_changes(column=self.list_key[9], row_id=0, value=float(tf))
+        self.variable_def_rowid.make_changes(column=self.list_key[10], row_id=0, value=float(dEf))
+        self.variable_def_rowid.make_changes(column=self.list_key[11], row_id=0, value=float(npf))
+        self.variable_def_rowid.make_changes(column=self.list_key[12], row_id=0, value=float(valid))
+        self.variable_def_rowid.make_changes(column=self.list_key[13], row_id=0, value=float(dempfrec))
+        self.variable_def_rowid.make_changes(column=self.list_key[14], row_id=0, value=float(corrT))
+        self.variable_def_rowid.make_changes(column=self.list_key[15], row_id=0, value=float(is_demp))
+        self.variable_def_rowid.make_changes(column=self.list_key[16], row_id=0, value=float(frSXNtoY))
+        self.variable_def_rowid.make_changes(column=self.list_key[17], row_id=0, value=float(SXNTolerance))
+        self.variable_def_rowid.make_changes(column=self.list_key[18], row_id=0, value=str(SnapPath))
+        self.variable_def_rowid.make_changes(column=self.list_key[19], row_id=0, value=float(MaxResultFiles))
+        self.variable_def_rowid.make_changes(column=self.list_key[20], row_id=0, value=str(SnapTemplate))
+        self.variable_def_rowid.make_changes(column=self.list_key[21], row_id=0, value=float(SnapAutoLoad))
+        self.variable_def_rowid.make_changes(column=self.list_key[22], row_id=0, value=float(SnapMaxCount))
+        self.variable_def_rowid.make_changes(column=self.list_key[23], row_id=0, value=float(TripGeneratorOnSpeed))
+        self.variable_def_rowid.make_changes(column=self.list_key[24], row_id=0, value=float(PickupDropout))
+        self.variable_def_rowid.make_changes(column=self.list_key[25], row_id=0, value=float(RealtimeCSV))
+        self.variable_def_rowid.make_changes(column=self.list_key[26], row_id=0, value=float(PeriodAngle))
+        self.variable_def_rowid.make_changes(column=self.list_key[27], row_id=0, value=float(ResultFlowDirection))
+        self.variable_def_rowid.make_changes(column=self.list_key[28], row_id=0, value=float(TreatWarningsAsErrors))
+        self.variable_def_rowid.make_changes(column=self.list_key[29], row_id=0, value=float(EventProcess))
+
+        if self.switch_command_line is not False:
+            return print(
+                f'Внесены изменения в настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics)')
+        else:
+            return True

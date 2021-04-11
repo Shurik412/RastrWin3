@@ -4,10 +4,7 @@ from RastrWinLib.AstraRastr import RASTR
 
 class FindNextSel:
     """
-    Возвращает значение строки по номеру.
-    parameter = 'ny' или 'num' ...
-    number_id = 51017075
-    tables = 'Generator'
+
     """
 
     def __init__(self, table, key, rastr_win=RASTR):

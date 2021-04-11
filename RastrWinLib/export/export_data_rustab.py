@@ -31,7 +31,7 @@ if __name__ == '__main__':
     from openpyxl import Workbook
     from RastrWinLib.loading.shablon import shablon_file_dynamic as sh_rst, \
         shablon_file_scenario as sh_scn, shablon_file_automation as sh_dfw
-    from RastrWinLib.calculation.dyn_rgm_ekv_calc import Dynamic
+    from RastrWinLib.calculation.dynamic import Dynamic
     from RastrWinLib.directory_rastrwin.dir_test_rastr import file_RUSTab_9_rst, file_RUSTab_9_scn
     from openpyxl.utils import get_column_letter
     from RastrWinLib.variables.variable_parametrs import VariableSetSel

@@ -2463,7 +2463,7 @@ End Sub
 Sub Ekv_gen(vyborka_gen)
     Set vet=t.tables("vetv")
     Set uzl=t.tables("node")
-	uzl.Setsel(vyborka_gen)
+	uzl.SetSel(vyborka_gen)
     k = uzl.FindNextSel(-1)
     While k<>(-1)
 		ny1 = uzl.Cols("ny").z(k)

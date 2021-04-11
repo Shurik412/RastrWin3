@@ -33,9 +33,6 @@ if __name__ == '__main__':
     from icecream import ic
 
     test = DirectoryCheck(name='adfasdfasd.fs__.scn')
-    # ic(test.get_full_name())
-    # ic(test.get_name())
-    # ic(test.get_expansion())
     for index, i in enumerate(test.get_split()):
         if i == 'scn':
             print(f'{i}')

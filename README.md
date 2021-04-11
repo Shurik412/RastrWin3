@@ -1,13 +1,13 @@
 # RastrWinLib
 
-## Библиотека для работы с ПК RastrWin3 (RUSTab)
+## Library for working with RastrWin3 (RUSTab)
 
-Пакет RastrWinLib предназначен для работы с ПК RastrWin3 (RUSTab).
+RastrWinLib package is designed to work with PC RastrWin3 (RUSTab).
 
-####Для работы с RastrWinLib используются библиотеки Python 3:
+####Python 3 libraries are used to work with RastrWinLib:
 
 - pywin32 (win32com)
-- OpenPyXl - для работы с Excel
+- OpenPyXl - for working with Excel
 
 ## Installation
 

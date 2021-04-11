@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.variables.variable_parametrs import VariableRowId
-from RastrWinLib.AstraRastr import RASTR
 from time import time, localtime, strftime
+
+from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.variables.variable_parametrs import VariableRowId
 
 
 class Dynamic:

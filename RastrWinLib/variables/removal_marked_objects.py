@@ -1,34 +1,78 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.tables.tables_attributes import node_table, vetv_table, generator_table
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.tables.tables_attributes import node_table, vetv_table, generator_table
 
 
 class RemoveSelObjects:
     """
-    Данный класс убирает галочки (отчетки) sel в
-    таблицах Узлы, Ветви, Генераторы.
-    Также убирает галочки (отчетки) sel по заданой таблице.
+    Данный класс удаляет галочки (отчетки) sel.
+    Метод: remove_sel -> удаляет выделение [sel] в заданной таблицe [par: table] и возвращяет True.
+    Метод: remove_sel_node -> удаляет выделение [sel] в таблицe [node] и возвращяет True.
+    Метод: remove_sel_vetv -> удаляет выделение [sel] в таблицe [vetv] и возвращяет True.
+    Метод: remove_sel_generator -> удаляет выделение [sel] в таблицe [Generator] и возвращяет True.
     """
 
     def __init__(self, rastr_win=RASTR, switch_command_line=False):
         self.rastr_win = rastr_win
+        self.switch_command_line = switch_command_line
 
-    def remove_sel(self, table, column='sel'):
-        table = self.rastr_win.Tables(table)
-        table.SetSel('')
-        table.Cols(column).Calc('0')
+    def remove_sel(self, table):
+        """
+        Removes the selection of objects in the specified table.
+
+        :param table: Name table Software RastrWin3
+        :type table: string
+        :return: True
+        :rtype: bool
+        """
+        table_ = self.rastr_win.Tables(table)
+        table_.SetSel('')
+        table_.Cols('sel').Calc('0')
+        if self.switch_command_line is not False:
+            print(f'В таблице "{table_.name}", были удалены все выделения в столбце [sel].')
+        return True
 
     def remove_sel_node(self):
-        table = self.rastr_win.Tables(node_table)
+        """
+        Removes the selection of objects in the table "node".
+
+        :return: True                                            
+        :rtype: bool
+        """
+        table_name = node_table
+        table = self.rastr_win.Tables(table_name)
         table.SetSel('')
         table.Cols('sel').Cals('0')
+        if self.switch_command_line is not False:
+            print(f'В таблице "{table_name}", были удалены все выделения в столбце [sel].')
+        return True
 
     def remove_sel_vetv(self):
-        table = self.rastr_win.Tables(vetv_table)
+        """
+        Removes the selection of objects in the table "vetv".
+
+        :return: True
+        :rtype: bool
+        """
+        table_name = vetv_table
+        table = self.rastr_win.Tables(table_name)
         table.SetSel('')
         table.Cols('sel').Cals('0')
+        if self.switch_command_line is not False:
+            print(f'В таблице "{table_name}", были удалены все выделения в столбце [sel].')
+        return True
 
     def remove_sel_generator(self):
-        table = self.rastr_win.Tables(generator_table)
+        """
+        Removes the selection of objects in the table "Generator".
+
+        :return: True
+        :rtype: bool
+        """
+        table_name = generator_table
+        table = self.rastr_win.Tables(table_name)
         table.SetSel('')
         table.Cols('sel').Cals('0')
+        if self.switch_command_line is not False:
+            print(f'В таблице "{table_name}", были удалены все выделения в столбце [sel].')
+        return True

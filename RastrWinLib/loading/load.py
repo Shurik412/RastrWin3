@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.loading.shablon import shablon_file_automation, shablon_file_dynamic, \
-    shablon_file_regime, shablon_file_scenario
-from RastrWinLib.AstraRastr import RASTR
 from os import path
+
+from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.loading.shablon import shablon_file_automation
 
 
 def load_file(rastr_win=RASTR, rg_kod=1, file_path='', shablon=shablon_file_automation, switch_command_line=False):

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.AstraRastr import RASTR
 from time import time, localtime, strftime
+
+from RastrWinLib.AstraRastr import RASTR
 
 
 class Equivalent:

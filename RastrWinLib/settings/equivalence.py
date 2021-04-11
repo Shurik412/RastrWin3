@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.variables.variable_parametrs import VariableDefRowId
 from RastrWinLib.tables.tables_attributes import com_ekviv_table, com_ekviv_attributes
+from RastrWinLib.variables.variable_parametrs import VariableDefRowId
 
 
 class SetEkviv(VariableDefRowId):
@@ -14,7 +14,7 @@ class SetEkviv(VariableDefRowId):
         self.list_key = []
         for key in com_ekviv_attributes.keys():
             self.list_key.append(key)
-        VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=True)
+        self.variable_def_rowid = VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=True)
 
     def set(self,
             selekv=0,
@@ -46,15 +46,15 @@ class SetEkviv(VariableDefRowId):
         :param otm_n: Отмечать узлы после эквивалентирования (Отм)
         """
 
-        VariableDefRowId.make_changes(self, column=self.list_key[0], row_id=0, value=selekv)
-        VariableDefRowId.make_changes(self, column=self.list_key[1], row_id=0, value=met_ekv)
-        VariableDefRowId.make_changes(self, column=self.list_key[2], row_id=0, value=tip_ekv)
-        VariableDefRowId.make_changes(self, column=self.list_key[3], row_id=0, value=ekvgen)
-        VariableDefRowId.make_changes(self, column=self.list_key[4], row_id=0, value=tip_gen)
-        VariableDefRowId.make_changes(self, column=self.list_key[5], row_id=0, value=kfc_x)
-        VariableDefRowId.make_changes(self, column=self.list_key[6], row_id=0, value=pot_gen)
-        VariableDefRowId.make_changes(self, column=self.list_key[7], row_id=0, value=kpn)
-        VariableDefRowId.make_changes(self, column=self.list_key[8], row_id=0, value=tip_sxn)
-        VariableDefRowId.make_changes(self, column=self.list_key[9], row_id=0, value=smart)
-        VariableDefRowId.make_changes(self, column=self.list_key[10], row_id=0, value=zmax)
-        VariableDefRowId.make_changes(self, column=self.list_key[11], row_id=0, value=otm_n)
+        self.variable_def_rowid.make_changes(column=self.list_key[0], row_id=0, value=selekv)
+        self.variable_def_rowid.make_changes(column=self.list_key[1], row_id=0, value=met_ekv)
+        self.variable_def_rowid.make_changes(column=self.list_key[2], row_id=0, value=tip_ekv)
+        self.variable_def_rowid.make_changes(column=self.list_key[3], row_id=0, value=ekvgen)
+        self.variable_def_rowid.make_changes(column=self.list_key[4], row_id=0, value=tip_gen)
+        self.variable_def_rowid.make_changes(column=self.list_key[5], row_id=0, value=kfc_x)
+        self.variable_def_rowid.make_changes(column=self.list_key[6], row_id=0, value=pot_gen)
+        self.variable_def_rowid.make_changes(column=self.list_key[7], row_id=0, value=kpn)
+        self.variable_def_rowid.make_changes(column=self.list_key[8], row_id=0, value=tip_sxn)
+        self.variable_def_rowid.make_changes(column=self.list_key[9], row_id=0, value=smart)
+        self.variable_def_rowid.make_changes(column=self.list_key[10], row_id=0, value=zmax)
+        self.variable_def_rowid.make_changes(column=self.list_key[11], row_id=0, value=otm_n)

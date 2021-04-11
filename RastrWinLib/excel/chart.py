@@ -110,10 +110,8 @@ class ChartExcelOtherSheet:
 
 
 if __name__ == '__main__':
-    from openpyxl import Workbook, load_workbook
+    from openpyxl import Workbook
     from openpyxl.chart import ScatterChart  # , Reference, Series
-    from openpyxl.drawing.drawing import Drawing
-    from icecream import ic
 
     # wb = load_workbook(filename='C:\\Users\\Ohrimenko_AG\\Desktop\\21\\78.xlsx')
     wb = Workbook()

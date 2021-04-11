@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 
+from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.calculation.equivalent import Equivalent
+from RastrWinLib.calculation.regim import SteadyState
+from RastrWinLib.getting.get import GetTableCommonInfo
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import shablon_file_regime
-from RastrWinLib.getting.get import GetTableCommonInfo
-from RastrWinLib.calculation.dyn_rgm_ekv_calc import SteadyState
+from RastrWinLib.settings.equivalence import SetEkviv
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
-from RastrWinLib.calculation.dyn_rgm_ekv_calc import Equivalent
-from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.settings.calculation import SetEkviv
-
 
 print('*********************************************')
 print('*********** Эквивалентирование **************')
@@ -44,5 +43,7 @@ settings_com_ekviv.set(selekv=0,
                        zmax=1000,
                        otm_n=0)
 equivalent.ekv()
+
+
 
 
