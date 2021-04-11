@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from RastrWin.tables.tablesAttributes import node_table, vetv_table, generator_table
+from RastrWin.tables.tables_attributes import node_table, vetv_table, generator_table
 from RastrWin.AstraRastr import RASTR
 
 

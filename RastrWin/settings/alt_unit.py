@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWin.AstraRastr import RASTR
 from RastrWin.variables.variable_parametrs import VariableDefRowId
-from RastrWin.tables.tablesAttributes import alt_unit_table, alt_unit_attributes
+from RastrWin.tables.tables_attributes import alt_unit_table, alt_unit_attributes
 
 
 class AltUnit(VariableDefRowId):

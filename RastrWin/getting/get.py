@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWin.AstraRastr import RASTR
-from RastrWin.tables.tablesAttributes import com_cxema_table, com_cxema_attributes
+from RastrWin.tables.tables_attributes import com_cxema_table, com_cxema_attributes
 
 
 class GettingParameterInstance:
