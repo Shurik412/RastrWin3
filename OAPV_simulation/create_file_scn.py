@@ -1,7 +1,7 @@
-from RastrWin.variables.variable_parametrs import VariableDefRowId
-from RastrWin.loading.save import save_file
-from RastrWin.loading.shablon import shablon_file_scenario
-from RastrWin.loading.load import load_file
+from RastrWinLib.variables.variable_parametrs import VariableDefRowId
+from RastrWinLib.loading.save import save_file
+from RastrWinLib.loading.shablon import shablon_file_scenario
+from RastrWinLib.loading.load import load_file
 from openpyxl import load_workbook
 
 
@@ -85,14 +85,14 @@ class CreateActionsSCN(VariableDefRowId):
 if __name__ == '__main__':
     import win32com.client
     # from openpyxl import load_workbook
-    # from RastrWin.loading.shablons_dir import shablon_file_scenario
-    # from RastrWin.loading.save_file_rastrwin import save_file
-    # from RastrWin.loading.load_file_rastrwin import load_file
+    # from RastrWinLib.loading.shablons_dir import shablon_file_scenario
+    # from RastrWinLib.loading.save_file_rastrwin import save_file
+    # from RastrWinLib.loading.load_file_rastrwin import load_file
 
     rastr = win32com.client.Dispatch('Astra.Rastr')
     load_file(rastr_win=rastr, shablon=shablon_file_scenario)
-    filename = 'L:\\SER\\Охрименко\\03. RastrWin\\16\\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Восточная.xlsx'
+    filename = 'L:\\SER\\Охрименко\\03. RastrWinLib\\16\\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Восточная.xlsx'
     scn = CreateActionsSCN(rastr_win=rastr, name_list_excel='Сценарий', dir_name_file_excel=filename, )
     scn.create()
     scn.create_log()
-    scn.save_scn(dir_file_name_save_scn='L:\\SER\\Охрименко\\03. RastrWin\\16\\scn1.scn', switch_command_line=True)
+    scn.save_scn(dir_file_name_save_scn='L:\\SER\\Охрименко\\03. RastrWinLib\\16\\scn1.scn', switch_command_line=True)

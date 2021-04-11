@@ -1,12 +1,12 @@
 import win32com.client
-from RastrWin.loading.load import load_file, shablon_file_regime, shablon_file_automation, \
+from RastrWinLib.loading.load import load_file, shablon_file_regime, shablon_file_automation, \
     shablon_file_dynamic
-from RastrWin.calculation.regim import SteadyState
-from RastrWin.variables.variable_parametrs import VariableDefRowId, VariableSetSel, FindNextSel
-from RastrWin.loading.save import save_file
-from RastrWin.variables.group_correction import GroupCorr
+from RastrWinLib.calculation.regim import SteadyState
+from RastrWinLib.variables.variable_parametrs import VariableDefRowId, VariableSetSel, FindNextSel
+from RastrWinLib.loading.save import save_file
+from RastrWinLib.variables.group_correction import GroupCorr
 
-dir = r'L:\SER\Охрименко\03. RastrWin\16\14'
+dir = r'L:\SER\Охрименко\03. RastrWinLib\16\14'
 file_one_rg2 = rf'{dir}\14 АДТН обр обр.rg2'
 file_two_rst = rf'{dir}\Дин модель Лето минимум.rst'
 file_log_gen = rf'{dir}\log_set_gen.txt'

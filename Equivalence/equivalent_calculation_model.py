@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from RastrWin.loading.load import load_file
-from RastrWin.loading.shablon import shablon_file_regime
-from RastrWin.getting.get import GetTableCommonInfo
-from RastrWin.calculation.dyn_rgm_ekv_calc import SteadyState
-from RastrWin.variables.removal_marked_objects import RemoveSelObjects
-from RastrWin.calculation.dyn_rgm_ekv_calc import Equivalent
-from RastrWin.AstraRastr import RASTR
-from RastrWin.settings.calculation import SetEkviv
+from RastrWinLib.loading.load import load_file
+from RastrWinLib.loading.shablon import shablon_file_regime
+from RastrWinLib.getting.get import GetTableCommonInfo
+from RastrWinLib.calculation.dyn_rgm_ekv_calc import SteadyState
+from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
+from RastrWinLib.calculation.dyn_rgm_ekv_calc import Equivalent
+from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.settings.calculation import SetEkviv
 
 
 print('*********************************************')

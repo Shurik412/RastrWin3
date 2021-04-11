@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 from openpyxl.chart import ScatterChart
 from settingsKostrGRES import list_scn, dict_repairs, dict_cell_chart
-from RastrWin.excel.chart import ChartExcelOtherSheet
+from RastrWinLib.excel.chart import ChartExcelOtherSheet
 from openpyxl.utils import get_column_letter
 from settings_alar import dict_output_results
 
@@ -11,8 +11,8 @@ print('*************************************************************************
 
 primary_cell = 10
 
-wb = load_workbook(filename=r'L:\SER\Охрименко\03. RastrWin\02.Dynamic_KosrGRES\Результаты\result93v23.xlsx')
-dir_fileSaveExcel = r'L:\SER\Охрименко\03. RastrWin\02.Dynamic_KosrGRES\Результаты\result93v24.xlsx'
+wb = load_workbook(filename=r'L:\SER\Охрименко\03. RastrWinLib\02.Dynamic_KosrGRES\Результаты\result93v23.xlsx')
+dir_fileSaveExcel = r'L:\SER\Охрименко\03. RastrWinLib\02.Dynamic_KosrGRES\Результаты\result93v24.xlsx'
 # ws_sheet = wb['Sheet']
 # ws_sheet.title = 'Сравнение ЭМПП'
 ws_result = wb['Сравнение ЭМПП']
