@@ -4,7 +4,7 @@
 
 RastrWinLib package is designed to work with PC RastrWin3 (RUSTab).
 
-####Python 3 libraries are used to work with RastrWinLib:
+##Python 3 libraries are used to work with RastrWinLib:
 
 - pywin32 (win32com)
 - OpenPyXl - for working with Excel
