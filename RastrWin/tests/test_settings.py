@@ -8,7 +8,6 @@ from RastrWin.loading.load import LoadRUSTab
 from RastrWin.loading.shablon import shablon_dynamic, shablon_scenario
 from RastrWin.loading.save import save_file
 
-
 load_f = LoadRUSTab(rastr_win=RASTR, shablon=shablon_dynamic, switch_command_line=True)
 load_f.load(file_path='')
 
@@ -59,6 +58,25 @@ SetDynamic(rastr_win=RASTR).set(t_ras=5.0,
                                 mint=0,
                                 smint=0)
 
+SetEkviv(rastr_win=RASTR).set(selekv=0,
+                              met_ekv=0,
+                              tip_sxn=0,
+                              ekvgen=0,
+                              tip_gen=1,
+                              smart=0,
+                              zmax=1000,
+                              otm_n=0,
+                              kfc_x='')
 
+UtCommon(rastr_win=RASTR).set(maxs=5,
+                              maxv=2,
+                              maxd=2,
+                              maxa=10,
+                              iter=100,
+                              tip=0,
+                              f_ots=0,
+                              add_d=0,
+                              ekstr=0,
+                              kfc=1.0)
 
 save_file(rastr_win=RASTR, file_path='')
