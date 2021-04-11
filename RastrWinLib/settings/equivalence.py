@@ -14,7 +14,10 @@ class SetEkviv(VariableDefRowId):
         self.list_key = []
         for key in com_ekviv_attributes.keys():
             self.list_key.append(key)
-        self.variable_def_rowid = VariableDefRowId.__init__(self, rastr_win=rastr_win, table=table, switch_command_line=True)
+        self.variable_def_rowid = VariableDefRowId.__init__(self,
+                                                            rastr_win=rastr_win,
+                                                            table=table,
+                                                            switch_command_line=True)
 
     def set(self,
             selekv=0,
@@ -58,3 +61,9 @@ class SetEkviv(VariableDefRowId):
         self.variable_def_rowid.make_changes(column=self.list_key[9], row_id=0, value=smart)
         self.variable_def_rowid.make_changes(column=self.list_key[10], row_id=0, value=zmax)
         self.variable_def_rowid.make_changes(column=self.list_key[11], row_id=0, value=otm_n)
+
+        if self.switch_command_line is not False:
+            return print(
+                f'Внесены изменения в настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv)')
+        else:
+            return True

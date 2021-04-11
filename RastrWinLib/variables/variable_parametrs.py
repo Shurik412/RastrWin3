@@ -7,12 +7,12 @@ class FindNextSel:
 
     """
 
-    def __init__(self, table, key, rastr_win=RASTR):
+    def __init__(self, table, rastr_win=RASTR):
         self.RastrWin = rastr_win
         self.Tables = self.RastrWin.Tables(str(table))
-        self.Tables.SetSel(f'{key}')
 
-    def row(self):
+    def row(self, key):
+        self.Tables.SetSel(f'{key}')
         row_id = self.Tables.FindNextSel(-1)
         if row_id == (-1):
             return -1
