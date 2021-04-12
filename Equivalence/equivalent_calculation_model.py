@@ -5,6 +5,7 @@ from RastrWinLib.calculation.equivalent import Equivalent
 from RastrWinLib.calculation.regim import SteadyState
 from RastrWinLib.getting.get import GetTableCommonInfo
 from RastrWinLib.loading.load import load_file
+from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_regime
 from RastrWinLib.settings.equivalence import SetEkviv
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
@@ -18,7 +19,7 @@ print('*********************************************')
 regime = SteadyState(rastr_win=RASTR, switch_command_line=True)
 equivalent = Equivalent(rastr_win=RASTR, switch_command_line=True)
 
-file_rg2 = r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\cx195.rg2'
+file_rg2 = r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\02-БРМ Зима максимум [уст].rg2'
 load_file(rastr_win=RASTR, file_path=file_rg2, shablon=shablon_file_regime, switch_command_line=True)
 
 common_info = GetTableCommonInfo(rastr_win=RASTR, switch_command_line=True)
@@ -44,5 +45,10 @@ SetEkviv(rastr_win=RASTR).set(selekv=0,
                               zmax=1000,
                               otm_n=0)
 equivalent.ekv()
-equivalent_gen(viborka_gen='')
-equivalent_smart(viborka_rayon='')
+equivalent_gen(viborka_gen='(na=102 | na=103 | na=104 | na=105 | na=106 | na=107 | na=108 | na=109)')
+equivalent_smart(viborka_rayon='(na=102 | na=103 | na=104 | na=105 | na=106 | na=107 | na=108 | na=109)')
+
+save_file(rastr_win=RASTR,
+          file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\test_1.rg2',
+          shablon=shablon_file_regime,
+          switch_command_line=True)

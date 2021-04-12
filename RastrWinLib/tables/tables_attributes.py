@@ -178,6 +178,23 @@ ut_common_attributes = {
     'dyn_find_pred': 'Динамика: поиск предела (Динамика: поиск предела)'
 }
 
+area_table = 'area'
+area_attributes = {
+    'na': 'Номер района (Nр-н)',
+    'name': 'Название района (Район)',
+    'no': 'Номер объединения (Nоб)',
+    'pg': 'Генерация P (Pген)',
+    'pn': 'Нагрузка P (Pнаг)',
+    'dp': 'Потери P (Dp)',
+    'pop': 'Потребление P (Pпотр)',
+    'vnp': 'Внешний переток P (Pвн)',
+    'Tc': 'Температура (Tc)',
+    'pn_min': 'Минимум нагрузки, МВт (Pн мин)',
+    'pn_max': 'Максимум нагрузки, МВт (Pн max)',
+    'pg_min': 'Минимум генерации, МВт (Pг мин)',
+    'pg_max': 'Максимум генерации, МВт (Pг max)'
+}
+
 if __name__ == '__main__':
     # import win32com.client
     # from RastrWinLib.loading.load_file_rastrwin import load_file

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Equivalence/area_equi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/directory_rastrwin/dir_test_rastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/directory_rastrwin/dir_test_rastr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +48,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Tables_Parametrs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.OAPV_calc">
+  <component name="RunManager" selected="Python.equivalent_calculation_model">
     <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,7 +70,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Tables_and_parametrs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="equivalent_calculation_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +78,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/R_modules/Tables_Parametrs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Equivalence" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -87,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_parameter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gen_equivalent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,11 +99,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/R_modules/getting_parameters" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Equivalence" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_modules/getting_parameters/get_parameter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Equivalence/gen_equivalent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.equivalent_calculation_model" />
+        <item itemvalue="Python.gen_equivalent" />
         <item itemvalue="Python.OAPV_calc" />
         <item itemvalue="Python.test_napr" />
         <item itemvalue="Python.settings_rastr" />
-        <item itemvalue="Python.Tables_and_parametrs" />
-        <item itemvalue="Python.get_parameter" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618225108129</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="filling equivalent_calculation_model.py">
+      <created>1618226440654</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1618226440654</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +345,7 @@
     <MESSAGE value="Add doc. class SetDynamic module settings_ekv.py" />
     <MESSAGE value="Rename settings_ekv.py in settings_rastr.py" />
     <MESSAGE value="Add function in gen_equivalent.py." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function in gen_equivalent.py." />
+    <MESSAGE value="filling equivalent_calculation_model.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="filling equivalent_calculation_model.py" />
   </component>
 </project>

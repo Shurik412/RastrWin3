@@ -5,8 +5,8 @@ shablon_regime = 'режим.rg2'
 shablon_dynamic = 'динамика.rst'
 shablon_scenario = 'сценарий.scn'
 shablon_automation = 'автоматика.dfw'
-directory_file_shablon = path.expanduser('~\\Documents\\RastrWinLib\\SHABLON')
-directory_file_test = path.expanduser('~\\Documents\\RastrWinLib\\test-rastr')
+directory_file_shablon = path.expanduser('~\\Documents\\RastrWin3\\SHABLON')
+directory_file_test = path.expanduser('~\\Documents\\RastrWin3\\test-rastr')
 
 shablon_file_dynamic = f'{directory_file_shablon}\\{shablon_dynamic}'
 shablon_file_scenario = f'{directory_file_shablon}\\{shablon_scenario}'
