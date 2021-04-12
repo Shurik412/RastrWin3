@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Add doc in settings.">
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/group_correction.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/group_correction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +34,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.pyOptions" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -43,8 +43,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Александр\PycharmProjects\RastrWin3\RastrWin\directory_rastrwin" />
-      <recent name="C:\Users\Александр\PycharmProjects\RastrWin3\RastrWin\excel" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Archive" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Tables_Parametrs" />
     </key>
   </component>
@@ -112,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="settings_ekv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="settings_rastr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,7 +123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" />
+      <option name="SCRIPT_NAME" value="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\settings_parametrs\settings_rastr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,7 +157,7 @@
       <list>
         <item itemvalue="Python.OAPV_calc" />
         <item itemvalue="Python.test_napr" />
-        <item itemvalue="Python.settings_ekv" />
+        <item itemvalue="Python.settings_rastr" />
         <item itemvalue="Python.Tables_and_parametrs" />
         <item itemvalue="Python.get_parameter" />
       </list>
@@ -257,77 +256,49 @@
       <option name="project" value="LOCAL" />
       <updated>1617357186166</updated>
     </task>
-    <task id="LOCAL-00013" summary="changing the package structure including the name of the package files and folders">
-      <created>1618091659663</created>
+    <task id="LOCAL-00013" summary="Corr SetEkviv file settings_ekv.py">
+      <created>1617686754115</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1618091659663</updated>
+      <updated>1617686754115</updated>
     </task>
-    <task id="LOCAL-00014" summary="changing the package structure">
-      <created>1618092134411</created>
+    <task id="LOCAL-00014" summary="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;">
+      <created>1617691801282</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1618092134412</updated>
+      <updated>1617691801282</updated>
     </task>
-    <task id="LOCAL-00015" summary="changing the package structure">
-      <created>1618092142743</created>
+    <task id="LOCAL-00015" summary="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;">
+      <created>1617708850091</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1618092142743</updated>
+      <updated>1617708850091</updated>
     </task>
-    <task id="LOCAL-00016" summary="changing the package structure folder settings">
-      <created>1618094755123</created>
+    <task id="LOCAL-00016" summary="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set">
+      <created>1617826699162</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1618094755123</updated>
+      <updated>1617826699162</updated>
     </task>
-    <task id="LOCAL-00017" summary="create folder tests and file test_settings.py">
-      <created>1618099624183</created>
+    <task id="LOCAL-00017" summary="Add doc. class SetDynamic module settings_ekv.py">
+      <created>1617958558455</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1618099624183</updated>
+      <updated>1617958558455</updated>
     </task>
-    <task id="LOCAL-00018" summary="corr README.md">
-      <created>1618099967868</created>
+    <task id="LOCAL-00018" summary="Rename settings_ekv.py in settings_rastr.py">
+      <created>1617958639488</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1618099967868</updated>
+      <updated>1617958639488</updated>
     </task>
-    <task id="LOCAL-00019" summary="corr README.md">
-      <created>1618099974600</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1618099974600</updated>
-    </task>
-    <task id="LOCAL-00020" summary="corr README.md">
-      <created>1618100061144</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1618100061144</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Rename RastrWin -&gt; RastrWinLib">
-      <created>1618102773259</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1618102773259</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Add doc in settings.">
-      <created>1618168922558</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1618168922558</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,19 +306,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -365,13 +324,11 @@
     <MESSAGE value="Add in file Tables_and_parametrs.py -&gt; table com_ekviv -&gt; Общие параметры эквивалентирования" />
     <MESSAGE value="Add file object_rastr.py -&gt; RASTR;&#10;Add class SetEkviv and file settings_ekv.py" />
     <MESSAGE value="Corr OAPV_calc.py -&gt; add new function" />
-    <MESSAGE value="changing the package structure including the name of the package files and folders" />
-    <MESSAGE value="changing the package structure" />
-    <MESSAGE value="changing the package structure folder settings" />
-    <MESSAGE value="create folder tests and file test_settings.py" />
-    <MESSAGE value="corr README.md" />
-    <MESSAGE value="Rename RastrWin -&gt; RastrWinLib" />
-    <MESSAGE value="Add doc in settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add doc in settings." />
+    <MESSAGE value="Corr SetEkviv file settings_ekv.py" />
+    <MESSAGE value="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;" />
+    <MESSAGE value="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set" />
+    <MESSAGE value="Add doc. class SetDynamic module settings_ekv.py" />
+    <MESSAGE value="Rename settings_ekv.py in settings_rastr.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename settings_ekv.py in settings_rastr.py" />
   </component>
 </project>
