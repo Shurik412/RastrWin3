@@ -15,7 +15,6 @@ def equivalent_gen(viborka_gen):
     sel_remove = RemoveSelObjects(rastr_win=RASTR)
     sel_remove.remove_sel_vetv()
     sel_remove.remove_sel_node()
-    sel_remove.remove_sel_generator()
 
     SetEkviv(rastr_win=RASTR).set(selekv=0,
                                   met_ekv=0,
@@ -79,7 +78,6 @@ def equivalent_smart(viborka_rayon):
     sel_remove = RemoveSelObjects(rastr_win=RASTR)
     sel_remove.remove_sel_node()
     sel_remove.remove_sel_vetv()
-    sel_remove.remove_sel_generator()
 
     SetEkviv(rastr_win=RASTR).set(selekv=0,
                                   met_ekv=0,

@@ -30,20 +30,21 @@ regime.rgm()
 remove_obj_sel = RemoveSelObjects(rastr_win=RASTR, switch_command_line=True)
 remove_obj_sel.remove_sel_node()
 remove_obj_sel.remove_sel_vetv()
-remove_obj_sel.remove_sel_generator()
 
-SetEkviv(rastr_win=RASTR).set(selekv=0,
-                              met_ekv=0,
-                              tip_ekv=0,
-                              ekvgen=0,
-                              tip_gen=1,
-                              kfc_x='',
-                              pot_gen=0,
-                              kpn='',
-                              tip_sxn=0,
-                              smart=0,
-                              zmax=1000,
-                              otm_n=0)
+set_ekviv = SetEkviv(rastr_win=RASTR)
+set_ekviv.set(selekv=0,
+              met_ekv=0,
+              tip_ekv=0,
+              ekvgen=0,
+              tip_gen=1,
+              kfc_x='',
+              pot_gen=0,
+              kpn='',
+              tip_sxn=0,
+              smart=0,
+              zmax=1000,
+              otm_n=0)
+
 equivalent.ekv()
 equivalent_gen(viborka_gen='(na=102 | na=103 | na=104 | na=105 | na=106 | na=107 | na=108 | na=109)')
 equivalent_smart(viborka_rayon='(na=102 | na=103 | na=104 | na=105 | na=106 | na=107 | na=108 | na=109)')

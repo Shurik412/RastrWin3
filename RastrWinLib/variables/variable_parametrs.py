@@ -120,30 +120,47 @@ class VariableDefRowId:
 
 
 if __name__ == '__main__':
-    import win32com.client
     from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.shablon import shablon_file_dynamic as sh_rst, \
-        shablon_file_scenario as sh_scn, shablon_file_automation as sh_dfw
-    from RastrWinLib.calculation.dynamic import Dynamic
+    from RastrWinLib.loading.shablon import shablon_file_regime as sh_rg2
     from RastrWinLib.directory_rastrwin.dir_test_rastr import file_RUSTab_9_rst, file_RUSTab_9_scn
     from icecream import ic
+    from RastrWinLib.AstraRastr import RASTR
+    from RastrWinLib.tables.tables_attributes import com_ekviv_attributes, com_ekviv_table
 
-    Rastr = win32com.client.Dispatch('Astra.Rastr')
+    file = r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\02-БРМ Зима максимум [уст].rg2'
 
-    load_file(rastr_win=Rastr, file_path=file_RUSTab_9_rst, shablon=sh_rst, switch_command_line=True)
-    load_file(rastr_win=Rastr, file_path=file_RUSTab_9_scn, shablon=sh_scn, switch_command_line=True)
-    load_file(rastr_win=Rastr, shablon=sh_dfw, switch_command_line=True)
+    load_file(rastr_win=RASTR, file_path=file_RUSTab_9_rst, shablon=sh_rg2, switch_command_line=True)
 
-    dyn = Dynamic(rastr_win=Rastr, calc_time=1, snap_max_count=1, switch_command_line=False)
+    var1 = VariableDefRowId(rastr_win=RASTR,
+                            table=com_ekviv_table,
+                            switch_command_line=True)
 
-    var1 = VariableSetSel(rastr_win=Rastr,
-                          table='Generator',
-                          column='P',
-                          key='Num=2',
-                          switch_command_line=True)
-    ic(var1.get())
-    var1.make_changes(value=153)
-    ic(var1.get())
+    list_key = []
+    for key in com_ekviv_attributes.keys():
+        list_key.append(key)
 
-    var1.make_changes(value=180)
-    ic(var1.get())
+    selekv = 0
+    met_ekv = 0
+    tip_ekv = 0
+    ekvgen = 0
+    tip_gen = 1
+    kfc_x = ''
+    pot_gen = 0
+    kpn = ''
+    tip_sxn = 0
+    smart = 0
+    zmax = 1000
+    otm_n = 0
+
+    var1.make_changes(column=list_key[0], row_id=0, value=selekv)
+    var1.make_changes(column=list_key[1], row_id=0, value=met_ekv)
+    var1.make_changes(column=list_key[2], row_id=0, value=tip_ekv)
+    var1.make_changes(column=list_key[3], row_id=0, value=ekvgen)
+    var1.make_changes(column=list_key[4], row_id=0, value=tip_gen)
+    var1.make_changes(column=list_key[5], row_id=0, value=kfc_x)
+    var1.make_changes(column=list_key[6], row_id=0, value=pot_gen)
+    var1.make_changes(column=list_key[7], row_id=0, value=kpn)
+    var1.make_changes(column=list_key[8], row_id=0, value=tip_sxn)
+    var1.make_changes(column=list_key[9], row_id=0, value=smart)
+    var1.make_changes(column=list_key[10], row_id=0, value=zmax)
+    var1.make_changes(column=list_key[11], row_id=0, value=otm_n)

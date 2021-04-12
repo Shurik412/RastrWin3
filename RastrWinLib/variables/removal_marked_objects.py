@@ -27,9 +27,8 @@ class RemoveSelObjects:
         """
         table_ = self.rastr_win.Tables(table)
         table_.SetSel('')
-        table_.Cols('sel').Calc('0')
         if self.switch_command_line is not False:
-            print(f'В таблице "{table_.name}", были удалены все выделения в столбце [sel].')
+            print(f'В таблице "{table_.name}", были изменены все выделения в столбце [sel].')
         return True
 
     def remove_sel_node(self):
@@ -42,7 +41,7 @@ class RemoveSelObjects:
         table_name = node_table
         table = self.rastr_win.Tables(table_name)
         table.SetSel('')
-        table.Cols('sel').Cals('0')
+        table.Cols('sel').Calc(0)
         if self.switch_command_line is not False:
             print(f'В таблице "{table_name}", были удалены все выделения в столбце [sel].')
         return True
@@ -57,22 +56,8 @@ class RemoveSelObjects:
         table_name = vetv_table
         table = self.rastr_win.Tables(table_name)
         table.SetSel('')
-        table.Cols('sel').Cals('0')
+        table.Cols('sel').Calc(0)
         if self.switch_command_line is not False:
-            print(f'В таблице "{table_name}", были удалены все выделения в столбце [sel].')
+            print(f'В таблице "{table_name}", были изменены все выделения в столбце [sel].')
         return True
 
-    def remove_sel_generator(self):
-        """
-        Removes the selection of objects in the table "Generator".
-
-        :return: True
-        :rtype: bool
-        """
-        table_name = generator_table
-        table = self.rastr_win.Tables(table_name)
-        table.SetSel('')
-        table.Cols('sel').Cals('0')
-        if self.switch_command_line is not False:
-            print(f'В таблице "{table_name}", были удалены все выделения в столбце [sel].')
-        return True

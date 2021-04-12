@@ -9,14 +9,20 @@ class SetEkviv(VariableDefRowId):
     Класс выставляет параметров настройки "Эквивалент"
     """
 
-    def __init__(self, rastr_win=RASTR, table=com_ekviv_table):
+    def __init__(self,
+                 rastr_win=RASTR,
+                 table=com_ekviv_table,
+                 switch_command_line=False):
+
         self.rastr_win = rastr_win
+        self.table = table
         self.list_key = []
         for key in com_ekviv_attributes.keys():
             self.list_key.append(key)
+        self.switch_command_line = switch_command_line
         self.variable_def_rowid = VariableDefRowId.__init__(self,
-                                                            rastr_win=rastr_win,
-                                                            table=table,
+                                                            rastr_win=self.rastr_win,
+                                                            table=self.table,
                                                             switch_command_line=True)
 
     def set(self,
@@ -67,3 +73,30 @@ class SetEkviv(VariableDefRowId):
                 f'Внесены изменения в настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv)')
         else:
             return True
+
+
+if __name__ == '__main__':
+    from RastrWinLib.loading.load import load_file
+    from RastrWinLib.loading.shablon import shablon_file_regime
+    from RastrWinLib.tables.tables_attributes import com_ekviv_table
+    from RastrWinLib.AstraRastr import RASTR
+
+    load_file(rastr_win=RASTR,
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\02-БРМ Зима максимум [уст].rg2',
+              shablon=shablon_file_regime,
+              switch_command_line=True)
+
+    set_equi = SetEkviv(rastr_win=RASTR, switch_command_line=True, table=com_ekviv_table)
+    set_equi.set(
+        selekv=0,
+        met_ekv=0,
+        tip_ekv=0,
+        ekvgen=0,
+        tip_gen=1,
+        kfc_x='',
+        pot_gen=0,
+        kpn='',
+        tip_sxn=0,
+        smart=0,
+        zmax=1000,
+        otm_n=0)
