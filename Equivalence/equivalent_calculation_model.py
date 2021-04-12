@@ -8,6 +8,8 @@ from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import shablon_file_regime
 from RastrWinLib.settings.equivalence import SetEkviv
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
+from gen_equivalent import equivalent_gen
+from gen_equivalent import equivalent_smart
 
 print('*********************************************')
 print('*********** Эквивалентирование **************')
@@ -29,21 +31,18 @@ remove_obj_sel.remove_sel_node()
 remove_obj_sel.remove_sel_vetv()
 remove_obj_sel.remove_sel_generator()
 
-settings_com_ekviv = SetEkviv(rastr_win=RASTR)
-settings_com_ekviv.set(selekv=0,
-                       met_ekv=0,
-                       tip_ekv=0,
-                       ekvgen=0,
-                       tip_gen=1,
-                       kfc_x='',
-                       pot_gen=0,
-                       kpn='',
-                       tip_sxn=0,
-                       smart=0,
-                       zmax=1000,
-                       otm_n=0)
+SetEkviv(rastr_win=RASTR).set(selekv=0,
+                              met_ekv=0,
+                              tip_ekv=0,
+                              ekvgen=0,
+                              tip_gen=1,
+                              kfc_x='',
+                              pot_gen=0,
+                              kpn='',
+                              tip_sxn=0,
+                              smart=0,
+                              zmax=1000,
+                              otm_n=0)
 equivalent.ekv()
-
-
-
-
+equivalent_gen(viborka_gen='')
+equivalent_smart(viborka_rayon='')

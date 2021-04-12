@@ -11,9 +11,10 @@ from RastrWinLib.variables.variable_parametrs import FindNextSel, VariableDefRow
 
 
 def equivalent_gen(viborka_gen):
-    RemoveSelObjects(rastr_win=RASTR).remove_sel_vetv()
-    RemoveSelObjects(rastr_win=RASTR).remove_sel_node()
-    RemoveSelObjects(rastr_win=RASTR).remove_sel_generator()
+    sel_remove = RemoveSelObjects(rastr_win=RASTR)
+    sel_remove.remove_sel_vetv()
+    sel_remove.remove_sel_node()
+    sel_remove.remove_sel_generator()
 
     SetEkviv(rastr_win=RASTR).set(selekv=0,
                                   met_ekv=0,
@@ -38,6 +39,7 @@ def equivalent_gen(viborka_gen):
         row_vetv_in_ny_one = FindNextSel(rastr_win=RASTR,
                                          table=vetv_table).row(
             key=f'(ip.uhom<110 & iq=" & {ny_one} & ")|(iq.uhom<110 & ip=" & {ny_one} & ")')
+
         while row_vetv_in_ny_one != (-1):
             ip_one = GettingParameter(rastr_win=RASTR, table=vetv_table, column='ip').get(row_id=row_vetv_in_ny_one)
             iq_one = GettingParameter(rastr_win=RASTR, table=vetv_table, column='iq').get(row_id=row_vetv_in_ny_one)
@@ -73,9 +75,10 @@ def equivalent_gen(viborka_gen):
 
 
 def equivalent_smart(viborka_rayon):
-    RemoveSelObjects(rastr_win=RASTR).remove_sel_node()
-    RemoveSelObjects(rastr_win=RASTR).remove_sel_vetv()
-    RemoveSelObjects(rastr_win=RASTR).remove_sel_generator()
+    sel_remove = RemoveSelObjects(rastr_win=RASTR)
+    sel_remove.remove_sel_node()
+    sel_remove.remove_sel_vetv()
+    sel_remove.remove_sel_generator()
 
     SetEkviv(rastr_win=RASTR).set(selekv=0,
                                   met_ekv=0,
@@ -97,5 +100,4 @@ def equivalent_smart(viborka_rayon):
                                              formula=1)
 
     Equivalent(rastr_win=RASTR, switch_command_line=True).ekv()
-
 
