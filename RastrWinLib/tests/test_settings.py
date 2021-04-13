@@ -10,7 +10,7 @@ from RastrWinLib.settings.ut_common import UtCommon
 load_f = LoadRUSTab(rastr_win=RASTR, shablon=shablon_dynamic, switch_command_line=True)
 load_f.load(file_path='')
 
-SetEkviv(rastr_win=RASTR).set(selekv=0,
+selekv=0,
                               met_ekv=0,
                               tip_ekv=0,
                               ekvgen=0,
@@ -79,3 +79,4 @@ UtCommon(rastr_win=RASTR).set(maxs=5,
                               kfc=1.0)
 
 save_file(rastr_win=RASTR, file_path='')
+

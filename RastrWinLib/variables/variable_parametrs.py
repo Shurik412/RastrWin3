@@ -112,7 +112,8 @@ class VariableDefRowId:
             print(f'Ошибка: не задано значение value в методе make_changes.')
         if self.switch_command_line is not None:
             print(f'Внесены изменения:\n'
-                  f'\t таблица: {self.table.Description} => параметр: {column} => индекс объекта: {row_id}')
+                  f'\t - таблица: <{self.table.Description}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
+                  f'\t\t    значение => [{value}]')
 
     def get(self, column, row_id):
         column_ = self.table.Cols(column)
