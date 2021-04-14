@@ -7,7 +7,7 @@ from RastrWinLib.getting.get import GetTableCommonInfo
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_regime
-from RastrWinLib.settings.equivalence import SetEkviv
+from RastrWinLib.settings.equivalence import set_com_ekviv
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
 from gen_equivalent import equivalent_gen
 from gen_equivalent import equivalent_smart
@@ -31,8 +31,7 @@ remove_obj_sel = RemoveSelObjects(rastr_win=RASTR, switch_command_line=True)
 remove_obj_sel.remove_sel_node()
 remove_obj_sel.remove_sel_vetv()
 
-set_ekviv = SetEkviv(rastr_win=RASTR)
-set_ekviv.set(selekv=0,
+set_com_ekviv(selekv=0,
               met_ekv=0,
               tip_ekv=0,
               ekvgen=0,

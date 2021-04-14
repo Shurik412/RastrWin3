@@ -4,7 +4,7 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.equivalent import Equivalent
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.getting.get import GettingParameterInstance
-from RastrWinLib.settings.equivalence import SetEkviv
+from RastrWinLib.settings.equivalence import set_com_ekviv
 from RastrWinLib.tables.tables_attributes import node_table, vetv_table
 from RastrWinLib.variables.group_correction import GroupCorr
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
@@ -16,18 +16,18 @@ def equivalent_gen(viborka_gen):
     sel_remove.remove_sel_vetv()
     sel_remove.remove_sel_node()
 
-    SetEkviv(rastr_win=RASTR).set(selekv=0,
-                                  met_ekv=0,
-                                  tip_ekv=0,
-                                  ekvgen=0,
-                                  tip_gen=1,
-                                  kfc_x='',
-                                  pot_gen=0,
-                                  kpn='',
-                                  tip_sxn=0,
-                                  smart=0,
-                                  zmax=1000,
-                                  otm_n=0)
+    set_com_ekviv(selekv=0,
+                  met_ekv=0,
+                  tip_ekv=0,
+                  ekvgen=0,
+                  tip_gen=1,
+                  kfc_x='',
+                  pot_gen=0,
+                  kpn='',
+                  tip_sxn=0,
+                  smart=0,
+                  zmax=1000,
+                  otm_n=0)
 
     row_viborki = FindNextSel(rastr_win=RASTR, table=node_table).row(key=viborka_gen)
 
@@ -60,18 +60,18 @@ def equivalent_gen(viborka_gen):
 
         row_viborki = FindNextSel(rastr_win=RASTR, table=node_table).row(key=viborka_gen)
 
-        SetEkviv(rastr_win=RASTR).set(selekv=0,
-                                      met_ekv=0,
-                                      tip_ekv=0,
-                                      ekvgen=0,
-                                      tip_gen=1,
-                                      kfc_x='',
-                                      pot_gen=0,
-                                      kpn='',
-                                      tip_sxn=0,
-                                      smart=0,
-                                      zmax=1000,
-                                      otm_n=0)
+        set_com_ekviv(selekv=0,
+                      met_ekv=0,
+                      tip_ekv=0,
+                      ekvgen=0,
+                      tip_gen=1,
+                      kfc_x='',
+                      pot_gen=0,
+                      kpn='',
+                      tip_sxn=0,
+                      smart=0,
+                      zmax=1000,
+                      otm_n=0)
 
 
 def equivalent_smart(viborka_rayon):
@@ -79,18 +79,18 @@ def equivalent_smart(viborka_rayon):
     sel_remove.remove_sel_node()
     sel_remove.remove_sel_vetv()
 
-    SetEkviv(rastr_win=RASTR).set(selekv=0,
-                                  met_ekv=0,
-                                  tip_ekv=0,
-                                  ekvgen=0,
-                                  tip_gen=1,
-                                  kfc_x='',
-                                  pot_gen=0,
-                                  kpn='',
-                                  tip_sxn=0,
-                                  smart=1,
-                                  zmax=1000,
-                                  otm_n=0)
+    set_com_ekviv(selekv=0,
+                  met_ekv=0,
+                  tip_ekv=0,
+                  ekvgen=0,
+                  tip_gen=1,
+                  kfc_x='',
+                  pot_gen=0,
+                  kpn='',
+                  tip_sxn=0,
+                  smart=1,
+                  zmax=1000,
+                  otm_n=0)
 
     GroupCorr(rastr_win=RASTR,
               table=node_table,
@@ -99,4 +99,3 @@ def equivalent_smart(viborka_rayon):
                                              formula=1)
 
     Equivalent(rastr_win=RASTR, switch_command_line=True).ekv()
-
