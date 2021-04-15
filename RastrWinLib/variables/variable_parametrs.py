@@ -4,7 +4,7 @@ from RastrWinLib.AstraRastr import RASTR
 
 class FindNextSel:
     """
-
+    FindNextSel
     """
 
     def __init__(self, table, rastr_win=RASTR):
@@ -12,7 +12,7 @@ class FindNextSel:
         self.Tables = self.RastrWin.Tables(str(table))
 
     def row(self, key):
-        self.Tables.SetSel(f'{key}')
+        self.Tables.SetSel(f'{str(key)}')
         row_id = self.Tables.FindNextSel(-1)
         if row_id == (-1):
             return -1

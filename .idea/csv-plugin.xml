@@ -80,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tests\loging.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tests\test_clear_Python.py">
           <value>
             <Attribute>

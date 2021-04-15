@@ -3,19 +3,35 @@
 from contextlib import contextmanager
 
 
+# @contextmanager
+# def managed_file(name, text):
+#     global f
+#     try:
+#         f = open(name, 'w')
+#         yield f.write(f'{text}\n')
+#     finally:
+#         f.close()
+
 @contextmanager
-def managed_file(name):
-    global f
-    try:
-        f = open(name, 'w')
-        yield f
-    finally:
-        f.close()
+def text_msg(name, text):
+    def managed_file(name):
+        global f
+        try:
+            f = open(name, 'w')
+            yield f
+        finally:
+            f.close()
+
+    with managed_file(name) as f:
+        f.write(f'{text}\n')
 
 
-with managed_file('hello.txt') as f:
-    f.write('Привет 1\n')
-    f.write('Привет 2')
+# with managed_file('hello.txt', 'sdfsdfsdfsdf') as f:
+
+# managed_file('hello.txt', '11111111')
+
+text_msg('g.txt', 'sadasdasda111')
+text_msg('g.txt', '22222')
 
 
 class Indenter:
@@ -32,11 +48,10 @@ class Indenter:
     def print(self, text):
         print(' ' * self.level + text)
 
-
-with Indenter() as indent:
-    indent.print('привет!')
-    with indent:
-        indent.print('здорово')
-        with indent:
-            indent.print('бонжур')
-            indent.print('эй')
+# with Indenter() as indent:
+#     indent.print('привет!')
+#     with indent:
+#         indent.print('здорово')
+#         with indent:
+#             indent.print('бонжур')
+#             indent.print('эй')

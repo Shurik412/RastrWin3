@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.tables.tables_attributes import com_ekviv_table, com_ekviv_attributes
 from RastrWinLib.variables.variable_parametrs import VariableDefRowId
@@ -40,7 +41,7 @@ def set_com_ekviv(selekv=0,
 
     variable_def_rowid = VariableDefRowId(rastr_win=RASTR,
                                           table=com_ekviv_table,
-                                          switch_command_line=True)
+                                          switch_command_line=False)
 
     variable_def_rowid.make_changes(column=list_key[0], row_id=0, value=selekv)
     variable_def_rowid.make_changes(column=list_key[1], row_id=0, value=met_ekv)
