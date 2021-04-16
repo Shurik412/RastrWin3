@@ -22,7 +22,6 @@ pip install RastrWinLib
 ```python
 import RastrWinLib
 
-
 ```
 
 ## Contributing

@@ -27,7 +27,11 @@ def equivalent_gen(viborka_gen):
                   smart=0,
                   zmax=1000,
                   otm_n=0)
-    row_viborki = FindNextSel(rastr_win=RASTR, table=node_table).row(key=viborka_gen)
+
+    tables = RASTR.Tables(str(node_table))
+    tables.SetSel(f'{str(viborka_gen)}')
+    row_viborki = tables.FindNextSel(-1)
+
     while row_viborki != (-1):
         ny_one = GettingParameterInstance(rastr_win=RASTR,
                                           table=node_table,
@@ -60,6 +64,7 @@ def equivalent_gen(viborka_gen):
         tables = RASTR.Tables(str(node_table))
         tables.SetSel(f'{str(viborka_gen)}')
         row_viborki = tables.FindNextSel(row_viborki)
+
     set_com_ekviv(selekv=0,
                   met_ekv=0,
                   tip_ekv=0,
