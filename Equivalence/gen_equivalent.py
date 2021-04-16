@@ -27,19 +27,21 @@ def equivalent_gen(viborka_gen):
                   smart=0,
                   zmax=1000,
                   otm_n=0)
-
-    tables = RASTR.Tables(str(node_table))
-    tables.SetSel(f'{str(viborka_gen)}')
+    tables = RASTR.Tables(node_table)
+    tables.SetSel(f'{viborka_gen}')
     row_viborki = tables.FindNextSel(-1)
 
+    # ny_obj = GettingParameterInstance(rastr_win=RASTR,
+    #                                   table=node_table,
+    #                                   key=row_viborki,
+    #                                   switch_command_line=False)
+    # ny_one = ny_obj.get(column='ny')
     while row_viborki != (-1):
-        ny_one = GettingParameterInstance(rastr_win=RASTR,
-                                          table=node_table,
-                                          key=row_viborki,
-                                          switch_command_line=False).get(column='ny')
-        tables = RASTR.Tables(str(vetv_table))
+        ny_one = RASTR.Tables(node_table).Cols('ny').Z(row_viborki)
+        tables = RASTR.Tables(vetv_table)
         tables.SetSel(f'(ip.uhom<110 & iq=" & {ny_one} & ")|(iq.uhom<110 & ip=" & {ny_one} & ")')
         row_vetv_in_ny_one = tables.FindNextSel(-1)
+        print(f'{ny_one} = {row_vetv_in_ny_one}')
         while row_vetv_in_ny_one != (-1):
             ip_one = GettingParameter(rastr_win=RASTR, table=vetv_table, column='ip').get(row_id=row_vetv_in_ny_one)
             iq_one = GettingParameter(rastr_win=RASTR, table=vetv_table, column='iq').get(row_id=row_vetv_in_ny_one)
@@ -47,12 +49,11 @@ def equivalent_gen(viborka_gen):
                 ny_two = iq_one
             else:
                 ny_two = ip_one
-
             # row_vetv_in_ny_two = FindNextSel(rastr_win=RASTR, table=node_table).row(key=f'ny={ny_two}')
             tables = RASTR.Tables(str(node_table))
             tables.SetSel(f'ny={ny_two}')
             row_vetv_in_ny_two = tables.FindNextSel(-1)
-
+            print(f'row_vetv_in_ny_two = {row_vetv_in_ny_two}')
             if row_vetv_in_ny_two != (-1):
                 VariableDefRowId(rastr_win=RASTR,
                                  table=node_table,

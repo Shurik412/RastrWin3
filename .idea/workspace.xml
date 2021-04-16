@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,8 +153,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.equivalent_calculation_model" />
-        <item itemvalue="Python.test_clear_Python" />
         <item itemvalue="Python.gen_equivalent" />
+        <item itemvalue="Python.test_clear_Python" />
         <item itemvalue="Python.loging" />
         <item itemvalue="Python.test_settings" />
       </list>
@@ -349,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618573202110</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Create dir RegimNote">
+      <created>1618575011158</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1618575011158</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -387,6 +396,7 @@
     <MESSAGE value="Add settings function ...&#10;Corr print result variable_parametrs.py" />
     <MESSAGE value="Corr gen_equivalent.py" />
     <MESSAGE value="Corr equivalent_calculation_model.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr equivalent_calculation_model.py" />
+    <MESSAGE value="Create dir RegimNote" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create dir RegimNote" />
   </component>
 </project>
