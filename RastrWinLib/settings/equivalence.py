@@ -22,6 +22,7 @@ def set_com_ekviv(selekv=0,
     list_key = []
     for key in com_ekviv_attributes.keys():
         list_key.append(key)
+
     """
     Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):
 
@@ -41,7 +42,7 @@ def set_com_ekviv(selekv=0,
 
     variable_def_rowid = VariableDefRowId(rastr_win=RASTR,
                                           table=com_ekviv_table,
-                                          switch_command_line=False)
+                                          switch_command_line=switch_command_line)
 
     variable_def_rowid.make_changes(column=list_key[0], row_id=0, value=selekv)
     variable_def_rowid.make_changes(column=list_key[1], row_id=0, value=met_ekv)
