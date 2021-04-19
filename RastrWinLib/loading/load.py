@@ -3,9 +3,14 @@ from os import path
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.loading.shablon import shablon_file_automation
+from RastrWinLib.log_tools.tools import separator_grid
 
 
-def load_file(rastr_win=RASTR, rg_kod=1, file_path='', shablon=shablon_file_automation, switch_command_line=False):
+def load_file(rastr_win=RASTR,
+              rg_kod=1,
+              file_path='',
+              shablon=shablon_file_automation,
+              switch_command_line=False):
     """
       par: RG_KOD – числовое значение, определяет режим загрузки при наличии таблицы
                в рабочей области и может быть одним из следующих:
@@ -27,14 +32,13 @@ def load_file(rastr_win=RASTR, rg_kod=1, file_path='', shablon=shablon_file_auto
     rastr_win.Load(rg_kod, file_path, shablon)
 
     if switch_command_line is not False:
+        print(separator_grid)
         print(f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(shablon)}".')
+        print(separator_grid)
     return True
 
 
 class LoadRUSTab:
-    """
-
-    """
 
     def __init__(self, rastr_win=RASTR, shablon=shablon_file_automation, rg_kod=1, switch_command_line=False):
         self.rastr_win = rastr_win

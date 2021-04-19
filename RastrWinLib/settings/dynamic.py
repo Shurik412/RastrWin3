@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.log_tools.tools import separator_noun
 from RastrWinLib.tables.tables_attributes import com_dynamics_table, com_dynamics_attributes
 from RastrWinLib.variables.variable_parametrs import VariableDefRowId
 
@@ -36,7 +37,7 @@ def set_dynamic(
         TreatWarningsAsErrors=0,
         EventProcess=0,
         switch_command_line=False,
-        ):
+):
     """
     Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):
 
@@ -110,10 +111,11 @@ def set_dynamic(
     variable_def_rowid.make_changes(column=list_key[29], row_id=0, value=float(EventProcess))
 
     if switch_command_line is not False:
-        return print(
+        print(separator_noun)
+        print(
             f'Внесены изменения в настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics)')
-    else:
-        return True
+        print(separator_noun)
+    return True
 
 
 class SetDynamic(VariableDefRowId):
@@ -227,13 +229,14 @@ class SetDynamic(VariableDefRowId):
         self.variable_def_rowid.make_changes(column=self.list_key[29], row_id=0, value=float(EventProcess))
 
         if self.switch_command_line is not False:
-            return print(
+            print(separator_noun)
+            print(
                 f'Внесены изменения в настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics)')
-        else:
-            return True
+            print(separator_noun)
+        return True
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     from RastrWinLib.loading.load import load_file
     from RastrWinLib.AstraRastr import RASTR
 
