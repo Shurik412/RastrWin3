@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.tables_attributes import node_table, vetv_table, generator_table
+from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.tables.tables_attributes import node_table, vetv_table
 
 
 class RemoveSelObjects:
@@ -28,7 +29,9 @@ class RemoveSelObjects:
         table_ = self.rastr_win.Tables(table)
         table_.SetSel('')
         if self.switch_command_line is not False:
+            print(separator_noun)
             print(f'В таблице "{table_.name}", были изменены все выделения в столбце [sel].')
+            print(separator_noun)
         return True
 
     def remove_sel_node(self):
@@ -43,7 +46,9 @@ class RemoveSelObjects:
         table.SetSel('')
         table.Cols('sel').Calc(0)
         if self.switch_command_line is not False:
+            print(separator_noun)
             print(f'В таблице "{table_name}", были удалены все выделения в столбце [sel].')
+            print(separator_noun)
         return True
 
     def remove_sel_vetv(self):
@@ -58,6 +63,7 @@ class RemoveSelObjects:
         table.SetSel('')
         table.Cols('sel').Calc(0)
         if self.switch_command_line is not False:
+            print(separator_noun)
             print(f'В таблице "{table_name}", были изменены все выделения в столбце [sel].')
+            print(separator_noun)
         return True
-
