@@ -3,8 +3,8 @@ from time import time, localtime, strftime
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.log_tools.tools import separator_grid
+from RastrWinLib.tables.tables_attributes import com_dynamics_table
 from RastrWinLib.variables.variable_parametrs import VariableRowId
-from RastrWinLib.tables.tables_attributes import com_dynamics_table, com_dynamics_attributes
 
 
 class Dynamic:

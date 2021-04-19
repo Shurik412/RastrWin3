@@ -2,6 +2,7 @@
 from time import time, localtime, strftime
 
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.log_tools.tools import separator_noun
 
 
 class Equivalent:
@@ -9,7 +10,9 @@ class Equivalent:
     Эквивалентирование – упрощение электрической сети
     """
 
-    def __init__(self, rastr_win=RASTR, switch_command_line=False):
+    def __init__(self,
+                 rastr_win=RASTR,
+                 switch_command_line=False):
         self.rastr_win = rastr_win
         self.switch_command_line = switch_command_line
 
@@ -21,6 +24,7 @@ class Equivalent:
             start_time = time()
         else:
             start_time = 0
+        print(separator_noun)
         print(f'Запуск "Эквивалентирование режима":')
         kod = self.rastr_win.Ekv(par)
         if self.switch_command_line is not False:
@@ -33,4 +37,5 @@ class Equivalent:
             time_calc = time() - start_time
             print(
                 f'\tВремя расчета режима: {strftime("M: %M [минут] S: %S [секунд]", localtime(time_calc))} (Seconds: {"%.2f" % (time_calc)} [секунд])')
+        print(separator_noun)
         return kod

@@ -2,6 +2,7 @@
 from time import time, localtime, strftime
 
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.log_tools.tools import separator_noun
 
 
 class SteadyState:
@@ -28,6 +29,7 @@ class SteadyState:
             start_time = time()
         else:
             start_time = 0
+        print(separator_noun)
         print(f'Запуск "Расчет режима":')
         kod = self.rastr_win.Rgm(self.par)
         if self.switch_command_line is not False:
@@ -40,4 +42,5 @@ class SteadyState:
             time_calc = time() - start_time
             print(
                 f'\tВремя расчета режима: {strftime("M: %M [минут] S: %S [секунд]", localtime(time_calc))} (Seconds: {"%.2f" % (time_calc)} [секунд])')
+        print(separator_noun)
         return kod
