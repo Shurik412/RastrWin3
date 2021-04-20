@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Corr Class Dynamic, Equivalence, Regim">
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/save.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
-    </list>
-    <list id="7ec56b8e-e0a7-4c4a-9b11-76280528142f" name="Revert &quot;Corr settings and Equivalence&quot;" comment="Revert &quot;Corr settings and Equivalence&quot;&#10;&#10;This reverts commit 4d369a5b">
       <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" afterDir="false" />
-    </list>
-    <list id="f64d11bb-1470-4a87-82aa-c435ed2c753e" name="Revert &quot;Corr settings and Equivalence&quot;-3" comment="Revert &quot;Corr settings and Equivalence&quot;&#10;&#10;This reverts commit 4d369a5b">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,28 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="ohrimenko_ag &lt;shurik412@mail.ru&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="20" changelist="f64d11bb-1470-4a87-82aa-c435ed2c753e" />
-        <range start1="3" end1="6" start2="21" end2="24" changelist="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" />
-        <range start1="10" end1="10" start2="28" end2="31" changelist="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" />
-        <range start1="24" end1="24" start2="45" end2="50" changelist="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" />
-        <range start1="25" end1="25" start2="51" end2="67" changelist="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" />
-        <range start1="158" end1="158" start2="200" end2="201" changelist="f64d11bb-1470-4a87-82aa-c435ed2c753e" />
-        <range start1="159" end1="160" start2="202" end2="202" changelist="f64d11bb-1470-4a87-82aa-c435ed2c753e" />
-        <range start1="165" end1="166" start2="207" end2="211" changelist="f64d11bb-1470-4a87-82aa-c435ed2c753e" />
-        <range start1="363" end1="364" start2="408" end2="416" changelist="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" />
-        <range start1="402" end1="403" start2="454" end2="456" changelist="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1qTtGocZwbW81mbZbHFM5r6CGdD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -380,21 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618573202110</updated>
     </task>
-    <task id="LOCAL-00027" summary="Corr Class Dynamic">
-      <created>1618862823889</created>
+    <task id="LOCAL-00027" summary="Create dir RegimNote">
+      <created>1618575011158</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1618862823889</updated>
+      <updated>1618575011158</updated>
     </task>
-    <task id="LOCAL-00028" summary="Corr Class Dynamic, Equivalence, Regim">
-      <created>1618863351035</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1618863351035</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,30 +396,7 @@
     <MESSAGE value="Add settings function ...&#10;Corr print result variable_parametrs.py" />
     <MESSAGE value="Corr gen_equivalent.py" />
     <MESSAGE value="Corr equivalent_calculation_model.py" />
-    <MESSAGE value="Corr Class Dynamic" />
-    <MESSAGE value="Corr Class Dynamic, Equivalence, Regim" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Class Dynamic, Equivalence, Regim" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="326" y="0" key="CommitChangelistDialog2" timestamp="1618860694975">
-      <screen x="65" y="0" width="1301" height="768" />
-    </state>
-    <state x="326" y="0" key="CommitChangelistDialog2/65.0.1301.768@65.0.1301.768" timestamp="1618860694975" />
-    <state x="157" y="92" width="1117" height="584" key="DiffContextDialog" timestamp="1618863141677">
-      <screen x="65" y="0" width="1301" height="768" />
-    </state>
-    <state x="157" y="92" width="1117" height="584" key="DiffContextDialog/65.0.1301.768@65.0.1301.768" timestamp="1618863141677" />
-    <state x="594" y="282" key="Github.ShareDialog" timestamp="1618862872552">
-      <screen x="65" y="0" width="1301" height="768" />
-    </state>
-    <state x="594" y="282" key="Github.ShareDialog/65.0.1301.768@65.0.1301.768" timestamp="1618862872552" />
-    <state x="563" y="298" key="VCS.ChangelistChooser" timestamp="1618860648383">
-      <screen x="65" y="0" width="1301" height="768" />
-    </state>
-    <state x="563" y="298" key="VCS.ChangelistChooser/65.0.1301.768@65.0.1301.768" timestamp="1618860648383" />
-    <state x="307" y="117" key="Vcs.Push.Dialog.v2" timestamp="1618862887258">
-      <screen x="65" y="0" width="1301" height="768" />
-    </state>
-    <state x="307" y="117" key="Vcs.Push.Dialog.v2/65.0.1301.768@65.0.1301.768" timestamp="1618862887258" />
+    <MESSAGE value="Create dir RegimNote" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create dir RegimNote" />
   </component>
 </project>
