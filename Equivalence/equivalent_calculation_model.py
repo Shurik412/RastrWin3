@@ -10,7 +10,7 @@ from RastrWinLib.loading.shablon import shablon_file_regime
 from RastrWinLib.settings.equivalence import set_com_ekviv
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
 from gen_equivalent import equivalent_gen
-from gen_equivalent import equivalent_smart
+# from gen_equivalent import equivalent_smart
 
 print('*********************************************')
 print('*********** Эквивалентирование **************')

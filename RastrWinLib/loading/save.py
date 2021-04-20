@@ -3,7 +3,7 @@ from os import path
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.loading.shablon import shablon_file_dynamic
-from RastrWinLib.log_tools.tools import separator_star
+from RastrWinLib.log_tools.tools import separator_grid
 
 
 def save_file(rastr_win=RASTR,
@@ -19,13 +19,13 @@ def save_file(rastr_win=RASTR,
     :return: True
     """
     rastr_win.save(file_path, shablon)
-    print(separator_star)
+    print(separator_grid)
     if switch_command_line is not False:
         if file_path == '':
             print(f'Ссылка для сохранения файла не задана!')
         else:
             print(f'Файл "{path.basename(file_path)}" сохранен по шаблону "{path.basename(shablon)}".')
-    print(separator_star)
+    print(separator_grid)
     return True
 
 

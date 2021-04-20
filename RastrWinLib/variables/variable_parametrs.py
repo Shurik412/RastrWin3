@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.log_tools.tools import separator_star
 
 
 class FindNextSel:
@@ -120,48 +121,113 @@ class VariableDefRowId:
         pass
 
 
+class Variable:
+    """
+    Класс для внесени изменений
+    """
+
+    def __init__(self,
+                 rastr_win=RASTR,
+                 switch_command_line=False):
+
+        self.rastr_win = rastr_win
+        self.switch_command_line = switch_command_line
+
+    def make_changes_row(self,
+                         table=None,
+                         column=None,
+                         row_id=None,
+                         value=None):
+        """
+        make_changes_row - изменение параметра по заданному row_id
+        :param table: название таблицы RastrWin3
+        :param column: назваине колонки RastrWin3
+        :param row_id: значение строки
+        :param value: значение
+        :return:
+        """
+        print(separator_star)
+        switch_command_line_def = True
+        if table is not None:
+            table = self.rastr_win.Tables(table)
+        else:
+            switch_command_line_def = False
+            print('ERROR "Variable -> def make_changes_row()": Не задано название "table".')
+
+        if column is not None:
+            col = table.Cols(column)
+            if row_id and value is not None:
+                col.SetZ(row_id, value)
+            else:
+                switch_command_line_def = False
+                print('ERROR "Variable -> def make_changes_row()": Не задано значение "row_id или value".')
+        else:
+            switch_command_line_def = False
+            print('ERROR "Variable -> def make_changes_row()": Не задано значение "column".')
+
+        if self.switch_command_line and switch_command_line_def is not False:
+            print(f'Внесены изменения:\n'
+                  f'\t таблица: <{table.Description}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
+                  f'\t значение => [{value}]')
+        print(separator_star)
+
+    def make_changes_setsel(self,
+                            table=None,
+                            column=None,
+                            key=None,
+                            value=None):
+        """
+        make_changes_setsel -> изменение параметра по выборки SetSel(key) -> key = "ny=6516516"
+        :param table: название таблицы RastrWin3
+        :param column: название колонки RastrWin3
+        :param key: выборка SetSel("ny=52135156") -> задается в виде value='ny=52135156'
+        :param value: значение для замены
+        :return:
+        """
+        switch_command_line_def = True
+        print(separator_star)
+        table = self.rastr_win.Tables(table)
+        table.SetSel(key)
+        row_id = table.FindNextSel(-1)
+        if row_id == (-1):
+            switch_command_line_def = False
+            print('ERROR "Variable -> def make_changes_setsel()": значение row_id = (-1).')
+            print('                                               Значения заданой выборки - отсутствуют.')
+        else:
+            if value is not None:
+                col = table.Cols(column)
+                col.SetZ(row_id, value)
+                if self.switch_command_line and switch_command_line_def is not False:
+                    print(f'Внесены изменения:\n'
+                          f'\t таблица: <{table.Description}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
+                          f'\t значение => [{value}]')
+            else:
+                switch_command_line_def = False
+                print('ERROR "Variable -> def make_changes_setsel()": значение value = None.')
+        print(separator_star)
+
+
 if __name__ == '__main__':
     from RastrWinLib.loading.load import load_file
+    from RastrWinLib.loading.save import save_file
     from RastrWinLib.loading.shablon import shablon_file_regime as sh_rg2
     from RastrWinLib.directory_rastrwin.dir_test_rastr import file_RUSTab_9_rst, file_RUSTab_9_scn
-    from icecream import ic
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.tables.tables_attributes import com_ekviv_attributes, com_ekviv_table
+    from RastrWinLib.tables.tables_attributes import generator_table
 
-    file = r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\02-БРМ Зима максимум [уст].rg2'
-
+    file = r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\cx195.rg2'
     load_file(rastr_win=RASTR, file_path=file_RUSTab_9_rst, shablon=sh_rg2, switch_command_line=True)
-
-    var1 = VariableDefRowId(rastr_win=RASTR,
-                            table=com_ekviv_table,
-                            switch_command_line=True)
-
-    list_key = []
-    for key in com_ekviv_attributes.keys():
-        list_key.append(key)
-
-    selekv = 0
-    met_ekv = 0
-    tip_ekv = 0
-    ekvgen = 0
-    tip_gen = 1
-    kfc_x = ''
-    pot_gen = 0
-    kpn = ''
-    tip_sxn = 0
-    smart = 0
-    zmax = 1000
-    otm_n = 0
-
-    var1.make_changes(column=list_key[0], row_id=0, value=selekv)
-    var1.make_changes(column=list_key[1], row_id=0, value=met_ekv)
-    var1.make_changes(column=list_key[2], row_id=0, value=tip_ekv)
-    var1.make_changes(column=list_key[3], row_id=0, value=ekvgen)
-    var1.make_changes(column=list_key[4], row_id=0, value=tip_gen)
-    var1.make_changes(column=list_key[5], row_id=0, value=kfc_x)
-    var1.make_changes(column=list_key[6], row_id=0, value=pot_gen)
-    var1.make_changes(column=list_key[7], row_id=0, value=kpn)
-    var1.make_changes(column=list_key[8], row_id=0, value=tip_sxn)
-    var1.make_changes(column=list_key[9], row_id=0, value=smart)
-    var1.make_changes(column=list_key[10], row_id=0, value=zmax)
-    var1.make_changes(column=list_key[11], row_id=0, value=otm_n)
+    var1 = Variable(rastr_win=RASTR,
+                    switch_command_line=True)
+    # var1.make_changes_row(table=generator_table,
+    #                       column='P',
+    #                       row_id=1,
+    #                       value=851.12)
+    var1.make_changes_setsel(table=generator_table,
+                             column='P',
+                             key='Num=2',
+                             value=150.12)
+    save_file(rastr_win=RASTR,
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\t3.rg2',
+              shablon=sh_rg2,
+              switch_command_line=True)
