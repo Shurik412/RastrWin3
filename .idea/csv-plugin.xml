@@ -66,6 +66,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\log_tools\tools.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\settings\alt_unit.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\settings\equivalence.py">
           <value>
             <Attribute>

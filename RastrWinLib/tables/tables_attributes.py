@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 node_table = 'node'
+node_attributes_list = ['sel', 'sta', 'tip', 'ny', 'name', 'uhom']
 node_attributes = {
     'sel': '"О" Отметка узла',
     'sta': '"S" Состояние узла',
@@ -11,6 +12,7 @@ node_attributes = {
 }
 
 vetv_table = 'vetv'
+vetv_attributes_list = ['sel', 'sta', 'tip', 'ip', 'iq', 'name']
 vetv_attributes = {
     'sel': '"О" Отметка ветви',
     'sta': '"S" Состояние ветви',
@@ -21,6 +23,7 @@ vetv_attributes = {
 }
 
 generator_table = 'Generator'
+generator_attributes_list = ['sel', 'sta', 'Num', 'Name', 'Node']
 generator_attributes = {
     'sel': '"О" Отметка генератора',
     'sta': '"S" Состояние генератора',
@@ -30,6 +33,7 @@ generator_attributes = {
 }
 
 com_cxema_table = 'com_cxema'
+com_cxema_attributes_list = ['ny', 'nv', 'na', 'ny_o', 'nv_o', 'nby', 'ngen', 'ntran', 'nlep', 'nvikl', 'pg', 'pn', '']
 com_cxema_attributes = {
     'ny': 'Узлов: (Ny)',
     'nv': 'Ветвей: (Nv)',
@@ -194,6 +198,9 @@ area_attributes = {
     'pg_min': 'Минимум генерации, МВт (Pг мин)',
     'pg_max': 'Максимум генерации, МВт (Pг max)'
 }
+
+DFWAutoActionScn = 'DFWAutoActionScn'
+DFWAutoActionScn_attributes = {}
 
 if __name__ == '__main__':
     # import win32com.client

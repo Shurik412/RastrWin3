@@ -8,7 +8,7 @@ from RastrWinLib.settings.equivalence import set_com_ekviv
 from RastrWinLib.tables.tables_attributes import node_table, vetv_table
 from RastrWinLib.variables.group_correction import GroupCorr
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
-from RastrWinLib.variables.variable_parametrs import FindNextSel, VariableDefRowId
+from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
 
 
 def equivalent_gen(viborka_gen):
@@ -18,9 +18,7 @@ def equivalent_gen(viborka_gen):
     sel_remove.remove_sel_node()
     tables_node = RASTR.Tables(node_table)
     tables_vetv = RASTR.Tables(vetv_table)
-    var_node_obj = VariableDefRowId(rastr_win=RASTR,
-                                    table=node_table,
-                                    switch_command_line=False)
+    var_node_obj = Variable(rastr_win=RASTR, switch_command_line=False)
     set_com_ekviv(selekv=0,
                   met_ekv=0,
                   tip_ekv=0,
@@ -55,8 +53,9 @@ def equivalent_gen(viborka_gen):
             row_node_in_ny_two = tables_node.FindNextSel(-1)
             print(f'row_node_in_ny_two={row_node_in_ny_two}')
             if row_node_in_ny_two != (-1):
-                var_node_obj.make_changes(column='sel',
-                                          row_id=row_node_in_ny_two,
+                var_node_obj.make_changes_row(table=,
+                                              column='sel',
+                                               row_id=row_node_in_ny_two,
                                           value=1)
                 get_node = GettingParameter(rastr_win=RASTR,
                                             table=node_table,

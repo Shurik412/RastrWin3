@@ -1,76 +1,85 @@
-from RastrWinLib.variables.variable_parametrs import VariableDefRowId
-from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import shablon_file_scenario
-from RastrWinLib.loading.load import load_file
 from openpyxl import load_workbook
 
+from RastrWinLib.loading.load import load_file
+from RastrWinLib.loading.save import save_file
+from RastrWinLib.loading.shablon import shablon_file_scenario
+from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.tables.tables_attributes import DFWAutoActionScn
 
-class CreateActionsSCN(VariableDefRowId):
+
+class CreateActionsSCN(Variable):
     def __init__(self, rastr_win, dir_name_file_excel, name_list_excel, switch_command_line=False):
         self.rastr_win = rastr_win
         load_file(rastr_win=rastr_win, shablon=shablon_file_scenario)
         excel_wb = load_workbook(filename=dir_name_file_excel, data_only=True)
         self.ws = excel_wb[name_list_excel]
-        VariableDefRowId.__init__(self, rastr_win=self.rastr_win, table="DFWAutoActionScn",
-                                  switch_command_line=switch_command_line)
+        Variable.__init__(self, rastr_win=self.rastr_win,
+                          switch_command_line=switch_command_line)
 
-    def create(self, start=14, finish=32):
-        self.table.DelRows()
+    def create(self, table=DFWAutoActionScn, start=14, finish=32):
+        table.DelRows()
         for index in range(start, finish):
-            self.table.AddRow()
-            VariableDefRowId.make_changes(self, column='State', row_id=index - start, value=0)  # Cocт
-            VariableDefRowId.make_changes(self, column='Id', row_id=index - start,
-                                          value=self.ws[f'A{index}'].value)  # Id группы
-            VariableDefRowId.make_changes(self, column='ParentId', row_id=index - start,
-                                          value=self.ws[f'B{index}'].value)  # N группы
-            VariableDefRowId.make_changes(self, column='Type', row_id=index - start,
-                                          value=self.ws[f'C{index}'].value)  # Тип
-            VariableDefRowId.make_changes(self, column='Name', row_id=index - start,
-                                          value=self.ws[f'D{index}'].value)  # Название
-            VariableDefRowId.make_changes(self, column='Formula', row_id=index - start,
-                                          value=self.ws[f'E{index}'].value)  # Формула
-            VariableDefRowId.make_changes(self, column='ObjectClass', row_id=index - start,
-                                          value=self.ws[f'F{index}'].value)  # Тип объекта
-            VariableDefRowId.make_changes(self, column='ObjectProp', row_id=index - start,
-                                          value=self.ws[f'G{index}'].value)  # Свойство объекта
-            VariableDefRowId.make_changes(self, column='ObjectKey', row_id=index - start,
-                                          value=self.ws[f'H{index}'].value)  # Ключ объекта
-            VariableDefRowId.make_changes(self, column='OutputMode', row_id=index - start, value=0)  # Режим
-            VariableDefRowId.make_changes(self, column='RunsCount', row_id=index - start, value=1)  # N сраб
-            VariableDefRowId.make_changes(self, column='TimeStart', row_id=index - start, value=0)  # Время начала
-            VariableDefRowId.make_changes(self, column='DT', row_id=index - start, value=0)  # Длительность
-            VariableDefRowId.make_changes(self, column='Tag', row_id=index - start, value=0)  # Тэг упрощенного сценария
+            table.AddRow()
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='State', row_id=index - start,
+                                      value=0)  # Cocт
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='Id', row_id=index - start,
+                                      value=self.ws[f'A{index}'].value)  # Id группы
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='ParentId', row_id=index - start,
+                                      value=self.ws[f'B{index}'].value)  # N группы
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='Type', row_id=index - start,
+                                      value=self.ws[f'C{index}'].value)  # Тип
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='Name', row_id=index - start,
+                                      value=self.ws[f'D{index}'].value)  # Название
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='Formula', row_id=index - start,
+                                      value=self.ws[f'E{index}'].value)  # Формула
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='ObjectClass', row_id=index - start,
+                                      value=self.ws[f'F{index}'].value)  # Тип объекта
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='ObjectProp', row_id=index - start,
+                                      value=self.ws[f'G{index}'].value)  # Свойство объекта
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='ObjectKey', row_id=index - start,
+                                      value=self.ws[f'H{index}'].value)  # Ключ объекта
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='OutputMode', row_id=index - start,
+                                      value=0)  # Режим
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='RunsCount', row_id=index - start,
+                                      value=1)  # N сраб
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='TimeStart', row_id=index - start,
+                                      value=0)  # Время начала
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='DT', row_id=index - start,
+                                      value=0)  # Длительность
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='Tag', row_id=index - start,
+                                      value=0)  # Тэг упрощенного сценария
 
-    def create_log(self, start=4, finish=8, switch_command_line=False):
-        VariableDefRowId.__init__(self, rastr_win=self.rastr_win, table='DFWAutoLogicScn',
-                                  switch_command_line=switch_command_line)
-        self.table.DelRows()
+    def create_log(self, table=DFWAutoActionScn, start=4, finish=8, switch_command_line=False):
+        Variable.__init__(self,
+                          rastr_win=self.rastr_win,
+                          switch_command_line=switch_command_line)
+        table.DelRows()
         for index in range(start, finish):
-            self.table.AddRow()
-            VariableDefRowId.make_changes(self, column='Id', row_id=index - start,
-                                          value=self.ws[f'A{index}'].value)  # Id
-            VariableDefRowId.make_changes(self, column='Name', row_id=index - start,
-                                          value=self.ws[f'B{index}'].value)  # Название
-            VariableDefRowId.make_changes(self, column='ParentId', row_id=index - start,
-                                          value=self.ws[f'C{index}'].value)  # Номер модуля
-            VariableDefRowId.make_changes(self, column='Type', row_id=index - start,
-                                          value=self.ws[f'D{index}'].value)  # Тип логики
-            VariableDefRowId.make_changes(self, column='Formula', row_id=index - start,
-                                          value=self.ws[f'E{index}'].value)  # Формула
-            VariableDefRowId.make_changes(self, column='Actions', row_id=index - start,
-                                          value=self.ws[f'F{index}'].value)  # Действия
-            VariableDefRowId.make_changes(self, column='Delay', row_id=index - start,
-                                          value=self.ws[f'G{index}'].value)  # Выдержка времени
-            VariableDefRowId.make_changes(self, column='UnitStarters', row_id=index - start,
-                                          value=self.ws[f'H{index}'].value)  # ПО мод
-            VariableDefRowId.make_changes(self, column='UnitConstants', row_id=index - start,
-                                          value=self.ws[f'I{index}'].value)  # Const мод
-            VariableDefRowId.make_changes(self, column='UnitActions', row_id=index - start,
-                                          value=self.ws[f'J{index}'].value)  # Дейст мод
-            VariableDefRowId.make_changes(self, column='UnitActions', row_id=index - start,
-                                          value=self.ws[f'H{index}'].value)  # Const мод
-            VariableDefRowId.make_changes(self, column='OutputMode', row_id=index - start,
-                                          value=self.ws[f'K{index}'].value)  # Режим выхода
+            table.AddRow()
+            Variable.make_changes_row(self, table=DFWAutoActionScn, column='Id', row_id=index - start,
+                                      value=self.ws[f'A{index}'].value)  # Id
+            Variable.make_changes_row(self, column='Name', row_id=index - start,
+                                      value=self.ws[f'B{index}'].value)  # Название
+            Variable.make_changes_row(self, column='ParentId', row_id=index - start,
+                                      value=self.ws[f'C{index}'].value)  # Номер модуля
+            Variable.make_changes_row(self, column='Type', row_id=index - start,
+                                      value=self.ws[f'D{index}'].value)  # Тип логики
+            Variable.make_changes_row(self, column='Formula', row_id=index - start,
+                                      value=self.ws[f'E{index}'].value)  # Формула
+            Variable.make_changes_row(self, column='Actions', row_id=index - start,
+                                      value=self.ws[f'F{index}'].value)  # Действия
+            Variable.make_changes_row(self, column='Delay', row_id=index - start,
+                                      value=self.ws[f'G{index}'].value)  # Выдержка времени
+            Variable.make_changes_row(self, column='UnitStarters', row_id=index - start,
+                                      value=self.ws[f'H{index}'].value)  # ПО мод
+            Variable.make_changes_row(self, column='UnitConstants', row_id=index - start,
+                                      value=self.ws[f'I{index}'].value)  # Const мод
+            Variable.make_changes_row(self, column='UnitActions', row_id=index - start,
+                                      value=self.ws[f'J{index}'].value)  # Дейст мод
+            Variable.make_changes_row(self, column='UnitActions', row_id=index - start,
+                                      value=self.ws[f'H{index}'].value)  # Const мод
+            Variable.make_changes_row(self, column='OutputMode', row_id=index - start,
+                                      value=self.ws[f'K{index}'].value)  # Режим выхода
 
     def save_scn(self, dir_file_name_save_scn=None, dir_file=None, name_save_scn=None, switch_command_line=False):
         if dir_file_name_save_scn is not None:
@@ -84,6 +93,7 @@ class CreateActionsSCN(VariableDefRowId):
 
 if __name__ == '__main__':
     import win32com.client
+
     # from openpyxl import load_workbook
     # from RastrWinLib.loading.shablons_dir import shablon_file_scenario
     # from RastrWinLib.loading.save_file_rastrwin import save_file
