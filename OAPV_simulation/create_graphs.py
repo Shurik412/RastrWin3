@@ -144,7 +144,8 @@ for index, i in enumerate(list_coordinates_of_graphs):
                                    height_chart=17,
                                    switch_command_line=True,
                                    legend_position='b',
-                                   x_axis_min=0, x_axis_max=t_ras)
+                                   x_axis_min=0,
+                                   x_axis_max=t_ras)
 
     chart_2.add_line_chart(work_sheet_other=ws_.title,
                            min_col_x=1, min_row_x=5, max_row_x=ws_.max_row,
@@ -172,7 +173,8 @@ for index, i in enumerate(list_coordinates_of_graphs):
                                    height_chart=17,
                                    switch_command_line=True,
                                    legend_position='b',
-                                   x_axis_min=0, x_axis_max=t_ras)
+                                   x_axis_min=0,
+                                   x_axis_max=t_ras)
 
     chart_3.add_line_chart(work_sheet_other=ws_.title,
                            min_col_x=1, min_row_x=5, max_row_x=ws_.max_row,
@@ -200,7 +202,8 @@ for index, i in enumerate(list_coordinates_of_graphs):
                                    height_chart=17,
                                    switch_command_line=True,
                                    legend_position='b',
-                                   x_axis_min=0, x_axis_max=t_ras)
+                                   x_axis_min=0,
+                                   x_axis_max=t_ras)
 
     chart_4.add_line_chart(work_sheet_other=ws_.title,
                            min_col_x=1, min_row_x=5, max_row_x=ws_.max_row,

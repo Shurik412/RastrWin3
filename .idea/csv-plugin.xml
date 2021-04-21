@@ -115,6 +115,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tests\test_variable.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\variables\variable_parametrs.py">
           <value>
             <Attribute>

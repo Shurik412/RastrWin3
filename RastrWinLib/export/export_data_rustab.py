@@ -8,6 +8,7 @@ class ExportDataRUSTab:
     :param table : str => Name table ('Generator')
     :param column : str => Name parametrs ('P', 'Q')
     :param key : str => ('Num=51700088')
+
     """
 
     def __init__(self, table, rastr_win=RASTR, switch_command_line=False):
