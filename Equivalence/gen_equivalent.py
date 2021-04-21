@@ -9,6 +9,8 @@ from RastrWinLib.tables.tables_attributes import node_table, vetv_table, vetv_at
 from RastrWinLib.variables.group_correction import GroupCorr
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
 from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
+from RastrWinLib.loading.save import save_file
+from RastrWinLib.loading.shablon import shablon_file_regime
 
 
 def equivalent_gen(viborka_gen):
@@ -38,33 +40,37 @@ def equivalent_gen(viborka_gen):
     row_viborki = tables_node.FindNextSel(-1)
     print(f'row_viborki = {row_viborki}')
     while row_viborki != (-1):
-        ny_one = RASTR.Tables(node_table).Cols(node_attributes_list[3]).Z(row_viborki)
+        ny_one = tables_node.Cols(node_attributes_list[3]).Z(row_viborki)
         print(f'ny_one = {ny_one}')
-        tables_vetv.SetSel(f'(ip.uhom<110 & iq=" & {ny_one} &")|(iq.uhom<110 & ip="& {ny_one} & ")')
+        tables_vetv.SetSel(f'"(ip.uhom<110 & iq=" & {ny_one} & ")|(iq.uhom<110 & ip=" & {ny_one} & ")"')
         row_vetv_in_ny_one = tables_vetv.FindNextSel(-1)
         print(f'row_vetv_in_ny_one = {row_vetv_in_ny_one}')
+
         while row_vetv_in_ny_one != (-1):
             ip_one = GettingParameter(rastr_win=RASTR,
                                       table=vetv_table,
                                       column=vetv_attributes_list[3]).get(row_id=row_vetv_in_ny_one)
+
             iq_one = GettingParameter(rastr_win=RASTR,
                                       table=vetv_table,
                                       column=vetv_attributes_list[4]).get(row_id=row_vetv_in_ny_one)
+
             if ip_one == ny_one:
                 ny_two = iq_one
             else:
                 ny_two = ip_one
-            tables_node.SetSel(f'ny={ny_two}')
+
+            tables_node.SetSel(f'"ny={ny_two}"')
             row_node_in_ny_two = tables_node.FindNextSel(-1)
+
             if row_node_in_ny_two != (-1):
                 var_node_obj.make_changes_row(table=node_table,
                                               column=node_attributes_list[0],
                                               row_id=row_node_in_ny_two,
                                               value=1)
-
             row_vetv_in_ny_one = tables_vetv.FindNextSel(row_vetv_in_ny_one)
 
-        tables_node.SetSel(f'{str(viborka_gen)}')
+        tables_node.SetSel(f'"{str(viborka_gen)}"')
         row_viborki = tables_node.FindNextSel(row_viborki)
 
     set_com_ekviv(selekv=0,

@@ -258,16 +258,6 @@ DFWAutoLogicScn_attributes = {
     'OutputMode': 'Режим выхода (Режим)',
 }
 
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     # import win32com.client
     # from RastrWinLib.loading.load_file_rastrwin import load_file

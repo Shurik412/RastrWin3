@@ -101,6 +101,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tests\str.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tests\test_clear_Python.py">
           <value>
             <Attribute>
@@ -133,6 +140,13 @@
           <value>
             <Attribute>
               <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\\cn-dfs.oducn.so\user\SER\Охрименко\Project_Py3\RastrWin3\Equivalence\gen_equivalent.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
