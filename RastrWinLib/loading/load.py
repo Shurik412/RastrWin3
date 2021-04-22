@@ -12,7 +12,8 @@ def load_file(rastr_win=RASTR,
               shablon=shablon_file_automation,
               switch_command_line=False):
     """
-      par: RG_KOD – числовое значение, определяет режим загрузки при наличии таблицы
+      :param rastr_win: com - объект Rastr.Astra
+      :param rg_kod: числовое значение, определяет режим загрузки при наличии таблицы
                в рабочей области и может быть одним из следующих:
                Константа   Значение           Описание
                RG_ADD          0       Таблица добавляется к имеющейся в рабочей области, совпадение ключевых полей не
@@ -22,8 +23,10 @@ def load_file(rastr_win=RASTR,
                                         найден, то данные игнорируются (соответствует режиму «Обновить» в меню)
                RG_ADDKEY       3       Данные в таблице, имеющие одинаковые ключевые поля, заменяются.
                                        Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»)
-       par: shablon - шаблон для загрузки.
-       par: file_path - абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst)
+       :param shablon: шаблон RastrWin3 для загрузки.
+       :param file_path: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst)
+       :param switch_command_line: True/False - выводит сообщения в протокол.
+       :return: True
        """
     rg_kod = int(rg_kod)
     rastr_win = rastr_win
@@ -45,6 +48,12 @@ class LoadRUSTab:
         self.shablon = shablon
         self.rg_kod = int(rg_kod)
         self.switch_command_line = switch_command_line
+        """
+        :param rastr_win: com - объект Rastr.Astra
+        :param shablon: шаблон RastrWin3 для загрузки.
+        :param rg_kod: 
+        :param switch_command_line: True/False - выводит сообщения в протокол.
+        """
 
     def load_shablon_automation(self):
         self.rastr_win.Load(2, '', self.shablon)
@@ -64,23 +73,3 @@ class LoadRUSTab:
         if self.switch_command_line is not None:
             print(f'Очищена рабочая область по шаблону: "{path.basename(self.shablon)}".')
         return True
-
-
-if __name__ == '__main__':
-    import win32com.client
-    from RastrWinLib.loading.shablon import shablon_file_dynamic
-
-    RastrWin = win32com.client.Dispatch("Astra.Rastr")
-    # load_file(rastr_win=RastrWinLib,
-    #           rg_kod=1,
-    #           file_path='C:\\Users\\Ohrimenko_AG\\Documents\\RastrWinLib\\test-rastr\\RUSTab\\test9.rst',
-    #           shablon=shablon_file_dynamic,
-    #           switch_command_line=True)
-
-    load_file = LoadRUSTab(rastr_win=RastrWin,
-                           shablon=shablon_file_dynamic,
-                           switch_command_line=True)
-    load_file.load(file_path='C:\\Users\\Ohrimenko_AG\\Documents\\RastrWinLib\\test-rastr\\RUSTab\\test9.rst')
-
-    load_file.load_new_file()
-    load_file.load_shablon_automation()

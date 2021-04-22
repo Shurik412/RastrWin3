@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.log_tools.tools import separator_noun
-from RastrWinLib.tables.tables_attributes import com_dynamics_table, com_dynamics_attributes
-from RastrWinLib.variables.variable_parametrs import VariableDefRowId
+from RastrWinLib.tables.tables_attributes import com_dynamics_table, com_dynamics_attributes, \
+    com_dynamics_attributes_list
+from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.getting import get
 
 
 def set_dynamic(
@@ -71,49 +73,168 @@ def set_dynamic(
     :param ResultFlowDirection: Положительное направление результатов (Положительное направление результатов)
     :param TreatWarningsAsErrors: Считать предупреждения ошибками (Предупреждение=Ошибка)
     :param EventProcess: Метод обработки дискретных изменений (Дискретные изменения)
+    :return True
     """
-    list_key = []
-    for key in com_dynamics_attributes.keys():
-        list_key.append(key)
+    variable_def_rowid = Variable(rastr_win=RASTR,
+                                  switch_command_line=switch_command_line)
 
-    variable_def_rowid = VariableDefRowId(rastr_win=RASTR, table=com_dynamics_table,
-                                          switch_command_line=switch_command_line)
-
-    variable_def_rowid.make_changes(column=list_key[0], row_id=0, value=float(t_ras))
-    variable_def_rowid.make_changes(column=list_key[1], row_id=0, value=float(h_int))
-    variable_def_rowid.make_changes(column=list_key[2], row_id=0, value=float(h_min))
-    variable_def_rowid.make_changes(column=list_key[3], row_id=0, value=float(h_max))
-    variable_def_rowid.make_changes(column=list_key[4], row_id=0, value=float(h_out))
-    variable_def_rowid.make_changes(column=list_key[5], row_id=0, value=int(mint))
-    variable_def_rowid.make_changes(column=list_key[6], row_id=0, value=int(smint))
-    variable_def_rowid.make_changes(column=list_key[7], row_id=0, value=float(int_epsilon))
-    variable_def_rowid.make_changes(column=list_key[8], row_id=0, value=float(inform_on_step_change))
-    variable_def_rowid.make_changes(column=list_key[9], row_id=0, value=float(tf))
-    variable_def_rowid.make_changes(column=list_key[10], row_id=0, value=float(dEf))
-    variable_def_rowid.make_changes(column=list_key[11], row_id=0, value=float(npf))
-    variable_def_rowid.make_changes(column=list_key[12], row_id=0, value=float(valid))
-    variable_def_rowid.make_changes(column=list_key[13], row_id=0, value=float(dempfrec))
-    variable_def_rowid.make_changes(column=list_key[14], row_id=0, value=float(corrT))
-    variable_def_rowid.make_changes(column=list_key[15], row_id=0, value=float(is_demp))
-    variable_def_rowid.make_changes(column=list_key[16], row_id=0, value=float(frSXNtoY))
-    variable_def_rowid.make_changes(column=list_key[17], row_id=0, value=float(SXNTolerance))
-    variable_def_rowid.make_changes(column=list_key[18], row_id=0, value=str(SnapPath))
-    variable_def_rowid.make_changes(column=list_key[19], row_id=0, value=float(MaxResultFiles))
-    variable_def_rowid.make_changes(column=list_key[20], row_id=0, value=str(SnapTemplate))
-    variable_def_rowid.make_changes(column=list_key[21], row_id=0, value=float(SnapAutoLoad))
-    variable_def_rowid.make_changes(column=list_key[22], row_id=0, value=float(SnapMaxCount))
-    variable_def_rowid.make_changes(column=list_key[23], row_id=0, value=float(TripGeneratorOnSpeed))
-    variable_def_rowid.make_changes(column=list_key[24], row_id=0, value=float(PickupDropout))
-    variable_def_rowid.make_changes(column=list_key[25], row_id=0, value=float(RealtimeCSV))
-    variable_def_rowid.make_changes(column=list_key[26], row_id=0, value=float(PeriodAngle))
-    variable_def_rowid.make_changes(column=list_key[27], row_id=0, value=float(ResultFlowDirection))
-    variable_def_rowid.make_changes(column=list_key[28], row_id=0, value=float(TreatWarningsAsErrors))
-    variable_def_rowid.make_changes(column=list_key[29], row_id=0, value=float(EventProcess))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[0],
+                                        row_id=0,
+                                        value=float(t_ras))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[1],
+                                        row_id=0,
+                                        value=float(h_int))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[2],
+                                        row_id=0,
+                                        value=float(h_min))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[3],
+                                        row_id=0,
+                                        value=float(h_max))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[4],
+                                        row_id=0,
+                                        value=float(h_out))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[5],
+                                        row_id=0,
+                                        value=int(mint))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[6],
+                                        row_id=0,
+                                        value=int(smint))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[7],
+                                        row_id=0,
+                                        value=float(int_epsilon))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[8],
+                                        row_id=0,
+                                        value=float(inform_on_step_change))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[9],
+                                        row_id=0,
+                                        value=float(tf))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[10],
+                                        row_id=0,
+                                        value=float(dEf))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[11],
+                                        row_id=0,
+                                        value=float(npf))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[12],
+                                        row_id=0,
+                                        value=float(valid))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[13],
+                                        row_id=0,
+                                        value=float(dempfrec))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[14],
+                                        row_id=0,
+                                        value=float(corrT))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[15],
+                                        row_id=0,
+                                        value=float(is_demp))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[16],
+                                        row_id=0,
+                                        value=float(frSXNtoY))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[17],
+                                        row_id=0,
+                                        value=float(SXNTolerance))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[18],
+                                        row_id=0,
+                                        value=str(SnapPath))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[19],
+                                        row_id=0,
+                                        value=float(MaxResultFiles))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[20],
+                                        row_id=0,
+                                        value=str(SnapTemplate))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[21],
+                                        row_id=0,
+                                        value=float(SnapAutoLoad))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[22],
+                                        row_id=0,
+                                        value=float(SnapMaxCount))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[23],
+                                        row_id=0,
+                                        value=float(TripGeneratorOnSpeed))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[24],
+                                        row_id=0,
+                                        value=float(PickupDropout))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[25],
+                                        row_id=0,
+                                        value=float(RealtimeCSV))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[26],
+                                        row_id=0,
+                                        value=float(PeriodAngle))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[27],
+                                        row_id=0,
+                                        value=float(ResultFlowDirection))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[28],
+                                        row_id=0,
+                                        value=float(TreatWarningsAsErrors))
+    variable_def_rowid.make_changes_row(table=com_dynamics_table,
+                                        column=com_dynamics_attributes_list[29],
+                                        row_id=0,
+                                        value=float(EventProcess))
 
     if switch_command_line is not False:
+
         print(separator_noun)
         print(
-            f'Внесены изменения в настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics)')
+            f' Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):\n'
+            '- t_ras: Время расчета: Tras до = {}; Tras "после" ={};\n'
+            '- h_int: Начальный шаг интегрирования: H_инт до = {}; H_инт "после" = {};\n'
+            '- h_min: Минимальный шаг интегрирования: H_мин до = {}; H_мин "после" = {};\n'
+            '- h_max: Максимальный шаг интегрирования: H_макс до = {}; H_макс "после" = {};\n'
+            '- h_out: Шаг печати: H_печ до = {}; H_печ "после" = {};\n'
+            '- mint: Основной метод интегрирования: Осн.Метод до = {}; Осн.Метод "после" = {};\n'
+            '- smint: Стартовый метод интегрирования: Старт.Метод до = {}; Старт.Метод "после" = {};\n'
+            '- int_epsilon: Точность шага интегрирования: dInt до = {}; dInt "после" = {};\n'
+            '- inform_on_step_change: Информировать об изменении шага: Выводить шаг до = {}; Выводить шаг "после" = {};\n'
+            '- tf: Постоянная сглаживания угловой скорости (частоты) узла: Tf до = {}; Tf "после" = {};\n'
+            '- dEf: Точность балансировки эдс при учете явнополюсности: dEf до = {}; dEf "после" = {};\n'
+            '- npf: Макс число пересчетов УР на шаге при учете явнополюсности: Ит до = {}; Ит "после" = {};\n'
+            '- valid: Контроль входных параметров: Контр. до = {}; Контр. "после" = {};\n'
+            '- dempfrec: Демпфирование в уравнениях движения: Демпф до = {}; Демпф "после" = {};\n'
+            '- corrT: Корректировать Т в парковских моделях: Корр Т до = {}; Корр Т "после" = {};\n'
+            '- is_demp: Учет демп. момента в моделях с демп контурами: Уч Демп до = {}; Уч Демп "после" = {};\n'
+            '- frSXNtoY: Напряжения перехода с СХН на шунт: V_минСХРН до = {}; V_минСХРН "после" = {};\n'
+            '- SXNTolerance: Допустимый небаланс СХН: SXNTol до = {}; SXNTol "после" = {};\n'
+            '- SnapPath: Выходной каталог файлов результатов: Кат. результатов до = {}; Кат. результатов "после" = {};\n'
+            '- MaxResultFiles: Максимальное кол-во файлов результатов: Макс. файлов до = {}; Макс. файлов "после" = {};\n'
+            '- SnapTemplate: Шаблон имени выходного файла: Шаблон имени до = {}; Шаблон имени "после" = {};\n'
+            '- SnapAutoLoad: Автозагрузка последнего результата: Автозагрузка до = {}; Автозагрузка "после" = {};\n'
+            '- SnapMaxCount: Максимальное кол-во слотов результатов: Макс. рез-тов до = {}; Макс. рез-тов "после" = {};\n'
+            '- TripGeneratorOnSpeed: Отключать генератор при превышении скорости %: Уставка автоматов безопасности до = {}; Уставка автоматов безопасности "после" = {};\n'
+            '- PickupDropout: Информировать о пуске/возврате автоматики: Информировать о пуске/возврате автоматики до = {}; Информировать о пуске/возврате автоматики "после" = {};\n'
+            '- RealtimeCSV: Выводить контролируемые величины в CSV: Выводить контролируемые величины в CSV "до" = {}; Выводить контролируемые величины в CSV "после" = {};\n'
+            '- PeriodAngle: Отображать углы в диапазоне +/-180: Отображать углы в диапазоне +/-180 "до" = {}; Отображать углы в диапазоне +/-180 "после" = {};\n'
+            '- ResultFlowDirection: Положительное направление результатов: Положительное направление результатов "до" = {}; Положительное направление результатов "после" = {};\n'
+            '- TreatWarningsAsErrors: Считать предупреждения ошибками: Предупреждение=Ошибка "до" = {}; Предупреждение=Ошибка "после" = {};\n'
+            '- EventProcess: Метод обработки дискретных изменений: Дискретные изменения "до" = {}; Дискретные изменения "после" = {};\n'
+        )
         print(separator_noun)
     return True
 
@@ -231,7 +352,38 @@ class SetDynamic(VariableDefRowId):
         if self.switch_command_line is not False:
             print(separator_noun)
             print(
-                f'Внесены изменения в настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics)')
+                f' Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):\n'
+                '- t_ras: Время расчета: Tras до = {}; Tras "после" ={};\n'
+                '- h_int: Начальный шаг интегрирования: H_инт до = {}; H_инт "после" = {};\n'
+                '- h_min: Минимальный шаг интегрирования: H_мин до = {}; H_мин "после" = {};\n'
+                '- h_max: Максимальный шаг интегрирования: H_макс до = {}; H_макс "после" = {};\n'
+                '- h_out: Шаг печати: H_печ до = {}; H_печ "после" = {};\n'
+                '- mint: Основной метод интегрирования: Осн.Метод до = {}; Осн.Метод "после" = {};\n'
+                '- smint: Стартовый метод интегрирования: Старт.Метод до = {}; Старт.Метод "после" = {};\n'
+                '- int_epsilon: Точность шага интегрирования: dInt до = {}; dInt "после" = {};\n'
+                '- inform_on_step_change: Информировать об изменении шага: Выводить шаг до = {}; Выводить шаг "после" = {};\n'
+                '- tf: Постоянная сглаживания угловой скорости (частоты) узла: Tf до = {}; Tf "после" = {};\n'
+                '- dEf: Точность балансировки эдс при учете явнополюсности: dEf до = {}; dEf "после" = {};\n'
+                '- npf: Макс число пересчетов УР на шаге при учете явнополюсности: Ит до = {}; Ит "после" = {};\n'
+                '- valid: Контроль входных параметров: Контр. до = {}; Контр. "после" = {};\n'
+                '- dempfrec: Демпфирование в уравнениях движения: Демпф до = {}; Демпф "после" = {};\n'
+                '- corrT: Корректировать Т в парковских моделях: Корр Т до = {}; Корр Т "после" = {};\n'
+                '- is_demp: Учет демп. момента в моделях с демп контурами: Уч Демп до = {}; Уч Демп "после" = {};\n'
+                '- frSXNtoY: Напряжения перехода с СХН на шунт: V_минСХРН до = {}; V_минСХРН "после" = {};\n'
+                '- SXNTolerance: Допустимый небаланс СХН: SXNTol до = {}; SXNTol "после" = {};\n'
+                '- SnapPath: Выходной каталог файлов результатов: Кат. результатов до = {}; Кат. результатов "после" = {};\n'
+                '- MaxResultFiles: Максимальное кол-во файлов результатов: Макс. файлов до = {}; Макс. файлов "после" = {};\n'
+                '- SnapTemplate: Шаблон имени выходного файла: Шаблон имени до = {}; Шаблон имени "после" = {};\n'
+                '- SnapAutoLoad: Автозагрузка последнего результата: Автозагрузка до = {}; Автозагрузка "после" = {};\n'
+                '- SnapMaxCount: Максимальное кол-во слотов результатов: Макс. рез-тов до = {}; Макс. рез-тов "после" = {};\n'
+                '- TripGeneratorOnSpeed: Отключать генератор при превышении скорости %: Уставка автоматов безопасности до = {}; Уставка автоматов безопасности "после" = {};\n'
+                '- PickupDropout: Информировать о пуске/возврате автоматики: Информировать о пуске/возврате автоматики до = {}; Информировать о пуске/возврате автоматики "после" = {};\n'
+                '- RealtimeCSV: Выводить контролируемые величины в CSV: Выводить контролируемые величины в CSV "до" = {}; Выводить контролируемые величины в CSV "после" = {};\n'
+                '- PeriodAngle: Отображать углы в диапазоне +/-180: Отображать углы в диапазоне +/-180 "до" = {}; Отображать углы в диапазоне +/-180 "после" = {};\n'
+                '- ResultFlowDirection: Положительное направление результатов: Положительное направление результатов "до" = {}; Положительное направление результатов "после" = {};\n'
+                '- TreatWarningsAsErrors: Считать предупреждения ошибками: Предупреждение=Ошибка "до" = {}; Предупреждение=Ошибка "после" = {};\n'
+                '- EventProcess: Метод обработки дискретных изменений: Дискретные изменения "до" = {}; Дискретные изменения "после" = {};\n'
+            )
             print(separator_noun)
         return True
 

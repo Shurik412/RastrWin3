@@ -5,7 +5,8 @@ from RastrWinLib.log_tools.tools import separator_star, error_text
 
 class FindNextSel:
     """
-    FindNextSel
+    Класс для поиска по выборки key.
+    Метод row возвращает row_id - порядковый номер строки в таблице.
     """
 
     def __init__(self, table, rastr_win=RASTR):

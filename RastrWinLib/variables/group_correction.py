@@ -5,8 +5,7 @@ from RastrWinLib.AstraRastr import RASTR
 class GroupCorr:
     """
     Класс GroupCorr - групповая коррекция
-      Данный класс изменяет значения в соотвтетсии с
-    заданной формулой и выборкой.
+      Данный класс изменяет значения в соотвтетсии с заданной формулой и выборкой.
       Пример вызова класса:
     >> rastr_moduls.GroupCorr(Rastr=<объект RastrWinLib>,
                                 table=< название таблицы ("Generator" или "node")>,
@@ -20,6 +19,8 @@ class GroupCorr:
         self.table = self.rastr_win.Tables(table)
         self.column = self.table.Cols(column)
         self.switch_command_line = switch_command_line
+        """
+        """
 
     def calc(self, key, formula):
         self.table.SetSel(key)

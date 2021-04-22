@@ -27,20 +27,3 @@ def save_file(rastr_win=RASTR,
             print(f'Файл "{path.basename(file_path)}" сохранен по шаблону "{path.basename(shablon)}".')
     print(separator_grid)
     return True
-
-
-if __name__ == '__main__':
-    import win32com.client
-    from load import load_file
-
-    RastrWin = win32com.client.Dispatch("Astra.Rastr")
-    load_file(rastr_win=RastrWin,
-              rg_kod=1,
-              file_path='C:\\Users\\Ohrimenko_AG\\Documents\\RastrWinLib\\test-rastr\\RUSTab\\test9.rst',
-              shablon=shablon_file_dynamic,
-              switch_command_line=True)
-
-    save_file(rastr_win=RastrWin,
-              file_path='C:\\Users\\Ohrimenko_AG\\Desktop\\21\\test9.rst',
-              shablon=shablon_file_dynamic,
-              switch_command_line=True)
