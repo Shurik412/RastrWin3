@@ -70,18 +70,17 @@ class LoadRUSTab:
         """
 
         :param file_path:
-        :return:
+        :return: True
         """
         self.rastr_win.Load(self.rg_kod, file_path, self.shablon)
         if self.switch_command_line is not None:
-            print(f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shablon)}".\n'
-                  f'\t\t - существующие данные не изменились!')
+            print(f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shablon)}".')
         return True
 
     def load_new_file(self):
         """
 
-        :return:
+        :return: True
         """
         self.rastr_win.NewFile(self.shablon)
         if self.switch_command_line is not None:

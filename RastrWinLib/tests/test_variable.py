@@ -1,9 +1,8 @@
-from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_dynamic
-from RastrWinLib.variables.variable_parametrs import Variable
 from RastrWinLib.tables.tables_attributes import generator_table, generator_attributes_list
+from RastrWinLib.variables.variable_parametrs import Variable
 
 load_file(file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
           shablon=shablon_file_dynamic,

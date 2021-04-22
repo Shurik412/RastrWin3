@@ -10,10 +10,19 @@ class FindNextSel:
     """
 
     def __init__(self, table, rastr_win=RASTR):
+        """
+
+        :param table: название таблицы RastrWin3;
+        :param rastr_win: COM - объект Rastr.Astra (win32com).
+        """
         self.RastrWin = rastr_win
         self.Tables = self.RastrWin.Tables(str(table))
 
     def row(self, key):
+        """
+        :param key:
+        :return: row_id: порядковый номер.
+        """
         self.Tables.SetSel(f'{str(key)}')
         row_id = self.Tables.FindNextSel(-1)
         if row_id == (-1):
