@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -447,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619101655886</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Скорректировал settings -&gt; regim.py">
+      <created>1619117479711</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1619117479711</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +469,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add in file Tables_and_parametrs.py -&gt; table com_ekviv -&gt; Общие параметры эквивалентирования" />
     <MESSAGE value="Add file object_rastr.py -&gt; RASTR;&#10;Add class SetEkviv and file settings_ekv.py" />
     <MESSAGE value="Corr OAPV_calc.py -&gt; add new function" />
     <MESSAGE value="Corr SetEkviv file settings_ekv.py" />
@@ -488,7 +493,8 @@
     <MESSAGE value="Внес изменения в класс Variable.&#10;Добавил вывод в протокол dynamic - settings." />
     <MESSAGE value="Скорректировал tables_attributes.py." />
     <MESSAGE value="Скорректировал tables_attributes.py -&gt; regime, ut_common ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Скорректировал tables_attributes.py -&gt; regime, ut_common ..." />
+    <MESSAGE value="Скорректировал settings -&gt; regim.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Скорректировал settings -&gt; regim.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -101,6 +101,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\settings\ut_common.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\tables_attributes.py">
           <value>
             <Attribute>
