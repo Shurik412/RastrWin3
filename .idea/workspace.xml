@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,28 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Tables_Parametrs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.equivalent_calculation_model">
+  <component name="RunManager" selected="Python.dynamic">
+    <configuration name="dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/settings" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="equivalent_calculation_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,27 +87,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gen_equivalent (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="//cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="//cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_variable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="variable_parametrs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,11 +145,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/variables" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dynamic" />
+        <item itemvalue="Python.variable_parametrs" />
         <item itemvalue="Python.equivalent_calculation_model" />
         <item itemvalue="Python.str" />
         <item itemvalue="Python.gen_equivalent" />
-        <item itemvalue="Python.gen_equivalent (1)" />
-        <item itemvalue="Python.test_variable" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619085288144</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Исправление документирования классов.">
+      <created>1619090552745</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1619090552745</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +438,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add in class GetTabelCommonInfo -&gt; create file log events" />
     <MESSAGE value="Add file removal_marked_objects.py -&gt; class RemoveSelObjects" />
     <MESSAGE value="corr full" />
     <MESSAGE value="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent" />
@@ -462,7 +462,8 @@
     <MESSAGE value="Corr Variable and Add table in tables_attributes.py" />
     <MESSAGE value="Corr Variable 22.04.21" />
     <MESSAGE value="New class Get...Parameter." />
-    <option name="LAST_COMMIT_MESSAGE" value="New class Get...Parameter." />
+    <MESSAGE value="Исправление документирования классов." />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправление документирования классов." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -486,11 +487,6 @@
           <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
           <line>38</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RastrWinLib/settings/dynamic.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -47,7 +47,8 @@ class Variable:
         :param value: значение
         :return: Nothing returns
         """
-        print(separator_star)
+        if self.switch_command_line is not False:
+            print(separator_star)
         switch_command_line_def = True
         if table is not None:
             table = self.rastr_win.Tables(table)
@@ -57,11 +58,15 @@ class Variable:
 
         if column is not None:
             col = table.Cols(column)
-            if row_id and value is not None:
-                col.SetZ(row_id, value)
+            if row_id is not None:
+                if value is not None:
+                    col.SetZ(row_id, value)
+                else:
+                    switch_command_line_def = False
+                    print(f'{error_text} Variable -> def make_changes_row(): Не задано значение "value".')
             else:
                 switch_command_line_def = False
-                print(f'{error_text} Variable -> def make_changes_row(): Не задано значение "row_id или value".')
+                print(f'{error_text} Variable -> def make_changes_row(): Не задано значение "row_id".')
         else:
             switch_command_line_def = False
             print(f'{error_text} Variable -> def make_changes_row(): Не задано значение "column".')
@@ -70,7 +75,8 @@ class Variable:
             print(f'Внесены изменения:\n'
                   f'\t таблица: <{table.Description}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
                   f'\t значение => [{value}]')
-        print(separator_star)
+        if self.switch_command_line is not False:
+            print(separator_star)
 
     def make_changes_setsel(self,
                             table=None,
@@ -86,7 +92,8 @@ class Variable:
         :return: Nothing returns
         """
         switch_command_line_def = True
-        print(separator_star)
+        if self.switch_command_line is not False:
+            print(separator_star)
         if table is not None:
             table = self.rastr_win.Tables(table)
             table.SetSel(key)
@@ -113,4 +120,22 @@ class Variable:
                     print(f'{error_text} Variable -> def make_changes_setsel(): значение value = None.')
         else:
             print(f'{error_text} Variable -> def make_changes_setsel(): значение table = None.')
-        print(separator_star)
+        if self.switch_command_line is not False:
+            print(separator_star)
+
+
+if __name__ == '__main__':
+    from RastrWinLib.loading.load import load_file
+    from RastrWinLib.loading.shablon import shablon_file_dynamic
+    from RastrWinLib.tables.tables_attributes import com_dynamics_table, com_dynamics_attributes_list
+
+    load_file(file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+              shablon=shablon_file_dynamic,
+              switch_command_line=True)
+
+    var_ = Variable(switch_command_line=False)
+
+    var_.make_changes_row(table=com_dynamics_table,
+                          column=com_dynamics_attributes_list[0],
+                          row_id=0,
+                          value=1)
