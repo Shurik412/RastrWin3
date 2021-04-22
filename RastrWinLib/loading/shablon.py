@@ -14,3 +14,4 @@ shablon_file_automation = f'{directory_file_shablon}\\{shablon_automation}'
 shablon_file_regime = f'{directory_file_shablon}\\{shablon_regime}'
 
 test_195_rg = f'{directory_file_test}\\cx195.rg2'
+test_9_rst = f'{directory_file_test}\\RUSTab\\test9.rst'

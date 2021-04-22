@@ -30,6 +30,11 @@ class Variable:
     def __init__(self,
                  rastr_win=RASTR,
                  switch_command_line=False):
+        """
+
+        :param rastr_win: com - объект Rastr.Astra;
+        :param switch_command_line: True/False - вывод сообщений в протокол.
+        """
 
         self.rastr_win = rastr_win
         self.switch_command_line = switch_command_line
@@ -84,12 +89,12 @@ class Variable:
                             key=None,
                             value=None):
         """
-        make_changes_setsel -> изменение параметра по выборки SetSel(key) -> key = "ny=6516516"
-        :param table: название таблицы RastrWin3
-        :param column: название колонки RastrWin3
-        :param key: выборка SetSel("ny=52135156") -> задается в виде value='ny=52135156'
-        :param value: значение для замены
-        :return: Nothing returns
+        make_changes_setsel -> изменение параметра по выборки SetSel(key) -> key = "ny=6516516";
+        :param table: название таблицы RastrWin3;
+        :param column: название колонки RastrWin3;
+        :param key: выборка SetSel("ny=52135156") -> задается в виде value='ny=52135156';
+        :param value: значение для замены;
+        :return: Nothing returns.
         """
         switch_command_line_def = True
         if self.switch_command_line is not False:

@@ -1,14 +1,8 @@
-from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.loading.load import LoadRUSTab
-from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import shablon_dynamic
-from RastrWinLib.settings.dynamic import SetDynamic
-from RastrWinLib.settings.equivalence import SetEkviv
-from RastrWinLib.settings.regim import SetRegim
-from RastrWinLib.settings.ut_common import UtCommon
+from RastrWinLib.loading.load import load_file
+from RastrWinLib.loading.shablon import shablon_file_dynamic, test_9_rst
+from RastrWinLib.settings.regim import set_regim
 
-load_f = LoadRUSTab(rastr_win=RASTR, shablon=shablon_dynamic, switch_command_line=True)
-load_f.load(file_path='')
+load_file(file_path=test_9_rst,
+          shablon=shablon_file_dynamic)
 
-
-save_file(rastr_win=RASTR, file_path='')
+set_regim(switch_command_line=False)

@@ -4,23 +4,26 @@ from RastrWinLib.tables.tables_attributes import node_table, generator_table, ve
 
 
 class GettingParameter:
+    """
+    Класс предназначен для работы с ячейками таблиц в RastrWin3.
+    1. Метод get_cell - возвращает значение ячейки из таблицы.
+    2. Метод get_row_vetv - возвращает порядковый номер из таблицы "Ветви".
+    3. Метод get_row_node - возвращает порядковый номер из таблицы "Узлы".
+    4. Метод get_row_gen - возвращает порядковый номер из таблицы "Генераторы".
+    """
+
     def __init__(self, rastr_win=RASTR):
         self.rastr_win = rastr_win
         """
-        Класс предназначен для работы с ячейками таблиц в RastrWin3.
-        1. Метод get_cell - возвращает значение ячейки из таблицы.
-        2. Метод get_row_vetv - возвращает порядковый номер из таблицы "Ветви".
-        3. Метод get_row_node - возвращает порядковый номер из таблицы "Узлы".
-        4. Метод get_row_gen - возвращает порядковый номер из таблицы "Генераторы".
+         :param rastr_win: .
         """
-
     def get_cell(self, table, column, row_id):
         """
         Метод get_cell - возвращает значение ячейки.
-        :param table: название таблицы RastrWin3 (generator)
-        :param column: навание колонки (столбца) RastrWin3 (Num)
-        :param row_id: порядковый номер в таблице (от 0 до max.count)
-        :return: value_cell_of_row - возвращает значение ячейки по номеру row_id
+        :param table: название таблицы RastrWin3 (generator);
+        :param column: навание колонки (столбца) RastrWin3 (Num);
+        :param row_id: порядковый номер в таблице (от 0 до max.count);
+        :return: value_cell_of_row - возвращает значение ячейки по номеру row_id.
         """
         table_ = self.rastr_win.Tables(table)
         value_cell_of_row = table_.Cols(column).Z(row_id)

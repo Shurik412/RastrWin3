@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.tables_attributes import ut_common_table, ut_common_attributes, ut_common_attributes_list
-from RastrWinLib.variables.variable_parametrs import Variable
 from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.tables.tables_attributes import ut_common_table, ut_common_attributes_list
+from RastrWinLib.variables.variable_parametrs import Variable
 
 
 def ut_common(
@@ -16,13 +16,13 @@ def ut_common(
         add_d=0,
         ekstr=0,
         kfc=1.000,
-        sum_kfc='',
+        sum_kfc=0,
         ds=0,
-        it='',
+        it=0,
         Status=0,
         KorrT=25,
-        KorrPer='',
-        KorrVib='',
+        KorrPer=0,
+        KorrVib=0,
         enable_contr=0,
         dis_v_contr=0,
         dis_p_contr=0,
@@ -252,7 +252,7 @@ def ut_common(
               f'dis_i_contr: Отключить контроль всех ограничений по току I (Откл контр. I) "до" = {get_dis_i_contr}; "после" = {get_dis_i_contr_after};'
               f'ss_calc: Как расчитывать УР при утяжелении (Расчет УР) "до" = {get_ss_calc}; "после" = {get_ss_calc_after};'
               f'criterion: Критерий устойчивости (Критерий) "до" = {get_criterion}; "после" = {get_criterion_after};'
-              f'no_crit_d_ba: Динамика:не учет критерия разворота угла по ЛЭП (Нет критерия: угол по ЛЭП) "до" = {get_no_crit_d_ba}; "после" = {get_no_crit_d_ga_after};'
+              f'no_crit_d_ba: Динамика:не учет критерия разворота угла по ЛЭП (Нет критерия: угол по ЛЭП) "до" = {get_no_crit_d_ba}; "после" = {get_no_crit_d_ba_after};'
               f'no_crit_d_coa: Динамика:не учет критерия угла генератора и COA (Нет критерия: угол по Генератору) "до" = {get_no_crit_d_coa}; "после" = {get_no_crit_d_coa_after};'
               f'no_crit_d_ga: Динамика:не учет критерия срабатывания автомата безопасности генератора (Нет критерия: автомат безопасности ген.) "до" = {get_no_crit_d_ga}; "после" = {get_no_crit_d_ga_after};'
               f'save_files_filter: Критерий сохранения файлов (Критерий) "до" = {get_save_files_filter}; "после" = {get_save_files_filter_after};'
