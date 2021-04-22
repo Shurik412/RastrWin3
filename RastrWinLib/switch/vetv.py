@@ -8,11 +8,24 @@ class SwitchVetv:
     """
 
     def __init__(self, rastr_win=RASTR, table='vetv', switch_command_line=False):
+        """
+
+        :param rastr_win:
+        :param table:
+        :param switch_command_line:
+        """
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)
         self.switch_command_line = switch_command_line
 
     def off(self, ip, iq, np=0):
+        """
+
+        :param ip:
+        :param iq:
+        :param np:
+        :return:
+        """
         if self.switch_command_line is not False:
             print(f'Отключение объекта ip={ip}, iq={iq}, np={np}')
         self.table.SetSel(f"(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})")
@@ -27,6 +40,13 @@ class SwitchVetv:
             print(f'\t\tОбъект ip={ip},iq={iq},np={np} не найдет в таблице {self.table.Name}')
 
     def on(self, ip, iq, np=0):
+        """
+
+        :param ip:
+        :param iq:
+        :param np:
+        :return:
+        """
         if self.switch_command_line is not False:
             print(f'Включение объекта ip={ip}, iq={iq}, np={np}')
         self.table.SetSel(f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
@@ -58,9 +78,9 @@ if __name__ == '__main__':
     load_file(rastr_win=Rastr, file_path=file_RUSTab_9_scn, shablon=shablon_file_scenario)
     load_file(rastr_win=Rastr)
     regime = SteadyState(rastr_win=Rastr, switch_command_line=True)
-    sta_ = SwitchLine(rastr_win=Rastr, table='vetv', switch_command_line=True)
+    # sta_ = SwitchLine(rastr_win=Rastr, table='vetv', switch_command_line=True)
     regime.rgm()
-    sta_.off(ip=349, iq=319, np=0)
+    # sta_.off(ip=349, iq=319, np=0)
     regime.rgm()
     # sta_.on(ip=349, iq=319)
     # regime.rgm()

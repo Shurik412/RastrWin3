@@ -7,6 +7,17 @@ class ChartExcel:
                  chart_title='График', x_axis_title='Ось Х', y_axis_title='Ось Y',
                  width_chart=15, height_chart=7.5,
                  switch_command_line=False):
+        """
+
+        :param work_sheet:
+        :param chart_obj:
+        :param chart_title:
+        :param x_axis_title:
+        :param y_axis_title:
+        :param width_chart:
+        :param height_chart:
+        :param switch_command_line:
+        """
         self.work_sheet = work_sheet
         self.chart_obj = chart_obj
         self.chart_obj.title = chart_title
@@ -21,6 +32,19 @@ class ChartExcel:
     def add_line_chart(self, min_col_x, min_row_x, max_row_x,
                        min_col_y, min_row_y, max_row_y, title_from_data_ch=True, title_ch=None,
                        width_line_pt=None):
+        """
+
+        :param min_col_x:
+        :param min_row_x:
+        :param max_row_x:
+        :param min_col_y:
+        :param min_row_y:
+        :param max_row_y:
+        :param title_from_data_ch:
+        :param title_ch:
+        :param width_line_pt:
+        :return:
+        """
 
         if title_from_data_ch is not True:
             min_row_y = min_row_y + 1
@@ -57,6 +81,23 @@ class ChartExcelOtherSheet:
                  x_axis_min=None, x_axis_max=None,
                  y_axis_min=None, y_axis_max=None,
                  switch_command_line=False):
+        """
+
+        :param work_sheet:
+        :param work_book:
+        :param chart_obj:
+        :param chart_title:
+        :param x_axis_title:
+        :param y_axis_title:
+        :param width_chart:
+        :param height_chart:
+        :param legend_position:
+        :param x_axis_min:
+        :param x_axis_max:
+        :param y_axis_min:
+        :param y_axis_max:
+        :param switch_command_line:
+        """
         self.work_book = work_book
         self.work_sheet = work_sheet
         self.chart_obj = chart_obj
@@ -79,6 +120,20 @@ class ChartExcelOtherSheet:
                        min_col_y, min_row_y, max_row_y,
                        work_sheet_other=None, title_from_data_ch=True, title_ch=None,
                        width_line_pt=None):
+        """
+
+        :param min_col_x:
+        :param min_row_x:
+        :param max_row_x:
+        :param min_col_y:
+        :param min_row_y:
+        :param max_row_y:
+        :param work_sheet_other:
+        :param title_from_data_ch:
+        :param title_ch:
+        :param width_line_pt:
+        :return:
+        """
         if work_sheet_other is None:
             work_sheet_other_ = self.work_sheet
         else:
@@ -104,66 +159,11 @@ class ChartExcelOtherSheet:
             print(f'\t- добавлена линия (кривая) на график;')
 
     def print_chart(self, cell_print_chart='A10'):
+        """
+
+        :param cell_print_chart:
+        :return:
+        """
         self.work_sheet.add_chart(self.chart_obj, cell_print_chart)
         if self.switch_command_line is not False:
             print(f'\t\t- график выведен на лист {self.work_sheet}, в ячейку {cell_print_chart}.')
-
-
-if __name__ == '__main__':
-    from openpyxl import Workbook
-    from openpyxl.chart import ScatterChart  # , Reference, Series
-
-    # wb = load_workbook(filename='C:\\Users\\Ohrimenko_AG\\Desktop\\21\\78.xlsx')
-    wb = Workbook()
-    ws = wb.active
-    rows = [
-        ['Size', 'Batch 1', 'Batch 2'],
-        [2, 40, 30],
-        [3, 40, 25],
-        [4, 50, 30],
-        [5, 30, 25],
-        [6, 25, 35],
-        [7, 20, 40],
-    ]
-
-    for row in rows:
-        ws.append(row)
-
-    # ch1 = ScatterChart()
-    # ch1.width = 100
-    # ch1.height = 100
-    # x_values = Reference(ws, min_col=1, min_row=1, max_row=7,
-    #                      range_string=None)
-    # y_values = Reference(ws, min_col=2, min_row=1, max_row=7,
-    #                      range_string=None)
-    # series_xy = Series(y_values, x_values, title_from_data=True)
-    #
-    # ws.add_chart(ch1, "B10")
-    # wb.save('C:\\Users\\User\\Desktop\\21\\stop.xlsx')
-
-    dict_test = {1: ['G2', 'Q2'],
-                 2: ['G17', 'Q17']}
-
-    for i in dict_test:
-        ch22 = ScatterChart()
-        ch2 = ChartExcelOtherSheet(work_sheet=ws, chart_obj=ch22, work_book=wb, switch_command_line=True)
-
-        ch2.add_line_chart(min_col_x=1, min_row_x=2, max_row_x=32,
-                           min_col_y=2, min_row_y=1, max_row_y=32,
-                           work_sheet_other=None, title_from_data_ch=False, title_ch='A2',
-                           width_line_pt=1)
-
-        ch2.print_chart(cell_print_chart=dict_test[i][0])
-
-        ch33 = ScatterChart()
-        ch3 = ChartExcelOtherSheet(work_sheet=ws, chart_obj=ch33, work_book=wb, switch_command_line=True,
-                                   height_chart=10, width_chart=5)
-
-        ch3.add_line_chart(min_col_x=1, min_row_x=2, max_row_x=32,
-                           min_col_y=2, min_row_y=1, max_row_y=32,
-                           work_sheet_other=None, title_from_data_ch=False, title_ch='A1',
-                           width_line_pt=2)
-
-        ch3.print_chart(cell_print_chart=dict_test[i][1])
-
-    wb.save(filename='C:\\Users\\User\\Desktop\\21\\stop.xlsx')

@@ -80,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\settings\dynamic.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\settings\equivalence.py">
           <value>
             <Attribute>
