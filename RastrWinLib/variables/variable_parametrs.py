@@ -24,7 +24,7 @@ class FindNextSel:
 
 class Variable:
     """
-    Класс для внесени изменений
+    Класс для изменений значений ячеек.
     """
 
     def __init__(self,
@@ -44,7 +44,7 @@ class Variable:
                          row_id=None,
                          value=None):
         """
-        make_changes_row - изменение параметра по заданному row_id
+        Метод: make_changes_row - изменение параметра по заданному row_id
         :param table: название таблицы RastrWin3;
         :param column: назваине колонки RastrWin3;
         :param row_id: значение порядкового номера строки;
@@ -96,10 +96,10 @@ class Variable:
                             key=None,
                             value=None):
         """
-        make_changes_setsel -> изменение параметра по выборки SetSel(key) -> key = "ny=6516516";
+        Метод: make_changes_setsel - изменение параметра по выборки SetSel(key) -> key = "ny=6516516";
         :param table: название таблицы RastrWin3;
         :param column: название колонки RastrWin3;
-        :param key: выборка SetSel("ny=52135156") -> задается в виде value='ny=52135156';
+        :param key: выборка SetSel("ny=52135156") - задается в виде value='ny=52135156';
         :param value: значение для замены;
         :return: Nothing returns.
         """
@@ -134,20 +134,3 @@ class Variable:
             print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение table = None.')
         if self.switch_command_line is not False:
             print(separator_star)
-
-
-if __name__ == '__main__':
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.shablon import shablon_file_dynamic
-    from RastrWinLib.tables.tables_attributes import com_dynamics_table, com_dynamics_attributes_list
-
-    load_file(file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
-              shablon=shablon_file_dynamic,
-              switch_command_line=True)
-
-    var_ = Variable(switch_command_line=False)
-
-    var_.make_changes_row(table=com_dynamics_table,
-                          column=com_dynamics_attributes_list[0],
-                          row_id=0,
-                          value=1)
