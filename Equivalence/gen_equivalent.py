@@ -60,7 +60,7 @@ def equivalent_gen(viborka_gen):
             else:
                 ny_two = ip_one
 
-            tables_node.SetSel(f'"ny={ny_two}"')
+            tables_node.SetSel(f'ny={ny_two}')
             row_node_in_ny_two = tables_node.FindNextSel(-1)
 
             if row_node_in_ny_two != (-1):

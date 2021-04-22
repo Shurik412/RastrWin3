@@ -45,11 +45,11 @@ set_com_ekviv(selekv=0,
               otm_n=0)
 
 equivalent_gen(viborka_gen='(na=102 | na=103 | na=104 | na=105 | na=106 | na=107 | na=108 | na=109)')
-# equivalent_smart(viborka_rayon='(na=102 | na=103 | na=104 | na=105 | na=106 | na=107 | na=108 | na=109)')
+# equivalent_smart(viborka_rayon = '(na=102 | na=103 | na=104 | na=105 | na=106 | na=107 | na=108 | na=109)')
 regime.rgm()
 common_info.get()
 
 save_file(rastr_win=RASTR,
-          file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\test_1.rg2',
+          file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\test_1888.rg2',
           shablon=shablon_file_regime,
           switch_command_line=True)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.tables_attributes import com_ekviv_table, com_ekviv_attributes
+from RastrWinLib.tables.tables_attributes import com_ekviv_table, com_ekviv_attributes, com_ekviv_attributes_list
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -19,10 +19,6 @@ def set_com_ekviv(selekv=0,
                   otm_n=0,
                   switch_command_line=False,
                   ):
-    list_key = []
-    for key in com_ekviv_attributes.keys():
-        list_key.append(key)
-
     """
     Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):
 
@@ -43,18 +39,30 @@ def set_com_ekviv(selekv=0,
     variable_def_rowid = Variable(rastr_win=RASTR,
                                   switch_command_line=switch_command_line)
 
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[0], row_id=0, value=selekv)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[1], row_id=0, value=met_ekv)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[2], row_id=0, value=tip_ekv)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[3], row_id=0, value=ekvgen)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[4], row_id=0, value=tip_gen)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[5], row_id=0, value=kfc_x)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[6], row_id=0, value=pot_gen)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[7], row_id=0, value=kpn)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[8], row_id=0, value=tip_sxn)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[9], row_id=0, value=smart)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[10], row_id=0, value=zmax)
-    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=list_key[11], row_id=0, value=otm_n)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[0], row_id=0,
+                                        value=selekv)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[1], row_id=0,
+                                        value=met_ekv)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[2], row_id=0,
+                                        value=tip_ekv)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[3], row_id=0,
+                                        value=ekvgen)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[4], row_id=0,
+                                        value=tip_gen)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[5], row_id=0,
+                                        value=kfc_x)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[6], row_id=0,
+                                        value=pot_gen)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[7], row_id=0,
+                                        value=kpn)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[8], row_id=0,
+                                        value=tip_sxn)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[9], row_id=0,
+                                        value=smart)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[10], row_id=0,
+                                        value=zmax)
+    variable_def_rowid.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[11], row_id=0,
+                                        value=otm_n)
 
     if switch_command_line is not False:
         return print(
