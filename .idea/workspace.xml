@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619090552745</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Внес изменения в класс Variable.&#10;Добавил вывод в протокол dynamic - settings.">
+      <created>1619093721335</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1619093721335</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add file removal_marked_objects.py -&gt; class RemoveSelObjects" />
     <MESSAGE value="corr full" />
     <MESSAGE value="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent" />
     <MESSAGE value="Add in file Tables_and_parametrs.py -&gt; table com_ekviv -&gt; Общие параметры эквивалентирования" />
@@ -463,7 +467,8 @@
     <MESSAGE value="Corr Variable 22.04.21" />
     <MESSAGE value="New class Get...Parameter." />
     <MESSAGE value="Исправление документирования классов." />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправление документирования классов." />
+    <MESSAGE value="Внес изменения в класс Variable.&#10;Добавил вывод в протокол dynamic - settings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Внес изменения в класс Variable.&#10;Добавил вывод в протокол dynamic - settings." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

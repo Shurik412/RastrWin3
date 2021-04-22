@@ -257,29 +257,3 @@ DFWAutoLogicScn_attributes = {
     'UnitActions': 'Список действий модуля (Дейст мод)',
     'OutputMode': 'Режим выхода (Режим)',
 }
-
-if __name__ == '__main__':
-    # import win32com.client
-    # from RastrWinLib.loading.load_file_rastrwin import load_file
-    # from RastrWinLib.loading.shablons_dir import shablon_file_regime
-    # from RastrWinLib.getting.get_parameter import GettingParameter, GetTableCommonInfo
-    #
-    # rastr = win32com.client.Dispatch('Astra.Rastr')
-    #
-    # load_file(rastr_win=rastr,
-    #           file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWinLib\test-rastr\cx195.rg2',
-    #           shablon=shablon_file_regime,
-    #           switch_command_line=True)
-    #
-    # get_t = GetTableCommonInfo(rastr_win=rastr,
-    #                            switch_command_line=True,
-    #                            path_file_log=r'C:\Users\Ohrimenko_AG\Desktop\EquivalentPy\com_cxema_log.txt')
-    # get_t.get()
-    from icecream import ic
-
-    l = []
-    for key in table_com_ekviv.keys():
-        l.append(key)
-
-    ic(l[1])
-    # ic(table_com_ekviv.keys())
