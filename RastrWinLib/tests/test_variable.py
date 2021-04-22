@@ -13,7 +13,7 @@ var = Variable(switch_command_line=True)
 
 var.make_changes_row(table=generator_table,
                      column=generator_attributes_list[0],
-                     row_id='1',
+                     row_id=None,
                      value='1')
 
 var.make_changes_row(table=generator_table,

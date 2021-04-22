@@ -31,7 +31,6 @@ class Variable:
                  rastr_win=RASTR,
                  switch_command_line=False):
         """
-
         :param rastr_win: com - объект Rastr.Astra;
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
@@ -46,10 +45,10 @@ class Variable:
                          value=None):
         """
         make_changes_row - изменение параметра по заданному row_id
-        :param table: название таблицы RastrWin3
-        :param column: назваине колонки RastrWin3
-        :param row_id: значение строки
-        :param value: значение
+        :param table: название таблицы RastrWin3;
+        :param column: назваине колонки RastrWin3;
+        :param row_id: значение порядкового номера строки;
+        :param value: значение новой величины заменяемого значения;
         :return: Nothing returns
         """
         if self.switch_command_line is not False:
@@ -59,7 +58,8 @@ class Variable:
             table = self.rastr_win.Tables(table)
         else:
             switch_command_line_def = False
-            print(f'{error_text} Variable -> def make_changes_row(): Не задано название "table".')
+            print(f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!.')
+            print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано название таблицы "table".')
 
         if column is not None:
             col = table.Cols(column)
@@ -68,13 +68,20 @@ class Variable:
                     col.SetZ(row_id, value)
                 else:
                     switch_command_line_def = False
-                    print(f'{error_text} Variable -> def make_changes_row(): Не задано значение "value".')
+                    print(
+                        f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!')
+                    print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано значение "value".')
             else:
                 switch_command_line_def = False
-                print(f'{error_text} Variable -> def make_changes_row(): Не задано значение "row_id".')
+                print(
+                    f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!')
+                print(
+                    f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано значение порядкового номера строки "row_id".')
         else:
             switch_command_line_def = False
-            print(f'{error_text} Variable -> def make_changes_row(): Не задано значение "column".')
+            print(f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!')
+            print(
+                f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано название колонки (столбца) "column".')
 
         if self.switch_command_line and switch_command_line_def is not False:
             print(f'Внесены изменения:\n'
@@ -104,7 +111,7 @@ class Variable:
             table.SetSel(key)
             row_id = table.FindNextSel(-1)
             if row_id == (-1):
-                print(f'{error_text} Variable -> def make_changes_setsel(): значение row_id = (-1).')
+                print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение "row_id" равно -1.')
                 print(' Значения заданой выборки - отсутствуют.')
             else:
                 if column is not None:
@@ -122,9 +129,9 @@ class Variable:
                               f'                   - значение до: [{value_before}]\n'
                               f'                   - значение после: [{value}]\n')
                 else:
-                    print(f'{error_text} Variable -> def make_changes_setsel(): значение value = None.')
+                    print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение value = None.')
         else:
-            print(f'{error_text} Variable -> def make_changes_setsel(): значение table = None.')
+            print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение table = None.')
         if self.switch_command_line is not False:
             print(separator_star)
 
