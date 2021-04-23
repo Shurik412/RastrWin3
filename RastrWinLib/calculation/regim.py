@@ -29,10 +29,10 @@ class SteadyState:
             start_time = time()
         else:
             start_time = 0
-        print(separator_noun)
-        print(f'Запуск "Расчет режима":')
         kod = self.rastr_win.Rgm(self.par)
         if self.switch_command_line is not False:
+            print(separator_noun)
+            print(f'Запуск "Расчет режима":')
             print(f'\tСообщение о результатх расчета УР: {kod}')
             if kod != 0:
                 print('\t\tРежим не сбалансирован!')
