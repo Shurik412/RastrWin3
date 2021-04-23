@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/table_node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/table_vetv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/na_vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/na_vetv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Tables_Parametrs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.na_vetv">
+  <component name="RunManager" selected="Python.equivalent_calculation_model">
     <configuration name="equivalent_calculation_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,8 +163,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.na_vetv" />
         <item itemvalue="Python.equivalent_calculation_model" />
+        <item itemvalue="Python.na_vetv" />
         <item itemvalue="Python.set_regime" />
         <item itemvalue="Python.test_variable" />
         <item itemvalue="Python.test_settings" />
@@ -498,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619178850352</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Добавилено внесение районов в ветви">
+      <created>1619179744693</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1619179744693</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

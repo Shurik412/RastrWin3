@@ -4,7 +4,8 @@
 #
 
 node_table = 'node'
-node_attributes_list = ['sel', 'sta', 'tip', 'ny', 'name', 'uhom', ]
+node_attributes_list = ['sel', 'sta', 'tip', 'ny', 'name', 'uhom', 'na', ]
+node_attributes_dict = {'sel': 'sel'}
 node_attributes = {
     'sel': '"О" Отметка узла',
     'sta': '"S" Состояние узла',
@@ -15,7 +16,7 @@ node_attributes = {
 }
 
 vetv_table = 'vetv'
-vetv_attributes_list = ['sel', 'sta', 'tip', 'ip', 'iq', 'name', ]
+vetv_attributes_list = ['sel', 'sta', 'tip', 'ip', 'iq', 'name', 'na', ]
 vetv_attributes = {
     'sel': '"О" Отметка ветви',
     'sta': '"S" Состояние ветви',
@@ -26,7 +27,7 @@ vetv_attributes = {
 }
 
 generator_table = 'Generator'
-generator_attributes_list = ['sel', 'sta', 'Num', 'Name', 'Node', 'P', 'Q']
+generator_attributes_list = ['sel', 'sta', 'Num', 'Name', 'Node', 'P', 'Q', ]
 generator_attributes = {
     'sel': '"О" Отметка генератора',
     'sta': '"S" Состояние генератора',
