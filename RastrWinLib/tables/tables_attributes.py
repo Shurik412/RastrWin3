@@ -11,7 +11,7 @@ node_attributes = {
     'tip': '"Тип" Тип узла',
     'ny': '"Номер" Номер узла',
     'name': '"Название" Название узла',
-    'uhom': '"U_ном" Номинальное напряжение'
+    'uhom': '"U_ном" Номинальное напряжение',
 }
 
 vetv_table = 'vetv'
@@ -26,7 +26,7 @@ vetv_attributes = {
 }
 
 generator_table = 'Generator'
-generator_attributes_list = ['sel', 'sta', 'Num', 'Name', 'Node', ]
+generator_attributes_list = ['sel', 'sta', 'Num', 'Name', 'Node', 'P', 'Q']
 generator_attributes = {
     'sel': '"О" Отметка генератора',
     'sta': '"S" Состояние генератора',

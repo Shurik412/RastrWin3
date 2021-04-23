@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\OAPV_simulation\set_regime.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\OAPV_simulation\test_napr.py">
           <value>
             <Attribute>

@@ -14,10 +14,9 @@ class SwitchNode:
                  table=node_table,
                  switch_command_line=False):
         """
-
-        :param rastr_win:
-        :param table:
-        :param switch_command_line:
+        :param rastr_win: com - объект RastrWin3;
+        :param table: название таблицы;
+        :param switch_command_line: True/False - выводит сообщения в протокол.
         """
         self.rastr_win = rastr_win
         self.table = table
@@ -27,8 +26,7 @@ class SwitchNode:
 
     def on_node(self, node_ny):
         """
-
-        :param node_ny:
+        :param node_ny: номер узла.
         :return:
         """
         row_ = self.get_.get_row_node(node_ny=node_ny)
@@ -39,12 +37,11 @@ class SwitchNode:
                                         column=node_attributes_list[1],
                                         row_id=row_)
         if self.switch_command_line is not False:
-            pass
+            print(sta_ny)
 
     def off_node(self, node_ny):
         """
-
-        :param node_ny:
+        :param node_ny: номер узла.
         :return:
         """
         row_ = self.get_.get_row_node(node_ny=node_ny)
@@ -55,4 +52,4 @@ class SwitchNode:
                                         column=node_attributes_list[1],
                                         row_id=row_)
         if self.switch_command_line is not False:
-            pass
+            print(sta_ny)

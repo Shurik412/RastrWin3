@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -477,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619123408382</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Добален класс -&gt; switch -&gt; node -&gt; SwitchNode">
+      <created>1619167071529</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1619167071529</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +503,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;" />
     <MESSAGE value="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set" />
     <MESSAGE value="Add doc. class SetDynamic module settings_ekv.py" />
     <MESSAGE value="Rename settings_ekv.py in settings_rastr.py" />
@@ -518,7 +527,8 @@
     <MESSAGE value="Скорректировал settings -&gt; equivalence.py" />
     <MESSAGE value="Скорректировал variable_parametrs.py -&gt; Class Variable" />
     <MESSAGE value="Скорректировал vetv.py -&gt; Class SwitchVetv" />
-    <option name="LAST_COMMIT_MESSAGE" value="Скорректировал vetv.py -&gt; Class SwitchVetv" />
+    <MESSAGE value="Добален класс -&gt; switch -&gt; node -&gt; SwitchNode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добален класс -&gt; switch -&gt; node -&gt; SwitchNode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
