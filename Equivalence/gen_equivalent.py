@@ -3,19 +3,16 @@
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.equivalent import Equivalent
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.getting.get import GettingParameterInstance
 from RastrWinLib.settings.equivalence import set_com_ekviv
 from RastrWinLib.tables.tables_attributes import node_table, vetv_table, vetv_attributes_list, node_attributes_list
 from RastrWinLib.variables.group_correction import GroupCorr
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
-from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
-from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import shablon_file_regime
+from RastrWinLib.variables.variable_parametrs import Variable
 
 
 def equivalent_gen(viborka_gen):
-    ekv_obj = Equivalent(rastr_win=RASTR,
-                         switch_command_line=False)
+    # ekv_obj = Equivalent(rastr_win=RASTR,
+    #                      switch_command_line=False)
     sel_remove = RemoveSelObjects(rastr_win=RASTR)
     sel_remove.remove_sel_vetv()
     sel_remove.remove_sel_node()
@@ -23,18 +20,19 @@ def equivalent_gen(viborka_gen):
     tables_vetv = RASTR.Tables(vetv_table)
     var_node_obj = Variable(rastr_win=RASTR,
                             switch_command_line=False)
-    set_com_ekviv(selekv=0,
-                  met_ekv=0,
-                  tip_ekv=0,
-                  ekvgen=0,
-                  tip_gen=1,
-                  kfc_x='',
-                  pot_gen=0,
-                  kpn='',
-                  tip_sxn=0,
-                  smart=0,
-                  zmax=1000,
-                  otm_n=0)
+    # set_com_ekviv(selekv=0,
+    #               met_ekv=0,
+    #               tip_ekv=0,
+    #               ekvgen=0,
+    #               tip_gen=1,
+    #               kfc_x=0,
+    #               pot_gen=0,
+    #               kpn=0,
+    #               tip_sxn=0,
+    #               smart=0,
+    #               zmax=1000,
+    #               otm_n=0,
+    #               switch_command_line=True)
 
     tables_node.SetSel(f'{viborka_gen}')
     row_viborki = tables_node.FindNextSel(-1)
@@ -47,13 +45,13 @@ def equivalent_gen(viborka_gen):
         print(f'row_vetv_in_ny_one = {row_vetv_in_ny_one}')
 
         while row_vetv_in_ny_one != (-1):
-            ip_one = GettingParameter(rastr_win=RASTR,
-                                      table=vetv_table,
-                                      column=vetv_attributes_list[3]).get(row_id=row_vetv_in_ny_one)
+            ip_one = GettingParameter().get_cell(table=vetv_table,
+                                                 column=vetv_attributes_list[3],
+                                                 row_id=row_vetv_in_ny_one)
 
-            iq_one = GettingParameter(rastr_win=RASTR,
-                                      table=vetv_table,
-                                      column=vetv_attributes_list[4]).get(row_id=row_vetv_in_ny_one)
+            iq_one = GettingParameter().get_cell(table=vetv_table,
+                                                 column=vetv_attributes_list[4],
+                                                 row_id=row_vetv_in_ny_one)
 
             if ip_one == ny_one:
                 ny_two = iq_one
@@ -73,18 +71,19 @@ def equivalent_gen(viborka_gen):
         tables_node.SetSel(f'"{str(viborka_gen)}"')
         row_viborki = tables_node.FindNextSel(row_viborki)
 
-    set_com_ekviv(selekv=0,
-                  met_ekv=0,
-                  tip_ekv=0,
-                  ekvgen=0,
-                  tip_gen=1,
-                  kfc_x='',
-                  pot_gen=0,
-                  kpn='',
-                  tip_sxn=0,
-                  smart=0,
-                  zmax=1000,
-                  otm_n=0)
+    # set_com_ekviv(selekv=0,
+    #               met_ekv=0,
+    #               tip_ekv=0,
+    #               ekvgen=0,
+    #               tip_gen=1,
+    #               kfc_x=0,
+    #               pot_gen=0,
+    #               kpn=0,
+    #               tip_sxn=0,
+    #               smart=0,
+    #               zmax=1000,
+    #               otm_n=0,
+    #               switch_command_line=True)
     # ekv_obj.ekv()
     # tables_node.SetSel(f'uhom > 50')
     # tables_node.Cols('sel').Calc('0')

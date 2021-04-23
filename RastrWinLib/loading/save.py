@@ -19,11 +19,12 @@ def save_file(rastr_win=RASTR,
     :return: True
     """
     rastr_win.save(file_path, shablon)
-    print(separator_grid)
+
     if switch_command_line is not False:
+        print(separator_grid)
         if file_path == '':
             print(f'Ссылка для сохранения файла не задана!')
         else:
             print(f'Файл "{path.basename(file_path)}" сохранен по шаблону "{path.basename(shablon)}".')
-    print(separator_grid)
+        print(separator_grid)
     return True

@@ -9,8 +9,8 @@ from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.tables.tables_attributes import generator_table, generator_attributes_list
 
-dir = r'L:\SER\Охрименко\03. RastrWinLib\16\14'
-file_one_rg2 = rf'{dir}\14 АДТН обр обр.rg2'
+dir = r'L:\SER\Охрименко\03. RastrWin3\18'
+file_one_rg2 = rf'{dir}\4.rg2'
 file_two_rst = rf'{dir}\Дин модель Лето минимум.rst'
 file_log_gen = rf'{dir}\log_set_gen.txt'
 file_log_vetv = rf'{dir}\log_set_vetv.txt'

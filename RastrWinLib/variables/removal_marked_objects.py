@@ -6,7 +6,7 @@ from RastrWinLib.tables.tables_attributes import node_table, vetv_table
 
 class RemoveSelObjects:
     """
-    Данный класс удаляет галочки (отчетки) sel.
+    Данный класс удаляет галочки (отметки) sel.
     Метод: remove_sel -> удаляет выделение [sel] в заданной таблицe [par: table] и возвращяет True.
     Метод: remove_sel_node -> удаляет выделение [sel] в таблицe [node] и возвращяет True.
     Метод: remove_sel_vetv -> удаляет выделение [sel] в таблицe [vetv] и возвращяет True.
