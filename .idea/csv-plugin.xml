@@ -122,6 +122,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\com_dynamics.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\node.py">
           <value>
             <Attribute>
@@ -130,6 +137,13 @@
           </value>
         </entry>
         <entry key="\RastrWinLib\tables\tables_attributes.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tables\vetv.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
