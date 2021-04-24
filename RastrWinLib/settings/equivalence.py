@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-
+import RastrWinLib.tables.com_ekviv as com_ekviv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
-from RastrWinLib.tables.tables_attributes import com_ekviv_table, com_ekviv_attributes_list
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -19,175 +18,191 @@ def set_com_ekviv(selekv=0,
                   smart=0,
                   zmax=1000,
                   otm_n=0,
+                  rastr_win=RASTR,
                   switch_command_line=False):
     """
     Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):
 
-    :param switch_command_line: True/False - вывод сообщений в протакол;
     :param selekv: Отмеченные узлы: (Отмеч);
-    :param met_ekv: Метод эквивалентирования (Мет Экв);
-    :param tip_ekv: Тип эквивалентирования (Тип Экв);
-    :param ekvgen: Эквивалент узлов с фикс V (фиксV);
-    :param tip_gen: Тип эквивалентирования генераторов (Тип Ген);
-    :param kfc_x: Коэффициент для Xg_ген (К_X_Ген);
+    :param met_ekv: Метод эквивалентирования: (Мет Экв);
+    :param tip_ekv: Тип эквивалентирования: (Тип Экв);
+    :param ekvgen: Эквивалент узлов с фикс V: (фиксV);
+    :param tip_gen: Тип эквивалентирования генераторов: (Тип Ген);
+    :param kfc_x: Коэффициент для Xg_ген: (К_X_Ген);
     :param pot_gen: Учет потерь при разносе генерации: (dP_Ген);
-    :param kpn: Доля нагрузки, пересчитываемая в шунт (d_наг);
-    :param tip_sxn: Учитывать СХН при эквивалентировании (СХН);
-    :param smart: "Умное" эквивалентирование : (Smart);
+    :param kpn: Доля нагрузки, пересчитываемая в шунт: (d_наг);
+    :param tip_sxn: Учитывать СХН при эквивалентировании: (СХН);
+    :param smart: "Умное" эквивалентирование: (Smart);
     :param zmax: Удаление ветвей с сопротивлением большим: (Z_max);
-    :param otm_n: Отмечать узлы после эквивалентирования (Отм);
+    :param otm_n: Отмечать узлы после эквивалентирования: (Отм);
+    :param rastr_win: com - объект RastrWin3;
+    :param switch_command_line: True/False - вывод сообщений в протакол;
+    :return: Nothing returns
     """
 
-    variable_ = Variable(rastr_win=RASTR,
+    variable_ = Variable(rastr_win=rastr_win,
                          switch_command_line=False)
-    get_ = GettingParameter()
+    get_ = GettingParameter(rastr_win=rastr_win)
 
-    get_selekv = get_.get_cell(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[0],
-                               row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[0],
+    # selekv Отмеченные узлы: (Отмеч)
+    selekv_get_before = get_.get_cell(table=com_ekviv.table,
+                                      column=com_ekviv.selekv,
+                                      row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.selekv,
                                row_id=0,
                                value=selekv)
-    get_selekv_after = get_.get_cell(table=com_ekviv_table,
-                                     column=com_ekviv_attributes_list[0],
+    selekv_get_after = get_.get_cell(table=com_ekviv.table,
+                                     column=com_ekviv.selekv,
                                      row_id=0)
 
-    get_met_ekv = get_.get_cell(table=com_ekviv_table,
-                                column=com_ekviv_attributes_list[1],
-                                row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[1],
+    # met_ekv Метод эквивалентирования (Мет Экв)
+    met_ekv_get_before = get_.get_cell(table=com_ekviv.table,
+                                       column=com_ekviv.met_ekv,
+                                       row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.met_ekv,
                                row_id=0,
                                value=met_ekv)
-    get_met_ekv_after = get_.get_cell(table=com_ekviv_table,
-                                      column=com_ekviv_attributes_list[1],
+    met_ekv_get_after = get_.get_cell(table=com_ekviv.table,
+                                      column=com_ekviv.met_ekv,
                                       row_id=0)
 
-    get_tip_ekv = get_.get_cell(table=com_ekviv_table,
-                                column=com_ekviv_attributes_list[2],
-                                row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[2],
+    # tip_ekv Тип эквивалентирования (Тип Экв)
+    tip_ekv_get_before = get_.get_cell(table=com_ekviv.table,
+                                       column=com_ekviv.tip_ekv,
+                                       row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.tip_ekv,
                                row_id=0,
                                value=tip_ekv)
-    get_tip_ekv_after = get_.get_cell(table=com_ekviv_table,
-                                      column=com_ekviv_attributes_list[2],
+    tip_ekv_get_after = get_.get_cell(table=com_ekviv.table,
+                                      column=com_ekviv.tip_ekv,
                                       row_id=0)
 
-    get_ekvgen = get_.get_cell(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[3],
-                               row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[3],
+    # ekvgen Эквивалент узлов с фикс V (фиксV)
+    ekvgen_get_before = get_.get_cell(table=com_ekviv.table,
+                                      column=com_ekviv.ekvgen,
+                                      row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.ekvgen,
                                row_id=0,
                                value=ekvgen)
-    get_ekvgen_after = get_.get_cell(table=com_ekviv_table,
-                                     column=com_ekviv_attributes_list[3],
+    ekvgen_get_after = get_.get_cell(table=com_ekviv.table,
+                                     column=com_ekviv.ekvgen,
                                      row_id=0)
 
-    get_tip_gen = get_.get_cell(table=com_ekviv_table,
-                                column=com_ekviv_attributes_list[4],
-                                row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[4],
+    # tip_gen Тип эквивалентирования генераторов (Тип Ген)
+    tip_gen_get_before = get_.get_cell(table=com_ekviv.table,
+                                       column=com_ekviv.tip_gen,
+                                       row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.tip_gen,
                                row_id=0,
                                value=tip_gen)
-    get_tip_gen_after = get_.get_cell(table=com_ekviv_table,
-                                      column=com_ekviv_attributes_list[4],
+    tip_gen_get_after = get_.get_cell(table=com_ekviv.table,
+                                      column=com_ekviv.tip_gen,
                                       row_id=0)
 
-    get_kfc_x = get_.get_cell(table=com_ekviv_table,
-                              column=com_ekviv_attributes_list[5],
-                              row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[5],
+    # kfc_x Коэффициент для Xg_ген (К_X_ Ген)
+    kfc_x_get_before = get_.get_cell(table=com_ekviv.table,
+                                     column=com_ekviv.kfc_x,
+                                     row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.kfc_x,
                                row_id=0,
                                value=kfc_x)
-    get_kfc_x_after = get_.get_cell(table=com_ekviv_table,
-                                    column=com_ekviv_attributes_list[5],
+    kfc_x_get_after = get_.get_cell(table=com_ekviv.table,
+                                    column=com_ekviv.kfc_x,
                                     row_id=0)
 
-    get_pot_gen = get_.get_cell(table=com_ekviv_table,
-                                column=com_ekviv_attributes_list[6],
-                                row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[6],
+    # pot_gen Учет потерь при разносе генерации: (dP_Ген)
+    pot_gen_get_before = get_.get_cell(table=com_ekviv.table,
+                                       column=com_ekviv.pot_gen,
+                                       row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.pot_gen,
                                row_id=0,
                                value=pot_gen)
-    get_pot_gen_after = get_.get_cell(table=com_ekviv_table,
-                                      column=com_ekviv_attributes_list[6],
+    pot_gen_get_after = get_.get_cell(table=com_ekviv.table,
+                                      column=com_ekviv.pot_gen,
                                       row_id=0)
 
-    get_kpn = get_.get_cell(table=com_ekviv_table,
-                            column=com_ekviv_attributes_list[7],
-                            row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[7],
+    # kpn Доля нагрузки, пересчитываемая в шунт (d_наг)
+    kpn_get_before = get_.get_cell(table=com_ekviv.table,
+                                   column=com_ekviv.kpn,
+                                   row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.kpn,
                                row_id=0,
                                value=kpn)
-    get_kpn_after = get_.get_cell(table=com_ekviv_table,
-                                  column=com_ekviv_attributes_list[7],
+    kpn_get_after = get_.get_cell(table=com_ekviv.table,
+                                  column=com_ekviv.kpn,
                                   row_id=0)
 
-    get_tip_sxn = get_.get_cell(table=com_ekviv_table,
-                                column=com_ekviv_attributes_list[8],
-                                row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[8],
+    # tip_sxn Учитывать СХН при эквивалентировании (СХН)
+    tip_sxn_get_before = get_.get_cell(table=com_ekviv.table,
+                                       column=com_ekviv.tip_sxn,
+                                       row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.tip_sxn,
                                row_id=0,
                                value=tip_sxn)
-    get_tip_sxn_after = get_.get_cell(table=com_ekviv_table,
-                                      column=com_ekviv_attributes_list[8],
+    tip_sxn_get_after = get_.get_cell(table=com_ekviv.table,
+                                      column=com_ekviv.tip_sxn,
                                       row_id=0)
 
-    get_smart = get_.get_cell(table=com_ekviv_table,
-                              column=com_ekviv_attributes_list[9],
-                              row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[9],
+    # smart "Умное" эквивалентирование : (Smart)
+    smart_get_before = get_.get_cell(table=com_ekviv.table,
+                                     column=com_ekviv.smart,
+                                     row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.smart,
                                row_id=0,
                                value=smart)
-    get_smart_after = get_.get_cell(table=com_ekviv_table,
-                                    column=com_ekviv_attributes_list[9],
+    smart_get_after = get_.get_cell(table=com_ekviv.table,
+                                    column=com_ekviv.smart,
                                     row_id=0)
 
-    get_zmax = get_.get_cell(table=com_ekviv_table,
-                             column=com_ekviv_attributes_list[10],
-                             row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table, column=com_ekviv_attributes_list[10],
+    # zmax Удаление ветвей с сопротивлением большим: (Z_max)
+    zmax_get_before = get_.get_cell(table=com_ekviv.table,
+                                    column=com_ekviv.zmax,
+                                    row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.zmax,
                                row_id=0,
                                value=zmax)
-    get_zmax_after = get_.get_cell(table=com_ekviv_table,
-                                   column=com_ekviv_attributes_list[10],
+    zmax_get_after = get_.get_cell(table=com_ekviv.table,
+                                   column=com_ekviv.zmax,
                                    row_id=0)
 
-    get_otm_n = get_.get_cell(table=com_ekviv_table,
-                              column=com_ekviv_attributes_list[11],
-                              row_id=0)
-    variable_.make_changes_row(table=com_ekviv_table,
-                               column=com_ekviv_attributes_list[11],
+    # otm_n Отмечать узлы после эквивалентирования (Отм)
+    otm_n_get_before = get_.get_cell(table=com_ekviv.table,
+                                     column=com_ekviv.otm_n,
+                                     row_id=0)
+    variable_.make_changes_row(table=com_ekviv.table,
+                               column=com_ekviv.otm_n,
                                row_id=0,
                                value=otm_n)
-    get_otm_n_after = get_.get_cell(table=com_ekviv_table,
-                                    column=com_ekviv_attributes_list[11],
+    otm_n_get_after = get_.get_cell(table=com_ekviv.table,
+                                    column=com_ekviv.otm_n,
                                     row_id=0)
 
     if switch_command_line is not False:
         print(separator_noun)
         print(
             f'Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):\n'
-            f'selekv: Отмеченные узлы: (Отмеч) "до" = {get_selekv}; "после" = {get_selekv_after};\n'
-            f'met_ekv: Метод эквивалентирования (Мет Экв) "до" = {get_met_ekv}; "после" = {get_met_ekv_after};\n'
-            f'tip_ekv: Тип эквивалентирования (Тип Экв) "до" = {get_tip_ekv}; "после" = {get_tip_ekv_after};\n'
-            f'ekvgen: Эквивалент узлов с фикс V (фиксV) "до" = {get_ekvgen}; "после" = {get_ekvgen_after};\n'
-            f'tip_gen: Тип эквивалентирования генераторов (Тип Ген) "до" = {get_tip_gen}; "после" = {get_tip_gen_after};\n'
-            f'kfc_x: Коэффициент для Xg_ген (К_X_Ген) "до" = {get_kfc_x}; "после" = {get_kfc_x_after};\n'
-            f'pot_gen: Учет потерь при разносе генерации: (dP_Ген) "до" = {get_pot_gen}; "после" = {get_pot_gen_after};\n'
-            f'kpn: Доля нагрузки, пересчитываемая в шунт (d_наг) "до" = {get_kpn}; "после" = {get_kpn_after};\n'
-            f'tip_sxn: Учитывать СХН при эквивалентировании (СХН) "до" = {get_tip_sxn}; "после" = {get_tip_sxn_after};\n'
-            f'smart: "Умное" эквивалентирование : (Smart) "до" = {get_smart}; "после" = {get_smart_after};\n'
-            f'zmax: Удаление ветвей с сопротивлением большим: (Z_max) "до" = {get_zmax}; "после" = {get_zmax_after};\n'
-            f'otm_n: Отмечать узлы после эквивалентирования (Отм) "до" = {get_otm_n}; "после" = {get_otm_n_after}.'
+            f'selekv: Отмеченные узлы: (Отмеч) "до" = {selekv_get_before}; "после" = {selekv_get_after};\n'
+            f'met_ekv: Метод эквивалентирования: (Мет Экв) "до" = {met_ekv_get_before}; "после" = {met_ekv_get_after};\n'
+            f'tip_ekv: Тип эквивалентирования: (Тип Экв) "до" = {tip_ekv_get_before}; "после" = {tip_ekv_get_after};\n'
+            f'ekvgen: Эквивалент узлов с фикс V: (фиксV) "до" = {ekvgen_get_before}; "после" = {ekvgen_get_after};\n'
+            f'tip_gen: Тип эквивалентирования генераторов: (Тип Ген) "до" = {tip_gen_get_before}; "после" = {tip_gen_get_after};\n'
+            f'kfc_x: Коэффициент для Xg_ген: (К_X_Ген) "до" = {kfc_x_get_before}; "после" = {kfc_x_get_after};\n'
+            f'pot_gen: Учет потерь при разносе генерации: (dP_Ген) "до" = {pot_gen_get_before}; "после" = {pot_gen_get_after};\n'
+            f'kpn: Доля нагрузки, пересчитываемая в шунт: (d_наг) "до" = {kpn_get_before}; "после" = {kpn_get_after};\n'
+            f'tip_sxn: Учитывать СХН при эквивалентировании: (СХН) "до" = {tip_sxn_get_before}; "после" = {tip_sxn_get_after};\n'
+            f'smart: "Умное" эквивалентирование: (Smart) "до" = {smart_get_before}; "после" = {smart_get_after};\n'
+            f'zmax: Удаление ветвей с сопротивлением большим: (Z_max) "до" = {zmax_get_before}; "после" = {zmax_get_after};\n'
+            f'otm_n: Отмечать узлы после эквивалентирования: (Отм) "до" = {otm_n_get_before}; "после" = {otm_n_get_after}.'
         )
         print(separator_noun)

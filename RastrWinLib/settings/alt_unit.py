@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import RastrWinLib.tables.AltUnit as altunit
+from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
 from RastrWinLib.variables.variable_parametrs import Variable
@@ -13,23 +14,25 @@ def set_alt_unit(
         Formula: str = '',
         Prec: str = '',
         Tabl: str = '',
+        rastr_win=RASTR,
         switch_command_line: bool = False, ):
     """
-     Описание альтернативных единиц измерения
+    Параметры настройки "Описание альтернативных единиц измерения" (таблица "Ед.Измерения": AltUnit):
 
-    :param row_id: Порядковый номер в таблице "Ед. Измерения"
-    :param Active: Активизация альтернативной ЕИ
-    :param Unit: Основная Единица Измерения
-    :param Alt: Альтернативная Единица Измерения
-    :param Formula: Формула для преобразования
-    :param Prec: Точность отображение Альт ЕИ
-    :param Tabl: Ограничитель по таблице
-    :param switch_command_line: True/False -
+    :param row_id: Порядковый номер в таблице "Ед. Измерения";
+    :param Active: Активизация альтернативной ЕИ;
+    :param Unit: Основная Единица Измерения;
+    :param Alt: Альтернативная Единица Измерения;
+    :param Formula: Формула для преобразования;
+    :param Prec: Точность отображение Альт ЕИ;
+    :param Tabl: Ограничитель по таблице;
+    :param rastr_win: com - объект RastrWin3;
+    :param switch_command_line: True/False - вывод сообщений в протакол;
     :return: Nothing returns
     """
 
-    variable_ = Variable(switch_command_line=False)
-    get_ = GettingParameter()
+    variable_ = Variable(rastr_win=rastr_win)
+    get_ = GettingParameter(rastr_win=rastr_win)
 
     # Active Активизация альтернативной ЕИ (A)
     active_get_before = get_.get_cell(table=altunit.table,
