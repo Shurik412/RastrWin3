@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/com_regim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/ut_common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Add file removal_marked_objects.py -&gt; class RemoveSelObjects">
-      <created>1617279249716</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1617279249716</updated>
     </task>
     <task id="LOCAL-00008" summary="corr full">
       <created>1617279363811</created>
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619274679834</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py">
+      <created>1619279957055</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1619279957055</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +536,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add settings function ...&#10;Corr print result variable_parametrs.py" />
     <MESSAGE value="Corr gen_equivalent.py" />
     <MESSAGE value="Corr equivalent_calculation_model.py" />
     <MESSAGE value="Create dir RegimNote" />
@@ -561,7 +560,8 @@
     <MESSAGE value="добавил переменных и типы в dynamic.py" />
     <MESSAGE value="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py" />
     <MESSAGE value="добавил переменные, типы в com_ekviv.py&#10;скорректировал функцию set_com_ekviv in equivalence.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил переменные, типы в com_ekviv.py&#10;скорректировал функцию set_com_ekviv in equivalence.py" />
+    <MESSAGE value="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
