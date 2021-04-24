@@ -1,59 +1,116 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.tables_attributes import alt_unit_table, alt_unit_attributes_list
+import RastrWinLib.tables.AltUnit as altunit
+from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.log_tools.tools import separator_noun
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
 def set_alt_unit(
-        row_id=0,
-        Active='',
-        Unit='',
-        Alt='',
-        Formula='',
-        Prec='',
-        Tabl='',
-        switch_command_line=False,
-):
+        row_id: int = 0,
+        Active: bool = False,
+        Unit: str = '',
+        Alt: str = '',
+        Formula: str = '',
+        Prec: str = '',
+        Tabl: str = '',
+        switch_command_line: bool = False, ):
     """
-
-    :param row_id:
-    :param Active:
-    :param Unit:
-    :param Alt:
-    :param Formula:
-    :param Prec:
-    :param Tabl:
-    :param switch_command_line:
+     Описание альтернативных единиц измерения
+    :param row_id: Порядковый номер в таблице "Ед. Измерения"
+    :param Active: Активизация альтернативной ЕИ
+    :param Unit: Основная Единица Измерения
+    :param Alt: Альтернативная Единица Измерения
+    :param Formula: Формула для преобразования
+    :param Prec: Точность отображение Альт ЕИ
+    :param Tabl: Ограничитель по таблице
+    :param switch_command_line: True/False -
     :return:
     """
-    variable_def_rowid = Variable(rastr_win=RASTR, switch_command_line=switch_command_line)
 
-    variable_def_rowid.make_changes_row(table=alt_unit_table,
-                                        column=alt_unit_attributes_list[0],
-                                        row_id=row_id,
-                                        value=int(Active))
-    variable_def_rowid.make_changes_row(table=alt_unit_table,
-                                        column=alt_unit_attributes_list[1],
-                                        row_id=row_id,
-                                        value=str(Unit))
-    variable_def_rowid.make_changes_row(table=alt_unit_table,
-                                        column=alt_unit_attributes_list[2],
-                                        row_id=row_id,
-                                        value=str(Alt))
-    variable_def_rowid.make_changes_row(table=alt_unit_table,
-                                        column=alt_unit_attributes_list[3],
-                                        row_id=row_id,
-                                        value=str(Formula))
-    variable_def_rowid.make_changes_row(table=alt_unit_table,
-                                        column=alt_unit_attributes_list[4],
-                                        row_id=row_id,
-                                        value=str(Prec))
-    variable_def_rowid.make_changes_row(table=alt_unit_table,
-                                        column=alt_unit_attributes_list[5],
-                                        row_id=row_id,
-                                        value=str(Tabl))
+    variable_ = Variable(switch_command_line=False)
+    get_ = GettingParameter()
+
+    # Active Активизация альтернативной ЕИ (A)
+    active_get_before = get_.get_cell(table=altunit.table,
+                                      column=altunit.Active,
+                                      row_id=0)
+    variable_.make_changes_row(table=altunit.table,
+                               column=altunit.Active,
+                               row_id=row_id,
+                               value=Active)
+    active_get_after = get_.get_cell(table=altunit.table,
+                                     column=altunit.Active,
+                                     row_id=0)
+
+    # Unit Основная Единица Измерения (ЕИ)
+    unit_get_before = get_.get_cell(table=altunit.table,
+                                    column=altunit.Unit,
+                                    row_id=0)
+    variable_.make_changes_row(table=altunit.table,
+                               column=altunit.Active,
+                               row_id=row_id,
+                               value=Unit)
+    unit_get_after = get_.get_cell(table=altunit.table,
+                                   column=altunit.Unit,
+                                   row_id=0)
+
+    # Alt Альтернативная Единица Измерения (Альт ЕИ)
+    alt_get_before = get_.get_cell(table=altunit.table,
+                                   column=altunit.Alt,
+                                   row_id=0)
+    variable_.make_changes_row(table=altunit.table,
+                               column=altunit.Alt,
+                               row_id=row_id,
+                               value=Alt)
+    alt_get_after = get_.get_cell(table=altunit.table,
+                                  column=altunit.Alt,
+                                  row_id=0)
+
+    # Formula Формула для преобразования (Формула)
+    formula_get_before = get_.get_cell(table=altunit.table,
+                                       column=altunit.Formula,
+                                       row_id=0)
+    variable_.make_changes_row(table=altunit.table,
+                               column=altunit.Formula,
+                               row_id=row_id,
+                               value=Formula)
+    formula_get_after = get_.get_cell(table=altunit.table,
+                                      column=altunit.Formula,
+                                      row_id=0)
+
+    # Prec Точность отображение Альт ЕИ (Точность)
+    prec_get_before = get_.get_cell(table=altunit.table,
+                                    column=altunit.Prec,
+                                    row_id=0)
+    variable_.make_changes_row(table=altunit.table,
+                               column=altunit.Prec,
+                               row_id=row_id,
+                               value=Prec)
+    prec_get_after = get_.get_cell(table=altunit.table,
+                                   column=altunit.Prec,
+                                   row_id=0)
+
+    # Tabl Ограничитель по таблице (Табл)
+    tabl_get_before = get_.get_cell(table=altunit.table,
+                                    column=altunit.Tabl,
+                                    row_id=0)
+    variable_.make_changes_row(table=altunit.table,
+                               column=altunit.Tabl,
+                               row_id=row_id,
+                               value=Tabl)
+    tabl_get_after = get_.get_cell(table=altunit.table,
+                                   column=altunit.Tabl,
+                                   row_id=0)
 
     if switch_command_line is not False:
-        return print(f'Внесены изменения в настройки "Описание альтернативных единиц измерения"')
-    else:
-        return True
+        print(separator_noun)
+        print(
+            f'Параметры альтернативных единиц измерений "Ед.Измерения":\n'
+            f'- Active: Активизация альтернативной ЕИ (A): Active "до" = {active_get_before}; "после" = {active_get_after};\n'
+            f'- Unit: Основная Единица Измерения (ЕИ): Unit "до" = {unit_get_before}; "после" = {unit_get_after};\n'
+            f'- Alt: Альтернативная Единица Измерения (Альт ЕИ): Alt "до" = {alt_get_before}; "после" = {alt_get_after};\n'
+            f'- Formula: Формула для преобразования (Формула): Formula "до" = {formula_get_before}; "после" = {formula_get_after};\n'
+            f'- Prec: Точность отображение Альт ЕИ (Точность): Prec "до" = {prec_get_before}; "после" = {prec_get_after};\n'
+            f'- Tabl: Ограничитель по таблице (Табл): Tabl "до" = {tabl_get_before}; "после" = {tabl_get_after};\n'
+        )
+        print(separator_noun)

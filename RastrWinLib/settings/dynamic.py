@@ -440,7 +440,7 @@ def set_dynamic(
         print(separator_noun)
         print(
             f' Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):\n'
-            f'- t_ras: Время расчета: Tras до = {get_t_ras}; Tras "после" = {get_t_ras_after};\n'
+            f'- t_ras: Время расчета: Tras "до" = {get_t_ras}; Tras "после" = {get_t_ras_after};\n'
             f'- h_int: Начальный шаг интегрирования: H_инт "до" = {get_h_int}; H_инт "после" = {get_h_int_after};\n'
             f'- h_min: Минимальный шаг интегрирования: H_мин "до" = {get_h_min}; H_мин "после" = {get_h_min_after};\n'
             f'- h_max: Максимальный шаг интегрирования: H_макс "до" = {get_h_max}; H_макс "после" = {get_h_max_after};\n'

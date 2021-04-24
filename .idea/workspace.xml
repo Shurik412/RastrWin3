@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/com_dynamics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/AltUnit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/vetv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,20 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00002" summary="init">
-      <created>1617117446274</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1617117446274</updated>
-    </task>
-    <task id="LOCAL-00003" summary="init">
-      <created>1617117854497</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1617117854497</updated>
     </task>
     <task id="LOCAL-00004" summary="Add file Create_DRM_v6.2.vbs">
       <created>1617263160429</created>
@@ -524,7 +507,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619259371645</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="добавил переменных и типы в dynamic.py">
+      <created>1619266362718</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1619266362718</updated>
+    </task>
+    <task id="LOCAL-00052" summary="добавил переменных и типы в dynamic.py">
+      <created>1619266433674</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1619266433674</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="filling equivalent_calculation_model.py" />
     <MESSAGE value="corr name dir shablon.py" />
     <MESSAGE value="error equivalence.py -&gt; class SetEkviv(...) &gt;&gt;" />
     <MESSAGE value="Add settings function ...&#10;Corr print result variable_parametrs.py" />
@@ -565,7 +561,8 @@
     <MESSAGE value="Добавилено внесение районов в ветви" />
     <MESSAGE value="Добавилено таблицы" />
     <MESSAGE value="добавил переменных и типы в node.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил переменных и типы в node.py" />
+    <MESSAGE value="добавил переменных и типы в dynamic.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил переменных и типы в dynamic.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
