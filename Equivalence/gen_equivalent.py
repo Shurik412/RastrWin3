@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import RastrWinLib.tables.table_vetv as vetv
+import RastrWinLib.tables.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.equivalent import Equivalent
 from RastrWinLib.getting.get import GettingParameter

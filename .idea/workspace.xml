@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/table_node.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/table_vetv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/tables_attributes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/table_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/table_vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/vetv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -509,7 +508,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619179744693</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Добавилено таблицы">
+      <created>1619183498208</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1619183498208</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Добавилено таблицы">
+      <created>1619183552240</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1619183552240</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Rename settings_ekv.py in settings_rastr.py" />
     <MESSAGE value="Add function in gen_equivalent.py." />
     <MESSAGE value="filling equivalent_calculation_model.py" />
     <MESSAGE value="corr name dir shablon.py" />
@@ -550,30 +562,16 @@
     <MESSAGE value="Добален класс -&gt; switch -&gt; node -&gt; SwitchNode" />
     <MESSAGE value="Скорректировал макрос ОАПВ" />
     <MESSAGE value="Добавилено внесение районов в ветви" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавилено внесение районов в ветви" />
+    <MESSAGE value="Добавилено таблицы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавилено таблицы" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
-          <line>41</line>
+          <line>19</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
