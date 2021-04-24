@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/ut_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00008" summary="corr full">
-      <created>1617279363811</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1617279363811</updated>
     </task>
     <task id="LOCAL-00009" summary="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent">
       <created>1617284263979</created>
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619279957055</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py">
+      <created>1619298470282</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1619298470282</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +536,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr gen_equivalent.py" />
     <MESSAGE value="Corr equivalent_calculation_model.py" />
     <MESSAGE value="Create dir RegimNote" />
     <MESSAGE value="Corr Equivalent" />
@@ -561,7 +560,8 @@
     <MESSAGE value="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py" />
     <MESSAGE value="добавил переменные, типы в com_ekviv.py&#10;скорректировал функцию set_com_ekviv in equivalence.py" />
     <MESSAGE value="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py" />
+    <MESSAGE value="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
