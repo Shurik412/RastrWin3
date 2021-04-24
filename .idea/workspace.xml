@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/AltUnit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/AltUnit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/AltUnit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add file Create_DRM_v6.2.vbs">
-      <created>1617263160429</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1617263160429</updated>
     </task>
     <task id="LOCAL-00005" summary="add class GetTableCommonInfo in file get_parameter.py&#10;add file and dir.fl =&gt; R_models/Table_Parametrs/ =&gt; file Tables_and_parametrs.py (add tables &quot;com_cxema&quot;)">
       <created>1617275081070</created>
@@ -521,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619266433674</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py">
+      <created>1619270159858</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1619270159858</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +536,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="corr name dir shablon.py" />
     <MESSAGE value="error equivalence.py -&gt; class SetEkviv(...) &gt;&gt;" />
     <MESSAGE value="Add settings function ...&#10;Corr print result variable_parametrs.py" />
     <MESSAGE value="Corr gen_equivalent.py" />
@@ -562,7 +560,8 @@
     <MESSAGE value="Добавилено таблицы" />
     <MESSAGE value="добавил переменных и типы в node.py" />
     <MESSAGE value="добавил переменных и типы в dynamic.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил переменных и типы в dynamic.py" />
+    <MESSAGE value="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

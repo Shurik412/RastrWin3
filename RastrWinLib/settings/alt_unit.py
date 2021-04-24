@@ -16,6 +16,7 @@ def set_alt_unit(
         switch_command_line: bool = False, ):
     """
      Описание альтернативных единиц измерения
+
     :param row_id: Порядковый номер в таблице "Ед. Измерения"
     :param Active: Активизация альтернативной ЕИ
     :param Unit: Основная Единица Измерения
@@ -24,7 +25,7 @@ def set_alt_unit(
     :param Prec: Точность отображение Альт ЕИ
     :param Tabl: Ограничитель по таблице
     :param switch_command_line: True/False -
-    :return:
+    :return: Nothing returns
     """
 
     variable_ = Variable(switch_command_line=False)
