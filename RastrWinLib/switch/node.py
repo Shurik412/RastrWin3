@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
+import RastrWinLib.tables.node as node
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.tables.tables_attributes import node_table, node_attributes_list
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
 class SwitchNode:
-    """
-    Класс включает и отключает заданный узел.
-    """
 
     def __init__(self, rastr_win=RASTR,
-                 table=node_table,
+                 table=node.table,
                  switch_command_line=False):
         """
+        Класс включает и отключает заданный узел.
         :param rastr_win: com - объект RastrWin3;
         :param table: название таблицы;
         :param switch_command_line: True/False - выводит сообщения в протокол.
@@ -31,10 +29,10 @@ class SwitchNode:
         """
         row_ = self.get_.get_row_node(node_ny=node_ny)
         sta_ny = self.get_.get_cell(table=self.table,
-                                    column=node_attributes_list[1],
+                                    column=node.sta,
                                     row_id=row_)
         self.variable_.make_changes_row(table=self.table,
-                                        column=node_attributes_list[1],
+                                        column=node.sta,
                                         row_id=row_)
         if self.switch_command_line is not False:
             print(sta_ny)
@@ -46,10 +44,10 @@ class SwitchNode:
         """
         row_ = self.get_.get_row_node(node_ny=node_ny)
         sta_ny = self.get_.get_cell(table=self.table,
-                                    column=node_attributes_list[1],
+                                    column=node.sta,
                                     row_id=row_)
         self.variable_.make_changes_row(table=self.table,
-                                        column=node_attributes_list[1],
+                                        column=node.sta,
                                         row_id=row_)
         if self.switch_command_line is not False:
             print(sta_ny)

@@ -80,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\error\output.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\log_tools\tools.py">
           <value>
             <Attribute>

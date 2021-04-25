@@ -1,30 +1,33 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.log_tools.tools import separator_star, error_text
+import RastrWinLib.tables.Generator as Generator
+import RastrWinLib.tables.vetv as vetv
+import RastrWinLib.tables.node as node
 
 
 class FindNextSel:
-    """
-    Класс для поиска по выборки key.
-    Метод row возвращает row_id - порядковый номер строки в таблице.
-    """
-
-    def __init__(self, table, rastr_win=RASTR):
+    def __init__(self,
+                 table: str,
+                 rastr_win=RASTR):
         """
-
+        Класс для поиска по выборки key.
+        Метод row возвращает row_id - порядковый номер строки в таблице.
         :param table: название таблицы RastrWin3;
         :param rastr_win: COM - объект Rastr.Astra (win32com).
         """
-        self.RastrWin = rastr_win
-        self.Tables = self.RastrWin.Tables(str(table))
+        self.rastr_win = rastr_win
+        self.table = self.rastr_win.Tables(table)
 
-    def row(self, key):
+    def row(self,
+            key: str):
         """
-        :param key:
+        Метож 'row'
+        :param key: выборка SetSel
         :return: row_id: порядковый номер.
         """
-        self.Tables.SetSel(f'{str(key)}')
-        row_id = self.Tables.FindNextSel(-1)
+        self.table.SetSel(f'{key}')
+        row_id = self.table.FindNextSel(-1)
         if row_id == (-1):
             return -1
         else:
@@ -32,14 +35,12 @@ class FindNextSel:
 
 
 class Variable:
-    """
-    Класс для изменений значений ячеек.
-    """
 
     def __init__(self,
-                 rastr_win=RASTR,
-                 switch_command_line=False):
+                 rastr_win: object = RASTR,
+                 switch_command_line: bool = False):
         """
+        Класс для изменений значений ячеек.
         :param rastr_win: com - объект Rastr.Astra;
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
@@ -48,9 +49,9 @@ class Variable:
         self.switch_command_line = switch_command_line
 
     def make_changes_row(self,
-                         table=None,
-                         column=None,
-                         row_id=None,
+                         table: str = None,
+                         column: str = None,
+                         row_id: int = None,
                          value=None):
         """
         Метод: make_changes_row - изменение параметра по заданному row_id
@@ -64,33 +65,50 @@ class Variable:
             print(separator_star)
         switch_command_line_def = True
         if table is not None:
-            table = self.rastr_win.Tables(table)
-        else:
-            switch_command_line_def = False
-            print(f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!.')
-            print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано название таблицы "table".')
-
-        if column is not None:
-            col = table.Cols(column)
-            if row_id is not None:
-                if value is not None:
-                    col.SetZ(row_id, value)
+            table_ = self.rastr_win.Tables(table)
+            if column is not None:
+                col = table_.Cols(column)
+                if row_id is not None:
+                    if value is not None:
+                        col.SetZ(row_id, value)
+                    else:
+                        switch_command_line_def = False
+                        print(
+                            f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
+                            f'возникла следующая ОШИБКА!'
+                        )
+                        print(
+                            f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                            f'Не задано значение "value".'
+                        )
                 else:
                     switch_command_line_def = False
                     print(
-                        f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!')
-                    print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано значение "value".')
+                        f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
+                        f'возникла следующая ОШИБКА!')
+                    print(
+                        f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                        f'Не задано значение порядкового номера строки "row_id".'
+                    )
             else:
                 switch_command_line_def = False
                 print(
-                    f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!')
+                    f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
+                    f'возникла следующая ОШИБКА!'
+                )
                 print(
-                    f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано значение порядкового номера строки "row_id".')
+                    f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                    f'Не задано название колонки (столбца) "column".'
+                )
         else:
             switch_command_line_def = False
-            print(f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> возникла следующая ОШИБКА!')
             print(
-                f'{error_text}{self.__class__.make_changes_row.__qualname__}: Не задано название колонки (столбца) "column".')
+                f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
+                f'возникла следующая ОШИБКА!.'
+            )
+            print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                  f'Не задано название таблицы "table".'
+                  )
 
         if self.switch_command_line and switch_command_line_def is not False:
             print(f'Внесены изменения:\n'
@@ -100,9 +118,9 @@ class Variable:
             print(separator_star)
 
     def make_changes_setsel(self,
-                            table=None,
-                            column=None,
-                            key=None,
+                            table: str = None,
+                            column: str = None,
+                            key: str = None,
                             value=None):
         """
         Метод: make_changes_setsel - изменение параметра по выборки SetSel(key) -> key = "ny=6516516";
@@ -120,7 +138,9 @@ class Variable:
             table.SetSel(key)
             row_id = table.FindNextSel(-1)
             if row_id == (-1):
-                print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение "row_id" равно -1.')
+                print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                      f'значение "row_id" равно -1.'
+                      )
                 print(' Значения заданой выборки - отсутствуют.')
             else:
                 if column is not None:
@@ -143,3 +163,32 @@ class Variable:
             print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение table = None.')
         if self.switch_command_line is not False:
             print(separator_star)
+
+    def make_changes_vetv(self,
+                          table: str = vetv.table,
+                          column: str = None,
+                          ip: int = None,
+                          iq: int = None,
+                          np: int = None,
+                          value=None):
+        """
+        Метод изменяет значение ветви.
+        :param table: название таблицы RastrWin3;
+        :param column: название колонки (столбца) RastrWin3;
+        :param ip: номер начала ветви;
+        :param iq: номер конца ветви;
+        :param np: номер параллельности ветви;
+        :param value: значение;
+        :return: Nothing returns
+        """
+
+        table_ = self.rastr_win.Tables(table)
+        table_.SetSel(f'(ip={ip};iq={iq};np={np})|(ip={iq};iq={ip};np={np})')
+        row = table_.FindNextSel(-1)
+        if row != (-1):
+            col = table_.Cols(column)
+            col.SetZ(row, value)
+        else:
+            print(
+                f'{error_text} '
+            )
