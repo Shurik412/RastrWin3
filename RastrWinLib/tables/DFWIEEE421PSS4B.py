@@ -12,8 +12,8 @@ Brand: str = 'Brand'  # Марка стабилизатора
 CustomModel: str = 'CustomModel'  # Модель в конструкторе
 Input1Type: str = 'Input1Type'  # Вход 1 Тип параметра на входе 1
 Input2Type: str = 'Input2Type'  # Вход 2 Тип параметра на входе 2
-MBPSS1: bool = False  # Фильтр MB-PSS на входе 1
-MBPSS2: bool = False  # Фильтр MB-PSS на входе 2
+MBPSS1: str = 'MBPSS1'  # Фильтр MB-PSS на входе 1
+MBPSS2: str = 'MBPSS2'  # Фильтр MB-PSS на входе 2
 
 Vstmax: str = 'Vstmax'  # Максимальное ограничение выхода стабилизатора
 Vstmin: str = 'Vstmin'  # Минимальное ограничение выхода стабилизатора

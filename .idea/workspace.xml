@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS4B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/DFW421UEL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS13.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS4B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS4B.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Corr file settings_ekv.py -&gt; Add class &quot;com_dynamic&quot; and method set">
-      <created>1617826699162</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1617826699162</updated>
     </task>
     <task id="LOCAL-00017" summary="Add doc. class SetDynamic module settings_ekv.py">
       <created>1617958558455</created>
@@ -520,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619379695603</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Add module DFWIEEE421PSS4B.py">
+      <created>1619380979883</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1619380979883</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Исправление документирования классов." />
     <MESSAGE value="Внес изменения в класс Variable.&#10;Добавил вывод в протокол dynamic - settings." />
     <MESSAGE value="Скорректировал tables_attributes.py." />
     <MESSAGE value="Скорректировал tables_attributes.py -&gt; regime, ut_common ..." />
@@ -561,7 +561,8 @@
     <MESSAGE value="Rename ExcControl.py" />
     <MESSAGE value="Rename Forcer.py" />
     <MESSAGE value="Add module DFWIEEE421PSS13.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add module DFWIEEE421PSS13.py" />
+    <MESSAGE value="Add module DFWIEEE421PSS4B.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add module DFWIEEE421PSS4B.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
