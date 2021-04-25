@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Forcer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS13.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;">
-      <created>1617691801282</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1617691801282</updated>
     </task>
     <task id="LOCAL-00015" summary="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;">
       <created>1617708850091</created>
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619377794221</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Rename Forcer.py">
+      <created>1619378632341</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1619378632341</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,7 +535,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr Variable 22.04.21" />
     <MESSAGE value="New class Get...Parameter." />
     <MESSAGE value="Исправление документирования классов." />
     <MESSAGE value="Внес изменения в класс Variable.&#10;Добавил вывод в протокол dynamic - settings." />
@@ -560,7 +559,8 @@
     <MESSAGE value="добавил файл Exciter.py и DFWIEEE421.py" />
     <MESSAGE value="добавил файл ExcControl.py" />
     <MESSAGE value="Rename ExcControl.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename ExcControl.py" />
+    <MESSAGE value="Rename Forcer.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename Forcer.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
