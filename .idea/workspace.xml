@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/DFWOELUNITROL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Rename settings_ekv.py in settings_rastr.py">
-      <created>1617958639488</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1617958639488</updated>
     </task>
     <task id="LOCAL-00019" summary="Add function in gen_equivalent.py.">
       <created>1618225108129</created>
@@ -520,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619382308741</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Add module DFWOELUNITROL.py">
+      <created>1619383786974</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1619383786974</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Скорректировал tables_attributes.py." />
     <MESSAGE value="Скорректировал tables_attributes.py -&gt; regime, ut_common ..." />
     <MESSAGE value="Скорректировал settings -&gt; regim.py" />
     <MESSAGE value="Скорректировал settings -&gt; equivalence.py" />
@@ -561,7 +558,8 @@
     <MESSAGE value="Add module DFWIEEE421PSS13.py" />
     <MESSAGE value="Add module DFWIEEE421PSS4B.py" />
     <MESSAGE value="Add module DFW421UEL.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add module DFW421UEL.py" />
+    <MESSAGE value="Add module DFWOELUNITROL.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add module DFWOELUNITROL.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
