@@ -129,6 +129,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\DFWIEEE421.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tables\Exciter.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\com_dynamics.py">
           <value>
             <Attribute>

@@ -21,3 +21,12 @@ def compare_strings(mylist):
 
 print("Sting simalarity in list 1 is %.5f" % (compare_strings(listA)))
 print("Sting simalarity in list 2 is %.5f" % (compare_strings(listB)))
+####################################################################
+print("start")
+try:
+    val = int(input("input number: "))
+    print(f'val={val}')
+    assert val is str, 'Тип не строка!'
+except AssertionError as err:
+    print("Error! " + str(err))
+

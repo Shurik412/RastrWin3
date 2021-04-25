@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/error/output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/switch/Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Exciter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/error/output.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/error/output.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/str.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/str.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Tables_Parametrs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_settings">
+  <component name="RunManager" selected="Python.output">
     <configuration name="equivalent_calculation_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="na_vetv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="output" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,11 +85,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Equivalence" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/error" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Equivalence/na_vetv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/error/output.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="set_regime" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="str" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,11 +106,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/set_regime.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/str.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.output" />
+        <item itemvalue="Python.str" />
         <item itemvalue="Python.test_settings" />
         <item itemvalue="Python.vetv" />
         <item itemvalue="Python.equivalent_calculation_model" />
-        <item itemvalue="Python.na_vetv" />
-        <item itemvalue="Python.set_regime" />
       </list>
     </recent_temporary>
   </component>
@@ -181,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Add in file Tables_and_parametrs.py -&gt; table com_ekviv -&gt; Общие параметры эквивалентирования">
-      <created>1617286695832</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1617286695832</updated>
     </task>
     <task id="LOCAL-00011" summary="Add file object_rastr.py -&gt; RASTR;&#10;Add class SetEkviv and file settings_ekv.py">
       <created>1617346303245</created>
@@ -525,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619301702303</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="добавил class Error">
+      <created>1619313655670</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1619313655686</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,7 +539,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create dir RegimNote" />
     <MESSAGE value="Corr Equivalent" />
     <MESSAGE value="Corr Variable" />
     <MESSAGE value="Corr Variable and Add table in tables_attributes.py" />
@@ -566,7 +563,8 @@
     <MESSAGE value="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py" />
     <MESSAGE value="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py" />
     <MESSAGE value="добавил переменные, типы в generator.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил переменные, типы в generator.py" />
+    <MESSAGE value="добавил class Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил class Error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
