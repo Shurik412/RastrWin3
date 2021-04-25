@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/sechen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/grline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/sechen.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/sechen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00020" summary="filling equivalent_calculation_model.py">
-      <created>1618226440654</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1618226440654</updated>
     </task>
     <task id="LOCAL-00021" summary="corr name dir shablon.py">
       <created>1618228860537</created>
@@ -520,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619384021742</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Add module sechen.py">
+      <created>1619384862281</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1619384862281</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +535,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Скорректировал settings -&gt; regim.py" />
     <MESSAGE value="Скорректировал settings -&gt; equivalence.py" />
     <MESSAGE value="Скорректировал variable_parametrs.py -&gt; Class Variable" />
     <MESSAGE value="Скорректировал vetv.py -&gt; Class SwitchVetv" />
@@ -561,7 +559,8 @@
     <MESSAGE value="Add module DFW421UEL.py" />
     <MESSAGE value="Add module DFWOELUNITROL.py" />
     <MESSAGE value="Add module FuncPQ.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add module FuncPQ.py" />
+    <MESSAGE value="Add module sechen.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add module sechen.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
