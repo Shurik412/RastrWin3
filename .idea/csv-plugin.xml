@@ -192,6 +192,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\sechen.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\tables_attributes.py">
           <value>
             <Attribute>
