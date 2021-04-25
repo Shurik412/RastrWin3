@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/ExcConrol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Forcer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,20 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Corr OAPV_calc.py -&gt; add new function">
-      <created>1617357186166</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1617357186166</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Corr SetEkviv file settings_ekv.py">
-      <created>1617686754115</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1617686754115</updated>
     </task>
     <task id="LOCAL-00014" summary="Corr file Tables_and_parametrs.py -&gt; Add table &quot;com_dynamic&quot;">
       <created>1617691801282</created>
@@ -519,7 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619376063901</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="добавил файл ExcControl.py">
+      <created>1619377767502</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1619377767502</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Rename ExcControl.py">
+      <created>1619377794221</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1619377794221</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,8 +535,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr Variable" />
-    <MESSAGE value="Corr Variable and Add table in tables_attributes.py" />
     <MESSAGE value="Corr Variable 22.04.21" />
     <MESSAGE value="New class Get...Parameter." />
     <MESSAGE value="Исправление документирования классов." />
@@ -560,7 +558,9 @@
     <MESSAGE value="добавил переменные, типы в generator.py" />
     <MESSAGE value="добавил class Error" />
     <MESSAGE value="добавил файл Exciter.py и DFWIEEE421.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил файл Exciter.py и DFWIEEE421.py" />
+    <MESSAGE value="добавил файл ExcControl.py" />
+    <MESSAGE value="Rename ExcControl.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename ExcControl.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
