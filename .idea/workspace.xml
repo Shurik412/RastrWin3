@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWTHYNE14.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Corr equivalent_calculation_model.py">
-      <created>1618573202110</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1618573202110</updated>
     </task>
     <task id="LOCAL-00027" summary="Create dir RegimNote">
       <created>1618575011158</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619436299131</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Add modules DECS_400.py">
+      <created>1619437647549</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1619437647549</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавилено внесение районов в ветви" />
     <MESSAGE value="Добавилено таблицы" />
     <MESSAGE value="добавил переменных и типы в node.py" />
     <MESSAGE value="добавил переменных и типы в dynamic.py" />
@@ -563,7 +562,8 @@
     <MESSAGE value="Add modules CustomDeviceMap.py" />
     <MESSAGE value="Add modules ARS.py" />
     <MESSAGE value="Add modules Governor.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules Governor.py" />
+    <MESSAGE value="Add modules DECS_400.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules DECS_400.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
