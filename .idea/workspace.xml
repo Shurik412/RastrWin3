@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ARS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Governor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Corr gen_equivalent.py">
-      <created>1618409270841</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1618409270841</updated>
     </task>
     <task id="LOCAL-00025" summary="Corr equivalent_calculation_model.py">
       <created>1618493141463</created>
@@ -523,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619430624155</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Add modules ARS.py">
+      <created>1619435524504</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1619435524504</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добален класс -&gt; switch -&gt; node -&gt; SwitchNode" />
     <MESSAGE value="Скорректировал макрос ОАПВ" />
     <MESSAGE value="Добавилено внесение районов в ветви" />
     <MESSAGE value="Добавилено таблицы" />
@@ -564,7 +562,8 @@
     <MESSAGE value="Add module grline.py" />
     <MESSAGE value="Add dir tables" />
     <MESSAGE value="Add modules CustomDeviceMap.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules CustomDeviceMap.py" />
+    <MESSAGE value="Add modules ARS.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules ARS.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
