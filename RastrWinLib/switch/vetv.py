@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.vetv as vetv
+import RastrWinLib.tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
 
 

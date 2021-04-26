@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-import RastrWinLib.tables.vetv as vetv
-import RastrWinLib.tables.node as node
-import RastrWinLib.tables.Generator as Generator
 from RastrWinLib.log_tools.tools import separator_star
 
 

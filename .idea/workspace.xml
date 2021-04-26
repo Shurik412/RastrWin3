@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/grline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/sechen.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/sechen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/DFW421UEL.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFW421UEL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS13.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/DFWIEEE421PSS4B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/DFWOELUNITROL.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWOELUNITROL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Exciter.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Exciter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Forcer.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Forcer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/FuncPQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/FuncPQ.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +156,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tables/vetv.py" />
+      <option name="SCRIPT_NAME" value="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Vetv\vetv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00021" summary="corr name dir shablon.py">
-      <created>1618228860537</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1618228860537</updated>
     </task>
     <task id="LOCAL-00022" summary="error equivalence.py -&gt; class SetEkviv(...) &gt;&gt;">
       <created>1618237920236</created>
@@ -519,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619384862281</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Add module grline.py">
+      <created>1619385172924</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1619385172924</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,7 +543,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Скорректировал settings -&gt; equivalence.py" />
     <MESSAGE value="Скорректировал variable_parametrs.py -&gt; Class Variable" />
     <MESSAGE value="Скорректировал vetv.py -&gt; Class SwitchVetv" />
     <MESSAGE value="Добален класс -&gt; switch -&gt; node -&gt; SwitchNode" />
@@ -560,7 +567,8 @@
     <MESSAGE value="Add module DFWOELUNITROL.py" />
     <MESSAGE value="Add module FuncPQ.py" />
     <MESSAGE value="Add module sechen.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add module sechen.py" />
+    <MESSAGE value="Add module grline.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add module grline.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.variables.variable_parametrs import Variable
-import RastrWinLib.tables.Generator as Generator
+import RastrWinLib.tables.Dynamic.Generator as Generator
 
 
 class SwitchGenerator:

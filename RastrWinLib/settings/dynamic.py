@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.com_dynamics as com_dynamics
+import RastrWinLib.tables.Settings.com_dynamics as com_dynamics
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.com_ekviv as com_ekviv
+import RastrWinLib.tables.Settings.com_ekviv as com_ekviv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun

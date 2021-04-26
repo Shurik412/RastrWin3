@@ -185,6 +185,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\grline.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\node.py">
           <value>
             <Attribute>

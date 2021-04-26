@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.log_tools.tools import separator_star, error_text
-import RastrWinLib.tables.Generator as Generator
-import RastrWinLib.tables.vetv as vetv
-import RastrWinLib.tables.node as node
+import RastrWinLib.tables.Vetv.vetv as vetv
 
 
 class FindNextSel:

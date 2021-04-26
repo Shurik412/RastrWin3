@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.ut_common as ut_common
+import RastrWinLib.tables.Settings.ut_common as ut_common
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
