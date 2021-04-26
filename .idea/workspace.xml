@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Governor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Corr equivalent_calculation_model.py">
-      <created>1618493141463</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1618493141463</updated>
     </task>
     <task id="LOCAL-00026" summary="Corr equivalent_calculation_model.py">
       <created>1618573202110</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619435524504</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Add modules Governor.py">
+      <created>1619436299131</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1619436299131</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Скорректировал макрос ОАПВ" />
     <MESSAGE value="Добавилено внесение районов в ветви" />
     <MESSAGE value="Добавилено таблицы" />
     <MESSAGE value="добавил переменных и типы в node.py" />
@@ -563,7 +562,8 @@
     <MESSAGE value="Add dir tables" />
     <MESSAGE value="Add modules CustomDeviceMap.py" />
     <MESSAGE value="Add modules ARS.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules ARS.py" />
+    <MESSAGE value="Add modules Governor.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules Governor.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
