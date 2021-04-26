@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWTHYNE14.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Create dir RegimNote">
-      <created>1618575011158</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1618575011158</updated>
     </task>
     <task id="LOCAL-00028" summary="Corr Equivalent">
       <created>1618903987406</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619437647549</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Add modules DFWTHYNE14.py">
+      <created>1619445765311</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1619445765311</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавилено таблицы" />
     <MESSAGE value="добавил переменных и типы в node.py" />
     <MESSAGE value="добавил переменных и типы в dynamic.py" />
     <MESSAGE value="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py" />
@@ -563,7 +562,8 @@
     <MESSAGE value="Add modules ARS.py" />
     <MESSAGE value="Add modules Governor.py" />
     <MESSAGE value="Add modules DECS_400.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules DECS_400.py" />
+    <MESSAGE value="Add modules DFWTHYNE14.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules DFWTHYNE14.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
