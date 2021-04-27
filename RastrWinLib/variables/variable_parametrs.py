@@ -35,8 +35,8 @@ class FindNextSel:
 class Variable:
 
     def __init__(self,
-                 rastr_win: object = RASTR,
-                 switch_command_line: bool = False):
+                 rastr_win = RASTR,
+                 switch_command_line = False):
         """
         Класс для изменений значений ячеек.
         :param rastr_win: com - объект Rastr.Astra;

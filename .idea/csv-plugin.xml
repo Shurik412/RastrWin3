@@ -80,7 +80,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\ModelsARV\AC5B.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\error\output.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\getting\get.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
@@ -179,6 +193,13 @@
           </value>
         </entry>
         <entry key="\RastrWinLib\tables\Exciter.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tables\Node\node.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
