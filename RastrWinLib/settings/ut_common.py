@@ -73,7 +73,7 @@ def set_ut_common(
     :param save_files_path: Папка для сохранения файлов результатов (Путь);
     :param stop_u_n: Остановить при переходе к устойчивому/неустойчивому (Остановить);
     :param dyn_find_pred: Динамика: поиск предела (Динамика: поиск предела);
-    :param rastr_win: com - объект RastrWin3;
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param switch_command_line: True/False - вывод сообщений в протокол;
     :return: Nothing returns
     """

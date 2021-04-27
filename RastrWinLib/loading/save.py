@@ -12,7 +12,7 @@ def save_file(rastr_win=RASTR,
               switch_command_line=False):
     """
     Сохраняет информацию из рабочей области в файле name по шаблону shablon
-    :param rastr_win: объект RastrWinLib = win32com.client.Dispatch("Astra.Rastr")
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param file_path: директория и название файла сохранения файла
     :param shablon: шаблон
     :param switch_command_line: True - вывод сообщения о выполнении.

@@ -11,7 +11,7 @@ class Errors:
                  ):
         """
         Класс вывода ошибок и исключений!
-        :param rastr_win: com - объект RastrWin3;
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
         self.rastr_win = rastr_win

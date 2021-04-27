@@ -12,7 +12,7 @@ class SwitchNode:
                  switch_command_line=False):
         """
         Класс включает и отключает заданный узел.
-        :param rastr_win: com - объект RastrWin3;
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param table: название таблицы;
         :param switch_command_line: True/False - выводит сообщения в протокол.
         """

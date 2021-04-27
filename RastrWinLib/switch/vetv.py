@@ -8,7 +8,7 @@ class SwitchVetv:
     def __init__(self, rastr_win=RASTR, table=vetv.table, switch_command_line=False):
         """
         Класс выполняет отключение и включение ветви в RastrWin3
-        :param rastr_win: com - объект RastrWin3;
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param table: название таблицы RastrWin3;
         :param switch_command_line: True/False - выводит сообщения в протокол.
         """

@@ -11,7 +11,7 @@ class ExportDataRUSTab:
     def __init__(self, table, rastr_win=RASTR, switch_command_line=False):
         """
         :param table: название таблицы;
-        :param rastr_win: com - объект RastrWin3;
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
         self.table_name = table

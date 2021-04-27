@@ -62,7 +62,7 @@ def set_regim(neb_p: float = 1.000,
     :param itz_ogr_max: Стартовый метод: Учет Qmax с итерации (Z_it_max);
     :param itz_ogr_min: Стартовый метод: Учет Qmin с итерации (Z_it_min);
     :param min_nodes_in_island: Минимальное число узлов в острове (Min_nodes);
-    :param rastr_win: com - объект RastrWin3;
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param switch_command_line: True/False - вывод сообщений в протакол;
     :return: Nothing returns
     """

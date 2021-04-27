@@ -25,7 +25,7 @@ def set_alt_unit(
     :param Formula: Формула для преобразования;
     :param Prec: Точность отображение Альт ЕИ;
     :param Tabl: Ограничитель по таблице;
-    :param rastr_win: com - объект RastrWin3;
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param switch_command_line: True/False - вывод сообщений в протакол;
     :return: Nothing returns
     """

@@ -72,7 +72,7 @@ def set_dynamic(
     :param ResultFlowDirection: Положительное направление результатов: (Положительное направление результатов);
     :param TreatWarningsAsErrors: Считать предупреждения ошибками: (Предупреждение=Ошибка);
     :param EventProcess: Метод обработки дискретных изменений: (Дискретные изменения);
-    :param rastr_win: com - объект RastrWin3;
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param switch_command_line: True/False - вывод сообщений в протакол;
     :return Nothing returns
     """

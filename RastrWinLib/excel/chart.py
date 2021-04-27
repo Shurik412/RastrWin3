@@ -16,7 +16,7 @@ class ChartExcel:
         :param y_axis_title:
         :param width_chart:
         :param height_chart:
-        :param switch_command_line:
+        :param switch_command_line: True/False - вывод сообщений в протокол.
         """
         self.work_sheet = work_sheet
         self.chart_obj = chart_obj

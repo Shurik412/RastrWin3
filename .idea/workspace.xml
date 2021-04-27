@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/Parameters_AC5B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/error/output.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/error/output.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/group_correction.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/group_correction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,13 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Corr Variable">
-      <created>1618917758303</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1618917758303</updated>
     </task>
     <task id="LOCAL-00030" summary="Corr Variable and Add table in tables_attributes.py">
       <created>1618928447139</created>
@@ -528,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619447147201</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py">
+      <created>1619522771687</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1619522771687</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -544,7 +557,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавил переменных и типы в dynamic.py" />
     <MESSAGE value="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py" />
     <MESSAGE value="добавил переменные, типы в com_ekviv.py&#10;скорректировал функцию set_com_ekviv in equivalence.py" />
     <MESSAGE value="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py" />
@@ -569,7 +581,8 @@
     <MESSAGE value="Add modules DECS_400.py" />
     <MESSAGE value="Add modules DFWTHYNE14.py" />
     <MESSAGE value="Corr modules node.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr modules node.py" />
+    <MESSAGE value="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

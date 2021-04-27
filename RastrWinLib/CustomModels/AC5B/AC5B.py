@@ -95,9 +95,121 @@ class AC5B(Variable, GettingParameter):
             pass
 
         if row_id is not None:
-            pass
+            # Kpr
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Kpr,
+                                            row_id=row_id,
+                                            value=Kpr)
+            # Tb
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Tb,
+                                            row_id=row_id,
+                                            value=Tb)
+            # Ka
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Ka,
+                                            row_id=row_id,
+                                            value=Ka)
+            # Vrmax
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Vrmax,
+                                            row_id=row_id,
+                                            value=Vrmax)
+            # Vrmin
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Vrmin,
+                                            row_id=row_id,
+                                            value=Vrmin)
+            # Te
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Te,
+                                            row_id=row_id,
+                                            value=Te)
+            # Aex
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Aex,
+                                            row_id=row_id,
+                                            value=Aex)
+
+            # Bex
+            self.variable_.make_changes_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Bex,
+                                            row_id=row_id,
+                                            value=Bex)
         else:
             pass
 
-    def get(self):
-        pass
+    def get(self, Id=None, row_id=None):
+        """
+        Метод get -
+        :param Id:
+        :param row_id:
+        :return:
+        """
+        if Id is not None:
+            # Kpr
+            k_pr = self.get_.get_param(table=DFWIEEE421.table,
+                                       column=DFWIEEE421.Kpr,
+                                       key=f'{DFWIEEE421.Id}={Id}')
+            # Tb
+            tb = self.get_.get_param(table=DFWIEEE421.table,
+                                     column=DFWIEEE421.Kpr,
+                                     key=f'{DFWIEEE421.Id}={Id}')
+            # Ka
+            ka = self.get_.get_param(table=DFWIEEE421.table,
+                                     column=DFWIEEE421.Ka,
+                                     key=f'{DFWIEEE421.Id}={Id}')
+            # Vrmax
+            vrmax = self.get_.get_param(table=DFWIEEE421.table,
+                                        column=DFWIEEE421.Vrmax,
+                                        key=f'{DFWIEEE421.Id}={Id}')
+            # Vrmin
+            vrmin = self.get_.get_param(table=DFWIEEE421.table,
+                                        column=DFWIEEE421.Vrmin,
+                                        key=f'{DFWIEEE421.Id}={Id}')
+            # Te
+            te = self.get_.get_param(table=DFWIEEE421.table,
+                                     column=DFWIEEE421.Te,
+                                     key=f'{DFWIEEE421.Id}={Id}')
+            # Aex
+            aex = self.get_.get_param(table=DFWIEEE421.table,
+                                      column=DFWIEEE421.Aex,
+                                      key=f'{DFWIEEE421.Id}={Id}')
+            # Bex
+            bex = self.get_.get_param(table=DFWIEEE421.table,
+                                      column=DFWIEEE421.Bex,
+                                      key=f'{DFWIEEE421.Id}={Id}')
+
+        if row_id is not None:
+            # Kpr
+            k_pr = self.get_.get_cell(table=DFWIEEE421.table,
+                                      column=DFWIEEE421.Kpr,
+                                      row_id=row_id)
+            # Tb
+            tb = self.get_.get_cell(table=DFWIEEE421.table,
+                                    column=DFWIEEE421.Kpr,
+                                    row_id=row_id)
+            # Ka
+            ka = self.get_.get_cell(table=DFWIEEE421.table,
+                                    column=DFWIEEE421.Ka,
+                                    row_id=row_id)
+            # Vrmax
+            vrmax = self.get_.get_cell(table=DFWIEEE421.table,
+                                       column=DFWIEEE421.Vrmax,
+                                       row_id=row_id)
+            # Vrmin
+            vrmin = self.get_.get_cell(table=DFWIEEE421.table,
+                                       column=DFWIEEE421.Vrmin,
+                                       row_id=row_id)
+            # Te
+            te = self.get_.get_cell(table=DFWIEEE421.table,
+                                    column=DFWIEEE421.Te,
+                                    row_id=row_id)
+            # Aex
+            aex = self.get_.get_cell(table=DFWIEEE421.table,
+                                     column=DFWIEEE421.Aex,
+                                     row_id=row_id)
+            # Bex
+            bex = self.get_.get_cell(table=DFWIEEE421.table,
+                                     column=DFWIEEE421.Bex,
+                                     row_id=row_id)

@@ -12,6 +12,11 @@ class Equivalent:
     def __init__(self,
                  rastr_win=RASTR,
                  switch_command_line=False):
+        """
+
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
+        :param switch_command_line:
+        """
         self.rastr_win = rastr_win
         self.switch_command_line = switch_command_line
 

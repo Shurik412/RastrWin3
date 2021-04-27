@@ -35,7 +35,7 @@ def set_com_ekviv(selekv=0,
     :param smart: "Умное" эквивалентирование: (Smart);
     :param zmax: Удаление ветвей с сопротивлением большим: (Z_max);
     :param otm_n: Отмечать узлы после эквивалентирования: (Отм);
-    :param rastr_win: com - объект RastrWin3;
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param switch_command_line: True/False - вывод сообщений в протакол;
     :return: Nothing returns
     """

@@ -12,7 +12,7 @@ def load_file(rastr_win=RASTR,
               shablon=shablon_file_automation,
               switch_command_line=False):
     """
-      :param rastr_win: com - объект Rastr.Astra
+      :param rastr_win: COM - объект Rastr.Astra (win32com);
       :param rg_kod: числовое значение, определяет режим загрузки при наличии таблицы
                в рабочей области и может быть одним из следующих:
                Константа   Значение           Описание
@@ -23,8 +23,8 @@ def load_file(rastr_win=RASTR,
                                         найден, то данные игнорируются (соответствует режиму «Обновить» в меню)
                RG_ADDKEY       3       Данные в таблице, имеющие одинаковые ключевые поля, заменяются.
                                        Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»)
-       :param shablon: шаблон RastrWin3 для загрузки.
-       :param file_path: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst)
+       :param shablon: шаблон RastrWin3 для загрузки;
+       :param file_path: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);
        :param switch_command_line: True/False - выводит сообщения в протокол.
        :return: True
        """

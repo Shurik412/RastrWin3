@@ -19,7 +19,7 @@ class GettingParameter:
     def __init__(self, rastr_win=RASTR):
         self.rastr_win = rastr_win
         """
-         :param rastr_win: com - объект RastrWin3.
+         :param rastr_win: COM - объект Rastr.Astra (win32com).
         """
 
     def get_cell(self, table, column, row_id):

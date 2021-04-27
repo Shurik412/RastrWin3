@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import RastrWinLib.tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.log_tools.tools import separator_star, error_text
-import RastrWinLib.tables.Vetv.vetv as vetv
 
 
 class FindNextSel:
@@ -35,8 +35,8 @@ class FindNextSel:
 class Variable:
 
     def __init__(self,
-                 rastr_win = RASTR,
-                 switch_command_line = False):
+                 rastr_win=RASTR,
+                 switch_command_line=False):
         """
         Класс для изменений значений ячеек.
         :param rastr_win: com - объект Rastr.Astra;
