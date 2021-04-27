@@ -35,7 +35,7 @@ class AC5B(Variable, GettingParameter):
                           Aex=parameter.Aex,
                           Bex=parameter.Bex):
         """
-
+        Метод change_parameters -
         :param Id: Номер возбудителя;
         :param row_id: порядковый номер в таблице (от 0 до [max.count]);
         :param Kpr: Коэффициент усиления дифференциального звена;
