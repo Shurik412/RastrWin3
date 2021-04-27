@@ -7,8 +7,8 @@
 import RastrWinLib.CustomModels.ARV3M.Parameters_ARV3M as parameter
 import RastrWinLib.tables.Dynamic.ExcControl as ExcControl
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.variables.variable_parametrs import Variable
 from RastrWinLib.log_tools.tools import separator_grid
+from RastrWinLib.variables.variable_parametrs import Variable
 
 
 class ARV3M(Variable, GettingParameter):
@@ -16,7 +16,7 @@ class ARV3M(Variable, GettingParameter):
     def __init__(self, rastr_win, switch_command_line=False):
         """
 
-        :param rastr_win: com - объект RastrWin3;
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param switch_command_line: True/False - выводит сообщения в протокол.
         """
         self.rastr_win = rastr_win

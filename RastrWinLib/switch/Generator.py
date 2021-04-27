@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.AstraRastr import RASTR
 import RastrWinLib.tables.Dynamic.Generator as Generator
+from RastrWinLib.AstraRastr import RASTR
 
 
 class SwitchGenerator:
@@ -18,4 +18,3 @@ class SwitchGenerator:
         self.rastr_win = rastr_win
         self.table = table
         self.switch_command_line = switch_command_line
-

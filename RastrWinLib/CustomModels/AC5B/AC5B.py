@@ -16,7 +16,7 @@ class AC5B(Variable, GettingParameter):
         """
 
         :param rastr_win: com - объект RastrWin3;
-        :param switch_command_line:
+        :param switch_command_line: True/False - выводит сообщения в протокол.
         """
         self.switch_command_line = switch_command_line
         self.rastr_win = rastr_win
@@ -142,8 +142,8 @@ class AC5B(Variable, GettingParameter):
     def get(self, Id=None, row_id=None):
         """
         Метод get -
-        :param Id:
-        :param row_id:
+        :param Id: Номер возбудителя;;
+        :param row_id: порядковый номер в таблице (от 0 до [max.count]);
         :return:
         """
         if Id is not None:
