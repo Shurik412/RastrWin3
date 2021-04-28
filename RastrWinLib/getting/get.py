@@ -22,7 +22,7 @@ class GettingParameter:
          :param rastr_win: COM - объект Rastr.Astra (win32com).
         """
 
-    def get_cell(self, table, column, row_id):
+    def get_cell_row(self, table, column, row_id):
         """
         Метод get_cell - возвращает значение ячейки.
         :param table: название таблицы RastrWin3 (generator);
@@ -34,7 +34,7 @@ class GettingParameter:
         value_cell_of_row = table_.Cols(column).Z(row_id)
         return value_cell_of_row
 
-    def get_param(self, table, column, key):
+    def get_cell_param(self, table, column, key):
         """
         get_param - метод для получения значения ячейки.
         :param table: название таблицы RastrWin3 (generator);
@@ -44,6 +44,20 @@ class GettingParameter:
         """
         table_ = self.rastr_win.Tables(table)
         table_.SetSel(key)
+        row_ = table_.FindNextSel(-1)
+        value_cell_of_set_sel = table_.Cols(column).Z(row_)
+        return value_cell_of_set_sel
+
+    def get_cell_id(self, table, column, Id):
+        """
+        Метод get_param - метод для получения значения ячейки.
+        :param table: название таблицы RastrWin3 (generator);
+        :param column: навание колонки (столбца) RastrWin3 (Num);
+        :param Id: номер оборудования;
+        :return: значение ячейки.
+        """
+        table_ = self.rastr_win.Tables(table)
+        table_.SetSel(f'Id={Id}')
         row_ = table_.FindNextSel(-1)
         value_cell_of_set_sel = table_.Cols(column).Z(row_)
         return value_cell_of_set_sel
@@ -93,38 +107,3 @@ class GettingParameter:
         table_.SetSel(f'{DFWIEEE421.Id}={Id}')
         row_vozb_IEEE = table_.FindNextSel(-1)
         return row_vozb_IEEE
-
-
-def get_param(table, column, key, rastr_win=RASTR):
-    """
-    get_param - функция для получения значения ячейки.
-    :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param table: название таблицы RastrWin3 (generator);
-    :param column: навание колонки (столбца) RastrWin3 (Num);
-    :param key: выборка;
-    :return: значение ячейки.
-    """
-    rastr_win.Tables(table).SetSel(key)
-    row_ = rastr_win.Tables(table).FindNextSel(-1)
-    value_cell_of_set_sel = rastr_win.Tables(table).Cols(column).Z(row_)
-    return value_cell_of_set_sel
-
-
-class Get:
-    """
-
-    :param table:
-    :param column:
-    :param Id:
-    :param rastr_win:
-    :return:
-    """
-
-    def __init__(self, table, Id: int, rastr_win=RASTR):
-        self.table_ = rastr_win.Tables(table)
-        self.table_.SetSel(f'Id={Id}')
-        self.row_ = self.table_.FindNextSel(-1)
-
-    def rget(self, column):
-        val_ = self.table_.Cols(column).Z(self.row_)
-        return val_
