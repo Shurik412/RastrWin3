@@ -192,6 +192,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\Dynamic\ExcControl.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\ExcConrol.py">
           <value>
             <Attribute>
@@ -276,10 +283,24 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tests\test_ARV3M.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tests\test_clear_Python.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tests\test_getting.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>

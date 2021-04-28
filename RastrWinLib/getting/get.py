@@ -93,3 +93,38 @@ class GettingParameter:
         table_.SetSel(f'{DFWIEEE421.Id}={Id}')
         row_vozb_IEEE = table_.FindNextSel(-1)
         return row_vozb_IEEE
+
+
+def get_param(table, column, key, rastr_win=RASTR):
+    """
+    get_param - функция для получения значения ячейки.
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
+    :param table: название таблицы RastrWin3 (generator);
+    :param column: навание колонки (столбца) RastrWin3 (Num);
+    :param key: выборка;
+    :return: значение ячейки.
+    """
+    rastr_win.Tables(table).SetSel(key)
+    row_ = rastr_win.Tables(table).FindNextSel(-1)
+    value_cell_of_set_sel = rastr_win.Tables(table).Cols(column).Z(row_)
+    return value_cell_of_set_sel
+
+
+class Get:
+    """
+
+    :param table:
+    :param column:
+    :param Id:
+    :param rastr_win:
+    :return:
+    """
+
+    def __init__(self, table, Id: int, rastr_win=RASTR):
+        self.table_ = rastr_win.Tables(table)
+        self.table_.SetSel(f'Id={Id}')
+        self.row_ = self.table_.FindNextSel(-1)
+
+    def rget(self, column):
+        val_ = self.table_.Cols(column).Z(self.row_)
+        return val_

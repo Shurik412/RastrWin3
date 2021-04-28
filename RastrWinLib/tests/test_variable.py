@@ -20,6 +20,7 @@ var.make_changes_row(table=generator_table,
                      row_id='0',
                      value='1')
 
+
 save_file(file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\test9_9.rst',
           shablon=shablon_file_dynamic,
           switch_command_line=True)

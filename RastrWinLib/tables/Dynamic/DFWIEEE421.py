@@ -3,6 +3,7 @@
 
 table: str = 'DFWIEEE412'
 
+
 sel: str = 'sel'  # Отметка
 sta: str = 'sta'  # Состояние возбудителя
 Id: str = 'Id'  # Номер возбудителя

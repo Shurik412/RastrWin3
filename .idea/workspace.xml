@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ExcControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ExcControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +61,8 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Node" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.output">
-    <configuration name="equivalent_calculation_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test_ARV3M">
+    <configuration name="ARV3M" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,11 +70,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Equivalence" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_ARV3M" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +137,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="vetv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_getting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,11 +154,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tables" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Vetv\vetv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_ARV3M" />
+        <item itemvalue="Python.ARV3M" />
+        <item itemvalue="Python.test_getting" />
         <item itemvalue="Python.output" />
         <item itemvalue="Python.str" />
-        <item itemvalue="Python.test_settings" />
-        <item itemvalue="Python.vetv" />
-        <item itemvalue="Python.equivalent_calculation_model" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Corr Variable 22.04.21">
-      <created>1619078299922</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1619078299922</updated>
     </task>
     <task id="LOCAL-00034" summary="New class Get...Parameter.">
       <created>1619085288144</created>
@@ -522,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619533886553</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Corr modules ARV3M.py">
+      <created>1619588064039</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1619588064039</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +545,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py" />
     <MESSAGE value="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py" />
     <MESSAGE value="добавил переменные, типы в generator.py" />
     <MESSAGE value="добавил class Error" />
@@ -563,7 +569,8 @@
     <MESSAGE value="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py" />
     <MESSAGE value="Corr All RastrWinLib" />
     <MESSAGE value="Add modules ARV3M.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules ARV3M.py" />
+    <MESSAGE value="Corr modules ARV3M.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr modules ARV3M.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
