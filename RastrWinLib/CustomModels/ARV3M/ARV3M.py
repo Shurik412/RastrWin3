@@ -120,7 +120,70 @@ class ARV3M(Variable, GettingParameter):
                                                key=f'{ExcControl.Id}={Id}',
                                                value=TINT)
 
-        if row_id is None:
+        if row_id is not None:
+            # Ku
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.Ku,
+                                            row_id=row_id,
+                                            value=Ku)
+            # K_Q
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.K_Q,
+                                            row_id=row_id,
+                                            value=K_Q)
+            # Kif1
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.Kif1,
+                                            row_id=row_id,
+                                            value=Kif1)
+            # T1if
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.T1if,
+                                            row_id=row_id,
+                                            value=T1if)
+            # Ku1
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.Ku1,
+                                            row_id=row_id,
+                                            value=Ku1)
+            # T1u1
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.T1u1,
+                                            row_id=row_id,
+                                            value=T1u1)
+            # K_P
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.K_P,
+                                            row_id=row_id,
+                                            value=K_P)
+            # K_Ia
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.K_Ia,
+                                            row_id=row_id,
+                                            value=K_Ia)
+            # Tf
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.Tf,
+                                            row_id=row_id,
+                                            value=Tf)
+            # Kf
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.Kf,
+                                            row_id=row_id,
+                                            value=Kf)
+            # Kf1
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.Kf1,
+                                            row_id=row_id,
+                                            value=Kf1)
+            # TINT
+            self.variable_.make_changes_row(table=ExcControl.table,
+                                            column=ExcControl.TINT,
+                                            row_id=row_id,
+                                            value=TINT)
+
+    def get(self, Id, row_id):
+        if Id is None:
             # Ku
             Ku = self.get_.get_param(table=ExcControl.table,
                                      column=ExcControl.Ku,
@@ -169,6 +232,75 @@ class ARV3M(Variable, GettingParameter):
             TINT = self.get_.get_param(table=ExcControl.table,
                                        column=ExcControl.TINT,
                                        key=f'{ExcControl.Id}={Id}')
+            print(
+                f'{separator_grid}'
+                f'Параметры АРВ: ARV-3M.'
+                f'- Id: Номер возбудителя: {Id};\n'
+                f'- row_id: порядковый номер: {row_id};\n'
+                f'- Ku: Коэффициент усиления пропорционального канала регулятора напряжения: {Ku};\n'
+                f'- K_Q: Коэффициент усиления канала по производной тока ротора: {K_Q};\n'
+                f'- Kif1: Коэффициент усиления канала по производной тока ротора: {Kif1};\n'
+                f'- T1if: Постоянная времени дифференцирующего звена в канале по производной тока ротора: {T1if};\n'
+                f'- Ku1: Коэффициент усиления канала по производной напряжения: {Ku1};\n'
+                f'- T1u1: Постоянная времени дифференцирующего звена в канале по производной напряжения: {T1u1};\n'
+                f'- K_P: Коэффициент усиления выходного сигнала ОМВ: {K_P};\n'
+                f'- K_Ia: Уставка ограничителя максимального тока ротора: {K_Ia};\n'
+                f'- Tf: Постоянная времени дифференцирующего звена в канале по частоте: {Tf};\n'
+                f'- Kf: Коэффициент усиления в канале по частоте: {Kf};\n'
+                f'- Kf1: Коэффициент усиления в канале по производной частоты: {Kf1};\n'
+                f'- TINT: Постоянная времени интегратора: {TINT};\n'
+                f'{separator_grid}'
+            )
+
+        if row_id is not None:
+            # Ku
+            Ku = self.get_.get_cell(table=ExcControl.table,
+                                    column=ExcControl.Ku,
+                                    row_id=row_id)
+            # K_Q
+            self.get_.get_cell(table=ExcControl.table,
+                               column=ExcControl.K_Q,
+                               row_id=row_id)
+            # Kif1
+            Kif1 = self.get_.get_cell(table=ExcControl.table,
+                                      column=ExcControl.Kif1,
+                                      row_id=row_id)
+            # T1if
+            T1if = self.get_.get_cell(table=ExcControl.table,
+                                      column=ExcControl.T1if,
+                                      row_id=row_id)
+            # Ku1
+            Ku1 = self.get_.get_cell(table=ExcControl.table,
+                                     column=ExcControl.Ku1,
+                                     row_id=row_id)
+            # T1u1
+            T1u1 = self.get_.get_cell(table=ExcControl.table,
+                                      column=ExcControl.T1u1,
+                                      row_id=row_id)
+            # K_P
+            K_P = self.get_.get_cell(table=ExcControl.table,
+                                     column=ExcControl.K_P,
+                                     row_id=row_id)
+            # K_Ia
+            K_Ia = self.get_.get_cell(table=ExcControl.table,
+                                      column=ExcControl.K_Ia,
+                                      row_id=row_id)
+            # Tf
+            Tf = self.get_.get_cell(table=ExcControl.table,
+                                    column=ExcControl.Tf,
+                                    row_id=row_id)
+            # Kf
+            Kf = self.get_.get_cell(table=ExcControl.table,
+                                    column=ExcControl.Kf,
+                                    row_id=row_id)
+            # Kf1
+            Kf1 = self.get_.get_cell(table=ExcControl.table,
+                                     column=ExcControl.Kf1,
+                                     row_id=row_id)
+            # TINT
+            TINT = self.get_.get_cell(table=ExcControl.table,
+                                      column=ExcControl.TINT,
+                                      row_id=row_id)
             print(
                 f'{separator_grid}'
                 f'Параметры АРВ: ARV-3M.'
