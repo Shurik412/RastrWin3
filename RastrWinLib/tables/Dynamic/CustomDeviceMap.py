@@ -2,6 +2,7 @@
 # Модуль переменных таблицы "Пользовательсие устройства" RastrWin3
 
 table: str = 'CustomDeviceMap'  # название таблиц
+table_name: str = '"Пользовательсие устройства"'
 
 Id: str = 'Id'  # Номер
 Name: str = 'Name'  # название

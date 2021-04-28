@@ -13,18 +13,18 @@ from RastrWinLib.variables.variable_parametrs import Variable
 def change_parameters(
         Id=None,
         row_id=None,
-        Ku=parameter.Ku,
-        K_Q=parameter.K_Q,
-        Kif1=parameter.Kif1,
-        T1if=parameter.T1if,
-        Ku1=parameter.Ku1,
-        T1u1=parameter.T1u1,
-        K_P=parameter.K_P,
-        K_Ia=parameter.K_Ia,
-        Tf=parameter.Tf,
-        Kf=parameter.Kf,
-        Kf1=parameter.Kf1,
-        TINT=parameter.TINT,
+        Ku: float = parameter.Ku,
+        K_Q: float = parameter.K_Q,
+        Kif1: float = parameter.Kif1,
+        T1if: float = parameter.T1if,
+        Ku1: float = parameter.Ku1,
+        T1u1: float = parameter.T1u1,
+        K_P: float = parameter.K_P,
+        K_Ia: float = parameter.K_Ia,
+        Tf: float = parameter.Tf,
+        Kf: float = parameter.Kf,
+        Kf1: float = parameter.Kf1,
+        TINT: float = parameter.TINT,
         rastr_win=RASTR,
         switch_command_line: bool = False
 ):
@@ -50,6 +50,7 @@ def change_parameters(
     """
     variable_ = Variable(rastr_win=rastr_win)
     get_ = GettingParameter(rastr_win=rastr_win)
+
     if Id is not None and row_id is not None:
         # Ku
         ku_before = get_.get_cell(table=ExcControl.table,

@@ -2,6 +2,7 @@
 # Модуль переменных таблицы "Турбины" RastrWin3
 
 table: str = 'ARS'  # название таблицы
+table_name: str = '"Турбины"'
 
 sel: str = 'sel'  #
 sta: str = 'sta'  #
