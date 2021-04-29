@@ -80,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\CustomModels\AC5B\AC5B.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\CustomModels\ARV3M\ARV3M.py">
           <value>
             <Attribute>

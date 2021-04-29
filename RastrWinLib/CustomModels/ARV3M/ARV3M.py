@@ -43,7 +43,7 @@ class Parameters:
     Tz_out: float = 0.1  # Задержка на снятие форсировки
 
 
-def change_parameters(
+def change_parameters_ARV3M(
         Id: int = None,
         row_id: int = None,
         Ku: float = Parameters.Ku,
@@ -61,7 +61,7 @@ def change_parameters(
         rastr_win=RASTR,
         switch_command_line: bool = False):
     """
-    Функция change_parameters -
+    Функция change_parameters_ARV3M -
 
     :param switch_command_line: True/False - вывод сообщений в протакол;
     :param rastr_win: COM - объект Rastr.Astra (win32com);
@@ -890,3 +890,7 @@ def get_parameters(
             f'- TINT: Постоянная времени интегратора: {tint};\n'
             f'{separator_two}\n'
         )
+    if Id is None and row_id is None:
+        print(f'{separator_two}'
+              f'Не задано значение Id и/или row_id!'
+              f'{separator_two}')

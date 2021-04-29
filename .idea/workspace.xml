@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/log_tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/log_tools/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Скорректировал settings -&gt; regim.py">
-      <created>1619117479711</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1619117479711</updated>
     </task>
     <task id="LOCAL-00040" summary="Скорректировал settings -&gt; equivalence.py">
       <created>1619120686012</created>
@@ -523,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619689889778</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Finish create modules ARV3M.py">
+      <created>1619690988151</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1619690988151</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
