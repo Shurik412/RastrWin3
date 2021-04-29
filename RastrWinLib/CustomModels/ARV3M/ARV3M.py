@@ -4,7 +4,6 @@
 # реализованная в ПК RUSTab, состоит из макроблоков.
 # Параметры модели AVR-3M_res.xmldev заносятся в таблицу «АРВ (ИД)».
 
-import RastrWinLib.CustomModels.ARV3M.Parameters_ARV3M as Parameters_ARV3M
 import RastrWinLib.tables.Dynamic.ExcControl as ExcControl
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
@@ -12,25 +11,58 @@ from RastrWinLib.log_tools.tools import separator_two
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
+class Parameters:
+    """
+    # ----------- Типовые параметры от НТЦ для модели ARV3M ----------------
+    # Модель автоматического регулятора возбуждения типа ARV3M, реализованная в ПК RUSTab,
+        состоит из следующих макроблоков:
+    # 1.АРВ: AVR-3M_res.xmldev;
+    # 2.Релейная форсировка возбуждения: AVR-3M_RF.xmldev.
+    # Параметры модели AVR-3M_res.xmldev заносятся в таблицу «АРВ (ИД)».
+    # Типовые значение параметров настройки, приведенные, приняты согласно информации
+        от производителя системы возбуждения.
+    # В случае наличия листинга настроек для конкретного энергообъекта
+    # необходимо использовать фактические параметры настройки.
+    """
+    Ku: float = 10.0  # Коэффициент усиления пропорционального канала регулятора напряжения
+    K_Q: float = 1.0  # Коэффициент усиления канала по производной тока ротора
+    Kif1: float = 1.0  # Коэффициент усиления канала по производной тока ротора
+    T1if: float = 0.05  # Постоянная времени дифференцирующего звена в канале по производной тока ротора
+    Ku1: float = 3.0  # Коэффициент усиления канала по производной напряжения
+    T1u1: float = 0.06  # Постоянная времени дифференцирующего звена в канале по производной напряжения
+    K_P: float = 5.0  # Коэффициент усиления выходного сигнала ОМВ
+    K_Ia: float = 2.0  # Уставка ограничителя максимального тока ротора
+    Tf: float = 2.0  # Постоянная времени дифференциру-ющего звена в канале по частоте
+    Kf: float = 1.0  # Коэффициент усиления в канале по частоте
+    Kf1: float = 1.0  # Коэффициент усиления в канале по производной частоты
+    TINT: float = 1.0  # Постоянная времени интегратора
+
+    # Параметры модели AVR-3M_RF.xmldev заносятся в таблицу «Форсировка (ИД)».
+    Ubf: float = 0.85  # Напряжение ввода форсировки
+    Uef: float = 0.9  # Напряжение снятие форсировки
+    Tz_out: float = 0.1  # Задержка на снятие форсировки
+
+
 def change_parameters(
         Id: int = None,
         row_id: int = None,
-        Ku: float = Parameters_ARV3M.Ku,
-        K_Q: float = Parameters_ARV3M.K_Q,
-        Kif1: float = Parameters_ARV3M.Kif1,
-        T1if: float = Parameters_ARV3M.T1if,
-        Ku1: float = Parameters_ARV3M.Ku1,
-        T1u1: float = Parameters_ARV3M.T1u1,
-        K_P: float = Parameters_ARV3M.K_P,
-        K_Ia: float = Parameters_ARV3M.K_Ia,
-        Tf: float = Parameters_ARV3M.Tf,
-        Kf: float = Parameters_ARV3M.Kf,
-        Kf1: float = Parameters_ARV3M.Kf1,
-        TINT: float = Parameters_ARV3M.TINT,
+        Ku: float = Parameters.Ku,
+        K_Q: float = Parameters.K_Q,
+        Kif1: float = Parameters.Kif1,
+        T1if: float = Parameters.T1if,
+        Ku1: float = Parameters.Ku1,
+        T1u1: float = Parameters.T1u1,
+        K_P: float = Parameters.K_P,
+        K_Ia: float = Parameters.K_Ia,
+        Tf: float = Parameters.Tf,
+        Kf: float = Parameters.Kf,
+        Kf1: float = Parameters.Kf1,
+        TINT: float = Parameters.TINT,
         rastr_win=RASTR,
         switch_command_line: bool = False):
     """
     Функция change_parameters -
+
     :param switch_command_line: True/False - вывод сообщений в протакол;
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param Id: Номер возбудителя;
@@ -47,7 +79,7 @@ def change_parameters(
     :param Kf: Коэффициент усиления в канале по частоте;
     :param Kf1: Коэффициент усиления в канале по производной частоты;
     :param TINT: Постоянная времени интегратора;
-    :return:
+    :return: Возвращает все параметры в строковом виде для протокола.
     """
     variable_ = Variable(rastr_win=rastr_win)
     get_ = GettingParameter(rastr_win=rastr_win)
@@ -61,10 +93,10 @@ def change_parameters(
         else:
             ku_before = None
 
-        variable_.make_changes_row(table=ExcControl.table,
-                                   column=ExcControl.Ku,
-                                   row_id=row_id,
-                                   value=Ku)
+        variable_.make_changes_setsel(table=ExcControl.table,
+                                      column=ExcControl.Ku,
+                                      key=f'{ExcControl.Id}={Id}',
+                                      value=Ku)
 
         if switch_command_line is not None:
             ku_after = get_.get_cell_id(table=ExcControl.table,

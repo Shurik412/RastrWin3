@@ -12,7 +12,7 @@ load_file(file_path=file,
 
 # load_file(switch_command_line=True)
 
-change_parameters(row_id=0, switch_command_line=True)
+change_parameters(Id=1320, switch_command_line=True)
 
 save_file(file_path=file_save,
           shablon=shablon_file_dynamic)

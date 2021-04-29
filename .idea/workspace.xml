@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/load.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/log_tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/log_tools/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ExcControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ExcControl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Скорректировал tables_attributes.py -&gt; regime, ut_common ...">
-      <created>1619101655886</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1619101655886</updated>
     </task>
     <task id="LOCAL-00039" summary="Скорректировал settings -&gt; regim.py">
       <created>1619117479711</created>
@@ -532,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619634686131</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Finish create modules ARV3M.py">
+      <created>1619689889778</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1619689889778</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +539,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py" />
     <MESSAGE value="добавил переменные, типы в generator.py" />
     <MESSAGE value="добавил class Error" />
     <MESSAGE value="добавил файл Exciter.py и DFWIEEE421.py" />
@@ -573,7 +563,8 @@
     <MESSAGE value="Corr All RastrWinLib" />
     <MESSAGE value="Add modules ARV3M.py" />
     <MESSAGE value="Corr modules ARV3M.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr modules ARV3M.py" />
+    <MESSAGE value="Finish create modules ARV3M.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish create modules ARV3M.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
