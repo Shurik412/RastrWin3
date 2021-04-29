@@ -8,7 +8,7 @@ import RastrWinLib.CustomModels.ARV3M.Parameters_ARV3M as Parameters_ARV3M
 import RastrWinLib.tables.Dynamic.ExcControl as ExcControl
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.log_tools.tools import separator_grid
+from RastrWinLib.log_tools.tools import separator_two
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -31,7 +31,7 @@ def change_parameters(
         switch_command_line: bool = False):
     """
     Функция change_parameters -
-    :param switch_command_line:
+    :param switch_command_line: True/False - вывод сообщений в протакол;
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param Id: Номер возбудителя;
     :param row_id: порядковый номер в таблице (от 0 до [max.count]);
@@ -46,7 +46,7 @@ def change_parameters(
     :param Tf: Постоянная времени дифференцирующего звена в канале по частоте;
     :param Kf: Коэффициент усиления в канале по частоте;
     :param Kf1: Коэффициент усиления в канале по производной частоты;
-    :param TINT: Постоянная времени интегратора
+    :param TINT: Постоянная времени интегратора;
     :return:
     """
     variable_ = Variable(rastr_win=rastr_win)
@@ -295,7 +295,7 @@ def change_parameters(
 
         if switch_command_line is not False:
             print(
-                f'{separator_grid}\n'
+                f'{separator_two}\n'
                 f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n'
                 f'- Id: Номер возбудителя: {Id}\n'
                 f'- Ku: Коэффициент усиления пропорционального канала регулятора напряжения: до {ku_before}; после {ku_after};\n'
@@ -310,7 +310,7 @@ def change_parameters(
                 f'- Kf: Коэффициент усиления в канале по частоте: до {kf_before}; после {kf_after};\n'
                 f'- Kf1: Коэффициент усиления в канале по производной частоты: до {kf1_before}; после {kf1_after};\n'
                 f'- TINT: Постоянная времени интегратора: до {tint_before}; после {tint_after};\n'
-                f'{separator_grid}\n'
+                f'{separator_two}\n'
             )
 
     if row_id is not None and Id is None:
@@ -322,10 +322,10 @@ def change_parameters(
         else:
             ku_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.Ku,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=Ku)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.Ku,
+                                   row_id=row_id,
+                                   value=Ku)
 
         if switch_command_line is not False:
             ku_after = get_.get_cell_row(table=ExcControl.table,
@@ -342,10 +342,10 @@ def change_parameters(
         else:
             k_q_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.K_Q,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=K_Q)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.K_Q,
+                                   row_id=row_id,
+                                   value=K_Q)
 
         if switch_command_line is not False:
             k_q_after = get_.get_cell_row(table=ExcControl.table,
@@ -362,10 +362,10 @@ def change_parameters(
         else:
             kif1_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.Kif1,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=Kif1)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.Kif1,
+                                   row_id=row_id,
+                                   value=Kif1)
 
         if switch_command_line is not False:
             kif1_after = get_.get_cell_row(table=ExcControl.table,
@@ -382,10 +382,10 @@ def change_parameters(
         else:
             t1if_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.T1if,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=T1if)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.T1if,
+                                   row_id=row_id,
+                                   value=T1if)
 
         if switch_command_line is not False:
             t1if_after = get_.get_cell_row(table=ExcControl.table,
@@ -402,10 +402,10 @@ def change_parameters(
         else:
             ku1_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.Ku1,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=Ku1)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.Ku1,
+                                   row_id=row_id,
+                                   value=Ku1)
 
         if switch_command_line is not False:
             ku1_after = get_.get_cell_row(table=ExcControl.table,
@@ -422,10 +422,10 @@ def change_parameters(
         else:
             t1u1_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.T1u1,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=T1u1)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.T1u1,
+                                   row_id=row_id,
+                                   value=T1u1)
 
         if switch_command_line is not False:
             t1u1_after = get_.get_cell_row(table=ExcControl.table,
@@ -442,10 +442,10 @@ def change_parameters(
         else:
             kp_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.K_P,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=K_P)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.K_P,
+                                   row_id=row_id,
+                                   value=K_P)
 
         if switch_command_line is not False:
             kp_after = get_.get_cell_row(table=ExcControl.table,
@@ -462,10 +462,10 @@ def change_parameters(
         else:
             k_ia_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.K_Ia,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=K_Ia)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.K_Ia,
+                                   row_id=row_id,
+                                   value=K_Ia)
 
         if switch_command_line is not False:
             k_ia_after = get_.get_cell_row(table=ExcControl.table,
@@ -482,82 +482,82 @@ def change_parameters(
         else:
             tf_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.Tf,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=Tf)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.Tf,
+                                   row_id=row_id,
+                                   value=Tf)
 
         if switch_command_line is not False:
-            tf_after = get_.get_param(table=ExcControl.table,
-                                      column=ExcControl.Tf,
-                                      row_id=row_id)
+            tf_after = get_.get_cell_row(table=ExcControl.table,
+                                         column=ExcControl.Tf,
+                                         row_id=row_id)
         else:
             tf_after = None
 
         # Kf
         if switch_command_line is not False:
-            kf_before = get_.get_param(table=ExcControl.table,
-                                       column=ExcControl.Kf,
-                                       row_id=row_id)
+            kf_before = get_.get_cell_row(table=ExcControl.table,
+                                          column=ExcControl.Kf,
+                                          row_id=row_id)
         else:
             kf_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.Kf,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=Kf)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.Kf,
+                                   row_id=row_id,
+                                   value=Kf)
         if switch_command_line is not False:
-            kf_after = get_.get_param(table=ExcControl.table,
-                                      column=ExcControl.Kf,
-                                      row_id=row_id)
+            kf_after = get_.get_cell_row(table=ExcControl.table,
+                                         column=ExcControl.Kf,
+                                         row_id=row_id)
         else:
             kf_after = None
 
         # Kf1
         if switch_command_line is not False:
-            kf1_before = get_.get_param(table=ExcControl.table,
-                                        column=ExcControl.Kf1,
-                                        row_id=row_id)
+            kf1_before = get_.get_cell_row(table=ExcControl.table,
+                                           column=ExcControl.Kf1,
+                                           row_id=row_id)
         else:
             kf1_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.Kf1,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=Kf1)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.Kf1,
+                                   row_id=row_id,
+                                   value=Kf1)
 
         if switch_command_line is not False:
-            kf1_after = get_.get_param(table=ExcControl.table,
-                                       column=ExcControl.Kf1,
-                                       row_id=row_id)
+            kf1_after = get_.get_cell_row(table=ExcControl.table,
+                                          column=ExcControl.Kf1,
+                                          row_id=row_id)
         else:
             kf1_after = None
 
         # TINT
         if switch_command_line is not False:
-            tint_before = get_.get_param(table=ExcControl.table,
-                                         column=ExcControl.TINT,
-                                         row_id=row_id)
+            tint_before = get_.get_cell_row(table=ExcControl.table,
+                                            column=ExcControl.TINT,
+                                            row_id=row_id)
         else:
             tint_before = None
 
-        variable_.make_changes_setsel(table=ExcControl.table,
-                                      column=ExcControl.TINT,
-                                      key=f'{ExcControl.Id}={Id}',
-                                      value=TINT)
+        variable_.make_changes_row(table=ExcControl.table,
+                                   column=ExcControl.TINT,
+                                   row_id=row_id,
+                                   value=TINT)
 
         if switch_command_line is not False:
-            tint_after = get_.get_param(table=ExcControl.table,
-                                        column=ExcControl.TINT,
-                                        row_id=row_id)
+            tint_after = get_.get_cell_row(table=ExcControl.table,
+                                           column=ExcControl.TINT,
+                                           row_id=row_id)
         else:
             tint_after = None
 
         if switch_command_line is not False:
             print(
-                f'{separator_grid}\n'
-                f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n'
-                f'- row_id: порядковый номер в таблице (от 0 до [max.count]);: {row_id}\n'
+                f'{separator_two}\n'
+                f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n\n'
+                f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id}\n'
                 f'- Ku: Коэффициент усиления пропорционального канала регулятора напряжения: до {ku_before}; после {ku_after};\n'
                 f'- K_Q: Коэффициент усиления канала по производной тока ротора: до {k_q_before}; после {k_q_after};\n'
                 f'- Kif1: Коэффициент усиления канала по производной тока ротора: до {kif1_before}; после {kif1_after};\n'
@@ -570,7 +570,7 @@ def change_parameters(
                 f'- Kf: Коэффициент усиления в канале по частоте: до {kf_before}; после {kf_after};\n'
                 f'- Kf1: Коэффициент усиления в канале по производной частоты: до {kf1_before}; после {kf1_after};\n'
                 f'- TINT: Постоянная времени интегратора: до {tint_before}; после {tint_after};\n'
-                f'{separator_grid}\n'
+                f'{separator_two}\n'
             )
 
 
@@ -584,8 +584,8 @@ def get_parameters(
     :param Id: Номер возбудителя;
     :param row_id: порядковый номер в таблице (от 0 до [max.count]);
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param switch_command_line:
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протакол;
+    :return: Nothing returns
     """
     get_ = GettingParameter(rastr_win=rastr_win)
 
@@ -688,8 +688,8 @@ def get_parameters(
 
         if switch_command_line is not False:
             print(
-                f'{separator_grid}\n'
-                f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n'
+                f'{separator_two}\n'
+                f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n\n'
                 f'- Id: Номер возбудителя: {Id}\n'
                 f'- Ku: Коэффициент усиления пропорционального канала регулятора напряжения: {ku};\n'
                 f'- K_Q: Коэффициент усиления канала по производной тока ротора: {k_q};\n'
@@ -703,11 +703,11 @@ def get_parameters(
                 f'- Kf: Коэффициент усиления в канале по частоте: {kf};\n'
                 f'- Kf1: Коэффициент усиления в канале по производной частоты: {kf1};\n'
                 f'- TINT: Постоянная времени интегратора: {tint};\n'
-                f'{separator_grid}\n'
+                f'{separator_two}\n'
             )
         return (
-            f'{separator_grid}\n'
-            f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n'
+            f'{separator_two}\n'
+            f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n\n'
             f'- Id: Номер возбудителя: {Id}\n'
             f'- Ku: Коэффициент усиления пропорционального канала регулятора напряжения: {ku};\n'
             f'- K_Q: Коэффициент усиления канала по производной тока ротора: {k_q};\n'
@@ -721,7 +721,7 @@ def get_parameters(
             f'- Kf: Коэффициент усиления в канале по частоте: {kf};\n'
             f'- Kf1: Коэффициент усиления в канале по производной частоты: {kf1};\n'
             f'- TINT: Постоянная времени интегратора: {tint};\n'
-            f'{separator_grid}\n'
+            f'{separator_two}\n'
         )
 
     if row_id is not None and Id is None:
@@ -823,8 +823,8 @@ def get_parameters(
 
         if switch_command_line is not False:
             print(
-                f'{separator_grid}\n'
-                f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n'
+                f'{separator_two}\n'
+                f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n\n'
                 f'- row_id: порядковый номер в таблице (от 0 до [max.count]);: {row_id}\n'
                 f'- Ku: Коэффициент усиления пропорционального канала регулятора напряжения: {ku};\n'
                 f'- K_Q: Коэффициент усиления канала по производной тока ротора: {k_q};\n'
@@ -838,11 +838,11 @@ def get_parameters(
                 f'- Kf: Коэффициент усиления в канале по частоте: {kf};\n'
                 f'- Kf1: Коэффициент усиления в канале по производной частоты: {kf1};\n'
                 f'- TINT: Постоянная времени интегратора: {tint};\n'
-                f'{separator_grid}\n'
+                f'{separator_two}\n'
             )
         return (
-            f'{separator_grid}\n'
-            f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n'
+            f'{separator_two}\n'
+            f'Таблица: "{ExcControl.table}" - {ExcControl.table_name}:\n\n'
             f'- row_id: порядковый номер в таблице (от 0 до [max.count]);: {row_id}\n'
             f'- Ku: Коэффициент усиления пропорционального канала регулятора напряжения: {ku};\n'
             f'- K_Q: Коэффициент усиления канала по производной тока ротора: {k_q};\n'
@@ -856,5 +856,5 @@ def get_parameters(
             f'- Kf: Коэффициент усиления в канале по частоте: {kf};\n'
             f'- Kf1: Коэффициент усиления в канале по производной частоты: {kf1};\n'
             f'- TINT: Постоянная времени интегратора: {tint};\n'
-            f'{separator_grid}\n'
+            f'{separator_two}\n'
         )

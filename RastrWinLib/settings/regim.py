@@ -371,8 +371,8 @@ def set_regim(neb_p: float = 1.000,
                                                   row_id=0)
 
     if switch_command_line is not False:
-        print(separator_noun)
         print(
+            f'{separator_noun}\n'
             f'Таблица параметров (настройки) "Режим" - com_regim:\n'
             f'neb_p: Точность расчета (dP) "до" = {neb_p_get_before}; "после" = {neb_p_get_after};\n'
             f'it_max: Максимальное число итераций (It) "до" = {it_max_get_before}; "после" = {it_max_get_after};\n'
@@ -399,5 +399,35 @@ def set_regim(neb_p: float = 1.000,
             f'itz_ogr_max: Стартовый метод: Учет Qmax с итерации (Z_it_max) "до" = {itz_ogr_max_get_before}; "после" = {itz_ogr_max_get_after};\n'
             f'itz_ogr_min: Стартовый метод: Учет Qmin с итерации (Z_it_min) "до" = {itz_ogr_min_get_before}; "после" = {itz_ogr_min_get_after};\n'
             f'min_nodes_in_island: Минимальное число узлов в острове (Min_nodes) "до" = {min_nodes_in_island_get_before}; "после" = {min_nodes_in_island_get_after};'
+            f'{separator_noun}\n'
         )
-        print(separator_noun)
+    return (
+        f'{separator_noun}\n'
+        f'Таблица параметров (настройки) "Режим" - com_regim:\n\n'
+        f'neb_p: Точность расчета (dP) "до" = {neb_p_get_before}; "после" = {neb_p_get_after};\n'
+        f'it_max: Максимальное число итераций (It) "до" = {it_max_get_before}; "после" = {it_max_get_after};\n'
+        f'start: Стартовый алгоритм (Start) "до" = {start_get_before}; "после" = {start_get_after};\n'
+        f'flot: Плоский старт (Пл.старт) "до" = {flot_get_before}; "после" = {flot_get_after};\n'
+        f'dv_min: Мин. допустимое снижение V (dV-) "до" = {dv_min_get_before}; "после" = {dv_min_get_after};\n'
+        f'dv_max: Макс. допустимое превышение V (dV+) "до" = {dv_max_get_before}; "после" = {dv_max_get_after};\n'
+        f'dd_max: Макс. допустимый угол по связи (dDelta) "до" = {dd_max_get_before}; "после" = {dd_max_get_after};\n'
+        f'status: Состояние расчета режима (Статус) "до" = {status_get_before}; "после" = {status_get_after};\n'
+        f'rr: Учет частоты: (W) "до" = {rr_get_before}; "после" = {rr_get_after};\n'
+        f'wt: Отклонение частоты (dF) "до" = {wt_get_before}; "после" = {wt_get_after};\n'
+        f'gen_p: Пересчитывать P/Q узла по P ген (Ген->P) "до" = {gen_p_get_before}; "после" = {gen_p_get_after};\n'
+        f'method: Метод Расчета (Метод) "до" = {method_get_before}; "после" = {method_get_after};\n'
+        f'method_ogr: Метод учета ограничений Q (Метод учета ограничений Q) "до" = {method_ogr_get_before}; "после" = {method_ogr_get_after};\n'
+        f'print_mode: Уровень печати (Печать) "до" = {print_mode_get_before}; "после" = {print_mode_get_after};\n'
+        f'qmax: Точный метод расчета Qmax (Qmax) "до" = {qmax_get_before}; "после" = {qmax_get_after};\n'
+        f'min_x: Сопротивление выключателя (ое на 10-6) (Min_X) "до" = {min_x_get_before}; "после" = {min_x_get_after};\n'
+        f'calc_tr: Пересчет АТ/3х обм. трансформаторов (Транс.) "до" = {calc_tr_get_before}; "после" = {calc_tr_get_after};\n'
+        f'nag_p: Пересчитывать (P/Q) нагрузки узла по ВРДО (Наг->P) "до" = {nag_p_get_before}; "после" = {nag_p_get_after};\n'
+        f'rem_breaker: Удаление выключателей из схемы: (Выкл) "до" = {rem_breaker_get_before}; "после" = {rem_breaker_get_after};\n'
+        f'gram: Пересчет мощности генератора по ГРАМ: (Грам) "до" = {gram_get_before}; "после" = {gram_get_after};\n'
+        f'ctrl_baza: Автоматическое создание БУ (БУ) "до" = {ctrl_baza_get_before}; "после" = {ctrl_baza_get_after};\n'
+        f'itz: Стартовый метод: число итераций (Z_it)  "до" = {itz_get_before}; "после" = {itz_get_after};\n'
+        f'itz_ogr_max: Стартовый метод: Учет Qmax с итерации (Z_it_max) "до" = {itz_ogr_max_get_before}; "после" = {itz_ogr_max_get_after};\n'
+        f'itz_ogr_min: Стартовый метод: Учет Qmin с итерации (Z_it_min) "до" = {itz_ogr_min_get_before}; "после" = {itz_ogr_min_get_after};\n'
+        f'min_nodes_in_island: Минимальное число узлов в острове (Min_nodes) "до" = {min_nodes_in_island_get_before}; "после" = {min_nodes_in_island_get_after};'
+        f'{separator_noun}\n'
+    )
