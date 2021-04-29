@@ -225,7 +225,7 @@ def change_parameters_AC5B(
         if switch_command_line is not False:
             print(
                 f'{separator_two}\n'
-                f' \n'
+                f' Внесены изменения в таблицу {DFWIEEE421.table_name}:\n'
                 f'- Id: Номер возбудителя: {Id};\n'
                 f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
                 f'- Kpr: Коэффициент усиления дифференциального звена: до {kpr_before}; после {kpr_after};\n'
@@ -240,7 +240,7 @@ def change_parameters_AC5B(
             )
         return (
             f'{separator_two}\n'
-            f'   \n'
+            f' Внесены изменения в таблицу {DFWIEEE421.table_name}:\n'
             f'- Id: Номер возбудителя: {Id};\n'
             f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
             f'- Kpr: Коэффициент усиления дифференциального звена: до {kpr_before}; после {kpr_after};\n'
@@ -418,7 +418,7 @@ def change_parameters_AC5B(
         if switch_command_line is not False:
             print(
                 f'{separator_two}\n'
-                f' Внесены изменения в таблицу {DFWIEEE421.table}  \n'
+                f' Внесены изменения в таблицу {DFWIEEE421.table_name}:\n'
                 f'- Id: Номер возбудителя: {Id};\n'
                 f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
                 f'- Kpr: Коэффициент усиления дифференциального звена: до {kpr_before}; после {kpr_after};\n'
@@ -434,7 +434,7 @@ def change_parameters_AC5B(
 
         return (
             f'{separator_two}\n'
-            f'   \n'
+            f' Внесены изменения в таблицу {DFWIEEE421.table_name}:\n'
             f'- Id: Номер возбудителя: {Id};\n'
             f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
             f'- Kpr: Коэффициент усиления дифференциального звена: до {kpr_before}; после {kpr_after};\n'
