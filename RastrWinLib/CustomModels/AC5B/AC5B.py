@@ -5,6 +5,7 @@
 # Параметры системы возбуждения AC5B.xmldev заносятся в ПК RUSTab в таблицу «ВозбудителиIEEE».
 
 import RastrWinLib.tables.Dynamic.DFWIEEE421 as DFWIEEE421
+from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_two
 from RastrWinLib.variables.variable_parametrs import Variable
@@ -43,7 +44,7 @@ def change_parameters_AC5B(
 ):
     """
 
-    :param Id: Номер возбудителя;
+    :param Id: номер возбудителя;
     :param row_id: порядковый номер в таблице (от 0 до [max.count]);
     :param Kpr: Коэффициент усиления дифференциального звена;
     :param Tb: Постоянная времени дифференциального звена;
@@ -223,18 +224,19 @@ def change_parameters_AC5B(
 
         if switch_command_line is not False:
             print(
-                f'{separator_two}'
-                f'- Id: Номер возбудителя: {Id};'
-                f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};'
-                f'- Kpr: Коэффициент усиления дифференциального звена: до {kpr_before}; после {kpr_after};'
-                f'- Tb: Постоянная времени дифференциального звена: до {tb_before}; после {tb_after};'
-                f'- Ka: Пропорциональный коэффициент усиления регулятора напряжения: до {ka_before}; после {ka_after};'
-                f'- Vrmax: Максимальное ограничение интегрального звена: до {vrmax_before}; после {vrmax_after};'
-                f'- Vrmin: Минимальное ограничение интегрального звена: до {vrmin_before}; после {vrmin_after};'
-                f'- Te: Постоянная времени интегратора возбудителя: до {te_before}; после {te_after};'
-                f'- Aex: Коэффициент экспоненты (задание насыщения): до {aex_before}; после {aex_after};'
-                f'- Bex: Степень экспоненты (задание насыщения): до {bex_before}; после {bex_after};'
-                f'{separator_two}'
+                f'{separator_two}\n'
+                f' \n'
+                f'- Id: Номер возбудителя: {Id};\n'
+                f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
+                f'- Kpr: Коэффициент усиления дифференциального звена: до {kpr_before}; после {kpr_after};\n'
+                f'- Tb: Постоянная времени дифференциального звена: до {tb_before}; после {tb_after};\n'
+                f'- Ka: Пропорциональный коэффициент усиления регулятора напряжения: до {ka_before}; после {ka_after};\n'
+                f'- Vrmax: Максимальное ограничение интегрального звена: до {vrmax_before}; после {vrmax_after};\n'
+                f'- Vrmin: Минимальное ограничение интегрального звена: до {vrmin_before}; после {vrmin_after};\n'
+                f'- Te: Постоянная времени интегратора возбудителя: до {te_before}; после {te_after};\n'
+                f'- Aex: Коэффициент экспоненты (задание насыщения): до {aex_before}; после {aex_after};\n'
+                f'- Bex: Степень экспоненты (задание насыщения): до {bex_before}; после {bex_after};\n'
+                f'{separator_two}\n'
             )
         return (
             f'{separator_two}\n'
@@ -416,7 +418,7 @@ def change_parameters_AC5B(
         if switch_command_line is not False:
             print(
                 f'{separator_two}\n'
-                f'   \n'
+                f' Внесены изменения в таблицу {DFWIEEE421.table}  \n'
                 f'- Id: Номер возбудителя: {Id};\n'
                 f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
                 f'- Kpr: Коэффициент усиления дифференциального звена: до {kpr_before}; после {kpr_after};\n'

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Модуль переменных таблицы  "Возбудитель IEEE" RastrWin3
 
-table: str = 'DFWIEEE412'
-
+table: str = 'DFWIEEE421'
+table_name: str = '"Возбудители IEEE"'
 
 sel: str = 'sel'  # Отметка
 sta: str = 'sta'  # Состояние возбудителя

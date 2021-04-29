@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/ARV_REM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Скорректировал settings -&gt; equivalence.py">
-      <created>1619120686012</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1619120686012</updated>
     </task>
     <task id="LOCAL-00041" summary="Скорректировал variable_parametrs.py -&gt; Class Variable">
       <created>1619122715672</created>
@@ -522,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619690988151</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Corr AC5B.py">
+      <created>1619694111263</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1619694111263</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +543,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавил переменные, типы в generator.py" />
     <MESSAGE value="добавил class Error" />
     <MESSAGE value="добавил файл Exciter.py и DFWIEEE421.py" />
     <MESSAGE value="добавил файл ExcControl.py" />
@@ -563,7 +567,8 @@
     <MESSAGE value="Add modules ARV3M.py" />
     <MESSAGE value="Corr modules ARV3M.py" />
     <MESSAGE value="Finish create modules ARV3M.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish create modules ARV3M.py" />
+    <MESSAGE value="Corr AC5B.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr AC5B.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
