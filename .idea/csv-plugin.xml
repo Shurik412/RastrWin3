@@ -213,6 +213,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\Dynamic\DFWIEEE421.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\Dynamic\ExcControl.py">
           <value>
             <Attribute>
