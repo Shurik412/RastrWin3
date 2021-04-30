@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ARS.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ARS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFW421UEL.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFW421UEL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWOELUNITROL.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWOELUNITROL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWTHYNE14.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWTHYNE14.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Exciter.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Exciter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Forcer.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Forcer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Sechen/sechen.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Sechen/sechen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Settings/AltUnit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Settings/AltUnit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Settings/com_dynamics.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Settings/com_dynamics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Settings/com_ekviv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Settings/com_ekviv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Settings/com_regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Settings/com_regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Settings/ut_common.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00051" summary="добавил переменных и типы в dynamic.py">
-      <created>1619266362718</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1619266362718</updated>
     </task>
     <task id="LOCAL-00052" summary="добавил переменных и типы в dynamic.py">
       <created>1619266433674</created>
@@ -531,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619784401783</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Corr Dynamic">
+      <created>1619785196063</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1619785196063</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +546,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add module sechen.py" />
     <MESSAGE value="Add module grline.py" />
     <MESSAGE value="Add dir tables" />
     <MESSAGE value="Add modules CustomDeviceMap.py" />
@@ -572,7 +570,8 @@
     <MESSAGE value="Create class ShablonsRastrWin" />
     <MESSAGE value="Create class Shabl&#10;Corr save.py" />
     <MESSAGE value="Create module AC8B.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create module AC8B.py" />
+    <MESSAGE value="Corr Dynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr Dynamic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

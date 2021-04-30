@@ -3,6 +3,7 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
 from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.tables.Settings.AltUnit import AltUnit
 
 
 def set_alt_unit(

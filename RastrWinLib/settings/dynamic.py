@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Settings.com_dynamics as com_dynamics
+from RastrWinLib.tables.Settings.com_dynamics import ComDynamics
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
@@ -40,7 +40,7 @@ def set_dynamic(
         rastr_win=RASTR,
         switch_command_line=False):
     """
-    Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):
+    Параметры настройки "Общие данные для расчета динамики" (таблица: com_dynamics):
 
     :param t_ras: Время расчета: (Tras);
     :param h_int: Начальный шаг интегрирования: (H_инт);
@@ -80,369 +80,369 @@ def set_dynamic(
     get_param_ = GettingParameter(rastr_win=rastr_win)
 
     # Время расчета (Tras)
-    get_t_ras = get_param_.get_cell_row(table=com_dynamics.table,
-                                        column=com_dynamics.Tras,
+    get_t_ras = get_param_.get_cell_row(table=ComDynamics.table,
+                                        column=ComDynamics.Tras,
                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Tras,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Tras,
                                         row_id=0,
                                         value=t_ras)
-    get_t_ras_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.Tras,
+    get_t_ras_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.Tras,
                                               row_id=0)
 
     # Начальный шаг интегрирования (H_инт)
-    get_h_int = get_param_.get_cell_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hint,
+    get_h_int = get_param_.get_cell_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hint,
                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hint,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hint,
                                         row_id=0,
                                         value=h_int)
-    get_h_int_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.Hint,
+    get_h_int_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.Hint,
                                               row_id=0)
 
     # Минимальный шаг интегрирования (H_мин)
-    get_h_min = get_param_.get_cell_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hmin,
+    get_h_min = get_param_.get_cell_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hmin,
                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hmin,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hmin,
                                         row_id=0,
                                         value=h_min)
-    get_h_min_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.Hmin,
+    get_h_min_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.Hmin,
                                               row_id=0)
 
     # Максимальный шаг интегрирования (H_макс)
-    get_h_max = get_param_.get_cell_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hmax,
+    get_h_max = get_param_.get_cell_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hmax,
                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hmax,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hmax,
                                         row_id=0,
                                         value=h_max)
-    get_h_max_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.Hmax,
+    get_h_max_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.Hmax,
                                               row_id=0)
 
     # Шаг печати (H_печ)
-    get_h_out = get_param_.get_cell_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hout,
+    get_h_out = get_param_.get_cell_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hout,
                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Hout,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Hout,
                                         row_id=0,
                                         value=h_out)
-    get_h_out_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.Hout,
+    get_h_out_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.Hout,
                                               row_id=0)
 
     # Основной метод интегрирования (Осн.Метод)
-    get_mint = get_param_.get_cell_row(table=com_dynamics.table,
-                                       column=com_dynamics.Mint,
+    get_mint = get_param_.get_cell_row(table=ComDynamics.table,
+                                       column=ComDynamics.Mint,
                                        row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Mint,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Mint,
                                         row_id=0,
                                         value=mint)
-    get_mint_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                             column=com_dynamics.Mint,
+    get_mint_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                             column=ComDynamics.Mint,
                                              row_id=0)
 
     # Стартовый метод интегрирования (Старт.Метод)
-    get_smint = get_param_.get_cell_row(table=com_dynamics.table,
-                                        column=com_dynamics.SMint,
+    get_smint = get_param_.get_cell_row(table=ComDynamics.table,
+                                        column=ComDynamics.SMint,
                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.SMint,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.SMint,
                                         row_id=0,
                                         value=smint)
-    get_smint_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.SMint,
+    get_smint_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.SMint,
                                               row_id=0)
 
     # Точность шага интегрирования (dInt)
-    get_int_epsilon = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.IntEpsilon,
+    get_int_epsilon = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.IntEpsilon,
                                               row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.IntEpsilon,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.IntEpsilon,
                                         row_id=0,
                                         value=int_epsilon)
-    get_int_epsilon_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                    column=com_dynamics.IntEpsilon,
+    get_int_epsilon_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                    column=ComDynamics.IntEpsilon,
                                                     row_id=0)
 
     # Информировать об изменении шага (Выводить шаг)
-    get_inform_on_step_change = get_param_.get_cell_row(table=com_dynamics.table,
-                                                        column=com_dynamics.InformOnStepChange,
+    get_inform_on_step_change = get_param_.get_cell_row(table=ComDynamics.table,
+                                                        column=ComDynamics.InformOnStepChange,
                                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.InformOnStepChange,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.InformOnStepChange,
                                         row_id=0,
                                         value=inform_on_step_change)
-    get_inform_on_step_change_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                              column=com_dynamics.InformOnStepChange,
+    get_inform_on_step_change_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                              column=ComDynamics.InformOnStepChange,
                                                               row_id=0)
 
     # Постоянная сглаживания угловой скорости (частоты) узла (Tf)
-    get_tf = get_param_.get_cell_row(table=com_dynamics.table,
-                                     column=com_dynamics.Tf,
+    get_tf = get_param_.get_cell_row(table=ComDynamics.table,
+                                     column=ComDynamics.Tf,
                                      row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Tf,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Tf,
                                         row_id=0,
                                         value=tf)
-    get_tf_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                           column=com_dynamics.Tf,
+    get_tf_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                           column=ComDynamics.Tf,
                                            row_id=0)
 
     # Точность балансировки эдс при учете явнополюсности (dEf)
-    get_def = get_param_.get_cell_row(table=com_dynamics.table,
-                                      column=com_dynamics.dEf,
+    get_def = get_param_.get_cell_row(table=ComDynamics.table,
+                                      column=ComDynamics.dEf,
                                       row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.dEf,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.dEf,
                                         row_id=0,
                                         value=dEf)
-    get_def_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                            column=com_dynamics.dEf,
+    get_def_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                            column=ComDynamics.dEf,
                                             row_id=0)
 
     # Макс число пересчетов УР на шаге при учете явнополюсности (Ит)
-    get_npf = get_param_.get_cell_row(table=com_dynamics.table,
-                                      column=com_dynamics.Npf,
+    get_npf = get_param_.get_cell_row(table=ComDynamics.table,
+                                      column=ComDynamics.Npf,
                                       row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Npf,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Npf,
                                         row_id=0,
                                         value=npf)
-    get_npf_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                            column=com_dynamics.Npf,
+    get_npf_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                            column=ComDynamics.Npf,
                                             row_id=0)
 
     # Контроль входных параметров (Контр.)
-    get_valid = get_param_.get_cell_row(table=com_dynamics.table,
-                                        column=com_dynamics.Valid,
+    get_valid = get_param_.get_cell_row(table=ComDynamics.table,
+                                        column=ComDynamics.Valid,
                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.Valid,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.Valid,
                                         row_id=0,
                                         value=valid)
-    get_valid_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                              column=com_dynamics.Valid,
+    get_valid_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                              column=ComDynamics.Valid,
                                               row_id=0)
 
     # Демпфирование в уравнениях движения (Демпф)
-    get_dempfrec = get_param_.get_cell_row(table=com_dynamics.table,
-                                           column=com_dynamics.dempfrec,
+    get_dempfrec = get_param_.get_cell_row(table=ComDynamics.table,
+                                           column=ComDynamics.dempfrec,
                                            row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.dempfrec,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.dempfrec,
                                         row_id=0,
                                         value=dempfrec)
-    get_dempfrec_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                 column=com_dynamics.dempfrec,
+    get_dempfrec_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                 column=ComDynamics.dempfrec,
                                                  row_id=0)
 
     # Корректировать Т в парковских моделях (Корр Т)
-    get_corr_t = get_param_.get_cell_row(table=com_dynamics.table,
-                                         column=com_dynamics.corrT,
+    get_corr_t = get_param_.get_cell_row(table=ComDynamics.table,
+                                         column=ComDynamics.corrT,
                                          row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.corrT,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.corrT,
                                         row_id=0,
                                         value=corrT)
-    get_corr_t_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                               column=com_dynamics.corrT,
+    get_corr_t_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                               column=ComDynamics.corrT,
                                                row_id=0)
 
     # Учет демп. момента в моделях с демп контурами (Уч Демп)
-    get_is_demp = get_param_.get_cell_row(table=com_dynamics.table,
-                                          column=com_dynamics.IsDemp,
+    get_is_demp = get_param_.get_cell_row(table=ComDynamics.table,
+                                          column=ComDynamics.IsDemp,
                                           row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.IsDemp,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.IsDemp,
                                         row_id=0,
                                         value=is_demp)
-    get_is_demp_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                column=com_dynamics.IsDemp,
+    get_is_demp_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                column=ComDynamics.IsDemp,
                                                 row_id=0)
 
     # Напряжения перехода с СХН на шунт (V_минСХРН)
-    get_frsxntoy = get_param_.get_cell_row(table=com_dynamics.table,
-                                           column=com_dynamics.frSXNtoY,
+    get_frsxntoy = get_param_.get_cell_row(table=ComDynamics.table,
+                                           column=ComDynamics.frSXNtoY,
                                            row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.frSXNtoY,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.frSXNtoY,
                                         row_id=0,
                                         value=frSXNtoY)
-    get_frsxntoy_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                 column=com_dynamics.frSXNtoY,
+    get_frsxntoy_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                 column=ComDynamics.frSXNtoY,
                                                  row_id=0)
 
     # Допустимый небаланс СХН (SXNTol)
-    get_sxntolerance = get_param_.get_cell_row(table=com_dynamics.table,
-                                               column=com_dynamics.frSXNtoY,
+    get_sxntolerance = get_param_.get_cell_row(table=ComDynamics.table,
+                                               column=ComDynamics.frSXNtoY,
                                                row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.frSXNtoY,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.frSXNtoY,
                                         row_id=0,
                                         value=SXNTolerance)
-    get_sxntolerance_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                     column=com_dynamics.frSXNtoY,
+    get_sxntolerance_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                     column=ComDynamics.frSXNtoY,
                                                      row_id=0)
 
     # Выходной каталог файлов результатов (Кат. результатов)
-    get_snap_path = get_param_.get_cell_row(table=com_dynamics.table,
-                                            column=com_dynamics.SnapPath,
+    get_snap_path = get_param_.get_cell_row(table=ComDynamics.table,
+                                            column=ComDynamics.SnapPath,
                                             row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.SnapPath,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.SnapPath,
                                         row_id=0,
                                         value=SnapPath)
-    get_snap_path_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                  column=com_dynamics.SnapPath,
+    get_snap_path_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                  column=ComDynamics.SnapPath,
                                                   row_id=0)
 
     # Максимальное кол-во файлов результатов (Макс. файлов)
-    get_max_result_files = get_param_.get_cell_row(table=com_dynamics.table,
-                                                   column=com_dynamics.MaxResultFiles,
+    get_max_result_files = get_param_.get_cell_row(table=ComDynamics.table,
+                                                   column=ComDynamics.MaxResultFiles,
                                                    row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.MaxResultFiles,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.MaxResultFiles,
                                         row_id=0,
                                         value=MaxResultFiles)
-    get_max_result_files_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                         column=com_dynamics.MaxResultFiles,
+    get_max_result_files_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                         column=ComDynamics.MaxResultFiles,
                                                          row_id=0)
 
     # Шаблон имени выходного файла (Шаблон имени)
-    get_snap_template = get_param_.get_cell_row(table=com_dynamics.table,
-                                                column=com_dynamics.SnapTemplate,
+    get_snap_template = get_param_.get_cell_row(table=ComDynamics.table,
+                                                column=ComDynamics.SnapTemplate,
                                                 row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.SnapTemplate,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.SnapTemplate,
                                         row_id=0,
                                         value=SnapTemplate)
-    get_snap_template_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                      column=com_dynamics.SnapTemplate,
+    get_snap_template_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                      column=ComDynamics.SnapTemplate,
                                                       row_id=0)
 
     # Автозагрузка последнего результата (Автозагрузка)
-    get_snap_auto_load = get_param_.get_cell_row(table=com_dynamics.table,
-                                                 column=com_dynamics.SnapAutoLoad,
+    get_snap_auto_load = get_param_.get_cell_row(table=ComDynamics.table,
+                                                 column=ComDynamics.SnapAutoLoad,
                                                  row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.SnapAutoLoad,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.SnapAutoLoad,
                                         row_id=0,
                                         value=SnapAutoLoad)
-    get_snap_auto_load_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                       column=com_dynamics.SnapAutoLoad,
+    get_snap_auto_load_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                       column=ComDynamics.SnapAutoLoad,
                                                        row_id=0)
 
     # Максимальное кол-во слотов результатов (Макс. рез-тов)
-    get_snap_max_count = get_param_.get_cell_row(table=com_dynamics.table,
-                                                 column=com_dynamics.SnapMaxCount,
+    get_snap_max_count = get_param_.get_cell_row(table=ComDynamics.table,
+                                                 column=ComDynamics.SnapMaxCount,
                                                  row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.SnapMaxCount,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.SnapMaxCount,
                                         row_id=0,
                                         value=SnapMaxCount)
-    get_snap_max_count_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                       column=com_dynamics.SnapMaxCount,
+    get_snap_max_count_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                       column=ComDynamics.SnapMaxCount,
                                                        row_id=0)
 
     # Отключать генератор при превышении скорости % (Уставка автоматов безопасности)
-    get_trip_generator_on_speed = get_param_.get_cell_row(table=com_dynamics.table,
-                                                          column=com_dynamics.TripGeneratorOnSpeed,
+    get_trip_generator_on_speed = get_param_.get_cell_row(table=ComDynamics.table,
+                                                          column=ComDynamics.TripGeneratorOnSpeed,
                                                           row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.TripGeneratorOnSpeed,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.TripGeneratorOnSpeed,
                                         row_id=0,
                                         value=TripGeneratorOnSpeed)
-    get_trip_generator_on_speed_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                                column=com_dynamics.TripGeneratorOnSpeed,
+    get_trip_generator_on_speed_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                                column=ComDynamics.TripGeneratorOnSpeed,
                                                                 row_id=0)
 
     # Информировать о пуске/возврате автоматики (Информировать о пуске/возврате автоматики)
-    get_pickup_dropout = get_param_.get_cell_row(table=com_dynamics.table,
-                                                 column=com_dynamics.PickupDropout,
+    get_pickup_dropout = get_param_.get_cell_row(table=ComDynamics.table,
+                                                 column=ComDynamics.PickupDropout,
                                                  row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.PickupDropout,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.PickupDropout,
                                         row_id=0,
                                         value=PickupDropout)
-    get_pickup_dropout_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                       column=com_dynamics.PickupDropout,
+    get_pickup_dropout_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                       column=ComDynamics.PickupDropout,
                                                        row_id=0)
 
     # Выводить контролируемые величины в CSV (Выводить контролируемые величины в CSV)
-    get_realtime_csv = get_param_.get_cell_row(table=com_dynamics.table,
-                                               column=com_dynamics.RealtimeCSV,
+    get_realtime_csv = get_param_.get_cell_row(table=ComDynamics.table,
+                                               column=ComDynamics.RealtimeCSV,
                                                row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.RealtimeCSV,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.RealtimeCSV,
                                         row_id=0,
                                         value=RealtimeCSV)
-    get_realtime_csv_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                     column=com_dynamics.RealtimeCSV,
+    get_realtime_csv_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                     column=ComDynamics.RealtimeCSV,
                                                      row_id=0)
 
     # Отображать углы в диапазоне +/-180 (Отображать углы в диапазоне +/-180)
-    get_period_angle = get_param_.get_cell_row(table=com_dynamics.table,
-                                               column=com_dynamics.PeriodAngle,
+    get_period_angle = get_param_.get_cell_row(table=ComDynamics.table,
+                                               column=ComDynamics.PeriodAngle,
                                                row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.PeriodAngle,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.PeriodAngle,
                                         row_id=0,
                                         value=PeriodAngle)
-    get_period_angle_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                     column=com_dynamics.PeriodAngle,
+    get_period_angle_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                     column=ComDynamics.PeriodAngle,
                                                      row_id=0)
 
     # Положительное направление результатов (Положительное направление результатов)
-    get_result_flow_direction = get_param_.get_cell_row(table=com_dynamics.table,
-                                                        column=com_dynamics.ResultFlowDirection,
+    get_result_flow_direction = get_param_.get_cell_row(table=ComDynamics.table,
+                                                        column=ComDynamics.ResultFlowDirection,
                                                         row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.ResultFlowDirection,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.ResultFlowDirection,
                                         row_id=0,
                                         value=ResultFlowDirection)
-    get_result_flow_direction_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                              column=com_dynamics.ResultFlowDirection,
+    get_result_flow_direction_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                              column=ComDynamics.ResultFlowDirection,
                                                               row_id=0)
 
     # Считать предупреждения ошибками (Предупреждение=Ошибка)
-    get_treat_warnings_as_errors = get_param_.get_cell_row(table=com_dynamics.table,
-                                                           column=com_dynamics.TreatWarningsAsErrors,
+    get_treat_warnings_as_errors = get_param_.get_cell_row(table=ComDynamics.table,
+                                                           column=ComDynamics.TreatWarningsAsErrors,
                                                            row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.TreatWarningsAsErrors,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.TreatWarningsAsErrors,
                                         row_id=0,
                                         value=TreatWarningsAsErrors)
-    get_treat_warnings_as_errors_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                                 column=com_dynamics.TreatWarningsAsErrors,
+    get_treat_warnings_as_errors_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                                 column=ComDynamics.TreatWarningsAsErrors,
                                                                  row_id=0)
 
     # Метод обработки дискретных изменений (Дискретные изменения)
-    get_event_process = get_param_.get_cell_row(table=com_dynamics.table,
-                                                column=com_dynamics.EventProcess,
+    get_event_process = get_param_.get_cell_row(table=ComDynamics.table,
+                                                column=ComDynamics.EventProcess,
                                                 row_id=0)
-    variable_def_rowid.make_changes_row(table=com_dynamics.table,
-                                        column=com_dynamics.EventProcess,
+    variable_def_rowid.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.EventProcess,
                                         row_id=0,
                                         value=EventProcess)
-    get_event_process_after = get_param_.get_cell_row(table=com_dynamics.table,
-                                                      column=com_dynamics.EventProcess,
+    get_event_process_after = get_param_.get_cell_row(table=ComDynamics.table,
+                                                      column=ComDynamics.EventProcess,
                                                       row_id=0)
 
     if switch_command_line is not False:
         print(
             f'{separator_noun}\n'
-            f' Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):\n\n'
+            f' Параметры настройки "Общие данные для расчета динамики" (таблица: {ComDynamics.table}):\n\n'
             f'- t_ras: Время расчета: Tras "до" = {get_t_ras}; "после" = {get_t_ras_after};\n'
             f'- h_int: Начальный шаг интегрирования: H_инт "до" = {get_h_int}; "после" = {get_h_int_after};\n'
             f'- h_min: Минимальный шаг интегрирования: H_мин "до" = {get_h_min}; "после" = {get_h_min_after};\n'
@@ -477,7 +477,7 @@ def set_dynamic(
         )
     return (
         f'{separator_noun}\n'
-        f' Параметры настройки "Общие данные для расчета динамики" (таблица "Динамика": com_dynamics):\n'
+        f' Параметры настройки "Общие данные для расчета динамики" (таблица: {ComDynamics.table}):\n'
         f'- t_ras: Время расчета: Tras "до" = {get_t_ras}; "после" = {get_t_ras_after};\n'
         f'- h_int: Начальный шаг интегрирования: H_инт "до" = {get_h_int}; "после" = {get_h_int_after};\n'
         f'- h_min: Минимальный шаг интегрирования: H_мин "до" = {get_h_min}; "после" = {get_h_min_after};\n'
