@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -537,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Rename ExcControl.py" />
     <MESSAGE value="Rename Forcer.py" />
     <MESSAGE value="Add module DFWIEEE421PSS13.py" />
     <MESSAGE value="Add module DFWIEEE421PSS4B.py" />
@@ -562,7 +562,8 @@
     <MESSAGE value="Corr table -&gt; DFWIEEE421.py&#10;Corr ARV3M&#10;Corr AC5B.py" />
     <MESSAGE value="&#10;Corr AC5B.py" />
     <MESSAGE value="Corr DFWIEEE421.py and DFWIEEE421PSS13.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr DFWIEEE421.py and DFWIEEE421PSS13.py" />
+    <MESSAGE value="Add modules Creator_PRG_and_SQL.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules Creator_PRG_and_SQL.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
