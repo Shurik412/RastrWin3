@@ -248,7 +248,28 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\Dynamic\DFWIEEE421PSS4B.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tables\Dynamic\DFWTHYNE14.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\Dynamic\ExcControl.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tables\Dynamic\Forcer.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
