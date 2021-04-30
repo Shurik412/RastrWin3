@@ -2,14 +2,14 @@
 from os import path
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.loading.shablon import shablon_file_automation
+from RastrWinLib.loading.shablon import ShablonsRastrWin
 from RastrWinLib.log_tools.tools import separator_grid
 
 
 def load_file(rastr_win=RASTR,
               rg_kod=1,
               file_path='',
-              shablon=shablon_file_automation,
+              shablon=ShablonsRastrWin.shablon_file_automation,
               switch_command_line=False):
     """
    :param rastr_win: COM - объект Rastr.Astra (win32com);
@@ -41,7 +41,11 @@ def load_file(rastr_win=RASTR,
 
 class LoadRUSTab:
 
-    def __init__(self, rastr_win=RASTR, shablon=shablon_file_automation, rg_kod=1, switch_command_line=False):
+    def __init__(self,
+                 rastr_win=RASTR,
+                 shablon=ShablonsRastrWin.shablon_file_automation,
+                 rg_kod=1,
+                 switch_command_line=False):
         """
 
         :param rastr_win: com - объект Rastr.Astra
@@ -61,7 +65,9 @@ class LoadRUSTab:
         """
         self.rastr_win.Load(2, '', self.shablon)
         if self.switch_command_line is not None:
-            print(f'Добавлена структура рабочей области по шаблону: "{path.basename(self.shablon)}".')
+            print(f'{separator_grid}\n'
+                  f'Добавлена структура рабочей области по шаблону: "{path.basename(self.shablon)}".\n'
+                  f'{separator_grid}\n')
         return True
 
     def load(self, file_path):
@@ -72,7 +78,9 @@ class LoadRUSTab:
         """
         self.rastr_win.Load(self.rg_kod, file_path, self.shablon)
         if self.switch_command_line is not None:
-            print(f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shablon)}".')
+            print(f'{separator_grid}\n'
+                  f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shablon)}".'
+                  f'{separator_grid}\n')
         return True
 
     def load_new_file(self):
@@ -82,5 +90,7 @@ class LoadRUSTab:
         """
         self.rastr_win.NewFile(self.shablon)
         if self.switch_command_line is not None:
-            print(f'Очищена рабочая область по шаблону: "{path.basename(self.shablon)}".')
+            print(f'{separator_grid}\n'
+                  f'Очищена рабочая область по шаблону: "{path.basename(self.shablon)}".'
+                  f'{separator_grid}\n')
         return True

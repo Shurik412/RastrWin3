@@ -21,10 +21,12 @@ def save_file(rastr_win=RASTR,
     rastr_win.save(file_path, shablon)
 
     if switch_command_line is not False:
-        print(separator_grid)
         if file_path == '':
-            print(f'Ссылка для сохранения файла не задана!')
+            print(f'{separator_grid}\n'
+                  f'Ссылка для сохранения файла не задана!\n'
+                  f'{separator_grid}\n')
         else:
-            print(f'Файл "{path.basename(file_path)}" сохранен по шаблону "{path.basename(shablon)}".')
-        print(separator_grid)
+            print(f'{separator_grid}\n'
+                  f'Файл "{path.basename(file_path)}" сохранен по шаблону "{path.basename(shablon)}".\n'
+                  f'{separator_grid}\n')
     return True
