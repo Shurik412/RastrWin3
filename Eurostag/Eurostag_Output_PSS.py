@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-import shutil
 import csv
 import os
+import shutil
 import time
+
+import win32com.client
 from openpyxl import (Workbook, load_workbook)
 from openpyxl.chart import (ScatterChart, Reference, Series)
 from openpyxl.utils import get_column_letter
-import win32com.client
-from icecream import ic
 
 
 def createSummaryFile(kol_file, dir_file_1, sezon_regim):
@@ -426,10 +426,16 @@ def Dempfir(ws_Excel_Unite_exp_path, ws_Excel_Unite_1_exp, NameGenInvestigated, 
             col_gen = h
             # print('col_gen =', col_gen)
             break
+        else:
+            col_gen = h
+            break
 
     for i_point_65 in range(num_time_to_row, ws_Excel_Unite_1_exp.max_row + 1):
         val_point_65 = float(ws_Excel_Unite_1_exp[get_column_letter(1) + str(i_point_65)].value)
         if val_point_65 >= float(65):
+            row_point_65 = i_point_65
+            break
+        else:
             row_point_65 = i_point_65
             break
 
@@ -439,10 +445,17 @@ def Dempfir(ws_Excel_Unite_exp_path, ws_Excel_Unite_1_exp, NameGenInvestigated, 
             row_point_75 = i_point_75
             # print(row_point_75)
             break
+        else:
+            row_point_75 = i_point_75
+            # print(row_point_75)
+            break
 
     for i_point_50 in range(num_time_to_row, ws_Excel_Unite_1_exp.max_row):
         val_point_50 = float(ws_Excel_Unite_1_exp[get_column_letter(1) + str(i_point_50)].value)
         if val_point_50 >= float(50):
+            row_point_50 = i_point_50
+            break
+        else:
             row_point_50 = i_point_50
             break
 
@@ -503,6 +516,8 @@ def main(dir_file_1, kol_file, sezon_regim, Unom_kV, NameGenInvestigated):
             value_to_time = ws_Excel_Unite_1_exp['A{0}'.format(str(n))].value
             if value_to_time == ' TIME':
                 num_time_to_row = int(n) + 1
+            else:
+                num_time_to_row = int(n) + 1
 
         chengeVariable(ws_Excel_Unite_1_exp, num_time_to_row)
         chengeVariable(ws_Excel_Unite_2_exp, num_time_to_row)
@@ -518,11 +533,11 @@ def main(dir_file_1, kol_file, sezon_regim, Unom_kV, NameGenInvestigated):
 start_time = time.time()
 
 dir_wb1 = input("Dir File EXP (C:\\Users\\EXP): ")
-kol_file = int(input("Kol Regim File -> 51: "))
+kol_file = int(input("Количество режимов -> (Пример: 51): "))
 sezon_regim = input("ZimaMax=1, ZimaMin=2, LetoMax=3, LetoMin=4: ")
 Unom_kV = input("Unom KZ(3) -> 500 or 14_500: ")
 Unom_kV_exp2 = input("Unom KZ(3) EXP_2 -> 500 or 14_500: ")
-NameGenInvestigated = input("Name Generator, example (P/52601222) or (52601222),if 0 -> object #1: ")
+NameGenInvestigated = input("Название исследуемого генератора, example (P/52601222) or (52601222),if 0 -> object #1: ")
 dir_file_1 = dir_wb1.replace('\\', '/')
 
 dict_set = dict()

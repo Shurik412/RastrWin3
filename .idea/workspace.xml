@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Eurostag/Eurostag_Output_No_PSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Node" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_ARV3M">
+  <component name="RunManager" selected="Python.Eurostag_Output_PSS">
     <configuration name="ARV3M" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="output" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,11 +84,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/error" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/error/output.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.test_ARV3M" />
         <item itemvalue="Python.test_getting" />
         <item itemvalue="Python.test_settings" />
         <item itemvalue="Python.ARV3M" />
-        <item itemvalue="Python.output" />
       </list>
     </recent_temporary>
   </component>
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Добавилено внесение районов в ветви">
-      <created>1619178850352</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1619178850352</updated>
     </task>
     <task id="LOCAL-00047" summary="Добавилено внесение районов в ветви">
       <created>1619179744693</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619769829568</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Add modules Eurostag_Output_No_PSS.py">
+      <created>1619769901318</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1619769901318</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add module DFWIEEE421PSS13.py" />
     <MESSAGE value="Add module DFWIEEE421PSS4B.py" />
     <MESSAGE value="Add module DFW421UEL.py" />
     <MESSAGE value="Add module DFWOELUNITROL.py" />
@@ -562,7 +562,8 @@
     <MESSAGE value="Corr DFWIEEE421.py and DFWIEEE421PSS13.py" />
     <MESSAGE value="Add modules Creator_PRG_and_SQL.py" />
     <MESSAGE value="Add modules Eurostag_Output_PSS.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules Eurostag_Output_PSS.py" />
+    <MESSAGE value="Add modules Eurostag_Output_No_PSS.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules Eurostag_Output_No_PSS.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

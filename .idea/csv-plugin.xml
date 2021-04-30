@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Eurostag\Eurostag_Output_PSS.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\OAPV_simulation\OAPV_calc.py">
           <value>
             <Attribute>
