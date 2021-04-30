@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/save.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Добавилено таблицы">
-      <created>1619183498208</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1619183498208</updated>
     </task>
     <task id="LOCAL-00049" summary="Добавилено таблицы">
       <created>1619183552240</created>
@@ -525,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619779935679</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Create class ShablonsRastrWin">
+      <created>1619780601042</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1619780601042</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add module DFW421UEL.py" />
     <MESSAGE value="Add module DFWOELUNITROL.py" />
     <MESSAGE value="Add module FuncPQ.py" />
     <MESSAGE value="Add module sechen.py" />
@@ -566,7 +561,8 @@
     <MESSAGE value="Add modules Eurostag_Output_PSS.py" />
     <MESSAGE value="Add modules Eurostag_Output_No_PSS.py" />
     <MESSAGE value="Corr modules Eurostag_Output_No_PSS.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr modules Eurostag_Output_No_PSS.py" />
+    <MESSAGE value="Create class ShablonsRastrWin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create class ShablonsRastrWin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

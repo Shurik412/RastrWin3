@@ -2,16 +2,19 @@
 from os import path
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.loading.shablon import ShablonsRastrWin
+from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.log_tools.tools import separator_grid
 
 
 def load_file(rastr_win=RASTR,
               rg_kod=1,
               file_path='',
-              shablon=ShablonsRastrWin.shablon_file_automation,
+              shabl=Shabl.shablon_file_automation,
               switch_command_line=False):
     """
+    Загружает файл данных name в рабочую область в соответствии с шаблоном типа shabl.
+    Если поле shabl пусто, то загружается name без шаблона, если пусто поле name, то загружается только шаблон.
+
    :param rastr_win: COM - объект Rastr.Astra (win32com);
    :param rg_kod: числовое значение, определяет режим загрузки при наличии таблицы
             в рабочей области и может быть одним из следующих:
@@ -23,7 +26,7 @@ def load_file(rastr_win=RASTR,
                                      найден, то данные игнорируются (соответствует режиму «Обновить» в меню)
             RG_ADDKEY       3       Данные в таблице, имеющие одинаковые ключевые поля, заменяются.
                                     Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»)
-    :param shablon: шаблон RastrWin3 для загрузки;
+    :param shabl: шаблон RastrWin3 для загрузки;
     :param file_path: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);
     :param switch_command_line: True/False - выводит сообщения в протокол.
     :return: True
@@ -31,7 +34,7 @@ def load_file(rastr_win=RASTR,
 
     rg_kod = rg_kod
     rastr_win = rastr_win
-    rastr_win.Load(rg_kod, file_path, shablon)
+    rastr_win.Load(rg_kod, file_path, shabl)
 
     if switch_command_line is not False:
         print(f'{separator_grid}\n'

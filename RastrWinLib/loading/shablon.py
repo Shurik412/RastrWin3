@@ -2,7 +2,7 @@
 from os import path
 
 
-class ShablonsRastrWin:
+class Shabl:
     """
 
     """

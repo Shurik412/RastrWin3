@@ -2,13 +2,13 @@
 from os import path
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.loading.shablon import shablon_file_dynamic
+from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.log_tools.tools import separator_grid
 
 
 def save_file(rastr_win=RASTR,
               file_path='',
-              shablon=shablon_file_dynamic,
+              shablon=Shabl.shablon_file_dynamic,
               switch_command_line=False):
     """
     Сохраняет информацию из рабочей области в файле name по шаблону shablon
