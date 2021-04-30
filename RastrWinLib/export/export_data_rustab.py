@@ -8,7 +8,10 @@ class ExportDataRUSTab:
     Класс предназанчен для получения параметров после расчета ЭМПП.
     """
 
-    def __init__(self, table, rastr_win=RASTR, switch_command_line=False):
+    def __init__(self,
+                 table: str,
+                 rastr_win=RASTR,
+                 switch_command_line=False):
         """
         :param table: название таблицы;
         :param rastr_win: COM - объект Rastr.Astra (win32com);
@@ -19,7 +22,9 @@ class ExportDataRUSTab:
         self.table = self.rastr_win.Tables(table)
         self.switch_command_line = switch_command_line
 
-    def get_array(self, column, key):
+    def get_array(self,
+                  column: str,
+                  key: str):
         """
         :param column: колонка (столбец) RastrWin3;
         :param key: выборка для получения порядкового номера ("Num=21312312");

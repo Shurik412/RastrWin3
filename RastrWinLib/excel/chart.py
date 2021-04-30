@@ -3,8 +3,10 @@ from openpyxl.chart import Reference, Series, ScatterChart
 
 
 class ChartExcel:
-    def __init__(self, work_sheet, chart_obj=ScatterChart(),
-                 chart_title='График', x_axis_title='Ось Х', y_axis_title='Ось Y',
+    def __init__(self, work_sheet,
+                 chart_obj=ScatterChart(),
+                 chart_title='График',
+                 x_axis_title='Ось Х', y_axis_title='Ось Y',
                  width_chart=15, height_chart=7.5,
                  switch_command_line=False):
         """
@@ -48,11 +50,22 @@ class ChartExcel:
 
         if title_from_data_ch is not True:
             min_row_y = min_row_y + 1
-        x_values = Reference(self.work_sheet, min_col=min_col_x, min_row=min_row_x, max_row=max_row_x,
+        x_values = Reference(self.work_sheet,
+                             min_col=min_col_x,
+                             min_row=min_row_x,
+                             max_row=max_row_x,
                              range_string=None)
-        y_values = Reference(self.work_sheet, min_col=min_col_y, min_row=min_row_y, max_row=max_row_y,
+
+        y_values = Reference(self.work_sheet,
+                             min_col=min_col_y,
+                             min_row=min_row_y,
+                             max_row=max_row_y,
                              range_string=None)
-        series_xy = Series(y_values, x_values, title_from_data=title_from_data_ch, title=title_ch)
+
+        series_xy = Series(y_values,
+                           x_values,
+                           title_from_data=title_from_data_ch,
+                           title=title_ch)
 
         if width_line_pt is not None:
             series_xy.graphicalProperties.line.width = 12700 * width_line_pt  # 12700 width in EMUs
@@ -74,8 +87,12 @@ class ChartExcelOtherSheet:
         - r - справа, l - слева, t - сверху , b - снизу.
     """
 
-    def __init__(self, work_sheet, work_book, chart_obj=ScatterChart(),
-                 chart_title='График', x_axis_title='Ось Х', y_axis_title='Ось Y',
+    def __init__(self,
+                 work_sheet,
+                 work_book,
+                 chart_obj=ScatterChart(),
+                 chart_title='График',
+                 x_axis_title='Ось Х', y_axis_title='Ось Y',
                  width_chart=15, height_chart=7.5,
                  legend_position='r',
                  x_axis_min=None, x_axis_max=None,

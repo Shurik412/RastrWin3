@@ -5,7 +5,10 @@ from RastrWinLib.AstraRastr import RASTR
 
 class SwitchVetv:
 
-    def __init__(self, rastr_win=RASTR, table=vetv.table, switch_command_line=False):
+    def __init__(self,
+                 rastr_win=RASTR,
+                 table=vetv.table,
+                 switch_command_line=False):
         """
         Класс выполняет отключение и включение ветви в RastrWin3
         :param rastr_win: COM - объект Rastr.Astra (win32com);
@@ -16,7 +19,10 @@ class SwitchVetv:
         self.table = self.rastr_win.Tables(table)
         self.switch_command_line = switch_command_line
 
-    def off(self, ip, iq, np=0):
+    def off(self,
+            ip,
+            iq,
+            np=0):
         """
 
         :param ip: начало ветви;
@@ -37,7 +43,10 @@ class SwitchVetv:
         else:
             print(f'\t\tОбъект ip={ip},iq={iq},np={np} не найдет в таблице {self.table.Name}')
 
-    def on(self, ip, iq, np=0):
+    def on(self,
+           ip,
+           iq,
+           np=0):
         """
 
         :param ip: начало ветви;

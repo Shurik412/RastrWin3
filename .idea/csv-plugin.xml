@@ -94,6 +94,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\CustomModels\AC8B\AC8B.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\CustomModels\ARV3M\ARV3M.py">
           <value>
             <Attribute>
@@ -130,6 +137,13 @@
           </value>
         </entry>
         <entry key="\RastrWinLib\loading\load.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\loading\save.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />

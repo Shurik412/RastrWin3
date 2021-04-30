@@ -7,7 +7,8 @@ from RastrWinLib.variables.variable_parametrs import Variable
 
 class SwitchNode:
 
-    def __init__(self, rastr_win=RASTR,
+    def __init__(self,
+                 rastr_win=RASTR,
                  table=node.table,
                  switch_command_line=False):
         """

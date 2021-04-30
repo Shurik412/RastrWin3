@@ -16,7 +16,10 @@ class SteadyState:
     с измененными значениями узловых мощностей и модулей напряжения).
     """
 
-    def __init__(self, rastr_win=RASTR, par='', switch_command_line=False):
+    def __init__(self,
+                 rastr_win=RASTR,
+                 par='',
+                 switch_command_line=False):
         """
 
         :param rastr_win: COM - объект Rastr.Astra (win32com);
@@ -37,9 +40,9 @@ class SteadyState:
             start_time = 0
         kod = self.rastr_win.Rgm(self.par)
         if self.switch_command_line is not False:
-            print(separator_noun)
-            print(f'Запуск "Расчет режима":')
-            print(f'\tСообщение о результатх расчета УР: {kod}')
+            print(f'{separator_noun}\n'
+                  f'Запуск "Расчет режима":\n'
+                  f'\tСообщение о результатх расчета УР: {kod}\n')
             if kod != 0:
                 print('\t\tРежим не сбалансирован!')
             elif kod == 0:

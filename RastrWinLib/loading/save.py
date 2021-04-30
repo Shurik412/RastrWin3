@@ -8,17 +8,18 @@ from RastrWinLib.log_tools.tools import separator_grid
 
 def save_file(rastr_win=RASTR,
               file_path='',
-              shablon=Shabl.shablon_file_dynamic,
+              shabl=Shabl.shablon_file_dynamic,
               switch_command_line=False):
     """
-    Сохраняет информацию из рабочей области в файле name по шаблону shablon
+    Сохраняет информацию из рабочей области в файле name по шаблону shabl.
+
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param file_path: директория и название файла сохранения файла
-    :param shablon: шаблон
-    :param switch_command_line: True - вывод сообщения о выполнении.
+    :param file_path: директория и название файла сохранения файла;
+    :param shabl: шаблон RastrWin3 для загрузки;
+    :param switch_command_line: True/False - выводит сообщения в протокол.
     :return: True
     """
-    rastr_win.save(file_path, shablon)
+    rastr_win.save(file_path, shabl)
 
     if switch_command_line is not False:
         if file_path == '':

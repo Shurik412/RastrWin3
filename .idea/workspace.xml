@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC8B/AC8B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Добавилено таблицы">
-      <created>1619183552240</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1619183552240</updated>
     </task>
     <task id="LOCAL-00050" summary="добавил переменных и типы в node.py">
       <created>1619259371645</created>
@@ -521,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619780601042</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Create class Shabl&#10;Corr save.py">
+      <created>1619780938175</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1619780938175</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +546,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add module DFWOELUNITROL.py" />
     <MESSAGE value="Add module FuncPQ.py" />
     <MESSAGE value="Add module sechen.py" />
     <MESSAGE value="Add module grline.py" />
@@ -562,7 +570,8 @@
     <MESSAGE value="Add modules Eurostag_Output_No_PSS.py" />
     <MESSAGE value="Corr modules Eurostag_Output_No_PSS.py" />
     <MESSAGE value="Create class ShablonsRastrWin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create class ShablonsRastrWin" />
+    <MESSAGE value="Create class Shabl&#10;Corr save.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create class Shabl&#10;Corr save.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
