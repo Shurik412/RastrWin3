@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eurostag/Eurostag_Output_No_PSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,20 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Добален класс -&gt; switch -&gt; node -&gt; SwitchNode">
-      <created>1619167071529</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1619167071529</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Скорректировал макрос ОАПВ">
-      <created>1619172874397</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1619172874397</updated>
     </task>
     <task id="LOCAL-00046" summary="Добавилено внесение районов в ветви">
       <created>1619178850352</created>
@@ -522,7 +507,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619703907199</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Add modules Creator_PRG_and_SQL.py">
+      <created>1619769551472</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1619769551503</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Add modules Eurostag_Output_PSS.py">
+      <created>1619769829568</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1619769829568</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Rename Forcer.py" />
     <MESSAGE value="Add module DFWIEEE421PSS13.py" />
     <MESSAGE value="Add module DFWIEEE421PSS4B.py" />
     <MESSAGE value="Add module DFW421UEL.py" />
@@ -563,7 +561,8 @@
     <MESSAGE value="&#10;Corr AC5B.py" />
     <MESSAGE value="Corr DFWIEEE421.py and DFWIEEE421PSS13.py" />
     <MESSAGE value="Add modules Creator_PRG_and_SQL.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules Creator_PRG_and_SQL.py" />
+    <MESSAGE value="Add modules Eurostag_Output_PSS.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules Eurostag_Output_PSS.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
