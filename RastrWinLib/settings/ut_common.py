@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Settings.ut_common as ut_common
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.tables.Settings.ut_common import UtCommon
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -80,335 +80,335 @@ def set_ut_common(
     variable_ = Variable(rastr_win=rastr_win)
     get_ = GettingParameter(rastr_win=rastr_win)
 
-    maxs_get_before = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.maxs,
-                                    row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.maxs,
+    maxs_get_before = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.maxs,
+                                        row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.maxs,
                                row_id=0,
                                value=maxs)
-    maxs_get_after = get_.get_cell(table=ut_common.table,
-                                   column=ut_common.maxs,
-                                   row_id=0)
+    maxs_get_after = get_.get_cell_row(table=UtCommon.table,
+                                       column=UtCommon.maxs,
+                                       row_id=0)
 
-    maxv_get_before = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.maxv,
-                                    row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.maxv,
+    maxv_get_before = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.maxv,
+                                        row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.maxv,
                                row_id=0,
                                value=maxv)
-    maxv_get_after = get_.get_cell(table=ut_common.table,
-                                   column=ut_common.maxv,
-                                   row_id=0)
+    maxv_get_after = get_.get_cell_row(table=UtCommon.table,
+                                       column=UtCommon.maxv,
+                                       row_id=0)
 
-    maxd_get_before = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.maxd,
-                                    row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.maxd,
+    maxd_get_before = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.maxd,
+                                        row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.maxd,
                                row_id=0,
                                value=maxd)
-    maxd_get_after = get_.get_cell(table=ut_common.table,
-                                   column=ut_common.maxd,
-                                   row_id=0)
+    maxd_get_after = get_.get_cell_row(table=UtCommon.table,
+                                       column=UtCommon.maxd,
+                                       row_id=0)
 
-    maxa_get_before = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.maxa,
-                                    row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.maxa,
+    maxa_get_before = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.maxa,
+                                        row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.maxa,
                                row_id=0,
                                value=maxa)
-    maxa_get_after = get_.get_cell(table=ut_common.table,
-                                   column=ut_common.maxa,
-                                   row_id=0)
+    maxa_get_after = get_.get_cell_row(table=UtCommon.table,
+                                       column=UtCommon.maxa,
+                                       row_id=0)
 
-    iter_get_before = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.iter,
-                                    row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.maxa,
+    iter_get_before = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.iter,
+                                        row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.maxa,
                                row_id=0,
                                value=iter)
-    iter_get_after = get_.get_cell(table=ut_common.table,
-                                   column=ut_common.iter,
-                                   row_id=0)
+    iter_get_after = get_.get_cell_row(table=UtCommon.table,
+                                       column=UtCommon.iter,
+                                       row_id=0)
 
-    tip_get_before = get_.get_cell(table=ut_common.table,
-                                   column=ut_common.tip,
-                                   row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.tip,
+    tip_get_before = get_.get_cell_row(table=UtCommon.table,
+                                       column=UtCommon.tip,
+                                       row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.tip,
                                row_id=0,
                                value=tip)
-    tip_get_after = get_.get_cell(table=ut_common.table,
-                                  column=ut_common.tip,
-                                  row_id=0)
+    tip_get_after = get_.get_cell_row(table=UtCommon.table,
+                                      column=UtCommon.tip,
+                                      row_id=0)
 
-    f_ots_get_before = get_.get_cell(table=ut_common.table,
-                                     column=ut_common.f_ots,
-                                     row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.f_ots,
+    f_ots_get_before = get_.get_cell_row(table=UtCommon.table,
+                                         column=UtCommon.f_ots,
+                                         row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.f_ots,
                                row_id=0,
                                value=f_ots)
-    f_ots_get_after = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.f_ots,
-                                    row_id=0)
+    f_ots_get_after = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.f_ots,
+                                        row_id=0)
 
-    add_d_get_before = get_.get_cell(table=ut_common.table,
-                                     column=ut_common.add_d,
-                                     row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.add_d,
+    add_d_get_before = get_.get_cell_row(table=UtCommon.table,
+                                         column=UtCommon.add_d,
+                                         row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.add_d,
                                row_id=0,
                                value=add_d)
-    add_d_get_after = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.add_d,
-                                    row_id=0)
+    add_d_get_after = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.add_d,
+                                        row_id=0)
 
-    ekstr_get_before = get_.get_cell(table=ut_common.table,
-                                     column=ut_common.ekstr,
-                                     row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.ekstr,
+    ekstr_get_before = get_.get_cell_row(table=UtCommon.table,
+                                         column=UtCommon.ekstr,
+                                         row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.ekstr,
                                row_id=0,
                                value=ekstr)
-    ekstr_get_after = get_.get_cell(table=ut_common.table,
-                                    column=ut_common.ekstr,
-                                    row_id=0)
+    ekstr_get_after = get_.get_cell_row(table=UtCommon.table,
+                                        column=UtCommon.ekstr,
+                                        row_id=0)
 
-    kfc_get_before = get_.get_cell(table=ut_common.table,
-                                   column=ut_common.kfc,
-                                   row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.kfc,
+    kfc_get_before = get_.get_cell_row(table=UtCommon.table,
+                                       column=UtCommon.kfc,
+                                       row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.kfc,
                                row_id=0,
                                value=kfc)
-    kfc_get_after = get_.get_cell(table=ut_common.table,
-                                  column=ut_common.kfc,
-                                  row_id=0)
+    kfc_get_after = get_.get_cell_row(table=UtCommon.table,
+                                      column=UtCommon.kfc,
+                                      row_id=0)
 
-    sum_kfc_get_before = get_.get_cell(table=ut_common.table,
-                                       column=ut_common.sum_kfc,
-                                       row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.sum_kfc,
+    sum_kfc_get_before = get_.get_cell_row(table=UtCommon.table,
+                                           column=UtCommon.sum_kfc,
+                                           row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.sum_kfc,
                                row_id=0,
                                value=sum_kfc)
-    sum_kfc_get_after = get_.get_cell(table=ut_common.table,
-                                      column=ut_common.sum_kfc,
-                                      row_id=0)
+    sum_kfc_get_after = get_.get_cell_row(table=UtCommon.table,
+                                          column=UtCommon.sum_kfc,
+                                          row_id=0)
 
-    ds_get_before = get_.get_cell(table=ut_common.table,
-                                  column=ut_common.ds,
-                                  row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.ds,
+    ds_get_before = get_.get_cell_row(table=UtCommon.table,
+                                      column=UtCommon.ds,
+                                      row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.ds,
                                row_id=0,
                                value=ds)
-    ds_get_after = get_.get_cell(table=ut_common.table,
-                                 column=ut_common.ds,
-                                 row_id=0)
+    ds_get_after = get_.get_cell_row(table=UtCommon.table,
+                                     column=UtCommon.ds,
+                                     row_id=0)
 
-    it_get_before = get_.get_cell(table=ut_common.table,
-                                  column=ut_common.it,
-                                  row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.it,
+    it_get_before = get_.get_cell_row(table=UtCommon.table,
+                                      column=UtCommon.it,
+                                      row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.it,
                                row_id=0,
                                value=it)
-    it_get_after = get_.get_cell(table=ut_common.table,
-                                 column=ut_common.it,
-                                 row_id=0)
+    it_get_after = get_.get_cell_row(table=UtCommon.table,
+                                     column=UtCommon.it,
+                                     row_id=0)
 
-    status_get_before = get_.get_cell(table=ut_common.table,
-                                      column=ut_common.Status,
-                                      row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.Status,
+    status_get_before = get_.get_cell_row(table=UtCommon.table,
+                                          column=UtCommon.Status,
+                                          row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.Status,
                                row_id=0,
                                value=Status)
-    status_get_after = get_.get_cell(table=ut_common.table,
-                                     column=ut_common.Status,
-                                     row_id=0)
+    status_get_after = get_.get_cell_row(table=UtCommon.table,
+                                         column=UtCommon.Status,
+                                         row_id=0)
 
-    korr_t_get_before = get_.get_cell(table=ut_common.table,
-                                      column=ut_common.KorrT,
-                                      row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.KorrT,
+    korr_t_get_before = get_.get_cell_row(table=UtCommon.table,
+                                          column=UtCommon.KorrT,
+                                          row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.KorrT,
                                row_id=0,
                                value=KorrT)
-    korr_t_get_after = get_.get_cell(table=ut_common.table,
-                                     column=ut_common.KorrT,
-                                     row_id=0)
+    korr_t_get_after = get_.get_cell_row(table=UtCommon.table,
+                                         column=UtCommon.KorrT,
+                                         row_id=0)
 
-    korr_per_get_before = get_.get_cell(table=ut_common.table,
-                                        column=ut_common.KorrPer,
-                                        row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.KorrPer,
+    korr_per_get_before = get_.get_cell_row(table=UtCommon.table,
+                                            column=UtCommon.KorrPer,
+                                            row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.KorrPer,
                                row_id=0,
                                value=KorrPer)
-    korr_per_get_after = get_.get_cell(table=ut_common.table,
-                                       column=ut_common.KorrPer,
-                                       row_id=0)
+    korr_per_get_after = get_.get_cell_row(table=UtCommon.table,
+                                           column=UtCommon.KorrPer,
+                                           row_id=0)
 
-    korr_vib_get_before = get_.get_cell(table=ut_common.table,
-                                        column=ut_common.KorrVib,
-                                        row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.KorrVib,
+    korr_vib_get_before = get_.get_cell_row(table=UtCommon.table,
+                                            column=UtCommon.KorrVib,
+                                            row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.KorrVib,
                                row_id=0,
                                value=KorrVib)
-    korr_vib_get_after = get_.get_cell(table=ut_common.table,
-                                       column=ut_common.KorrVib,
-                                       row_id=0)
+    korr_vib_get_after = get_.get_cell_row(table=UtCommon.table,
+                                           column=UtCommon.KorrVib,
+                                           row_id=0)
 
-    enable_contr_get_before = get_.get_cell(table=ut_common.table,
-                                            column=ut_common.enable_contr,
-                                            row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.enable_contr,
+    enable_contr_get_before = get_.get_cell_row(table=UtCommon.table,
+                                                column=UtCommon.enable_contr,
+                                                row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.enable_contr,
                                row_id=0,
                                value=enable_contr)
-    enable_contr_get_after = get_.get_cell(table=ut_common.table,
-                                           column=ut_common.enable_contr,
-                                           row_id=0)
+    enable_contr_get_after = get_.get_cell_row(table=UtCommon.table,
+                                               column=UtCommon.enable_contr,
+                                               row_id=0)
 
-    dis_v_contr_get_before = get_.get_cell(table=ut_common.table,
-                                           column=ut_common.dis_v_contr,
-                                           row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.dis_v_contr,
+    dis_v_contr_get_before = get_.get_cell_row(table=UtCommon.table,
+                                               column=UtCommon.dis_v_contr,
+                                               row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.dis_v_contr,
                                row_id=0,
                                value=dis_v_contr)
-    dis_v_contr_get_after = get_.get_cell(table=ut_common.table,
-                                          column=ut_common.dis_v_contr,
-                                          row_id=0)
-
-    dis_p_contr_get_before = get_.get_cell(table=ut_common.table,
-                                           column=ut_common.dis_p_contr,
-                                           row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.dis_p_contr,
-                               row_id=0,
-                               value=dis_p_contr)
-    dis_p_contr_get_after = get_.get_cell(table=ut_common.table,
-                                          column=ut_common.dis_p_contr,
-                                          row_id=0)
-
-    dis_i_contr_get_before = get_.get_cell(table=ut_common.table,
-                                           column=ut_common.dis_i_contr,
-                                           row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.dis_i_contr,
-                               row_id=0,
-                               value=dis_i_contr)
-    dis_i_contr_get_after = get_.get_cell(table=ut_common.table,
-                                          column=ut_common.dis_i_contr,
-                                          row_id=0)
-
-    ss_calc_get_before = get_.get_cell(table=ut_common.table,
-                                       column=ut_common.ss_calc,
-                                       row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.ss_calc,
-                               row_id=0,
-                               value=ss_calc)
-    ss_calc_get_after = get_.get_cell(table=ut_common.table,
-                                      column=ut_common.ss_calc,
-                                      row_id=0)
-
-    criterion_get_before = get_.get_cell(table=ut_common.table,
-                                         column=ut_common.criterion,
-                                         row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.criterion,
-                               row_id=0,
-                               value=criterion)
-    criterion_get_after = get_.get_cell(table=ut_common.table,
-                                        column=ut_common.criterion,
-                                        row_id=0)
-
-    no_crit_d_ba_get_before = get_.get_cell(table=ut_common.table,
-                                            column=ut_common.no_crit_d_ba,
-                                            row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.no_crit_d_ba,
-                               row_id=0,
-                               value=no_crit_d_ba)
-    no_crit_d_ba_get_after = get_.get_cell(table=ut_common.table,
-                                           column=ut_common.no_crit_d_ba,
-                                           row_id=0)
-
-    no_crit_d_coa_get_before = get_.get_cell(table=ut_common.table,
-                                             column=ut_common.no_crit_d_coa,
-                                             row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.no_crit_d_coa,
-                               row_id=0,
-                               value=no_crit_d_coa)
-    no_crit_d_coa_get_after = get_.get_cell(table=ut_common.table,
-                                            column=ut_common.no_crit_d_coa,
-                                            row_id=0)
-
-    no_crit_d_ga_get_before = get_.get_cell(table=ut_common.table,
-                                            column=ut_common.no_crit_d_ga,
-                                            row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.no_crit_d_ga,
-                               row_id=0,
-                               value=no_crit_d_ga)
-    no_crit_d_ga_get_after = get_.get_cell(table=ut_common.table,
-                                           column=ut_common.no_crit_d_ga,
-                                           row_id=0)
-
-    save_files_filter_get_before = get_.get_cell(table=ut_common.table,
-                                                 column=ut_common.save_files_filter,
-                                                 row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.save_files_filter,
-                               row_id=0,
-                               value=save_files_filter)
-    save_files_filter_get_after = get_.get_cell(table=ut_common.table,
-                                                column=ut_common.save_files_filter,
-                                                row_id=0)
-
-    save_files_path_get_before = get_.get_cell(table=ut_common.table,
-                                               column=ut_common.save_files_path,
-                                               row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.save_files_path,
-                               row_id=0,
-                               value=save_files_path)
-    save_files_path_get_after = get_.get_cell(table=ut_common.table,
-                                              column=ut_common.save_files_path,
+    dis_v_contr_get_after = get_.get_cell_row(table=UtCommon.table,
+                                              column=UtCommon.dis_v_contr,
                                               row_id=0)
 
-    stop_u_n_get_before = get_.get_cell(table=ut_common.table,
-                                        column=ut_common.stop_u_n,
-                                        row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.stop_u_n,
+    dis_p_contr_get_before = get_.get_cell_row(table=UtCommon.table,
+                                               column=UtCommon.dis_p_contr,
+                                               row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.dis_p_contr,
+                               row_id=0,
+                               value=dis_p_contr)
+    dis_p_contr_get_after = get_.get_cell_row(table=UtCommon.table,
+                                              column=UtCommon.dis_p_contr,
+                                              row_id=0)
+
+    dis_i_contr_get_before = get_.get_cell_row(table=UtCommon.table,
+                                               column=UtCommon.dis_i_contr,
+                                               row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.dis_i_contr,
+                               row_id=0,
+                               value=dis_i_contr)
+    dis_i_contr_get_after = get_.get_cell_row(table=UtCommon.table,
+                                              column=UtCommon.dis_i_contr,
+                                              row_id=0)
+
+    ss_calc_get_before = get_.get_cell_row(table=UtCommon.table,
+                                           column=UtCommon.ss_calc,
+                                           row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.ss_calc,
+                               row_id=0,
+                               value=ss_calc)
+    ss_calc_get_after = get_.get_cell_row(table=UtCommon.table,
+                                          column=UtCommon.ss_calc,
+                                          row_id=0)
+
+    criterion_get_before = get_.get_cell_row(table=UtCommon.table,
+                                             column=UtCommon.criterion,
+                                             row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.criterion,
+                               row_id=0,
+                               value=criterion)
+    criterion_get_after = get_.get_cell_row(table=UtCommon.table,
+                                            column=UtCommon.criterion,
+                                            row_id=0)
+
+    no_crit_d_ba_get_before = get_.get_cell_row(table=UtCommon.table,
+                                                column=UtCommon.no_crit_d_ba,
+                                                row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.no_crit_d_ba,
+                               row_id=0,
+                               value=no_crit_d_ba)
+    no_crit_d_ba_get_after = get_.get_cell_row(table=UtCommon.table,
+                                               column=UtCommon.no_crit_d_ba,
+                                               row_id=0)
+
+    no_crit_d_coa_get_before = get_.get_cell_row(table=UtCommon.table,
+                                                 column=UtCommon.no_crit_d_coa,
+                                                 row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.no_crit_d_coa,
+                               row_id=0,
+                               value=no_crit_d_coa)
+    no_crit_d_coa_get_after = get_.get_cell_row(table=UtCommon.table,
+                                                column=UtCommon.no_crit_d_coa,
+                                                row_id=0)
+
+    no_crit_d_ga_get_before = get_.get_cell_row(table=UtCommon.table,
+                                                column=UtCommon.no_crit_d_ga,
+                                                row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.no_crit_d_ga,
+                               row_id=0,
+                               value=no_crit_d_ga)
+    no_crit_d_ga_get_after = get_.get_cell_row(table=UtCommon.table,
+                                               column=UtCommon.no_crit_d_ga,
+                                               row_id=0)
+
+    save_files_filter_get_before = get_.get_cell_row(table=UtCommon.table,
+                                                     column=UtCommon.save_files_filter,
+                                                     row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.save_files_filter,
+                               row_id=0,
+                               value=save_files_filter)
+    save_files_filter_get_after = get_.get_cell_row(table=UtCommon.table,
+                                                    column=UtCommon.save_files_filter,
+                                                    row_id=0)
+
+    save_files_path_get_before = get_.get_cell_row(table=UtCommon.table,
+                                                   column=UtCommon.save_files_path,
+                                                   row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.save_files_path,
+                               row_id=0,
+                               value=save_files_path)
+    save_files_path_get_after = get_.get_cell_row(table=UtCommon.table,
+                                                  column=UtCommon.save_files_path,
+                                                  row_id=0)
+
+    stop_u_n_get_before = get_.get_cell_row(table=UtCommon.table,
+                                            column=UtCommon.stop_u_n,
+                                            row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.stop_u_n,
                                row_id=0,
                                value=stop_u_n)
-    stop_u_n_get_after = get_.get_cell(table=ut_common.table,
-                                       column=ut_common.stop_u_n,
-                                       row_id=0)
+    stop_u_n_get_after = get_.get_cell_row(table=UtCommon.table,
+                                           column=UtCommon.stop_u_n,
+                                           row_id=0)
 
-    dyn_find_pred_get_before = get_.get_cell(table=ut_common.table,
-                                             column=ut_common.dyn_find_pred,
-                                             row_id=0)
-    variable_.make_changes_row(table=ut_common.table,
-                               column=ut_common.dyn_find_pred,
+    dyn_find_pred_get_before = get_.get_cell_row(table=UtCommon.table,
+                                                 column=UtCommon.dyn_find_pred,
+                                                 row_id=0)
+    variable_.make_changes_row(table=UtCommon.table,
+                               column=UtCommon.dyn_find_pred,
                                row_id=0,
                                value=dyn_find_pred)
-    dyn_find_pred_get_after = get_.get_cell(table=ut_common.table,
-                                            column=ut_common.dyn_find_pred,
-                                            row_id=0)
+    dyn_find_pred_get_after = get_.get_cell_row(table=UtCommon.table,
+                                                column=UtCommon.dyn_find_pred,
+                                                row_id=0)
 
     if switch_command_line is not False:
         print(separator_noun)
