@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Settings.com_regim as com_regim
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
-from RastrWinLib.tables.tables_attributes import com_regim_table
+from RastrWinLib.tables.Settings.com_regim import ComRegim
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -71,304 +70,304 @@ def set_regim(neb_p: float = 1.000,
     get_ = GettingParameter(rastr_win=rastr_win)
 
     # Точность расчета (dP)
-    neb_p_get_before = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.neb_p,
-                                     row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.neb_p,
+    neb_p_get_before = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.neb_p,
+                                         row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.neb_p,
                                row_id=0,
                                value=neb_p)
-    neb_p_get_after = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.neb_p,
-                                    row_id=0)
-
-    # Максимальное число итераций (It)
-    it_max_get_before = get_.get_cell(table=com_regim.table,
-                                      column=com_regim.it_max,
-                                      row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.it_max,
-                               row_id=0,
-                               value=it_max)
-    it_max_get_after = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.it_max,
-                                     row_id=0)
-
-    # Стартовый алгоритм (Start)
-    start_get_before = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.start,
-                                     row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.start,
-                               row_id=0,
-                               value=start)
-    start_get_after = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.start,
-                                    row_id=0)
-
-    # Плоский старт (Пл.старт)
-    flot_get_before = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.flot,
-                                    row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.flot,
-                               row_id=0,
-                               value=flot)
-    flot_get_after = get_.get_cell(table=com_regim.table,
-                                   column=com_regim.flot,
-                                   row_id=0)
-
-    # Мин. допустимое снижение V (dV-)
-    dv_min_get_before = get_.get_cell(table=com_regim.table,
-                                      column=com_regim.dv_min,
-                                      row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.dv_min,
-                               row_id=0,
-                               value=dv_min)
-    dv_min_get_after = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.dv_min,
-                                     row_id=0)
-
-    # Макс. допустимое превышение V (dV+)
-    dv_max_get_before = get_.get_cell(table=com_regim.table,
-                                      column=com_regim.dv_max,
-                                      row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.dv_max,
-                               row_id=0,
-                               value=dv_max)
-    dv_max_get_after = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.dv_max,
-                                     row_id=0)
-
-    # Макс. допустимый угол по связи (dDelta)
-    dd_max_get_before = get_.get_cell(table=com_regim.table,
-                                      column=com_regim.dd_max,
-                                      row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.dd_max,
-                               row_id=0,
-                               value=dd_max)
-    dd_max_get_after = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.dd_max,
-                                     row_id=0)
-
-    # Состояние расчета режима (Статус)
-    status_get_before = get_.get_cell(table=com_regim.table,
-                                      column=com_regim.status,
-                                      row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.status,
-                               row_id=0,
-                               value=status)
-    status_get_after = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.status,
-                                     row_id=0)
-
-    # Учет частоты: (W)
-    rr_get_before = get_.get_cell(table=com_regim.table,
-                                  column=com_regim.rr,
-                                  row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.rr,
-                               row_id=0,
-                               value=rr)
-    rr_get_after = get_.get_cell(table=com_regim.table,
-                                 column=com_regim.rr,
-                                 row_id=0)
-
-    # Отклонение частоты (dF)
-    wt_get_before = get_.get_cell(table=com_regim.table,
-                                  column=com_regim.wt,
-                                  row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.wt,
-                               row_id=0,
-                               value=wt)
-    wt_get_after = get_.get_cell(table=com_regim.table,
-                                 column=com_regim.wt,
-                                 row_id=0)
-
-    # Пересчитывать P/Q узла по P ген (Ген->P)
-    gen_p_get_before = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.gen_p,
-                                     row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.gen_p,
-                               row_id=0,
-                               value=gen_p)
-    gen_p_get_after = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.gen_p,
-                                    row_id=0)
-
-    # Метод Расчета (Метод)
-    method_get_before = get_.get_cell(table=com_regim.table,
-                                      column=com_regim.method,
-                                      row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.method,
-                               row_id=0,
-                               value=method)
-    method_get_after = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.method,
-                                     row_id=0)
-
-    # Метод учета ограничений Q (Метод учета ограничений Q)
-    method_ogr_get_before = get_.get_cell(table=com_regim.table,
-                                          column=com_regim.method,
-                                          row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.method,
-                               row_id=0,
-                               value=method_ogr)
-    method_ogr_get_after = get_.get_cell(table=com_regim.table,
-                                         column=com_regim.method_ogr,
-                                         row_id=0)
-
-    # Уровень печати (Печать)
-    print_mode_get_before = get_.get_cell(table=com_regim.table,
-                                          column=com_regim.print_mode,
-                                          row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.print_mode,
-                               row_id=0,
-                               value=print_mode)
-    print_mode_get_after = get_.get_cell(table=com_regim.table,
-                                         column=com_regim.print_mode,
-                                         row_id=0)
-
-    # Точный метод расчета Qmax (Qmax)
-    qmax_get_before = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.qmax,
-                                    row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.qmax,
-                               row_id=0,
-                               value=qmax)
-    qmax_get_after = get_.get_cell(table=com_regim.table,
-                                   column=com_regim.qmax,
-                                   row_id=0)
-
-    # Сопротивление выключателя (ое на 10-6) (Min_X)
-    min_x_get_before = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.min_x,
-                                     row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.min_x,
-                               row_id=0,
-                               value=min_x)
-    min_x_get_after = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.min_x,
-                                    row_id=0)
-
-    # Пересчет АТ/3х обм. трансформаторов (Транс.)
-    calc_tr_get_before = get_.get_cell(table=com_regim.table,
-                                       column=com_regim.calc_tr,
-                                       row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.calc_tr,
-                               row_id=0,
-                               value=calc_tr)
-    calc_tr_get_after = get_.get_cell(table=com_regim.table,
-                                      column=com_regim.calc_tr,
-                                      row_id=0)
-
-    # Пересчитывать (P/Q) нагрузки узла по ВРДО (Наг->P)
-    nag_p_get_before = get_.get_cell(table=com_regim.table,
-                                     column=com_regim.nag_p,
-                                     row_id=0)
-    variable_.make_changes_row(table=com_regim_table,
-                               column=com_regim.nag_p,
-                               row_id=0,
-                               value=nag_p)
-    nag_p_get_after = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.nag_p,
-                                    row_id=0)
-
-    # Удаление выключателей из схемы: (Выкл)
-    rem_breaker_get_before = get_.get_cell(table=com_regim.table,
-                                           column=com_regim.rem_breaker,
-                                           row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.rem_breaker,
-                               row_id=0,
-                               value=rem_breaker)
-    rem_breaker_get_after = get_.get_cell(table=com_regim.table,
-                                          column=com_regim.rem_breaker,
-                                          row_id=0)
-
-    # Пересчет мощности генератора по ГРАМ: (Грам)
-    gram_get_before = get_.get_cell(table=com_regim.table,
-                                    column=com_regim.gram,
-                                    row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.gram,
-                               row_id=0,
-                               value=gram)
-    gram_get_after = get_.get_cell(table=com_regim.table,
-                                   column=com_regim.gram,
-                                   row_id=0)
-
-    # Автоматическое создание БУ (БУ)
-    ctrl_baza_get_before = get_.get_cell(table=com_regim.table,
-                                         column=com_regim.ctrl_baza,
-                                         row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.gram,
-                               row_id=0,
-                               value=ctrl_baza)
-    ctrl_baza_get_after = get_.get_cell(table=com_regim.table,
-                                        column=com_regim.ctrl_baza,
+    neb_p_get_after = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.neb_p,
                                         row_id=0)
 
+    # Максимальное число итераций (It)
+    it_max_get_before = get_.get_cell_row(table=ComRegim.table,
+                                          column=ComRegim.it_max,
+                                          row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.it_max,
+                               row_id=0,
+                               value=it_max)
+    it_max_get_after = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.it_max,
+                                         row_id=0)
+
+    # Стартовый алгоритм (Start)
+    start_get_before = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.start,
+                                         row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.start,
+                               row_id=0,
+                               value=start)
+    start_get_after = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.start,
+                                        row_id=0)
+
+    # Плоский старт (Пл.старт)
+    flot_get_before = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.flot,
+                                        row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.flot,
+                               row_id=0,
+                               value=flot)
+    flot_get_after = get_.get_cell_row(table=ComRegim.table,
+                                       column=ComRegim.flot,
+                                       row_id=0)
+
+    # Мин. допустимое снижение V (dV-)
+    dv_min_get_before = get_.get_cell_row(table=ComRegim.table,
+                                          column=ComRegim.dv_min,
+                                          row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.dv_min,
+                               row_id=0,
+                               value=dv_min)
+    dv_min_get_after = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.dv_min,
+                                         row_id=0)
+
+    # Макс. допустимое превышение V (dV+)
+    dv_max_get_before = get_.get_cell_row(table=ComRegim.table,
+                                          column=ComRegim.dv_max,
+                                          row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.dv_max,
+                               row_id=0,
+                               value=dv_max)
+    dv_max_get_after = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.dv_max,
+                                         row_id=0)
+
+    # Макс. допустимый угол по связи (dDelta)
+    dd_max_get_before = get_.get_cell_row(table=ComRegim.table,
+                                          column=ComRegim.dd_max,
+                                          row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.dd_max,
+                               row_id=0,
+                               value=dd_max)
+    dd_max_get_after = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.dd_max,
+                                         row_id=0)
+
+    # Состояние расчета режима (Статус)
+    status_get_before = get_.get_cell_row(table=ComRegim.table,
+                                          column=ComRegim.status,
+                                          row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.status,
+                               row_id=0,
+                               value=status)
+    status_get_after = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.status,
+                                         row_id=0)
+
+    # Учет частоты: (W)
+    rr_get_before = get_.get_cell_row(table=ComRegim.table,
+                                      column=ComRegim.rr,
+                                      row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.rr,
+                               row_id=0,
+                               value=rr)
+    rr_get_after = get_.get_cell_row(table=ComRegim.table,
+                                     column=ComRegim.rr,
+                                     row_id=0)
+
+    # Отклонение частоты (dF)
+    wt_get_before = get_.get_cell_row(table=ComRegim.table,
+                                      column=ComRegim.wt,
+                                      row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.wt,
+                               row_id=0,
+                               value=wt)
+    wt_get_after = get_.get_cell_row(table=ComRegim.table,
+                                     column=ComRegim.wt,
+                                     row_id=0)
+
+    # Пересчитывать P/Q узла по P ген (Ген->P)
+    gen_p_get_before = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.gen_p,
+                                         row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.gen_p,
+                               row_id=0,
+                               value=gen_p)
+    gen_p_get_after = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.gen_p,
+                                        row_id=0)
+
+    # Метод Расчета (Метод)
+    method_get_before = get_.get_cell_row(table=ComRegim.table,
+                                          column=ComRegim.method,
+                                          row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.method,
+                               row_id=0,
+                               value=method)
+    method_get_after = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.method,
+                                         row_id=0)
+
+    # Метод учета ограничений Q (Метод учета ограничений Q)
+    method_ogr_get_before = get_.get_cell_row(table=ComRegim.table,
+                                              column=ComRegim.method,
+                                              row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.method,
+                               row_id=0,
+                               value=method_ogr)
+    method_ogr_get_after = get_.get_cell_row(table=ComRegim.table,
+                                             column=ComRegim.method_ogr,
+                                             row_id=0)
+
+    # Уровень печати (Печать)
+    print_mode_get_before = get_.get_cell_row(table=ComRegim.table,
+                                              column=ComRegim.print_mode,
+                                              row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.print_mode,
+                               row_id=0,
+                               value=print_mode)
+    print_mode_get_after = get_.get_cell_row(table=ComRegim.table,
+                                             column=ComRegim.print_mode,
+                                             row_id=0)
+
+    # Точный метод расчета Qmax (Qmax)
+    qmax_get_before = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.qmax,
+                                        row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.qmax,
+                               row_id=0,
+                               value=qmax)
+    qmax_get_after = get_.get_cell_row(table=ComRegim.table,
+                                       column=ComRegim.qmax,
+                                       row_id=0)
+
+    # Сопротивление выключателя (ое на 10-6) (Min_X)
+    min_x_get_before = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.min_x,
+                                         row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.min_x,
+                               row_id=0,
+                               value=min_x)
+    min_x_get_after = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.min_x,
+                                        row_id=0)
+
+    # Пересчет АТ/3х обм. трансформаторов (Транс.)
+    calc_tr_get_before = get_.get_cell_row(table=ComRegim.table,
+                                           column=ComRegim.calc_tr,
+                                           row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.calc_tr,
+                               row_id=0,
+                               value=calc_tr)
+    calc_tr_get_after = get_.get_cell_row(table=ComRegim.table,
+                                          column=ComRegim.calc_tr,
+                                          row_id=0)
+
+    # Пересчитывать (P/Q) нагрузки узла по ВРДО (Наг->P)
+    nag_p_get_before = get_.get_cell_row(table=ComRegim.table,
+                                         column=ComRegim.nag_p,
+                                         row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.nag_p,
+                               row_id=0,
+                               value=nag_p)
+    nag_p_get_after = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.nag_p,
+                                        row_id=0)
+
+    # Удаление выключателей из схемы: (Выкл)
+    rem_breaker_get_before = get_.get_cell_row(table=ComRegim.table,
+                                               column=ComRegim.rem_breaker,
+                                               row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.rem_breaker,
+                               row_id=0,
+                               value=rem_breaker)
+    rem_breaker_get_after = get_.get_cell_row(table=ComRegim.table,
+                                              column=ComRegim.rem_breaker,
+                                              row_id=0)
+
+    # Пересчет мощности генератора по ГРАМ: (Грам)
+    gram_get_before = get_.get_cell_row(table=ComRegim.table,
+                                        column=ComRegim.gram,
+                                        row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.gram,
+                               row_id=0,
+                               value=gram)
+    gram_get_after = get_.get_cell_row(table=ComRegim.table,
+                                       column=ComRegim.gram,
+                                       row_id=0)
+
+    # Автоматическое создание БУ (БУ)
+    ctrl_baza_get_before = get_.get_cell_row(table=ComRegim.table,
+                                             column=ComRegim.ctrl_baza,
+                                             row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.gram,
+                               row_id=0,
+                               value=ctrl_baza)
+    ctrl_baza_get_after = get_.get_cell_row(table=ComRegim.table,
+                                            column=ComRegim.ctrl_baza,
+                                            row_id=0)
+
     # Стартовый метод: число итераций (Z_it)
-    itz_get_before = get_.get_cell(table=com_regim.table,
-                                   column=com_regim.itz,
-                                   row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.itz,
+    itz_get_before = get_.get_cell_row(table=ComRegim.table,
+                                       column=ComRegim.itz,
+                                       row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.itz,
                                row_id=0,
                                value=itz)
-    itz_get_after = get_.get_cell(table=com_regim.table,
-                                  column=com_regim.itz,
-                                  row_id=0)
+    itz_get_after = get_.get_cell_row(table=ComRegim.table,
+                                      column=ComRegim.itz,
+                                      row_id=0)
 
     # Стартовый метод: Учет Qmax с итерации (Z_it_max)
-    itz_ogr_max_get_before = get_.get_cell(table=com_regim.table,
-                                           column=com_regim.itz_ogr_max,
-                                           row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.itz_ogr_max,
+    itz_ogr_max_get_before = get_.get_cell_row(table=ComRegim.table,
+                                               column=ComRegim.itz_ogr_max,
+                                               row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.itz_ogr_max,
                                row_id=0,
                                value=itz_ogr_max)
-    itz_ogr_max_get_after = get_.get_cell(table=com_regim.table,
-                                          column=com_regim.itz_ogr_max,
-                                          row_id=0)
+    itz_ogr_max_get_after = get_.get_cell_row(table=ComRegim.table,
+                                              column=ComRegim.itz_ogr_max,
+                                              row_id=0)
 
     # Стартовый метод: Учет Qmin с итерации (Z_it_min)
-    itz_ogr_min_get_before = get_.get_cell(table=com_regim.table,
-                                           column=com_regim.itz_ogr_min,
-                                           row_id=0)
-    variable_.make_changes_row(table=com_regim_table,
-                               column=com_regim.itz_ogr_min,
+    itz_ogr_min_get_before = get_.get_cell_row(table=ComRegim.table,
+                                               column=ComRegim.itz_ogr_min,
+                                               row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.itz_ogr_min,
                                row_id=0,
                                value=itz_ogr_min)
-    itz_ogr_min_get_after = get_.get_cell(table=com_regim.table,
-                                          column=com_regim.itz_ogr_min,
-                                          row_id=0)
+    itz_ogr_min_get_after = get_.get_cell_row(table=ComRegim.table,
+                                              column=ComRegim.itz_ogr_min,
+                                              row_id=0)
 
     # Минимальное число узлов в острове (Min_nodes)
-    min_nodes_in_island_get_before = get_.get_cell(table=com_regim.table,
-                                                   column=com_regim.min_nodes_in_island,
-                                                   row_id=0)
-    variable_.make_changes_row(table=com_regim.table,
-                               column=com_regim.min_nodes_in_island,
+    min_nodes_in_island_get_before = get_.get_cell_row(table=ComRegim.table,
+                                                       column=ComRegim.min_nodes_in_island,
+                                                       row_id=0)
+    variable_.make_changes_row(table=ComRegim.table,
+                               column=ComRegim.min_nodes_in_island,
                                row_id=0,
                                value=min_nodes_in_island)
-    min_nodes_in_island_get_after = get_.get_cell(table=com_regim.table,
-                                                  column=com_regim.min_nodes_in_island,
-                                                  row_id=0)
+    min_nodes_in_island_get_after = get_.get_cell_row(table=ComRegim.table,
+                                                      column=ComRegim.min_nodes_in_island,
+                                                      row_id=0)
 
     if switch_command_line is not False:
         print(

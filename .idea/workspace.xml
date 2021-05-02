@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Add doc in settings.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Corr equivalence.py">
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618168922558</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Corr equivalence.py">
+      <created>1619978744908</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1619978744908</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,6 +376,7 @@
     <MESSAGE value="corr README.md" />
     <MESSAGE value="Rename RastrWin -&gt; RastrWinLib" />
     <MESSAGE value="Add doc in settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add doc in settings." />
+    <MESSAGE value="Corr equivalence.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr equivalence.py" />
   </component>
 </project>
