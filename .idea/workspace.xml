@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Corr regim.py">
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Corr ut_common.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619979025462</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Corr ut_common.py">
+      <created>1619979277365</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1619979277365</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -386,6 +393,7 @@
     <MESSAGE value="Add doc in settings." />
     <MESSAGE value="Corr equivalence.py" />
     <MESSAGE value="Corr regim.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr regim.py" />
+    <MESSAGE value="Corr ut_common.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr ut_common.py" />
   </component>
 </project>

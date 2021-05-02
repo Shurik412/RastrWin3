@@ -2,8 +2,8 @@
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.log_tools.tools import separator_noun
-from RastrWinLib.variables.variable_parametrs import Variable
 from RastrWinLib.tables.Settings.AltUnit import AltUnit
+from RastrWinLib.variables.variable_parametrs import Variable
 
 
 def set_alt_unit(
@@ -110,23 +110,35 @@ def set_alt_unit(
         print(
             f'{separator_noun}\n'
             f'Параметры альтернативных единиц измерений "Ед.Измерения":\n\n'
-            f'- Active: Активизация альтернативной ЕИ (A): Active "до" = {active_get_before}; "после" = {active_get_after};\n'
-            f'- Unit: Основная Единица Измерения (ЕИ): Unit "до" = {unit_get_before}; "после" = {unit_get_after};\n'
-            f'- Alt: Альтернативная Единица Измерения (Альт ЕИ): Alt "до" = {alt_get_before}; "после" = {alt_get_after};\n'
-            f'- Formula: Формула для преобразования (Формула): Formula "до" = {formula_get_before}; "после" = {formula_get_after};\n'
-            f'- Prec: Точность отображение Альт ЕИ (Точность): Prec "до" = {prec_get_before}; "после" = {prec_get_after};\n'
-            f'- Tabl: Ограничитель по таблице (Табл): Tabl "до" = {tabl_get_before}; "после" = {tabl_get_after};\n'
+            f'- Active: Активизация альтернативной ЕИ (A): Active "до" = {active_get_before};'
+            f' "после" = {active_get_after};\n'
+            f'- Unit: Основная Единица Измерения (ЕИ): Unit "до" = {unit_get_before};'
+            f' "после" = {unit_get_after};\n'
+            f'- Alt: Альтернативная Единица Измерения (Альт ЕИ): Alt "до" = {alt_get_before};'
+            f' "после" = {alt_get_after};\n'
+            f'- Formula: Формула для преобразования (Формула): Formula "до" = {formula_get_before};'
+            f' "после" = {formula_get_after};\n'
+            f'- Prec: Точность отображение Альт ЕИ (Точность): Prec "до" = {prec_get_before};'
+            f' "после" = {prec_get_after};\n'
+            f'- Tabl: Ограничитель по таблице (Табл): Tabl "до" = {tabl_get_before};'
+            f' "после" = {tabl_get_after};\n'
             f'{separator_noun}\n'
         )
 
     return (
         f'{separator_noun}\n'
         f'Параметры альтернативных единиц измерений "Ед.Измерения":\n\n'
-        f'- Active: Активизация альтернативной ЕИ (A): Active "до" = {active_get_before}; "после" = {active_get_after};\n'
-        f'- Unit: Основная Единица Измерения (ЕИ): Unit "до" = {unit_get_before}; "после" = {unit_get_after};\n'
-        f'- Alt: Альтернативная Единица Измерения (Альт ЕИ): Alt "до" = {alt_get_before}; "после" = {alt_get_after};\n'
-        f'- Formula: Формула для преобразования (Формула): Formula "до" = {formula_get_before}; "после" = {formula_get_after};\n'
-        f'- Prec: Точность отображение Альт ЕИ (Точность): Prec "до" = {prec_get_before}; "после" = {prec_get_after};\n'
-        f'- Tabl: Ограничитель по таблице (Табл): Tabl "до" = {tabl_get_before}; "после" = {tabl_get_after};\n'
+        f'- Active: Активизация альтернативной ЕИ (A): Active "до" = {active_get_before};'
+        f' "после" = {active_get_after};\n'
+        f'- Unit: Основная Единица Измерения (ЕИ): Unit "до" = {unit_get_before};'
+        f' "после" = {unit_get_after};\n'
+        f'- Alt: Альтернативная Единица Измерения (Альт ЕИ): Alt "до" = {alt_get_before};'
+        f' "после" = {alt_get_after};\n'
+        f'- Formula: Формула для преобразования (Формула): Formula "до" = {formula_get_before};'
+        f' "после" = {formula_get_after};\n'
+        f'- Prec: Точность отображение Альт ЕИ (Точность): Prec "до" = {prec_get_before};'
+        f' "после" = {prec_get_after};\n'
+        f'- Tabl: Ограничитель по таблице (Табл): Tabl "до" = {tabl_get_before};'
+        f' "после" = {tabl_get_after};\n'
         f'{separator_noun}\n'
     )
