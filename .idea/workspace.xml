@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EAA/EAA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/DECS_400/DECS_400.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M_BSV/ARV2M_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M_static/ARV2M_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100_BSV/EX2100_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100_static/EX2100_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_static.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +51,11 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\basket" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\ARV2M" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\EX2100" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\basket" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\AC5B" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Settings" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Sechen" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Eurostag_Output_PSS">
@@ -179,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00057" summary="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py">
-      <created>1619298470282</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1619298470282</updated>
     </task>
     <task id="LOCAL-00058" summary="добавил переменные, типы в generator.py">
       <created>1619301702303</created>
@@ -523,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620053852859</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Corr EAA.py">
+      <created>1620054643055</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1620054643055</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +542,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add modules Governor.py" />
     <MESSAGE value="Add modules DECS_400.py" />
     <MESSAGE value="Add modules DFWTHYNE14.py" />
     <MESSAGE value="Corr modules node.py" />
@@ -564,7 +566,8 @@
     <MESSAGE value="Corr EX2100_BSV.py" />
     <MESSAGE value="Corr EX2100_static.py" />
     <MESSAGE value="Corr KOSUR2.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr KOSUR2.py" />
+    <MESSAGE value="Corr EAA.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr EAA.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
