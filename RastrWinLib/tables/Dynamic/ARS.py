@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# Модуль переменных таблицы "Турбины" RastrWin3
+# Модуль переменных таблицы "Турбина (ИД)" RastrWin3
 
 class ARS:
     """
 
     """
-    table: str = 'ARS'  # название таблицы
-    table_name: str = '"Турбины"'
+    table: str = 'ARS'  # название таблицы Турбина (ИД)
+    table_name: str = '"Турбина (ИД)"'
 
     sel: str = 'sel'  #
     sta: str = 'sta'  #
