@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/KOSUR2/KOSUR2_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00059" summary="добавил class Error">
-      <created>1619313655670</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1619313655686</updated>
     </task>
     <task id="LOCAL-00060" summary="добавил файл Exciter.py и DFWIEEE421.py">
       <created>1619376063901</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620055760489</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Corr THYNE_4.py">
+      <created>1620056331542</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1620056331542</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add modules DFWTHYNE14.py" />
     <MESSAGE value="Corr modules node.py" />
     <MESSAGE value="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py" />
     <MESSAGE value="Corr All RastrWinLib" />
@@ -562,7 +562,8 @@
     <MESSAGE value="Corr KOSUR2.py" />
     <MESSAGE value="Corr EAA.py" />
     <MESSAGE value="Corr DECS_400.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr DECS_400.py" />
+    <MESSAGE value="Corr THYNE_4.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr THYNE_4.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
