@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EAA/EAA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,20 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00055" summary="добавил переменные, типы в com_ekviv.py&#10;скорректировал функцию set_com_ekviv in equivalence.py">
-      <created>1619274679834</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1619274679834</updated>
-    </task>
-    <task id="LOCAL-00056" summary="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py">
-      <created>1619279957055</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1619279957055</updated>
     </task>
     <task id="LOCAL-00057" summary="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py">
       <created>1619298470282</created>
@@ -521,7 +509,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620053478339</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Corr KOSUR2.py">
+      <created>1620053820499</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1620053820499</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Corr KOSUR2.py">
+      <created>1620053852859</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1620053852859</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +539,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add modules ARS.py" />
     <MESSAGE value="Add modules Governor.py" />
     <MESSAGE value="Add modules DECS_400.py" />
     <MESSAGE value="Add modules DFWTHYNE14.py" />
@@ -562,7 +563,8 @@
     <MESSAGE value="Corr ARV2M_static.py&#10;Corr ARV2M_BSV.py" />
     <MESSAGE value="Corr EX2100_BSV.py" />
     <MESSAGE value="Corr EX2100_static.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr EX2100_static.py" />
+    <MESSAGE value="Corr KOSUR2.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr KOSUR2.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
