@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Corr ut_common.py">
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M_BSV/ARV2M_BSV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDP1/ARVSDP1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameter_ARVSDP1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/Parameters_AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_AC5B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/Parameters_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV3M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDP1/Parameter_ARVSDP1.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M_static/ARV2M_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/Parameters_ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV_REM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Settings/ut_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1qTtGocZwbW81mbZbHFM5r6CGdD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -30,10 +48,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.pyOptions" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -41,13 +57,15 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Александр\PycharmProjects\RastrWin3\RastrWin\directory_rastrwin" />
-      <recent name="C:\Users\Александр\PycharmProjects\RastrWin3\RastrWin\excel" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\R_modules\Tables_Parametrs" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\basket" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\ARV2M" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\AC5B" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Settings" />
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Sechen" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.OAPV_calc">
-    <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Eurostag_Output_PSS">
+    <configuration name="ARV3M" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,11 +73,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -68,7 +86,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Tables_and_parametrs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,11 +94,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/R_modules/Tables_Parametrs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_modules/Tables_Parametrs/Tables_and_parametrs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -89,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_parameter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_ARV3M" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,11 +115,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/R_modules/getting_parameters" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_modules/getting_parameters/get_parameter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -110,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="settings_ekv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_getting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,11 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/R_modules/settings_parametrs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_modules/settings_parametrs/settings_ekv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_napr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,11 +157,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/test_napr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.OAPV_calc" />
-        <item itemvalue="Python.test_napr" />
-        <item itemvalue="Python.settings_ekv" />
-        <item itemvalue="Python.Tables_and_parametrs" />
-        <item itemvalue="Python.get_parameter" />
+        <item itemvalue="Python.Eurostag_Output_PSS" />
+        <item itemvalue="Python.test_ARV3M" />
+        <item itemvalue="Python.test_getting" />
+        <item itemvalue="Python.test_settings" />
+        <item itemvalue="Python.ARV3M" />
       </list>
     </recent_temporary>
   </component>
@@ -171,182 +189,350 @@
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
     </task>
-    <task id="LOCAL-00001" summary="init">
-      <created>1617116827376</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00052" summary="добавил переменных и типы в dynamic.py">
+      <created>1619266433674</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
       <option name="project" value="LOCAL" />
-      <updated>1617116827376</updated>
+      <updated>1619266433674</updated>
     </task>
-    <task id="LOCAL-00002" summary="init">
-      <created>1617117446274</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00053" summary="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py">
+      <created>1619270159858</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1617117446274</updated>
+      <updated>1619270159858</updated>
     </task>
-    <task id="LOCAL-00003" summary="init">
-      <created>1617117854497</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00054" summary="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py">
+      <created>1619270551884</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
       <option name="project" value="LOCAL" />
-      <updated>1617117854497</updated>
+      <updated>1619270551884</updated>
     </task>
-    <task id="LOCAL-00004" summary="Add file Create_DRM_v6.2.vbs">
-      <created>1617263160429</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00055" summary="добавил переменные, типы в com_ekviv.py&#10;скорректировал функцию set_com_ekviv in equivalence.py">
+      <created>1619274679834</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
-      <updated>1617263160429</updated>
+      <updated>1619274679834</updated>
     </task>
-    <task id="LOCAL-00005" summary="add class GetTableCommonInfo in file get_parameter.py&#10;add file and dir.fl =&gt; R_models/Table_Parametrs/ =&gt; file Tables_and_parametrs.py (add tables &quot;com_cxema&quot;)">
-      <created>1617275081070</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00056" summary="добавил переменные, типы в com_regim.py&#10;скорректировал функцию set_com_regim in regim.py">
+      <created>1619279957055</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
-      <updated>1617275081070</updated>
+      <updated>1619279957055</updated>
     </task>
-    <task id="LOCAL-00006" summary="Add in class GetTabelCommonInfo -&gt; create file log events">
-      <created>1617276812398</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00057" summary="добавил переменные, типы в ut_common.py&#10;скорректировал функцию set_ut_common in ut_common.py">
+      <created>1619298470282</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
-      <updated>1617276812398</updated>
+      <updated>1619298470282</updated>
     </task>
-    <task id="LOCAL-00007" summary="Add file removal_marked_objects.py -&gt; class RemoveSelObjects">
-      <created>1617279249716</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00058" summary="добавил переменные, типы в generator.py">
+      <created>1619301702303</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
       <option name="project" value="LOCAL" />
-      <updated>1617279249716</updated>
+      <updated>1619301702303</updated>
     </task>
-    <task id="LOCAL-00008" summary="corr full">
-      <created>1617279363811</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00059" summary="добавил class Error">
+      <created>1619313655670</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
       <option name="project" value="LOCAL" />
-      <updated>1617279363811</updated>
+      <updated>1619313655686</updated>
     </task>
-    <task id="LOCAL-00009" summary="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent">
-      <created>1617284263979</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00060" summary="добавил файл Exciter.py и DFWIEEE421.py">
+      <created>1619376063901</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
       <option name="project" value="LOCAL" />
-      <updated>1617284263979</updated>
+      <updated>1619376063901</updated>
     </task>
-    <task id="LOCAL-00010" summary="Add in file Tables_and_parametrs.py -&gt; table com_ekviv -&gt; Общие параметры эквивалентирования">
-      <created>1617286695832</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00061" summary="добавил файл ExcControl.py">
+      <created>1619377767502</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
       <option name="project" value="LOCAL" />
-      <updated>1617286695832</updated>
+      <updated>1619377767502</updated>
     </task>
-    <task id="LOCAL-00011" summary="Add file object_rastr.py -&gt; RASTR;&#10;Add class SetEkviv and file settings_ekv.py">
-      <created>1617346303245</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00062" summary="Rename ExcControl.py">
+      <created>1619377794221</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
       <option name="project" value="LOCAL" />
-      <updated>1617346303245</updated>
+      <updated>1619377794221</updated>
     </task>
-    <task id="LOCAL-00012" summary="Corr OAPV_calc.py -&gt; add new function">
-      <created>1617357186166</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00063" summary="Rename Forcer.py">
+      <created>1619378632341</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
       <option name="project" value="LOCAL" />
-      <updated>1617357186166</updated>
+      <updated>1619378632341</updated>
     </task>
-    <task id="LOCAL-00013" summary="changing the package structure including the name of the package files and folders">
-      <created>1618091659663</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00064" summary="Add module DFWIEEE421PSS13.py">
+      <created>1619379695603</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
       <option name="project" value="LOCAL" />
-      <updated>1618091659663</updated>
+      <updated>1619379695603</updated>
     </task>
-    <task id="LOCAL-00014" summary="changing the package structure">
-      <created>1618092134411</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00065" summary="Add module DFWIEEE421PSS4B.py">
+      <created>1619380979883</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1618092134412</updated>
+      <updated>1619380979883</updated>
     </task>
-    <task id="LOCAL-00015" summary="changing the package structure">
-      <created>1618092142743</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00066" summary="Add module DFW421UEL.py">
+      <created>1619382308741</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1618092142743</updated>
+      <updated>1619382308741</updated>
     </task>
-    <task id="LOCAL-00016" summary="changing the package structure folder settings">
-      <created>1618094755123</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00067" summary="Add module DFWOELUNITROL.py">
+      <created>1619383786974</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
       <option name="project" value="LOCAL" />
-      <updated>1618094755123</updated>
+      <updated>1619383786974</updated>
     </task>
-    <task id="LOCAL-00017" summary="create folder tests and file test_settings.py">
-      <created>1618099624183</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00068" summary="Add module FuncPQ.py">
+      <created>1619384021742</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
       <option name="project" value="LOCAL" />
-      <updated>1618099624183</updated>
+      <updated>1619384021742</updated>
     </task>
-    <task id="LOCAL-00018" summary="corr README.md">
-      <created>1618099967868</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00069" summary="Add module sechen.py">
+      <created>1619384862281</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
       <option name="project" value="LOCAL" />
-      <updated>1618099967868</updated>
+      <updated>1619384862281</updated>
     </task>
-    <task id="LOCAL-00019" summary="corr README.md">
-      <created>1618099974600</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00070" summary="Add module grline.py">
+      <created>1619385172924</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
       <option name="project" value="LOCAL" />
-      <updated>1618099974600</updated>
+      <updated>1619385172924</updated>
     </task>
-    <task id="LOCAL-00020" summary="corr README.md">
-      <created>1618100061144</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00071" summary="Add dir tables">
+      <created>1619430261079</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
       <option name="project" value="LOCAL" />
-      <updated>1618100061144</updated>
+      <updated>1619430261079</updated>
     </task>
-    <task id="LOCAL-00021" summary="Rename RastrWin -&gt; RastrWinLib">
-      <created>1618102773259</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00072" summary="Add modules CustomDeviceMap.py">
+      <created>1619430624155</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
       <option name="project" value="LOCAL" />
-      <updated>1618102773259</updated>
+      <updated>1619430624155</updated>
     </task>
-    <task id="LOCAL-00022" summary="Add doc in settings.">
-      <created>1618168922558</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00073" summary="Add modules ARS.py">
+      <created>1619435524504</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
       <option name="project" value="LOCAL" />
-      <updated>1618168922558</updated>
+      <updated>1619435524504</updated>
     </task>
-    <task id="LOCAL-00023" summary="Corr equivalence.py">
-      <created>1619978744908</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00074" summary="Add modules Governor.py">
+      <created>1619436299131</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
       <option name="project" value="LOCAL" />
-      <updated>1619978744908</updated>
+      <updated>1619436299131</updated>
     </task>
-    <task id="LOCAL-00024" summary="Corr regim.py">
-      <created>1619979025462</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00075" summary="Add modules DECS_400.py">
+      <created>1619437647549</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
       <option name="project" value="LOCAL" />
-      <updated>1619979025462</updated>
+      <updated>1619437647549</updated>
     </task>
-    <task id="LOCAL-00025" summary="Corr ut_common.py">
-      <created>1619979277365</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00076" summary="Add modules DFWTHYNE14.py">
+      <created>1619445765311</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
       <option name="project" value="LOCAL" />
-      <updated>1619979277365</updated>
+      <updated>1619445765311</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00077" summary="Corr modules node.py">
+      <created>1619447147201</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1619447147201</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py">
+      <created>1619522771687</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1619522771687</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Corr All RastrWinLib">
+      <created>1619525247809</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1619525247809</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Add modules ARV3M.py">
+      <created>1619532204412</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1619532204412</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Add modules ARV3M.py">
+      <created>1619533886553</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1619533886553</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Corr modules ARV3M.py">
+      <created>1619588064039</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1619588064039</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Corr modules ARV3M.py">
+      <created>1619618601536</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1619618601536</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Corr modules ARV3M.py">
+      <created>1619619288124</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1619619288124</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Corr modules ARV3M.py">
+      <created>1619620092697</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1619620092697</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Corr modules ARV3M.py">
+      <created>1619634686131</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1619634686131</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Finish create modules ARV3M.py">
+      <created>1619689889778</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1619689889778</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Finish create modules ARV3M.py">
+      <created>1619690988151</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1619690988151</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Corr AC5B.py">
+      <created>1619694111263</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1619694111263</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Corr table -&gt; DFWIEEE421.py&#10;Corr ARV3M&#10;Corr AC5B.py">
+      <created>1619700187220</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1619700187220</updated>
+    </task>
+    <task id="LOCAL-00091" summary="&#10;Corr AC5B.py">
+      <created>1619700275346</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1619700275346</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Corr DFWIEEE421.py and DFWIEEE421PSS13.py">
+      <created>1619703907199</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1619703907199</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Add modules Creator_PRG_and_SQL.py">
+      <created>1619769551472</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1619769551503</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Add modules Eurostag_Output_PSS.py">
+      <created>1619769829568</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1619769829568</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Add modules Eurostag_Output_No_PSS.py">
+      <created>1619769901318</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1619769901318</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Corr modules Eurostag_Output_No_PSS.py">
+      <created>1619779935679</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1619779935679</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Create class ShablonsRastrWin">
+      <created>1619780601042</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1619780601042</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Create class Shabl&#10;Corr save.py">
+      <created>1619780938175</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1619780938175</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Create module AC8B.py">
+      <created>1619784401783</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1619784401783</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Corr Dynamic">
+      <created>1619785196063</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1619785196063</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,19 +540,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -374,26 +548,47 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
-    <MESSAGE value="Add file Create_DRM_v6.2.vbs" />
-    <MESSAGE value="add class GetTableCommonInfo in file get_parameter.py&#10;add file and dir.fl =&gt; R_models/Table_Parametrs/ =&gt; file Tables_and_parametrs.py (add tables &quot;com_cxema&quot;)" />
-    <MESSAGE value="Add in class GetTabelCommonInfo -&gt; create file log events" />
-    <MESSAGE value="Add file removal_marked_objects.py -&gt; class RemoveSelObjects" />
-    <MESSAGE value="corr full" />
-    <MESSAGE value="Corr file dyn_rgm_ekv_calc.py -&gt; add clss Eqvivalent" />
-    <MESSAGE value="Add in file Tables_and_parametrs.py -&gt; table com_ekviv -&gt; Общие параметры эквивалентирования" />
-    <MESSAGE value="Add file object_rastr.py -&gt; RASTR;&#10;Add class SetEkviv and file settings_ekv.py" />
-    <MESSAGE value="Corr OAPV_calc.py -&gt; add new function" />
-    <MESSAGE value="changing the package structure including the name of the package files and folders" />
-    <MESSAGE value="changing the package structure" />
-    <MESSAGE value="changing the package structure folder settings" />
-    <MESSAGE value="create folder tests and file test_settings.py" />
-    <MESSAGE value="corr README.md" />
-    <MESSAGE value="Rename RastrWin -&gt; RastrWinLib" />
-    <MESSAGE value="Add doc in settings." />
-    <MESSAGE value="Corr equivalence.py" />
-    <MESSAGE value="Corr regim.py" />
-    <MESSAGE value="Corr ut_common.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr ut_common.py" />
+    <MESSAGE value="Add module grline.py" />
+    <MESSAGE value="Add dir tables" />
+    <MESSAGE value="Add modules CustomDeviceMap.py" />
+    <MESSAGE value="Add modules ARS.py" />
+    <MESSAGE value="Add modules Governor.py" />
+    <MESSAGE value="Add modules DECS_400.py" />
+    <MESSAGE value="Add modules DFWTHYNE14.py" />
+    <MESSAGE value="Corr modules node.py" />
+    <MESSAGE value="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py" />
+    <MESSAGE value="Corr All RastrWinLib" />
+    <MESSAGE value="Add modules ARV3M.py" />
+    <MESSAGE value="Corr modules ARV3M.py" />
+    <MESSAGE value="Finish create modules ARV3M.py" />
+    <MESSAGE value="Corr AC5B.py" />
+    <MESSAGE value="Corr table -&gt; DFWIEEE421.py&#10;Corr ARV3M&#10;Corr AC5B.py" />
+    <MESSAGE value="&#10;Corr AC5B.py" />
+    <MESSAGE value="Corr DFWIEEE421.py and DFWIEEE421PSS13.py" />
+    <MESSAGE value="Add modules Creator_PRG_and_SQL.py" />
+    <MESSAGE value="Add modules Eurostag_Output_PSS.py" />
+    <MESSAGE value="Add modules Eurostag_Output_No_PSS.py" />
+    <MESSAGE value="Corr modules Eurostag_Output_No_PSS.py" />
+    <MESSAGE value="Create class ShablonsRastrWin" />
+    <MESSAGE value="Create class Shabl&#10;Corr save.py" />
+    <MESSAGE value="Create module AC8B.py" />
+    <MESSAGE value="Corr Dynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr Dynamic" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="tables_vetv._olerepr_.propMapGet" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

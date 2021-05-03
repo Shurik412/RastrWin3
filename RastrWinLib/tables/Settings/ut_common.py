@@ -40,6 +40,7 @@ class UtCommon:
     stop_u_n: str = 'stop_u_n'  # 'Остановить при переходе к устойчивому/неустойчивому (Остановить)'
     dyn_find_pred: str = 'dyn_find_pred'  # 'Динамика: поиск предела (Динамика: поиск предела)'
 
+
 ut_common_table = 'ut_common'
 ut_common_attributes_list = ['maxs', 'maxv', 'maxd', 'maxa', 'iter', 'tip', 'f_ots', 'add_d', 'ekstr', 'kfc', 'sum_kfc',
                              'ds', 'it', 'Status', 'KorrT', 'KorrPer', 'KorrVib', 'enable_contr', 'dis_v_contr',
