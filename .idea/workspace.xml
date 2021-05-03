@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100_BSV/EX2100_BSV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100_static/EX2100_static.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00053" summary="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py">
-      <created>1619270159858</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1619270159858</updated>
     </task>
     <task id="LOCAL-00054" summary="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py">
       <created>1619270551884</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620052041806</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Corr EX2100_BSV.py">
+      <created>1620052919988</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1620052919988</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add dir tables" />
     <MESSAGE value="Add modules CustomDeviceMap.py" />
     <MESSAGE value="Add modules ARS.py" />
     <MESSAGE value="Add modules Governor.py" />
@@ -563,7 +562,8 @@
     <MESSAGE value="Create module AC8B.py" />
     <MESSAGE value="Corr Dynamic" />
     <MESSAGE value="Corr ARV2M_static.py&#10;Corr ARV2M_BSV.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr ARV2M_static.py&#10;Corr ARV2M_BSV.py" />
+    <MESSAGE value="Corr EX2100_BSV.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr EX2100_BSV.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
