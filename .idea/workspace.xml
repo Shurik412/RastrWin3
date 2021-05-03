@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M_BSV/ARV2M_BSV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDP1/ARVSDP1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameter_ARVSDP1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100_BSV/EX2100_BSV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/Parameters_AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_AC5B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/Parameters_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV3M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDP1/Parameter_ARVSDP1.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M_static/ARV2M_static.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/Parameters_ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV_REM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Settings/ut_common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00052" summary="добавил переменных и типы в dynamic.py">
-      <created>1619266433674</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1619266433674</updated>
     </task>
     <task id="LOCAL-00053" summary="добавил переменные, типы в dynamic.py&#10;скорректировал функцию set_alt_unit in alt_unit.py">
       <created>1619270159858</created>
@@ -532,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619785196063</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Corr ARV2M_static.py&#10;Corr ARV2M_BSV.py">
+      <created>1620052041806</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1620052041806</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add module grline.py" />
     <MESSAGE value="Add dir tables" />
     <MESSAGE value="Add modules CustomDeviceMap.py" />
     <MESSAGE value="Add modules ARS.py" />
@@ -573,7 +562,8 @@
     <MESSAGE value="Create class Shabl&#10;Corr save.py" />
     <MESSAGE value="Create module AC8B.py" />
     <MESSAGE value="Corr Dynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Dynamic" />
+    <MESSAGE value="Corr ARV2M_static.py&#10;Corr ARV2M_BSV.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr ARV2M_static.py&#10;Corr ARV2M_BSV.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
