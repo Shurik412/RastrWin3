@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/KOSUR2/KOSUR2_BSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/Prismic/Prismic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00060" summary="добавил файл Exciter.py и DFWIEEE421.py">
-      <created>1619376063901</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1619376063901</updated>
     </task>
     <task id="LOCAL-00061" summary="добавил файл ExcControl.py">
       <created>1619377767502</created>
@@ -522,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620056331542</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Corr KOSUR2_BSV.py">
+      <created>1620057013315</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1620057013315</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr modules node.py" />
     <MESSAGE value="Add modules AC5B.py&#10;Add modules Parameters_AC5B.py" />
     <MESSAGE value="Corr All RastrWinLib" />
     <MESSAGE value="Add modules ARV3M.py" />
@@ -563,7 +561,8 @@
     <MESSAGE value="Corr EAA.py" />
     <MESSAGE value="Corr DECS_400.py" />
     <MESSAGE value="Corr THYNE_4.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr THYNE_4.py" />
+    <MESSAGE value="Corr KOSUR2_BSV.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr KOSUR2_BSV.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
