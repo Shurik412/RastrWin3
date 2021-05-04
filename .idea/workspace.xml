@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2_BSV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2_static.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVNL/ARVNL_BSV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVNL/ARVNL_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,13 +180,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Add module sechen.py">
-      <created>1619384862281</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1619384862281</updated>
     </task>
     <task id="LOCAL-00070" summary="Add module grline.py">
       <created>1619385172924</created>
@@ -523,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620116219778</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Create AVR_2_BSV.py&#10;Create AVR_2_static.py">
+      <created>1620117131415</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1620117131415</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +540,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr DFWIEEE421.py and DFWIEEE421PSS13.py" />
     <MESSAGE value="Add modules Creator_PRG_and_SQL.py" />
     <MESSAGE value="Add modules Eurostag_Output_PSS.py" />
     <MESSAGE value="Add modules Eurostag_Output_No_PSS.py" />
@@ -564,7 +564,8 @@
     <MESSAGE value="Create gglite_strs.py" />
     <MESSAGE value="Create ARVSG_BSV.py" />
     <MESSAGE value="Create ARVSG_static.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create ARVSG_static.py" />
+    <MESSAGE value="Create AVR_2_BSV.py&#10;Create AVR_2_static.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create AVR_2_BSV.py&#10;Create AVR_2_static.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
