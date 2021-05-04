@@ -288,26 +288,242 @@ def change_parameters_AC8B(
         else:
             bex_after = None
 
-        if switch_command_line is not False:
-            print(
-                f'{separator_two}\n'
-                f' Внесены изменения в таблицу {DFWIEEE421.table_name}:\n'
-                f'- Id: Номер возбудителя: {Id};\n'
-                f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
-                f'- Kpr: Пропорциональный коэффициент усиления ПИД-регулятора: до {kpr_before}; после {kpr_after};\n'
-                f'- Kir: Интегральный коэффициент усиления ПИД-регулятора: до {kir_before}; после {kir_after};\n'
-                f'- Kdr: Дифференциальный коэффициент усиления ПИД-регулятора: до {kdr_before}; после {kdr_after};\n'
-                f'- Tdr: Постоянная времени дифференциального канала ПИД-регулятора: до {tdr_before}; после {tdr_after};\n'
-                f'- Ka: Коэффициент усиления регулятора напряжения: до {ka_before}; после {ka_after};\n'
-                f'- Ta: Постоянная времени регулятора напряжения: до {ta_before}; после {ta_after};\n'
-                f'- Vrmax: Максимальное ограничение регулятора напряжения: до {vrmax_before}; после {vrmax_after};\n'
-                f'- Vrmin: Минимальное ограничение регулятора напряжения: до {vrmin_before}; после {vrmin_after};\n'
-                f'- Te: Постоянная времени интегратора возбудителя: до {te_before}; после {te_after};\n'
-                f'- Aex: Коэффициент экспоненты (задание насыщения): до {aex_before}; после {aex_after};\n'
-                f'- Bex: Степень экспоненты (задание насыщения): до {bex_before}; после {bex_after};\n'
-                f'{separator_two}\n'
-            )
-        return (
+    elif row_id is not None and Id is None:
+        # Kpr
+        if switch_command_line is not None:
+            kpr_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                           column=DFWIEEE421.Kpr,
+                                           row_id=row_id)
+        else:
+            kpr_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Kpr,
+                                   row_id=row_id,
+                                   value=Kpr)
+
+        if switch_command_line is not None:
+            kpr_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Kpr,
+                                          row_id=row_id)
+        else:
+            kpr_after = None
+
+        # Kir
+        if switch_command_line is not None:
+            kir_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                           column=DFWIEEE421.Kir,
+                                           row_id=row_id)
+        else:
+            kir_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Kir,
+                                   row_id=row_id,
+                                   value=Kir)
+
+        if switch_command_line is not None:
+            kir_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Kir,
+                                          row_id=row_id)
+        else:
+            kir_after = None
+
+            # Kdr
+        if switch_command_line is not None:
+            kdr_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                           column=DFWIEEE421.Kdr,
+                                           row_id=row_id)
+        else:
+            kdr_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Kdr,
+                                   row_id=row_id,
+                                   value=Kdr)
+
+        if switch_command_line is not None:
+            kdr_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Kdr,
+                                          row_id=row_id)
+        else:
+            kdr_after = None
+
+            # Tdr
+        if switch_command_line is not None:
+            tdr_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                           column=DFWIEEE421.Tdr,
+                                           row_id=row_id)
+        else:
+            tdr_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Tdr,
+                                   row_id=row_id,
+                                   value=Tdr)
+
+        if switch_command_line is not None:
+            tdr_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Tdr,
+                                          row_id=row_id)
+        else:
+            tdr_after = None
+
+        # Ka
+        if switch_command_line is not None:
+            ka_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Ka,
+                                          row_id=row_id)
+        else:
+            ka_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Ka,
+                                   row_id=row_id,
+                                   value=Ka)
+
+        if switch_command_line is not None:
+            ka_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                         column=DFWIEEE421.Ka,
+                                         row_id=row_id)
+        else:
+            ka_after = None
+
+        # Ta
+        if switch_command_line is not None:
+            ta_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Ta,
+                                          row_id=row_id)
+        else:
+            ta_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Ta,
+                                   row_id=row_id,
+                                   value=Ta)
+
+        if switch_command_line is not None:
+            ta_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                         column=DFWIEEE421.Ta,
+                                         row_id=row_id)
+        else:
+            ta_after = None
+
+        # Vrmax
+        if switch_command_line is not None:
+            vrmax_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                             column=DFWIEEE421.Vrmax,
+                                             row_id=row_id)
+        else:
+            vrmax_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Vrmax,
+                                   row_id=row_id,
+                                   value=Vrmax)
+
+        if switch_command_line is not None:
+            vrmax_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Vrmax,
+                                            row_id=row_id)
+        else:
+            vrmax_after = None
+
+        # Vrmin
+        if switch_command_line is not None:
+            vrmin_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                             column=DFWIEEE421.Vrmin,
+                                             row_id=row_id)
+        else:
+            vrmin_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Vrmin,
+                                   row_id=row_id,
+                                   value=Vrmin)
+
+        if switch_command_line is not None:
+            vrmin_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                            column=DFWIEEE421.Vrmin,
+                                            row_id=row_id)
+        else:
+            vrmin_after = None
+
+        # Te
+        if switch_command_line is not None:
+            te_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Te,
+                                          row_id=row_id)
+        else:
+            te_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Te,
+                                   row_id=row_id,
+                                   value=Te)
+
+        if switch_command_line is not None:
+            te_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                         column=DFWIEEE421.Te,
+                                         row_id=row_id)
+        else:
+            te_after = None
+
+        # Aex
+        if switch_command_line is not None:
+            aex_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                           column=DFWIEEE421.Aex,
+                                           row_id=row_id)
+        else:
+            aex_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Aex,
+                                   row_id=row_id,
+                                   value=Aex)
+
+        if switch_command_line is not None:
+            aex_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Aex,
+                                          row_id=row_id)
+        else:
+            aex_after = None
+
+        # Bex
+        if switch_command_line is not None:
+            bex_before = get_.get_cell_row(table=DFWIEEE421.table,
+                                           column=DFWIEEE421.Bex,
+                                           row_id=row_id)
+        else:
+            bex_before = None
+
+        variable_.make_changes_row(table=DFWIEEE421.table,
+                                   column=DFWIEEE421.Bex,
+                                   row_id=row_id,
+                                   value=Bex)
+
+        if switch_command_line is not None:
+            bex_after = get_.get_cell_row(table=DFWIEEE421.table,
+                                          column=DFWIEEE421.Bex,
+                                          row_id=row_id)
+        else:
+            bex_after = None
+
+    else:
+        kpr_before, kpr_after = None, None
+        kir_before, kir_after = None, None
+        kdr_before, kdr_after = None, None
+        tdr_before, tdr_after = None, None
+        ka_before, ka_after = None, None
+        ta_before, ta_after = None, None
+        vrmax_before, vrmax_after = None, None
+        vrmin_before, vrmin_after = None, None
+        te_before, te_after = None, None
+        aex_before, aex_after = None, None
+        bex_before, bex_after = None, None
+
+    if switch_command_line is not False:
+        print(
             f'{separator_two}\n'
             f' Внесены изменения в таблицу {DFWIEEE421.table_name}:\n'
             f'- Id: Номер возбудителя: {Id};\n'
@@ -325,3 +541,21 @@ def change_parameters_AC8B(
             f'- Bex: Степень экспоненты (задание насыщения): до {bex_before}; после {bex_after};\n'
             f'{separator_two}\n'
         )
+    return (
+        f'{separator_two}\n'
+        f' Внесены изменения в таблицу {DFWIEEE421.table_name}:\n'
+        f'- Id: Номер возбудителя: {Id};\n'
+        f'- row_id: порядковый номер в таблице (от 0 до [max.count]): {row_id};\n'
+        f'- Kpr: Пропорциональный коэффициент усиления ПИД-регулятора: до {kpr_before}; после {kpr_after};\n'
+        f'- Kir: Интегральный коэффициент усиления ПИД-регулятора: до {kir_before}; после {kir_after};\n'
+        f'- Kdr: Дифференциальный коэффициент усиления ПИД-регулятора: до {kdr_before}; после {kdr_after};\n'
+        f'- Tdr: Постоянная времени дифференциального канала ПИД-регулятора: до {tdr_before}; после {tdr_after};\n'
+        f'- Ka: Коэффициент усиления регулятора напряжения: до {ka_before}; после {ka_after};\n'
+        f'- Ta: Постоянная времени регулятора напряжения: до {ta_before}; после {ta_after};\n'
+        f'- Vrmax: Максимальное ограничение регулятора напряжения: до {vrmax_before}; после {vrmax_after};\n'
+        f'- Vrmin: Минимальное ограничение регулятора напряжения: до {vrmin_before}; после {vrmin_after};\n'
+        f'- Te: Постоянная времени интегратора возбудителя: до {te_before}; после {te_after};\n'
+        f'- Aex: Коэффициент экспоненты (задание насыщения): до {aex_before}; после {aex_after};\n'
+        f'- Bex: Степень экспоненты (задание насыщения): до {bex_before}; после {bex_after};\n'
+        f'{separator_two}\n'
+    )

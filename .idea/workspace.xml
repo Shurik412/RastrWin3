@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC8B/AC8B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC8B/AC8B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_BSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/ARV_REM.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Add modules ARV3M.py">
-      <created>1619533886553</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1619533886553</updated>
     </task>
     <task id="LOCAL-00082" summary="Corr modules ARV3M.py">
       <created>1619588064039</created>
@@ -525,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620125263659</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Corr ARV_REM.py">
+      <created>1620131609569</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1620131609569</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr EX2100_static.py" />
     <MESSAGE value="Corr KOSUR2.py" />
     <MESSAGE value="Corr EAA.py" />
     <MESSAGE value="Corr DECS_400.py" />
@@ -566,7 +561,8 @@
     <MESSAGE value="Create Alstom.py" />
     <MESSAGE value="Create Semipol.py" />
     <MESSAGE value="Create ARV4M.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create ARV4M.py" />
+    <MESSAGE value="Corr ARV_REM.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr ARV_REM.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
