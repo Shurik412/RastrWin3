@@ -143,6 +143,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\CustomModels\Alstom\Alstom.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\CustomModels\EAA\EAA.py">
           <value>
             <Attribute>
