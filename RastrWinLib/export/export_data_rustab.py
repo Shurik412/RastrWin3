@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.AstraRastr import RASTR, RastrDoc
+from RastrWinLib.tools.tools import separator_noun
+from RastrWinLib.tools.tools_doc import switch_command_line_doc
 
 
 class ExportDataRUSTab:
@@ -12,9 +13,9 @@ class ExportDataRUSTab:
                  table: str,
                  rastr_win=RASTR,
                  switch_command_line=False):
-        """
+        f"""
         :param table: название таблицы;
-        :param rastr_win: COM - объект Rastr.Astra (win32com);
+        :param rastr_win: {RastrDoc};
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
         self.table_name = table

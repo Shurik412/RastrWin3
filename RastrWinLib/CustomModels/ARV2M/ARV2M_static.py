@@ -9,7 +9,7 @@
 from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.log_tools.tools import separator_two
+from RastrWinLib.tools.tools import separator_two
 from RastrWinLib.variables.variable_parametrs import Variable
 
 

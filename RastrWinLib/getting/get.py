@@ -4,6 +4,7 @@ import RastrWinLib.tables.Dynamic.Generator as Generator
 import RastrWinLib.tables.Node.node as node
 import RastrWinLib.tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.tools.tools import Tools
 
 
 class GettingParameter:
@@ -18,8 +19,8 @@ class GettingParameter:
 
     def __init__(self, rastr_win=RASTR):
         self.rastr_win = rastr_win
-        """
-         :param rastr_win: COM - объект Rastr.Astra (win32com).
+        f"""
+         :param rastr_win: {Tools.RastrDoc};
         """
 
     def get_cell_row(self, table, column, row_id):

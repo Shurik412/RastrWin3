@@ -3,7 +3,7 @@ from os import path
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.log_tools.tools import separator_grid
+from RastrWinLib.tools.tools import separator_grid
 
 
 def save_file(rastr_win=RASTR,

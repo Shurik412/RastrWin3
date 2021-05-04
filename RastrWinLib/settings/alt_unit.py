@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.log_tools.tools import separator_noun
 from RastrWinLib.tables.Settings.AltUnit import AltUnit
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -16,7 +16,7 @@ def set_alt_unit(
         Tabl: str = '',
         rastr_win=RASTR,
         switch_command_line: bool = False, ):
-    """
+    f"""
     Параметры настройки "Описание альтернативных единиц измерения" (таблица "Ед.Измерения": AltUnit):
 
     :param row_id: Порядковый номер в таблице "Ед. Измерения";
@@ -26,8 +26,8 @@ def set_alt_unit(
     :param Formula: Формула для преобразования;
     :param Prec: Точность отображение Альт ЕИ;
     :param Tabl: Ограничитель по таблице;
-    :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param switch_command_line: True/False - вывод сообщений в протакол;
+    :param rastr_win: {Tools.RastrDoc};
+    :param switch_command_line: {Tools.switch_command_line_doc};
     :return: Nothing returns
     """
 
@@ -108,7 +108,7 @@ def set_alt_unit(
 
     if switch_command_line is not False:
         print(
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
             f'Параметры альтернативных единиц измерений "Ед.Измерения":\n\n'
             f'- Active: Активизация альтернативной ЕИ (A): Active "до" = {active_get_before};'
             f' "после" = {active_get_after};\n'
@@ -122,11 +122,11 @@ def set_alt_unit(
             f' "после" = {prec_get_after};\n'
             f'- Tabl: Ограничитель по таблице (Табл): Tabl "до" = {tabl_get_before};'
             f' "после" = {tabl_get_after};\n'
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
         )
 
     return (
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
         f'Параметры альтернативных единиц измерений "Ед.Измерения":\n\n'
         f'- Active: Активизация альтернативной ЕИ (A): Active "до" = {active_get_before};'
         f' "после" = {active_get_after};\n'
@@ -140,5 +140,5 @@ def set_alt_unit(
         f' "после" = {prec_get_after};\n'
         f'- Tabl: Ограничитель по таблице (Табл): Tabl "до" = {tabl_get_before};'
         f' "после" = {tabl_get_after};\n'
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
     )

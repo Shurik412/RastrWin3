@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.log_tools.tools import separator_star
+from RastrWinLib.tools.tools import separator_star
 
 
 class Errors:

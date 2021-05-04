@@ -2,7 +2,7 @@
 from time import time, localtime, strftime
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.tools.tools import separator_noun
 
 
 class SteadyState:

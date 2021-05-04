@@ -6,7 +6,7 @@ class Generator:
 
     """
     table = 'Generator'
-    table_name: str = '"Генераторы"'
+    table_name: str = '"Генераторы(ИД)"'
     sel: str = 'sel'  #
     sta: str = 'sta'  #
     Num: str = 'Num'  #
@@ -101,3 +101,44 @@ class Generator:
     ic: str = 'ic'  #
     dic: str = 'dic'  #
     ki: str = 'ki'  #
+
+    td01: str = 'td01'  # T'd0 Переходная постоянная времени по продольной оси при разомкнутой обмотке статора
+    td02: str = 'td02'  # T"d0 Сверхпереходная постоянная времени по продольной оси при разомкнутой обмотке статора
+
+    tq01: str = 'tq01'  # T'q0 Переходная постоянная времени по поперечной оси при разомкнутой обмотке статора
+    tq02: str = 'tq02'  # T"q0 Сверхпереходная постоянная времени по поперечной оси при разомкнутой обмотке статора
+
+
+class GeneratorsDoc:
+    """
+
+    """
+    name_table: str = ''
+    row_id: str = ''
+    sta: str = ''
+    Num: str = ''
+    Name: str = ''
+    Node: str = ''
+    ModelType: str = ''
+    Brand: str = ''
+    NumBrand: str = ''
+    ExciterId: str = ''
+    ARSId: str = ''
+    Pnom: str = ''
+    Ugnom: str = ''
+    cosFi: str = ''
+    Demp: str = ''
+    Mj: str = ''
+    xd1: str = ''
+    xd: str = ''
+    xq: str = ''
+    xd2: str = ''
+    xq2: str = ''
+    td01: str = ''
+    td02: str = ''
+    tq02: str = ''
+    xq1: str = ''
+    xl: str = ''
+    x2: str = ''
+    x0: str = ''
+    tq01: str = ''

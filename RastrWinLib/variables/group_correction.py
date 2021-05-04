@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.tools.tools import Tools
 
 
 class GroupCorr:
@@ -14,13 +15,17 @@ class GroupCorr:
                                 formula=< pn*1.15 >)
     """
 
-    def __init__(self, table, column, rastr_win=RASTR, switch_command_line=False):
-        """
+    def __init__(self,
+                 table,
+                 column,
+                 rastr_win=RASTR,
+                 switch_command_line=False):
+        f"""
 
         :param table:
         :param column:
-        :param rastr_win: COM - объект Rastr.Astra (win32com);
-        :param switch_command_line: True/False - вывод сообщений в протокол.
+        :param rastr_win: {Tools.RastrDoc};
+        :param switch_command_line: {Tools.switch_command_line_doc};
         """
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)

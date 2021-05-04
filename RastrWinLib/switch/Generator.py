@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Dynamic.Generator as Generator
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.tables.Dynamic.Generator import Generator
+from RastrWinLib.tools.tools import Tools
 
 
 class SwitchGenerator:
@@ -9,12 +10,12 @@ class SwitchGenerator:
                  rastr_win=RASTR,
                  table: str = Generator.table,
                  switch_command_line: bool = False):
-        """
+        f"""
         Класс включает и отключает заданный генератора.
 
-        :param rastr_win: COM - объект Rastr.Astra (win32com);
+        :param rastr_win: {Tools.RastrDoc};
         :param table: название таблицы RastrWin3;
-        :param switch_command_line: True/False - вывод сообщений в протокол.
+        :param switch_command_line: {Tools.switch_command_line_doc};
         """
         self.rastr_win = rastr_win
         self.table = table

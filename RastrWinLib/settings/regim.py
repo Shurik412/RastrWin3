@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.tables.Settings.com_regim import ComRegim
 from RastrWinLib.variables.variable_parametrs import Variable
 
@@ -33,7 +33,7 @@ def set_regim(neb_p: float = 1.000,
               min_nodes_in_island: int = 0,
               rastr_win: object = RASTR,
               switch_command_line: bool = False):
-    """
+    f"""
     Параметры настройки "Общие параметры режима" (таблица "Режим": com_regim):
 
     :param neb_p: Точность расчета (dP);
@@ -61,8 +61,8 @@ def set_regim(neb_p: float = 1.000,
     :param itz_ogr_max: Стартовый метод: Учет Qmax с итерации (Z_it_max);
     :param itz_ogr_min: Стартовый метод: Учет Qmin с итерации (Z_it_min);
     :param min_nodes_in_island: Минимальное число узлов в острове (Min_nodes);
-    :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param switch_command_line: True/False - вывод сообщений в протакол;
+    :param rastr_win: {Tools.RastrDoc};
+    :param switch_command_line: {Tools.switch_command_line_doc};
     :return: Nothing returns
     """
 
@@ -371,7 +371,7 @@ def set_regim(neb_p: float = 1.000,
 
     if switch_command_line is not False:
         print(
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
             f'Таблица параметров (настройки) "Режим" - com_regim:\n'
             f'neb_p: Точность расчета (dP) "до" = {neb_p_get_before}; "после" = {neb_p_get_after};\n'
             f'it_max: Максимальное число итераций (It) "до" = {it_max_get_before}; "после" = {it_max_get_after};\n'
@@ -398,10 +398,10 @@ def set_regim(neb_p: float = 1.000,
             f'itz_ogr_max: Стартовый метод: Учет Qmax с итерации (Z_it_max) "до" = {itz_ogr_max_get_before}; "после" = {itz_ogr_max_get_after};\n'
             f'itz_ogr_min: Стартовый метод: Учет Qmin с итерации (Z_it_min) "до" = {itz_ogr_min_get_before}; "после" = {itz_ogr_min_get_after};\n'
             f'min_nodes_in_island: Минимальное число узлов в острове (Min_nodes) "до" = {min_nodes_in_island_get_before}; "после" = {min_nodes_in_island_get_after};'
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
         )
     return (
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
         f'Таблица параметров (настройки) "Режим" - com_regim:\n\n'
         f'neb_p: Точность расчета (dP) "до" = {neb_p_get_before}; "после" = {neb_p_get_after};\n'
         f'it_max: Максимальное число итераций (It) "до" = {it_max_get_before}; "после" = {it_max_get_after};\n'
@@ -428,5 +428,5 @@ def set_regim(neb_p: float = 1.000,
         f'itz_ogr_max: Стартовый метод: Учет Qmax с итерации (Z_it_max) "до" = {itz_ogr_max_get_before}; "после" = {itz_ogr_max_get_after};\n'
         f'itz_ogr_min: Стартовый метод: Учет Qmin с итерации (Z_it_min) "до" = {itz_ogr_min_get_before}; "после" = {itz_ogr_min_get_after};\n'
         f'min_nodes_in_island: Минимальное число узлов в острове (Min_nodes) "до" = {min_nodes_in_island_get_before}; "после" = {min_nodes_in_island_get_after};'
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
     )

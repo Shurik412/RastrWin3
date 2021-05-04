@@ -3,7 +3,7 @@ from os import path
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.log_tools.tools import separator_grid
+from RastrWinLib.tools.tools import Tools
 
 
 def load_file(rastr_win=RASTR,
@@ -11,11 +11,11 @@ def load_file(rastr_win=RASTR,
               file_path='',
               shabl=Shabl.shablon_file_automation,
               switch_command_line=False):
-    """
+    f"""
     Загружает файл данных name в рабочую область в соответствии с шаблоном типа shabl.
     Если поле shabl пусто, то загружается name без шаблона, если пусто поле name, то загружается только шаблон.
 
-   :param rastr_win: COM - объект Rastr.Astra (win32com);
+   :param rastr_win: {Tools.RastrDoc};
    :param rg_kod: числовое значение, определяет режим загрузки при наличии таблицы
             в рабочей области и может быть одним из следующих:
             Константа   Значение           Описание
@@ -28,7 +28,7 @@ def load_file(rastr_win=RASTR,
                                     Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»)
     :param shabl: шаблон RastrWin3 для загрузки;
     :param file_path: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);
-    :param switch_command_line: True/False - выводит сообщения в протокол.
+    :param switch_command_line: {Tools.switch_command_line_doc}
     :return: True
     """
 
@@ -37,9 +37,9 @@ def load_file(rastr_win=RASTR,
     rastr_win.Load(rg_kod, file_path, shabl)
 
     if switch_command_line is not False:
-        print(f'{separator_grid}\n'
+        print(f'{Tools.separator_grid}\n'
               f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(shablon)}".\n'
-              f'{separator_grid}\n')
+              f'{Tools.separator_grid}\n')
 
 
 class LoadRUSTab:
@@ -49,12 +49,12 @@ class LoadRUSTab:
                  shablon=ShablonsRastrWin.shablon_file_automation,
                  rg_kod=1,
                  switch_command_line=False):
-        """
+        f"""
 
-        :param rastr_win: com - объект Rastr.Astra
+        :param rastr_win: {Tools.RastrDoc};
         :param shablon: шаблон RastrWin3 для загрузки.
         :param rg_kod:
-        :param switch_command_line: True/False - выводит сообщения в протокол.
+        :param switch_command_line: {Tools.switch_command_line_doc};
         """
         self.rastr_win = rastr_win
         self.shablon = shablon
@@ -68,9 +68,9 @@ class LoadRUSTab:
         """
         self.rastr_win.Load(2, '', self.shablon)
         if self.switch_command_line is not None:
-            print(f'{separator_grid}\n'
+            print(f'{Tools.separator_grid}\n'
                   f'Добавлена структура рабочей области по шаблону: "{path.basename(self.shablon)}".\n'
-                  f'{separator_grid}\n')
+                  f'{Tools.separator_grid}\n')
         return True
 
     def load(self, file_path):
@@ -81,9 +81,9 @@ class LoadRUSTab:
         """
         self.rastr_win.Load(self.rg_kod, file_path, self.shablon)
         if self.switch_command_line is not None:
-            print(f'{separator_grid}\n'
+            print(f'{Tools.separator_grid}\n'
                   f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shablon)}".'
-                  f'{separator_grid}\n')
+                  f'{Tools.separator_grid}\n')
         return True
 
     def load_new_file(self):
@@ -93,7 +93,7 @@ class LoadRUSTab:
         """
         self.rastr_win.NewFile(self.shablon)
         if self.switch_command_line is not None:
-            print(f'{separator_grid}\n'
+            print(f'{Tools.separator_grid}\n'
                   f'Очищена рабочая область по шаблону: "{path.basename(self.shablon)}".'
-                  f'{separator_grid}\n')
+                  f'{Tools.separator_grid}\n')
         return True

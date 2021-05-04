@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.tables.Settings.com_ekviv import ComEkviv
 from RastrWinLib.variables.variable_parametrs import Variable
 
@@ -20,7 +20,7 @@ def set_com_ekviv(selekv=0,
                   otm_n=0,
                   rastr_win=RASTR,
                   switch_command_line=False):
-    """
+    f"""
     Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):
 
     :param selekv: Отмеченные узлы: (Отмеч);
@@ -35,8 +35,8 @@ def set_com_ekviv(selekv=0,
     :param smart: "Умное" эквивалентирование: (Smart);
     :param zmax: Удаление ветвей с сопротивлением большим: (Z_max);
     :param otm_n: Отмечать узлы после эквивалентирования: (Отм);
-    :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param switch_command_line: True/False - вывод сообщений в протакол;
+    :param rastr_win: {Tools.RastrDoc};
+    :param switch_command_line: {Tools.switch_command_line_doc};
     :return: Nothing returns
     """
 
@@ -190,7 +190,7 @@ def set_com_ekviv(selekv=0,
 
     if switch_command_line is not False:
         print(
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
             f'Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):\n\n'
             f'selekv: Отмеченные узлы: (Отмеч) "до" = {selekv_get_before}; "после" = {selekv_get_after};\n'
             f'met_ekv: Метод эквивалентирования: (Мет Экв) "до" = {met_ekv_get_before}; "после" = {met_ekv_get_after};\n'
@@ -204,10 +204,10 @@ def set_com_ekviv(selekv=0,
             f'smart: "Умное" эквивалентирование: (Smart) "до" = {smart_get_before}; "после" = {smart_get_after};\n'
             f'zmax: Удаление ветвей с сопротивлением большим: (Z_max) "до" = {zmax_get_before}; "после" = {zmax_get_after};\n'
             f'otm_n: Отмечать узлы после эквивалентирования: (Отм) "до" = {otm_n_get_before}; "после" = {otm_n_get_after}.'
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
         )
     return (
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
         f'Параметры настройки "Общие параметры эквивалентирования" (таблица "Эквивалент": com_ekviv):\n'
         f'selekv: Отмеченные узлы: (Отмеч) "до" = {selekv_get_before}; "после" = {selekv_get_after};\n'
         f'met_ekv: Метод эквивалентирования: (Мет Экв) "до" = {met_ekv_get_before}; "после" = {met_ekv_get_after};\n'
@@ -221,5 +221,5 @@ def set_com_ekviv(selekv=0,
         f'smart: "Умное" эквивалентирование: (Smart) "до" = {smart_get_before}; "после" = {smart_get_after};\n'
         f'zmax: Удаление ветвей с сопротивлением большим: (Z_max) "до" = {zmax_get_before}; "после" = {zmax_get_after};\n'
         f'otm_n: Отмечать узлы после эквивалентирования: (Отм) "до" = {otm_n_get_before}; "после" = {otm_n_get_after}.'
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
     )

@@ -2,10 +2,10 @@
 from time import time, localtime, strftime
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.log_tools.tools import separator_grid
 from RastrWinLib.tables.Settings.com_dynamics import SnapMaxCount
 from RastrWinLib.tables.Settings.com_dynamics import Tras
 from RastrWinLib.tables.Settings.com_dynamics import table as com_dynamics_table
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -15,13 +15,13 @@ class Dynamic:
                  calc_time: float = 1.0,
                  snap_max_count: int = 1,
                  switch_command_line=False):
-        """
+        f"""
         Функции для расчтета ЭМПП доступны в интерфейсе IFWDynamic.
         Интерфейс может быть получен с помощью свойства IRastr.FWDynamic.
-        :param rastr_win: COM - объект Rastr.Astra (win32com);
+        :param rastr_win: {Tools.RastrDoc};
         :param calc_time: время расчета ЭМПП;
-        :param snap_max_count:
-        :param switch_command_line:
+        :param snap_max_count: 
+        :param switch_command_line: {Tools.switch_command_line_doc};
         """
 
         self.rastr_win = rastr_win
@@ -35,6 +35,7 @@ class Dynamic:
     def change_calc_time(self):
         settlement_time = Variable(rastr_win=self.rastr_win,
                                    switch_command_line=True)
+
         settlement_time.make_changes_row(table=com_dynamics_table,
                                          column=Tras,
                                          row_id=0,
@@ -43,6 +44,7 @@ class Dynamic:
     def change_snap_max_count(self):
         snap_max_count = Variable(rastr_win=self.rastr_win,
                                   switch_command_line=True)
+
         snap_max_count.make_changes_row(table=com_dynamics_table,
                                         column=SnapMaxCount,
                                         row_id=0,
@@ -53,7 +55,7 @@ class Dynamic:
             start_time = time()
         else:
             start_time = 0
-        print(separator_grid)
+        print(Tools.separator_grid)
         print(f'Запуск расчета ЭМПП:')
         self.FWDynamic.Run()
         if self.switch_command_line is not False:
@@ -75,6 +77,6 @@ class Dynamic:
             time_calc = time() - start_time
             print(
                 f'\tВремя расчета ЭМПП: {strftime("M: %M [минут] S: %S [секунд]", localtime(time_calc))}'
-                f' (Seconds: {"%.2f" % (time_calc)} [секунд])')
-        print(separator_grid)
+                f' (Seconds: {"%.2f" % time_calc} [секунд])')
+        print(Tools.separator_grid)
         return self.ResultMessage

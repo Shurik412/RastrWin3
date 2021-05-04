@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.tables.Vetv.vetv import Vetv
+from RastrWinLib.tools.tools import Tools
 
 
 class SwitchVetv:
 
     def __init__(self,
                  rastr_win=RASTR,
-                 table=vetv.table,
+                 table=Vetv.table,
                  switch_command_line=False):
-        """
+        f"""
         Класс выполняет отключение и включение ветви в RastrWin3
-        :param rastr_win: COM - объект Rastr.Astra (win32com);
+        :param rastr_win: {Tools.RastrDoc};
         :param table: название таблицы RastrWin3;
-        :param switch_command_line: True/False - выводит сообщения в протокол.
+        :param switch_command_line: {Tools.switch_command_line_doc};
         """
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)

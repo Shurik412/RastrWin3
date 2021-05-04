@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.tables.Settings.ut_common import UtCommon
 from RastrWinLib.variables.variable_parametrs import Variable
 
@@ -40,7 +40,7 @@ def set_ut_common(
         rastr_win: object = RASTR,
         switch_command_line: bool = False
 ):
-    """
+    f"""
     Параметры настройки "Общие данные для утяжеления" (таблица "Утяжеление": ut_common):
 
     :param maxs: Точность P (Pmax);
@@ -73,8 +73,8 @@ def set_ut_common(
     :param save_files_path: Папка для сохранения файлов результатов (Путь);
     :param stop_u_n: Остановить при переходе к устойчивому/неустойчивому (Остановить);
     :param dyn_find_pred: Динамика: поиск предела (Динамика: поиск предела);
-    :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :param rastr_win: {Tools.RastrDoc};
+    :param switch_command_line: {Tools.switch_command_line_doc};
     :return: Nothing returns
     """
     variable_ = Variable(rastr_win=rastr_win)
@@ -411,7 +411,7 @@ def set_ut_common(
                                                 row_id=0)
 
     if switch_command_line is not False:
-        print(separator_noun)
+        print(Tools.separator_noun)
         print(
             f'Таблица параметров (настройки) "Утяжеление":\n'
             f'- maxs: Точность P (Pmax): "до" = {maxs_get_before}; "после" = {maxs_get_after};\n'
@@ -445,4 +445,4 @@ def set_ut_common(
             f'- stop_u_n: Остановить при переходе к устойчивому/неустойчивому (Остановить): "до" = {stop_u_n_get_before}; "после" = {stop_u_n_get_after};\n'
             f'- dyn_find_pred: Динамика: поиск предела (Динамика: поиск предела): "до" = {dyn_find_pred_get_before}; "после" = {dyn_find_pred_get_after};\n'
         )
-        print(separator_noun)
+        print(Tools.separator_noun)

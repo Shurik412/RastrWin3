@@ -2,7 +2,7 @@
 from RastrWinLib.tables.Settings.com_dynamics import ComDynamics
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.log_tools.tools import separator_noun
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -39,7 +39,7 @@ def set_dynamic(
         EventProcess: str = 'Стандартный',
         rastr_win=RASTR,
         switch_command_line=False):
-    """
+    f"""
     Параметры настройки "Общие данные для расчета динамики" (таблица: com_dynamics):
 
     :param t_ras: Время расчета: (Tras);
@@ -72,8 +72,8 @@ def set_dynamic(
     :param ResultFlowDirection: Положительное направление результатов: (Положительное направление результатов);
     :param TreatWarningsAsErrors: Считать предупреждения ошибками: (Предупреждение=Ошибка);
     :param EventProcess: Метод обработки дискретных изменений: (Дискретные изменения);
-    :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param switch_command_line: True/False - вывод сообщений в протакол;
+    :param rastr_win: {Tools.RastrDoc};
+    :param switch_command_line: {Tools.switch_command_line_doc};
     :return Nothing returns
     """
     variable_def_rowid = Variable(rastr_win=rastr_win)
@@ -441,7 +441,7 @@ def set_dynamic(
 
     if switch_command_line is not False:
         print(
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
             f' Параметры настройки "Общие данные для расчета динамики" (таблица: {ComDynamics.table}):\n\n'
             f'- t_ras: Время расчета: Tras "до" = {get_t_ras}; "после" = {get_t_ras_after};\n'
             f'- h_int: Начальный шаг интегрирования: H_инт "до" = {get_h_int}; "после" = {get_h_int_after};\n'
@@ -473,10 +473,10 @@ def set_dynamic(
             f'- ResultFlowDirection: Положительное направление результатов: Положительное направление результатов "до" = {get_result_flow_direction}; "после" = {get_result_flow_direction_after};\n'
             f'- TreatWarningsAsErrors: Считать предупреждения ошибками: Предупреждение=Ошибка "до" = {get_treat_warnings_as_errors}; "после" = {get_treat_warnings_as_errors_after};\n'
             f'- EventProcess: Метод обработки дискретных изменений: Дискретные изменения "до" = {get_event_process}; "после" = {get_event_process_after};\n'
-            f'{separator_noun}\n'
+            f'{Tools.separator_noun}\n'
         )
     return (
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
         f' Параметры настройки "Общие данные для расчета динамики" (таблица: {ComDynamics.table}):\n'
         f'- t_ras: Время расчета: Tras "до" = {get_t_ras}; "после" = {get_t_ras_after};\n'
         f'- h_int: Начальный шаг интегрирования: H_инт "до" = {get_h_int}; "после" = {get_h_int_after};\n'
@@ -508,5 +508,5 @@ def set_dynamic(
         f'- ResultFlowDirection: Положительное направление результатов: Положительное направление результатов "до" = {get_result_flow_direction}; "после" = {get_result_flow_direction_after};\n'
         f'- TreatWarningsAsErrors: Считать предупреждения ошибками: Предупреждение=Ошибка "до" = {get_treat_warnings_as_errors}; "после" = {get_treat_warnings_as_errors_after};\n'
         f'- EventProcess: Метод обработки дискретных изменений: Дискретные изменения "до" = {get_event_process}; "после" = {get_event_process_after};\n'
-        f'{separator_noun}\n'
+        f'{Tools.separator_noun}\n'
     )

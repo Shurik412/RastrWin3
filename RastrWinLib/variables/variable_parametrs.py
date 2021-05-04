@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.log_tools.tools import separator_star, error_text
+from RastrWinLib.tables.Vetv.vetv import Vetv
+from RastrWinLib.tools.tools import Tools
 
 
 class FindNextSel:
     def __init__(self,
                  table: str,
                  rastr_win=RASTR):
-        """
+        f"""
         Класс для поиска по выборки key.
         Метод row возвращает row_id - порядковый номер строки в таблице.
         :param table: название таблицы RastrWin3;
-        :param rastr_win: COM - объект Rastr.Astra (win32com).
+        :param rastr_win: {Tools.RastrDoc};
         """
         self.rastr_win = rastr_win
         self.table = self.rastr_win.Tables(table)
@@ -37,10 +37,10 @@ class Variable:
     def __init__(self,
                  rastr_win=RASTR,
                  switch_command_line=False):
-        """
+        f"""
         Класс для изменений значений ячеек.
-        :param rastr_win: com - объект Rastr.Astra;
-        :param switch_command_line: True/False - вывод сообщений в протокол.
+        :param rastr_win: {Tools.RastrDoc};
+        :param switch_command_line: {Tools.switch_command_line_doc};
         """
 
         self.rastr_win = rastr_win
@@ -60,7 +60,7 @@ class Variable:
         :return: Nothing returns
         """
         if self.switch_command_line is not False:
-            print(separator_star)
+            print(Tools.separator_star)
         switch_command_line_def = True
         if table is not None:
             table_ = self.rastr_win.Tables(table)
@@ -76,7 +76,7 @@ class Variable:
                             f'возникла следующая ОШИБКА!'
                         )
                         print(
-                            f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                            f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
                             f'Не задано значение "value".'
                         )
                 else:
@@ -85,7 +85,7 @@ class Variable:
                         f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
                         f'возникла следующая ОШИБКА!')
                     print(
-                        f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                        f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
                         f'Не задано значение порядкового номера строки "row_id".'
                     )
             else:
@@ -95,7 +95,7 @@ class Variable:
                     f'возникла следующая ОШИБКА!'
                 )
                 print(
-                    f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                    f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
                     f'Не задано название колонки (столбца) "column".'
                 )
         else:
@@ -113,7 +113,7 @@ class Variable:
                   f'\t таблица: <{table.Description}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
                   f'\t значение => [{value}]')
         if self.switch_command_line is not False:
-            print(separator_star)
+            print(Tools.separator_star)
 
     def make_changes_setsel(self,
                             table: str = None,
@@ -130,13 +130,13 @@ class Variable:
         """
         switch_command_line_def = True
         if self.switch_command_line is not False:
-            print(separator_star)
+            print(Tools.separator_star)
         if table is not None:
             table = self.rastr_win.Tables(table)
             table.SetSel(key)
             row_id = table.FindNextSel(-1)
             if row_id == (-1):
-                print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                print(f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
                       f'значение "row_id" равно -1.'
                       )
                 print(' Значения заданой выборки - отсутствуют.')
@@ -156,14 +156,14 @@ class Variable:
                               f'                   - значение до: [{value_before}]\n'
                               f'                   - значение после: [{value}]\n')
                 else:
-                    print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение value = None.')
+                    print(f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: значение value = None.')
         else:
-            print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: значение table = None.')
+            print(f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: значение table = None.')
         if self.switch_command_line is not False:
-            print(separator_star)
+            print(Tools.separator_star)
 
     def make_changes_vetv(self,
-                          table: str = vetv.table,
+                          table: str = Vetv.table,
                           column: str = None,
                           ip: int = None,
                           iq: int = None,
@@ -188,5 +188,5 @@ class Variable:
             col.SetZ(row, value)
         else:
             print(
-                f'{error_text} '
+                f'{Tools.error_text} '
             )

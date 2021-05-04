@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Node.node as node
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.tables.Node.node import Node
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -9,13 +10,13 @@ class SwitchNode:
 
     def __init__(self,
                  rastr_win=RASTR,
-                 table=node.table,
+                 table=Node.table,
                  switch_command_line=False):
-        """
+        f"""
         Класс включает и отключает заданный узел.
-        :param rastr_win: COM - объект Rastr.Astra (win32com);
+        :param rastr_win: {Tools.RastrDoc};
         :param table: название таблицы;
-        :param switch_command_line: True/False - выводит сообщения в протокол.
+        :param switch_command_line: {Tools.switch_command_line_doc};
         """
         self.rastr_win = rastr_win
         self.table = table
