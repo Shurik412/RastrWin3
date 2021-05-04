@@ -40,8 +40,7 @@ def change_parameters_AC5B(
         Aex=Parameters.Aex,
         Bex=Parameters.Bex,
         rastr_win=RASTR,
-        switch_command_line: bool = False
-):
+        switch_command_line: bool = False):
     """
 
     :param Id: номер возбудителя;

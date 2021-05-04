@@ -43,7 +43,8 @@ def change_parameters_AC8B(
         Vrmin: float = Parameters.Vrmin,
         Te: float = Parameters.Te,
         Aex: float = Parameters.Aex,
-        Bex: float = Parameters.Bex):
+        Bex: float = Parameters.Bex,
+        switch_command_line: bool = False):
     """
 
     :param Id: номер возбудителя;
@@ -59,6 +60,7 @@ def change_parameters_AC8B(
     :param Te: Постоянная времени интегратора возбудителя;
     :param Aex: Коэффициент экспоненты (задание насыщения);
     :param Bex: Степень экспоненты (задание насыщения);
+    :param switch_command_line:
     :return:
     """
 
