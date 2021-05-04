@@ -6,7 +6,7 @@ class Exciter:
 
     """
     table: str = 'Exciter'  # название таблицы
-    table_name: str = '"Возбудитель"'
+    table_name: str = '"Возбудитель (ИД)"'
 
     sel: str = 'sel'  # Отметка
     sta: str = 'sta'  # Состояние возбудителя
