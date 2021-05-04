@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDE/ARVSDE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3MTK.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Add modules DECS_400.py">
-      <created>1619437647549</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1619437647549</updated>
     </task>
     <task id="LOCAL-00076" summary="Add modules DFWTHYNE14.py">
       <created>1619445765311</created>
@@ -523,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620121683187</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Create ARVSDE.py">
+      <created>1620122379553</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1620122379553</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create class Shabl&#10;Corr save.py" />
     <MESSAGE value="Create module AC8B.py" />
     <MESSAGE value="Corr Dynamic" />
     <MESSAGE value="Corr ARV2M_static.py&#10;Corr ARV2M_BSV.py" />
@@ -564,7 +562,8 @@
     <MESSAGE value="Create U6800.py" />
     <MESSAGE value="Create U5000.py" />
     <MESSAGE value="Create ARVSDS.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create ARVSDS.py" />
+    <MESSAGE value="Create ARVSDE.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create ARVSDE.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
