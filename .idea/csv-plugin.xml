@@ -115,6 +115,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\CustomModels\ARVSDS\ARVSDS.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\CustomModels\ARVSG\ARVSG_BSV.py">
           <value>
             <Attribute>
