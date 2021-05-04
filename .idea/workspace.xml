@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/gglite/gglite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/gglite/gglite_strs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Add module DFWIEEE421PSS4B.py">
-      <created>1619380979883</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1619380979883</updated>
     </task>
     <task id="LOCAL-00066" summary="Add module DFW421UEL.py">
       <created>1619382308741</created>
@@ -521,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620113918166</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Create gglite.py">
+      <created>1620114186811</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1620114186811</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finish create modules ARV3M.py" />
     <MESSAGE value="Corr AC5B.py" />
     <MESSAGE value="Corr table -&gt; DFWIEEE421.py&#10;Corr ARV3M&#10;Corr AC5B.py" />
     <MESSAGE value="&#10;Corr AC5B.py" />
@@ -562,7 +561,8 @@
     <MESSAGE value="Create ARS.py" />
     <MESSAGE value="Corr Hydrot.py" />
     <MESSAGE value="Create BESSCH.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create BESSCH.py" />
+    <MESSAGE value="Create gglite.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create gglite.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
