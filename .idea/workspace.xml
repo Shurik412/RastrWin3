@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/BESSCH/BESSCH.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Exciter.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Exciter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/gglite/gglite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Add module DFWIEEE421PSS13.py">
-      <created>1619379695603</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1619379695603</updated>
     </task>
     <task id="LOCAL-00065" summary="Add module DFWIEEE421PSS4B.py">
       <created>1619380979883</created>
@@ -523,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620057955246</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Create BESSCH.py">
+      <created>1620113918166</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1620113918166</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr modules ARV3M.py" />
     <MESSAGE value="Finish create modules ARV3M.py" />
     <MESSAGE value="Corr AC5B.py" />
     <MESSAGE value="Corr table -&gt; DFWIEEE421.py&#10;Corr ARV3M&#10;Corr AC5B.py" />
@@ -564,7 +561,8 @@
     <MESSAGE value="Create Prismic.py" />
     <MESSAGE value="Create ARS.py" />
     <MESSAGE value="Corr Hydrot.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Hydrot.py" />
+    <MESSAGE value="Create BESSCH.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create BESSCH.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
