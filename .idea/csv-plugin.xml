@@ -150,6 +150,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\CustomModels\THYRIPOL\THYRIPOL_6RV80_lite.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\ModelsARV\AC5B.py">
           <value>
             <Attribute>
