@@ -353,6 +353,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\Dynamic\Governor.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\ExcConrol.py">
           <value>
             <Attribute>
