@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/THYRIPOL_6RV80_lite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/THYRIPOL_lite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/U6800/U6800.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Add dir tables">
-      <created>1619430261079</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1619430261079</updated>
     </task>
     <task id="LOCAL-00072" summary="Add modules CustomDeviceMap.py">
       <created>1619430624155</created>
@@ -524,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620118151616</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Create THYRIPOL_6RV80_lite.py&#10;Create THYRIPOL_lite.py">
+      <created>1620119182222</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1620119182222</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add modules Eurostag_Output_PSS.py" />
     <MESSAGE value="Add modules Eurostag_Output_No_PSS.py" />
     <MESSAGE value="Corr modules Eurostag_Output_No_PSS.py" />
     <MESSAGE value="Create class ShablonsRastrWin" />
@@ -565,7 +562,8 @@
     <MESSAGE value="Create ARVSG_static.py" />
     <MESSAGE value="Create AVR_2_BSV.py&#10;Create AVR_2_static.py" />
     <MESSAGE value="Create ARVNL_BSV.py&#10;Create ARVNL_static.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create ARVNL_BSV.py&#10;Create ARVNL_static.py" />
+    <MESSAGE value="Create THYRIPOL_6RV80_lite.py&#10;Create THYRIPOL_lite.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create THYRIPOL_6RV80_lite.py&#10;Create THYRIPOL_lite.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
