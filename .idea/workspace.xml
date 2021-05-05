@@ -4,12 +4,8 @@
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CreatingDynamicModel/GeneratorsFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreatingDynamicModel/GeneratorsFilling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ARS.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ARS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFW421UEL.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFW421UEL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Corr modules ARV3M.py">
-      <created>1619620092697</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1619620092697</updated>
     </task>
     <task id="LOCAL-00086" summary="Corr modules ARV3M.py">
       <created>1619634686131</created>
@@ -549,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620163777619</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py">
+      <created>1620173265693</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1620173265693</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr THYNE_4.py" />
     <MESSAGE value="Corr KOSUR2_BSV.py" />
     <MESSAGE value="Create Prismic.py" />
     <MESSAGE value="Create ARS.py" />
@@ -590,7 +585,8 @@
     <MESSAGE value="Corr AC8B.py" />
     <MESSAGE value="Full corr" />
     <MESSAGE value="Corr Generator.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Generator.py" />
+    <MESSAGE value="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
