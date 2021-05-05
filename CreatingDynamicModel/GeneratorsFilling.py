@@ -2,8 +2,8 @@
 
 from RastrWinLib.AstraRastr import RASTR, RastrDoc
 from RastrWinLib.tables.Dynamic.Generator import Generator, GeneratorsDoc
+from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
-from RastrWinLib.tools.tools import switch_command_line_doc
 
 
 def filling_generators(
@@ -69,7 +69,7 @@ def filling_generators(
     :param x2: {GeneratorsDoc.x2};
     :param x0: {GeneratorsDoc.x0};
     :param tq01: {GeneratorsDoc.tq01};
-    :param switch_command_line: {switch_command_line_doc}
+    :param switch_command_line: {Tools.switch_command_line_doc}
     :return: 
     """
     variable_ = Variable(rastr_win=rastr_win)

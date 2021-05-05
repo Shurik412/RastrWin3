@@ -9,6 +9,7 @@ class Generator:
     table_name: str = '"Генераторы(ИД)"'
     sel: str = 'sel'  #
     sta: str = 'sta'  #
+    sta0: str = 'sta0'  #
     Num: str = 'Num'  #
     Name: str = 'Name'  #
     Node: str = 'Node'  #
@@ -31,6 +32,9 @@ class Generator:
     tgA: str = 'tgA'  #
     Vgain: str = 'Vgain'  #
     Tarif: str = 'Tarif'  #
+    S: str = 'S'  #
+    _adjpq: str = '_adjpq'  #
+    Bmin: str = 'Bmin'  #
 
     # U - напряжение
     modV: str = 'modV'  #
@@ -38,7 +42,7 @@ class Generator:
     Eqnom: str = 'Eqnom'  #
     Eq1: str = 'Eq1'  #
     Eq2: str = 'Eq2'  #
-
+    Vdrop: str = 'Vdrop'  #
     E: str = 'E'  #
     Ed1: str = 'Ed1'  #
     Ed2: str = 'Ed2'  #
@@ -50,6 +54,7 @@ class Generator:
 
     # Р - активная мощность
     P: str = 'P'  #
+    Pgconst: str = 'Pgconst'  #
     Pmax: str = 'Pmax'  #
     Pmin: str = 'Pmin'  #
     Pnom: str = 'Pnom'  #
@@ -101,6 +106,7 @@ class Generator:
     ic: str = 'ic'  #
     dic: str = 'dic'  #
     ki: str = 'ki'  #
+    ke: str = 'ke'  #
 
     td01: str = 'td01'  # T'd0 Переходная постоянная времени по продольной оси при разомкнутой обмотке статора
     td02: str = 'td02'  # T"d0 Сверхпереходная постоянная времени по продольной оси при разомкнутой обмотке статора
@@ -109,7 +115,7 @@ class Generator:
     tq02: str = 'tq02'  # T"q0 Сверхпереходная постоянная времени по поперечной оси при разомкнутой обмотке статора
 
 
-class GeneratorsDoc(Generator):
+class GeneratorsDoc:
     """
 
     """

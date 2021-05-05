@@ -15,3 +15,9 @@ class CustomDeviceMap:
     Tag: str = 'Tag'  # Тег связи с внешними устройствами
     LinkList: str = 'LinkList'  # Связи 1  Связи с ведомыми
     SiblingLinkList: str = 'SiblingLinkList'  # Связи 2 Связи с ведущими
+
+
+class CustomDeviceMapDoc:
+    """
+
+    """
