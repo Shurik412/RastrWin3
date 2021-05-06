@@ -38,7 +38,7 @@ def load_file(rastr_win=RASTR,
 
     if switch_command_line is not False:
         print(f'{Tools.separator_grid}\n'
-              f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(shablon)}".\n'
+              f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(shabl)}".\n'
               f'{Tools.separator_grid}\n')
 
 
@@ -46,7 +46,7 @@ class LoadRUSTab:
 
     def __init__(self,
                  rastr_win=RASTR,
-                 shablon=ShablonsRastrWin.shablon_file_automation,
+                 shabl=Shabl.shablon_file_automation,
                  rg_kod=1,
                  switch_command_line=False):
         f"""
@@ -57,7 +57,7 @@ class LoadRUSTab:
         :param switch_command_line: {Tools.switch_command_line_doc};
         """
         self.rastr_win = rastr_win
-        self.shablon = shablon
+        self.shabl = shabl
         self.rg_kod = int(rg_kod)
         self.switch_command_line = switch_command_line
 
@@ -66,10 +66,10 @@ class LoadRUSTab:
 
         :return:
         """
-        self.rastr_win.Load(2, '', self.shablon)
+        self.rastr_win.Load(2, '', self.shabl)
         if self.switch_command_line is not None:
             print(f'{Tools.separator_grid}\n'
-                  f'Добавлена структура рабочей области по шаблону: "{path.basename(self.shablon)}".\n'
+                  f'Добавлена структура рабочей области по шаблону: "{path.basename(self.shabl)}".\n'
                   f'{Tools.separator_grid}\n')
         return True
 
@@ -82,7 +82,7 @@ class LoadRUSTab:
         self.rastr_win.Load(self.rg_kod, file_path, self.shablon)
         if self.switch_command_line is not None:
             print(f'{Tools.separator_grid}\n'
-                  f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shablon)}".'
+                  f'Загружен файл: "{path.basename(file_path)}", по шаблону: "{path.basename(self.shabl)}".'
                   f'{Tools.separator_grid}\n')
         return True
 

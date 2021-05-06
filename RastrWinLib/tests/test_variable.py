@@ -1,27 +1,30 @@
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import shablon_file_dynamic
-from RastrWinLib.tables.tables_attributes import generator_table, generator_attributes_list
+from RastrWinLib.tables.Dynamic.Generator import Generator, GeneratorsDescription
 from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.loading.shablon import Shabl
 
 load_file(file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
-          shablon=shablon_file_dynamic,
+          shabl=Shabl.shablon_file_dynamic,
           switch_command_line=True)
 
-var = Variable(switch_command_line=True)
+var_ = Variable(switch_command_line=True)
+get_ = GettingParameter()
+xd11 = get_.get_cell_row(table=Generator.table,
+                         column=Generator.xd1,
+                         row_id=1)
+var_.make_changes_row(table=Generator.table,
+                      column=Generator.xd1,
+                      row_id=1,
+                      value=0.5)
 
-var.make_changes_row(table=generator_table,
-                     column=generator_attributes_list[0],
-                     row_id=None,
-                     value='1')
+xd1 = get_.get_cell_row(table=Generator.table,
+                        column=Generator.xd1,
+                        row_id=1)
+print(f'xd11={xd11}')
+print(f'xd1={xd1}')
 
-var.make_changes_row(table=generator_table,
-                     column=generator_attributes_list[0],
-                     row_id='0',
-                     value='1')
-
-
-save_file(file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\test9_9.rst',
-          shablon=shablon_file_dynamic,
+save_file(file_path=r'C:\Users\Ohrimenko_AG\Desktop\ForTest\test9.rst',
+          shabl=Shabl.shablon_file_dynamic,
           switch_command_line=True)

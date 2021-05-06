@@ -146,7 +146,7 @@ class DFWIEEE421:
     RIFlim: str = 'RIFlim'  # Блокировка работы устройства БОР
 
 
-class DFWIEEE421_Doc:
+class DFWIEEE421_Description:
     """
     Таблица "Возбудитель IEEE"
     """

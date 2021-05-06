@@ -88,3 +88,9 @@ class DFWIEEE421PSS4B:
     TH10: str = 'TH10'  #
     TH11: str = 'TH11'  #
     TH12: str = 'TH12'  #
+
+
+class DFWIEEE421PSS4B_Description:
+    """
+
+    """

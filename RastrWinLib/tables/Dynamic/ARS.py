@@ -34,7 +34,7 @@ class ARS:
     tpo: str = 'tpo'  # Т_по Постоянная времени паровых объемов
 
 
-class ARS_Doc:
+class ARS_Description:
     """
 
     """

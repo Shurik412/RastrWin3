@@ -49,7 +49,7 @@ class DFW421UEL:
     Vuimax: str = 'Vuimax'  # Максимальное ограничение регулятора
 
 
-class DFW421UEL_Doc:
+class DFW421UEL_Description:
     """
 
     """

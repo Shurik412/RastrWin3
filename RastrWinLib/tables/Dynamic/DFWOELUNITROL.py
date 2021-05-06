@@ -43,3 +43,9 @@ class DFWOELUNITROL:
     TRFout: str = 'TRFout'  # Тип регулятора
     Tr: str = 'Tr'  # Постоянная времени измерительного фильтра
     Output: str = 'Output'  # Выход  Режим выхода
+
+
+class DFWOELUNITROL_Description:
+    """
+
+    """

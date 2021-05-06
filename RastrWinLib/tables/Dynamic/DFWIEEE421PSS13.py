@@ -63,3 +63,9 @@ class DFWIEEE421PSS13:
 
     Vsi2max: str = 'Vsi2max'  # Максимальное ограничение 2-го входа стабилизатора
     Vsi2min: str = 'Vsi2min'  # Минимальное ограничение 2-го входа стабилизатора
+
+
+class DFWIEEE421PSS13_Description:
+    """
+
+    """

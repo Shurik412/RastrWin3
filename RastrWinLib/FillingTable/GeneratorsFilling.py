@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from RastrWinLib.AstraRastr import RASTR, RastrDoc
-from RastrWinLib.tables.Dynamic.Generator import Generator, GeneratorsDoc
+from RastrWinLib.tables.Dynamic.Generator import Generator, GeneratorsDescription
 from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
 
@@ -39,36 +39,37 @@ def filling_generators(
         switch_command_line=False
 ):
     f"""
-    {GeneratorsDoc.name_table}
-    :param row_id: {GeneratorsDoc.row_id};
-    :param rastr_win: {RastrDoc};
-    :param sta: {GeneratorsDoc.sta};
-    :param Num: {GeneratorsDoc.Num};
-    :param Name: {GeneratorsDoc.Name};
-    :param Node: {GeneratorsDoc.Node};
-    :param ModelType: {GeneratorsDoc.ModelType};
-    :param Brand: {GeneratorsDoc.Brand};
-    :param NumBrand: {GeneratorsDoc.NumBrand};
-    :param ExciterId: {GeneratorsDoc.ExciterId};
-    :param ARSId: {GeneratorsDoc.ARSId};
-    :param Pnom: {GeneratorsDoc.Pnom};
-    :param Ugnom: {GeneratorsDoc.Ugnom};
-    :param cosFi: {GeneratorsDoc.cosFi};
-    :param Demp: {GeneratorsDoc.Demp};
-    :param Mj: {GeneratorsDoc.Mj};
-    :param xd1: {GeneratorsDoc.xd1};
-    :param xd: {GeneratorsDoc.xd};
-    :param xq: {GeneratorsDoc.xq};
-    :param xd2: {GeneratorsDoc.xd2};
-    :param xq2: {GeneratorsDoc.xq2};
-    :param td01: {GeneratorsDoc.td01};
-    :param td02: {GeneratorsDoc.td02};
-    :param tq02: {GeneratorsDoc.tq02};
-    :param xq1: {GeneratorsDoc.xq1};
-    :param xl: {GeneratorsDoc.xl};
-    :param x2: {GeneratorsDoc.x2};
-    :param x0: {GeneratorsDoc.x0};
-    :param tq01: {GeneratorsDoc.tq01};
+    Функция для заполнения таблицы Генераторы(ИД)
+    
+    :param row_id: Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel;
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
+    :param sta: Состояние генератора [S];
+    :param Num: Номер генератора [N];
+    :param Name: Название генератора [Название];
+    :param Node: Номер узла [N узла];
+    :param ModelType: Модель генератора [Модель];
+    :param Brand: Марка генератора [Марка];
+    :param NumBrand: Число генераторов одного типа [K_ген];
+    :param ExciterId: N_возбудителя [N_взб];
+    :param ARSId: N турб [N турб];
+    :param Pnom: Номинальная мощность генератора [P_ном];
+    :param Ugnom: Номинальное напряжение генератора [Uг_ном];
+    :param cosFi: Номинальный коэффициент мощности [COS(Ф)_ном];
+    :param Demp: Коэффициент демпфирования [К_демп];
+    :param Mj: Механическая постоянная инерции генератора вместе с турбиной [Mj];
+    :param xd1: Переходное реактивное сопротивление по продольной оси [X'd];
+    :param xd: Синхронное реактивное сопротивление по продольной оси [Xd];
+    :param xq: Синхронное реактивное сопротивление по поперечной оси [Xq];
+    :param xd2: Сверхпереходное реактивное сопротивление по продольной оси [X"d];
+    :param xq2: Сверхпереходное реактивное сопротивление по поперечной оси [X"q];
+    :param td01: Переходная постоянная времени по продольной оси при разомкнутой обмотке статора [T'd0];
+    :param td02: Сверхпереходная постоянная времени по продольной оси при разомкнутой обмотке статора [T"d0];
+    :param tq02: Сверхпереходная постоянная времени по поперечной оси при разомкнутой обмотке статора [T"q0];
+    :param xq1: Переходное реактивное сопротивление по поперечной оси [X'q];
+    :param xl: Реактивное сопротивление рассеивания [X_l];
+    :param x2: Реактивное сопротивление сопротивление обратной последовательности [X2];
+    :param x0: Реактивное сопротивление сопротивление нулевой последовательности [X0];
+    :param tq01: Переходная постоянная времени по поперечной оси при разомкнутой обмотке статора [T'q0];
     :param switch_command_line: {Tools.switch_command_line_doc}
     :return: 
     """

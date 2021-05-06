@@ -40,7 +40,7 @@ class DFWDECS400:
     Del: str = 'Del'  # Самовозбуждение
 
 
-class DFWDECS400_Doc:
+class DFWDECS400_Description:
     """
 
     """

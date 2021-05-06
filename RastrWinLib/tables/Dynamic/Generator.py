@@ -115,14 +115,14 @@ class Generator:
     tq02: str = 'tq02'  # T"q0 Сверхпереходная постоянная времени по поперечной оси при разомкнутой обмотке статора
 
 
-class GeneratorsDoc:
+class GeneratorsDescription:
     """
 
     """
     gen = Generator()
 
     name_table: str = 'Таблица: Генераторы(ИД)'
-    row_id: str = ''
+    row_id: str = f'Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel'
     sta: str = f'Состояние генератора [S]-[{gen.sta}]'
     Num: str = f'Номер генератора [N]-[{gen.Num}]'
     Name: str = f'Название генератора [Название]-[{gen.Name}]'

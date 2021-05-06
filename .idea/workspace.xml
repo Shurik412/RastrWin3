@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ExciterFilling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CreatingDynamicModel/GeneratorsFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ARS.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ARS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DECS_400.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFW421UEL.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFW421UEL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS13.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWOELUNITROL.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWOELUNITROL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Exciter.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Exciter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,35 +82,14 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\FillingTable" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\ARV2M" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\EX2100" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\basket" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\AC5B" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tables\Settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Eurostag_Output_PSS">
-    <configuration name="ARV3M" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test_variable">
     <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,13 +174,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_variable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_variable" />
         <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.test_ARV3M" />
         <item itemvalue="Python.test_getting" />
         <item itemvalue="Python.test_settings" />
-        <item itemvalue="Python.ARV3M" />
       </list>
     </recent_temporary>
   </component>
@@ -201,13 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Corr modules ARV3M.py">
-      <created>1619634686131</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1619634686131</updated>
     </task>
     <task id="LOCAL-00087" summary="Finish create modules ARV3M.py">
       <created>1619689889778</created>
@@ -545,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620173265693</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Corr DFWIEEE421.py">
+      <created>1620247757293</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1620247757293</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,7 +573,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr KOSUR2_BSV.py" />
     <MESSAGE value="Create Prismic.py" />
     <MESSAGE value="Create ARS.py" />
     <MESSAGE value="Corr Hydrot.py" />
@@ -586,7 +597,8 @@
     <MESSAGE value="Full corr" />
     <MESSAGE value="Corr Generator.py" />
     <MESSAGE value="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py" />
+    <MESSAGE value="Corr DFWIEEE421.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr DFWIEEE421.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

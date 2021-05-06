@@ -110,7 +110,7 @@ class Variable:
 
         if self.switch_command_line and switch_command_line_def is not False:
             print(f'Внесены изменения:\n'
-                  f'\t таблица: <{table.Description}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
+                  f'\t таблица: <{table}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
                   f'\t значение => [{value}]')
         if self.switch_command_line is not False:
             print(Tools.separator_star)

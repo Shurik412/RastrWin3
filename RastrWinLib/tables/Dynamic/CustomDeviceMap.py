@@ -17,7 +17,7 @@ class CustomDeviceMap:
     SiblingLinkList: str = 'SiblingLinkList'  # Связи 2 Связи с ведущими
 
 
-class CustomDeviceMapDoc:
+class CustomDeviceMap_Description:
     """
 
     """
