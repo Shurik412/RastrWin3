@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Модуль заполнения таблицы  "Форсировка (ИД)" RastrWin3
+# Модуль заполнения таблицы  "ОМВ" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.tables.Dynamic.DFW421UEL import DFW421UEL, DFW421UEL_Description
