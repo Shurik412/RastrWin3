@@ -26,3 +26,10 @@ class Governor:
     K1: str = 'K1'  # K1 ОС
     K2: str = 'K2'  # K2 ОС
     BoilerId: str = 'BoilerId'  # N котла Номер котла
+
+
+class GovernorDescription:
+    """
+
+    """
+    pass
