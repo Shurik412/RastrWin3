@@ -69,3 +69,7 @@ class ExcControl:
 
     # Частота
     deltaF: str = 'deltaF'  # Отклонение частоты узла
+
+
+class ExcControlDescription:
+    pass

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARV_Filling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ExciterFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ExciterFilling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ExcControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/ExcControl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Finish create modules ARV3M.py">
-      <created>1619690988151</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1619690988151</updated>
     </task>
     <task id="LOCAL-00089" summary="Corr AC5B.py">
       <created>1619694111263</created>
@@ -544,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620307104874</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="Create ExciterFilling.py">
+      <created>1620325299231</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1620325299232</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -560,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create ARS.py" />
     <MESSAGE value="Corr Hydrot.py" />
     <MESSAGE value="Create BESSCH.py" />
     <MESSAGE value="Create gglite.py" />
@@ -585,7 +585,8 @@
     <MESSAGE value="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py" />
     <MESSAGE value="Corr DFWIEEE421.py" />
     <MESSAGE value="Corr Full table Dynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Full table Dynamic" />
+    <MESSAGE value="Create ExciterFilling.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create ExciterFilling.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
