@@ -12,15 +12,15 @@ load_file(file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTa
 var_ = Variable(switch_command_line=True)
 get_ = GettingParameter()
 xd11 = get_.get_cell_row(table=Generator.table,
-                         column=Generator.xd1,
+                         column=Generator.sel,
                          row_id=1)
 var_.make_changes_row(table=Generator.table,
-                      column=Generator.xd1,
+                      column=Generator.sel,
                       row_id=1,
-                      value=0.5)
+                      value=None)
 
 xd1 = get_.get_cell_row(table=Generator.table,
-                        column=Generator.xd1,
+                        column=Generator.sel,
                         row_id=1)
 print(f'xd11={xd11}')
 print(f'xd1={xd1}')
