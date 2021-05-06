@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARS_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ForcerFilling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARV_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARV_Filling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Forcer.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/Forcer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,13 +200,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Corr table -&gt; DFWIEEE421.py&#10;Corr ARV3M&#10;Corr AC5B.py">
-      <created>1619700187220</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1619700187220</updated>
     </task>
     <task id="LOCAL-00091" summary="&#10;Corr AC5B.py">
       <created>1619700275346</created>
@@ -543,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620329278650</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="Create ARS_Filling.py">
+      <created>1620330502597</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1620330502597</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,7 +560,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create BESSCH.py" />
     <MESSAGE value="Create gglite.py" />
     <MESSAGE value="Create gglite_strs.py" />
     <MESSAGE value="Create ARVSG_BSV.py" />
@@ -584,7 +584,8 @@
     <MESSAGE value="Corr Full table Dynamic" />
     <MESSAGE value="Create ExciterFilling.py" />
     <MESSAGE value="Create ARV_Filling.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create ARV_Filling.py" />
+    <MESSAGE value="Create ARS_Filling.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create ARS_Filling.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

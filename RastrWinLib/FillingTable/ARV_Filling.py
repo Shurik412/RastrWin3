@@ -60,7 +60,7 @@ def filling_ExcControl(
         U22: float = None,
         Alpha: float = None,
         dSudt: float = None,
-        deltaF: float = 'None',
+        deltaF: float = None,
         switch_command_line: bool = False):
     """
 
