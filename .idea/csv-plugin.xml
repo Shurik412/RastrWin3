@@ -192,6 +192,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\FillingTable\DFWIEEE421PSS13_Filling.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\FillingTable\DFWIEEE421PSS4B_Filling.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\ModelsARV\AC5B.py">
           <value>
             <Attribute>

@@ -53,9 +53,11 @@ def filling_DFWIEEE421PSS13(
         Vsi1max: float = None,
         Vsi1min: float = None,
         Vsi2max: float = None,
-        Vsi2min: float = None):
+        Vsi2min: float = None,
+        switch_command_line: bool = False):
     """
 
+    :param switch_command_line:
     :param rastr_win:
     :param row_id:
     :param sel:
