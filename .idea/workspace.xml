@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DECS400_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWTHYNE14_Filling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWTHYNE14.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWTHYNE14.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,13 +199,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Create class ShablonsRastrWin">
-      <created>1619780601042</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1619780601042</updated>
     </task>
     <task id="LOCAL-00098" summary="Create class Shabl&#10;Corr save.py">
       <created>1619780938175</created>
@@ -543,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620344583105</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="Create DECS400_Filling.py">
+      <created>1620382908999</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1620382908999</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,7 +559,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create THYRIPOL_6RV80_lite.py&#10;Create THYRIPOL_lite.py" />
     <MESSAGE value="Create U6800.py" />
     <MESSAGE value="Create U5000.py" />
     <MESSAGE value="Create ARVSDS.py" />
@@ -584,7 +583,8 @@
     <MESSAGE value="Create GovernorFilling.py" />
     <MESSAGE value="Create DFWIEEE421PSS13_Filling.py" />
     <MESSAGE value="Create DFWIEEE421PSS4B_Filling.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create DFWIEEE421PSS4B_Filling.py" />
+    <MESSAGE value="Create DECS400_Filling.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create DECS400_Filling.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

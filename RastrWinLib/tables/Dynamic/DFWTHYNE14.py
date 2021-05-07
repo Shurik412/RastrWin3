@@ -77,3 +77,8 @@ class DFWTHYNE14:
     VrMin: str = 'VrMin'  # Минимальное ограничение тиристорного моста
 
     Xp: str = 'Xp'  # Коэффициент обратной связи
+
+
+class DFWTHYNE14_Description:
+    """ """
+    pass
