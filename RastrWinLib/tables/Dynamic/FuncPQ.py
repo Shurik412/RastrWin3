@@ -7,3 +7,7 @@ class FuncPQ:
     Id: str = 'Id'  # N Номер Х-ки
     P: str = 'P'  # P
     Q: str = 'Q'  # Q
+
+
+class FuncPQ_Description:
+    pass

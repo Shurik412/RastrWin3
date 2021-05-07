@@ -206,6 +206,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\FillingTable\FuncPQ_Filling.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\ModelsARV\AC5B.py">
           <value>
             <Attribute>

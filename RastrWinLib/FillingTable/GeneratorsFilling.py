@@ -8,7 +8,7 @@ from RastrWinLib.variables.variable_parametrs import Variable
 
 def filling_generators(
         rastr_win=RASTR,
-        row_id: int=None,
+        row_id: int = None,
         sta: bool = None,
         Num: int = None,
         Name: str = None,
