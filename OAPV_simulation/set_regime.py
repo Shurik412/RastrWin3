@@ -5,12 +5,12 @@ from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_regime, shablon_file_dynamic
-from RastrWinLib.tables.tables_attributes import generator_table, generator_attributes_list
+from RastrWinLib.tables.Dynamic.Generator import Generator
+from RastrWinLib.tables.Node.node import Node
+from RastrWinLib.tables.Vetv.vetv import Vetv
 from RastrWinLib.variables.group_correction import GroupCorr
 from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
-from RastrWinLib.tables.Vetv.vetv import Vetv
-from RastrWinLib.tables.Node.node import Node
-from RastrWinLib.tables.Dynamic.Generator import Generator
+from RastrWinLib.tables.area.area import Area
 
 dir = r'L:\SER\Охрименко\03. RastrWin3\18'
 file_one_rg2 = rf'{dir}\4.rg2'
@@ -42,21 +42,26 @@ print(f'Max Gen file_one: {max_col_gen_file_one}')
 get_ = GettingParameter()
 
 for i in range(0, max_col_gen_file_one):
-    # файл 1
-    name_gen_file_one = get_.get_cell(table=generator_table, column=generator_attributes_list[3], row_id=i)
-    num_gen_file_one = get_.get_cell(table=generator_table, column=generator_attributes_list[4], row_id=i)
-    sta_gen_file_one = get_.get_cell(table=generator_table, column=generator_attributes_list[1], row_id=i)
-    p_gen_gen_file_one = get_.get_cell(table=generator_table, column=generator_attributes_list[5], row_id=i)
-    q_gen_gen_file_one = get_.get_cell(table=generator_table, column=generator_attributes_list[6], row_id=i)
+    """
+    Извлекает из файла rg2 (файл 1), Название, Номер, Состояние, P, Q из таблиццы Генераторы ИД
+    """
+    name_gen_file_one = get_.get_cell(table=Generator.table, column=Generator.Name, row_id=i)
+    num_gen_file_one = get_.get_cell(table=Generator.table, column=Generator.Num, row_id=i)
+    sta_gen_file_one = get_.get_cell(table=Generator.table, column=Generator.sta, row_id=i)
+    p_gen_gen_file_one = get_.get_cell(table=Generator.table, column=Generator.P, row_id=i)
+    q_gen_gen_file_one = get_.get_cell(table=Generator.table, column=Generator.Q, row_id=i)
 
-    # файл 2
-
+    """
+    Находит в файле rst (файл 2), генератор по номеру генератора из файла 1 rg2
+    Возвращает порядковый номер в таблице
+    """
     row_obj_gen_file_two = get_.get_row_gen(num_gen_file_one)
     row_gen_file_two = row_obj_gen_file_two
 
     if row_gen_file_two != (-1):
         p_gen_obj_gen_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
-        p_gen_gen_file_two = p_gen_obj_gen_file_two.make_changes_row(table=Generator.table, column=Generator.P,
+        p_gen_gen_file_two = p_gen_obj_gen_file_two.make_changes_row(table=Generator.table,
+                                                                     column=Generator.P,
                                                                      row_id=i)
 
         p_gen_obj_gen_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
@@ -199,8 +204,8 @@ for y in range(0, max_col_node_file_one):
 
         sta_node_obj_file_two_posle = Variable(rastr_win=two_rastr,
                                                switch_command_line=False)
-        sta_node_file_two_posle = sta_node_obj_file_two_posle.make_changes_row(table='node',
-                                                                               column='sta',
+        sta_node_file_two_posle = sta_node_obj_file_two_posle.make_changes_row(table=Node.table,
+                                                                               column=Node.sta,
                                                                                row_id=row_node_file_two)
 
         vzd_node_obj_file_two_posle = Variable(rastr_win=two_rastr,
@@ -214,43 +219,44 @@ for y in range(0, max_col_node_file_one):
 n.close()
 
 # ********** Районы ****************
-area_table_file_one = one_rastr.Tables("area")
+area_table_file_one = one_rastr.Tables(Area.table)
 max_col_area_file_one = area_table_file_one.Count - 1
 print(f'Max Area file_one: {max_col_area_file_one}')
 
 for x in range(0, max_col_area_file_one):
-    na_area_node_file_one = get_.get_cell(table='area', column='na', row_id=x)
+    na_area_node_file_one = get_.get_cell(table=Area.table, column=Area.na, row_id=x)
 
-    name_area_node_file_one = get_.get_cell(table='area', column='name', row_id=x)
+    name_area_node_file_one = get_.get_cell(table=Area.table, column=Area.name, row_id=x)
 
-    pg_area_node_file_one = get_.get_cell(table='area', column='pg', row_id=x)
+    pg_area_node_file_one = get_.get_cell(table=Area.table, column=Area.pg, row_id=x)
 
-    pn_area_file_one = get_.get_cell(table='area', column='pn', row_id=x)
+    pn_area_file_one = get_.get_cell(table=Area.table, column=Area.pn, row_id=x)
 
     if na_area_node_file_one > 0:
-        row_obj_area_file_two = FindNextSel(rastr_win=two_rastr, table='area', key=f"na={pn_area_file_one}")
+        row_obj_area_file_two = FindNextSel(rastr_win=two_rastr, table=Area.table, key=f"na={pn_area_file_one}")
         row_area_file_two = row_obj_area_file_two.row()
 
         if row_area_file_two != (-1):
-            na_file_two = get_two.get_cell(table='area', column='na', row_id=row_area_file_two)
+            na_file_two = get_two.get_cell(table=Area.table, column=Area.na, row_id=row_area_file_two)
 
-            pg_area_file_two = get_two.get_cell(table='area', column='pg', row_id=row_area_file_two)
+            pg_area_file_two = get_two.get_cell(table=Area.table, column=Area.pg, row_id=row_area_file_two)
 
             if pg_area_file_two > 0:
                 k_pg = pg_area_node_file_one / pg_area_file_two
             else:
                 k_pg = 1
 
-            grupCorr_pg_file_two = GroupCorr(rastr_win=two_rastr, table='node', column='pg', switch_command_line=True)
+            grupCorr_pg_file_two = GroupCorr(rastr_win=two_rastr, table=Node.table, column=Node.pg,
+                                             switch_command_line=True)
             grupCorr_pg_file_two.calc(key=f'na={na_file_two}', formula=f'pg*{k_pg}')
 
-            na_area_node_file_two = get_two.get_cell(table='area', column='na', row_id=row_area_file_two)
+            na_area_node_file_two = get_two.get_cell(table=Area.table, column=Area.na, row_id=row_area_file_two)
 
-            name_area_file_two = get_two.get_cell(table='area', column='name', row_id=row_area_file_two)
+            name_area_file_two = get_two.get_cell(table=Area.table, column=Area.name, row_id=row_area_file_two)
 
-            pg_area_node_file_two = get_two.get_cell(table='area', column='pg', row_id=row_area_file_two)
+            pg_area_node_file_two = get_two.get_cell(table=Area.table, column=Area.pg, row_id=row_area_file_two)
 
-            pn_area_node_file_two = get_two.get_cell(table='area', column='pn', row_id=row_area_file_two)
+            pn_area_node_file_two = get_two.get_cell(table=Area.table, column=Area.pn, row_id=row_area_file_two)
 
             area.write(
                 f'{x}. na_f1={na_area_node_file_one}; name_f1={name_area_node_file_one}; pg_f1={pg_area_node_file_one} => na_f2={na_area_node_file_two}; name_f2={name_area_file_two}; pg_f2={pg_area_node_file_two}; k_pg={k_pg}\n')
