@@ -11,7 +11,7 @@ from RastrWinLib.variables.variable_parametrs import Variable
 class CreateActionsSCN(Variable):
     def __init__(self, rastr_win, dir_name_file_excel, name_list_excel, switch_command_line=False):
         self.rastr_win = rastr_win
-        load_file(rastr_win=rastr_win, shablon=shablon_file_scenario)
+        load_file(rastr_win=rastr_win, shabl=shablon_file_scenario)
         excel_wb = load_workbook(filename=dir_name_file_excel, data_only=True)
         self.ws = excel_wb[name_list_excel]
         Variable.__init__(self, rastr_win=self.rastr_win,
@@ -157,11 +157,11 @@ class CreateActionsSCN(Variable):
 
     def save_scn(self, dir_file_name_save_scn=None, dir_file=None, name_save_scn=None, switch_command_line=False):
         if dir_file_name_save_scn is not None:
-            save_file(rastr_win=self.rastr_win, file_path=dir_file_name_save_scn, shablon=shablon_file_scenario,
+            save_file(rastr_win=self.rastr_win, file_path=dir_file_name_save_scn, shabl=shablon_file_scenario,
                       switch_command_line=switch_command_line)
         elif (dir_file is not None) and (name_save_scn is not None):
             save_file(rastr_win=self.rastr_win, file_path=f'{dir}/{name_save_scn}',
-                      shablon=shablon_file_scenario,
+                      shabl=shablon_file_scenario,
                       switch_command_line=switch_command_line)
 
 
@@ -174,7 +174,7 @@ if __name__ == '__main__':
     # from RastrWinLib.loading.load_file_rastrwin import load_file
 
     rastr = win32com.client.Dispatch('Astra.Rastr')
-    load_file(rastr_win=rastr, shablon=shablon_file_scenario)
+    load_file(rastr_win=rastr, shabl=shablon_file_scenario)
     filename = 'L:\\SER\\Охрименко\\03. RastrWinLib\\16\\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Восточная.xlsx'
     scn = CreateActionsSCN(rastr_win=rastr, name_list_excel='Сценарий', dir_name_file_excel=filename, )
     scn.create()

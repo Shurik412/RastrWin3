@@ -1,7 +1,7 @@
-import win32com.client
 from icecream import ic
 from openpyxl import load_workbook
 from openpyxl.chart import ScatterChart
+
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.dynamic import Dynamic
 from RastrWinLib.calculation.regim import SteadyState

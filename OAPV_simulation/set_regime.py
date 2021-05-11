@@ -1,13 +1,13 @@
 import win32com.client
 
 from RastrWinLib.calculation.regim import SteadyState
+from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_regime, shablon_file_dynamic
+from RastrWinLib.tables.tables_attributes import generator_table, generator_attributes_list
 from RastrWinLib.variables.group_correction import GroupCorr
 from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
-from RastrWinLib.getting.get import GettingParameter
-from RastrWinLib.tables.tables_attributes import generator_table, generator_attributes_list
 
 dir = r'L:\SER\Охрименко\03. RastrWin3\18'
 file_one_rg2 = rf'{dir}\4.rg2'
@@ -241,7 +241,7 @@ for x in range(0, max_col_area_file_one):
 
             na_area_node_file_two = get_two.get_cell(table='area', column='na', row_id=row_area_file_two)
 
-            name_area_file_two = get_two.get_cell(table='area', column='name',row_id=row_area_file_two)
+            name_area_file_two = get_two.get_cell(table='area', column='name', row_id=row_area_file_two)
 
             pg_area_node_file_two = get_two.get_cell(table='area', column='pg', row_id=row_area_file_two)
 
