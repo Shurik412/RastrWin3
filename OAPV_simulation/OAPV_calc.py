@@ -2,16 +2,16 @@ import win32com.client
 from icecream import ic
 from openpyxl import load_workbook
 from openpyxl.chart import ScatterChart
-
+from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.dynamic import Dynamic
 from RastrWinLib.calculation.regim import SteadyState
 from RastrWinLib.excel.chart import ChartExcelOtherSheet
 from RastrWinLib.export.export_data_rustab import ExportDataRUSTab
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import shablon_file_dynamic, shablon_file_scenario
+from RastrWinLib.tables.Node.node import Node
+from RastrWinLib.tables.Vetv.vetv import Vetv
 from create_file_scn import CreateActionsSCN
-
-# import emoji
 
 file_excel = r'L:\SER\Охрименко\03. RastrWinLib\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
 
@@ -29,7 +29,7 @@ dir_name_scn_one = rf'{ws_settings["B7"].value}\{ws_settings["B8"].value}'
 dir_name_scn_two = rf'{ws_settings["B7"].value}\{ws_settings["B9"].value}'
 
 # Формирует файлы сценарий.
-Rastr = win32com.client.Dispatch('Astra.Rastr')
+Rastr = RASTR
 
 scn_one = CreateActionsSCN(rastr_win=Rastr,
                            dir_name_file_excel=file_excel,
@@ -52,16 +52,16 @@ scn_two.save_scn(dir_file_name_save_scn=rf'{ws_settings["B7"].value}\{ws_setting
 file_rst_regim_one = fr'{ws_settings["B1"].value}\{ws_settings["B2"].value}'
 file_rst_regim_two = fr'{ws_settings["B4"].value}\{ws_settings["B5"].value}'
 
-# ***** начало, конец и номер параллельности ВЛ(ЛЭП)
+# ***** начало, конец и номер параллельности ВЛ(ЛЭП) *****
 ip = ws_scn["X25"].value
 iq = ws_scn["Z25"].value
 np = ws_scn["AB25"].value
 
-# ***** Узлы ПС1 и ПС2
+# ***** Узлы ПС1 и ПС2 *****
 node1 = ws_scn["T25"].value
 node2 = ws_scn["AE25"].value
 
-# ***** Время расчета
+# ***** Время расчета *****
 t_ras = float(ws_scn["N20"].value)
 
 # ***** < multiplication by -1 > *****
@@ -136,8 +136,8 @@ ws_3 = wb_w['Раздел 2.1']
 ws_4 = wb_w['Раздел 2.2']
 
 # 1. ********************* Режим 1 сценарий 1 ******************
-load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shablon=shablon_file_dynamic, switch_command_line=True)
-load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shablon=shablon_file_scenario, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=shablon_file_dynamic, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=shablon_file_scenario, switch_command_line=True)
 load_file(rastr_win=Rastr, switch_command_line=True)
 
 dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
@@ -148,10 +148,10 @@ dyn_obj.change_calc_time()
 dyn_obj.change_snap_max_count()
 dyn_obj.run()
 
-pq_data_r1_scn1 = ExportDataRUSTab(rastr_win=Rastr, table='vetv', switch_command_line=True)
-pl_ip_r1_scn1 = pq_data_r1_scn1.get_array(column='pl_ip',
+pq_data_r1_scn1 = ExportDataRUSTab(rastr_win=Rastr, table=Vetv.table, switch_command_line=True)
+pl_ip_r1_scn1 = pq_data_r1_scn1.get_array(column=Vetv.pl_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
-ql_ip_r1_scn1 = pq_data_r1_scn1.get_array(column='ql_ip',
+ql_ip_r1_scn1 = pq_data_r1_scn1.get_array(column=Vetv.ql_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
 for index, (par_pl_ip, par_t) in enumerate(pl_ip_r1_scn1):
@@ -161,9 +161,9 @@ for index, (par_pl_ip, par_t) in enumerate(pl_ip_r1_scn1):
 for index, (ql_ip, t) in enumerate(ql_ip_r1_scn1):
     ws_1[f'C{index + start_row}'] = ql_ip
 
-pl_iq_r1_scn1 = pq_data_r1_scn1.get_array(column='pl_iq',
+pl_iq_r1_scn1 = pq_data_r1_scn1.get_array(column=Vetv.pl_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
-ql_iq_r1_scn1 = pq_data_r1_scn1.get_array(column='ql_iq',
+ql_iq_r1_scn1 = pq_data_r1_scn1.get_array(column=Vetv.ql_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
 for index, (pl_iq, t) in enumerate(pl_iq_r1_scn1):
@@ -172,9 +172,9 @@ for index, (pl_iq, t) in enumerate(pl_iq_r1_scn1):
 for index, (ql_iq, t) in enumerate(ql_iq_r1_scn1):
     ws_1[f'E{index + start_row}'] = ql_iq
 
-u_angleU_r1_scn1_subs1 = ExportDataRUSTab(rastr_win=Rastr, table='node', switch_command_line=True)
-u_r1_scn1_node1 = u_angleU_r1_scn1_subs1.get_array(column='vras', key=f'ny={node1}')
-angleU_r1_scn1_node1 = u_angleU_r1_scn1_subs1.get_array(column='delta', key=f'ny={node1}')
+u_angleU_r1_scn1_subs1 = ExportDataRUSTab(rastr_win=Rastr, table=Node.table, switch_command_line=True)
+u_r1_scn1_node1 = u_angleU_r1_scn1_subs1.get_array(column=Node.vras, key=f'{Node.ny}={node1}')
+angleU_r1_scn1_node1 = u_angleU_r1_scn1_subs1.get_array(column=Node.delta, key=f'{Node.ny}={node1}')
 
 for index, (u_var_node1, t) in enumerate(u_r1_scn1_node1):
     ws_1[f'F{index + start_row}'] = u_var_node1
@@ -182,8 +182,8 @@ for index, (u_var_node1, t) in enumerate(u_r1_scn1_node1):
 for index, (angleU_node1, t) in enumerate(angleU_r1_scn1_node1):
     ws_1[f'G{index + start_row}'] = angleU_node1
 
-u_r1_scn1_node2 = u_angleU_r1_scn1_subs1.get_array(column='vras', key=f'ny={node2}')
-angleU_r1_scn1_node2 = u_angleU_r1_scn1_subs1.get_array(column='delta', key=f'ny={node2}')
+u_r1_scn1_node2 = u_angleU_r1_scn1_subs1.get_array(column=Node.vras, key=f'{Node.ny}={node2}')
+angleU_r1_scn1_node2 = u_angleU_r1_scn1_subs1.get_array(column=Node.delta, key=f'{Node.ny}={node2}')
 
 for index, (u_var_node2, t) in enumerate(u_r1_scn1_node2):
     ws_1[f'H{index + start_row}'] = u_var_node2
@@ -217,8 +217,8 @@ for i in range(start_row, ws_1.max_row - 2):
 wb_w.save(filename=file_excel)
 
 # 2. ********************* Режим 1 сценарий 2 ******************
-load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shablon=shablon_file_dynamic, switch_command_line=True)
-load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shablon=shablon_file_scenario, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=shablon_file_dynamic, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shabl=shablon_file_scenario, switch_command_line=True)
 load_file(rastr_win=Rastr, switch_command_line=True)
 
 rgm_obj.rgm()
@@ -226,10 +226,10 @@ dyn_obj.change_calc_time()
 dyn_obj.change_snap_max_count()
 dyn_obj.run()
 
-pq_data_r1_scn2 = ExportDataRUSTab(rastr_win=Rastr, table='vetv', switch_command_line=True)
-pl_ip_r1_scn2 = pq_data_r1_scn2.get_array(column='pl_ip',
+pq_data_r1_scn2 = ExportDataRUSTab(rastr_win=Rastr, table=Vetv.table, switch_command_line=True)
+pl_ip_r1_scn2 = pq_data_r1_scn2.get_array(column=Vetv.pl_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
-ql_ip_r1_scn2 = pq_data_r1_scn2.get_array(column='ql_ip',
+ql_ip_r1_scn2 = pq_data_r1_scn2.get_array(column=Vetv.ql_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
 for index, (pl_ip, t) in enumerate(pl_ip_r1_scn2):
@@ -239,9 +239,9 @@ for index, (pl_ip, t) in enumerate(pl_ip_r1_scn2):
 for index, (ql_ip, t) in enumerate(ql_ip_r1_scn2):
     ws_2[f'C{index + start_row}'] = ql_ip
 
-pl_iq_r1_scn2 = pq_data_r1_scn2.get_array(column='pl_iq',
+pl_iq_r1_scn2 = pq_data_r1_scn2.get_array(column=Vetv.pl_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
-ql_iq_r1_scn2 = pq_data_r1_scn2.get_array(column='ql_iq',
+ql_iq_r1_scn2 = pq_data_r1_scn2.get_array(column=Vetv.ql_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
 for index, (pl_iq, t) in enumerate(pl_iq_r1_scn2):
@@ -250,9 +250,9 @@ for index, (pl_iq, t) in enumerate(pl_iq_r1_scn2):
 for index, (ql_iq, t) in enumerate(ql_iq_r1_scn2):
     ws_2[f'E{index + start_row}'] = ql_iq
 
-u_angleU_r1_scn2 = ExportDataRUSTab(rastr_win=Rastr, table='node', switch_command_line=True)
-u_r1_scn2_node1 = u_angleU_r1_scn2.get_array(column='vras', key=f'(ny={node1})')
-angleU_r1_scn2_node1 = u_angleU_r1_scn2.get_array(column='delta', key=f'(ny={node1})')
+u_angleU_r1_scn2 = ExportDataRUSTab(rastr_win=Rastr, table=Node.table, switch_command_line=True)
+u_r1_scn2_node1 = u_angleU_r1_scn2.get_array(column=Node.vras, key=f'({Node.ny}={node1})')
+angleU_r1_scn2_node1 = u_angleU_r1_scn2.get_array(column=Node.delta, key=f'({Node.ny}={node1})')
 
 for index, (u_var_node1, t) in enumerate(u_r1_scn2_node1):
     ws_2[f'F{index + start_row}'] = u_var_node1
@@ -260,8 +260,8 @@ for index, (u_var_node1, t) in enumerate(u_r1_scn2_node1):
 for index, (angleU_node1, t) in enumerate(angleU_r1_scn2_node1):
     ws_2[f'G{index + start_row}'] = angleU_node1
 
-u_r1_scn2_node2 = u_angleU_r1_scn2.get_array(column='vras', key=f'(ny={node2})')
-angleU_r1_scn2_node2 = u_angleU_r1_scn2.get_array(column='delta', key=f'(ny={node2})')
+u_r1_scn2_node2 = u_angleU_r1_scn2.get_array(column=Node.vras, key=f'({Node.ny}={node2})')
+angleU_r1_scn2_node2 = u_angleU_r1_scn2.get_array(column=Node.delta, key=f'({Node.ny}={node2})')
 
 for index, (u_var_node2, t) in enumerate(u_r1_scn2_node2):
     ws_2[f'H{index + start_row}'] = u_var_node2
@@ -292,8 +292,8 @@ for i in range(start_row, ws_2.max_row + 1):
 wb_w.save(filename=file_excel)
 
 # 3. ********************* Режим 2 сценарий 1 ******************
-load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shablon=shablon_file_dynamic, switch_command_line=True)
-load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shablon=shablon_file_scenario, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=shablon_file_dynamic, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=shablon_file_scenario, switch_command_line=True)
 load_file(rastr_win=Rastr, switch_command_line=True)
 
 rgm_obj.rgm()
@@ -301,10 +301,10 @@ dyn_obj.change_calc_time()
 dyn_obj.change_snap_max_count()
 dyn_obj.run()
 
-pq_data_r2_scn1 = ExportDataRUSTab(rastr_win=Rastr, table='vetv', switch_command_line=True)
-pl_ip_r2_scn1 = pq_data_r2_scn1.get_array(column='pl_ip',
+pq_data_r2_scn1 = ExportDataRUSTab(rastr_win=Rastr, table=Vetv.table, switch_command_line=True)
+pl_ip_r2_scn1 = pq_data_r2_scn1.get_array(column=Vetv.pl_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
-ql_ip_r2_scn1 = pq_data_r2_scn1.get_array(column='ql_ip',
+ql_ip_r2_scn1 = pq_data_r2_scn1.get_array(column=Vetv.ql_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
 for index, (pl_ip, t) in enumerate(pl_ip_r2_scn1):
@@ -314,9 +314,9 @@ for index, (pl_ip, t) in enumerate(pl_ip_r2_scn1):
 for index, (ql_ip, t) in enumerate(ql_ip_r2_scn1):
     ws_3[f'C{index + start_row}'] = ql_ip
 
-pl_iq_r2_scn1 = pq_data_r2_scn1.get_array(column='pl_iq',
+pl_iq_r2_scn1 = pq_data_r2_scn1.get_array(column=Vetv.pl_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
-ql_iq_r2_scn1 = pq_data_r2_scn1.get_array(column='ql_iq',
+ql_iq_r2_scn1 = pq_data_r2_scn1.get_array(column=Vetv.ql_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
 for index, (pl_iq, t) in enumerate(pl_iq_r2_scn1):
@@ -325,9 +325,9 @@ for index, (pl_iq, t) in enumerate(pl_iq_r2_scn1):
 for index, (ql_iq, t) in enumerate(ql_iq_r2_scn1):
     ws_3[f'E{index + start_row}'] = ql_iq
 
-u_angleU_r2_scn1 = ExportDataRUSTab(rastr_win=Rastr, table='node', switch_command_line=True)
-u_r2_scn1_node1 = u_angleU_r2_scn1.get_array(column='vras', key=f'(ny={node1})')
-angleU_r2_scn1_node1 = u_angleU_r2_scn1.get_array(column='delta', key=f'(ny={node1})')
+u_angleU_r2_scn1 = ExportDataRUSTab(rastr_win=Rastr, table=Node.table, switch_command_line=True)
+u_r2_scn1_node1 = u_angleU_r2_scn1.get_array(column=Node.vras, key=f'({Node.ny}={node1})')
+angleU_r2_scn1_node1 = u_angleU_r2_scn1.get_array(column=Node.delta, key=f'({Node.ny}={node1})')
 
 for index, (u_var_node1, t) in enumerate(u_r2_scn1_node1):
     ws_3[f'F{index + start_row}'] = u_var_node1
@@ -335,8 +335,8 @@ for index, (u_var_node1, t) in enumerate(u_r2_scn1_node1):
 for index, (angleU_node1, t) in enumerate(angleU_r2_scn1_node1):
     ws_3[f'G{index + start_row}'] = angleU_node1
 
-u_r2_scn1_node2 = u_angleU_r2_scn1.get_array(column='vras', key=f'(ny={node2})')
-angleU_r2_scn1_node2 = u_angleU_r2_scn1.get_array(column='delta', key=f'(ny={node2})')
+u_r2_scn1_node2 = u_angleU_r2_scn1.get_array(column=Node.vras, key=f'({Node.ny}={node2})')
+angleU_r2_scn1_node2 = u_angleU_r2_scn1.get_array(column=Node.delta, key=f'({Node.ny}={node2})')
 
 for index, (u_var_node2, t) in enumerate(u_r2_scn1_node2):
     ws_3[f'H{index + start_row}'] = u_var_node2
@@ -367,8 +367,8 @@ for i in range(start_row, ws_3.max_row + 1):
 wb_w.save(filename=file_excel)
 
 # 4. ********************* Режим 2 сценарий 2 ******************
-load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shablon=shablon_file_dynamic, switch_command_line=True)
-load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shablon=shablon_file_scenario, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=shablon_file_dynamic, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shabl=shablon_file_scenario, switch_command_line=True)
 load_file(rastr_win=Rastr, switch_command_line=True)
 
 rgm_obj.rgm()
@@ -389,9 +389,9 @@ for index, (pl_ip, t) in enumerate(pl_ip_r2_scn2):
 for index, (ql_ip, t) in enumerate(ql_ip_r2_scn2):
     ws_4[f'C{index + start_row}'] = ql_ip
 
-pl_iq_r2_scn2 = pq_data_r2_scn2.get_array(column='pl_iq',
+pl_iq_r2_scn2 = pq_data_r2_scn2.get_array(column=Vetv.pl_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
-ql_iq_r2_scn2 = pq_data_r2_scn2.get_array(column='ql_iq',
+ql_iq_r2_scn2 = pq_data_r2_scn2.get_array(column=Vetv.ql_iq,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
 for index, (pl_iq, t) in enumerate(pl_iq_r2_scn2):
@@ -400,9 +400,9 @@ for index, (pl_iq, t) in enumerate(pl_iq_r2_scn2):
 for index, (ql_iq, t) in enumerate(ql_iq_r2_scn2):
     ws_4[f'E{index + start_row}'] = ql_iq
 
-u_angleU_r2_scn2 = ExportDataRUSTab(rastr_win=Rastr, table='node', switch_command_line=True)
-u_r2_scn2_node1 = u_angleU_r2_scn2.get_array(column='vras', key=f'(ny={node1})')
-angleU_r2_scn2_node1 = u_angleU_r2_scn2.get_array(column='delta', key=f'(ny={node1})')
+u_angleU_r2_scn2 = ExportDataRUSTab(rastr_win=Rastr, table=Node.table, switch_command_line=True)
+u_r2_scn2_node1 = u_angleU_r2_scn2.get_array(column=Node.vras, key=f'({Node.ny}={node1})')
+angleU_r2_scn2_node1 = u_angleU_r2_scn2.get_array(column=Node.delta, key=f'({Node.ny}={node1})')
 
 for index, (u_var_node1, t) in enumerate(u_r2_scn2_node1):
     ws_4[f'F{index + start_row}'] = u_var_node1
@@ -410,8 +410,8 @@ for index, (u_var_node1, t) in enumerate(u_r2_scn2_node1):
 for index, (angleU_node1, t) in enumerate(angleU_r2_scn2_node1):
     ws_4[f'G{index + start_row}'] = angleU_node1
 
-u_r2_scn2_node2 = u_angleU_r2_scn2.get_array(column='vras', key=f'(ny={node2})')
-angleU_r2_scn2_node2 = u_angleU_r2_scn2.get_array(column='delta', key=f'(ny={node2})')
+u_r2_scn2_node2 = u_angleU_r2_scn2.get_array(column=Node.vras, key=f'({Node.ny}={node2})')
+angleU_r2_scn2_node2 = u_angleU_r2_scn2.get_array(column=Node.delta, key=f'({Node.ny}={node2})')
 
 for index, (u_var_node2, t) in enumerate(u_r2_scn2_node2):
     ws_4[f'H{index + start_row}'] = u_var_node2
