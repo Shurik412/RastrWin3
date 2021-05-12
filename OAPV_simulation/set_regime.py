@@ -37,8 +37,7 @@ print(f'Max Gen file_one: {max_column_gen_file_one}')
 get_one = GettingParameter(rastr_win=one_rastr)
 get_two = GettingParameter(rastr_win=two_rastr)
 
-gen_fl = 0
-
+gen_fl = 1
 if gen_fl == 1:
     # ********** Генератор ****************
     for i in range(0, max_column_gen_file_one):
@@ -51,7 +50,6 @@ if gen_fl == 1:
         p_gen_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.P, row_id=i)
         q_gen_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.Q, row_id=i)
         p_nom_f1 = get_one.get_cell_row(table=Generator.table, column=Generator.Pnom, row_id=i)
-
         """
         Находит в файле rst (файл 2), генератор по номеру генератора из файла 1 rg2
         Возвращает порядковый номер в таблице
@@ -63,6 +61,9 @@ if gen_fl == 1:
             p_gen_gen_file_two = get_two.get_cell_row(table=Generator.table,
                                                       column=Generator.P,
                                                       row_id=row_gen_file_two)
+            node_F1 = get_two.get_cell_row(table=Generator.table,
+                                           column=Generator.Node,
+                                           row_id=row_gen_file_two)
 
             val_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
 
@@ -112,18 +113,22 @@ if vetv_fl == 1:
         ip_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.ip, row_id=j)
         iq_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.iq, row_id=j)
         np_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.np, row_id=j)
-        name_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.sta, row_id=j)
-        sta_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.name, row_id=j)
-
+        name_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.name, row_id=j)
+        sta_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.sta, row_id=j)
+        print(f'sta_vetv_file_one={sta_vetv_file_one}')
         # файл 2
-        row_vetv_file_two = get_two.get_row_vetv(ip=ip_vetv_file_one, iq=iq_vetv_file_one, np=np_vetv_file_one)
+        row_vetv_file_two = get_two.get_row_vetv(ip=ip_vetv_file_one,
+                                                 iq=iq_vetv_file_one,
+                                                 np=np_vetv_file_one)
 
         if row_vetv_file_two != (-1):
             sta_vetv_file_two_do = get_two.get_cell_row(table=Vetv.table,
                                                         column=Vetv.sta,
                                                         row_id=row_vetv_file_two)
 
-            var_vetv_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
+            var_vetv_file_two = Variable(rastr_win=two_rastr,
+                                         switch_command_line=False)
+
             var_vetv_file_two.make_changes_row(table=Vetv.table,
                                                column=Vetv.sta,
                                                row_id=row_vetv_file_two,
@@ -137,45 +142,37 @@ if vetv_fl == 1:
                 f'{j}. Row_id={row_vetv_file_two} - Name={name_vetv_file_one}: sta_FILE 1 = {sta_vetv_file_one} => sta_FILE 2 = {sta_vetv_file_two_do} => sta_FILE New = {sta_vetv_file_two_posle}\n')
     g.close()
 
-node_fl = 0
+node_fl = 1
 if node_fl == 1:
     # # ********** Узлы ****************
     node_table_file_one = one_rastr.Tables(Node.table)
     max_col_node_file_one = node_table_file_one.Count - 1
     print(f'Max Node file_one: {max_col_node_file_one}')
 
-    ny_obj_node_file_one = GettingParameter(rastr_win=one_rastr)
-    name_obj_node_file_one = GettingParameter(rastr_win=one_rastr)
-    sta_obj_node_file_one = GettingParameter(rastr_win=one_rastr)
-    vzd_obj_node_file_one = GettingParameter(rastr_win=one_rastr)
-    p_obj_node_file_one = GettingParameter(rastr_win=one_rastr)
-    q_obj_node_file_one = GettingParameter(rastr_win=one_rastr)
-
     for y in range(0, max_col_node_file_one):
         # файл 1
-        ny_node_file_one = ny_obj_node_file_one.get_cell_row(table=Node.table, column=Node.ny, row_id=y)
-        p_node_file_one = p_obj_node_file_one.get_cell_row(table=Node.table, column=Node.name, row_id=y)
-        q_node_file_one = q_obj_node_file_one.get_cell(table=Node.table, column=Node.sta, row_id=y)
-        name_node_file_one = name_obj_node_file_one.get_cell(table=Node.table, column=Node.vzd, row_id=y)
-        sta_node_file_one = sta_obj_node_file_one.get_cell(table=Node.table, column=Node.pg, row_id=y)
-        vzd_node_file_one = vzd_obj_node_file_one.get_cell(table=Node.table, column=Node.qg, row_id=y)
+        ny_node_file_one = get_one.get_cell_row(table=Node.table, column=Node.ny, row_id=y)
+        p_node_file_one = get_one.get_cell_row(table=Node.table, column=Node.name, row_id=y)
+        q_node_file_one = get_one.get_cell_row(table=Node.table, column=Node.sta, row_id=y)
+        name_node_file_one = get_one.get_cell_row(table=Node.table, column=Node.vzd, row_id=y)
+        sta_node_file_one = get_one.get_cell_row(table=Node.table, column=Node.pg, row_id=y)
+        vzd_node_file_one = get_one.get_cell_row(table=Node.table, column=Node.qg, row_id=y)
 
         # файл 2
-        get_two = GettingParameter(rastr_win=two_rastr)
         row_node_file_two = get_two.get_row_node(node_ny=ny_node_file_one)
 
         if row_node_file_two != (-1):
-            ny_node_file_two = get_two.get_cell(table=Node.table,
-                                                column=Node.ny,
-                                                row_id=row_node_file_two)
-
-            name_node_file_two = get_two.get_cell(table=Node.table,
-                                                  column=Node.name,
-                                                  row_id=row_node_file_two)
-
-            sta_node_file_two_do = get_two.get_cell(table=Node.table,
-                                                    column=Node.sta,
+            ny_node_file_two = get_two.get_cell_row(table=Node.table,
+                                                    column=Node.ny,
                                                     row_id=row_node_file_two)
+
+            name_node_file_two = get_two.get_cell_row(table=Node.table,
+                                                      column=Node.name,
+                                                      row_id=row_node_file_two)
+
+            sta_node_file_two_do = get_two.get_cell_row(table=Node.table,
+                                                        column=Node.sta,
+                                                        row_id=row_node_file_two)
 
             p_obj_node_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
             p_obj_node_file_two.make_changes_row(table=Node.table,
@@ -201,17 +198,13 @@ if node_fl == 1:
                                                    row_id=row_node_file_two,
                                                    value=vzd_node_file_one)
 
-            sta_node_obj_file_two_posle = Variable(rastr_win=two_rastr,
-                                                   switch_command_line=False)
-            sta_node_file_two_posle = sta_node_obj_file_two_posle.make_changes_row(table=Node.table,
-                                                                                   column=Node.sta,
-                                                                                   row_id=row_node_file_two)
+            sta_node_file_two_posle = get_two.get_cell_row(table=Node.table,
+                                                           column=Node.sta,
+                                                           row_id=row_node_file_two)
 
-            vzd_node_obj_file_two_posle = Variable(rastr_win=two_rastr,
-                                                   switch_command_line=False)
-            vzd_node_file_two_posle = vzd_node_obj_file_two_posle.make_changes_row(table=Node.table,
-                                                                                   column=Node.vzd,
-                                                                                   row_id=row_node_file_two)
+            vzd_node_file_two_posle = get_two.get_cell_row(table=Node.table,
+                                                           column=Node.vzd,
+                                                           row_id=row_node_file_two)
 
             n.write(
                 f'{y}. Row_id={row_node_file_two}; File_1: ny={ny_node_file_one}; name={name_node_file_one}; '
@@ -221,7 +214,6 @@ if node_fl == 1:
     n.close()
 
 area_fl = 0
-
 if area_fl == 1:
     # ********** Районы ****************
     area_table_file_one = one_rastr.Tables(Area.table)
