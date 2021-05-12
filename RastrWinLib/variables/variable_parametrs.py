@@ -71,6 +71,7 @@ class Variable:
                         col.SetZ(row_id, value)
                     else:
                         switch_command_line_def = False
+                        print(Tools.separator_noun)
                         print(
                             f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
                             f'возникла следующая ОШИБКА!'
@@ -79,8 +80,10 @@ class Variable:
                             f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
                             f'Не задано значение "value".'
                         )
+                        print(Tools.separator_noun)
                 else:
                     switch_command_line_def = False
+                    print(Tools.separator_noun)
                     print(
                         f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
                         f'возникла следующая ОШИБКА!')
@@ -88,8 +91,10 @@ class Variable:
                         f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
                         f'Не задано значение порядкового номера строки "row_id".'
                     )
+                    print(Tools.separator_noun)
             else:
                 switch_command_line_def = False
+                print(Tools.separator_noun)
                 print(
                     f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
                     f'возникла следующая ОШИБКА!'
@@ -98,20 +103,26 @@ class Variable:
                     f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
                     f'Не задано название колонки (столбца) "column".'
                 )
+                print(Tools.separator_noun)
         else:
             switch_command_line_def = False
+            print(Tools.separator_noun)
             print(
                 f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
                 f'возникла следующая ОШИБКА!.'
             )
-            print(f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
-                  f'Не задано название таблицы "table".'
-                  )
+            print(
+                f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                f'Не задано название таблицы "table".'
+            )
+            print(Tools.separator_noun)
 
         if self.switch_command_line and switch_command_line_def is not False:
-            print(f'Внесены изменения:\n'
-                  f'\t таблица: <{table}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
-                  f'\t значение => [{value}]')
+            print(
+                f'Внесены изменения:\n'
+                f'\t таблица: <{table}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
+                f'\t значение => [{value}]'
+            )
         if self.switch_command_line is not False:
             print(Tools.separator_star)
 
@@ -136,9 +147,10 @@ class Variable:
             table.SetSel(key)
             row_id = table.FindNextSel(-1)
             if row_id == (-1):
-                print(f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
-                      f'значение "row_id" равно -1.'
-                      )
+                print(
+                    f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
+                    f'значение "row_id" равно -1.'
+                )
                 print(' Значения заданой выборки - отсутствуют.')
             else:
                 if column is not None:
@@ -154,7 +166,8 @@ class Variable:
                               f'                   - параметр: [{column}]\n'
                               f'                   - индекс объекта: [{row_id}]\n'
                               f'                   - значение до: [{value_before}]\n'
-                              f'                   - значение после: [{value}]\n')
+                              f'                   - значение после: [{value}]\n'
+                              )
                 else:
                     print(f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: значение value = None.')
         else:

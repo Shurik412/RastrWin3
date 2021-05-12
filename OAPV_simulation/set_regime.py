@@ -1,6 +1,5 @@
 import win32com.client
 
-from RastrWinLib.calculation.regim import SteadyState
 from RastrWinLib.getting.get import GettingParameter
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
@@ -38,97 +37,107 @@ print(f'Max Gen file_one: {max_column_gen_file_one}')
 get_one = GettingParameter(rastr_win=one_rastr)
 get_two = GettingParameter(rastr_win=two_rastr)
 
-# ********** Генератор ****************
-for i in range(0, max_column_gen_file_one):
-    """
-    Извлекает из файла rg2 (файл 1), Название, Номер, Состояние, P, Q из таблиццы Генераторы ИД
-    """
-    name_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.Name, row_id=i)
-    num_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.Num, row_id=i)
-    sta_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.sta, row_id=i)
-    p_gen_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.P, row_id=i)
-    q_gen_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.Q, row_id=i)
+gen_fl = 0
 
-    """
-    Находит в файле rst (файл 2), генератор по номеру генератора из файла 1 rg2
-    Возвращает порядковый номер в таблице
-    """
-    row_obj_gen_file_two = get_two.get_row_gen(num_gen_file_one)
-    row_gen_file_two = row_obj_gen_file_two
-    print(f'row_gen_file_two={row_gen_file_two}')
-    if row_gen_file_two != (-1):
-        p_gen_gen_file_two = get_two.get_cell_row(table=Generator.table,
-                                                  column=Generator.P,
-                                                  row_id=row_gen_file_two)
+if gen_fl == 1:
+    # ********** Генератор ****************
+    for i in range(0, max_column_gen_file_one):
+        """
+        Извлекает из файла rg2 (файл 1), Название, Номер, Состояние, P, Q из таблиццы Генераторы ИД
+        """
+        name_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.Name, row_id=i)
+        num_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.Num, row_id=i)
+        sta_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.sta, row_id=i)
+        p_gen_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.P, row_id=i)
+        q_gen_gen_file_one = get_one.get_cell_row(table=Generator.table, column=Generator.Q, row_id=i)
+        p_nom_f1 = get_one.get_cell_row(table=Generator.table, column=Generator.Pnom, row_id=i)
 
-        val_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
+        """
+        Находит в файле rst (файл 2), генератор по номеру генератора из файла 1 rg2
+        Возвращает порядковый номер в таблице
+        """
+        row_obj_gen_file_two = get_two.get_row_gen(num_gen_file_one)
+        row_gen_file_two = row_obj_gen_file_two
 
-        val_file_two.make_changes_row(table=Generator.table,
-                                      column=Generator.P,
-                                      row_id=row_gen_file_two,
-                                      value=p_gen_gen_file_one)
+        if row_gen_file_two != (-1):
+            p_gen_gen_file_two = get_two.get_cell_row(table=Generator.table,
+                                                      column=Generator.P,
+                                                      row_id=row_gen_file_two)
 
-        val_file_two.make_changes_row(table=Generator.table,
-                                      column=Generator.Q,
-                                      row_id=row_gen_file_two,
-                                      value=q_gen_gen_file_one)
+            val_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
 
-        val_file_two.make_changes_row(table=Generator.table,
-                                      column=Generator.sta,
-                                      row_id=row_gen_file_two,
-                                      value=sta_gen_file_one)
+            val_file_two.make_changes_row(table=Generator.table,
+                                          column=Generator.P,
+                                          row_id=row_gen_file_two,
+                                          value=p_gen_gen_file_one)
 
-        name_gen_file_two = get_two.get_cell_row(table=Generator.table,
-                                                 column=Generator.Name,
-                                                 row_id=row_gen_file_two)
+            val_file_two.make_changes_row(table=Generator.table,
+                                          column=Generator.Q,
+                                          row_id=row_gen_file_two,
+                                          value=q_gen_gen_file_one)
 
-        p_gen_obj_gen_file_one_afte = Variable(rastr_win=two_rastr,
-                                               switch_command_line=False)
-        pg_after = p_gen_obj_gen_file_one_afte.make_changes_row(table=Generator.table,
-                                                                column=Generator.P,
-                                                                row_id=row_gen_file_two)
+            val_file_two.make_changes_row(table=Generator.table,
+                                          column=Generator.sta,
+                                          row_id=row_gen_file_two,
+                                          value=sta_gen_file_one)
 
-        f.write(f'{i}. Row_id={row_gen_file_two} - Num={num_gen_file_one} - Name={name_gen_file_one}:'
-                f' P до = {p_gen_gen_file_two} => P после = {pg_after}\n')
-f.close()
+            name_gen_file_two = get_two.get_cell_row(table=Generator.table,
+                                                     column=Generator.Name,
+                                                     row_id=row_gen_file_two)
 
-# ********** Ветвь ****************
-vetv_table_file_one = one_rastr.Tables(Vetv.table)
-max_col_vetv_file_one = vetv_table_file_one.Count - 1
-print(f'Max VETV file_one: {max_col_vetv_file_one}')
+            pg_after = get_two.get_cell_row(table=Generator.table,
+                                            column=Generator.P,
+                                            row_id=row_gen_file_two)
 
-for j in range(0, max_col_vetv_file_one):
-    # файл 1
-    ip_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.ip, row_id=j)
-    iq_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.iq, row_id=j)
-    np_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.np, row_id=j)
-    name_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.sta, row_id=j)
-    sta_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.name, row_id=j)
+            num_gen_file_two = get_two.get_cell_row(table=Generator.table,
+                                                    column=Generator.P,
+                                                    row_id=row_gen_file_two)
 
-    # файл 2
-    row_vetv_file_two = get_two.get_row_vetv(ip=ip_vetv_file_one, iq=iq_vetv_file_one, np=np_vetv_file_one)
+            p_nom_f2 = get_two.get_cell_row(table=Generator.table, column=Generator.Pnom, row_id=row_gen_file_two)
 
-    if row_vetv_file_two != (-1):
-        sta_vetv_file_two_do = get_two.get_cell_row(table=Vetv.table,
-                                                    column=Vetv.sta,
-                                                    row_id=row_vetv_file_two)
+            f.write(f'{i}. Row_id_F2={row_gen_file_two} - Num_F2={num_gen_file_two} - Num_F1={num_gen_file_one}; '
+                    f'Name_F2={name_gen_file_two} - Name_F1={name_gen_file_one}; Pnom_F1={p_nom_f1} - Pnom_F2={p_nom_f2}:'
+                    f' P до = {p_gen_gen_file_two} => P после = {pg_after}; \n')
+    f.close()
 
-        var_vetv_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
-        var_vetv_file_two.make_changes_row(table=Vetv.table,
-                                           column=Vetv.sta,
-                                           row_id=row_vetv_file_two,
-                                           value=sta_vetv_file_one)
+vetv_fl = 1
+if vetv_fl == 1:
+    # ********** Ветвь ****************
+    vetv_table_file_one = one_rastr.Tables(Vetv.table)
+    max_col_vetv_file_one = vetv_table_file_one.Count - 1
+    print(f'Max VETV file_one: {max_col_vetv_file_one}')
 
-        sta_vetv_file_two_posle = get_two.get_cell(table=Vetv.table,
-                                                   column=Vetv.sta,
-                                                   row_id=row_vetv_file_two)
+    for j in range(0, max_col_vetv_file_one):
+        # файл 1
+        ip_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.ip, row_id=j)
+        iq_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.iq, row_id=j)
+        np_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.np, row_id=j)
+        name_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.sta, row_id=j)
+        sta_vetv_file_one = get_one.get_cell_row(table=Vetv.table, column=Vetv.name, row_id=j)
 
-        g.write(
-            f'{j}. Row_id={row_vetv_file_two} - Name={name_vetv_file_one}: sta_FILE 1 = {sta_vetv_file_one} => sta_FILE 2 = {sta_vetv_file_two_do} => sta_FILE New = {sta_vetv_file_two_posle}\n')
-g.close()
+        # файл 2
+        row_vetv_file_two = get_two.get_row_vetv(ip=ip_vetv_file_one, iq=iq_vetv_file_one, np=np_vetv_file_one)
+
+        if row_vetv_file_two != (-1):
+            sta_vetv_file_two_do = get_two.get_cell_row(table=Vetv.table,
+                                                        column=Vetv.sta,
+                                                        row_id=row_vetv_file_two)
+
+            var_vetv_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
+            var_vetv_file_two.make_changes_row(table=Vetv.table,
+                                               column=Vetv.sta,
+                                               row_id=row_vetv_file_two,
+                                               value=sta_vetv_file_one)
+
+            sta_vetv_file_two_posle = get_two.get_cell_row(table=Vetv.table,
+                                                           column=Vetv.sta,
+                                                           row_id=row_vetv_file_two)
+
+            g.write(
+                f'{j}. Row_id={row_vetv_file_two} - Name={name_vetv_file_one}: sta_FILE 1 = {sta_vetv_file_one} => sta_FILE 2 = {sta_vetv_file_two_do} => sta_FILE New = {sta_vetv_file_two_posle}\n')
+    g.close()
 
 node_fl = 0
-
 if node_fl == 1:
     # # ********** Узлы ****************
     node_table_file_one = one_rastr.Tables(Node.table)
@@ -205,7 +214,10 @@ if node_fl == 1:
                                                                                    row_id=row_node_file_two)
 
             n.write(
-                f'{y}. Row_id={row_node_file_two}; File_1: ny={ny_node_file_one}; name={name_node_file_one}; sta={sta_node_file_one}; vzd={vzd_node_file_one} -> File_2 ny={ny_node_file_two}; name={name_node_file_two}; sta_FILE До = {sta_node_file_two_do} => sta_FILE New = {sta_node_file_two_posle}; vzd_posle={vzd_node_file_two_posle}\n')
+                f'{y}. Row_id={row_node_file_two}; File_1: ny={ny_node_file_one}; name={name_node_file_one}; '
+                f'sta={sta_node_file_one}; vzd={vzd_node_file_one} -> File_2 ny={ny_node_file_two}; '
+                f'name={name_node_file_two}; sta_FILE До = {sta_node_file_two_do} => sta_FILE New = {sta_node_file_two_posle};'
+                f' vzd_posle={vzd_node_file_two_posle}\n')
     n.close()
 
 area_fl = 0
@@ -226,8 +238,8 @@ if area_fl == 1:
         pn_area_file_one = get_.get_cell(table=Area.table, column=Area.pn, row_id=x)
 
         if na_area_node_file_one > 0:
-            row_obj_area_file_two = FindNextSel(rastr_win=two_rastr, table=Area.table, key=f"na={pn_area_file_one}")
-            row_area_file_two = row_obj_area_file_two.row()
+            row_obj_area_file_two = FindNextSel(rastr_win=two_rastr, table=Area.table)
+            row_area_file_two = row_obj_area_file_two.row(key=f"na={pn_area_file_one}")
 
             if row_area_file_two != (-1):
                 na_file_two = get_two.get_cell(table=Area.table, column=Area.na, row_id=row_area_file_two)
@@ -256,5 +268,5 @@ if area_fl == 1:
 
     area.close()
 
-save_file(rastr_win=two_rastr, file_path=rf'{dir_file}\Режим 14.rst',
+save_file(rastr_win=two_rastr, file_path=rf'{dir_file}\Режим 4.rst',
           shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
