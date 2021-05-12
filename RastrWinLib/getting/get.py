@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import RastrWinLib.tables.Dynamic.DFWIEEE421 as DFWIEEE421
-import RastrWinLib.tables.Dynamic.Generator as Generator
-import RastrWinLib.tables.Node.node as node
-import RastrWinLib.tables.Vetv.vetv as vetv
+from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.tables.Dynamic.Generator import Generator
+from RastrWinLib.tables.Node.node import Node
+from RastrWinLib.tables.Vetv.vetv import Vetv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.tools.tools import Tools
 
@@ -20,7 +20,7 @@ class GettingParameter:
     def __init__(self, rastr_win=RASTR):
         self.rastr_win = rastr_win
         f"""
-         :param rastr_win: {Tools.RastrDoc};
+         :param rastr_win: ;
         """
 
     def get_cell_row(self, table, column, row_id):
@@ -71,8 +71,8 @@ class GettingParameter:
         :param np: номер паралельности ветви;
         :return: row_vetv: номер строки в таблице ветви.
         """
-        table_ = self.rastr_win.Tables(vetv.table)
-        table_.SetSel(f'({vetv.ip}={ip};{vetv.iq}={iq};{vetv.np}={np})|({vetv.ip}={iq};{vetv.iq}={ip};{vetv.np}={np})')
+        table_ = self.rastr_win.Tables(Vetv.table)
+        table_.SetSel(f'({Vetv.ip}={ip};{Vetv.iq}={iq};{Vetv.np}={np})|({Vetv.ip}={iq};{Vetv.iq}={ip};{Vetv.np}={np})')
         row_vetv = table_.FindNextSel(-1)
         return row_vetv
 
@@ -82,8 +82,8 @@ class GettingParameter:
         :param node_ny: номер узла;
         :return: row_node: порядковый номер узла.
         """
-        table_ = self.rastr_win.Tables(node.table)
-        table_.SetSel(f'({node.ny}={node_ny})')
+        table_ = self.rastr_win.Tables(Node.table)
+        table_.SetSel(f'({Node.ny}={node_ny})')
         row_node = table_.FindNextSel(-1)
         return row_node
 
