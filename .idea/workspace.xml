@@ -4,6 +4,9 @@
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/vetv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\AC5B" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.set_regime">
+  <component name="RunManager" selected="Python.test_getting">
     <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_getting" />
         <item itemvalue="Python.set_regime" />
         <item itemvalue="Python.test_variable" />
         <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.test_ARV3M" />
-        <item itemvalue="Python.test_getting" />
       </list>
     </recent_temporary>
   </component>
@@ -199,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00108" summary="Corr THYNE_4.py">
-      <created>1620056331542</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1620056331542</updated>
     </task>
     <task id="LOCAL-00109" summary="Corr KOSUR2_BSV.py">
       <created>1620057013315</created>
@@ -543,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620802628998</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="Create set_regime.py">
+      <created>1620829742338</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1620829742338</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

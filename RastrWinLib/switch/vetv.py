@@ -67,3 +67,38 @@ class SwitchVetv:
                 print(f'\t\tОбъект ip={ip},iq={iq},np={np} уже отключен!')
         else:
             print(f'\t\tОбъект ip={ip},iq={iq},np={np} не найдет в таблице {self.table.Name}')
+
+    def on_row_id(self, row_id):
+        """
+
+        :param row_id:
+        :return:
+        """
+        if self.switch_command_line is not False:
+            print(f'Включение объекта row_id={row_id}')
+        if row_id != (-1) and row_id is not None:
+            switch_sta_on = self.table.Cols('sta').Z(row_id)
+            if switch_sta_on != 0:
+                self.table.Cols("sta").Calc("0")
+            else:
+                print(f'\t\tОбъект row_id={row_id} уже отключен!')
+        else:
+            print(f'\t\tОбъект row_id={row_id} не найдет в таблице {self.table.Name}')
+
+    def off_row_id(self, row_id):
+        """
+
+        :param row_id:
+        :return:
+        """
+        if self.switch_command_line is not False:
+            print(f'Отключение объекта row_id={row_id}')
+
+        if row_id != (-1) and row_id is not None:
+            switch_sta_off = self.table.Cols('sta').Z(row_id)
+            if switch_sta_off != 1:
+                self.table.Cols("sta").Calc("1")
+            else:
+                print(f'\t\tОбъект row_id={row_id} уже отключен!')
+        else:
+            print(f'\t\tОбъект row_id={row_id} не найдет в таблице {self.table.Name}')

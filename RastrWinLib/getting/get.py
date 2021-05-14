@@ -76,6 +76,20 @@ class GettingParameter:
         row_vetv = table_.FindNextSel(-1)
         return row_vetv
 
+    def get_row_vetv_a_node(self, ny):
+        """
+
+        :param ny: номер узла для которого тренбуется найти ветвь;
+        :return: row_vetv - порядковый номер ветви;
+        """
+        table_ = self.rastr_win.Tables(Vetv.table)
+        table_.SetSel(f'({Vetv.ip}={ny})|({Vetv.iq}={ny})')
+        row_vetv = table_.FindNextSel(-1)
+        if row_vetv != (-1):
+            return row_vetv
+        else:
+            print('Ветвь отсутствует в таблице ветвей!')
+
     def get_row_node(self, node_ny):
         """
         Метод get_row_node - возвращает порядковый номер узла.
@@ -108,3 +122,4 @@ class GettingParameter:
         table_.SetSel(f'{DFWIEEE421.Id}={Id}')
         row_vozb_IEEE = table_.FindNextSel(-1)
         return row_vozb_IEEE
+

@@ -10,6 +10,7 @@ from RastrWinLib.tables.Vetv.vetv import Vetv
 from RastrWinLib.tables.area.area import Area
 from RastrWinLib.variables.group_correction import GroupCorr
 from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
+from RastrWinLib.switch.vetv import SwitchVetv
 
 dir_file = r'L:\SER\Охрименко\03. RastrWin3\18'
 file_one_rg2 = rf'{dir_file}\4.rg2'
@@ -36,7 +37,9 @@ print(f'Max Gen file_one: {max_column_gen_file_one}')
 
 get_one = GettingParameter(rastr_win=one_rastr)
 get_two = GettingParameter(rastr_win=two_rastr)
-
+val_file_one = Variable(rastr_win=one_rastr, switch_command_line=False)
+val_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
+switch_two = SwitchVetv(rastr_win=two_rastr)
 gen_fl = 1
 if gen_fl == 1:
     # ********** Генератор ****************
@@ -61,11 +64,9 @@ if gen_fl == 1:
             p_gen_gen_file_two = get_two.get_cell_row(table=Generator.table,
                                                       column=Generator.P,
                                                       row_id=row_gen_file_two)
-            node_F1 = get_two.get_cell_row(table=Generator.table,
+            node_F2 = get_two.get_cell_row(table=Generator.table,
                                            column=Generator.Node,
                                            row_id=row_gen_file_two)
-
-            val_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
 
             val_file_two.make_changes_row(table=Generator.table,
                                           column=Generator.P,
@@ -99,6 +100,16 @@ if gen_fl == 1:
             f.write(f'{i}. Row_id_F2={row_gen_file_two} - Num_F2={num_gen_file_two} - Num_F1={num_gen_file_one}; '
                     f'Name_F2={name_gen_file_two} - Name_F1={name_gen_file_one}; Pnom_F1={p_nom_f1} - Pnom_F2={p_nom_f2}:'
                     f' P до = {p_gen_gen_file_two} => P после = {pg_after}; \n')
+
+            row_vetv_two_file = get_two.get_row_vetv_a_node(ny=node_F2)
+            if row_vetv_two_file is not None:
+                get_sta_vetv = get_two.get_cell_row(table=Vetv.table,
+                                                    column=Vetv.sta,
+                                                    row_id=row_vetv_two_file)
+                if get_sta_vetv is False:
+                    switch_two.on_row_id(row_id=row_vetv_two_file)
+                else:
+                    switch_two.off_row_id(row_id=row_vetv_two_file)
     f.close()
 
 vetv_fl = 1
@@ -126,13 +137,10 @@ if vetv_fl == 1:
                                                         column=Vetv.sta,
                                                         row_id=row_vetv_file_two)
 
-            var_vetv_file_two = Variable(rastr_win=two_rastr,
-                                         switch_command_line=False)
-
-            var_vetv_file_two.make_changes_row(table=Vetv.table,
-                                               column=Vetv.sta,
-                                               row_id=row_vetv_file_two,
-                                               value=sta_vetv_file_one)
+            val_file_two.make_changes_row(table=Vetv.table,
+                                          column=Vetv.sta,
+                                          row_id=row_vetv_file_two,
+                                          value=sta_vetv_file_one)
 
             sta_vetv_file_two_posle = get_two.get_cell_row(table=Vetv.table,
                                                            column=Vetv.sta,
@@ -174,29 +182,25 @@ if node_fl == 1:
                                                         column=Node.sta,
                                                         row_id=row_node_file_two)
 
-            p_obj_node_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
-            p_obj_node_file_two.make_changes_row(table=Node.table,
-                                                 column=Node.pg,
-                                                 row_id=row_node_file_two,
-                                                 value=p_node_file_one)
+            val_file_two.make_changes_row(table=Node.table,
+                                          column=Node.pg,
+                                          row_id=row_node_file_two,
+                                          value=p_node_file_one)
 
-            q_obj_node_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
-            q_obj_node_file_two.make_changes_row(table=Node.table,
-                                                 column=Node.qg,
-                                                 row_id=row_node_file_two,
-                                                 value=q_node_file_one)
+            val_file_two.make_changes_row(table=Node.table,
+                                          column=Node.qg,
+                                          row_id=row_node_file_two,
+                                          value=q_node_file_one)
 
-            sta_obj_node_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
-            sta_obj_node_file_two.make_changes_row(table=Node.table,
-                                                   column=Node.sta,
-                                                   row_id=row_node_file_two,
-                                                   value=sta_node_file_one)
+            val_file_two.make_changes_row(table=Node.table,
+                                          column=Node.sta,
+                                          row_id=row_node_file_two,
+                                          value=sta_node_file_one)
 
-            vzd_obj_node_file_two = Variable(rastr_win=two_rastr, switch_command_line=False)
-            vzd_obj_node_file_two.make_changes_row(table=Node.table,
-                                                   column=Node.vzd,
-                                                   row_id=row_node_file_two,
-                                                   value=vzd_node_file_one)
+            val_file_two.make_changes_row(table=Node.table,
+                                          column=Node.vzd,
+                                          row_id=row_node_file_two,
+                                          value=vzd_node_file_one)
 
             sta_node_file_two_posle = get_two.get_cell_row(table=Node.table,
                                                            column=Node.sta,
