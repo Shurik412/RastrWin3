@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import shablon_file_scenario
+from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.tables.tables_attributes import DFWAutoActionScn, DFWAutoActionScn_attributes_list, DFWAutoLogicScn, \
     DFWAutoLogicScn_attributes_list
 from RastrWinLib.variables.variable_parametrs import Variable
@@ -11,7 +11,7 @@ from RastrWinLib.variables.variable_parametrs import Variable
 class CreateActionsSCN(Variable):
     def __init__(self, rastr_win, dir_name_file_excel, name_list_excel, switch_command_line=False):
         self.rastr_win = rastr_win
-        load_file(rastr_win=rastr_win, shabl=shablon_file_scenario)
+        load_file(rastr_win=rastr_win, shabl=Shabl.shablon_file_scenario)
         excel_wb = load_workbook(filename=dir_name_file_excel, data_only=True)
         self.ws = excel_wb[name_list_excel]
         Variable.__init__(self, rastr_win=self.rastr_win,
@@ -25,7 +25,7 @@ class CreateActionsSCN(Variable):
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[0],
                                       row_id=index - start,
-                                      value=0)                          # Cocт
+                                      value=0)  # Cocт
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[1],
@@ -54,42 +54,42 @@ class CreateActionsSCN(Variable):
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[6],
                                       row_id=index - start,
-                                      value=self.ws[f'F{index}'].value)   # Тип объекта
+                                      value=self.ws[f'F{index}'].value)  # Тип объекта
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[7],
                                       row_id=index - start,
-                                      value=self.ws[f'G{index}'].value)   # Свойство объекта
+                                      value=self.ws[f'G{index}'].value)  # Свойство объекта
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[8],
                                       row_id=index - start,
-                                      value=self.ws[f'H{index}'].value)   # Ключ объекта
+                                      value=self.ws[f'H{index}'].value)  # Ключ объекта
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[9],
                                       row_id=index - start,
-                                      value=0)                             # Режим
+                                      value=0)  # Режим
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[10],
                                       row_id=index - start,
-                                      value=1)                              # N сраб
+                                      value=1)  # N сраб
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[11],
                                       row_id=index - start,
-                                      value=0)                              # Время начала
+                                      value=0)  # Время начала
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[12],
                                       row_id=index - start,
-                                      value=0)                              # Длительность
+                                      value=0)  # Длительность
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn,
                                       column=DFWAutoActionScn_attributes_list[13],
                                       row_id=index - start,
-                                      value=0)                              # Тэг упрощенного сценария
+                                      value=0)  # Тэг упрощенного сценария
 
     def create_log(self, start=4, finish=8, switch_command_line=False):
         Variable.__init__(self,

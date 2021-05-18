@@ -8,7 +8,7 @@ from RastrWinLib.calculation.regim import SteadyState
 from RastrWinLib.excel.chart import ChartExcelOtherSheet
 from RastrWinLib.export.export_data_rustab import ExportDataRUSTab
 from RastrWinLib.loading.load import load_file
-from RastrWinLib.loading.shablon import shablon_file_dynamic, shablon_file_scenario
+from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.tables.Node.node import Node
 from RastrWinLib.tables.Vetv.vetv import Vetv
 from create_file_scn import CreateActionsSCN
@@ -136,8 +136,8 @@ ws_3 = wb_w['Раздел 2.1']
 ws_4 = wb_w['Раздел 2.2']
 
 # 1. ********************* Режим 1 сценарий 1 ******************
-load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=shablon_file_dynamic, switch_command_line=True)
-load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=shablon_file_scenario, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=Shabl.shablon_file_scenario, switch_command_line=True)
 load_file(rastr_win=Rastr, switch_command_line=True)
 
 dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
@@ -292,8 +292,8 @@ for i in range(start_row, ws_2.max_row + 1):
 wb_w.save(filename=file_excel)
 
 # 3. ********************* Режим 2 сценарий 1 ******************
-load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=shablon_file_dynamic, switch_command_line=True)
-load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=shablon_file_scenario, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=Shabl.shablon_file_scenario, switch_command_line=True)
 load_file(rastr_win=Rastr, switch_command_line=True)
 
 rgm_obj.rgm()
@@ -367,8 +367,8 @@ for i in range(start_row, ws_3.max_row + 1):
 wb_w.save(filename=file_excel)
 
 # 4. ********************* Режим 2 сценарий 2 ******************
-load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=shablon_file_dynamic, switch_command_line=True)
-load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shabl=shablon_file_scenario, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
+load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shabl=Shabl.shablon_file_scenario, switch_command_line=True)
 load_file(rastr_win=Rastr, switch_command_line=True)
 
 rgm_obj.rgm()

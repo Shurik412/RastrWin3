@@ -20,6 +20,6 @@ class Sechen:
     lmax: str = 'lmax'  #
     lmin: str = 'lmin'  #
     Lrcv: str = 'Lrcv'  #
-    n_oes: str = 'n_oes'  #
+    n_oes: str = 'n_oes' #
     smax: str = 'smax'  #
     smin: str = 'smin'  #
