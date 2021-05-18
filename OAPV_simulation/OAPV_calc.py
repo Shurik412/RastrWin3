@@ -149,8 +149,10 @@ dyn_obj.change_snap_max_count()
 dyn_obj.run()
 
 pq_data_r1_scn1 = ExportDataRUSTab(rastr_win=Rastr, table=Vetv.table, switch_command_line=True)
+
 pl_ip_r1_scn1 = pq_data_r1_scn1.get_array(column=Vetv.pl_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
+
 ql_ip_r1_scn1 = pq_data_r1_scn1.get_array(column=Vetv.ql_ip,
                                           key=f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})')
 
@@ -193,26 +195,6 @@ for index, (angleU_node2, t) in enumerate(angleU_r1_scn1_node2):
 
 for i in range(start_row, ws_1.max_row + 1):
     ws_1[f'J{i}'] = f'=I{i}-G{i}'
-
-ic(ws_1.max_row - 2)
-ic(ws_1.max_row)
-for i in range(start_row, ws_1.max_row - 2):
-    ic(i)
-    p_1_1_1 = ws_1[f'B{i}'].value
-    j = float(p_1_1_1) * direction_regim_one_ps_one
-    ws_1[f'B{i}'] = j
-
-    q_1_1_1 = ws_1[f'C{i}'].value
-    j = float(q_1_1_1) * direction_regim_one_ps_one
-    ws_1[f'C{i}'] = j
-
-    p_1_1_2 = ws_1[f'D{i}'].value
-    j = float(p_1_1_2) * direction_regim_one_ps_two
-    ws_1[f'D{i}'] = j
-
-    q_1_1_2 = ws_1[f'E{i}'].value
-    j = float(q_1_1_2) * direction_regim_one_ps_two
-    ws_1[f'E{i}'] = j
 
 wb_w.save(filename=file_excel)
 

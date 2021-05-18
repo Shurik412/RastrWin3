@@ -10,17 +10,20 @@ from RastrWinLib.variables.variable_parametrs import Variable
 
 class CreateActionsSCN(Variable):
     def __init__(self, rastr_win, dir_name_file_excel, name_list_excel, switch_command_line=False):
+
         self.rastr_win = rastr_win
         load_file(rastr_win=rastr_win, shabl=Shabl.shablon_file_scenario)
         excel_wb = load_workbook(filename=dir_name_file_excel, data_only=True)
         self.ws = excel_wb[name_list_excel]
+
         Variable.__init__(self, rastr_win=self.rastr_win,
                           switch_command_line=switch_command_line)
 
     def create(self, table=DFWAutoActionScn.table, start=14, finish=32):
-        table.DelRows()
+        table_ = self.rastr_win.Tables(table)
+        table_.DelRows()
         for index in range(start, finish):
-            table.AddRow()
+            table_.AddRow()
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn.table,
                                       column=DFWAutoActionScn.State,
@@ -28,12 +31,12 @@ class CreateActionsSCN(Variable):
                                       value=0)  # Cocт
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn.table,
-                                      column=DFWAutoActionScn.ParentId,
+                                      column=DFWAutoActionScn.Id,
                                       row_id=index - start,
-                                      value=self.ws[f'A{index}'].value)  # Id группы
+                                      value=self.ws[f'A{index}'].value)  # N
             Variable.make_changes_row(self,
                                       table=DFWAutoActionScn.table,
-                                      column=DFWAutoActionScn.Id,
+                                      column=DFWAutoActionScn.ParentId,
                                       row_id=index - start,
                                       value=self.ws[f'B{index}'].value)  # N группы
             Variable.make_changes_row(self,
@@ -92,13 +95,15 @@ class CreateActionsSCN(Variable):
                                       value=0)  # Тэг упрощенного сценария
 
     def create_log(self, start=4, finish=8, switch_command_line=False):
+
         Variable.__init__(self,
                           rastr_win=self.rastr_win,
                           switch_command_line=switch_command_line)
-        table = DFWAutoLogicScn.table
-        table.DelRows()
+
+        table_ = self.rastr_win.Tables(DFWAutoLogicScn.table)
+        table_.DelRows()
         for index in range(start, finish):
-            table.AddRow()
+            table_.AddRow()
             Variable.make_changes_row(self,
                                       table=DFWAutoLogicScn.table,
                                       column=DFWAutoLogicScn.Id,

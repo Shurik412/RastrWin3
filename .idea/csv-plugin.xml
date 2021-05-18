@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\OAPV_simulation\create_file_scn.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\OAPV_simulation\set_regime.py">
           <value>
             <Attribute>

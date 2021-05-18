@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Scenario/DFWAutoActionScn.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Scenario/DFWAutoActionScn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Scenario/DFWAutoLogicScn.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Scenario/DFWAutoLogicScn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Corr Hydrot.py">
-      <created>1620057955246</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1620057955246</updated>
     </task>
     <task id="LOCAL-00113" summary="Create BESSCH.py">
       <created>1620113918166</created>
@@ -545,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621340539182</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="Create DFWAutoLogicScn.py">
+      <created>1621342132539</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1621342132539</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr Generator.py" />
     <MESSAGE value="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py" />
     <MESSAGE value="Corr DFWIEEE421.py" />
     <MESSAGE value="Corr Full table Dynamic" />
@@ -586,7 +585,8 @@
     <MESSAGE value="Create def -&gt; get.py, vetv.py&#10;Corr set_regime.py" />
     <MESSAGE value="Corr dynamic.py" />
     <MESSAGE value="Create DFWAutoActionScn.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create DFWAutoActionScn.py" />
+    <MESSAGE value="Create DFWAutoLogicScn.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create DFWAutoLogicScn.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,6 +595,11 @@
           <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
           <line>19</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
