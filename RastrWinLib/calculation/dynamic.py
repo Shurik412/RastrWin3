@@ -2,9 +2,7 @@
 from time import time, localtime, strftime
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Settings.com_dynamics import SnapMaxCount
-from RastrWinLib.tables.Settings.com_dynamics import Tras
-from RastrWinLib.tables.Settings.com_dynamics import table as com_dynamics_table
+from RastrWinLib.tables.Settings.com_dynamics import ComDynamics
 from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
 
@@ -36,8 +34,8 @@ class Dynamic:
         settlement_time = Variable(rastr_win=self.rastr_win,
                                    switch_command_line=True)
 
-        settlement_time.make_changes_row(table=com_dynamics_table,
-                                         column=Tras,
+        settlement_time.make_changes_row(table=ComDynamics.table,
+                                         column=ComDynamics.Tras,
                                          row_id=0,
                                          value=self.calc_time)
 
@@ -45,8 +43,8 @@ class Dynamic:
         snap_max_count = Variable(rastr_win=self.rastr_win,
                                   switch_command_line=True)
 
-        snap_max_count.make_changes_row(table=com_dynamics_table,
-                                        column=SnapMaxCount,
+        snap_max_count.make_changes_row(table=ComDynamics.table,
+                                        column=ComDynamics.SnapMaxCount,
                                         row_id=0,
                                         value=self.snap_max_count)
 
@@ -59,7 +57,7 @@ class Dynamic:
         print(f'Запуск расчета ЭМПП:')
         self.FWDynamic.Run()
         if self.switch_command_line is not False:
-            settlement_time = self.rastr_win.Tables(com_dynamics_table).Cols(Tras).Z(0)
+            settlement_time = self.rastr_win.Tables(ComDynamics.table).Cols(ComDynamics.Tras).Z(0)
             print(f'\tВремя расчета (T_расч): {float(settlement_time)}')
             print(f'\tСообщение о результатх расчета ЭМПП: {self.ResultMessage}')
             if self.ResultMessage == '':

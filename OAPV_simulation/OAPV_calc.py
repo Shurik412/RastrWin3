@@ -13,7 +13,7 @@ from RastrWinLib.tables.Node.node import Node
 from RastrWinLib.tables.Vetv.vetv import Vetv
 from create_file_scn import CreateActionsSCN
 
-file_excel = r'L:\SER\Охрименко\03. RastrWinLib\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
+file_excel = r'L:\SER\Охрименко\03. RastrWin3\18\ВЛ 500 кВ Борино-Воронежская.xlsx'
 
 list_coordinates_of_graphs = [('B2', 'S2', 'AJ2', 'BB2', 'Раздел 1.1'),
                               ('B36', 'S36', 'AJ36', 'BB36', 'Раздел 1.2'),

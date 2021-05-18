@@ -101,18 +101,24 @@ if gen_fl == 1:
                     f'Name_F2={name_gen_file_two} - Name_F1={name_gen_file_one}; Pnom_F1={p_nom_f1} - Pnom_F2={p_nom_f2}:'
                     f' P до = {p_gen_gen_file_two} => P после = {pg_after}; \n')
 
-            row_vetv_two_file = get_two.get_row_vetv_a_node(ny=node_F2)
-            if row_vetv_two_file is not None:
-                get_sta_vetv = get_two.get_cell_row(table=Vetv.table,
-                                                    column=Vetv.sta,
-                                                    row_id=row_vetv_two_file)
-                if get_sta_vetv is False:
-                    switch_two.on_row_id(row_id=row_vetv_two_file)
-                else:
-                    switch_two.off_row_id(row_id=row_vetv_two_file)
+            # sta_gen_two = get_two.get_cell_row(table=Generator.table,
+            #                                    column=Generator.sta,
+            #                                    row_id=row_gen_file_two)
+            #
+            # print(f'sta_gen_two={sta_gen_two}')
+            #
+            # if sta_gen_two != 0:
+            #     row_vetv_two_file = get_two.get_row_vetv_a_node(ny=node_F2)
+            #     if row_vetv_two_file is not None:
+            #         get_sta_vetv = get_two.get_cell_row(table=Vetv.table,
+            #                                             column=Vetv.sta,
+            #                                             row_id=row_vetv_two_file)
+            #         if get_sta_vetv is False:
+            #             switch_two.on_row_id(row_id=row_vetv_two_file)
+
     f.close()
 
-vetv_fl = 1
+vetv_fl = 0
 if vetv_fl == 1:
     # ********** Ветвь ****************
     vetv_table_file_one = one_rastr.Tables(Vetv.table)
@@ -150,7 +156,7 @@ if vetv_fl == 1:
                 f'{j}. Row_id={row_vetv_file_two} - Name={name_vetv_file_one}: sta_FILE 1 = {sta_vetv_file_one} => sta_FILE 2 = {sta_vetv_file_two_do} => sta_FILE New = {sta_vetv_file_two_posle}\n')
     g.close()
 
-node_fl = 1
+node_fl = 0
 if node_fl == 1:
     # # ********** Узлы ****************
     node_table_file_one = one_rastr.Tables(Node.table)
