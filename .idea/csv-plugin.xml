@@ -234,6 +234,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\export\export_data_rustab.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\getting\get.py">
           <value>
             <Attribute>
@@ -501,6 +508,13 @@
           </value>
         </entry>
         <entry key="\RastrWinLib\tests\test_getting.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tests\test_py.py">
           <value>
             <Attribute>
               <option name="separator" value="," />

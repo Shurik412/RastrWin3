@@ -19,7 +19,7 @@ class CreateActionsSCN(Variable):
         Variable.__init__(self, rastr_win=self.rastr_win,
                           switch_command_line=switch_command_line)
 
-    def create(self, table=DFWAutoActionScn.table, start=14, finish=32):
+    def create(self, table=DFWAutoActionScn.table, start=14, finish=31):
         table_ = self.rastr_win.Tables(table)
         table_.DelRows()
         for index in range(start, finish):

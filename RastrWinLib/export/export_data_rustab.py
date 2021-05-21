@@ -32,9 +32,48 @@ class ExportDataRUSTab:
         """
         self.table.SetSel(key)
         row_id = self.table.FindNextSel(-1)
+        if row_id != (-1):
+            result = self.rastr_win.GetChainedGraphSnapshot(self.table.Name, column, row_id, 0)
+        else:
+            result = -1
+            print(f'row_id = -1.')
+
         if self.switch_command_line is not False:
             print(Tools.separator_noun)
             print(f'Получены результаты расчета: \n'
                   f'\t\t- из таблицы: "{self.table_name}", параметра "{column}" => "{key}"')
             print(Tools.separator_noun)
-        return self.rastr_win.GetChainedGraphSnapshot(self.table.Name, column, row_id, 0)
+        return result
+
+
+def get_array(column: str,
+              key: str,
+              table: str,
+              rastr_win=RASTR,
+              switch_command_line=False):
+    """
+    :param switch_command_line:
+    :param rastr_win:
+    :param table:
+    :param column: колонка (столбец) RastrWin3;
+    :param key: выборка для получения порядкового номера ("Num=21312312");
+    :return: возвращает массив параметра (column) и времени (f=Par(t))
+    """
+    table_name = table
+    rastr_win = rastr_win
+    table_ = rastr_win.Tables(table)
+    switch_command_line = switch_command_line
+    table_.SetSel(key)
+    row_id = table_.FindNextSel(-1)
+
+    if row_id != (-1):
+        result_ = rastr_win.GetChainedGraphSnapshot(table_name, column, row_id, 0)
+    else:
+        result_ = -1
+
+    if switch_command_line is not False:
+        print(Tools.separator_noun)
+        print(f'Получены результаты расчета: \n'
+              f'\t\t- из таблицы: "{table_name}", параметра "{column}" => "{key}"')
+        print(Tools.separator_noun)
+    return result_
