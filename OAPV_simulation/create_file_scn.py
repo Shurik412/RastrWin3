@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from openpyxl import load_workbook
 
 from RastrWinLib.loading.load import load_file
