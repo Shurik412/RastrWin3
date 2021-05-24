@@ -7,14 +7,14 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.dynamic import Dynamic
 from RastrWinLib.calculation.regim import SteadyState
 from RastrWinLib.excel.chart import ChartExcelOtherSheet
-from RastrWinLib.export.export_data_rustab import ExportDataRUSTab, get_array
+from RastrWinLib.export.export_data_rustab import ExportDataRUSTab
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.tables.Node.node import Node
 from RastrWinLib.tables.Vetv.vetv import Vetv
 from create_file_scn import CreateActionsSCN
 
-file_excel = r'L:\SER\Охрименко\03. RastrWin3\18\ВЛ 500 кВ Борино-Воронежская.xlsx'
+file_excel = r'L:\SER\Охрименко\03. RastrWin3\19\ВЛ 500 кВ Нововоронежская АЭС – Воронежская.xlsx'
 
 list_coordinates_of_graphs = [('B2', 'S2', 'AJ2', 'BB2', 'Раздел 1.1'),
                               ('B36', 'S36', 'AJ36', 'BB36', 'Раздел 1.2'),
@@ -143,7 +143,7 @@ ws_4 = wb_w['Раздел 2.2']
 dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
 rgm_obj = SteadyState(rastr_win=Rastr, par="", switch_command_line=True)
 
-fl_1_1 = 0
+fl_1_1 = 1
 if fl_1_1 == 1:
     # 1. ********************* Режим 1 сценарий 1 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
@@ -272,7 +272,7 @@ if fl_1_2 == 1:
 
     wb_w.save(filename=file_excel)
 
-fl_1_3 = 0
+fl_1_3 = 1
 if fl_1_3 == 1:
     # 3. ********************* Режим 2 сценарий 1 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
@@ -332,7 +332,7 @@ if fl_1_3 == 1:
 
     wb_w.save(filename=file_excel)
 
-fl_1_4 = 0
+fl_1_4 = 1
 if fl_1_4 == 1:
 
     # 4. ********************* Режим 2 сценарий 2 ******************

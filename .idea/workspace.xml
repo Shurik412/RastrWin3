@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_graphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\AC5B" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.OAPV_calc">
+  <component name="RunManager" selected="Python.test_RunDynamic">
     <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,6 +113,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/set_regime.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_RunDynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,34 +184,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_variable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_RunDynamic" />
         <item itemvalue="Python.OAPV_calc" />
         <item itemvalue="Python.test_py" />
         <item itemvalue="Python.set_regime" />
         <item itemvalue="Python.test_getting" />
-        <item itemvalue="Python.test_variable" />
       </list>
     </recent_temporary>
   </component>
@@ -203,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00114" summary="Create gglite.py">
-      <created>1620114186811</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1620114186811</updated>
     </task>
     <task id="LOCAL-00115" summary="Create gglite_strs.py">
       <created>1620114521503</created>
@@ -547,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621344386146</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="Full Corr">
+      <created>1621586153145</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1621586153145</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,7 +562,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py" />
     <MESSAGE value="Corr DFWIEEE421.py" />
     <MESSAGE value="Corr Full table Dynamic" />
     <MESSAGE value="Create ExciterFilling.py" />
@@ -588,7 +586,8 @@
     <MESSAGE value="Create DFWAutoActionScn.py" />
     <MESSAGE value="Create DFWAutoLogicScn.py" />
     <MESSAGE value="Corr OAPV_calc.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr OAPV_calc.py" />
+    <MESSAGE value="Full Corr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full Corr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
