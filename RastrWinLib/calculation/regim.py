@@ -51,6 +51,6 @@ class SteadyState:
             time_calc = time() - start_time
             print(
                 f'\tВремя расчета режима: {strftime("M: %M [минут] S: %S [секунд]", localtime(time_calc))} '
-                f'(Seconds: {"%.2f" % (time_calc)} [секунд])')
+                f'(Seconds: {"%.2f" % time_calc} [секунд])')
         print(Tools.separator_noun)
         return kod

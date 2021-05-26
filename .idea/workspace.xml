@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Scenario/DFWAutoLogicScn.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Scenario/DFWAutoLogicScn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Sechen/sechen.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Sechen/sechen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00119" summary="Create ARVNL_BSV.py&#10;Create ARVNL_static.py">
-      <created>1620118151616</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1620118151616</updated>
     </task>
     <task id="LOCAL-00120" summary="Create THYRIPOL_6RV80_lite.py&#10;Create THYRIPOL_lite.py">
       <created>1620119182222</created>
@@ -543,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622018158783</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="Corr create_copy_file_SMZU_with_date.py">
+      <created>1622032898143</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1622032898144</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,7 +563,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create ARV_Filling.py" />
     <MESSAGE value="Create ARS_Filling.py" />
     <MESSAGE value="Create ForcerFilling.py" />
     <MESSAGE value="Create DFW421UEL_Filling.py" />
@@ -584,7 +587,8 @@
     <MESSAGE value="Delete test OAPV_sim" />
     <MESSAGE value="Add # -*- coding: utf-8 -*-" />
     <MESSAGE value="Create create_copy_file_SMZU_with_date.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create create_copy_file_SMZU_with_date.py" />
+    <MESSAGE value="Corr create_copy_file_SMZU_with_date.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr create_copy_file_SMZU_with_date.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

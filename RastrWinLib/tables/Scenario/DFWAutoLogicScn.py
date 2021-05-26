@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # Модуль переменных параметров тыблицы "Сценарий-Логика" RastrWin3
 
-
 class DFWAutoLogicScn:
     """
 

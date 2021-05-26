@@ -54,10 +54,10 @@ def get_array(column: str,
     """
     :param switch_command_line:
     :param rastr_win:
-    :param table:
+    :param table: таблицпа RastrWin;
     :param column: колонка (столбец) RastrWin3;
     :param key: выборка для получения порядкового номера ("Num=21312312");
-    :return: возвращает массив параметра (column) и времени (f=Par(t))
+    :return: возвращает массив параметра (column) и времени (f=Par(t));
     """
     table_name = table
     rastr_win = rastr_win

@@ -444,6 +444,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tables\area\area.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tables\com_dynamics.py">
           <value>
             <Attribute>
