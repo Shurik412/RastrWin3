@@ -11,7 +11,7 @@ class Dynamic:
 
     def __init__(self, rastr_win=RASTR,
                  calc_time: float = 1.0,
-                 snap_max_count: int = 1,
+                 snap_max_count=1,
                  switch_command_line=False):
         f"""
         Функции для расчтета ЭМПП доступны в интерфейсе IFWDynamic.
@@ -32,7 +32,6 @@ class Dynamic:
         if self.snap_max_count == 1.0:
             snap_max_count = Variable(rastr_win=self.rastr_win,
                                       switch_command_line=self.switch_command_line)
-
             snap_max_count.make_changes_row(table=ComDynamics.table,
                                             column=ComDynamics.SnapMaxCount,
                                             row_id=0,

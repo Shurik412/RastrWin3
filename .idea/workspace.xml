@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\AC5B" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_RunDynamic">
+  <component name="RunManager" selected="Python.create_copy_file_SMZU_with_date">
     <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="set_regime" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="create_copy_file_SMZU_with_date" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,11 +109,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/set_regime.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/calculation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,27 +156,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_getting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_RunDynamic" />
+        <item itemvalue="Python.create_copy_file_SMZU_with_date" />
         <item itemvalue="Python.OAPV_calc" />
+        <item itemvalue="Python.dynamic" />
+        <item itemvalue="Python.test_RunDynamic" />
         <item itemvalue="Python.test_py" />
-        <item itemvalue="Python.set_regime" />
-        <item itemvalue="Python.test_getting" />
       </list>
     </recent_temporary>
   </component>
@@ -202,27 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Create gglite_strs.py">
-      <created>1620114521503</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1620114521503</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Create ARVSG_BSV.py">
-      <created>1620115505018</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1620115505018</updated>
-    </task>
-    <task id="LOCAL-00117" summary="Create ARVSG_static.py">
-      <created>1620116219778</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1620116219778</updated>
     </task>
     <task id="LOCAL-00118" summary="Create AVR_2_BSV.py&#10;Create AVR_2_static.py">
       <created>1620117131415</created>
@@ -546,7 +526,28 @@
       <option name="project" value="LOCAL" />
       <updated>1621586153145</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="Corr dynamic.py">
+      <created>1621840820806</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1621840820806</updated>
+    </task>
+    <task id="LOCAL-00165" summary="Delete test OAPV_sim">
+      <created>1621840914880</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1621840914880</updated>
+    </task>
+    <task id="LOCAL-00166" summary="Add # -*- coding: utf-8 -*-">
+      <created>1621840965430</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1621840965430</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -562,8 +563,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr DFWIEEE421.py" />
-    <MESSAGE value="Corr Full table Dynamic" />
     <MESSAGE value="Create ExciterFilling.py" />
     <MESSAGE value="Create ARV_Filling.py" />
     <MESSAGE value="Create ARS_Filling.py" />
@@ -582,12 +581,14 @@
     <MESSAGE value="Create area.py" />
     <MESSAGE value="Create set_regime.py" />
     <MESSAGE value="Create def -&gt; get.py, vetv.py&#10;Corr set_regime.py" />
-    <MESSAGE value="Corr dynamic.py" />
     <MESSAGE value="Create DFWAutoActionScn.py" />
     <MESSAGE value="Create DFWAutoLogicScn.py" />
     <MESSAGE value="Corr OAPV_calc.py" />
     <MESSAGE value="Full Corr" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full Corr" />
+    <MESSAGE value="Corr dynamic.py" />
+    <MESSAGE value="Delete test OAPV_sim" />
+    <MESSAGE value="Add # -*- coding: utf-8 -*-" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add # -*- coding: utf-8 -*-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,21 +597,6 @@
           <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
           <line>19</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -140,15 +140,15 @@ ws_2 = wb_w['Раздел 1.2']
 ws_3 = wb_w['Раздел 2.1']
 ws_4 = wb_w['Раздел 2.2']
 
-dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
-rgm_obj = SteadyState(rastr_win=Rastr, par="", switch_command_line=True)
-
 fl_1_1 = 1
 if fl_1_1 == 1:
     # 1. ********************* Режим 1 сценарий 1 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
     load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=Shabl.shablon_file_scenario, switch_command_line=True)
     load_file(rastr_win=Rastr, switch_command_line=True)
+
+    dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
+    rgm_obj = SteadyState(rastr_win=Rastr, par="", switch_command_line=True)
 
     rgm_obj.rgm()
     dyn_obj.change_calc_time()
@@ -216,6 +216,9 @@ if fl_1_2 == 1:
     load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shabl=Shabl.shablon_file_scenario, switch_command_line=True)
     load_file(rastr_win=Rastr, switch_command_line=True)
 
+    dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
+    rgm_obj = SteadyState(rastr_win=Rastr, par="", switch_command_line=True)
+
     rgm_obj.rgm()
     dyn_obj.change_calc_time()
     dyn_obj.change_snap_max_count()
@@ -279,6 +282,9 @@ if fl_1_3 == 1:
     load_file(rastr_win=Rastr, file_path=dir_name_scn_one, shabl=Shabl.shablon_file_scenario, switch_command_line=True)
     load_file(rastr_win=Rastr, switch_command_line=True)
 
+    dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
+    rgm_obj = SteadyState(rastr_win=Rastr, par="", switch_command_line=True)
+
     rgm_obj.rgm()
     dyn_obj.change_calc_time()
     dyn_obj.change_snap_max_count()
@@ -339,6 +345,9 @@ if fl_1_4 == 1:
     load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
     load_file(rastr_win=Rastr, file_path=dir_name_scn_two, shabl=Shabl.shablon_file_scenario, switch_command_line=True)
     load_file(rastr_win=Rastr, switch_command_line=True)
+
+    dyn_obj = Dynamic(rastr_win=Rastr, calc_time=t_ras, snap_max_count=1, switch_command_line=True)
+    rgm_obj = SteadyState(rastr_win=Rastr, par="", switch_command_line=True)
 
     rgm_obj.rgm()
     dyn_obj.change_calc_time()

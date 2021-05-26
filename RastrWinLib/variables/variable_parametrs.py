@@ -33,7 +33,6 @@ class FindNextSel:
 
 
 class Variable:
-
     def __init__(self,
                  rastr_win=RASTR,
                  switch_command_line=False):
