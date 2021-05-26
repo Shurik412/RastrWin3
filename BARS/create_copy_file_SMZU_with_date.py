@@ -17,7 +17,7 @@ def copy_file(dir_files_copy, name_file_one):
     except OSError:
         print("Creation of the directory %s failed" % folder)
     else:
-        print ("Successfully created the directory %s" % folder)
+        print("Successfully created the directory %s" % folder)
 
     for i in range(0, 24):
         if i < 10:
