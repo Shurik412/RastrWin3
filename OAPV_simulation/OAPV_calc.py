@@ -140,7 +140,7 @@ ws_2 = wb_w['Раздел 1.2']
 ws_3 = wb_w['Раздел 2.1']
 ws_4 = wb_w['Раздел 2.2']
 
-fl_1_1 = 1
+fl_1_1 = 0
 if fl_1_1 == 1:
     # 1. ********************* Режим 1 сценарий 1 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
@@ -209,7 +209,7 @@ if fl_1_1 == 1:
 
     wb_w.save(filename=file_excel)
 
-fl_1_2 = 1
+fl_1_2 = 0
 if fl_1_2 == 1:
     # 2. ********************* Режим 1 сценарий 2 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
@@ -275,7 +275,8 @@ if fl_1_2 == 1:
 
     wb_w.save(filename=file_excel)
 
-fl_1_3 = 1
+fl_1_3 = 0
+
 if fl_1_3 == 1:
     # 3. ********************* Режим 2 сценарий 1 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_two, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
@@ -404,7 +405,7 @@ if fl_1_4 == 1:
 
     wb_w.save(filename=file_excel)
 
-fl_graf = 1
+fl_graf = 0
 if fl_graf == 1:
     # ***********************************************
     # ************ Построение графиков **************
