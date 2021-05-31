@@ -22,15 +22,15 @@ def createSummaryFile(kol_file, dir_file_1, sezon_regim):
     for val_for in range(1, kol_file + 1):
         Excel = win32com.client.Dispatch("Excel.Application")
         Excel.Visible = False
-        DirFileExcel = '{0}/{1}_{2}.xlsx'.format(dir_file_1, sezon_regim, val_for)
+        DirFileExcel = f'{dir_file_1}/{sezon_regim}_{val_for}.xlsx'
         wb_set = Excel.Workbooks.Open(DirFileExcel)
         sheet = wb_set.ActiveSheet
         val_set = sheet.Cells(11, 12).value
         val_D = val_set
         wb_set.Close()
-        print('{0} - ValD => {1}'.format(val_for, val_D))
+        print(f'{val_for} - ValD => {val_D}')
         ws_summary.cell(column=2, row=val_for + 1, value=val_D)
-        ws_summary.cell(column=1, row=val_for + 1, value='{0}_{1}'.format(sezon_regim, val_for))
+        ws_summary.cell(column=1, row=val_for + 1, value=f'{sezon_regim}_{val_for}')
         ws_summary[get_column_letter(2) + str(val_for + 1)].number_format = '0.0000000'
 
     wb_summary.save('{0}/{1}_0_SummaryFile.xlsx'.format(dir_file_1, sezon_regim))
@@ -135,7 +135,7 @@ def max_var_object(ws_Excel_Unite_1_exp, col_gen, num_time_to_row):
 def min_var_object(ws_Excel_Unite_1_exp, col_gen, num_time_to_row):
     var_2 = float(10000)
     for i in range(num_time_to_row, ws_Excel_Unite_1_exp.max_row):
-        var_1 = float(ws_Excel_Unite_1_exp[get_column_letter(col_gen) + str(i)].value)
+        var_1 = float(ws_Excel_Unite_1_exp[f'{get_column_letter(col_gen)}{str(i)}'].value)
         if var_2 > var_1:
             var_2 = var_1
     return var_2
@@ -144,7 +144,7 @@ def min_var_object(ws_Excel_Unite_1_exp, col_gen, num_time_to_row):
 def max_Ch60(ws_Excel_Unite_1_exp, col_gen, num_time_to_row):
     global max_col_Ch60
     for jj in range(num_time_to_row, ws_Excel_Unite_1_exp.max_row):
-        var_3 = ws_Excel_Unite_1_exp[get_column_letter(1) + str(jj)].value
+        var_3 = ws_Excel_Unite_1_exp[f'{get_column_letter(1)}{str(jj)}'].value
         if var_3 >= 58 and var_3 <= 65:
             max_col_Ch60 = jj
             break
@@ -175,6 +175,7 @@ def change_date(ws_Excel_Unite_1_exp, ws_Excel_Unite_2_exp):
         value_to_time_exp1 = ws_Excel_Unite_1_exp[f'A{i}'].value
         if value_to_time_exp1 == ' TIME':
             num_time_row_exp1 = i + 1
+
         if value_to_time_exp1 == 50:
             c = c + 1
             if c > 1:
@@ -205,13 +206,14 @@ def plot(ws_Excel_Unite_1_exp,
          ws_Excel_Unite_2_exp,
          ws_Excel_Unite_exp_path,
          dir_file_Excel_Unite,
-         name_gen_investigated):
-
+         NameGenInvestigated):
     global n, value_to_time, name_obj_gen, h
 
-    ws_Excel_Unite_exp_path.cell(column=1,
-                                 row=1,
-                                 value=f"Загруженный файл {dir_file_Excel_Unite}")
+    ws_Excel_Unite_exp_path.cell(
+        column=1,
+        row=1,
+        value=f"Загруженный файл {dir_file_Excel_Unite}"
+    )
     num_time_to_row = 0
     col_count = ws_Excel_Unite_1_exp.max_column - 1
     col_gen = 0
@@ -223,7 +225,7 @@ def plot(ws_Excel_Unite_1_exp,
 
     for h in range(2, col_count + 1):
         name_obj_gen = ws_Excel_Unite_1_exp[f"{get_column_letter(h)}{str(num_time_to_row - 1)}"].value
-        if name_obj_gen == f"P/{name_gen_investigated}":
+        if name_obj_gen == f"P/{NameGenInvestigated}":
             col_gen = h
             break
 
@@ -260,7 +262,7 @@ def plot(ws_Excel_Unite_1_exp,
                             max_row=ws_Excel_Unite_1_exp.max_row)
 
     series_exp1 = Series(values_exp1, xvalues_exp1, title_from_data=True)
-    name_object = ws_Excel_Unite_1_exp[get_column_letter(col_gen) + str(num_time_to_row - 1)].value
+    name_object = ws_Excel_Unite_1_exp[f'{get_column_letter(col_gen)}{str(num_time_to_row - 1)}'].value
     remove_list = ['с', 'PSS']
     edit_str_as_list = name_object.split()
     final_list = [word for word in edit_str_as_list if word not in remove_list]
@@ -277,7 +279,7 @@ def plot(ws_Excel_Unite_1_exp,
     ch4.y_axis.scaling.max = max_Chart + 10
     ch4.x_axis.scaling.max = 65
 
-    ws_Excel_Unite_exp_path.add_chart(ch4, get_column_letter(1) + str(5))
+    ws_Excel_Unite_exp_path.add_chart(ch4, f'{get_column_letter(1)}{str(5)}')
 
     # График 2 активной мощности СГ на интервале от 0 до 15
     ch2 = ScatterChart()
@@ -286,6 +288,7 @@ def plot(ws_Excel_Unite_1_exp,
                              min_col=1,
                              min_row=num_time_to_row,
                              max_row=ws_Excel_Unite_1_exp.max_row)
+
     values_exp1 = Reference(ws_Excel_Unite_1_exp,
                             min_col=int(col_gen),
                             min_row=num_time_to_row - 1,
@@ -295,6 +298,7 @@ def plot(ws_Excel_Unite_1_exp,
                              min_col=1,
                              min_row=num_time_to_row,
                              max_row=ws_Excel_Unite_2_exp.max_row)
+
     values_exp2 = Reference(ws_Excel_Unite_2_exp,
                             min_col=int(col_gen),
                             min_row=num_time_to_row - 1,
@@ -303,7 +307,7 @@ def plot(ws_Excel_Unite_1_exp,
     series_exp1 = Series(values_exp1, xvalues_exp1, title_from_data=True)
     series_exp2 = Series(values_exp2, xvalues_exp2, title_from_data=True)
 
-    name_object = ws_Excel_Unite_1_exp[get_column_letter(col_gen) + str(num_time_to_row - 1)].value
+    name_object = ws_Excel_Unite_1_exp[f'{get_column_letter(col_gen)}{str(num_time_to_row - 1)}'].value
     remove_list = ['с', 'PSS']
     edit_str_as_list = name_object.split()
     final_list1 = [word for word in edit_str_as_list if word not in remove_list]
@@ -350,10 +354,15 @@ def plot(ws_Excel_Unite_1_exp,
                                 min_row=num_time_to_row - 1,
                                 max_row=ws_Excel_Unite_2_exp.max_row)
 
-    series_exp1_pss = Series(values_exp1_pss, xvalues_exp1_pss, title_from_data=True)
-    series_exp2_pss = Series(values_exp2_pss, xvalues_exp2_pss, title_from_data=True)
+    series_exp1_pss = Series(values_exp1_pss,
+                             xvalues_exp1_pss,
+                             title_from_data=True)
 
-    name_object = ws_Excel_Unite_1_exp[get_column_letter(col_gen) + str(num_time_to_row - 1)].value
+    series_exp2_pss = Series(values_exp2_pss,
+                             xvalues_exp2_pss,
+                             title_from_data=True)
+
+    name_object = ws_Excel_Unite_1_exp[f'{get_column_letter(col_gen)}{str(num_time_to_row - 1)}'].value
 
     remove_list = ['с', 'PSS']
     edit_str_as_list = name_object.split()
@@ -376,7 +385,7 @@ def plot(ws_Excel_Unite_1_exp,
     ch_PSS.y_axis.scaling.max = int(max_Chart + 4)
     ch_PSS.x_axis.scaling.max = 56
 
-    ws_Excel_Unite_exp_path.add_chart(ch_PSS, get_column_letter(21) + str(22))
+    ws_Excel_Unite_exp_path.add_chart(ch_PSS, f'{get_column_letter(21)}{str(22)}')
 
     # График 4 активной мощности СГ на интервале от 11 до 26
     ch3 = ScatterChart()
@@ -392,7 +401,7 @@ def plot(ws_Excel_Unite_1_exp,
 
     series = Series(values, xvalues, title_from_data=True)
 
-    name_object = ws_Excel_Unite_1_exp[get_column_letter(col_gen) + str(num_time_to_row - 1)].value
+    name_object = ws_Excel_Unite_1_exp[f'{get_column_letter(col_gen)}{str(num_time_to_row - 1)}'].value
 
     remove_list = ['с', 'PSS']
     edit_str_as_list = name_object.split()
@@ -536,7 +545,7 @@ def main(dir_file_1, kol_file, sezon_regim, Unom_kV, NameGenInvestigated):
     global num_time_to_row
     copy_files()  # вызов функции копирования файлов
     for num in range(1, kol_file + 1):
-        dir_file_Excel_Unite = dir_file_1 + f"/{sezon_regim}_{num}.xlsx"
+        dir_file_Excel_Unite = f"{dir_file_1}/{sezon_regim}_{num}.xlsx"
         wb_Excel_Unite = load_workbook(filename=dir_file_Excel_Unite)
 
         print(num, ".Load Workbook:", dir_file_Excel_Unite)
@@ -598,7 +607,8 @@ kol_file = int(input("Количество режимов -> (Пример: 51):
 sezon_regim = input("ZimaMax=1, ZimaMin=2, LetoMax=3, LetoMin=4: ")
 Unom_kV = input("Unom KZ(3) -> 500 or 14_500: ")
 Unom_kV_exp2 = input("Unom KZ(3) EXP_2 -> 500 or 14_500: ")
-name_gen_investigated = input("Название исследуемого генератора, example (P/52601222) or (52601222),if 0 -> object #1: ")
+NameGenInvestigated = input(
+    "Название исследуемого генератора, example (P/52601222) or (52601222),if 0 -> object #1: ")
 dir_file_1 = dir_wb1.replace('\\', '/')
 
 dict_set = dict()

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +78,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.Eurostag_Output_PSS">
+    <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,27 +112,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,10 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Eurostag_Output_PSS" />
+        <item itemvalue="Python.create_copy_file_SMZU_with_date" />
+        <item itemvalue="Python.Creator_PRG_and_SQL" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.rename_file" />
-        <item itemvalue="Python.OAPV_calc" />
-        <item itemvalue="Python.create_copy_file_SMZU_with_date" />
       </list>
     </recent_temporary>
   </component>
@@ -199,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Create ARVSDS.py">
-      <created>1620121683187</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1620121683187</updated>
     </task>
     <task id="LOCAL-00124" summary="Create ARVSDE.py">
       <created>1620122379553</created>
@@ -543,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622451151445</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Corr Eurostag_Output_PSS.py -&gt; names">
+      <created>1622456320659</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1622456320659</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create DFWIEEE421_Filling.py" />
     <MESSAGE value="Create GovernorFilling.py" />
     <MESSAGE value="Create DFWIEEE421PSS13_Filling.py" />
     <MESSAGE value="Create DFWIEEE421PSS4B_Filling.py" />
@@ -584,7 +585,8 @@
     <MESSAGE value="upgrade" />
     <MESSAGE value="create rename_file.py" />
     <MESSAGE value="Corr Eurostag_Output_PSS.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Eurostag_Output_PSS.py" />
+    <MESSAGE value="Corr Eurostag_Output_PSS.py -&gt; names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr Eurostag_Output_PSS.py -&gt; names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

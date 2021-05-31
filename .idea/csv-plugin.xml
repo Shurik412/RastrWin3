@@ -52,6 +52,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Eurostag\Creator_PRG_and_SQL.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Eurostag\Eurostag_Output_PSS.py">
           <value>
             <Attribute>
