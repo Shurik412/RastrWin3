@@ -60,7 +60,7 @@ def change_variable(ws, num_time_to_row):
                         value=c)
 
 
-def deleteFiles(sezon_regim, Unom_kV, kol_file):
+def delete_files(sezon_regim, Unom_kV, kol_file):
     for num_regim_csv in range(1, kol_file + 1):
         file_1 = dir_file_1 + f"/{sezon_regim}_{num_regim_csv}_Y_{Unom_kV}kV.csv"
         file_2 = dir_file_1 + f"/{sezon_regim}_{num_regim_csv}_N_{Unom_kV_exp2}kV.csv"
@@ -98,7 +98,7 @@ def createExcelFile(dir_file_1, sezon_regim):
     wb.save(f"{dir_file_1}/{sezon_regim}_1.xlsx")
 
 
-def CopyFiles():
+def copy_files():
     createExcelFile(dir_file_1, sezon_regim)
     for num_regim_csv in range(1, kol_file + 1):
         file1 = dir_file_1 + f"/{sezon_regim}_{num_regim_csv}_Y_{Unom_kV}kV.exp"
@@ -167,7 +167,7 @@ def min_Ch60(ws_Excel_Unite_1_exp, col_gen, num_time_to_row):
     return minCh60
 
 
-def ChengeDate(ws_Excel_Unite_1_exp, ws_Excel_Unite_2_exp):
+def change_date(ws_Excel_Unite_1_exp, ws_Excel_Unite_2_exp):
     num_time_row_exp1 = 0
     num_time_row_exp2 = 0
     c = 0
@@ -201,11 +201,12 @@ def ChengeDate(ws_Excel_Unite_1_exp, ws_Excel_Unite_2_exp):
             b = 0
 
 
-def Plot(ws_Excel_Unite_1_exp,
+def plot(ws_Excel_Unite_1_exp,
          ws_Excel_Unite_2_exp,
          ws_Excel_Unite_exp_path,
          dir_file_Excel_Unite,
-         NameGenInvestigated):
+         name_gen_investigated):
+
     global n, value_to_time, name_obj_gen, h
 
     ws_Excel_Unite_exp_path.cell(column=1,
@@ -216,28 +217,28 @@ def Plot(ws_Excel_Unite_1_exp,
     col_gen = 0
 
     for n in range(1, 50):
-        value_to_time = ws_Excel_Unite_1_exp[f'A{n}'].value
+        value_to_time = ws_Excel_Unite_1_exp[f"A{n}"].value
         if value_to_time == ' TIME':
             num_time_to_row = int(n) + 1
 
     for h in range(2, col_count + 1):
-        name_obj_gen = ws_Excel_Unite_1_exp[get_column_letter(h) + str(num_time_to_row - 1)].value
-        if name_obj_gen == f"P/{NameGenInvestigated}":
+        name_obj_gen = ws_Excel_Unite_1_exp[f"{get_column_letter(h)}{str(num_time_to_row - 1)}"].value
+        if name_obj_gen == f"P/{name_gen_investigated}":
             col_gen = h
             break
 
     for g in range(2, col_count + 1):
-        nameObjExp1 = ws_Excel_Unite_1_exp[get_column_letter(g) + str(num_time_to_row - 1)].value
-        nameObjExp2 = ws_Excel_Unite_2_exp[get_column_letter(g) + str(num_time_to_row - 1)].value
+        nameObjExp1 = ws_Excel_Unite_1_exp[f"{get_column_letter(g)}{str(num_time_to_row - 1)}"].value
+        nameObjExp2 = ws_Excel_Unite_2_exp[f"{get_column_letter(g)}{str(num_time_to_row - 1)}"].value
         nameObjExp1_dict = dict_set[str(nameObjExp1)]
         nameObjExp2_dict = dict_set[str(nameObjExp2)]
         ws_Excel_Unite_1_exp.cell(column=g,
-                                  row=(num_time_to_row - 1),
-                                  value=(str("с PSS ") + str(nameObjExp1_dict)))
+                                  row=num_time_to_row - 1,
+                                  value=f"с PSS {nameObjExp1_dict}")
 
         ws_Excel_Unite_2_exp.cell(column=g,
-                                  row=(num_time_to_row - 1),
-                                  value=(str("без PSS ") + str(nameObjExp2_dict)))
+                                  row=num_time_to_row - 1,
+                                  value=f"без PSS {nameObjExp2_dict}")
 
     max_Chart = max_var_object(ws_Excel_Unite_1_exp, col_gen, num_time_to_row)
     min_Chart = min_var_object(ws_Excel_Unite_1_exp, col_gen, num_time_to_row)
@@ -473,7 +474,11 @@ def Plot(ws_Excel_Unite_1_exp,
             ws_Excel_Unite_exp_path.add_chart(ch1, get_column_letter((k - 2) * size_plot) + str(40))
 
 
-def Dempfir(ws_Excel_Unite_exp_path, ws_Excel_Unite_1_exp, NameGenInvestigated, col_count, num_time_to_row):
+def dempfir(ws_Excel_Unite_exp_path,
+            ws_Excel_Unite_1_exp,
+            NameGenInvestigated,
+            col_count,
+            num_time_to_row):
     # col_gen = 1
     # row_point_50 = 1
     global col_gen, row_point_50, row_point_65, row_point_75
@@ -529,7 +534,7 @@ def Dempfir(ws_Excel_Unite_exp_path, ws_Excel_Unite_1_exp, NameGenInvestigated, 
 
 def main(dir_file_1, kol_file, sezon_regim, Unom_kV, NameGenInvestigated):
     global num_time_to_row
-    CopyFiles()  # вызов функции копирования файлов
+    copy_files()  # вызов функции копирования файлов
     for num in range(1, kol_file + 1):
         dir_file_Excel_Unite = dir_file_1 + f"/{sezon_regim}_{num}.xlsx"
         wb_Excel_Unite = load_workbook(filename=dir_file_Excel_Unite)
@@ -565,13 +570,23 @@ def main(dir_file_1, kol_file, sezon_regim, Unom_kV, NameGenInvestigated):
                 num_time_to_row = int(n) + 1
 
         change_variable(ws_Excel_Unite_1_exp, num_time_to_row)
+
         change_variable(ws_Excel_Unite_2_exp, num_time_to_row)
 
-        ChengeDate(ws_Excel_Unite_1_exp, ws_Excel_Unite_2_exp)  # вызывается функция для корректировки данных времени
-        Dempfir(ws_Excel_Unite_exp_path, ws_Excel_Unite_1_exp,
-                NameGenInvestigated, col_count, num_time_to_row)
-        Plot(ws_Excel_Unite_1_exp, ws_Excel_Unite_2_exp, ws_Excel_Unite_exp_path,
-             dir_file_Excel_Unite, NameGenInvestigated)  # вызов функции построения графиков
+        change_date(ws_Excel_Unite_1_exp,
+                    ws_Excel_Unite_2_exp)  # вызывается функция для корректировки данных времени
+
+        dempfir(ws_Excel_Unite_exp_path,
+                ws_Excel_Unite_1_exp,
+                NameGenInvestigated,
+                col_count,
+                num_time_to_row)
+
+        plot(ws_Excel_Unite_1_exp,
+             ws_Excel_Unite_2_exp,
+             ws_Excel_Unite_exp_path,
+             dir_file_Excel_Unite,
+             NameGenInvestigated)  # вызов функции построения графиков
 
         wb_Excel_Unite.save(dir_file_1 + f"/{sezon_regim}_{num}.xlsx")
 
@@ -583,7 +598,7 @@ kol_file = int(input("Количество режимов -> (Пример: 51):
 sezon_regim = input("ZimaMax=1, ZimaMin=2, LetoMax=3, LetoMin=4: ")
 Unom_kV = input("Unom KZ(3) -> 500 or 14_500: ")
 Unom_kV_exp2 = input("Unom KZ(3) EXP_2 -> 500 or 14_500: ")
-NameGenInvestigated = input("Название исследуемого генератора, example (P/52601222) or (52601222),if 0 -> object #1: ")
+name_gen_investigated = input("Название исследуемого генератора, example (P/52601222) or (52601222),if 0 -> object #1: ")
 dir_file_1 = dir_wb1.replace('\\', '/')
 
 dict_set = dict()
@@ -597,7 +612,7 @@ wb_set.close()
 
 main(dir_file_1, kol_file, sezon_regim, Unom_kV, NameGenInvestigated)  # function
 
-deleteFiles(sezon_regim, Unom_kV, kol_file)
+delete_files(sezon_regim, Unom_kV, kol_file)
 
 createSummaryFile(kol_file, dir_file_1, sezon_regim)
 
