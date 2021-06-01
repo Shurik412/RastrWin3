@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Eurostag/create_bat_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\AC5B" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Eurostag_Output_PSS">
+  <component name="RunManager" selected="Python.create_bat_file">
     <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,6 +119,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="create_bat_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/create_bat_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="create_copy_file_SMZU_with_date" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,27 +153,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="rename_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/rename_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.create_bat_file" />
         <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.create_copy_file_SMZU_with_date" />
         <item itemvalue="Python.Creator_PRG_and_SQL" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.rename_file" />
       </list>
     </recent_temporary>
   </component>
@@ -201,13 +200,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00124" summary="Create ARVSDE.py">
-      <created>1620122379553</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1620122379553</updated>
     </task>
     <task id="LOCAL-00125" summary="Create ARV3MTK.py">
       <created>1620123005606</created>
@@ -545,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622456320659</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="Corr Eurostag_Output_PSS.py">
+      <created>1622468730587</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1622468730587</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,9 +583,9 @@
     <MESSAGE value="Corr create_copy_file_SMZU_with_date.py" />
     <MESSAGE value="upgrade" />
     <MESSAGE value="create rename_file.py" />
-    <MESSAGE value="Corr Eurostag_Output_PSS.py" />
     <MESSAGE value="Corr Eurostag_Output_PSS.py -&gt; names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Eurostag_Output_PSS.py -&gt; names" />
+    <MESSAGE value="Corr Eurostag_Output_PSS.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr Eurostag_Output_PSS.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

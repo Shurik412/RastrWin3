@@ -66,6 +66,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Eurostag\create_bat_file.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Eurostag\rename_file.py">
           <value>
             <Attribute>
