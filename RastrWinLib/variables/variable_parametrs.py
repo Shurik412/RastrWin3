@@ -125,6 +125,87 @@ class Variable:
         if self.switch_command_line is not False:
             print(Tools.separator_star)
 
+    def make_changes_filling_row(self,
+                                 table: str = None,
+                                 column: str = None,
+                                 row_id: int = None,
+                                 value=None):
+        """
+        Метод: make_changes_filling_row - изменение параметра по заданному row_id
+        :param table: название таблицы RastrWin3;
+        :param column: назваине колонки RastrWin3;
+        :param row_id: значение порядкового номера строки;
+        :param value: значение новой величины заменяемого значения;
+        :return: Nothing returns
+        """
+        if self.switch_command_line is not False:
+            print(Tools.separator_star)
+        switch_command_line_def = True
+        if table is not None:
+            table_ = self.rastr_win.Tables(table)
+            if column is not None:
+                col = table_.Cols(column)
+                if row_id is not None:
+                    if value is not None:
+                        col.SetZ(row_id, value)
+                        if self.switch_command_line is not False:
+                            print(Tools.separator_noun)
+                            print(
+                                f'Внесено изменение в таблицу: {table_.name} => {column}.'
+                            )
+                            print(Tools.separator_noun)
+                    elif value is None:
+                        if self.switch_command_line is not False:
+                            print(Tools.separator_noun)
+                            print(
+                                f'Значение value = None, изменения не внесены.'
+                            )
+                            print(Tools.separator_noun)
+                else:
+                    switch_command_line_def = False
+                    print(Tools.separator_noun)
+                    print(
+                        f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
+                        f'возникла следующая ОШИБКА!')
+                    print(
+                        f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
+                        f'Не задано значение порядкового номера строки "row_id".'
+                    )
+                    print(Tools.separator_noun)
+            else:
+                switch_command_line_def = False
+                print(Tools.separator_noun)
+                print(
+                    f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
+                    f'возникла следующая ОШИБКА!'
+                )
+                print(
+                    f'{Tools.error_text}{self.__class__.make_changes_row.__qualname__}: '
+                    f'Не задано название колонки (столбца) "column".'
+                )
+                print(Tools.separator_noun)
+        else:
+            switch_command_line_def = False
+            print(Tools.separator_noun)
+            print(
+                f'При выполнении класса <{self.__class__.make_changes_row.__qualname__}> '
+                f'возникла следующая ОШИБКА!.'
+            )
+            print(
+                f'{error_text}{self.__class__.make_changes_row.__qualname__}: '
+                f'Не задано название таблицы "table".'
+            )
+            print(Tools.separator_noun)
+
+        if self.switch_command_line and switch_command_line_def is not False:
+            print(
+                f'Внесены изменения:\n'
+                f'\t таблица: <{table}> => параметр: [{column}] => индекс объекта: [{row_id}]\n'
+                f'\t значение => [{value}]'
+            )
+        if self.switch_command_line is not False:
+            print(Tools.separator_star)
+
     def make_changes_setsel(self,
                             table: str = None,
                             column: str = None,

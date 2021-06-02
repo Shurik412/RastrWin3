@@ -20,7 +20,7 @@ regime = SteadyState(rastr_win=RASTR, switch_command_line=False)
 equivalent = Equivalent(rastr_win=RASTR, switch_command_line=False)
 
 file_rg2 = r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\test_123.rg2'
-load_file(rastr_win=RASTR, file_path=file_rg2, shablon=shablon_file_regime, switch_command_line=True)
+load_file(rastr_win=RASTR, file_path=file_rg2, shabl=shablon_file_regime, switch_command_line=True)
 
 # common_info = GetTableCommonInfo(rastr_win=RASTR, switch_command_line=False)
 # common_info.get()

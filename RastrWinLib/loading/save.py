@@ -15,7 +15,7 @@ def save_file(rastr_win=RASTR,
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param file_path: директория и название файла сохранения файла;
-    :param shabl: шаблон RastrWin3 для загрузки;
+    :param shabl: шаблон RastrWin3 для сохранения;
     :param switch_command_line: True/False - выводит сообщения в протокол.
     :return: True
     """
@@ -24,7 +24,7 @@ def save_file(rastr_win=RASTR,
     if switch_command_line is not False:
         if file_path == '':
             print(f'{Tools.separator_grid}\n'
-                  f'Ссылка для сохранения файла не задана!\n'
+                  f'Ссылка для сохранения файла не задана! \n'
                   f'{Tools.separator_grid}\n')
         else:
             print(f'{Tools.separator_grid}\n'

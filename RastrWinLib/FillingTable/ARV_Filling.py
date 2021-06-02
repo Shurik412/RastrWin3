@@ -15,11 +15,11 @@ def filling_ExcControl(
         Name: str = None,
         ModelType: str = None,
         Brand: str = None,
-        ForcerId: str = None,
+        ForcerId: int = None,
         CustomModel: str = None,
-        OELId: str = None,
-        PSSId: str = None,
-        UELId: str = None,
+        OELId: int = None,
+        PSSId: int = None,
+        UELId: int = None,
         Trv: float = None,
         Tf: float = None,
         T1f: float = None,
@@ -121,264 +121,265 @@ def filling_ExcControl(
     :param switch_command_line:
     :return:
     """
-    variable_ = Variable(rastr_win=rastr_win)
+    variable_ = Variable(rastr_win=rastr_win,
+                         switch_command_line=switch_command_line)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.sel,
-                               row_id=row_id,
-                               value=sel)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.sel,
+                                       row_id=row_id,
+                                       value=sel)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.sta,
-                               row_id=row_id,
-                               value=sta)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.sta,
+                                       row_id=row_id,
+                                       value=sta)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Id,
-                               row_id=row_id,
-                               value=Id)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Id,
+                                       row_id=row_id,
+                                       value=Id)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Name,
-                               row_id=row_id,
-                               value=Name)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Name,
+                                       row_id=row_id,
+                                       value=Name)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.ModelType,
-                               row_id=row_id,
-                               value=ModelType)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.ModelType,
+                                       row_id=row_id,
+                                       value=ModelType)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Brand,
-                               row_id=row_id,
-                               value=Brand)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Brand,
+                                       row_id=row_id,
+                                       value=Brand)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.ForcerId,
-                               row_id=row_id,
-                               value=ForcerId)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.ForcerId,
+                                       row_id=row_id,
+                                       value=ForcerId)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.CustomModel,
-                               row_id=row_id,
-                               value=CustomModel)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.CustomModel,
+                                       row_id=row_id,
+                                       value=CustomModel)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.OELId,
-                               row_id=row_id,
-                               value=OELId)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.OELId,
+                                       row_id=row_id,
+                                       value=OELId)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.PSSId,
-                               row_id=row_id,
-                               value=PSSId)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.PSSId,
+                                       row_id=row_id,
+                                       value=PSSId)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.UELId,
-                               row_id=row_id,
-                               value=UELId)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.UELId,
+                                       row_id=row_id,
+                                       value=UELId)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Trv,
-                               row_id=row_id,
-                               value=Trv)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Trv,
+                                       row_id=row_id,
+                                       value=Trv)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Tf,
-                               row_id=row_id,
-                               value=Tf)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Tf,
+                                       row_id=row_id,
+                                       value=Tf)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T1f,
-                               row_id=row_id,
-                               value=T1f)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T1f,
+                                       row_id=row_id,
+                                       value=T1f)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T2f,
-                               row_id=row_id,
-                               value=T2f)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T2f,
+                                       row_id=row_id,
+                                       value=T2f)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T1f1,
-                               row_id=row_id,
-                               value=T1f1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T1f1,
+                                       row_id=row_id,
+                                       value=T1f1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T2f1,
-                               row_id=row_id,
-                               value=T2f1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T2f1,
+                                       row_id=row_id,
+                                       value=T2f1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T3f1,
-                               row_id=row_id,
-                               value=T3f1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T3f1,
+                                       row_id=row_id,
+                                       value=T3f1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T1if,
-                               row_id=row_id,
-                               value=T1if)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T1if,
+                                       row_id=row_id,
+                                       value=T1if)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T1if1,
-                               row_id=row_id,
-                               value=T1if1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T1if1,
+                                       row_id=row_id,
+                                       value=T1if1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T2if1,
-                               row_id=row_id,
-                               value=T2if1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T2if1,
+                                       row_id=row_id,
+                                       value=T2if1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T1u,
-                               row_id=row_id,
-                               value=T1u)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T1u,
+                                       row_id=row_id,
+                                       value=T1u)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T1u1,
-                               row_id=row_id,
-                               value=T1u1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T1u1,
+                                       row_id=row_id,
+                                       value=T1u1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.T2u1,
-                               row_id=row_id,
-                               value=T2u1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.T2u1,
+                                       row_id=row_id,
+                                       value=T2u1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Tbch,
-                               row_id=row_id,
-                               value=Tbch)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Tbch,
+                                       row_id=row_id,
+                                       value=Tbch)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.TINT,
-                               row_id=row_id,
-                               value=TINT)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.TINT,
+                                       row_id=row_id,
+                                       value=TINT)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Ku,
-                               row_id=row_id,
-                               value=Ku)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Ku,
+                                       row_id=row_id,
+                                       value=Ku)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Ku1,
-                               row_id=row_id,
-                               value=Ku1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Ku1,
+                                       row_id=row_id,
+                                       value=Ku1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Kf,
-                               row_id=row_id,
-                               value=Kf)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Kf,
+                                       row_id=row_id,
+                                       value=Kf)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Kf1,
-                               row_id=row_id,
-                               value=Kf1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Kf1,
+                                       row_id=row_id,
+                                       value=Kf1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Kif1,
-                               row_id=row_id,
-                               value=Kif1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Kif1,
+                                       row_id=row_id,
+                                       value=Kif1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.K_cosfi,
-                               row_id=row_id,
-                               value=K_cosfi)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.K_cosfi,
+                                       row_id=row_id,
+                                       value=K_cosfi)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.K_Ia,
-                               row_id=row_id,
-                               value=K_Ia)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.K_Ia,
+                                       row_id=row_id,
+                                       value=K_Ia)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.K_Ir,
-                               row_id=row_id,
-                               value=K_Ir)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.K_Ir,
+                                       row_id=row_id,
+                                       value=K_Ir)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.K_P,
-                               row_id=row_id,
-                               value=K_P)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.K_P,
+                                       row_id=row_id,
+                                       value=K_P)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.K_Q,
-                               row_id=row_id,
-                               value=K_Q)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.K_Q,
+                                       row_id=row_id,
+                                       value=K_Q)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.K_Usd,
-                               row_id=row_id,
-                               value=K_Usd)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.K_Usd,
+                                       row_id=row_id,
+                                       value=K_Usd)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Kiu,
-                               row_id=row_id,
-                               value=Kiu)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Kiu,
+                                       row_id=row_id,
+                                       value=Kiu)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Kpi,
-                               row_id=row_id,
-                               value=Kpi)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Kpi,
+                                       row_id=row_id,
+                                       value=Kpi)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.KST,
-                               row_id=row_id,
-                               value=KST)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.KST,
+                                       row_id=row_id,
+                                       value=KST)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Kuf,
-                               row_id=row_id,
-                               value=Kuf)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Kuf,
+                                       row_id=row_id,
+                                       value=Kuf)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Urv_max,
-                               row_id=row_id,
-                               value=Urv_max)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Urv_max,
+                                       row_id=row_id,
+                                       value=Urv_max)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Urv_min,
-                               row_id=row_id,
-                               value=Urv_min)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Urv_min,
+                                       row_id=row_id,
+                                       value=Urv_min)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.dEqdt,
-                               row_id=row_id,
-                               value=dEqdt)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.dEqdt,
+                                       row_id=row_id,
+                                       value=dEqdt)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.dVdt,
-                               row_id=row_id,
-                               value=dVdt)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.dVdt,
+                                       row_id=row_id,
+                                       value=dVdt)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Uarv,
-                               row_id=row_id,
-                               value=Uarv)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Uarv,
+                                       row_id=row_id,
+                                       value=Uarv)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Udop1,
-                               row_id=row_id,
-                               value=Udop1)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Udop1,
+                                       row_id=row_id,
+                                       value=Udop1)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.U11,
-                               row_id=row_id,
-                               value=U11)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.U11,
+                                       row_id=row_id,
+                                       value=U11)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.U22,
-                               row_id=row_id,
-                               value=U22)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.U22,
+                                       row_id=row_id,
+                                       value=U22)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.Alpha,
-                               row_id=row_id,
-                               value=Alpha)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.Alpha,
+                                       row_id=row_id,
+                                       value=Alpha)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.dSudt,
-                               row_id=row_id,
-                               value=dSudt)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.dSudt,
+                                       row_id=row_id,
+                                       value=dSudt)
 
-    variable_.make_changes_row(table=ExcControl.table,
-                               column=ExcControl.deltaF,
-                               row_id=row_id,
-                               value=deltaF)
+    variable_.make_changes_filling_row(table=ExcControl.table,
+                                       column=ExcControl.deltaF,
+                                       row_id=row_id,
+                                       value=deltaF)

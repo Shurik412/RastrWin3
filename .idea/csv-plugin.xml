@@ -577,6 +577,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\tests\test_filling.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\tests\test_getting.py">
           <value>
             <Attribute>
