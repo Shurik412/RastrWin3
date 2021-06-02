@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/Filling_Table/filling_ExcControl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tools/protocol.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Add documention in protocol.py">
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARS_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARS_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARV_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARV_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421_Filling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DECS400_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DECS400_Filling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/save.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/CustomDeviceMap.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +79,8 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\basket" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.protocol">
-    <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.DECS400_Filling">
+    <configuration name="ARS_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/FillingTable" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/FillingTable/ARS_Filling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_bat_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="DECS400_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +109,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/FillingTable" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/create_bat_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/FillingTable/DECS400_Filling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DECS400_Filling" />
+        <item itemvalue="Python.ARS_Filling" />
         <item itemvalue="Python.protocol" />
         <item itemvalue="Python.filling_ExcControl" />
         <item itemvalue="Python.test_cmd_rastr" />
-        <item itemvalue="Python.Creator_PRG_and_SQL" />
-        <item itemvalue="Python.create_bat_file" />
       </list>
     </recent_temporary>
   </component>
@@ -207,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00129" summary="Create ARV4M.py">
-      <created>1620125263659</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1620125263659</updated>
     </task>
     <task id="LOCAL-00130" summary="Corr ARV_REM.py">
       <created>1620131609569</created>
@@ -551,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622632973757</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="Add documention in protocol.py">
+      <created>1622641811752</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1622641811752</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -567,7 +563,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create DFWTHYNE14_Filling.py" />
     <MESSAGE value="Create FuncPQ_Filling.py" />
     <MESSAGE value="Create DFWOELUNITROL_Filling.py" />
     <MESSAGE value="Corr OAPV_simulation" />
@@ -592,7 +587,8 @@
     <MESSAGE value="Add documention in ARS_Filling.py" />
     <MESSAGE value="Add documention in ARV_Filling.py" />
     <MESSAGE value="Add documention in DFWIEEE421_Filling.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add documention in DFWIEEE421_Filling.py" />
+    <MESSAGE value="Add documention in protocol.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add documention in protocol.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

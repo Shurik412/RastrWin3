@@ -21,3 +21,5 @@ class CustomDeviceMap_Description:
     """
 
     """
+    pass
+

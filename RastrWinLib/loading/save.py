@@ -19,7 +19,7 @@ def save_file(rastr_win=RASTR,
     :param switch_command_line: True/False - выводит сообщения в протокол.
     :return: True
     """
-    rastr_win.save(file_path, shabl)
+    rastr_win.Save(file_path, shabl)
 
     if switch_command_line is not False:
         if file_path == '':

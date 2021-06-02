@@ -47,7 +47,7 @@ def filling_DFW421UEL(
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
     :param sel: Отметка [O];
-    :param sta:
+    :param sta: 
     :param Id:
     :param Name:
     :param ModelType:
