@@ -64,60 +64,60 @@ def filling_ExcControl(
         switch_command_line: bool = False):
     """
 
-    :param row_id:
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param sel:
-    :param sta:
-    :param Id:
-    :param Name:
-    :param ModelType:
-    :param Brand:
-    :param ForcerId:
-    :param CustomModel:
-    :param OELId:
-    :param PSSId:
-    :param UELId:
-    :param Trv:
-    :param Tf:
-    :param T1f:
-    :param T2f:
-    :param T1f1:
-    :param T2f1:
-    :param T3f1:
-    :param T1if:
-    :param T1if1:
-    :param T2if1:
-    :param T1u:
-    :param T1u1:
-    :param T2u1:
-    :param Tbch:
-    :param TINT:
-    :param Ku:
-    :param Ku1:
-    :param Kf:
-    :param Kf1:
-    :param Kif1:
-    :param K_cosfi:
-    :param K_Ia:
-    :param K_Ir:
-    :param K_P:
-    :param K_Q:
-    :param K_Usd:
-    :param Kiu:
-    :param Kpi:
-    :param KST:
+    :param row_id: Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel;
+    :param sel: Отметка;
+    :param sta: Состояние АРВ [S];
+    :param Id: Номер АРВ [N];
+    :param Name: Название АРВ [Название];
+    :param ModelType: Модель АРВ [Модель];
+    :param Brand: Марка АРВ [Марка];
+    :param ForcerId: Номер РФ [N РФ];
+    :param CustomModel: Модель в конструкторе [Конструктор];
+    :param OELId: Номер БОР [N БОР];
+    :param PSSId: Номер системного стабилизатора [N стаб];
+    :param UELId: Номер ОМВ [N ОМВ];
+    :param Trv: Постоянная времени регулятора возбуждения [Т_рв];
+    :param Tf: Постоянная времени в канале отклонения частоты [Тf];
+    :param T1f: Постоянная времени реаль.диф.звена по частоте [T1f];
+    :param T2f: Постоянная времени в канале по отклонению частоты напряжения генератора [T2f];
+    :param T1f1: Постоянная времени в канале по производной частоты напряжения генератора [T1f1];
+    :param T2f1: Постоянная времени в канале по производной частоты напряжения генератора [T2f1];
+    :param T3f1: Постоянная времени в канале по производной частоты напряжения генератора [T3f1];
+    :param T1if: Постоянная времени реаль.диф.звена по току ротора [T1if];
+    :param T1if1: Постоянная времени в канале по производной тока ротора [T1if1];
+    :param T2if1: Постоянная времени в канале по производной тока ротора [T2if1];
+    :param T1u: Постоянная времени реаль.диф.звена по напряжению [T1u];
+    :param T1u1: Постоянная времени в канале по производной напряжения [T1u1];
+    :param T2u1: Постоянная времени в канале по производной напряжения [T2u1];
+    :param Tbch: [TBCH];
+    :param TINT: Постоянная времени интегратора в канале регулирования по отклонению напряжения генератора [TINT];
+    :param Ku: Коэффициент регулирования по отклонению напряжения [Кu];
+    :param Ku1: Коэффициент регулирования по производной напряжения [К'u];
+    :param Kf: Коэффициент регулирования по отклонению частоты [Kf];
+    :param Kf1: Коэффициент регулирования по производной частоты [К'f];
+    :param Kif1: Коэффициент регулирования по производной тока ротора [К'if];
+    :param K_cosfi: Коэффициент регулирования по cos(fi) [К_cosfi];
+    :param K_Ia: Коэффициент регулирования по активной сост.тока [K_Ia];
+    :param K_Ir: Коэффициент регулирования по реактивной сост.тока [K_Ir];
+    :param K_P: Коэффициент регулирования по активной мощности [К_P];
+    :param K_Q: Коэффициент регулирования по реактивной мощности [K_Q];
+    :param K_Usd: Коэффициент регулирования по напряжению СД [K_Usd];
+    :param Kiu: Коэффициент регулирования по отклонению напряжения [Kiu];
+    :param Kpi: Коэффициент регулирования пропорционального канала суммарного сигнала регулятора [Kpi];
+    :param KST: Статизм по реактивной мощности [KST];
     :param Kuf:
-    :param Urv_max:
-    :param Urv_min:
-    :param dEqdt:
-    :param dVdt:
-    :param Uarv:
-    :param Udop1:
-    :param U11:
-    :param U22:
-    :param Alpha:
-    :param dSudt:
-    :param deltaF:
+    :param Urv_max: Максимальное ограничение входного сигнала [Umax];
+    :param Urv_min: Минимальное ограничение входного сигнала [Umin];
+    :param dEqdt: Производная тока ротора [dEq/dt];
+    :param dVdt: Производная напряжения [dV/dt];
+    :param Uarv: Выход АРВ [Uarv];
+    :param Udop1: Дополнительный сигнал на вход [Uдоп1];
+    :param U11: Первая уставка по напряжению СД [U11];
+    :param U22: Вторая уставка по напряжению СД [U22]
+    :param Alpha: Изменение уставки по напряжению при отклонении частоты в сети [Alpha];
+    :param dSudt: Производная скольжения узла [dSu/dt];
+    :param deltaF: Отклонение частоты узла [deltaF];
     :param switch_command_line:
     :return:
     """

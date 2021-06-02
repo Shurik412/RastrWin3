@@ -28,7 +28,7 @@ def load_file(rastr_win=RASTR,
                                     Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»)
     :param shabl: шаблон RastrWin3 для загрузки;
     :param file_path: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);
-    :param switch_command_line: {Tools.switch_command_line_doc}
+    :param switch_command_line: ;
     :return: True
     """
 

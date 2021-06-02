@@ -31,27 +31,27 @@ def filling_Governor(
 ):
     """
 
-    :param rastr_win:
-    :param row_id:
-    :param sel:
-    :param sta:
-    :param Id:
-    :param Name:
-    :param ModelType:
-    :param CustomModel:
-    :param Brand:
-    :param strs:
-    :param zn:
-    :param Tr:
-    :param otmax:
-    :param otmin:
-    :param CVmin:
-    :param CVmax:
-    :param T1:
-    :param K1:
-    :param K2:
-    :param BoilerId:
-    :param switch_command_line:
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
+    :param row_id: номер строки в таблице оборудования;
+    :param sel: Отметка;
+    :param sta: Состояние регулятора скорости;
+    :param Id: Номер регулятора скорости;
+    :param Name: Название регулятора скорости;
+    :param ModelType: Модель регулятора скорости;
+    :param CustomModel: Модель в конструкторе;
+    :param Brand: Марка регулятора скорости;
+    :param strs: Статизм регулятора скорости турбины;
+    :param zn: Зона нечувствительности;
+    :param Tr: Постоянная времени регулятора;
+    :param otmax: Максимальная мощность турбины;
+    :param otmin: Минимальная мощность турбины;
+    :param CVmin: Минимальная скорость перемещения клапана;
+    :param CVmax: Максимальная скорость перемещения клапана;
+    :param T1: Постоянная ОС;
+    :param K1: K1 ОС;
+    :param K2: K2 ОС;
+    :param BoilerId: Номер котла;
+    :param switch_command_line: вывод сообщений в протокол;
     :return:
     """
     variable_ = Variable(rastr_win=rastr_win)

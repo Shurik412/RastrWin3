@@ -234,6 +234,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\FillingTable\ARV_Filling.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\FillingTable\DFWIEEE421PSS13_Filling.py">
           <value>
             <Attribute>
@@ -560,6 +567,13 @@
           <value>
             <Attribute>
               <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\tests\test_cmd_rastr.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>

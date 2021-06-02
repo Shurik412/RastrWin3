@@ -37,8 +37,8 @@ def filling_ARS(
     """
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param row_id: номер строки;
-    :param sel:
+    :param row_id: Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel;
+    :param sel: Отметка;
     :param sta: Состояние турбины/регулятора скорости;
     :param Id: Номер турбины/регулятора скорости;
     :param Name: Название турбины/регулятора скорости;

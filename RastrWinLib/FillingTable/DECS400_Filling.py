@@ -42,7 +42,7 @@ def filling_DECS400(
 ):
     """
 
-    :param rastr_win:
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id:
     :param sel:
     :param sta:
