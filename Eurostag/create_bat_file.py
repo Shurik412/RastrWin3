@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-ROOT_DIR_SAVE_FILE: str = r'C:\Users\Ohrimenko_AG\Desktop\test_3'
+ROOT_DIR_SAVE_FILE: str = r'C:\02_26_ZimaMin'
 DIR_EUROSTAG: str = r'C:\Eurostag44\Eurostag'
 DIR_HOME_BAT: str = r'C:\02_26_ZimaMin'
-NAME_SEZON: str = 'ZimaMax'  # ((1) ZimaMax - Зима макс, (2) ZimaMin - Зима мин, (3) LetoMax - Лето макс, (4) LetoMax - Лето мин.
-KEY_Y_N: str = 'Y'  # Y - с PSS, N - без PSS
+NAME_SEZON: str = 'ZimaMin'  # ((1) ZimaMax - Зима макс, (2) ZimaMin - Зима мин, (3) LetoMax - Лето макс, (4) LetoMax - Лето мин.
+KEY_Y_N: str = 'N'  # Y - с PSS, N - без PSS
 U_NOM = 220  # номинальное напряжение в точке КЗ
-NAME_DTA_FILE: str = '1'  # название dta файла
-COUNT_REGIME: int = 30
+NAME_DTA_FILE: str = '7'  # название dta файла
+COUNT_REGIME: int = 57
 
 if NAME_SEZON == 'ZimaMax':
     file = open(fr"{ROOT_DIR_SAVE_FILE}\ZimaMax.bat", "w")

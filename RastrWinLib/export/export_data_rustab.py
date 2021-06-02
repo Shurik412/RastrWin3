@@ -15,7 +15,7 @@ class ExportDataRUSTab:
         f"""
         :param table: название таблицы;
         :param rastr_win: ;
-        :param switch_command_line: True/False - вывод сообщений в протокол.
+        :param switch_command_line: True/False - вывод сообщений в протокол;
         """
         self.table_name = table
         self.rastr_win = rastr_win
@@ -28,7 +28,7 @@ class ExportDataRUSTab:
         """
         :param column: колонка (столбец) RastrWin3;
         :param key: выборка для получения порядкового номера ("Num=21312312");
-        :return: возвращает массив параметра (column) и времени (f=Par(t))
+        :return: возвращает массив параметра (column) и времени (f=Par(t));
         """
         self.table.SetSel(key)
         row_id = self.table.FindNextSel(-1)

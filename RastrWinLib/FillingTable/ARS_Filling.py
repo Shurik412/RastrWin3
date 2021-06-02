@@ -36,32 +36,32 @@ def filling_ARS(
 ):
     """
 
-    :param rastr_win:
-    :param row_id:
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
+    :param row_id: номер строки;
     :param sel:
-    :param sta:
-    :param Id:
-    :param Name:
-    :param ModelType:
-    :param CustomModel:
-    :param Brand:
-    :param GovernorId:
-    :param ao:
-    :param az:
-    :param otmin:
-    :param otmax:
-    :param strs:
-    :param zn:
-    :param dpo:
-    :param Thp:
-    :param Trlp:
-    :param Tw:
-    :param pt:
-    :param Mu:
-    :param Psteam:
-    :param Mupo:
-    :param tpo:
-    :param switch_command_line:
+    :param sta: Состояние турбины/регулятора скорости;
+    :param Id: Номер турбины/регулятора скорости;
+    :param Name: Название турбины/регулятора скорости;
+    :param ModelType: Модель турбины/регулятора скорости;
+    :param CustomModel: Модель в конструкторе;
+    :param Brand: Марка турбины/регулятора скорости;
+    :param GovernorId: Номер регулятора скорости турбины;
+    :param ao: Постоянная времени на открытие;
+    :param az: Постоянная времени на закрытие;
+    :param otmin: Минимальная мощность турбины;
+    :param otmax: Максимальная мощность турбины;
+    :param strs: Статизм регулятора скорости турбины;
+    :param zn: Зона нечувствительности;
+    :param dpo: Доля участия паровых объемов в суммарной мощности турбины;
+    :param Thp: Постоянная времени ЦВД;
+    :param Trlp: Постоянная времени ЦНД и промперегрева;
+    :param Tw: Временя изменения скорости воды от 0 до ном;
+    :param pt: Мощность турбины;
+    :param Mu: Положение регулирующего клапана;
+    :param Psteam: Давление пара;
+    :param Mupo: Паровые объемы;
+    :param tpo: Постоянная времени паровых объемов;
+    :param switch_command_line: вывод сообщений в протокол;
     :return:
     """
     variable_ = Variable(rastr_win=rastr_win)

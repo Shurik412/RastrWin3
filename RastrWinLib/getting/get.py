@@ -78,7 +78,6 @@ class GettingParameter:
 
     def get_row_vetv_a_node(self, ny):
         """
-
         :param ny: номер узла для которого тренбуется найти ветвь;
         :return: row_vetv - порядковый номер ветви;
         """
