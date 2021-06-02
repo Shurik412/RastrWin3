@@ -134,56 +134,56 @@ def filling_DFWIEEE421(
 ):
     """
 
-    :param rastr_win:
-    :param row_id:
-    :param sel:
-    :param sta:
-    :param Id:
-    :param Name:
-    :param ModelType:
-    :param Brand:
-    :param CustomModel:
-    :param UELId:
-    :param UELPos:
-    :param OELId:
-    :param OELPos:
-    :param PSSId:
-    :param PSSPos:
-    :param Te:
-    :param Ta:
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
+    :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
+    :param sel: Отметка [O];
+    :param sta: Состояние возбудителя [S];
+    :param Id: Номер возбудителя [N взб];
+    :param Name: Название возбудителя [Название];
+    :param ModelType: Модель возбудителя [Модель];
+    :param Brand: Марка возбудителя [Марка];
+    :param CustomModel: Модель в конструкторе [Конструктор];
+    :param UELId: Номер ОМВ [N ОМВ];
+    :param UELPos: Точка подключения ОМВ [Точка ОМВ];
+    :param OELId: Номер БОР [N БОР];
+    :param OELPos: Точка подключения БОР [Точка БОР];
+    :param PSSId: Номер системного стабилизатора [N стаб];
+    :param PSSPos: Точка подключения стабилизатора [Точка стаб];
+    :param Te: Постоянная времени возбудителя [Te];
+    :param Ta: Постоянная времени регулятора напряжения [Ta];
     :param Tk:
     :param Tj:
     :param Th:
     :param Tm:
-    :param Tc:
+    :param Tc: Постоянная времени регулятора напряжения [Tc];
     :param Tc1:
     :param Tc2:
-    :param Tb:
+    :param Tb: Постоянная времени регулятора напряжения [Tb];
     :param Tb1:
     :param Tb2:
     :param Trh:
     :param Tdr:
-    :param Tf:
-    :param Tf2:
-    :param Tf3:
+    :param Tf: Постоянная времени обратной связи cтабилизации [Tf];
+    :param Tf2: Постоянная времени звена обратной связи (AC5C) [Tf2];
+    :param Tf3: Постоянная времени звена обратной связи (AC5C) [Tf3];
     :param Tub1:
     :param Tub2:
     :param Tuc1:
     :param Tob1:
-    :param Toc1:
-    :param Toc2:
-    :param Tob2:
-    :param Tr:
-    :param TINT:
-    :param Ke:
-    :param Ka:
+    :param Toc1: Постоянная времени канала OEL [Toc1];
+    :param Toc2: Постоянная времени канала OEL [Toc2];
+    :param Tob2: Постоянная времени канала OEL [Tob2];
+    :param Tr: Постоянная времени датчика напряжения [Tr];
+    :param TINT: Постоянная времени интегратора в канале регулирования по отклонению напряжения генератора [TINT];
+    :param Ke: Коэффициент обратной связи возбудителя [Ke];
+    :param Ka: Коэффициент усиления регулятора напряжения [Ka];
     :param Kia:
-    :param Kf:
-    :param Kf1:
-    :param Kf2:
-    :param Kof:
+    :param Kf: Коэффициент обратной связи cтабилизации [Kf];
+    :param Kf1: Коэффициент стабилизирующей обратной связи [Kf1];
+    :param Kf2: Коэффициент стабилизирующей обратной связи [Kf2];
+    :param Kof: Коэффициент усиления в канале по отклонению частоты напряжения генератора [K0f];
     :param K1f:
-    :param Kfw:
+    :param Kfw: Коэффициент ШИМ-преобразователя [Kfw];
     :param Kv:
     :param Kp:
     :param Kpa:
@@ -208,8 +208,8 @@ def filling_DFWIEEE421(
     :param Ki2:
     :param Kif:
     :param Kif1:
-    :param Kg:
-    :param Km:
+    :param Kg: Коэффициент усиления обратной связи [Kg];
+    :param Km: Коэффициент усиления внутреннего каскада [Km];
     :param Ku:
     :param Ku1:
     :param KST:
@@ -222,8 +222,8 @@ def filling_DFWIEEE421(
     :param Ve2:
     :param Aex:
     :param Bex:
-    :param SW1:
-    :param SW2:
+    :param SW1: Переключатель SW1 [SW1];
+    :param SW2: Переключатель SW2 [SW2];
     :param Vemin:
     :param Vrmax:
     :param Vrmin:
@@ -237,26 +237,26 @@ def filling_DFWIEEE421(
     :param Vmmin:
     :param Vhmax:
     :param Vfelim:
-    :param VBmax:
-    :param VGmax:
-    :param VfwMax:
-    :param VfwMin:
-    :param Vlim1:
-    :param Vlim2:
-    :param VpidMax:
-    :param VpidMin:
-    :param Ilr:
-    :param Theta:
+    :param VBmax: Ограничение источника питания [VBmax];
+    :param VGmax: Ограничение обратной связи [VGmax];
+    :param VfwMax: Максимальное ограничение ШИМ-преобразователя [VfwMax];
+    :param VfwMin: Минимальное ограничение ШИМ-преобразователя [VfwMin];
+    :param Vlim1: Порог ШИМ-преобразователя [Vlim1];
+    :param Vlim2: Порог ШИМ-преобразователя [Vlim2];
+    :param VpidMax: Максимальное ограничение ПИД-регулятора [VpidMax];
+    :param VpidMin: Минимальное ограничение ПИД-регулятора [VpidMin];
+    :param Ilr: Уставка ограничителя перевозбуждения [Ilr];
+    :param Theta: Коэффициент усиления по току статора [Theta];
     :param Ifmax:
     :param Ifth:
     :param VB2max:
     :param Xl:
-    :param Rc:
-    :param Xc:
-    :param TRFout:
-    :param Samovozb:
-    :param RPQlim:
-    :param RIFlim:
+    :param Rc: R компенсации [Rc];
+    :param Xc: X компенсации [Xc];
+    :param TRFout: Блокировка работы релейной форсировки [TRFout];
+    :param Samovozb: Параметр, определяющий тип системы возбуждения (зависимая/независимая) [Samovozb];
+    :param RPQlim: Блокировка работы устройства ОМВ [RPQlim];
+    :param RIFlim: Блокировка работы устройства БОР [RIFlim];
     :param switch_command_line:
     :return:
     """

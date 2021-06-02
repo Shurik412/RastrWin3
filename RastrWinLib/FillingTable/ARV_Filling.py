@@ -65,7 +65,7 @@ def filling_ExcControl(
     """
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param row_id: Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel;
+    :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
     :param sel: Отметка;
     :param sta: Состояние АРВ [S];
     :param Id: Номер АРВ [N];
