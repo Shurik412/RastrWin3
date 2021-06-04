@@ -101,12 +101,12 @@ def filling_DFWIEEE421PSS4B(
     :param Vstmin: Минимальное ограничение выхода стабилизатора [Vstmin];
     :param Vlmax: Vlmax [Vlmax];
     :param Vlmin: Vlmin [Vlmin];
-    :param Vimax:
-    :param Vimin:
-    :param Vvlmax:
-    :param Vvlmin:
-    :param Vhmax:
-    :param Vhmin:
+    :param Vimax: Vimax [Vimax];
+    :param Vimin: Vimin [Vimin];
+    :param Vvlmax: Vvlmax [Vvlmax];
+    :param Vvlmin: Vvlmin [Vvlmin];
+    :param Vhmax: Vhmax [Vhmax];
+    :param Vhmin: Vhmin [Vhmin];
     :param KL: KL [KL];
     :param KL1: KL1 [KL1];
     :param KL2: KL2 [KL2];
@@ -158,7 +158,7 @@ def filling_DFWIEEE421PSS4B(
     :param TH10: TH10 [TH10];
     :param TH11: TH11 [TH11];
     :param TH12: TH12 [TH12];
-    :param switch_command_line:
+    :param switch_command_line: вывод сообщений в протокол;
     :return:
     """
 
@@ -533,7 +533,7 @@ if __name__ == '__main__':
     from RastrWinLib.loading.shablon import Shabl
 
     load_file(rastr_win=RASTR,
-              file_path='',
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
               shabl=Shabl.shablon_file_dynamic)
 
     load_file(rastr_win=RASTR,
@@ -545,8 +545,83 @@ if __name__ == '__main__':
     for i in range(0, 1000):
         table_.AddRow()
 
-
+        filling_DFWIEEE421PSS4B(
+            rastr_win=RASTR,
+            row_id=i,
+            sel=None,
+            sta=None,
+            Id=123456789,
+            Name=f'Генератор {i}',
+            ModelType=None,
+            Brand=None,
+            CustomModel=None,
+            Input1Type=None,
+            Input2Type=None,
+            MBPSS1=None,
+            MBPSS2=None,
+            Vstmax=0.123456,
+            Vstmin=0.123456,
+            Vlmax=0.123456,
+            Vlmin=0.123456,
+            Vimax=0.123456,
+            Vimin=0.123456,
+            Vvlmax=0.123456,
+            Vvlmin=0.123456,
+            Vhmax=0.123456,
+            Vhmin=0.123456,
+            KL=0.123456,
+            KL1=0.123456,
+            KL2=0.123456,
+            KL11=0.123456,
+            KL17=0.123456,
+            KI=0.123456,
+            KI1=0.123456,
+            KI2=0.123456,
+            KI11=0.123456,
+            KI17=0.123456,
+            KH=0.123456,
+            KH1=0.123456,
+            KH2=0.123456,
+            KH11=0.123456,
+            KH17=0.123456,
+            TL1=0.123456,
+            TL2=0.123456,
+            TL3=0.123456,
+            TL4=0.123456,
+            TL5=0.123456,
+            TL6=0.123456,
+            TL7=0.123456,
+            TL8=0.123456,
+            TL9=0.123456,
+            TL10=0.123456,
+            TL11=0.123456,
+            TL12=0.123456,
+            TI1=0.123456,
+            TI2=0.123456,
+            TI3=0.123456,
+            TI4=0.123456,
+            TI5=0.123456,
+            TI6=0.123456,
+            TI7=0.123456,
+            TI8=0.123456,
+            TI9=0.123456,
+            TI10=0.123456,
+            TI11=0.123456,
+            TI12=0.123456,
+            TH1=0.123456,
+            TH2=0.123456,
+            TH3=0.123456,
+            TH4=0.123456,
+            TH5=0.123456,
+            TH6=0.123456,
+            TH7=0.123456,
+            TH8=0.123456,
+            TH9=0.123456,
+            TH10=0.123456,
+            TH11=0.123456,
+            TH12=0.123456,
+            switch_command_line=False)
 
     save_file(rastr_win=RASTR,
-              file_path='',
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test_DFWIEEE421PSS4B.rst',
               shabl=Shabl.shablon_file_dynamic)

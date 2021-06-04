@@ -77,8 +77,8 @@ class DFWIEEE421PSS4B:
     TI12: str = 'TI12'  #
 
     TH1: str = 'TH1'  #
-    TH2: str = 'TH1'  #
-    TH3: str = 'TH1'  #
+    TH2: str = 'TH2'  #
+    TH3: str = 'TH3'  #
     TH4: str = 'TH4'  #
     TH5: str = 'TH5'  #
     TH6: str = 'TH6'  #

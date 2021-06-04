@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_rgm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS4B_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS4B_Filling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\EX2100" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DFW421UEL_Filling">
+  <component name="RunManager" selected="Python.DFWIEEE421PSS4B_Filling">
     <configuration name="DFW421UEL_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,6 +92,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DFWIEEE421PSS4B_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/FillingTable" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS4B_Filling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,27 +163,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_bat_file_dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag\CreateBatFile\create_bat_file_dynamic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="create_copy_file_SMZU_with_date" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DFWIEEE421PSS4B_Filling" />
         <item itemvalue="Python.DFW421UEL_Filling" />
         <item itemvalue="Python.DFWIEEE421_Filling" />
         <item itemvalue="Python.create_bat_file_dynamic (1)" />
         <item itemvalue="Python.create_copy_file_SMZU_with_date" />
-        <item itemvalue="Python.create_bat_file_dynamic" />
       </list>
     </recent_temporary>
   </component>
@@ -204,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py">
-      <created>1620173265693</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1620173265693</updated>
     </task>
     <task id="LOCAL-00135" summary="Corr DFWIEEE421.py">
       <created>1620247757293</created>
@@ -548,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622788019328</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="Del file">
+      <created>1622788207923</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1622788207923</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +565,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create area.py" />
     <MESSAGE value="Create set_regime.py" />
     <MESSAGE value="Create def -&gt; get.py, vetv.py&#10;Corr set_regime.py" />
     <MESSAGE value="Create DFWAutoActionScn.py" />
@@ -589,7 +589,8 @@
     <MESSAGE value="Add documentation in DFWIEEE421_Filling.py" />
     <MESSAGE value="Add documentation in DFW421UEL_Filling.py" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Del file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Del file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

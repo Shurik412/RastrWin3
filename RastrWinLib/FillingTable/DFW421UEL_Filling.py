@@ -77,7 +77,7 @@ def filling_DFW421UEL(
     :param Vulmin: Минимальное ограничение ОМВ [Vulmin];
     :param Vuimin: Минимальное ограничение регулятора [Vuimin];
     :param Vuimax: Максимальное ограничение регулятора [Vuimax];
-    :param switch_command_line:
+    :param switch_command_line: вывод сообщений в протокол;
     :return:
     """
 
