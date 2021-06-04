@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/create_bat_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/create_bat_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/rename_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_rgm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,13 +204,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00133" summary="Corr Generator.py">
-      <created>1620163777619</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1620163777619</updated>
     </task>
     <task id="LOCAL-00134" summary="Corr DFW421UEL.py&#10;Corr DECS_400.py&#10;Corr CustomDeviceMap.py">
       <created>1620173265693</created>
@@ -550,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622787550277</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="init">
+      <created>1622788019328</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1622788019328</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
