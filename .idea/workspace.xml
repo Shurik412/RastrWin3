@@ -207,13 +207,6 @@
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
     </task>
-    <task id="LOCAL-00132" summary="Full corr">
-      <created>1620162263404</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1620162263404</updated>
-    </task>
     <task id="LOCAL-00133" summary="Corr Generator.py">
       <created>1620163777619</created>
       <option name="number" value="00133" />
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622787355775</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="init">
+      <created>1622787550277</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1622787550277</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,7 +566,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr set_regime.py" />
     <MESSAGE value="Create area.py" />
     <MESSAGE value="Create set_regime.py" />
     <MESSAGE value="Create def -&gt; get.py, vetv.py&#10;Corr set_regime.py" />
@@ -591,7 +590,8 @@
     <MESSAGE value="Add documention in DECS400_Filling.py, DFW421UEL_Filling.py" />
     <MESSAGE value="Add documentation in DFWIEEE421_Filling.py" />
     <MESSAGE value="Add documentation in DFW421UEL_Filling.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add documentation in DFW421UEL_Filling.py" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

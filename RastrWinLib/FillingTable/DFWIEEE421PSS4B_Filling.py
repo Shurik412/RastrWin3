@@ -84,442 +84,469 @@ def filling_DFWIEEE421PSS4B(
         switch_command_line: bool = False):
     """
 
-    :param switch_command_line:
-    :param rastr_win:
-    :param row_id:
-    :param sel:
-    :param sta:
-    :param Id:
-    :param Name:
-    :param ModelType:
-    :param Brand:
-    :param CustomModel:
-    :param Input1Type:
-    :param Input2Type:
-    :param MBPSS1:
-    :param MBPSS2:
-    :param Vstmax:
-    :param Vstmin:
-    :param Vlmax:
-    :param Vlmin:
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
+    :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
+    :param sel: Отметка [O];
+    :param sta: Состояние стабилизатора [S];
+    :param Id: Номер стабилизатора [N стаб];
+    :param Name: Название стабилизатора [Название];
+    :param ModelType: Модель стабилизатора [Модель];
+    :param Brand: Марка стабилизатора [Марка];
+    :param CustomModel: Модель в конструкторе [Конструктор];
+    :param Input1Type: Тип параметра на входе 1 [Вход 1];
+    :param Input2Type: Тип параметра на входе 2 [Вход 2];
+    :param MBPSS1: Фильтр MB-PSS на входе 1 [MB-PSS-1];
+    :param MBPSS2: Фильтр MB-PSS на входе 2 [MB-PSS-2];
+    :param Vstmax: Максимальное ограничение выхода стабилизатора [Vstmax];
+    :param Vstmin: Минимальное ограничение выхода стабилизатора [Vstmin];
+    :param Vlmax: Vlmax [Vlmax];
+    :param Vlmin: Vlmin [Vlmin];
     :param Vimax:
     :param Vimin:
     :param Vvlmax:
     :param Vvlmin:
     :param Vhmax:
     :param Vhmin:
-    :param KL:
-    :param KL1:
-    :param KL2:
-    :param KL11:
-    :param KL17:
-    :param KI:
-    :param KI1:
-    :param KI2:
-    :param KI11:
-    :param KI17:
-    :param KH:
-    :param KH1:
-    :param KH2:
-    :param KH11:
-    :param KH17:
-    :param TL1:
-    :param TL2:
-    :param TL3:
-    :param TL4:
-    :param TL5:
-    :param TL6:
-    :param TL7:
-    :param TL8:
-    :param TL9:
-    :param TL10:
-    :param TL11:
-    :param TL12:
-    :param TI1:
-    :param TI2:
-    :param TI3:
-    :param TI4:
-    :param TI5:
-    :param TI6:
-    :param TI7:
-    :param TI8:
-    :param TI9:
-    :param TI10:
-    :param TI11:
-    :param TI12:
-    :param TH1:
-    :param TH2:
-    :param TH3:
-    :param TH4:
-    :param TH5:
-    :param TH6:
-    :param TH7:
-    :param TH8:
-    :param TH9:
-    :param TH10:
-    :param TH11:
-    :param TH12:
+    :param KL: KL [KL];
+    :param KL1: KL1 [KL1];
+    :param KL2: KL2 [KL2];
+    :param KL11: KL11 [KL11];
+    :param KL17: KL17 [KL17];
+    :param KI: KI [KI];
+    :param KI1: KI1 [KI1];
+    :param KI2: KI2 [KI2];
+    :param KI11: KI11 [KI11];
+    :param KI17: KI17 [KI17];
+    :param KH: KH [KH];
+    :param KH1: KH1 [KH1];
+    :param KH2: KH2 [KH2];
+    :param KH11: KH11 [KH11];
+    :param KH17: KH17 [KH17];
+    :param TL1: TL1 [TL1];
+    :param TL2: TL2 [TL2];
+    :param TL3: TL3 [TL3];
+    :param TL4: TL4 [TL4];
+    :param TL5: TL5 [TL5];
+    :param TL6: TL6 [TL6];
+    :param TL7: TL7 [TL7];
+    :param TL8: TL8 [TL8];
+    :param TL9: TL9 [TL9];
+    :param TL10: TL10 [TL10];
+    :param TL11: TL11 [TL11];
+    :param TL12: TL12 [12];
+    :param TI1: TI1 [TI1];
+    :param TI2: TI2 [TI2];
+    :param TI3: TI3 [TI3];
+    :param TI4: TI4 [TI4];
+    :param TI5: TI5 [TI5];
+    :param TI6: TI6 [TI6];
+    :param TI7: TI7 [TI7];
+    :param TI8: TI1 [TI8];
+    :param TI9: TI9 [TI9];
+    :param TI10: TI10 [TI10];
+    :param TI11: TI11 [TI11];
+    :param TI12: TI12 [TI12];
+    :param TH1: TH1 [TH1];
+    :param TH2: TH2 [TH2];
+    :param TH3: TH3 [TH3];
+    :param TH4: TH4 [TH4];
+    :param TH5: TH5 [TH5];
+    :param TH6: TH6 [TH6];
+    :param TH7: TH7 [TH7];
+    :param TH8: TH8 [TH8];
+    :param TH9: TH9 [TH9];
+    :param TH10: TH10 [TH10];
+    :param TH11: TH11 [TH11];
+    :param TH12: TH12 [TH12];
+    :param switch_command_line:
     :return:
     """
 
     variable_ = Variable(rastr_win=rastr_win)
 
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.sel,
-                               row_id=row_id,
-                               value=sel)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.sta,
-                               row_id=row_id,
-                               value=sta)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Id,
-                               row_id=row_id,
-                               value=Id)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Name,
-                               row_id=row_id,
-                               value=Name)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.ModelType,
-                               row_id=row_id,
-                               value=ModelType)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Brand,
-                               row_id=row_id,
-                               value=Brand)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.CustomModel,
-                               row_id=row_id,
-                               value=CustomModel)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Input1Type,
-                               row_id=row_id,
-                               value=Input1Type)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Input2Type,
-                               row_id=row_id,
-                               value=Input2Type)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.MBPSS1,
-                               row_id=row_id,
-                               value=MBPSS1)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.MBPSS2,
-                               row_id=row_id,
-                               value=MBPSS2)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vstmax,
-                               row_id=row_id,
-                               value=Vstmax)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vstmin,
-                               row_id=row_id,
-                               value=Vstmin)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vlmax,
-                               row_id=row_id,
-                               value=Vlmax)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vlmin,
-                               row_id=row_id,
-                               value=Vlmin)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vimax,
-                               row_id=row_id,
-                               value=Vimax)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vimin,
-                               row_id=row_id,
-                               value=Vimin)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vvlmax,
-                               row_id=row_id,
-                               value=Vvlmax)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vvlmin,
-                               row_id=row_id,
-                               value=Vvlmin)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vhmax,
-                               row_id=row_id,
-                               value=Vhmax)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.Vhmin,
-                               row_id=row_id,
-                               value=Vhmin)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KL,
-                               row_id=row_id,
-                               value=KL)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KL1,
-                               row_id=row_id,
-                               value=KL1)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KL2,
-                               row_id=row_id,
-                               value=KL2)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KL11,
-                               row_id=row_id,
-                               value=KL11)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KL17,
-                               row_id=row_id,
-                               value=KL17)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KI,
-                               row_id=row_id,
-                               value=KI)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KI1,
-                               row_id=row_id,
-                               value=KI1)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KI2,
-                               row_id=row_id,
-                               value=KI2)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KI11,
-                               row_id=row_id,
-                               value=KI11)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KI17,
-                               row_id=row_id,
-                               value=KI17)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KH,
-                               row_id=row_id,
-                               value=KH)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KH1,
-                               row_id=row_id,
-                               value=KH1)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KH2,
-                               row_id=row_id,
-                               value=KH2)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KH11,
-                               row_id=row_id,
-                               value=KH11)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.KH17,
-                               row_id=row_id,
-                               value=KH17)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL1,
-                               row_id=row_id,
-                               value=TL1)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL2,
-                               row_id=row_id,
-                               value=TL2)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL3,
-                               row_id=row_id,
-                               value=TL3)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL4,
-                               row_id=row_id,
-                               value=TL4)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL5,
-                               row_id=row_id,
-                               value=TL5)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL6,
-                               row_id=row_id,
-                               value=TL6)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL7,
-                               row_id=row_id,
-                               value=TL7)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL8,
-                               row_id=row_id,
-                               value=TL8)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL9,
-                               row_id=row_id,
-                               value=TL9)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL10,
-                               row_id=row_id,
-                               value=TL10)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL11,
-                               row_id=row_id,
-                               value=TL11)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TL12,
-                               row_id=row_id,
-                               value=TL12)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI1,
-                               row_id=row_id,
-                               value=TI1)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI2,
-                               row_id=row_id,
-                               value=TI2)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI3,
-                               row_id=row_id,
-                               value=TI3)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI4,
-                               row_id=row_id,
-                               value=TI4)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI5,
-                               row_id=row_id,
-                               value=TI5)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI6,
-                               row_id=row_id,
-                               value=TI6)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI7,
-                               row_id=row_id,
-                               value=TI7)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI8,
-                               row_id=row_id,
-                               value=TI8)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI9,
-                               row_id=row_id,
-                               value=TI9)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI10,
-                               row_id=row_id,
-                               value=TI10)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI11,
-                               row_id=row_id,
-                               value=TI11)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TI12,
-                               row_id=row_id,
-                               value=TI12)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH1,
-                               row_id=row_id,
-                               value=TH1)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH2,
-                               row_id=row_id,
-                               value=TH2)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH3,
-                               row_id=row_id,
-                               value=TH3)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH4,
-                               row_id=row_id,
-                               value=TH4)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH5,
-                               row_id=row_id,
-                               value=TH5)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH6,
-                               row_id=row_id,
-                               value=TH6)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH7,
-                               row_id=row_id,
-                               value=TH7)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH8,
-                               row_id=row_id,
-                               value=TH8)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH9,
-                               row_id=row_id,
-                               value=TH9)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH10,
-                               row_id=row_id,
-                               value=TH10)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH11,
-                               row_id=row_id,
-                               value=TH11)
-
-    variable_.make_changes_row(table=DFWIEEE421PSS4B.table,
-                               column=DFWIEEE421PSS4B.TH12,
-                               row_id=row_id,
-                               value=TH12)
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.sel,
+                                       row_id=row_id,
+                                       value=sel)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.sta,
+                                       row_id=row_id,
+                                       value=sta)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Id,
+                                       row_id=row_id,
+                                       value=Id)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Name,
+                                       row_id=row_id,
+                                       value=Name)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.ModelType,
+                                       row_id=row_id,
+                                       value=ModelType)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Brand,
+                                       row_id=row_id,
+                                       value=Brand)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.CustomModel,
+                                       row_id=row_id,
+                                       value=CustomModel)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Input1Type,
+                                       row_id=row_id,
+                                       value=Input1Type)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Input2Type,
+                                       row_id=row_id,
+                                       value=Input2Type)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.MBPSS1,
+                                       row_id=row_id,
+                                       value=MBPSS1)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.MBPSS2,
+                                       row_id=row_id,
+                                       value=MBPSS2)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vstmax,
+                                       row_id=row_id,
+                                       value=Vstmax)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vstmin,
+                                       row_id=row_id,
+                                       value=Vstmin)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vlmax,
+                                       row_id=row_id,
+                                       value=Vlmax)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vlmin,
+                                       row_id=row_id,
+                                       value=Vlmin)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vimax,
+                                       row_id=row_id,
+                                       value=Vimax)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vimin,
+                                       row_id=row_id,
+                                       value=Vimin)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vvlmax,
+                                       row_id=row_id,
+                                       value=Vvlmax)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vvlmin,
+                                       row_id=row_id,
+                                       value=Vvlmin)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vhmax,
+                                       row_id=row_id,
+                                       value=Vhmax)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.Vhmin,
+                                       row_id=row_id,
+                                       value=Vhmin)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KL,
+                                       row_id=row_id,
+                                       value=KL)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KL1,
+                                       row_id=row_id,
+                                       value=KL1)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KL2,
+                                       row_id=row_id,
+                                       value=KL2)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KL11,
+                                       row_id=row_id,
+                                       value=KL11)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KL17,
+                                       row_id=row_id,
+                                       value=KL17)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KI,
+                                       row_id=row_id,
+                                       value=KI)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KI1,
+                                       row_id=row_id,
+                                       value=KI1)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KI2,
+                                       row_id=row_id,
+                                       value=KI2)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KI11,
+                                       row_id=row_id,
+                                       value=KI11)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KI17,
+                                       row_id=row_id,
+                                       value=KI17)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KH,
+                                       row_id=row_id,
+                                       value=KH)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KH1,
+                                       row_id=row_id,
+                                       value=KH1)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KH2,
+                                       row_id=row_id,
+                                       value=KH2)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KH11,
+                                       row_id=row_id,
+                                       value=KH11)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.KH17,
+                                       row_id=row_id,
+                                       value=KH17)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL1,
+                                       row_id=row_id,
+                                       value=TL1)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL2,
+                                       row_id=row_id,
+                                       value=TL2)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL3,
+                                       row_id=row_id,
+                                       value=TL3)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL4,
+                                       row_id=row_id,
+                                       value=TL4)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL5,
+                                       row_id=row_id,
+                                       value=TL5)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL6,
+                                       row_id=row_id,
+                                       value=TL6)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL7,
+                                       row_id=row_id,
+                                       value=TL7)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL8,
+                                       row_id=row_id,
+                                       value=TL8)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL9,
+                                       row_id=row_id,
+                                       value=TL9)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL10,
+                                       row_id=row_id,
+                                       value=TL10)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL11,
+                                       row_id=row_id,
+                                       value=TL11)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TL12,
+                                       row_id=row_id,
+                                       value=TL12)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI1,
+                                       row_id=row_id,
+                                       value=TI1)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI2,
+                                       row_id=row_id,
+                                       value=TI2)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI3,
+                                       row_id=row_id,
+                                       value=TI3)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI4,
+                                       row_id=row_id,
+                                       value=TI4)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI5,
+                                       row_id=row_id,
+                                       value=TI5)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI6,
+                                       row_id=row_id,
+                                       value=TI6)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI7,
+                                       row_id=row_id,
+                                       value=TI7)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI8,
+                                       row_id=row_id,
+                                       value=TI8)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI9,
+                                       row_id=row_id,
+                                       value=TI9)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI10,
+                                       row_id=row_id,
+                                       value=TI10)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI11,
+                                       row_id=row_id,
+                                       value=TI11)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TI12,
+                                       row_id=row_id,
+                                       value=TI12)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH1,
+                                       row_id=row_id,
+                                       value=TH1)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH2,
+                                       row_id=row_id,
+                                       value=TH2)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH3,
+                                       row_id=row_id,
+                                       value=TH3)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH4,
+                                       row_id=row_id,
+                                       value=TH4)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH5,
+                                       row_id=row_id,
+                                       value=TH5)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH6,
+                                       row_id=row_id,
+                                       value=TH6)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH7,
+                                       row_id=row_id,
+                                       value=TH7)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH8,
+                                       row_id=row_id,
+                                       value=TH8)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH9,
+                                       row_id=row_id,
+                                       value=TH9)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH10,
+                                       row_id=row_id,
+                                       value=TH10)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH11,
+                                       row_id=row_id,
+                                       value=TH11)
+
+    variable_.make_changes_filling_row(table=DFWIEEE421PSS4B.table,
+                                       column=DFWIEEE421PSS4B.TH12,
+                                       row_id=row_id,
+                                       value=TH12)
+
+
+if __name__ == '__main__':
+    from RastrWinLib.AstraRastr import RASTR
+    from RastrWinLib.tables.Dynamic.DFWIEEE421PSS4B import DFWIEEE421PSS4B
+    from RastrWinLib.loading.load import load_file
+    from RastrWinLib.loading.save import save_file
+    from RastrWinLib.loading.shablon import Shabl
+
+    load_file(rastr_win=RASTR,
+              file_path='',
+              shabl=Shabl.shablon_file_dynamic)
+
+    load_file(rastr_win=RASTR,
+              file_path='',
+              shabl=Shabl.shablon_file_automation)
+
+    table_ = RASTR.Tables(DFWIEEE421PSS4B.table)
+
+    for i in range(0, 1000):
+        table_.AddRow()
+
+
+
+    save_file(rastr_win=RASTR,
+              file_path='',
+              shabl=Shabl.shablon_file_dynamic)

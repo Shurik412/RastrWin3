@@ -80,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Eurostag\rename_file_expp.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Eurostag\test.py">
           <value>
             <Attribute>
@@ -256,6 +263,13 @@
           </value>
         </entry>
         <entry key="\RastrWinLib\FillingTable\DFWIEEE421PSS4B_Filling.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\FillingTable\DFWIEEE421_Filling.py">
           <value>
             <Attribute>
               <option name="separator" value="," />
