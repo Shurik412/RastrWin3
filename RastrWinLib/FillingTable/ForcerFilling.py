@@ -31,26 +31,26 @@ def filling_Forcer(
 ):
     """
 
-    :param rastr_win:
-    :param row_id:
-    :param sel:
-    :param sta:
-    :param Id:
-    :param Name:
-    :param ModelType:
-    :param Brand:
-    :param CustomModel:
-    :param Ubf:
-    :param Uef:
-    :param Ubrf:
-    :param Uerf:
+    :param rastr_win: COM - объект Rastr.Astra (win32com);
+    :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
+    :param sel: Отметка [O];
+    :param sta: Состояние форсировки [S];
+    :param Id: Номер форсировки [N];
+    :param Name: Название форсировки [Название];
+    :param ModelType: Модель форсировки [Модель];
+    :param Brand: Марка форсировки [Марка];
+    :param CustomModel: Модель в конструкторе [Конструктор];
+    :param Ubf: Напряжение ввода форсировки [U_ввф];
+    :param Uef: Напряжение снятия форсировки [U_снф];
+    :param Ubrf: Напряжение ввода расфорсировки [U_вврф];
+    :param Uerf: Напряжение снятия расфорсировки [U_снрф];
     :param Ufors:
-    :param Rf:
-    :param Rrf:
-    :param Texc_f:
-    :param Tz_in:
-    :param Tz_out:
-    :param Texc_rf:
+    :param Rf: Кратность форсировки [К_ф];
+    :param Rrf: Кратность расфорсировки [К_рф];
+    :param Texc_f: Постоянная времени возбудит. при форсировке [Т_ф];
+    :param Tz_in: Задержка времени возбудит. при форсировке [Тз_ввод];
+    :param Tz_out: Задержка времени возбудит. при расфорсировке [Тз_снятия];
+    :param Texc_rf: Постоянная времени возбудит. при расфорсировке
     :param switch_command_line:
     :return:
     """

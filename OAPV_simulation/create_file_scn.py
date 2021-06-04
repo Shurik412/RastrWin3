@@ -22,7 +22,6 @@ class CreateActionsSCN(Variable):
 
     def create(self, table=DFWAutoActionScn.table, start=14, finish=31):
         table_ = self.rastr_win.Tables(table)
-        table_.DelRows()
         for index in range(start, finish):
             table_.AddRow()
             Variable.make_changes_row(self,
@@ -102,7 +101,6 @@ class CreateActionsSCN(Variable):
                           switch_command_line=switch_command_line)
 
         table_ = self.rastr_win.Tables(DFWAutoLogicScn.table)
-        table_.DelRows()
         for index in range(start, finish):
             table_.AddRow()
             Variable.make_changes_row(self,
@@ -110,6 +108,7 @@ class CreateActionsSCN(Variable):
                                       column=DFWAutoLogicScn.Id,
                                       row_id=index - start,
                                       value=self.ws[f'A{index}'].value)  # Id
+
             Variable.make_changes_row(self,
                                       table=DFWAutoLogicScn.table,
                                       column=DFWAutoLogicScn.Name,
@@ -183,11 +182,12 @@ if __name__ == '__main__':
     # from RastrWinLib.loading.shablons_dir import shablon_file_scenario
     # from RastrWinLib.loading.save_file_rastrwin import save_file
     # from RastrWinLib.loading.load_file_rastrwin import load_file
+    from RastrWinLib.loading.shablon import Shabl
 
     rastr = win32com.client.Dispatch('Astra.Rastr')
-    load_file(rastr_win=rastr, shabl=shablon_file_scenario)
-    filename = 'L:\\SER\\Охрименко\\03. RastrWinLib\\16\\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Восточная.xlsx'
+    load_file(rastr_win=rastr, shabl=Shabl.shablon_file_scenario)
+    filename = r'L:\SER\Охрименко\03. RastrWin3\19\ВЛ 500 кВ Нововоронежская АЭС – Воронежская.xlsx'
     scn = CreateActionsSCN(rastr_win=rastr, name_list_excel='Сценарий', dir_name_file_excel=filename, )
     scn.create()
     scn.create_log()
-    scn.save_scn(dir_file_name_save_scn='L:\\SER\\Охрименко\\03. RastrWinLib\\16\\scn1.scn', switch_command_line=True)
+    scn.save_scn(dir_file_name_save_scn=r'L:\SER\Охрименко\03. RastrWin3\19\scn1.scn', switch_command_line=True)

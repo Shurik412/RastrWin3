@@ -38,7 +38,7 @@ class SteadyState:
             start_time = time()
         else:
             start_time = 0
-        kod = self.rastr_win.Rgm(self.par)
+        kod = self.rastr_win.rgm(self.par)
         if self.switch_command_line is not False:
             print(f'{Tools.separator_noun}\n'
                   f'Запуск "Расчет режима":\n'

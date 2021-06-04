@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS4B_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS4B_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Dynamic/DFWIEEE421PSS4B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS13_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS13_Filling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ForcerFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ForcerFilling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +80,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\EX2100" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DFWIEEE421PSS4B_Filling">
+  <component name="RunManager" selected="Python.OAPV_calc">
     <configuration name="DFW421UEL_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +94,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DFWIEEE421PSS13_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/FillingTable" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS13_Filling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DFWIEEE421_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/FillingTable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421_Filling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_bat_file_dynamic (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="create_file_scn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,32 +173,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag/CreateBatFile" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="create_copy_file_SMZU_with_date" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OAPV_calc" />
+        <item itemvalue="Python.DFWIEEE421PSS13_Filling" />
+        <item itemvalue="Python.create_file_scn" />
         <item itemvalue="Python.DFWIEEE421PSS4B_Filling" />
         <item itemvalue="Python.DFW421UEL_Filling" />
-        <item itemvalue="Python.DFWIEEE421_Filling" />
-        <item itemvalue="Python.create_bat_file_dynamic (1)" />
-        <item itemvalue="Python.create_copy_file_SMZU_with_date" />
       </list>
     </recent_temporary>
   </component>
@@ -205,13 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Corr DFWIEEE421.py">
-      <created>1620247757293</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1620247757293</updated>
     </task>
     <task id="LOCAL-00136" summary="Corr Full table Dynamic">
       <created>1620307104874</created>
@@ -549,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622788207923</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="Add doc and corr DFWIEEE421PSS4B.py">
+      <created>1622792695952</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1622792695952</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +567,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create set_regime.py" />
     <MESSAGE value="Create def -&gt; get.py, vetv.py&#10;Corr set_regime.py" />
     <MESSAGE value="Create DFWAutoActionScn.py" />
     <MESSAGE value="Create DFWAutoLogicScn.py" />
@@ -590,7 +591,8 @@
     <MESSAGE value="Add documentation in DFW421UEL_Filling.py" />
     <MESSAGE value="init" />
     <MESSAGE value="Del file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Del file" />
+    <MESSAGE value="Add doc and corr DFWIEEE421PSS4B.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add doc and corr DFWIEEE421PSS4B.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
