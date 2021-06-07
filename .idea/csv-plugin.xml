@@ -297,6 +297,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RastrWinLib\FillingTable\DFWTHYNE14_Filling.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RastrWinLib\FillingTable\FuncPQ_Filling.py">
           <value>
             <Attribute>
