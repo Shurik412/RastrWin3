@@ -9,6 +9,110 @@ from RastrWinLib.tables.Scenario.DFWAutoLogicScn import DFWAutoLogicScn
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
+
+
+def create_file_scn(WorkSheet,):
+    # 1 строка
+    WorkSheet['A14'] = '1'
+    WorkSheet['B14'] = '1'
+    WorkSheet['C14'] = 'Узел Rш'
+    WorkSheet['D14'] = WorkSheet['N3'].value
+    WorkSheet['E14'] = WorkSheet['N25'].value
+    WorkSheet['F14'] = ''
+    WorkSheet['G14'] = ''
+    WorkSheet['H14'] = f'ny={WorkSheet["T25"].value}'
+
+    # 2 строка
+    WorkSheet['A15'] = '2'
+    WorkSheet['B15'] = '1'
+    WorkSheet['C15'] = 'Узел Xш'
+    WorkSheet['D15'] = WorkSheet['N3'].value
+    WorkSheet['E15'] = WorkSheet['N26'].value
+    WorkSheet['F15'] = ''
+    WorkSheet['G15'] = ''
+    WorkSheet['H15'] = f'ny={WorkSheet["T25"].value}'
+
+    # 3 строка
+    WorkSheet['A16'] = '3'
+    WorkSheet['B16'] = '2'
+    WorkSheet['C16'] = 'Узел Rш'
+    WorkSheet['D16'] = WorkSheet['N4'].value
+    WorkSheet['E16'] = WorkSheet['N35'].value
+    WorkSheet['F16'] = ''
+    WorkSheet['G16'] = ''
+    WorkSheet['H16'] = f'ny={WorkSheet["AE25"].value}'
+
+    # 4 строка
+    WorkSheet['A17'] = '4'
+    WorkSheet['B17'] = '2'
+    WorkSheet['C17'] = 'Узел Xш'
+    WorkSheet['D17'] = WorkSheet['N4'].value
+    WorkSheet['E17'] = WorkSheet['N36'].value
+    WorkSheet['F17'] = ''
+    WorkSheet['G17'] = ''
+    WorkSheet['H17'] = f'ny={WorkSheet["AE25"].value}'
+
+    # 5 строка
+    WorkSheet['A18'] = '5'
+    WorkSheet['B18'] = '2'
+    WorkSheet['C18'] = 'Объект'
+    WorkSheet['D18'] = WorkSheet['N2'].value
+    WorkSheet['E18'] = WorkSheet['N32'].value
+    WorkSheet['F18'] = 'vetv'
+    WorkSheet['G18'] = 'r'
+    WorkSheet['H18'] = f'ip={WorkSheet["X25"].value},iq={WorkSheet["Z25"].value},np={WorkSheet["AB25"].value}'
+
+    # 6 строка
+    WorkSheet['A19'] = '6'
+    WorkSheet['B19'] = '2'
+    WorkSheet['C19'] = 'Объект'
+    WorkSheet['D19'] = WorkSheet['N2'].value
+    WorkSheet['E19'] = WorkSheet['N33'].value
+    WorkSheet['F19'] = 'vetv'
+    WorkSheet['G19'] = 'x'
+    WorkSheet['H19'] = f'ip={WorkSheet["X25"].value},iq={WorkSheet["Z25"].value},np={WorkSheet["AB25"].value}'
+
+    # 7 строка
+    WorkSheet['A20'] = '7'
+    WorkSheet['B20'] = '2'
+    WorkSheet['C20'] = 'Объект'
+    WorkSheet['D20'] = WorkSheet['N2'].value
+    WorkSheet['E20'] = '0'
+    WorkSheet['F20'] = 'vetv'
+    WorkSheet['G20'] = 'b'
+    WorkSheet['H20'] = f'ip={WorkSheet["X25"].value},iq={WorkSheet["Z25"].value},np={WorkSheet["AB25"].value}'
+
+    # 8 строка
+    WorkSheet['A21'] = '8'
+    WorkSheet['B21'] = '2'
+    WorkSheet['C21'] = 'Узел Rш'
+    WorkSheet['D21'] = WorkSheet['N3'].value
+    WorkSheet['E21'] = WorkSheet['N29'].value
+    WorkSheet['F21'] = ''
+    WorkSheet['G21'] = ''
+    WorkSheet['H21'] = f'ny={WorkSheet["T25"].value}'
+
+    # 9 строка
+    WorkSheet['A22'] = '9'
+    WorkSheet['B22'] = '2'
+    WorkSheet['C22'] = 'Узел Xш'
+    WorkSheet['D22'] = WorkSheet['N3'].value
+    WorkSheet['E22'] = WorkSheet['N30'].value
+    WorkSheet['F22'] = ''
+    WorkSheet['G22'] = ''
+    WorkSheet['H22'] = f'ny={WorkSheet["T25"].value}'
+
+    # 10 строка
+    WorkSheet['A23'] = '10'
+    WorkSheet['B23'] = '3'
+    WorkSheet['C23'] = 'Узел Xш'
+    WorkSheet['D23'] = WorkSheet['N3'].value
+    WorkSheet['E23'] = WorkSheet['N30'].value
+    WorkSheet['F23'] = ''
+    WorkSheet['G23'] = ''
+    WorkSheet['H23'] = f'ny={WorkSheet["T25"].value}'
+
+
 class CreateActionsSCN(Variable):
     def __init__(self, rastr_win, dir_name_file_excel, name_list_excel, switch_command_line=False):
 
@@ -173,6 +277,23 @@ class CreateActionsSCN(Variable):
                       file_path=f'{dir}/{name_save_scn}',
                       shabl=Shabl.shablon_file_scenario,
                       switch_command_line=switch_command_line)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':

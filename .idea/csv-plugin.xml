@@ -3,6 +3,20 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="C:\Users\Ohrimenko_AG\Desktop\GuiPy\calc.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Ohrimenko_AG\Desktop\GuiPy\gui.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\BARS\create_copy_file_SMZU_with_date.py">
           <value>
             <Attribute>
@@ -46,6 +60,13 @@
           </value>
         </entry>
         <entry key="\Equivalence\tabl_com_cxema.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Eurostag\CreateBatFile\create_bat_file_dynamic.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
