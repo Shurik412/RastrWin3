@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/FuncPQ_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/FuncPQ_Filling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\EX2100" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.FuncPQ_Filling">
+  <component name="RunManager" selected="Python.Eurostag_Output_PSS">
     <configuration name="DFWTHYNE14_Filling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,10 +184,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.FuncPQ_Filling" />
         <item itemvalue="Python.ForcerFilling" />
         <item itemvalue="Python.ExciterFilling" />
-        <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.DFWTHYNE14_Filling" />
       </list>
     </recent_temporary>
@@ -202,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Create ForcerFilling.py">
-      <created>1620331655609</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1620331655609</updated>
     </task>
     <task id="LOCAL-00141" summary="Create DFW421UEL_Filling.py">
       <created>1620333209741</created>
@@ -546,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623071736817</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="Add testing code FuncPQ_Filling.py">
+      <created>1623072322424</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1623072322424</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -562,7 +563,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Full Corr" />
     <MESSAGE value="Corr dynamic.py" />
     <MESSAGE value="Delete test OAPV_sim" />
     <MESSAGE value="Add # -*- coding: utf-8 -*-" />
@@ -587,7 +587,8 @@
     <MESSAGE value="Run Macro" />
     <MESSAGE value="Add testing code DFWTHYNE14_Filling.py" />
     <MESSAGE value="Add testing code ForcerFilling.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add testing code ForcerFilling.py" />
+    <MESSAGE value="Add testing code FuncPQ_Filling.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add testing code FuncPQ_Filling.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
