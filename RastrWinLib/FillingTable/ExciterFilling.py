@@ -41,7 +41,6 @@ def filling_exciter(
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel;
     :param Id: Номер возбудителя [N];
-    :param table: Имя таблицы "Возбудитель (ИД)";
     :param sel: Отметка [O];
     :param sta: Состояние возбудителя [S];
     :param Name: Название возбудителя [Название];
@@ -71,127 +70,177 @@ def filling_exciter(
     """
     variable_ = Variable(rastr_win=rastr_win)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Id,
-                               row_id=row_id,
-                               value=Id)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Id,
+                                       row_id=row_id,
+                                       value=Id)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.sel,
-                               row_id=row_id,
-                               value=sel)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.sel,
+                                       row_id=row_id,
+                                       value=sel)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.sta,
-                               row_id=row_id,
-                               value=sta)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.sta,
+                                       row_id=row_id,
+                                       value=sta)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Name,
-                               row_id=row_id,
-                               value=Name)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Name,
+                                       row_id=row_id,
+                                       value=Name)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.CustomModel,
-                               row_id=row_id,
-                               value=CustomModel)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.CustomModel,
+                                       row_id=row_id,
+                                       value=CustomModel)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.ModelType,
-                               row_id=row_id,
-                               value=ModelType)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.ModelType,
+                                       row_id=row_id,
+                                       value=ModelType)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Brand,
-                               row_id=row_id,
-                               value=Brand)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Brand,
+                                       row_id=row_id,
+                                       value=Brand)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.ExcControlId,
-                               row_id=row_id,
-                               value=ExcControlId)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.ExcControlId,
+                                       row_id=row_id,
+                                       value=ExcControlId)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.ForcerId,
-                               row_id=row_id,
-                               value=ForcerId)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.ForcerId,
+                                       row_id=row_id,
+                                       value=ForcerId)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Texc,
-                               row_id=row_id,
-                               value=Texc)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Texc,
+                                       row_id=row_id,
+                                       value=Texc)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Kig,
-                               row_id=row_id,
-                               value=Kig)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Kig,
+                                       row_id=row_id,
+                                       value=Kig)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Kif,
-                               row_id=row_id,
-                               value=Kif)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Kif,
+                                       row_id=row_id,
+                                       value=Kif)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Uf_min,
-                               row_id=row_id,
-                               value=Uf_min)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Uf_min,
+                                       row_id=row_id,
+                                       value=Uf_min)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Uf_max,
-                               row_id=row_id,
-                               value=Uf_max)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Uf_max,
+                                       row_id=row_id,
+                                       value=Uf_max)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.If_min,
-                               row_id=row_id,
-                               value=If_min)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.If_min,
+                                       row_id=row_id,
+                                       value=If_min)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.If_max,
-                               row_id=row_id,
-                               value=If_max)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.If_max,
+                                       row_id=row_id,
+                                       value=If_max)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Karv,
-                               row_id=row_id,
-                               value=Karv)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Karv,
+                                       row_id=row_id,
+                                       value=Karv)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.T2exc,
-                               row_id=row_id,
-                               value=T2exc)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.T2exc,
+                                       row_id=row_id,
+                                       value=T2exc)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.T3exc,
-                               row_id=row_id,
-                               value=T3exc)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.T3exc,
+                                       row_id=row_id,
+                                       value=T3exc)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Type_rg_max,
-                               row_id=row_id,
-                               value=Type_rg_max)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Type_rg_max,
+                                       row_id=row_id,
+                                       value=Type_rg_max)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Udop2,
-                               row_id=row_id,
-                               value=Udop2)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Udop2,
+                                       row_id=row_id,
+                                       value=Udop2)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Uexc,
-                               row_id=row_id,
-                               value=Uexc)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Uexc,
+                                       row_id=row_id,
+                                       value=Uexc)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Urvi_max,
-                               row_id=row_id,
-                               value=Urvi_max)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Urvi_max,
+                                       row_id=row_id,
+                                       value=Urvi_max)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Urvi_min,
-                               row_id=row_id,
-                               value=Urvi_min)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Urvi_min,
+                                       row_id=row_id,
+                                       value=Urvi_min)
 
-    variable_.make_changes_row(table=Exciter.table,
-                               column=Exciter.Type_rg,
-                               row_id=row_id,
-                               value=Type_rg)
+    variable_.make_changes_filling_row(table=Exciter.table,
+                                       column=Exciter.Type_rg,
+                                       row_id=row_id,
+                                       value=Type_rg)
+
+
+if __name__ == '__main__':
+    from RastrWinLib.AstraRastr import RASTR
+    from RastrWinLib.loading.load import load_file
+    from RastrWinLib.loading.save import save_file
+    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.tables.Dynamic.Exciter import Exciter
+
+    load_file(rastr_win=RASTR,
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
+              shabl=Shabl.shablon_file_dynamic)
+
+    table_ = RASTR.Tables(Exciter.table)
+
+    for i in range(0, 10):
+        table_.AddRow()
+        filling_exciter(
+            rastr_win=RASTR,
+            row_id=i,
+            Id=123456789,
+            sel=None,
+            sta=None,
+            Name=f'Генератор {i}',
+            CustomModel=None,
+            ModelType=None,
+            Brand=None,
+            ExcControlId=123456789,
+            ForcerId=123456789,
+            Texc=0.123456789,
+            Kig=0.123456789,
+            Kif=0.123456789,
+            Uf_min=0.123456789,
+            Uf_max=0.123456789,
+            If_min=0.123456789,
+            If_max=0.123456789,
+            Karv=0.123456789,
+            T2exc=0.123456789,
+            T3exc=0.123456789,
+            Type_rg_max=1,
+            Udop2=0.123456789,
+            Uexc=0.123456789,
+            Urvi_max=0.123456789,
+            Urvi_min=0.123456789,
+            Type_rg=1,
+            switch_command_line=False)
+
+    save_file(rastr_win=RASTR,
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test_Exciter.rst',
+              shabl=Shabl.shablon_file_dynamic)
