@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from RastrWinLib.AstraRastr import RASTR, RastrDoc
-from RastrWinLib.tables.Dynamic.Generator import Generator, GeneratorsDescription
-from RastrWinLib.tools.tools import Tools
+from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.variables.variable_parametrs import Variable
 
 
@@ -227,7 +225,7 @@ if __name__ == '__main__':
     from RastrWinLib.tables.Dynamic.Generator import Generator
 
     load_file(rastr_win=RASTR,
-              file_path='',
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
               shabl=Shabl.shablon_file_dynamic)
 
     table_ = RASTR.Tables(Generator.table)
@@ -267,5 +265,5 @@ if __name__ == '__main__':
             switch_command_line=False)
 
     save_file(rastr_win=RASTR,
-              file_path='',
+              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test_Generators.rst',
               shabl=Shabl.shablon_file_dynamic)

@@ -73,6 +73,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Eurostag\CreateBatFile\create_bat_file_post_processor.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Eurostag\Creator_PRG_and_SQL.py">
           <value>
             <Attribute>
