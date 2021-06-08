@@ -54,3 +54,17 @@ class SteadyState:
                 f'(Seconds: {"%.2f" % time_calc} [секунд])')
         print(Tools.separator_noun)
         return kod
+
+
+if __name__ == '__main__':
+    from RastrWinLib.AstraRastr import RASTR
+    from RastrWinLib.loading.load import load_file
+    from RastrWinLib.loading.shablon import Shabl
+
+    load_file(rastr_win=RASTR,
+              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+              shabl=Shabl.shablon_file_dynamic)
+    load_file(rastr_win=RASTR)
+
+    regim = SteadyState(rastr_win=RASTR, switch_command_line=False)
+    regim.rgm()

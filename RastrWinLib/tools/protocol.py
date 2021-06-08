@@ -7,7 +7,7 @@ from icecream import ic
 class RastrEvents:
     """
     Метод Onprot - выводит сообщения написанные: rastr.Printp("Сообщение из Printp")
-    Метод OnLog - выводит
+    Метод OnLog - выводит результаты протокола.
     """
 
     def OnLog(self, code, level, id, name, index, description, formName):
@@ -40,4 +40,3 @@ if __name__ == '__main__':
     d.run()
     print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
     d.run()
-
