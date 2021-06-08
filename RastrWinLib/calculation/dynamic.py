@@ -5,6 +5,20 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.tables.Settings.com_dynamics import ComDynamics
 from RastrWinLib.tools.tools import Tools
 from RastrWinLib.variables.variable_parametrs import Variable
+from win32com.client import Dispatch, WithEvents, constants
+
+
+class RastrEvents:
+    """
+    Метод Onprot - выводит сообщения написанные: rastr.Printp("Сообщение из Printp")
+    Метод OnLog
+    """
+
+    def OnLog(self, code, level, id, name, index, description, formName):
+        print(f"[{code}] {description}")
+
+    def Onprot(self, message):
+        print(message)
 
 
 class Dynamic:
@@ -16,10 +30,10 @@ class Dynamic:
         f"""
         Функции для расчтета ЭМПП доступны в интерфейсе IFWDynamic.
         Интерфейс может быть получен с помощью свойства IRastr.FWDynamic.
-        :param rastr_win: {Tools.RastrDoc};
+        :param rastr_win: ;
         :param calc_time: время расчета ЭМПП;
-        :param snap_max_count: 
-        :param switch_command_line: {Tools.switch_command_line_doc};
+        :param snap_max_count:  
+        :param switch_command_line: ;
         """
 
         self.rastr_win = rastr_win
@@ -88,3 +102,19 @@ class Dynamic:
                 f' (Seconds: {"%.2f" % time_calc} [секунд])')
         print(Tools.separator_grid)
         return ResultMessage
+
+
+if __name__ == '__main__':
+    from RastrWinLib.loading.load import load_file
+    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.AstraRastr import RASTR
+
+    load_file(rastr_win=RASTR,
+              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+              shabl=Shabl.shablon_file_dynamic)
+
+    load_file(rastr_win=RASTR)
+
+    calc = Dynamic(rastr_win=RASTR)
+
+    calc.run()
