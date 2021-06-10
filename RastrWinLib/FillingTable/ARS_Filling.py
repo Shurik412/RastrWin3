@@ -35,9 +35,10 @@ def filling_ARS(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_ARS - заполняет или вносит изменения в заданные переметры таблицы "".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param row_id: Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel;
+    :param row_id: Порядковый номер в таблице Турбина(ИД): возвращается функцией FindNexSel;
     :param sel: Отметка [O];
     :param sta: Состояние турбины/регулятора скорости [S];
     :param Id: Номер турбины/регулятора скорости [N турб];
@@ -61,8 +62,8 @@ def filling_ARS(
     :param Psteam: Давление пара [Pпара];
     :param Mupo: Паровые объемы [ПО];
     :param tpo: Постоянная времени паровых объемов [Т_по];
-    :param switch_command_line: вывод сообщений в протокол;
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

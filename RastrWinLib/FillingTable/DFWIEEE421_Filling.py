@@ -133,6 +133,7 @@ def filling_DFWIEEE421(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_DFWIEEE421 - вносит изменения в таблицу "Возбудители IEEE".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -257,8 +258,8 @@ def filling_DFWIEEE421(
     :param Samovozb: Параметр, определяющий тип системы возбуждения (зависимая/независимая) [Samovozb];
     :param RPQlim: Блокировка работы устройства ОМВ [RPQlim];
     :param RIFlim: Блокировка работы устройства БОР [RIFlim];
-    :param switch_command_line:
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

@@ -15,6 +15,7 @@ def filling_FuncPQ(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_FuncPQ - вносит изменения в таблицу "Зависимость Q(P)".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -22,7 +23,7 @@ def filling_FuncPQ(
     :param P: P [P];
     :param Q: Q [Q];
     :param switch_command_line: True/False - вывод сообщений в протокол;
-    :return:
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

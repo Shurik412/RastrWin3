@@ -41,11 +41,12 @@ def filling_DECS400(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_DECS400 - вносит изменения в таблицу "Возбудитель DECS-400".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param row_id:
-    :param sel:
-    :param sta:
+    :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
+    :param sel: Отметка;
+    :param sta: Состояние возбудителя [S];
     :param Id: Номер возбудителя [N взб];
     :param Name: Название возбудителя [Название];
     :param ModelType: Модель возбудителя [Модель];
@@ -73,8 +74,8 @@ def filling_DECS400(
     :param Tr: Постоянная времени фильтров [Tr];
     :param SelfExc: Самовозбуждение [CB];
     :param Del: Самовозбуждение [Del];
-    :param switch_command_line: вывод сообщений в протокол;
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

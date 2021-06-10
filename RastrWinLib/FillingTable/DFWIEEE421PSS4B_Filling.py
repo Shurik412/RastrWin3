@@ -83,6 +83,7 @@ def filling_DFWIEEE421PSS4B(
         TH12: float = None,
         switch_command_line: bool = False):
     """
+    Функция filling_DFWIEEE421PSS4B - вносит изменения в таблицу "Стабилизатор IEEE 4B".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -158,8 +159,8 @@ def filling_DFWIEEE421PSS4B(
     :param TH10: TH10 [TH10];
     :param TH11: TH11 [TH11];
     :param TH12: TH12 [TH12];
-    :param switch_command_line: вывод сообщений в протокол;
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
 
     variable_ = Variable(rastr_win=rastr_win)

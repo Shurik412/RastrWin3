@@ -11,13 +11,13 @@ class ChartExcel:
                  switch_command_line=False):
         """
 
-        :param work_sheet:
+        :param work_sheet: рабочий лист;
         :param chart_obj:
-        :param chart_title:
-        :param x_axis_title:
-        :param y_axis_title:
-        :param width_chart:
-        :param height_chart:
+        :param chart_title: название графика;
+        :param x_axis_title: название оси Х;
+        :param y_axis_title: название оси Y;
+        :param width_chart: ширина графика;
+        :param height_chart: высота графика;
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
         self.work_sheet = work_sheet
@@ -36,14 +36,14 @@ class ChartExcel:
                        width_line_pt=None):
         """
 
-        :param min_col_x:
-        :param min_row_x:
-        :param max_row_x:
-        :param min_col_y:
-        :param min_row_y:
-        :param max_row_y:
+        :param min_col_x: минмальная колонка (столбец) для оси Х;
+        :param min_row_x: минмальная строка для оси Х;
+        :param max_row_x: максимальный столбец для оси Х;
+        :param min_col_y: минимальная колонка для оси Y;
+        :param min_row_y: минимальная строка для оси Y;
+        :param max_row_y: максимальная строка для оси Y;
         :param title_from_data_ch:
-        :param title_ch:
+        :param title_ch: название графика;
         :param width_line_pt:
         :return:
         """
@@ -100,16 +100,16 @@ class ChartExcelOtherSheet:
                  switch_command_line=False):
         """
 
-        :param work_sheet:
-        :param work_book:
-        :param chart_obj:
-        :param chart_title:
-        :param x_axis_title:
-        :param y_axis_title:
+        :param work_sheet: рабочий лист;
+        :param work_book: рабочая книга Excel;
+        :param chart_obj: объект
+        :param chart_title: название графика;
+        :param x_axis_title: название оси Х;
+        :param y_axis_title: название оси Y;
         :param width_chart:
         :param height_chart:
-        :param legend_position:
-        :param x_axis_min:
+        :param legend_position: расположение легенды на графике;
+        :param x_axis_min: минимальная
         :param x_axis_max:
         :param y_axis_min:
         :param y_axis_max:

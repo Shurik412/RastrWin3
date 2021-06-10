@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 import os
 
-dir = fr'L:\SER\Охрименко\06. АРВ\7. Московское РДУ\ТЭЦ-20\ТГ-11Б ТЭЦ-20\exp'
+dir = fr'C:\03_26_LetoMax'
 
 n = 100
-flag1 = 1
+sezon_do = 1
+sezon_posle = 3
+
+flag1 = 0
 if flag1 == 1:
     for i in range(1, n + 1):
         try:
@@ -23,3 +26,12 @@ if flag2 == 1:
         except FileNotFoundError:
             print(f'Не найден файл {i}.')
         print(f'i = {i}')
+
+flag3 = 1
+if flag3 == 1:
+    for i in range(1, n + 1):
+        try:
+            os.rename(src=fr'{dir}\{sezon_do}_{i}.nwk', dst=fr'{dir}\{sezon_posle}_{i}.nwk')
+        except FileNotFoundError:
+            print(f'Не найден файл {i}.')
+        print(f'i={i}')

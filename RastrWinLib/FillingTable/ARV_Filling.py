@@ -63,6 +63,7 @@ def filling_ExcControl(
         deltaF: float = None,
         switch_command_line: bool = False):
     """
+    Функция filling_ExcControl - вносит изменения в таблицу "АРВ(ИД)".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -118,8 +119,8 @@ def filling_ExcControl(
     :param Alpha: Изменение уставки по напряжению при отклонении частоты в сети [Alpha];
     :param dSudt: Производная скольжения узла [dSu/dt];
     :param deltaF: Отклонение частоты узла [deltaF];
-    :param switch_command_line:
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win,
                          switch_command_line=switch_command_line)

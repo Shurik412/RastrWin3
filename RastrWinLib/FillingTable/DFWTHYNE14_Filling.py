@@ -67,6 +67,7 @@ def filling_DFWTHYNE14(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_DFWTHYNE14 - вносит изменения в таблицу "Возбудители Thyne 1-4".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -125,8 +126,8 @@ def filling_DFWTHYNE14(
     :param VrMax: Максимальное ограничение тиристорного моста [VrMax];
     :param VrMin: Минимальное ограничение тиристорного моста [VrMin];
     :param Xp: Коэффициент обратной связи [Xp];
-    :param switch_command_line: вывод сообщений в протокол;
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
 
     variable_ = Variable(rastr_win=rastr_win)

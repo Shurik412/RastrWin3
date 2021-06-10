@@ -38,37 +38,38 @@ def filling_DFWOELUNITROL(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_DFWOELUNITROL - вносит изменения в таблицу "БОР UNITROL".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
     :param sel: Отметка [O];
-    :param sta:
-    :param Id:
-    :param Name:
-    :param ModelType:
-    :param Brand:
-    :param CustomModel:
-    :param IfMax:
-    :param Ifth:
-    :param KexpIf:
-    :param KR3:
-    :param KR3i:
-    :param Kth:
-    :param KToF:
-    :param KcF:
-    :param KhF:
-    :param Tc13:
-    :param Tc23:
-    :param Tb13:
-    :param Tb23:
-    :param Tdel:
-    :param Vamax:
-    :param Vamin:
-    :param TRFout:
-    :param Tr:
-    :param Output:
-    :param switch_command_line:
-    :return:
+    :param sta: Состояние БОР [S];
+    :param Id: Номер БОР [N БОР];
+    :param Name: Название БОР [Название];
+    :param ModelType: Модель БОР [Модель];
+    :param Brand: Марка БОР [Марка];
+    :param CustomModel: Модель в конструкторе [Конструктор];
+    :param IfMax: Максимальный ток возбуждения [IfMax];
+    :param Ifth: Максимальный ток возбуждения по нагреву [Ifth];
+    :param KexpIf: Показатель степени тепловой характеристики [KexpIf];
+    :param KR3: Коэффициент усиления ограничения [KR3];
+    :param KR3i: Дополнительный коэффициент усиления ограничения [KR3i];
+    :param Kth: Коэффициент усиления переключателя теплового канала [Kth];
+    :param KToF: Постоянная интегрирования [KTof];
+    :param KcF: Постоянная охлаждения [KcF];
+    :param KhF: Постоянная обратной время-токовой зависимости [KhF];
+    :param Tc13: Постоянная времени [Tc13];
+    :param Tc23: Постоянная времени [Tc23];
+    :param Tb13: Постоянная времени [Tb13];
+    :param Tb23: Постоянная времени [Tb23];
+    :param Tdel: Выдержка времени [Tвыд];
+    :param Vamax: Максимальное ограничение регулятора [Vamax];
+    :param Vamin: Минимальное ограничение регулятора [Vamin];
+    :param TRFout: Тип регулятора [TRFout];
+    :param Tr: Постоянная времени измерительного фильтра [Tr];
+    :param Output: Режим выхода [Выход];
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

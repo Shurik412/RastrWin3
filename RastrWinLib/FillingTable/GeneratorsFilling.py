@@ -69,7 +69,7 @@ def filling_generators(
     :param x0: Реактивное сопротивление сопротивление нулевой последовательности [X0];
     :param tq01: Переходная постоянная времени по поперечной оси при разомкнутой обмотке статора [T'q0];
     :param switch_command_line: True/False - вывод сообщений в протокол;
-    :return: 
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

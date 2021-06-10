@@ -43,6 +43,7 @@ def filling_DFW421UEL(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_DFW421UEL - функция вносит изменения в
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -77,8 +78,8 @@ def filling_DFW421UEL(
     :param Vulmin: Минимальное ограничение ОМВ [Vulmin];
     :param Vuimin: Минимальное ограничение регулятора [Vuimin];
     :param Vuimax: Максимальное ограничение регулятора [Vuimax];
-    :param switch_command_line: вывод сообщений в протокол;
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
 
     variable_ = Variable(rastr_win=rastr_win)

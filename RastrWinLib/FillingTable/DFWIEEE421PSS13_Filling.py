@@ -56,6 +56,7 @@ def filling_DFWIEEE421PSS13(
         Vsi2min: float = None,
         switch_command_line: bool = False):
     """
+    Функция filling_DFWIEEE421PSS13 - вносит изменения в таблицу "Стабилизатор IEEE 1-3".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -104,8 +105,8 @@ def filling_DFWIEEE421PSS13(
     :param Vsi1min: Минимальное ограничение 1-го входа стабилизатора [Vsi1min];
     :param Vsi2max: Максимальное ограничение 2-го входа стабилизатора [Vsi2max];
     :param Vsi2min: Минимальное ограничение 2-го входа стабилизатора [Vsi2min];
-    :param switch_command_line: вывод сообщений в протокол;
-    :return:
+    :param switch_command_line: True/False - вывод сообщений в протокол;
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

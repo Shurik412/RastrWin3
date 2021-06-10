@@ -30,6 +30,7 @@ def filling_Governor(
         switch_command_line: bool = False
 ):
     """
+    Функция filling_Governor - вносит изменения в таблицу "Регулятор скорости".
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param row_id: Порядковый номер в таблице: возвращается функцией FindNexSel;
@@ -52,7 +53,7 @@ def filling_Governor(
     :param K2: K2 ОС [K2];
     :param BoilerId: Номер котла [N котла];
     :param switch_command_line: True/False - вывод сообщений в протокол;
-    :return:
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 

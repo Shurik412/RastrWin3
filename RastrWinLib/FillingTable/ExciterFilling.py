@@ -35,7 +35,7 @@ def filling_exciter(
         Urvi_min: float = None,
         Type_rg: int = None,
         switch_command_line: bool = False):
-    f"""
+    """
     Функция заполнения таблицы: "Возбудитель (ИД)"
     
     :param rastr_win: COM - объект Rastr.Astra (win32com);
@@ -66,7 +66,7 @@ def filling_exciter(
     :param Urvi_min: Минимальное значение сигнала РВ [Urv_min]; 
     :param Type_rg: Тип возбуждения [Тип]; 
     :param switch_command_line: True/False - вывод сообщений в протокол;
-    :return: 
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
 
