@@ -3,6 +3,7 @@
 from openpyxl import load_workbook
 from openpyxl.chart import ScatterChart
 
+from OAPV_simulation.create_file_scn import create_file_scn
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.dynamic import Dynamic
 from RastrWinLib.calculation.regim import SteadyState
@@ -14,12 +15,21 @@ from RastrWinLib.tables.Node.node import Node
 from RastrWinLib.tables.Vetv.vetv import Vetv
 from create_file_scn import CreateActionsSCN
 
-file_excel = r'C:\Users\Ohrimenko_AG\Desktop\19\ВЛ 500 кВ Нововоронежская АЭС – Воронежская.xlsx'
+file_excel = r'L:\SER\Охрименко\03. RastrWin3\19\ВЛ 500 кВ Нововоронежская АЭС – Воронежская.xlsx'
 
 list_coordinates_of_graphs = [('B2', 'S2', 'AJ2', 'BB2', 'Раздел 1.1'),
                               ('B36', 'S36', 'AJ36', 'BB36', 'Раздел 1.2'),
                               ('B70', 'S70', 'AJ70', 'BB70', 'Раздел 2.1'),
                               ('B104', 'S104', 'AJ104', 'BB104', 'Раздел 2.2')]
+
+# формирует сценарий в Excel файле
+wb_s = load_file(file_path=file_excel)
+ws_s = wb_s['Сценарий']
+create_file_scn(WorkSheet=ws_s)
+wb_s.save(filename=file_excel)
+wb_s.close()
+#####################################
+
 start_row = 5
 wb = load_workbook(filename=file_excel, data_only=True)
 ws_settings = wb['Settings Macro']
@@ -39,8 +49,13 @@ if fl_scn == 1:
                                name_list_excel='Сценарий',
                                switch_command_line=False)
 
-    scn_one.create(start=14, finish=32)
-    scn_one.create_log(start=4, finish=8, switch_command_line=False)
+    scn_one.create(start=14,
+                   finish=32)
+
+    scn_one.create_log(start=4,
+                       finish=8,
+                       switch_command_line=False)
+
     scn_one.save_scn(dir_file_name_save_scn=rf'{ws_settings["B7"].value}\{ws_settings["B8"].value}')
 
     scn_two = CreateActionsSCN(rastr_win=Rastr,

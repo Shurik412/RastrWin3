@@ -16,7 +16,7 @@ def save_file(rastr_win=RASTR,
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param file_path: директория и название файла сохранения файла;
     :param shabl: шаблон RastrWin3 для сохранения;
-    :param switch_command_line: True/False - выводит сообщения в протокол.
+    :param switch_command_line: True/False - выводит сообщения в протокол;
     :return: True
     """
     rastr_win.Save(file_path, shabl)

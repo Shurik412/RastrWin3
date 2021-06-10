@@ -11,7 +11,7 @@ def load_file(rastr_win=RASTR,
               file_path='',
               shabl=Shabl.shablon_file_automation,
               switch_command_line=False):
-    f"""
+    """
     Загружает файл данных name в рабочую область в соответствии с шаблоном типа shabl.
     Если поле shabl пусто, то загружается name без шаблона, если пусто поле name, то загружается только шаблон.
 
@@ -26,9 +26,10 @@ def load_file(rastr_win=RASTR,
                                      найден, то данные игнорируются (соответствует режиму «Обновить» в меню)
             RG_ADDKEY       3       Данные в таблице, имеющие одинаковые ключевые поля, заменяются.
                                     Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»)
+
     :param shabl: шаблон RastrWin3 для загрузки;
     :param file_path: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);
-    :param switch_command_line: ;
+    :param switch_command_line: True/False - выводит сообщения в протокол;
     :return: True
     """
 
@@ -49,12 +50,12 @@ class LoadRUSTab:
                  shabl=Shabl.shablon_file_automation,
                  rg_kod=1,
                  switch_command_line=False):
-        f"""
+        """
 
-        :param rastr_win: {Tools.RastrDoc};
-        :param shablon: шаблон RastrWin3 для загрузки.
+        :param rastr_win: ;
+        :param shablon: шаблон RastrWin3 для загрузки;
         :param rg_kod:
-        :param switch_command_line: {Tools.switch_command_line_doc};
+        :param switch_command_line: ;
         """
         self.rastr_win = rastr_win
         self.shabl = shabl
@@ -75,7 +76,6 @@ class LoadRUSTab:
 
     def load(self, file_path):
         """
-
         :param file_path:
         :return: True
         """
@@ -88,7 +88,6 @@ class LoadRUSTab:
 
     def load_new_file(self):
         """
-
         :return: True
         """
         self.rastr_win.NewFile(self.shablon)

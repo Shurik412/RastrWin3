@@ -4,7 +4,7 @@ from os import path
 
 class Shabl:
     """
-
+    Класс для вызова dir - шаблонов и название файлов шаблонов
     """
     shablon_regime = 'режим.rg2'
     shablon_dynamic = 'динамика.rst'

@@ -10,9 +10,10 @@ class ChartExcel:
                  width_chart=15, height_chart=7.5,
                  switch_command_line=False):
         """
+        Класс создания графика по двум осям XY
 
         :param work_sheet: рабочий лист;
-        :param chart_obj:
+        :param chart_obj: объект
         :param chart_title: название графика;
         :param x_axis_title: название оси Х;
         :param y_axis_title: название оси Y;
@@ -31,10 +32,18 @@ class ChartExcel:
         if switch_command_line is not False:
             print(f'Создан объект графика с названием "{chart_title}", на листе {work_sheet}:')
 
-    def add_line_chart(self, min_col_x, min_row_x, max_row_x,
-                       min_col_y, min_row_y, max_row_y, title_from_data_ch=True, title_ch=None,
+    def add_line_chart(self,
+                       min_col_x,
+                       min_row_x,
+                       max_row_x,
+                       min_col_y,
+                       min_row_y,
+                       max_row_y,
+                       title_from_data_ch=True,
+                       title_ch=None,
                        width_line_pt=None):
         """
+        Метод для добавления кривой в график.
 
         :param min_col_x: минмальная колонка (столбец) для оси Х;
         :param min_row_x: минмальная строка для оси Х;
@@ -50,6 +59,7 @@ class ChartExcel:
 
         if title_from_data_ch is not True:
             min_row_y = min_row_y + 1
+
         x_values = Reference(self.work_sheet,
                              min_col=min_col_x,
                              min_row=min_row_x,
@@ -106,14 +116,14 @@ class ChartExcelOtherSheet:
         :param chart_title: название графика;
         :param x_axis_title: название оси Х;
         :param y_axis_title: название оси Y;
-        :param width_chart:
-        :param height_chart:
+        :param width_chart: ширина графика;
+        :param height_chart: высота графика;
         :param legend_position: расположение легенды на графике;
         :param x_axis_min: минимальная
         :param x_axis_max:
         :param y_axis_min:
         :param y_axis_max:
-        :param switch_command_line:
+        :param switch_command_line: True/False - выводит сообщения в протокол;
         """
         self.work_book = work_book
         self.work_sheet = work_sheet
@@ -133,19 +143,27 @@ class ChartExcelOtherSheet:
         if switch_command_line is not False:
             print(f'Создан объект графика с названием "{chart_title}", на листе {work_sheet}:')
 
-    def add_line_chart(self, min_col_x, min_row_x, max_row_x,
-                       min_col_y, min_row_y, max_row_y,
-                       work_sheet_other=None, title_from_data_ch=True, title_ch=None,
+    def add_line_chart(self,
+                       min_col_x,
+                       min_row_x,
+                       max_row_x,
+                       min_col_y,
+                       min_row_y,
+                       max_row_y,
+                       work_sheet_other=None,
+                       title_from_data_ch=True,
+                       title_ch=None,
                        width_line_pt=None):
         """
 
-        :param min_col_x:
-        :param min_row_x:
-        :param max_row_x:
-        :param min_col_y:
-        :param min_row_y:
-        :param max_row_y:
-        :param work_sheet_other:
+
+        :param min_col_x: минимальная колонка X;
+        :param min_row_x: минимальная строка Х;
+        :param max_row_x: максимальная строка Х;
+        :param min_col_y: минимальная колонка Y;
+        :param min_row_y: минимальная строка Y;
+        :param max_row_y: максимальная строка Y;
+        :param work_sheet_other:  другой рабочий лист;
         :param title_from_data_ch:
         :param title_ch:
         :param width_line_pt:
@@ -159,11 +177,21 @@ class ChartExcelOtherSheet:
         if title_from_data_ch is not True:
             min_row_y = min_row_y + 1
 
-        x_values = Reference(worksheet=work_sheet_other_, min_col=min_col_x, min_row=min_row_x, max_row=max_row_x,
+        x_values = Reference(worksheet=work_sheet_other_,
+                             min_col=min_col_x,
+                             min_row=min_row_x,
+                             max_row=max_row_x,
                              range_string=None)
-        y_values = Reference(worksheet=work_sheet_other_, min_col=min_col_y, min_row=min_row_y, max_row=max_row_y,
+
+        y_values = Reference(worksheet=work_sheet_other_,
+                             min_col=min_col_y,
+                             min_row=min_row_y,
+                             max_row=max_row_y,
                              range_string=None)
-        series_xy = Series(y_values, x_values, title_from_data=title_from_data_ch, title=title_ch)
+
+        series_xy = Series(y_values, x_values,
+                           title_from_data=title_from_data_ch,
+                           title=title_ch)
 
         # series_xy.graphicalProperties.line.solidFill = "00AAAA"
         # series_xy.graphicalProperties.line.dashStyle = "sysDot"
