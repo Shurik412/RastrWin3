@@ -82,7 +82,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\ARV2M" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_bat_file_dynamic">
+  <component name="RunManager" selected="Python.OAPV_calc">
     <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,6 +125,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="create_bat_file_dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,27 +159,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="create_bat_file_post_processor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag/CreateBatFile" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OAPV_calc" />
         <item itemvalue="Python.create_bat_file_dynamic" />
         <item itemvalue="Python.create_file_scn" />
         <item itemvalue="Python.Creator_PRG_and_SQL" />
         <item itemvalue="Python.Eurostag_Output_PSS" />
-        <item itemvalue="Python.create_bat_file_post_processor" />
       </list>
     </recent_temporary>
   </component>

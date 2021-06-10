@@ -23,7 +23,7 @@ list_coordinates_of_graphs = [('B2', 'S2', 'AJ2', 'BB2', 'Раздел 1.1'),
                               ('B104', 'S104', 'AJ104', 'BB104', 'Раздел 2.2')]
 
 # формирует сценарий в Excel файле
-wb_s = load_file(file_path=file_excel)
+wb_s = load_workbook(filename=file_excel)
 ws_s = wb_s['Сценарий']
 create_file_scn(WorkSheet=ws_s)
 wb_s.save(filename=file_excel)
