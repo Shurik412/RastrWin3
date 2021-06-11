@@ -1807,20 +1807,20 @@ Sub generatorset()
 	dpg_plus=0
 	dpg_minus=0
     'nutnode=nutnode0
-    stepsum=secbal(5,nsecbal)
-	for ivybut=1 to nvybut
+    stepsum = secbal(5,nsecbal)
+	for ivybut = 1 to nvybut
         uzl.setsel(vybut(ivybut,0))
-		iuzl=uzl.findnextsel(-1)
+		iuzl = uzl.findnextsel(-1)
         while iuzl<>-1
-		    nutnode=nutnode+1
-			utnode(nutnode,0)=uzl.Cols("ny").z(iuzl)
-			utnode(nutnode,1)=vybut(ivybut,1)
-			utnode(nutnode,2)=vybut(ivybut,2)
-			utnode(nutnode,3)=vybut(ivybut,3)
-			utnode(nutnode,4)=vybut(ivybut,4)
-			utnode(nutnode,5)=vybut(ivybut,5)
-			utnode(nutnode,6)=vybut(ivybut,6)
-			utnode(nutnode,7)=vybut(ivybut,7)
+		    nutnode = nutnode + 1
+			utnode(nutnode,0) = uzl.Cols("ny").z(iuzl)
+			utnode(nutnode,1) = vybut(ivybut,1)
+			utnode(nutnode,2) = vybut(ivybut,2)
+			utnode(nutnode,3) = vybut(ivybut,3)
+			utnode(nutnode,4) = vybut(ivybut,4)
+			utnode(nutnode,5) = vybut(ivybut,5)
+			utnode(nutnode,6) = vybut(ivybut,6)
+			utnode(nutnode,7) = vybut(ivybut,7)
 			iuzl=uzl.findnextsel(iuzl)
 		wend
 	next
@@ -2063,6 +2063,8 @@ Sub generatorset()
     'isetgen=isetgen+1
     tcom_regim=t.Tables("com_regim").Cols("gen_p").z(0)
 End Sub
+
+
 '============================================   set_sec  ==============================================================
 Sub set_sec()
     kod1=t.rgm ("p")
@@ -2086,23 +2088,23 @@ Sub set_sec()
         if abs(psech-secbal(4,nsecbal))<120 and kod=0 and iut>24 then exit for
         if abs(psech-secbal(4,nsecbal))<200 and kod=0 and iut>26 then exit for
         'if abs(psech-secbal(4,nsecbal))<800 and kod=0 and iut>30 then exit for
-        if abs(psech-secbal(4,nsecbal))<abs(psech1-secbal(4,nsecbal)) and kod=0 and kod1=0 and iut>28 then exit for
-        if kod=0 and iut>45 then exit for
+        if abs(psech-secbal(4,nsecbal)) < abs(psech1-secbal(4,nsecbal)) and kod = 0 and kod1 = 0 and iut > 28 then exit for
+        if kod = 0 and iut > 45 then exit for
         if kod <>0 then
-            if kod1=0 then delshag=-0.45
-            if kod1<>0 then delshag=0.95
+            if kod1 = 0 then delshag = -0.45
+            if kod1<>0 then delshag = 0.95
         else
             if kod1<>0 then
                 delshag=0.45
 		    else
-                if abs(psech-psech1)>0.001 then delshag=(secbal(4,nsecbal)-psech)/(psech-psech1) else delshag=0.8
-                if delshag>5 then delshag=5
-                if delshag<-5 then delshag=-5
-                if delshag>-0.01 and delshag<0 then delshag=-0.01
-                if delshag>0 and delshag<0.01 then delshag=0.01
+                if abs(psech-psech1) > 0.001 then delshag = (secbal(4,nsecbal)-psech)/(psech-psech1) else delshag = 0.8
+                if delshag > 5 then delshag = 5
+                if delshag < -5 then delshag = -5
+                if delshag > -0.01 and delshag < 0 then delshag = -0.01
+                if delshag > 0 and delshag < 0.01 then delshag = 0.01
 		    end if
 	    end if
-        kshag=kshag*delshag
+        kshag = kshag * delshag
         if kshag>-0.003 and kshag<0 then kshag=-0.003
         if kshag>0 and kshag<0.003 then kshag=0.003
         if kshag>4 then kshag=4
@@ -2112,12 +2114,14 @@ Sub set_sec()
 	    kod1 = kod
     next
 end sub
+
+
 '===================================================================================================================
 Sub Pgplus() 'добавлены все Генераторы (УР)
 	for iutnode=1 to nutnode
 		uzl.setsel("ny=" & utnode(iutnode,0))
 		iuzl=uzl.findnextsel(-1)
-		'Call writelog "utnode # "&iutnode,"utnode(iutnode,0)=" & utnode(iutnode,0)
+		'Call writelog "utnode # "& iutnode, "utnode(iutnode,0)=" & utnode(iutnode,0)
 		uzl.Cols("pg").z(iuzl)=uzl.Cols("pg").z(iuzl)+utnode(iutnode,1)*kshag
 		uzl.Cols("qg").z(iuzl)=uzl.Cols("qg").z(iuzl)+utnode(iutnode,2)*kshag
 		uzl.Cols("qmin").z(iuzl)=uzl.Cols("qmin").z(iuzl)+utnode(iutnode,3)*kshag

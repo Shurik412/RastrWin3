@@ -21,14 +21,16 @@ list_coordinates_of_graphs = [('B2', 'S2', 'AJ2', 'BB2', 'Раздел 1.1'),
                               ('B36', 'S36', 'AJ36', 'BB36', 'Раздел 1.2'),
                               ('B70', 'S70', 'AJ70', 'BB70', 'Раздел 2.1'),
                               ('B104', 'S104', 'AJ104', 'BB104', 'Раздел 2.2')]
+flag_scn_ex = 0
 
-# формирует сценарий в Excel файле
-wb_s = load_workbook(filename=file_excel)
-ws_s = wb_s['Сценарий']
-create_file_scn(WorkSheet=ws_s)
-wb_s.save(filename=file_excel)
-wb_s.close()
-#####################################
+if flag_scn_ex == 1:
+    # формирует сценарий в Excel файле
+    wb_s = load_workbook(filename=file_excel)
+    ws_s = wb_s['Сценарий']
+    create_file_scn(WorkSheet=ws_s)
+    wb_s.save(filename=file_excel)
+    wb_s.close()
+    #####################################
 
 start_row = 5
 wb = load_workbook(filename=file_excel, data_only=True)
@@ -42,7 +44,7 @@ dir_name_scn_two = rf'{ws_settings["B7"].value}\{ws_settings["B9"].value}'
 # Формирует файлы сценарий.
 Rastr = RASTR
 
-fl_scn = 1
+fl_scn = 0
 if fl_scn == 1:
     scn_one = CreateActionsSCN(rastr_win=RASTR,
                                dir_name_file_excel=file_excel,
@@ -155,7 +157,7 @@ ws_2 = wb_w['Раздел 1.2']
 ws_3 = wb_w['Раздел 2.1']
 ws_4 = wb_w['Раздел 2.2']
 
-fl_1_1 = 1
+fl_1_1 = 0
 if fl_1_1 == 1:
     # 1. ********************* Режим 1 сценарий 1 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)
@@ -224,7 +226,7 @@ if fl_1_1 == 1:
 
     wb_w.save(filename=file_excel)
 
-fl_1_2 = 1
+fl_1_2 = 0
 if fl_1_2 == 1:
     # 2. ********************* Режим 1 сценарий 2 ******************
     load_file(rastr_win=Rastr, file_path=file_rst_regim_one, shabl=Shabl.shablon_file_dynamic, switch_command_line=True)

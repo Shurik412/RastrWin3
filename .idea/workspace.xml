@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AIP_Script/ScriptsMonitel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/excel/chart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/save.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VBScript/corr_brm.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/corr_brm.vbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Eurostag" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="restructured.text.topic" />
     <property name="timeTracker.activityTracker" value="null" />
     <property name="timeTracker.comment" value="" />
     <property name="timeTracker.inactivityPeriodInMills" value="600000" />
@@ -82,7 +80,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\ARV2M" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.OAPV_calc">
+  <component name="RunManager" selected="Python.Creator_PRG_and_SQL">
     <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,27 +94,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,6 +144,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="create_bat_file_post_processor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag/CreateBatFile" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="create_file_scn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.OAPV_calc" />
-        <item itemvalue="Python.create_bat_file_dynamic" />
-        <item itemvalue="Python.create_file_scn" />
         <item itemvalue="Python.Creator_PRG_and_SQL" />
-        <item itemvalue="Python.Eurostag_Output_PSS" />
+        <item itemvalue="Python.create_bat_file_dynamic" />
+        <item itemvalue="Python.create_bat_file_post_processor" />
+        <item itemvalue="Python.OAPV_calc" />
+        <item itemvalue="Python.create_file_scn" />
       </list>
     </recent_temporary>
   </component>
@@ -209,20 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00146" summary="Create DECS400_Filling.py">
-      <created>1620382908999</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1620382908999</updated>
-    </task>
-    <task id="LOCAL-00147" summary="Create DFWTHYNE14_Filling.py">
-      <created>1620384585658</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1620384585658</updated>
     </task>
     <task id="LOCAL-00148" summary="Create FuncPQ_Filling.py">
       <created>1620385180945</created>
@@ -553,7 +537,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623327531383</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="Corr OAPV_calc.py">
+      <created>1623335919761</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1623335919761</updated>
+    </task>
+    <task id="LOCAL-00196" summary="Corr OAPV_calc.py #2">
+      <created>1623336129384</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1623336129384</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -569,8 +567,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="upgrade" />
-    <MESSAGE value="create rename_file.py" />
     <MESSAGE value="Corr Eurostag_Output_PSS.py -&gt; names" />
     <MESSAGE value="Corr Eurostag_Output_PSS.py" />
     <MESSAGE value="create file create_bat_file.py" />
@@ -594,7 +590,9 @@
     <MESSAGE value="Add output protocol RastrWin" />
     <MESSAGE value="Add test output protocol RastrWin regim.py" />
     <MESSAGE value="Add comments in file Filling Tales" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments in file Filling Tales" />
+    <MESSAGE value="Corr OAPV_calc.py" />
+    <MESSAGE value="Corr OAPV_calc.py #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr OAPV_calc.py #2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
