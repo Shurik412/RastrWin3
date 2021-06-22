@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\BARS\filling_excel_map_vetv.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\CreatingDynamicModel\GeneratorsFilling.py">
           <value>
             <Attribute>
@@ -315,6 +322,13 @@
           <value>
             <Attribute>
               <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\GraphicsHTML\GrafRegimCentr.html">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>

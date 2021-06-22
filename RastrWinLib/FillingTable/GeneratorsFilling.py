@@ -36,7 +36,7 @@ def filling_generators(
         tq01: float = None,
         switch_command_line: bool = False
 ):
-    f"""
+    """
     Функция для заполнения таблицы Генераторы(ИД)
     
     :param row_id: Порядковый номер в таблице Генераторы(ИД): возвращается функцией FindNexSel;

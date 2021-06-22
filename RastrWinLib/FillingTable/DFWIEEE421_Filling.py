@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Модуль заполнения таблицы  "Возбудитель (ИД)" RastrWin3
+# Модуль заполнения таблицы  "Возбудитель IEEE" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421, DFWIEEE421_Description
