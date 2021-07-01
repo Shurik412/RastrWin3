@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\BARS\comparison_excel.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\BARS\create_copy_file_SMZU_with_date.py">
           <value>
             <Attribute>
@@ -24,10 +31,24 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\BARS\del_space.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\BARS\filling_excel_map_vetv.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\BARS\test\test_.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
@@ -329,6 +350,27 @@
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\GraphicsRegime\Graphics.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\GraphicsRegime\templates\GrafRegimCentr.v.2.2.html">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RastrWinLib\GraphicsRegime\test.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
             </Attribute>
           </value>
         </entry>

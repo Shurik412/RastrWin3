@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BARS/filling_excel_map_vetv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/FullFillingTables/Filling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/Graphics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/comparison_excel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/load_file_rastr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/templates/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BARS/del_space.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/del_space.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BARS/filling_excel_map_vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/filling_excel_map_vetv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/Graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/Graphics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,20 +78,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsHTML" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\VBScript" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsRegime\templates" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWin3_WorkSpace" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag\CreateBatFile" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tests\Filling_Table" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\FillingTable" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\CustomModels\ARV2M" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.filling_excel_map_vetv">
-    <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.create_bat_file_post_processor">
+    <configuration name="Graphics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,11 +100,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/GraphicsRegime" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/Graphics.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="OAPV_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="comparison_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,11 +121,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OAPV_simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/comparison_excel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,7 +176,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="filling_excel_map_vetv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -179,11 +184,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/filling_excel_map_vetv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/test/test_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.filling_excel_map_vetv" />
-        <item itemvalue="Python.create_bat_file_dynamic" />
         <item itemvalue="Python.create_bat_file_post_processor" />
-        <item itemvalue="Python.Creator_PRG_and_SQL" />
-        <item itemvalue="Python.OAPV_calc" />
+        <item itemvalue="Python.comparison_excel" />
+        <item itemvalue="Python.test_" />
+        <item itemvalue="Python.create_bat_file_dynamic" />
+        <item itemvalue="Python.Graphics" />
       </list>
     </recent_temporary>
   </component>
@@ -213,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00149" summary="Create DFWOELUNITROL_Filling.py">
-      <created>1620386049469</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1620386049469</updated>
     </task>
     <task id="LOCAL-00150" summary="Corr OAPV_calc.py">
       <created>1620736333873</created>
@@ -557,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623412100292</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="add file filling_excel_map_vetv.py">
+      <created>1624346347951</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1624346347951</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +578,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr Eurostag_Output_PSS.py" />
     <MESSAGE value="create file create_bat_file.py" />
     <MESSAGE value="Add documention in ARS_Filling.py" />
     <MESSAGE value="Add documention in ARV_Filling.py" />
@@ -598,7 +602,8 @@
     <MESSAGE value="Corr OAPV_calc.py" />
     <MESSAGE value="Corr OAPV_calc.py #2" />
     <MESSAGE value="Add ScriptsMonitel.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ScriptsMonitel.cs" />
+    <MESSAGE value="add file filling_excel_map_vetv.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add file filling_excel_map_vetv.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -88,7 +88,7 @@ elif dialog_1 == 2:
     dir_file_2_prg = input("Ссылка куда сохранить файлы (Пример:C:\\Users\\Александр\\Desktop\\77\\prg2): ")
     Unom = input("Номинальное напряжение в точке КЗ(3) (Например: 750): ")
 
-    link_One = input("Заменяема ССЫЛКА в *.prg (Что изменям?): ")
+    link_One = input("Заменяема ССЫЛКА в *.prg (Что изменяем?): ")
     link_Two = input("ССЫЛКА расположения *.res файлов (На что?): ")
 
     dir_file_1_prg = dir_file_1_prg.replace('\\', '/')
