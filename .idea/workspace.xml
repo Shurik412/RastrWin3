@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2_br.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR45/AVR45M_bsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR45/AVR45M_bsv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,13 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00156" summary="Create set_regime.py">
-      <created>1620802628998</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1620802628998</updated>
     </task>
     <task id="LOCAL-00157" summary="Create set_regime.py">
       <created>1620829742338</created>
@@ -550,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626084371504</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="Add corr AVR45M_bsv.py">
+      <created>1626084530568</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1626084530568</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,7 +567,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add documentation in DFWIEEE421_Filling.py" />
     <MESSAGE value="Add documentation in DFW421UEL_Filling.py" />
     <MESSAGE value="init" />
     <MESSAGE value="Del file" />
@@ -591,7 +591,8 @@
     <MESSAGE value="Add UNITROL_F.py" />
     <MESSAGE value="Add AVR45M_bsv.py" />
     <MESSAGE value="Add AVR45M_res.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add AVR45M_res.py" />
+    <MESSAGE value="Add corr AVR45M_bsv.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add corr AVR45M_bsv.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
