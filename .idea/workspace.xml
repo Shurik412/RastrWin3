@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/Thyripol6RV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U1020/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U5000/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U6800/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U6800_lite/u6800_lite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/UNITROL_F/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/U1020/U1020.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U1020/U1020.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/U5000/U5000.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U5000/U5000.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/U6800/U6800.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U6800/U6800.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL_F/UNITROL_F.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/UNITROL_F/UNITROL_F.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +82,11 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsRegime\templates" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWin3_WorkSpace" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag\CreateBatFile" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tests\Filling_Table" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\FillingTable" />
     </key>
   </component>
   <component name="RunManager" selected="Python.create_copy_file_SMZU_with_date">
@@ -207,13 +216,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00160" summary="Create DFWAutoActionScn.py">
-      <created>1621340539182</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1621340539182</updated>
     </task>
     <task id="LOCAL-00161" summary="Create DFWAutoLogicScn.py">
       <created>1621342132539</created>
@@ -551,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626093340054</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="Add Thyripol6RV.py">
+      <created>1626095648300</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1626095648300</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -567,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add doc and corr DFWIEEE421PSS4B.py" />
     <MESSAGE value="Full corr RastrWin3" />
     <MESSAGE value="Run Macro" />
     <MESSAGE value="Add testing code DFWTHYNE14_Filling.py" />
@@ -592,7 +600,8 @@
     <MESSAGE value="Add AVR_2.py" />
     <MESSAGE value="Add STyr.py" />
     <MESSAGE value="Add THYNE_1.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add THYNE_1.py" />
+    <MESSAGE value="Add Thyripol6RV.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Thyripol6RV.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
