@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/Thyripol6RV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,13 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00159" summary="Corr dynamic.py">
-      <created>1621339283719</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1621339283719</updated>
     </task>
     <task id="LOCAL-00160" summary="Create DFWAutoActionScn.py">
       <created>1621340539182</created>
@@ -550,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626088551553</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="Add THYNE_1.py">
+      <created>1626093340054</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1626093340054</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,7 +567,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Del file" />
     <MESSAGE value="Add doc and corr DFWIEEE421PSS4B.py" />
     <MESSAGE value="Full corr RastrWin3" />
     <MESSAGE value="Run Macro" />
@@ -591,7 +591,8 @@
     <MESSAGE value="Add corr AVR45M_bsv.py" />
     <MESSAGE value="Add AVR_2.py" />
     <MESSAGE value="Add STyr.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add STyr.py" />
+    <MESSAGE value="Add THYNE_1.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add THYNE_1.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
