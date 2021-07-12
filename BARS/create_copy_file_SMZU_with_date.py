@@ -30,4 +30,4 @@ def copy_file(dir_files_copy, name_file_one):
             shutil.copyfile(src=f'{dir_files_copy}\\{name_file_one}', dst=file_two)
 
 
-copy_file(dir_files_copy=r'C:\Users\Ohrimenko_AG\Desktop\test_filling', name_file_one='15_00_26.7z')
+copy_file(dir_files_copy=r'U:\ODU_DIR\СЭР\БАРС', name_file_one='15_51_16.7z')

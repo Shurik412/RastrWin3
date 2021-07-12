@@ -94,6 +94,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Eurostag\CreateBatFile\Create_SummaryFiles.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Eurostag\CreateBatFile\create_bat_file_dynamic.py">
           <value>
             <Attribute>
@@ -126,6 +133,13 @@
           <value>
             <Attribute>
               <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Eurostag\open_file_excel_sleep_exit_for_pss.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>

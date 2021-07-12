@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 
-dir = fr'C:\03_26_LetoMax'
+dir = fr'C:\02_26_ZimaMin'
 
-n = 100
+n = 58
 sezon_do = 1
 sezon_posle = 3
 
@@ -27,7 +27,7 @@ if flag2 == 1:
             print(f'Не найден файл {i}.')
         print(f'i = {i}')
 
-flag3 = 1
+flag3 = 0
 if flag3 == 1:
     for i in range(1, n + 1):
         try:
@@ -35,3 +35,13 @@ if flag3 == 1:
         except FileNotFoundError:
             print(f'Не найден файл {i}.')
         print(f'i={i}')
+
+
+flag4 = 1
+if flag4 == 1:
+    for i in range(1, n + 1):
+        try:
+            os.rename(src=fr'{dir}\1_{i}.nwk', dst=fr'{dir}\2_{i}.nwk')
+        except FileNotFoundError:
+            print(f'Не найден файл {i}.')
+        print(f'i = {i}')

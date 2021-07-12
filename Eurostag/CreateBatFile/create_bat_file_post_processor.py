@@ -6,7 +6,7 @@ DIR_HOME_BAT: str = r'C:\04_26_LetoMin'
 NAME_SEZON: str = 'LetoMin'  # (1) ZimaMax - Зима макс, (2) ZimaMin - Зима мин, (3) LetoMax - Лето макс, (4) LetoMax - Лето мин.
 KEY_Y_N: str = 'N'  # Y - с PSS, N - без PSS
 U_NOM = 220  # номинальное напряжение в точке КЗ
-NAME_DTA_FILE: str = '3'  # название dta файла
+NAME_DTA_FILE: str = '4'  # название dta файла
 COUNT_REGIME: int = 57
 
 if NAME_SEZON == 'ZimaMax':
