@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVP/ARVP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/STyr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00158" summary="Create def -&gt; get.py, vetv.py&#10;Corr set_regime.py">
-      <created>1620976442977</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1620976442977</updated>
     </task>
     <task id="LOCAL-00159" summary="Corr dynamic.py">
       <created>1621339283719</created>
@@ -551,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626085427966</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="Add STyr.py">
+      <created>1626088551553</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1626088551553</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -567,7 +566,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
     <MESSAGE value="Del file" />
     <MESSAGE value="Add doc and corr DFWIEEE421PSS4B.py" />
     <MESSAGE value="Full corr RastrWin3" />
@@ -592,7 +590,8 @@
     <MESSAGE value="Add AVR45M_res.py" />
     <MESSAGE value="Add corr AVR45M_bsv.py" />
     <MESSAGE value="Add AVR_2.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add AVR_2.py" />
+    <MESSAGE value="Add STyr.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add STyr.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
