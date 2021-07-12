@@ -60,7 +60,7 @@ def change_parameters_AC8B(
     :param Te: Постоянная времени интегратора возбудителя;
     :param Aex: Коэффициент экспоненты (задание насыщения);
     :param Bex: Степень экспоненты (задание насыщения);
-    :param switch_command_line:
+    :param switch_command_line: True/False - вывод сообщений в протакол;
     :return:
     """
 
