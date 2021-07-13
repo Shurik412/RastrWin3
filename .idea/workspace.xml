@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/DECS_400/DECS_400_lite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/Alstom/Alstom_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00169" summary="upgrade">
-      <created>1622037265615</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1622037265615</updated>
     </task>
     <task id="LOCAL-00170" summary="create rename_file.py">
       <created>1622207467308</created>
@@ -549,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626159108727</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="Add DECS_400_lite.py">
+      <created>1626159341924</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1626159341924</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +566,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add test output protocol RastrWin regim.py" />
     <MESSAGE value="Add comments in file Filling Tales" />
     <MESSAGE value="Corr OAPV_calc.py" />
     <MESSAGE value="Corr OAPV_calc.py #2" />
@@ -590,7 +590,8 @@
     <MESSAGE value="Add ARVNL_static_lite.py" />
     <MESSAGE value="Add ARVSG_BSV_lite.py" />
     <MESSAGE value="Add ARVSG_static_lite.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ARVSG_static_lite.py" />
+    <MESSAGE value="Add DECS_400_lite.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add DECS_400_lite.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
