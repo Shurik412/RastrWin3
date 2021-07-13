@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Add u1020_lite.py">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_BSV_lite.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDE/ARVSDE_lite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_static_lite.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U1020_lite/u1020_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U1020_lite/u1020_lite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,13 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00163" summary="Full Corr">
-      <created>1621586153145</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1621586153145</updated>
     </task>
     <task id="LOCAL-00164" summary="Corr dynamic.py">
       <created>1621840820806</created>
@@ -551,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626098659233</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="Add EX2100_BSV_lite.py">
+      <created>1626152908978</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1626152908978</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -567,7 +567,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add testing code DFWTHYNE14_Filling.py" />
     <MESSAGE value="Add testing code ForcerFilling.py" />
     <MESSAGE value="Add testing code FuncPQ_Filling.py" />
     <MESSAGE value="Add testing code GeneratorsFilling.py" />
@@ -592,7 +591,8 @@
     <MESSAGE value="Add Thyripol6RV.py" />
     <MESSAGE value="Add u6800_lite.py" />
     <MESSAGE value="Add u1020_lite.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add u1020_lite.py" />
+    <MESSAGE value="Add EX2100_BSV_lite.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add EX2100_BSV_lite.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
