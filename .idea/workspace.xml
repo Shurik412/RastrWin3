@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVNL/ARVNL_static_lite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSG/ARVSG_BSV_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Add # -*- coding: utf-8 -*-">
-      <created>1621840965430</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1621840965430</updated>
     </task>
     <task id="LOCAL-00167" summary="Create create_copy_file_SMZU_with_date.py">
       <created>1622018158783</created>
@@ -549,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626155796154</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="Add ARVNL_static_lite.py">
+      <created>1626156146143</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1626156146143</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +566,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add testing code GeneratorsFilling.py" />
     <MESSAGE value="Add testing code GovernorFilling.py" />
     <MESSAGE value="Add output protocol RastrWin" />
     <MESSAGE value="Add test output protocol RastrWin regim.py" />
@@ -590,7 +590,8 @@
     <MESSAGE value="Add EX2100_BSV_lite.py" />
     <MESSAGE value="Add ARVSDE_lite.py" />
     <MESSAGE value="Add ARVNL_BSV_lite.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ARVNL_BSV_lite.py" />
+    <MESSAGE value="Add ARVNL_static_lite.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ARVNL_static_lite.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
