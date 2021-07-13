@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSG/ARVSG_static_lite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/DECS_400/DECS_400_lite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00168" summary="Corr create_copy_file_SMZU_with_date.py">
-      <created>1622032898143</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1622032898144</updated>
     </task>
     <task id="LOCAL-00169" summary="upgrade">
       <created>1622037265615</created>
@@ -549,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626158823996</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="Add ARVSG_static_lite.py">
+      <created>1626159108727</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1626159108727</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +565,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add output protocol RastrWin" />
     <MESSAGE value="Add test output protocol RastrWin regim.py" />
     <MESSAGE value="Add comments in file Filling Tales" />
     <MESSAGE value="Corr OAPV_calc.py" />
@@ -590,7 +589,8 @@
     <MESSAGE value="Add ARVNL_BSV_lite.py" />
     <MESSAGE value="Add ARVNL_static_lite.py" />
     <MESSAGE value="Add ARVSG_BSV_lite.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ARVSG_BSV_lite.py" />
+    <MESSAGE value="Add ARVSG_static_lite.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ARVSG_static_lite.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
