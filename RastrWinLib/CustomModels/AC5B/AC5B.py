@@ -55,7 +55,7 @@ def change_parameters_AC5B(
     :param Bex: Степень экспоненты (задание насыщения);
     :param switch_command_line: True/False - вывод сообщений в протакол;
     :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :return:
+    :return: Noting return.
     """
     variable_ = Variable(rastr_win=rastr_win)
     get_ = GettingParameter(rastr_win=rastr_win)

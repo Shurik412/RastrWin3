@@ -15,8 +15,8 @@ class Equivalent:
                  switch_command_line=False):
         f"""
 
-        :param rastr_win: {Tools.RastrDoc};
-        :param switch_command_line: {Tools.switch_command_line_doc};
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
+        :param switch_command_line: True/False - вывод сообщений в протокол.
         """
         self.rastr_win = rastr_win
         self.switch_command_line = switch_command_line

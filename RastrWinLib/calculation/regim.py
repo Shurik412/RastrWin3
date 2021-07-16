@@ -23,8 +23,8 @@ class SteadyState:
         """
 
         :param rastr_win: COM - объект Rastr.Astra (win32com);
-        :param par:
-        :param switch_command_line:
+        :param par: ;
+        :param switch_command_line: True/False - вывод сообщений в протокол.
         """
         self.rastr_win = rastr_win
         self.par = par

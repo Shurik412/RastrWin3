@@ -18,9 +18,9 @@ wb = Workbook()
 Rastr = win32com.client.Dispatch('Astra.Rastr')
 
 # загрузка файлов для расчта
-load_file_rst = LoadRUSTab(rastr_win=Rastr, shablon=sh_rst, switch_command_line=True)
-load_file_scn = LoadRUSTab(rastr_win=Rastr, shablon=sh_scn, switch_command_line=True)
-load_file_auto = LoadRUSTab(rastr_win=Rastr, shablon=sh_auto, switch_command_line=True)
+load_file_rst = LoadRUSTab(rastr_win=Rastr, shabl=sh_rst, switch_command_line=True)
+load_file_scn = LoadRUSTab(rastr_win=Rastr, shabl=sh_scn, switch_command_line=True)
+load_file_auto = LoadRUSTab(rastr_win=Rastr, shabl=sh_auto, switch_command_line=True)
 primary_cell = 10
 for i in dict_repairs:
     print(f'===================================================================================')

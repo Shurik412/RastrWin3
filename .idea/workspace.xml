@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/Alstom/Alstom_lite.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Add Alstom_lite.py">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameter_ARVSDP1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/test_dicor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/ma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/mod_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/tm_excel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameter_ARVSDP1.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/Mitsubishi/Mitsubishi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_AC5B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_ARV3M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_ARV_REM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="restructured.text.topic" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="timeTracker.activityTracker" value="null" />
     <property name="timeTracker.comment" value="" />
     <property name="timeTracker.inactivityPeriodInMills" value="600000" />
@@ -64,6 +82,14 @@
     <property name="timeTracker.timeInMills" value="0" />
     <property name="timeTracker.type" value="Development" />
   </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="RastrWin3" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="RastrWin3" />
+      </console-settings>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsHTML" />
@@ -72,15 +98,15 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsRegime\templates" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWin3_WorkSpace" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag\CreateBatFile" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\tests\Filling_Table" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_copy_file_SMZU_with_date">
-    <configuration name="Create_SummaryFiles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.tm_excel">
+    <configuration name="ma" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,11 +114,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag/CreateBatFile" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests/py_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/CreateBatFile/Create_SummaryFiles.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/py_test/ma.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,53 +135,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests/py_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="create_bat_file_post_processor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag/CreateBatFile" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="create_copy_file_SMZU_with_date" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/create_copy_file_SMZU_with_date.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/py_test/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,13 +169,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_dicor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tables" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tables/test_dicor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tm_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests/py_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS\tm_excel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.create_copy_file_SMZU_with_date" />
+        <item itemvalue="Python.tm_excel" />
+        <item itemvalue="Python.ma" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test_dicor" />
         <item itemvalue="Python.open_file_excel_sleep_exit_for_pss" />
-        <item itemvalue="Python.Create_SummaryFiles" />
-        <item itemvalue="Python.Eurostag_Output_PSS" />
-        <item itemvalue="Python.create_bat_file_post_processor" />
       </list>
     </recent_temporary>
   </component>
@@ -206,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00170" summary="create rename_file.py">
-      <created>1622207467308</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1622207467308</updated>
     </task>
     <task id="LOCAL-00171" summary="Corr Eurostag_Output_PSS.py">
       <created>1622451151445</created>
@@ -550,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626159341924</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="Add Alstom_lite.py">
+      <created>1626186426518</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1626186426518</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,7 +592,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add comments in file Filling Tales" />
     <MESSAGE value="Corr OAPV_calc.py" />
     <MESSAGE value="Corr OAPV_calc.py #2" />
     <MESSAGE value="Add ScriptsMonitel.cs" />
@@ -591,7 +616,8 @@
     <MESSAGE value="Add ARVSG_BSV_lite.py" />
     <MESSAGE value="Add ARVSG_static_lite.py" />
     <MESSAGE value="Add DECS_400_lite.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add DECS_400_lite.py" />
+    <MESSAGE value="Add Alstom_lite.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Alstom_lite.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -600,6 +626,11 @@
           <url>file:////cn-dfs.oducn.so/user/SER/Охрименко/Project_Py3/RastrWin3/Equivalence/gen_equivalent.py</url>
           <line>19</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/site-packages/openpyxl/utils/__init__.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

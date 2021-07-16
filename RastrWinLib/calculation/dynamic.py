@@ -30,10 +30,10 @@ class Dynamic:
         f"""
         Функции для расчтета ЭМПП доступны в интерфейсе IFWDynamic.
         Интерфейс может быть получен с помощью свойства IRastr.FWDynamic.
-        :param rastr_win: ;
+        :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param calc_time: время расчета ЭМПП;
-        :param snap_max_count:  
-        :param switch_command_line: ;
+        :param snap_max_count: ;
+        :param switch_command_line: True/False - вывод сообщений в протокол.
         """
 
         self.rastr_win = rastr_win
