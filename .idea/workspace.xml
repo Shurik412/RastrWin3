@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Add Alstom_lite.py">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameter_ARVSDP1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tables/test_dicor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/ma.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/mod_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/py_test/tm_excel.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TutorialPython/test_excel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameter_ARVSDP1.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/Mitsubishi/Mitsubishi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_AC5B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_ARV3M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/basket/Parameters_ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_ARV_REM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BARS/tm_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/tm_excel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +84,14 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsRegime\templates" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWin3_WorkSpace" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag\CreateBatFile" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tm_excel">
+  <component name="RunManager" selected="Python.tm_excel (1)">
     <configuration name="ma" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="open_file_excel_sleep_exit_for_pss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/open_file_excel_sleep_exit_for_pss.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_excel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_dicor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tm_excel (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -177,11 +163,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tables" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tables/test_dicor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/tm_excel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -213,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tm_excel (1)" />
+        <item itemvalue="Python.test_excel" />
         <item itemvalue="Python.tm_excel" />
         <item itemvalue="Python.ma" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test_dicor" />
-        <item itemvalue="Python.open_file_excel_sleep_exit_for_pss" />
       </list>
     </recent_temporary>
   </component>
@@ -232,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00171" summary="Corr Eurostag_Output_PSS.py">
-      <created>1622451151445</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1622451151445</updated>
     </task>
     <task id="LOCAL-00172" summary="Corr Eurostag_Output_PSS.py -&gt; names">
       <created>1622456320659</created>
@@ -576,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626186426518</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="add tm_excel.py">
+      <created>1626443645147</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1626443645179</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +578,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr OAPV_calc.py" />
     <MESSAGE value="Corr OAPV_calc.py #2" />
     <MESSAGE value="Add ScriptsMonitel.cs" />
     <MESSAGE value="add file filling_excel_map_vetv.py" />
@@ -617,7 +602,8 @@
     <MESSAGE value="Add ARVSG_static_lite.py" />
     <MESSAGE value="Add DECS_400_lite.py" />
     <MESSAGE value="Add Alstom_lite.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Alstom_lite.py" />
+    <MESSAGE value="add tm_excel.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tm_excel.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
