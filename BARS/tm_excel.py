@@ -7,32 +7,50 @@ from icecream import ic
 
 
 #####################################################################
+
+def sampling_from_string(string):
+    list_t = []
+    list_end = []
+    list_str = []
+    for index, i in enumerate(string):
+        if i == 't':
+            list_t.append(index)
+        if i == ']':
+            list_end.append(index + 1)
+
+    for index_list_t, t in enumerate(list_t):
+        num_str_list_end = list_end[index_list_t]
+        ts_plus_str = string[t:num_str_list_end]
+        list_str.append(ts_plus_str)
+    return list_str
+
+
 def create_dop_ts(ws):
-    STR_COLS = 'AB'
+    STR_COLS = 'T'
+    SWITCH = 0
     INDEX_STR_COLS = column_index_from_string(STR_COLS)
     for row in range(2, ws.max_row):
         cell_ = ws[f'{STR_COLS}{row}'].value
         if cell_ is not None:
-            try:
-                list_cell = list(map(int, re.findall(r"\[([+-]?\d+)\]", cell_)))  # \[(\d+)\]'
-                for index, val_list_cell in enumerate(list_cell):
-                    index_ = index + 1
-                    ws[f'{str(get_column_letter(INDEX_STR_COLS + index_))}{row}'].value = val_list_cell
-            except TypeError:
-                print('Не соответствует типу!')
+            list_cell = sampling_from_string(string=str(cell_))
+            for index, val_list_cell in enumerate(list_cell):
+                index_ = index + 1
+                ws[f'{str(get_column_letter(INDEX_STR_COLS + index_))}{row}'].value = val_list_cell
 
-            # try:
-            #     list_cell = list(map(int, re.findall(r"\[([+-]?\d+)\]", cell_)))  # \[(\d+)\]'
-            #     for index, val_list_cell in enumerate(list_cell):
-            #         index_ = index + 1
-            #         ws[f'{str(get_column_letter(INDEX_STR_COLS + index_))}{row}'].value = val_list_cell
-            # except TypeError:
-            #     print('Не соответствует типу!')
+        if SWITCH == 1:
+            if cell_ is not None:
+                try:
+                    list_cell = list(map(int, re.findall(r"\[([+-]?\d+)\]", cell_)))  # \[(\d+)\]'
+                    for index, val_list_cell in enumerate(list_cell):
+                        index_ = index + 1
+                        ws[f'{str(get_column_letter(INDEX_STR_COLS + index_))}{row}'].value = val_list_cell
+                except TypeError:
+                    print('Не соответствует типу!')
 
 
 def create_list_ts(ws):
     my_list = []
-    STR_COLS_TWO = 'AC'
+    STR_COLS_TWO = 'U'
     for row in range(2, ws.max_row):
         cell_ = ws[f'{STR_COLS_TWO}{row}'].value
         if cell_ is not None and cell_ != 0 and cell_ != 1 and cell_ != '':
@@ -56,10 +74,11 @@ def create_column_unique_my_list(list_):
         ws[f'A{inx}'].value = item
     wb.save(r'C:\Users\Ohrimenko_AG\Desktop\Test_TI_TS.xlsx')
 
+
 #####################################################################
 
 
-DIR_FILE_NAME = r'C:\Users\Ohrimenko_AG\Desktop\ТИ_Каналы.xlsx'
+DIR_FILE_NAME = r'U:\ODU_DIR\СЭР\БАРС\Для сеч 2.xlsx'
 NAME_SHEET = '12'
 try:
     wb = load_workbook(filename=DIR_FILE_NAME)

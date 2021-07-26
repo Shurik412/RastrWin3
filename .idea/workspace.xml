@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BARS/XML_Excel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BARS/parsing_xml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/excel_map_vetv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/test_PySTR.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BARS/tm_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/tm_excel.py" afterDir="false" />
     </list>
@@ -92,7 +92,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWin3_WorkSpace" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.XML_Excel">
+  <component name="RunManager" selected="Python.excel_map_vetv">
     <configuration name="XML_Excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="parsing_xml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="excel_map_vetv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,7 +126,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/parsing_xml.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/excel_map_vetv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +135,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sre_parse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/sre_parse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_PySTR" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,7 +168,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_excel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_PySTR.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,34 +198,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tm_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests/py_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS\tm_excel.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.XML_Excel" />
+        <item itemvalue="Python.excel_map_vetv" />
         <item itemvalue="Python.tm_excel (1)" />
-        <item itemvalue="Python.parsing_xml" />
-        <item itemvalue="Python.test_excel" />
-        <item itemvalue="Python.tm_excel" />
+        <item itemvalue="Python.test_PySTR" />
+        <item itemvalue="Python.sre_parse" />
+        <item itemvalue="Python.XML_Excel" />
       </list>
     </recent_temporary>
   </component>
@@ -219,13 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00173" summary="Corr Eurostag_Output_PSS.py">
-      <created>1622468730587</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1622468730587</updated>
     </task>
     <task id="LOCAL-00174" summary="create file create_bat_file.py">
       <created>1622536629103</created>
@@ -563,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626708608645</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="add parsing_xml.py and XML_Excel.py">
+      <created>1626784579399</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1626784579399</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +579,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add ScriptsMonitel.cs" />
     <MESSAGE value="add file filling_excel_map_vetv.py" />
     <MESSAGE value="Corr file create_bat_file_dynamic.py and create_bat_file_post_processor.py" />
     <MESSAGE value="Corr" />
@@ -604,7 +603,8 @@
     <MESSAGE value="Add Alstom_lite.py" />
     <MESSAGE value="add tm_excel.py" />
     <MESSAGE value="add tm_excel.py =&gt; add func create_list_tm" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tm_excel.py =&gt; add func create_list_tm" />
+    <MESSAGE value="add parsing_xml.py and XML_Excel.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add parsing_xml.py and XML_Excel.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
