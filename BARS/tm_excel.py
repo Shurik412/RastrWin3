@@ -26,15 +26,17 @@ def sampling_from_string(string):
 
 
 def create_dop_ts(ws):
-    STR_COLS = 'T'
+    STR_COLS = 'A'
     SWITCH = 0
     INDEX_STR_COLS = column_index_from_string(STR_COLS)
     for row in range(2, ws.max_row):
         cell_ = ws[f'{STR_COLS}{row}'].value
+        ic(cell_)
         if cell_ is not None:
             list_cell = sampling_from_string(string=str(cell_))
             for index, val_list_cell in enumerate(list_cell):
                 index_ = index + 1
+                ic(val_list_cell)
                 ws[f'{str(get_column_letter(INDEX_STR_COLS + index_))}{row}'].value = val_list_cell
 
         if SWITCH == 1:
@@ -50,7 +52,7 @@ def create_dop_ts(ws):
 
 def create_list_ts(ws):
     my_list = []
-    STR_COLS_TWO = 'U'
+    STR_COLS_TWO = 'A'
     for row in range(2, ws.max_row):
         cell_ = ws[f'{STR_COLS_TWO}{row}'].value
         if cell_ is not None and cell_ != 0 and cell_ != 1 and cell_ != '':
@@ -71,14 +73,16 @@ def create_column_unique_my_list(list_):
     ws = wb.active
     for index, item in enumerate(list_res):
         inx = index + 1
-        ws[f'A{inx}'].value = item
-    wb.save(r'C:\Users\Ohrimenko_AG\Desktop\Test_TI_TS.xlsx')
+        ic(inx)
+        ic(item)
+        ws[f'C{inx}'].value = item
+    wb.save(r'U:\ODU_DIR\СЭР\БАРС\ДопТС.xlsx')
 
 
 #####################################################################
 
 
-DIR_FILE_NAME = r'U:\ODU_DIR\СЭР\БАРС\Для сеч 2.xlsx'
+DIR_FILE_NAME = r'U:\ODU_DIR\СЭР\БАРС\ДопТС.xlsx'
 NAME_SHEET = '12'
 try:
     wb = load_workbook(filename=DIR_FILE_NAME)

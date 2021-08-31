@@ -609,6 +609,7 @@ Unom_kV = input("Unom KZ(3) -> 500 or 14_500: ")
 Unom_kV_exp2 = input("Unom KZ(3) EXP_2 -> 500 or 14_500: ")
 NameGenInvestigated = input(
     "Название исследуемого генератора, example (P/52601222) or (52601222),if 0 -> object #1: ")
+
 dir_file_1 = dir_wb1.replace('\\', '/')
 
 dict_set = dict()
