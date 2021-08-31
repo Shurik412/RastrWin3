@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VBScript/eq.vbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/Equivalent.vbs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tools/timer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/testDecor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +83,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsHTML" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\VBScript" />
@@ -95,7 +97,7 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWin3_WorkSpace" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Creator_PRG_and_SQL">
+  <component name="RunManager" selected="Python.testDecor">
     <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,7 +182,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_variable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="testDecor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,11 +190,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/testDecor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Creator_PRG_and_SQL" />
+        <item itemvalue="Python.testDecor" />
         <item itemvalue="Python.Eurostag_Output_PSS" />
+        <item itemvalue="Python.Creator_PRG_and_SQL" />
         <item itemvalue="Python.create_bat_file_dynamic" />
         <item itemvalue="Python.create_bat_file_post_processor" />
-        <item itemvalue="Python.test_variable" />
       </list>
     </recent_temporary>
   </component>
@@ -222,13 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00176" summary="Add documention in ARV_Filling.py">
-      <created>1622629917791</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1622629917791</updated>
     </task>
     <task id="LOCAL-00177" summary="Add documention in DFWIEEE421_Filling.py">
       <created>1622632973757</created>
@@ -566,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630392630827</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="add file Equivalent.vbs">
+      <created>1630393059189</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1630393059189</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
