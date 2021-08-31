@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VBScript/Equivalent.vbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARS/tm_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/tm_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/CreateBatFile/create_bat_file_post_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VBScript/eq.vbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VBScript/Equivalent.vbs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +48,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="timeTracker.activityTracker" value="null" />
     <property name="timeTracker.comment" value="" />
     <property name="timeTracker.inactivityPeriodInMills" value="600000" />
@@ -227,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00175" summary="Add documention in ARS_Filling.py">
-      <created>1622621291376</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1622621291376</updated>
     </task>
     <task id="LOCAL-00176" summary="Add documention in ARV_Filling.py">
       <created>1622629917791</created>
@@ -571,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627322889514</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <task id="LOCAL-00224" summary="add file Equivalent.vbs">
+      <created>1630392630827</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1630392630827</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

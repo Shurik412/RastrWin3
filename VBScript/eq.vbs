@@ -1,8 +1,8 @@
-' 	 Макрос для формирования Динамической Расчётной Модели (ДРМ) - 2020
+' 	 РњР°РєСЂРѕСЃ РґР»СЏ С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ Р”РёРЅР°РјРёС‡РµСЃРєРѕР№ Р Р°СЃС‡С‘С‚РЅРѕР№ РњРѕРґРµР»Рё (Р”Р Рњ) - 2020
 '
-' 1. Эквивалентирование - БРМ (корректировка БРМ)
-' 2. Устранение ошибок после эквивалентирования (удаление узлов без связи, удаление УШР и Реакторов без узлов ... )
-' 3. Заполнение актуального Динамического набора из Excel файла
+' 1. Р­РєРІРёРІР°Р»РµРЅС‚РёСЂРѕРІР°РЅРёРµ - Р‘Р Рњ (РєРѕСЂСЂРµРєС‚РёСЂРѕРІРєР° Р‘Р Рњ)
+' 2. РЈСЃС‚СЂР°РЅРµРЅРёРµ РѕС€РёР±РѕРє РїРѕСЃР»Рµ СЌРєРІРёРІР°Р»РµРЅС‚РёСЂРѕРІР°РЅРёСЏ (СѓРґР°Р»РµРЅРёРµ СѓР·Р»РѕРІ Р±РµР· СЃРІСЏР·Рё, СѓРґР°Р»РµРЅРёРµ РЈРЁР  Рё Р РµР°РєС‚РѕСЂРѕРІ Р±РµР· СѓР·Р»РѕРІ ... )
+' 3. Р—Р°РїРѕР»РЅРµРЅРёРµ Р°РєС‚СѓР°Р»СЊРЅРѕРіРѕ Р”РёРЅР°РјРёС‡РµСЃРєРѕРіРѕ РЅР°Р±РѕСЂР° РёР· Excel С„Р°Р№Р»Р°
 '
 '**************************************************************************
 
@@ -10,208 +10,208 @@ r=Setlocale("en-us")
 rrr=1
 Set t=Rastr
 
-print("Запуск макроса " & "дата: " & date() & " | время: " & Hour(Now()) & " hour " & Minute(Now()) & " minut")
+print("Р—Р°РїСѓСЃРє РјР°РєСЂРѕСЃР° " & "РґР°С‚Р°: " & date() & " | РІСЂРµРјСЏ: " & Hour(Now()) & " hour " & Minute(Now()) & " minut")
 Time_1 = Timer()
-Call Equivalence() ' - эквивалентирование БРМ.
+Call Equivalence() ' - СЌРєРІРёРІР°Р»РµРЅС‚РёСЂРѕРІР°РЅРёРµ Р‘Р Рњ.
 Time_2 = Timer()
-print("Время работы МАКРОСА, в минутах = " & ((Time_2 - Time_1)/60))
-print("Работа макроса завершена.")
+print("Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹ РњРђРљР РћРЎРђ, РІ РјРёРЅСѓС‚Р°С… = " & ((Time_2 - Time_1)/60))
+print("Р Р°Р±РѕС‚Р° РјР°РєСЂРѕСЃР° Р·Р°РІРµСЂС€РµРЅР°.")
 
 '\\************************************************************************
 Sub Equivalence()
-	print("-= Запуск эквивалентирования =-")
+	print("-= Р—Р°РїСѓСЃРє СЌРєРІРёРІР°Р»РµРЅС‚РёСЂРѕРІР°РЅРёСЏ =-")
     Set node = t.Tables("node")
     Set vetv = t.Tables("vetv")
     Set gen = t.Tables("Generator")
 
 	'###########################################
-	' Урал
-	viborka_ot_100_do_200_full = "(na>100 & na<200)" ' для выключателей без учета ограничений по напряжению
-	viborka_ot_100_do_200 = "(na>100 & na<200) & (uhom<230)"  ' для эквивалентирования с учетом огран. по напряжению
+	' РЈСЂР°Р»
+	viborka_ot_100_do_200_full = "(na>100 & na<200)" ' РґР»СЏ РІС‹РєР»СЋС‡Р°С‚РµР»РµР№ Р±РµР· СѓС‡РµС‚Р° РѕРіСЂР°РЅРёС‡РµРЅРёР№ РїРѕ РЅР°РїСЂСЏР¶РµРЅРёСЋ
+	viborka_ot_100_do_200 = "(na>100 & na<200) & (uhom<230)"  ' РґР»СЏ СЌРєРІРёРІР°Р»РµРЅС‚РёСЂРѕРІР°РЅРёСЏ СЃ СѓС‡РµС‚РѕРј РѕРіСЂР°РЅ. РїРѕ РЅР°РїСЂСЏР¶РµРЅРёСЋ
 
 	'###########################################
-	' 201 => Самарская область (АИП => 813)
-	na_Samarskay_obl = na_of_the_area_by_name("Самарская область")
+	' 201 => РЎР°РјР°СЂСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 813)
+	na_Samarskay_obl = na_of_the_area_by_name("РЎР°РјР°СЂСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_201_Samarskay_obl_full = "na=" & na_Samarskay_obl
 	viborka_201_Samarskay_obl = "(na="& na_Samarskay_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 205 => Республика Татарстан (Татарстан) (АИП => 205)
-	na_Tatrskay = na_of_the_area_by_name("Республика Татарстан (Татарстан)")
+	' 205 => Р РµСЃРїСѓР±Р»РёРєР° РўР°С‚Р°СЂСЃС‚Р°РЅ (РўР°С‚Р°СЂСЃС‚Р°РЅ) (РђРРџ => 205)
+	na_Tatrskay = na_of_the_area_by_name("Р РµСЃРїСѓР±Р»РёРєР° РўР°С‚Р°СЂСЃС‚Р°РЅ (РўР°С‚Р°СЂСЃС‚Р°РЅ)")
 	viborka_205_Tatrskay_full = "na=" & na_Tatrskay
 	viborka_205_Tatrskay = "(na="& na_Tatrskay &") & (uhom < 160)"
 
 	'###########################################
-	' 206 => Чувашская Республика - Чувашия (АИП => 206)
-	na_Chuvashy = na_of_the_area_by_name("Чувашская Республика - Чувашия")
+	' 206 => Р§СѓРІР°С€СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° - Р§СѓРІР°С€РёСЏ (РђРРџ => 206)
+	na_Chuvashy = na_of_the_area_by_name("Р§СѓРІР°С€СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° - Р§СѓРІР°С€РёСЏ")
 	viborka_206_Chuvashy_full = "na=" & na_Chuvashy
 	viborka_206_Chuvashy = "(na="& na_Chuvashy &") & (uhom < 160)"
 
 	'###########################################
-	' 208 => Республика Марий Эл (АИП => 208)
-	na_MariEl = na_of_the_area_by_name("Республика Марий Эл")
+	' 208 => Р РµСЃРїСѓР±Р»РёРєР° РњР°СЂРёР№ Р­Р» (РђРРџ => 208)
+	na_MariEl = na_of_the_area_by_name("Р РµСЃРїСѓР±Р»РёРєР° РњР°СЂРёР№ Р­Р»")
 	viborka_208_MariEl_full = "na=" & na_MariEl
 	viborka_208_MariEl = "(na="& na_MariEl &") & (uhom < 160)"
 
 	'###########################################
-	' 202 => Саратовская область (АИП => 202)
-	na_Saratov_obl = na_of_the_area_by_name("Саратовская область")
+	' 202 => РЎР°СЂР°С‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 202)
+	na_Saratov_obl = na_of_the_area_by_name("РЎР°СЂР°С‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_202_Saratov_obl_full = "na=" & na_Saratov_obl
 	viborka_202_Saratov_obl = "(na=" & na_Saratov_obl & ") & (uhom < 160)"
 
 	'###########################################
-	' 301 => Ростовская область (АИП => 301)
-	na_Rostov_obl = na_of_the_area_by_name("Ростовская область")
+	' 301 => Р РѕСЃС‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 301)
+	na_Rostov_obl = na_of_the_area_by_name("Р РѕСЃС‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_301_Rostov_obl_full = "na=" & na_Rostov_obl
 	viborka_301_Rostov_obl = "(na=" & na_Rostov_obl & ") & (uhom < 160)"
 
 	'###########################################
-	' 203 => Ульяновская область (АИП => 203)
-	na_Ulynov_obl = na_of_the_area_by_name("Ульяновская область")
+	' 203 => РЈР»СЊСЏРЅРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 203)
+	na_Ulynov_obl = na_of_the_area_by_name("РЈР»СЊСЏРЅРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_203_Ulynov_obl_full = "na=" & na_Ulynov_obl
 	viborka_203_Ulynov_obl = "(na=" & na_Ulynov_obl & ") & (uhom < 160)"
 
 	'###########################################
-	' 401 => Мурманская область (АИП => 401)
-	na_Murmansk_obl = na_of_the_area_by_name("Мурманская область")
+	' 401 => РњСѓСЂРјР°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 401)
+	na_Murmansk_obl = na_of_the_area_by_name("РњСѓСЂРјР°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_401_Murmansk_obl_full = "na=" & na_Murmansk_obl
 	viborka_401_Murmansk_obl = "(na=" & na_Murmansk_obl & ") & (uhom < 160)"
 
 	'###########################################
-	' 402 => Республика Карелия (АИП => 402)
-	na_Kareliy = na_of_the_area_by_name("Республика Карелия")
+	' 402 => Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ (РђРРџ => 402)
+	na_Kareliy = na_of_the_area_by_name("Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ")
 	viborka_402_Kareliy_full = "na=" & na_Kareliy
 	viborka_402_Kareliy = "(na="& na_Kareliy & ") & (uhom < 160)"
 
 	'###########################################
-	' 405 => Псковская область (АИП => 405)
-	na_Pskovskay_obl = na_of_the_area_by_name("Псковская область")
+	' 405 => РџСЃРєРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 405)
+	na_Pskovskay_obl = na_of_the_area_by_name("РџСЃРєРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_405_Pskovskay_obl_full = "na=" & na_Pskovskay_obl
 	viborka_405_Pskovskay_obl = "(na=" & na_Pskovskay_obl & ") & (uhom < 160)"
 
 	'###########################################
-	' 407 => Калининградская область (АИП => 407)
-	na_Kaliningrad_obl = na_of_the_area_by_name("Калининградская область")
+	' 407 => РљР°Р»РёРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 407)
+	na_Kaliningrad_obl = na_of_the_area_by_name("РљР°Р»РёРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_407_Kaliningrad_obl_full = "na=" & na_Kaliningrad_obl
 	viborka_407_Kaliningrad_obl = "(na="& na_Kaliningrad_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 805 => Эстонская Республика (АИП => 805)
-	na_Estony = na_of_the_area_by_name("Эстонская Республика")
+	' 805 => Р­СЃС‚РѕРЅСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 805)
+	na_Estony = na_of_the_area_by_name("Р­СЃС‚РѕРЅСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°")
 	viborka_805_Estony_full = "na=" & na_Estony
 	viborka_805_Estony = "(na="& na_Estony & ") & (uhom < 160)"
 
 	'###########################################
-	' 806 => Латвийская Республика (АИП => 806)
-	na_Latviy = na_of_the_area_by_name("Латвийская Республика")
+	' 806 => Р›Р°С‚РІРёР№СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 806)
+	na_Latviy = na_of_the_area_by_name("Р›Р°С‚РІРёР№СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°")
 	viborka_806_Latviy_full = "na=" & na_Latviy
 	viborka_806_Latviy = "(na="& na_Latviy &") & (uhom < 160)"
 
 	'###########################################
-	' 807 => Литовская Республика (АИП => 807)
-	na_Litva = na_of_the_area_by_name("Литовская Республика")
+	' 807 => Р›РёС‚РѕРІСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 807)
+	na_Litva = na_of_the_area_by_name("Р›РёС‚РѕРІСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°")
 	viborka_807_Litva_full = "na=" & na_Litva
 	viborka_807_Litva = "(na="& na_Litva &") & (uhom < 160)"
 
 	'###########################################
-	' 801 => Финляндская Республика (АИП => 801)
-	na_Finskay = na_of_the_area_by_name("Финляндская Республика")
+	' 801 => Р¤РёРЅР»СЏРЅРґСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 801)
+	na_Finskay = na_of_the_area_by_name("Р¤РёРЅР»СЏРЅРґСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°")
 	viborka_801_Finskay_full = "na=" & na_Finskay
 	viborka_801_Finskay = "(na="& na_Finskay &") & (uhom < 160)"
 
 	'###########################################
-	' 823 => Донбасский регион (АИП => 823)
-	na_Donbas = na_of_the_area_by_name("Донбасский регион")
+	' 823 => Р”РѕРЅР±Р°СЃСЃРєРёР№ СЂРµРіРёРѕРЅ (РђРРџ => 823)
+	na_Donbas = na_of_the_area_by_name("Р”РѕРЅР±Р°СЃСЃРєРёР№ СЂРµРіРёРѕРЅ")
 	viborka_823_Donbas_full = "na=" & na_Donbas
 	viborka_823_Donbas = "(na="& na_Donbas &") & (uhom < 160)"
 
 	'###########################################
-	' 825 => Оренбургская область (АИП => 825 (зима_max - 831))
-	na_Orenburg_obl = na_of_the_area_by_name("Оренбургская область")
+	' 825 => РћСЂРµРЅР±СѓСЂРіСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 825 (Р·РёРјР°_max - 831))
+	na_Orenburg_obl = na_of_the_area_by_name("РћСЂРµРЅР±СѓСЂРіСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_825_Orenburg_obl_full = "na=" & na_Orenburg_obl
 	viborka_825_Orenburg_obl = "(na="& na_Orenburg_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 204 => Пензенская область
-	na_Penza_obl = na_of_the_area_by_name("Пензенская область")
+	' 204 => РџРµРЅР·РµРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+	na_Penza_obl = na_of_the_area_by_name("РџРµРЅР·РµРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_204_Penza_obl_full = "na=" & na_Penza_obl
 	viborka_204_Penza_obl = "(na="& na_Penza_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 207 => Республика Мордовия
-	na_Republic_Mordova = na_of_the_area_by_name("Республика Мордовия")
+	' 207 => Р РµСЃРїСѓР±Р»РёРєР° РњРѕСЂРґРѕРІРёСЏ
+	na_Republic_Mordova = na_of_the_area_by_name("Р РµСЃРїСѓР±Р»РёРєР° РњРѕСЂРґРѕРІРёСЏ")
 	viborka_207_Republic_Mordova_full = "na=" & na_Republic_Mordova
 	viborka_207_Republic_Mordova = "(na="& na_Republic_Mordova &") & (uhom < 160)"
 
 	'###########################################
-	' 209 => Нижегородская область
-	na_Nijegor_obl = na_of_the_area_by_name("Нижегородская область")
+	' 209 => РќРёР¶РµРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+	na_Nijegor_obl = na_of_the_area_by_name("РќРёР¶РµРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_209_Nijegor_obl_full = "na=" & na_Nijegor_obl
 	viborka_209_Nijegor_obl = "(na="& na_Nijegor_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 311 => Волгоградская область
-	na_Vologda_obl = na_of_the_area_by_name("Волгоградская область")
+	' 311 => Р’РѕР»РіРѕРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+	na_Vologda_obl = na_of_the_area_by_name("Р’РѕР»РіРѕРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_311_Vologda_obl_full = "na=" & na_Vologda_obl
 	viborka_311_Vologda_obl = "(na="& na_Vologda_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 404 => Новгородская область
-	na_Nigegor_obl = na_of_the_area_by_name("Новгородская область")
+	' 404 => РќРѕРІРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+	na_Nigegor_obl = na_of_the_area_by_name("РќРѕРІРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_404_Nigegor_obl_full = "na=" & na_Nigegor_obl
 	viborka_404_Nigegor_obl = "(na="& na_Nigegor_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 803 => Западный регион
-	na_Zapad_reg = na_of_the_area_by_name("Западный регион")
+	' 803 => Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+	na_Zapad_reg = na_of_the_area_by_name("Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ")
 	viborka_803_Zapad_reg_full = "na=" & na_Zapad_reg
 	viborka_803_Zapad_reg = "(na="& na_Zapad_reg &") & (uhom < 160)"
 
 	'###########################################
-	' 804 => Западный регион
-	na_Belorus = na_of_the_area_by_name("Западный регион")
+	' 804 => Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+	na_Belorus = na_of_the_area_by_name("Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ")
 	viborka_804_Belorus_full = "na=" & na_Belorus
 	viborka_804_Belorus = "(na="& na_Belorus &") & (uhom < 160)"
 
 	'###########################################
-	' 819 => Швеция
-	na_Shvec = na_of_the_area_by_name("Швеция")
+	' 819 => РЁРІРµС†РёСЏ
+	na_Shvec = na_of_the_area_by_name("РЁРІРµС†РёСЏ")
 	viborka_819_Shvec_full = "na=" & na_Shvec
 	viborka_819_Shvec = "(na="& na_Shvec &") & (uhom < 160)"
 
 	'###########################################
-	' 820 => Санкт-Петербург
-	na_SPB = na_of_the_area_by_name("Санкт-Петербург")
+	' 820 => РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі
+	na_SPB = na_of_the_area_by_name("РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі")
 	viborka_820_SPB_full = "na=" & na_SPB
 	viborka_820_SPB = "(na="& na_SPB &") & (uhom < 160)"
 
 	'###########################################
-	' 822 => Ленинградская область
-	na_Leningral_obl = na_of_the_area_by_name("Ленинградская область")
+	' 822 => Р›РµРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+	na_Leningral_obl = na_of_the_area_by_name("Р›РµРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ")
 	viborka_822_Leningral_obl_full = "na=" & na_Leningral_obl
 	viborka_822_Leningral_obl = "(na="& na_Leningral_obl &") & (uhom < 160)"
 
 	'###########################################
-	' 823 => Юго-Западный регион
-	na_Ugo_Zapad_reg = na_of_the_area_by_name("Юго-Западный регион")
+	' 823 => Р®РіРѕ-Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+	na_Ugo_Zapad_reg = na_of_the_area_by_name("Р®РіРѕ-Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ")
 	viborka_823_Ugo_Zapad_reg_full = "na=" & na_Ugo_Zapad_reg
 	viborka_823_Ugo_Zapad_reg = "(na="& na_Ugo_Zapad_reg &") & (uhom < 160)"
 
 	'###########################################
-	' 825 => Южный регион
-	na_Ugny_reg = na_of_the_area_by_name("Южный регион")
+	' 825 => Р®Р¶РЅС‹Р№ СЂРµРіРёРѕРЅ
+	na_Ugny_reg = na_of_the_area_by_name("Р®Р¶РЅС‹Р№ СЂРµРіРёРѕРЅ")
 	viborka_825_Ugny_reg_full = "na=" & na_Ugny_reg
 	viborka_825_Ugny_reg = "(na="& na_Ugny_reg &") & (uhom < 160)"
 
 	'###########################################
-	' 826 => Днепровский регион
-	na_Dnepov_reg = na_of_the_area_by_name("Днепровский регион")
+	' 826 => Р”РЅРµРїСЂРѕРІСЃРєРёР№ СЂРµРіРёРѕРЅ
+	na_Dnepov_reg = na_of_the_area_by_name("Р”РЅРµРїСЂРѕРІСЃРєРёР№ СЂРµРіРёРѕРЅ")
 	viborka_826_Dnepov_reg_full = "na=" & na_Dnepov_reg
 	viborka_826_Dnepov_reg = "(na="& na_Dnepov_reg &") & (uhom < 160)"
 
 	'###########################################
-	' 827 => Северный регион
-	na_Sever_reg = na_of_the_area_by_name("Северный регион")
+	' 827 => РЎРµРІРµСЂРЅС‹Р№ СЂРµРіРёРѕРЅ
+	na_Sever_reg = na_of_the_area_by_name("РЎРµРІРµСЂРЅС‹Р№ СЂРµРіРёРѕРЅ")
 	viborka_827_Sever_reg_full = "na=" & na_Sever_reg
 	viborka_827_Sever_reg = "(na="& na_Sever_reg &") & (uhom < 160)"
 	'###########################################
@@ -370,72 +370,72 @@ Sub Equivalence()
 		Call print_parm_shem()
 
 		' ############################################################################
-		'viborka_ot_100_do_200_full = "(na>100 & na<200)" ' для выключателей без учета ограничений по напряжению
-		'na_Samarskay_obl -> 201 => Самарская область
-		'na_Tatrskay -> 205 => Республика Татарстан (Татарстан)
-		'na_Chuvashy -> 206 => Чувашская Республика - Чувашия
-		'na_MariEl -> 208 => Республика Марий Эл
-		'na_Saratov_obl -> 202 => Саратовская область
-		'na_Rostov_obl -> 301 => Ростовская область
-		'na_Ulynov_obl -> 203 => Ульяновская область
-		'na_Murmansk_obl -> 401 => Мурманская область
-		'na_Kareliy -> 402 => Республика Карелия
-		'na_Pskovskay_obl -> 405 => Псковская область
-		'na_Kaliningrad_obl -> 407 => Калининградская область
-		'na_Estony -> 805 => Эстонская Республика
-		'na_Latviy -> 806 => Латвийская Республика
-		'na_Litva -> 807 => Литовская Республика
-		'na_Finskay -> 801 => Финляндская Республика
-		'na_Donbas -> 823 => Донбасский регион
-		'na_Orenburg_obl -> 825 => Оренбургская область
-		'na_Penza_obl -> 204 => Пензенская область
-		'na_Republic_Mordova -> 207 => Республика Мордовия
-		'na_Nijegor_obl -> 209 => Нижегородская область
-		'na_Vologda_obl -> 311 => Волгоградская область
-		'na_Nigegor_obl -> 404 => Новгородская область
-		'na_Zapad_reg -> 803 => Западный регион
-		'na_Belorus -> 804 => Западный регион
-		'na_Shvec -> 819 => Швеция
-		'na_SPB -> 820 => Санкт-Петербург
-		'na_Leningral_obl -> 822 => Ленинградская область
-		'na_Ugo_Zapad_reg -> 823 => Юго-Западный регион
-		'na_Ugny_reg -> 825 => Южный регион
-		'na_Dnepov_reg -> 826 => Днепровский регион
-		'na_Sever_reg -> 827 => Северный регион
+		'viborka_ot_100_do_200_full = "(na>100 & na<200)" ' РґР»СЏ РІС‹РєР»СЋС‡Р°С‚РµР»РµР№ Р±РµР· СѓС‡РµС‚Р° РѕРіСЂР°РЅРёС‡РµРЅРёР№ РїРѕ РЅР°РїСЂСЏР¶РµРЅРёСЋ
+		'na_Samarskay_obl -> 201 => РЎР°РјР°СЂСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Tatrskay -> 205 => Р РµСЃРїСѓР±Р»РёРєР° РўР°С‚Р°СЂСЃС‚Р°РЅ (РўР°С‚Р°СЂСЃС‚Р°РЅ)
+		'na_Chuvashy -> 206 => Р§СѓРІР°С€СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° - Р§СѓРІР°С€РёСЏ
+		'na_MariEl -> 208 => Р РµСЃРїСѓР±Р»РёРєР° РњР°СЂРёР№ Р­Р»
+		'na_Saratov_obl -> 202 => РЎР°СЂР°С‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Rostov_obl -> 301 => Р РѕСЃС‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Ulynov_obl -> 203 => РЈР»СЊСЏРЅРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Murmansk_obl -> 401 => РњСѓСЂРјР°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Kareliy -> 402 => Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ
+		'na_Pskovskay_obl -> 405 => РџСЃРєРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Kaliningrad_obl -> 407 => РљР°Р»РёРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Estony -> 805 => Р­СЃС‚РѕРЅСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°
+		'na_Latviy -> 806 => Р›Р°С‚РІРёР№СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°
+		'na_Litva -> 807 => Р›РёС‚РѕРІСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°
+		'na_Finskay -> 801 => Р¤РёРЅР»СЏРЅРґСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР°
+		'na_Donbas -> 823 => Р”РѕРЅР±Р°СЃСЃРєРёР№ СЂРµРіРёРѕРЅ
+		'na_Orenburg_obl -> 825 => РћСЂРµРЅР±СѓСЂРіСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Penza_obl -> 204 => РџРµРЅР·РµРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Republic_Mordova -> 207 => Р РµСЃРїСѓР±Р»РёРєР° РњРѕСЂРґРѕРІРёСЏ
+		'na_Nijegor_obl -> 209 => РќРёР¶РµРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Vologda_obl -> 311 => Р’РѕР»РіРѕРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Nigegor_obl -> 404 => РќРѕРІРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Zapad_reg -> 803 => Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+		'na_Belorus -> 804 => Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+		'na_Shvec -> 819 => РЁРІРµС†РёСЏ
+		'na_SPB -> 820 => РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі
+		'na_Leningral_obl -> 822 => Р›РµРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'na_Ugo_Zapad_reg -> 823 => Р®РіРѕ-Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+		'na_Ugny_reg -> 825 => Р®Р¶РЅС‹Р№ СЂРµРіРёРѕРЅ
+		'na_Dnepov_reg -> 826 => Р”РЅРµРїСЂРѕРІСЃРєРёР№ СЂРµРіРёРѕРЅ
+		'na_Sever_reg -> 827 => РЎРµРІРµСЂРЅС‹Р№ СЂРµРіРёРѕРЅ
 
 		'##############################################################################
-		'viborka_ot_100_do_200_full -> Урал
-		'viborka_201_Samarskay_obl_full -> 201 => Самарская область (АИП => 813)
-		'viborka_205_Tatrskay_full -> 205 => Республика Татарстан (Татарстан) (АИП => 205)
-		'viborka_206_Chuvashy_full -> 206 => Чувашская Республика - Чувашия (АИП => 206)
-		'viborka_208_MariEl_full -> 208 => Республика Марий Эл (АИП => 208)
-		'viborka_202_Saratov_obl_full -> 202 => Саратовская область (АИП => 202)
-		'viborka_301_Rostov_obl_full -> 301 => Ростовская область (АИП => 301)
-		'viborka_203_Ulynov_obl_full -> 203 => Ульяновская область (АИП => 203)
-		'viborka_401_Murmansk_obl_full -> 401 => Мурманская область (АИП => 401)
-		'viborka_402_Kareliy_full -> 402 => Республика Карелия (АИП => 402)
-		'viborka_405_Pskovskay_obl_full -> 405 => Псковская область (АИП => 405)
-		'viborka_407_Kaliningrad_obl_full -> 407 => Калининградская область (АИП => 407)
-		'viborka_805_Estony_full -> 805 => Эстонская Республика (АИП => 805)
-		'viborka_806_Latviy_full -> 806 => Латвийская Республика (АИП => 806)
-		'viborka_807_Litva_full -> 807 => Литовская Республика (АИП => 807)
-		'viborka_801_Finskay_full -> 801 => Финляндская Республика (АИП => 801)
-		'viborka_823_Donbas_full -> 823 => Донбасский регион (АИП => 823)
-		'viborka_825_Orenburg_obl_full -> 825 => Оренбургская область (АИП => 825 (зима_max - 831))
-		'viborka_204_Penza_obl_full -> 204 => Пензенская область
-		'viborka_207_Republic_Mordova_full -> 207 => Республика Мордовия
-		'viborka_209_Nijegor_obl_full -> 209 => Нижегородская область
-		'viborka_311_Vologda_obl_full -> 311 => Волгоградская область
-		'viborka_404_Nigegor_obl_full -> 404 => Новгородская область
-		'viborka_803_Zapad_reg_full -> 803 => Западный регион
-		'viborka_804_Belorus_full -> 804 => Западный регион
-		'viborka_819_Shvec_full -> 819 => Швеция
-		'viborka_820_SPB_full -> 820 => Санкт-Петербург
-		'viborka_822_Leningral_obl_full -> 822 => Ленинградская область
-		'viborka_823_Ugo_Zapad_reg_full -> 823 => Юго-Западный регион
-		'viborka_825_Ugny_reg_full -> 825 => Южный регион
-		'viborka_826_Dnepov_reg_full -> 826 => Днепровский регион
-		'viborka_827_Sever_reg_full ->  827 => Северный регион
+		'viborka_ot_100_do_200_full -> РЈСЂР°Р»
+		'viborka_201_Samarskay_obl_full -> 201 => РЎР°РјР°СЂСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 813)
+		'viborka_205_Tatrskay_full -> 205 => Р РµСЃРїСѓР±Р»РёРєР° РўР°С‚Р°СЂСЃС‚Р°РЅ (РўР°С‚Р°СЂСЃС‚Р°РЅ) (РђРРџ => 205)
+		'viborka_206_Chuvashy_full -> 206 => Р§СѓРІР°С€СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° - Р§СѓРІР°С€РёСЏ (РђРРџ => 206)
+		'viborka_208_MariEl_full -> 208 => Р РµСЃРїСѓР±Р»РёРєР° РњР°СЂРёР№ Р­Р» (РђРРџ => 208)
+		'viborka_202_Saratov_obl_full -> 202 => РЎР°СЂР°С‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 202)
+		'viborka_301_Rostov_obl_full -> 301 => Р РѕСЃС‚РѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 301)
+		'viborka_203_Ulynov_obl_full -> 203 => РЈР»СЊСЏРЅРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 203)
+		'viborka_401_Murmansk_obl_full -> 401 => РњСѓСЂРјР°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 401)
+		'viborka_402_Kareliy_full -> 402 => Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ (РђРРџ => 402)
+		'viborka_405_Pskovskay_obl_full -> 405 => РџСЃРєРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 405)
+		'viborka_407_Kaliningrad_obl_full -> 407 => РљР°Р»РёРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 407)
+		'viborka_805_Estony_full -> 805 => Р­СЃС‚РѕРЅСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 805)
+		'viborka_806_Latviy_full -> 806 => Р›Р°С‚РІРёР№СЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 806)
+		'viborka_807_Litva_full -> 807 => Р›РёС‚РѕРІСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 807)
+		'viborka_801_Finskay_full -> 801 => Р¤РёРЅР»СЏРЅРґСЃРєР°СЏ Р РµСЃРїСѓР±Р»РёРєР° (РђРРџ => 801)
+		'viborka_823_Donbas_full -> 823 => Р”РѕРЅР±Р°СЃСЃРєРёР№ СЂРµРіРёРѕРЅ (РђРРџ => 823)
+		'viborka_825_Orenburg_obl_full -> 825 => РћСЂРµРЅР±СѓСЂРіСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ (РђРРџ => 825 (Р·РёРјР°_max - 831))
+		'viborka_204_Penza_obl_full -> 204 => РџРµРЅР·РµРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'viborka_207_Republic_Mordova_full -> 207 => Р РµСЃРїСѓР±Р»РёРєР° РњРѕСЂРґРѕРІРёСЏ
+		'viborka_209_Nijegor_obl_full -> 209 => РќРёР¶РµРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'viborka_311_Vologda_obl_full -> 311 => Р’РѕР»РіРѕРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'viborka_404_Nigegor_obl_full -> 404 => РќРѕРІРіРѕСЂРѕРґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'viborka_803_Zapad_reg_full -> 803 => Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+		'viborka_804_Belorus_full -> 804 => Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+		'viborka_819_Shvec_full -> 819 => РЁРІРµС†РёСЏ
+		'viborka_820_SPB_full -> 820 => РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі
+		'viborka_822_Leningral_obl_full -> 822 => Р›РµРЅРёРЅРіСЂР°РґСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ
+		'viborka_823_Ugo_Zapad_reg_full -> 823 => Р®РіРѕ-Р—Р°РїР°РґРЅС‹Р№ СЂРµРіРёРѕРЅ
+		'viborka_825_Ugny_reg_full -> 825 => Р®Р¶РЅС‹Р№ СЂРµРіРёРѕРЅ
+		'viborka_826_Dnepov_reg_full -> 826 => Р”РЅРµРїСЂРѕРІСЃРєРёР№ СЂРµРіРёРѕРЅ
+		'viborka_827_Sever_reg_full ->  827 => РЎРµРІРµСЂРЅС‹Р№ СЂРµРіРёРѕРЅ
 		' ############################################################################
 
 		viborka = viborka_ot_100_do_200_full & Test_Area(na_Samarskay_obl) & Test_Area(na_Tatrskay) & Test_Area(na_Chuvashy) & Test_Area(na_MariEl) & Test_Area(na_Saratov_obl) & Test_Area(na_Rostov_obl) & Test_Area(na_Ulynov_obl) & Test_Area(na_Murmansk_obl) & Test_Area(na_Kareliy) & Test_Area(na_Pskovskay_obl) & Test_Area(na_Kaliningrad_obl) & Test_Area(na_Estony) & Test_Area(na_Latviy) & Test_Area(na_Litva) & Test_Area(na_Finskay) & Test_Area(na_Donbas) & Test_Area(na_Orenburg_obl) & Test_Area(na_Penza_obl) & Test_Area(na_Republic_Mordova) & Test_Area(na_Nijegor_obl) & Test_Area(na_Vologda_obl) & Test_Area(na_Nigegor_obl) & Test_Area(na_Zapad_reg) & Test_Area(na_Belorus) & Test_Area(na_Shvec) & Test_Area(na_SPB) & Test_Area(na_Leningral_obl) & Test_Area(na_Ugo_Zapad_reg) & Test_Area(na_Ugny_reg) & Test_Area(na_Dnepov_reg) & Test_Area(na_Sever_reg)
@@ -447,8 +447,8 @@ Sub Equivalence()
 		Call Control_Rgm()
 		Call print_parm_shem()
 	else
-		print("--- Ошибка: Режим расходится! ---")
-		print("--- Работа макроса завершена  !!! ОШИБКА !!! ---")
+		print("--- РћС€РёР±РєР°: Р РµР¶РёРј СЂР°СЃС…РѕРґРёС‚СЃСЏ! ---")
+		print("--- Р Р°Р±РѕС‚Р° РјР°РєСЂРѕСЃР° Р·Р°РІРµСЂС€РµРЅР°  !!! РћРЁРР‘РљРђ !!! ---")
 	end if
 End Sub
 
@@ -457,7 +457,7 @@ Sub Ekv_Urala_do_500kV(viborka_ot_100_do_200)
     Set Node = t.Tables("node")
     Set Generator = t.Tables("Generator")
 
-	Node.SetSel(viborka_ot_100_do_200) ' выборка по узлам
+	Node.SetSel(viborka_ot_100_do_200) ' РІС‹Р±РѕСЂРєР° РїРѕ СѓР·Р»Р°Рј
     Node.Cols("sel").Calc("1")
     j = Node.FindNextSel(-1)
 
@@ -465,7 +465,7 @@ Sub Ekv_Urala_do_500kV(viborka_ot_100_do_200)
         ny = Node.Cols("ny").Z(j)
         tip_node = Node.Cols("tip").Z(j)
         uhom = Node.Cols("uhom").Z(j)
-        If tip_node > 1 Then ' все генераторные узла
+        If tip_node > 1 Then ' РІСЃРµ РіРµРЅРµСЂР°С‚РѕСЂРЅС‹Рµ СѓР·Р»Р°
             Generator.SetSel("Node.ny=" & ny)
             j_gen = Generator.FindNextSel(-1)
             if j_gen <> (-1) then
@@ -501,7 +501,7 @@ Sub Ekv_Urala_do_500kV(viborka_ot_100_do_200)
         Node.SetSel(vyborka_gen)
 		j = Node.FindNextSel(j)
     Wend
-	print("-> Завершено выделение района(-ов): " & viborka_ot_100_do_200 )
+	print("-> Р—Р°РІРµСЂС€РµРЅРѕ РІС‹РґРµР»РµРЅРёРµ СЂР°Р№РѕРЅР°(-РѕРІ): " & viborka_ot_100_do_200 )
 End Sub
 
 Sub Ekvivalent_Node_Gen(vyborka_gen)
@@ -509,7 +509,7 @@ Sub Ekvivalent_Node_Gen(vyborka_gen)
     Set Node = t.Tables("node")
     Set Generator = t.Tables("Generator")
 
-	Node.SetSel(vyborka_gen) ' выборка по узлам
+	Node.SetSel(vyborka_gen) ' РІС‹Р±РѕСЂРєР° РїРѕ СѓР·Р»Р°Рј
     Node.Cols("sel").Calc("1")
     j = Node.FindNextSel(-1)
 
@@ -517,7 +517,7 @@ Sub Ekvivalent_Node_Gen(vyborka_gen)
         ny = Node.Cols("ny").Z(j)
         tip_node = Node.Cols("tip").Z(j)
         uhom = Node.Cols("uhom").Z(j)
-        If tip_node > 1 Then ' все генераторные узла
+        If tip_node > 1 Then ' РІСЃРµ РіРµРЅРµСЂР°С‚РѕСЂРЅС‹Рµ СѓР·Р»Р°
             Generator.SetSel("Node.ny=" & ny)
             j_gen = Generator.FindNextSel(-1)
             if j_gen <> (-1) then
@@ -553,7 +553,7 @@ Sub Ekvivalent_Node_Gen(vyborka_gen)
         Node.SetSel(vyborka_gen)
 		j = Node.FindNextSel(j)
     Wend
-	print("-> Завершено выделение района(-ов): " & vyborka_gen )
+	print("-> Р—Р°РІРµСЂС€РµРЅРѕ РІС‹РґРµР»РµРЅРёРµ СЂР°Р№РѕРЅР°(-РѕРІ): " & vyborka_gen )
 End Sub
 
 Sub print(str)
@@ -564,15 +564,15 @@ Sub Rastr_Ekv()
     Time_Rastr_Ekv_1 = Timer()
         t.Ekv("")
     Time_Rastr_Ekv_2 = Timer()
-	print(" - Запуск: ЭКВИВАЛЕНТИРОВАНИЯ! TIMER: " & (Time_Rastr_Ekv_2 - Time_Rastr_Ekv_1) & " [сeкунд] (" & (Time_Rastr_Ekv_2 - Time_Rastr_Ekv_1)/60 & " [минут])")
+	print(" - Р—Р°РїСѓСЃРє: Р­РљР’РР’РђР›Р•РќРўРР РћР’РђРќРРЇ! TIMER: " & (Time_Rastr_Ekv_2 - Time_Rastr_Ekv_1) & " [СЃeРєСѓРЅРґ] (" & (Time_Rastr_Ekv_2 - Time_Rastr_Ekv_1)/60 & " [РјРёРЅСѓС‚])")
 End Sub
 
 Sub Control_Rgm()
 	kod = t.rgm("p")
 	if kod<>(-1) then
-		print(" - Режим сбалансирован!")
+		print(" - Р РµР¶РёРј СЃР±Р°Р»Р°РЅСЃРёСЂРѕРІР°РЅ!")
 	else
-		print(" - Режим не сбалансирован!")
+		print(" - Р РµР¶РёРј РЅРµ СЃР±Р°Р»Р°РЅСЃРёСЂРѕРІР°РЅ!")
 	end if
 End Sub
 
@@ -584,11 +584,11 @@ Sub Vikluchatel(viborka_ray_vikl)
 
     Dim nodes(30000)
 
-	uzl.SetSel(viborka_ray_vikl) ' выборка узлов всех районов кроме 500 (Центра)
-    uzl.cols("sel").calc(1) ' выделение выбраных узлов
-    vet.SetSel("iq.sel=1 & ip.sel=0 &!sta") ' выборка ветвей iq.sel = 1 ...
+	uzl.SetSel(viborka_ray_vikl) ' РІС‹Р±РѕСЂРєР° СѓР·Р»РѕРІ РІСЃРµС… СЂР°Р№РѕРЅРѕРІ РєСЂРѕРјРµ 500 (Р¦РµРЅС‚СЂР°)
+    uzl.cols("sel").calc(1) ' РІС‹РґРµР»РµРЅРёРµ РІС‹Р±СЂР°РЅС‹С… СѓР·Р»РѕРІ
+    vet.SetSel("iq.sel=1 & ip.sel=0 &!sta") ' РІС‹Р±РѕСЂРєР° РІРµС‚РІРµР№ iq.sel = 1 ...
     k = vet.FindNextSel(-1)
-	While k<>(-1) ' убирает sel-узла если на ВЛ с одной стороны выделен узел
+	While k<>(-1) ' СѓР±РёСЂР°РµС‚ sel-СѓР·Р»Р° РµСЃР»Рё РЅР° Р’Р› СЃ РѕРґРЅРѕР№ СЃС‚РѕСЂРѕРЅС‹ РІС‹РґРµР»РµРЅ СѓР·РµР»
 		iq1 = vet.Cols("iq").z(k)
 		uzl.Setsel("ny=" & iq1)
 		k2 = uzl.FindNextSel(-1)
@@ -601,7 +601,7 @@ Sub Vikluchatel(viborka_ray_vikl)
     vet.SetSel("iq.sel=0 & ip.sel=1 & !sta")
     k = vet.FindNextSel(-1)
 
-    While k<>(-1) ' убирает sel-узла если на ВЛ с одной стороны выделен узел
+    While k<>(-1) ' СѓР±РёСЂР°РµС‚ sel-СѓР·Р»Р° РµСЃР»Рё РЅР° Р’Р› СЃ РѕРґРЅРѕР№ СЃС‚РѕСЂРѕРЅС‹ РІС‹РґРµР»РµРЅ СѓР·РµР»
 		ip1 = vet.Cols("ip").z(k)
 		uzl.Setsel "ny=" & ip1
 		k2 = uzl.FindNextSel(-1)
@@ -611,7 +611,7 @@ Sub Vikluchatel(viborka_ray_vikl)
 		k = vet.FindNextSel(k)
 	Wend
 
-	vet.SetSel("(iq.sel=1 & ip.sel=0)|(ip.sel=1 & iq.sel=0) & tip=2") ' tip=2 - выключатели (выборка всех выключателей если хотябы с одной стороны выделен узел sel)
+	vet.SetSel("(iq.sel=1 & ip.sel=0)|(ip.sel=1 & iq.sel=0) & tip=2") ' tip=2 - РІС‹РєР»СЋС‡Р°С‚РµР»Рё (РІС‹Р±РѕСЂРєР° РІСЃРµС… РІС‹РєР»СЋС‡Р°С‚РµР»РµР№ РµСЃР»Рё С…РѕС‚СЏР±С‹ СЃ РѕРґРЅРѕР№ СЃС‚РѕСЂРѕРЅС‹ РІС‹РґРµР»РµРЅ СѓР·РµР» sel)
     k = vet.FindNextSel(-1)
     While k<>(-1)
 		iq1 = vet.Cols("iq").z(k)
@@ -637,9 +637,9 @@ Sub Vikluchatel(viborka_ray_vikl)
 	vet.SetSel(vetvyklvybexc)
 	vet.cols("groupid").calc(1)
 	nvet = 0
-	' удаление выключателей
+	' СѓРґР°Р»РµРЅРёРµ РІС‹РєР»СЋС‡Р°С‚РµР»РµР№
 	for povet = 0 to 10000
-		vet.SetSel("x<0.01 & x>-0.01 & r<0.005 & r>=0 & (ktr=0 | ktr=1) & !sta & groupid!=1 & b<0.000005")  'Выборка ветвей, которые считаем выключателями
+		vet.SetSel("x<0.01 & x>-0.01 & r<0.005 & r>=0 & (ktr=0 | ktr=1) & !sta & groupid!=1 & b<0.000005")  'Р’С‹Р±РѕСЂРєР° РІРµС‚РІРµР№, РєРѕС‚РѕСЂС‹Рµ СЃС‡РёС‚Р°РµРј РІС‹РєР»СЋС‡Р°С‚РµР»СЏРјРё
 		ivet = vet.FindNextSel(-1)
 		If ivet = -1 Then exit for
             ip = vet.Cols("ip").z(ivet)
@@ -654,20 +654,20 @@ Sub Vikluchatel(viborka_ray_vikl)
 
             ndny = 0
             ndndel = 0
-			'Проверка на наличие узла из списка неудаляемых
+			'РџСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ СѓР·Р»Р° РёР· СЃРїРёСЃРєР° РЅРµСѓРґР°Р»СЏРµРјС‹С…
             for inodee = 0 to nnod
                 If 	ndel = nodes(inodee) Then ndndel = 1
                 If 	ny = nodes(inodee) Then ndny = 1
                 If (ndndel = 1) and (ndny = 1) Then exit for
             next
-			' Меняем местами, так как удаляемый нельзя удалять, а неудаляемый можно ))
+			' РњРµРЅСЏРµРј РјРµСЃС‚Р°РјРё, С‚Р°Рє РєР°Рє СѓРґР°Р»СЏРµРјС‹Р№ РЅРµР»СЊР·СЏ СѓРґР°Р»СЏС‚СЊ, Р° РЅРµСѓРґР°Р»СЏРµРјС‹Р№ РјРѕР¶РЅРѕ ))
             If (ndndel = 0) and (ndny = 1) Then
                 buff = ny
                 ny = ndel
                 ndel = buff
             End If
 
-            If (ndndel = 0) or (ndny = 0) Then 'Если хотя бы один можно удалить
+            If (ndndel = 0) or (ndny = 0) Then 'Р•СЃР»Рё С…РѕС‚СЏ Р±С‹ РѕРґРёРЅ РјРѕР¶РЅРѕ СѓРґР°Р»РёС‚СЊ
                 flvykl = flvykl + 1
 				uzl.SetSel("ny=" & ny)
 				iny = uzl.FindNextSel(-1)
@@ -698,7 +698,7 @@ Sub Vikluchatel(viborka_ray_vikl)
 				qmax2 = uzl.cols("qmax").z(idel)
 
 				gen.Setsel("Node=" & ndel)
-				igen = gen.FindNextSel(-1) 'Меняем узлы подключения генераторов
+				igen = gen.FindNextSel(-1) 'РњРµРЅСЏРµРј СѓР·Р»С‹ РїРѕРґРєР»СЋС‡РµРЅРёСЏ РіРµРЅРµСЂР°С‚РѕСЂРѕРІ
 
 				If igen<>(-1) Then
 					While igen<>(-1)
@@ -708,7 +708,7 @@ Sub Vikluchatel(viborka_ray_vikl)
 				End If
 
 				If (v1<>v2) and (v1>0.3) and (v2>0.3) and (qmax1 + qmax2) <> 0 Then
-					uzl.cols("vzd").z(iny) = (v1*qmax1+v2*qmax2)/(qmax1+qmax2) 'Делаем средневзвешенное по qmax напряжение
+					uzl.cols("vzd").z(iny) = (v1*qmax1+v2*qmax2)/(qmax1+qmax2) 'Р”РµР»Р°РµРј СЃСЂРµРґРЅРµРІР·РІРµС€РµРЅРЅРѕРµ РїРѕ qmax РЅР°РїСЂСЏР¶РµРЅРёРµ
 				End If
 
 				If (v1=0) and (v2<>0) Then
@@ -726,13 +726,13 @@ Sub Vikluchatel(viborka_ray_vikl)
 				End If
 
 				vet.SetSel("(ip=" & ip & "& iq=" & iq & ")|(iq=" & ip & "& ip=" & iq & ")")
-				vet.delrows 'Удаляем ветвь
-				vet.SetSel("iq=" & ndel) 'Меняем узлы ветвей с удаляемым узлом)))
+				vet.delrows 'РЈРґР°Р»СЏРµРј РІРµС‚РІСЊ
+				vet.SetSel("iq=" & ndel) 'РњРµРЅСЏРµРј СѓР·Р»С‹ РІРµС‚РІРµР№ СЃ СѓРґР°Р»СЏРµРјС‹Рј СѓР·Р»РѕРј)))
 				vet.cols("iq").calc(ny)
 				vet.SetSel("ip=" & ndel)
 				vet.cols("ip").calc(ny)
-				uzl.delrows 		' Удаляем узел
-          Else 'Если ни одного нельзя удалить
+				uzl.delrows 		' РЈРґР°Р»СЏРµРј СѓР·РµР»
+          Else 'Р•СЃР»Рё РЅРё РѕРґРЅРѕРіРѕ РЅРµР»СЊР·СЏ СѓРґР°Р»РёС‚СЊ
                 vet.SetSel("(ip=" & ip & "& iq=" & iq & ")|(iq=" & ip & "& ip=" & iq & ")")
                 vet.cols("groupid").calc(1)
         End If
@@ -742,10 +742,10 @@ Sub Vikluchatel(viborka_ray_vikl)
         msgbox "Regim do not exist"
     End If
     Time_Vikluchatel_2 = Timer()
-    print(" @TIMER - время работы функции удаление выключателей, в минутах = " & ((Time_Vikluchatel_2 - Time_Vikluchatel_1)/60))
+    print(" @TIMER - РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё СѓРґР°Р»РµРЅРёРµ РІС‹РєР»СЋС‡Р°С‚РµР»РµР№, РІ РјРёРЅСѓС‚Р°С… = " & ((Time_Vikluchatel_2 - Time_Vikluchatel_1)/60))
 End Sub
 
-Sub Obnulenie()  ' обнуление всех sel (выделенных галочкой) УЗЛОВ и ВЕТВЕЙ
+Sub Obnulenie()  ' РѕР±РЅСѓР»РµРЅРёРµ РІСЃРµС… sel (РІС‹РґРµР»РµРЅРЅС‹С… РіР°Р»РѕС‡РєРѕР№) РЈР—Р›РћР’ Рё Р’Р•РўР’Р•Р™
     Set node = t.Tables("node")
     Set vetv = t.Tables("vetv")
 
@@ -753,7 +753,7 @@ Sub Obnulenie()  ' обнуление всех sel (выделенных галочкой) УЗЛОВ и ВЕТВЕЙ
 	vetv.cols("sel").calc("0")
 	node.SetSel("")
 	node.cols("sel").calc("0")
-	print(" - Сняты 'Отметки' с выделенных узлов и ветвей.")
+	print(" - РЎРЅСЏС‚С‹ 'РћС‚РјРµС‚РєРё' СЃ РІС‹РґРµР»РµРЅРЅС‹С… СѓР·Р»РѕРІ Рё РІРµС‚РІРµР№.")
 End Sub
 
 Sub Delete_Gen_Vikl()
@@ -824,12 +824,12 @@ Sub Delete_Gen_Vikl()
 	uzl.SetSel("sel=1")
 	uzl.delrows
     Time_VikluchatelGEN_2 = Timer()
-    print(" @TIMER - время работы функции удаление выключателей генераторов, в минутах = " & ((Time_VikluchatelGEN_2 - Time_VikluchatelGEN_1)/60))
+    print(" @TIMER - РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё СѓРґР°Р»РµРЅРёРµ РІС‹РєР»СЋС‡Р°С‚РµР»РµР№ РіРµРЅРµСЂР°С‚РѕСЂРѕРІ, РІ РјРёРЅСѓС‚Р°С… = " & ((Time_VikluchatelGEN_2 - Time_VikluchatelGEN_1)/60))
 End Sub
 
 Sub Settings_Ekv()
-	' Выставляет настройки эквивалентирования
-    print(" - Выставляет настройки ген. эквив;")
+	' Р’С‹СЃС‚Р°РІР»СЏРµС‚ РЅР°СЃС‚СЂРѕР№РєРё СЌРєРІРёРІР°Р»РµРЅС‚РёСЂРѕРІР°РЅРёСЏ
+    print(" - Р’С‹СЃС‚Р°РІР»СЏРµС‚ РЅР°СЃС‚СЂРѕР№РєРё РіРµРЅ. СЌРєРІРёРІ;")
 	t.Tables("com_ekviv").Cols("zmax").z(0) = 1000
 	t.Tables("com_ekviv").Cols("ek_sh").z(0) = 0
 	t.Tables("com_ekviv").Cols("otm_n").z(0) = 0
@@ -859,9 +859,9 @@ Sub Off_Gen_if_off_node()
 		gen.setsel("")
 		k = gen.findnextsel(k)
 	wend
-	print(" - Отключены генераторы в отключенных узлах.")
+	print(" - РћС‚РєР»СЋС‡РµРЅС‹ РіРµРЅРµСЂР°С‚РѕСЂС‹ РІ РѕС‚РєР»СЋС‡РµРЅРЅС‹С… СѓР·Р»Р°С….")
     Time_Off_Gen_if_off_node_2 = Timer()
-    print(" @TIMER - время работы функции: отключение генераторов если откл. генераторный узел, в минутах = " & ((Time_Off_Gen_if_off_node_2 - Time_Off_Gen_if_off_node_1)/60))
+    print(" @TIMER - РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё: РѕС‚РєР»СЋС‡РµРЅРёРµ РіРµРЅРµСЂР°С‚РѕСЂРѕРІ РµСЃР»Рё РѕС‚РєР». РіРµРЅРµСЂР°С‚РѕСЂРЅС‹Р№ СѓР·РµР», РІ РјРёРЅСѓС‚Р°С… = " & ((Time_Off_Gen_if_off_node_2 - Time_Off_Gen_if_off_node_1)/60))
 End Sub
 
 Sub Off_line_one_on()
@@ -878,9 +878,9 @@ Sub Off_line_one_on()
 			ii = ii + 1
 		end if
 	next
-	print(" - Количество ЛЭП с односторонним вкл., переведенных с состояние полного откючения: " & ii)
+	print(" - РљРѕР»РёС‡РµСЃС‚РІРѕ Р›Р­Рџ СЃ РѕРґРЅРѕСЃС‚РѕСЂРѕРЅРЅРёРј РІРєР»., РїРµСЂРµРІРµРґРµРЅРЅС‹С… СЃ СЃРѕСЃС‚РѕСЏРЅРёРµ РїРѕР»РЅРѕРіРѕ РѕС‚РєСЋС‡РµРЅРёСЏ: " & ii)
     Time_Off_line_one_on_2 = Timer()
-    print(" @TIMER - время работы функции: отключение ЛЭП с двух сторон если ЛЭП откл. с одной стороны, в минутах = " & ((Time_Off_line_one_on_2 - Time_Off_line_one_on_1)/60))
+    print(" @TIMER - РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё: РѕС‚РєР»СЋС‡РµРЅРёРµ Р›Р­Рџ СЃ РґРІСѓС… СЃС‚РѕСЂРѕРЅ РµСЃР»Рё Р›Р­Рџ РѕС‚РєР». СЃ РѕРґРЅРѕР№ СЃС‚РѕСЂРѕРЅС‹, РІ РјРёРЅСѓС‚Р°С… = " & ((Time_Off_line_one_on_2 - Time_Off_line_one_on_1)/60))
 End Sub
 
 Function na_of_the_area_by_name(name_area)
@@ -890,7 +890,7 @@ Function na_of_the_area_by_name(name_area)
         name_ = area.Cols("name").Z(i)
         if name_ = name_area then
             na_of_the_area_by_name = area.Cols("na").Z(i)
-			print(" - Название района: "& name_ &"; номер района => "& na_of_the_area_by_name)
+			print(" - РќР°Р·РІР°РЅРёРµ СЂР°Р№РѕРЅР°: "& name_ &"; РЅРѕРјРµСЂ СЂР°Р№РѕРЅР° => "& na_of_the_area_by_name)
 		else
 			na_of_the_area_by_name = ""
 		end if
@@ -900,24 +900,24 @@ End function
 Sub print_parm_shem()
     Set com_cxema = t.Tables("com_cxema")
     print("---------------------------------------------")
-    print("          Общая информация о схеме          ")
-    print(" - Узлов: " & com_cxema.Cols("ny").Z(0))
-    print(" - Ветвей: " & com_cxema.Cols("nv").Z(0))
-    print(" - Районов: " & com_cxema.Cols("na").Z(0))
-	print(" - Число отключенных узел: " & com_cxema.Cols("ny_o").Z(0))
-	print(" - Число отключенных ветвей: " & com_cxema.Cols("nv_o").Z(0))
-	print(" - Число балансирующих узлов: " & com_cxema.Cols("nby").Z(0))
-	print(" - Число узлов с заданным V: " & com_cxema.Cols("ngen").Z(0))
-	print(" - Число трансформаторов: " & com_cxema.Cols("ntran").Z(0))
-	print(" - Число ЛЭП: " & com_cxema.Cols("nlep").Z(0))
-	print(" - Число выключателей: " & com_cxema.Cols("nvikl").Z(0))
-	print(" - Р_ген: " & com_cxema.Cols("pg").Z(0))
-	print(" - Р_наг: " & com_cxema.Cols("pn").Z(0))
-	print(" - Потери Р (переменные): " & com_cxema.Cols("dp").Z(0))
-	print(" - Р_баланс. узлоа: " & com_cxema.Cols("pby").Z(0))
-	print(" - Постоянные Потери: " & com_cxema.Cols("dpsh").Z(0))
-	print(" - Минимальное отклонение V(%): " & com_cxema.Cols("dv_min").Z(0))
-	print(" - Максимальное отклонение V(%): " & com_cxema.Cols("dv_max").Z(0))
+    print("          РћР±С‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃС…РµРјРµ          ")
+    print(" - РЈР·Р»РѕРІ: " & com_cxema.Cols("ny").Z(0))
+    print(" - Р’РµС‚РІРµР№: " & com_cxema.Cols("nv").Z(0))
+    print(" - Р Р°Р№РѕРЅРѕРІ: " & com_cxema.Cols("na").Z(0))
+	print(" - Р§РёСЃР»Рѕ РѕС‚РєР»СЋС‡РµРЅРЅС‹С… СѓР·РµР»: " & com_cxema.Cols("ny_o").Z(0))
+	print(" - Р§РёСЃР»Рѕ РѕС‚РєР»СЋС‡РµРЅРЅС‹С… РІРµС‚РІРµР№: " & com_cxema.Cols("nv_o").Z(0))
+	print(" - Р§РёСЃР»Рѕ Р±Р°Р»Р°РЅСЃРёСЂСѓСЋС‰РёС… СѓР·Р»РѕРІ: " & com_cxema.Cols("nby").Z(0))
+	print(" - Р§РёСЃР»Рѕ СѓР·Р»РѕРІ СЃ Р·Р°РґР°РЅРЅС‹Рј V: " & com_cxema.Cols("ngen").Z(0))
+	print(" - Р§РёСЃР»Рѕ С‚СЂР°РЅСЃС„РѕСЂРјР°С‚РѕСЂРѕРІ: " & com_cxema.Cols("ntran").Z(0))
+	print(" - Р§РёСЃР»Рѕ Р›Р­Рџ: " & com_cxema.Cols("nlep").Z(0))
+	print(" - Р§РёСЃР»Рѕ РІС‹РєР»СЋС‡Р°С‚РµР»РµР№: " & com_cxema.Cols("nvikl").Z(0))
+	print(" - Р _РіРµРЅ: " & com_cxema.Cols("pg").Z(0))
+	print(" - Р _РЅР°Рі: " & com_cxema.Cols("pn").Z(0))
+	print(" - РџРѕС‚РµСЂРё Р  (РїРµСЂРµРјРµРЅРЅС‹Рµ): " & com_cxema.Cols("dp").Z(0))
+	print(" - Р _Р±Р°Р»Р°РЅСЃ. СѓР·Р»РѕР°: " & com_cxema.Cols("pby").Z(0))
+	print(" - РџРѕСЃС‚РѕСЏРЅРЅС‹Рµ РџРѕС‚РµСЂРё: " & com_cxema.Cols("dpsh").Z(0))
+	print(" - РњРёРЅРёРјР°Р»СЊРЅРѕРµ РѕС‚РєР»РѕРЅРµРЅРёРµ V(%): " & com_cxema.Cols("dv_min").Z(0))
+	print(" - РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РѕС‚РєР»РѕРЅРµРЅРёРµ V(%): " & com_cxema.Cols("dv_max").Z(0))
     print("---------------------------------------------")
 End Sub
 
@@ -965,11 +965,11 @@ Sub Delete_Node_not_connect()
     uzl.SetSel("sel=1")
 	ii = uzl.Count-1
 	uzl.DelRows
-	print(" - удалены узлоы без связей с ветвями: " & ii+1)
+	print(" - СѓРґР°Р»РµРЅС‹ СѓР·Р»РѕС‹ Р±РµР· СЃРІСЏР·РµР№ СЃ РІРµС‚РІСЏРјРё: " & ii+1)
 	Call Control_Rgm()
 	Call Obnulenie()
     Time_Delete_Node_not_connect_2 = Timer()
-    print(" @TIMER - время работы функции удаление узлов без связи с ветвями, в минутах = " & ((Time_Delete_Node_not_connect_2 - Time_Delete_Node_not_connect_1)/60))
+    print(" @TIMER - РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё СѓРґР°Р»РµРЅРёРµ СѓР·Р»РѕРІ Р±РµР· СЃРІСЏР·Рё СЃ РІРµС‚РІСЏРјРё, РІ РјРёРЅСѓС‚Р°С… = " & ((Time_Delete_Node_not_connect_2 - Time_Delete_Node_not_connect_1)/60))
 End Sub
 
 Sub Delete_Generators_without_nodes()
@@ -983,7 +983,7 @@ Sub Delete_Generators_without_nodes()
 	Call Obnulenie()
 	Call Control_Rgm()
     Time_Delete_Generators_without_nodes_2 = Timer()
-    print(" @TIMER - время работы функции удаление генераторов без узлов, в минутах = " & ((Time_Delete_Generators_without_nodes_2 - Time_Delete_Generators_without_nodes_1)/60))
+    print(" @TIMER - РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё СѓРґР°Р»РµРЅРёРµ РіРµРЅРµСЂР°С‚РѕСЂРѕРІ Р±РµР· СѓР·Р»РѕРІ, РІ РјРёРЅСѓС‚Р°С… = " & ((Time_Delete_Generators_without_nodes_2 - Time_Delete_Generators_without_nodes_1)/60))
 End Sub
 
 Sub ReactorsChange()
@@ -1019,7 +1019,7 @@ Sub ReactorsChange()
 	Reactors.Delrows
 
     Time_ReactorsChange_2 = Timer()
-    print(" @TIMER - время работы функции перенос реакторов в узлы, в минутах = " & ((Time_ReactorsChange_2 - Time_ReactorsChange_1)/60))
+    print(" @TIMER - РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё РїРµСЂРµРЅРѕСЃ СЂРµР°РєС‚РѕСЂРѕРІ РІ СѓР·Р»С‹, РІ РјРёРЅСѓС‚Р°С… = " & ((Time_ReactorsChange_2 - Time_ReactorsChange_1)/60))
 End Sub
 
 Function Test_Area(str)
