@@ -122,3 +122,14 @@ class GettingParameter:
         row_vozb_IEEE = table_.FindNextSel(-1)
         return row_vozb_IEEE
 
+    def get_row_id(self, table, formula):
+        """
+        Метод get_row_line - возвращает порядковый номер строки таблицы "Ветви".
+        :param table: ;
+        :param formula: ;
+        :return: row_vetv: номер строки в таблице.
+        """
+        table_ = self.rastr_win.Tables(table)
+        table_.SetSel(f'{formula}')
+        row_vetv = table_.FindNextSel(-1)
+        return row_vetv

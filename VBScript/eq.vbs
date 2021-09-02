@@ -578,6 +578,7 @@ End Sub
 
 Sub Vikluchatel(viborka_ray_vikl)
     Time_Vikluchatel_1 = Timer()
+
     Set vet=t.tables("vetv")
     Set uzl=t.tables("node")
     Set gen=t.tables("Generator")
@@ -586,6 +587,7 @@ Sub Vikluchatel(viborka_ray_vikl)
 
 	uzl.SetSel(viborka_ray_vikl) ' выборка узлов всех районов кроме 500 (Центра)
     uzl.cols("sel").calc(1) ' выделение выбраных узлов
+
     vet.SetSel("iq.sel=1 & ip.sel=0 &!sta") ' выборка ветвей iq.sel = 1 ...
     k = vet.FindNextSel(-1)
 	While k<>(-1) ' убирает sel-узла если на ВЛ с одной стороны выделен узел
@@ -600,7 +602,6 @@ Sub Vikluchatel(viborka_ray_vikl)
 
     vet.SetSel("iq.sel=0 & ip.sel=1 & !sta")
     k = vet.FindNextSel(-1)
-
     While k<>(-1) ' убирает sel-узла если на ВЛ с одной стороны выделен узел
 		ip1 = vet.Cols("ip").z(k)
 		uzl.Setsel "ny=" & ip1
@@ -642,32 +643,32 @@ Sub Vikluchatel(viborka_ray_vikl)
 		vet.SetSel("x<0.01 & x>-0.01 & r<0.005 & r>=0 & (ktr=0 | ktr=1) & !sta & groupid!=1 & b<0.000005")  'Выборка ветвей, которые считаем выключателями
 		ivet = vet.FindNextSel(-1)
 		If ivet = -1 Then exit for
-            ip = vet.Cols("ip").z(ivet)
-            iq = vet.Cols("iq").z(ivet)
-            If ip > iq Then
-                ny = iq
-                ndel = ip
-            else
-                ny = ip
-                ndel = iq
-            End If
+        ip = vet.Cols("ip").z(ivet)
+        iq = vet.Cols("iq").z(ivet)
+        If ip > iq Then
+            ny = iq
+            ndel = ip
+        else
+            ny = ip
+            ndel = iq
+        End If
 
-            ndny = 0
-            ndndel = 0
-			'Проверка на наличие узла из списка неудаляемых
-            for inodee = 0 to nnod
-                If 	ndel = nodes(inodee) Then ndndel = 1
-                If 	ny = nodes(inodee) Then ndny = 1
-                If (ndndel = 1) and (ndny = 1) Then exit for
-            next
+        ndny = 0
+        ndndel = 0
+		'Проверка на наличие узла из списка неудаляемых
+        for inodee = 0 to nnod
+            If 	ndel = nodes(inodee) Then ndndel = 1
+            If 	ny = nodes(inodee) Then ndny = 1
+            If (ndndel = 1) and (ndny = 1) Then exit for
+        next
 			' Меняем местами, так как удаляемый нельзя удалять, а неудаляемый можно ))
-            If (ndndel = 0) and (ndny = 1) Then
+        If (ndndel = 0) and (ndny = 1) Then
                 buff = ny
                 ny = ndel
                 ndel = buff
-            End If
+        End If
 
-            If (ndndel = 0) or (ndny = 0) Then 'Если хотя бы один можно удалить
+        If (ndndel = 0) or (ndny = 0) Then 'Если хотя бы один можно удалить
                 flvykl = flvykl + 1
 				uzl.SetSel("ny=" & ny)
 				iny = uzl.FindNextSel(-1)

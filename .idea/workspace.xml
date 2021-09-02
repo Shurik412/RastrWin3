@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/Equvivalent_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/RemovingSwitches.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/main/weight_coefficient_for_section.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/selection/selection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/for_breack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VBScript/macroMSK/weight_coefficient_for_section.vbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tools/timer.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tools/timer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tools/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VBScript/eq.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/eq.vbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +57,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript/macroMSK" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="timeTracker.activityTracker" value="null" />
     <property name="timeTracker.comment" value="" />
     <property name="timeTracker.inactivityPeriodInMills" value="600000" />
@@ -83,21 +92,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript\macroMSK" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsHTML" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\VBScript" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript\macroMSK" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsRegime\templates" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWin3_WorkSpace" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.timer">
+  <component name="RunManager" selected="Python.Creator_PRG_and_SQL">
     <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testDecor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="for_breack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,11 +157,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/testDecor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/for_breack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="selection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/selection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/selection/selection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,34 +212,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tools/tools.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.timer" />
-        <item itemvalue="Python.tools" />
-        <item itemvalue="Python.testDecor" />
-        <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.Creator_PRG_and_SQL" />
+        <item itemvalue="Python.for_breack" />
+        <item itemvalue="Python.selection" />
+        <item itemvalue="Python.Eurostag_Output_PSS" />
+        <item itemvalue="Python.timer" />
       </list>
     </recent_temporary>
   </component>
@@ -224,13 +233,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00178" summary="Add documention in protocol.py">
-      <created>1622641811752</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1622641811752</updated>
     </task>
     <task id="LOCAL-00179" summary="Add documention in DECS400_Filling.py, DFW421UEL_Filling.py">
       <created>1622646304012</created>
@@ -568,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630404157876</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="add function changing_number_of_semicolons">
+      <created>1630404989399</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1630404989399</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +593,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add U1020.py" />
     <MESSAGE value="Add UNITROL_F.py" />
     <MESSAGE value="Add AVR45M_bsv.py" />
     <MESSAGE value="Add AVR45M_res.py" />
@@ -609,7 +617,8 @@
     <MESSAGE value="add excel_map_vetv.py" />
     <MESSAGE value="add file Equivalent.vbs" />
     <MESSAGE value="add timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add timer" />
+    <MESSAGE value="add function changing_number_of_semicolons" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function changing_number_of_semicolons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
