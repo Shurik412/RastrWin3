@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/Equvivalent_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/RemovingSwitches.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/main/weight_coefficient_for_section.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/selection/selection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/for_breack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VBScript/macroMSK/weight_coefficient_for_section.vbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/delete/delete_vetv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/eq.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/eq.vbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,9 +209,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Creator_PRG_and_SQL" />
+        <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.for_breack" />
         <item itemvalue="Python.selection" />
-        <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.timer" />
       </list>
     </recent_temporary>
@@ -233,13 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00179" summary="Add documention in DECS400_Filling.py, DFW421UEL_Filling.py">
-      <created>1622646304012</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1622646304012</updated>
     </task>
     <task id="LOCAL-00180" summary="Add documentation in DFW421UEL_Filling.py">
       <created>1622787355775</created>
@@ -577,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630404989399</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="add function equivalent">
+      <created>1630584348683</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1630584348683</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,7 +587,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add UNITROL_F.py" />
     <MESSAGE value="Add AVR45M_bsv.py" />
     <MESSAGE value="Add AVR45M_res.py" />
     <MESSAGE value="Add corr AVR45M_bsv.py" />
@@ -618,7 +611,8 @@
     <MESSAGE value="add file Equivalent.vbs" />
     <MESSAGE value="add timer" />
     <MESSAGE value="add function changing_number_of_semicolons" />
-    <option name="LAST_COMMIT_MESSAGE" value="add function changing_number_of_semicolons" />
+    <MESSAGE value="add function equivalent" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function equivalent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -32,14 +32,40 @@ class FindNextSel:
             return row_id
 
 
+class FindNextSel_ROW:
+    def __init__(self,
+                 table: str,
+                 rastr_win=RASTR):
+        f"""
+        Класс для поиска по выборки key.
+        Метод row возвращает row_id - порядковый номер строки в таблице.
+        :param table: название таблицы RastrWin3;
+        :param rastr_win: ;
+        """
+        self.rastr_win = rastr_win
+        self.table = self.rastr_win.Tables(table)
+
+    def row(self,
+            key: str,
+            row_):
+        """
+        Метож 'row'
+        :param key: выборка SetSel
+        :return: row_id: порядковый номер.
+        """
+        self.table.SetSel(f'{key}')
+        row_id = self.table.FindNextSel(row_)
+        return row_id
+
+
 class Variable:
     def __init__(self,
                  rastr_win=RASTR,
                  switch_command_line=False):
         f"""
         Класс для изменений значений ячеек.
-        :param rastr_win: {Tools.RastrDoc};
-        :param switch_command_line: {Tools.switch_command_line_doc};
+        :param rastr_win: ;
+        :param switch_command_line: ;
         """
 
         self.rastr_win = rastr_win
