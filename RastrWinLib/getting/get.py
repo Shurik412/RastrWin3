@@ -133,3 +133,12 @@ class GettingParameter:
         table_.SetSel(f'{formula}')
         row_vetv = table_.FindNextSel(-1)
         return row_vetv
+
+    def get_count_table(self, table):
+        """
+        :param table:
+        :return:
+        """
+        table_ = self.rastr_win.Tables(table)
+        count = table_.Count - 1
+        return count

@@ -435,7 +435,7 @@ def main(dir_file_1, kol_file, sezon_regim, Unom_kV, NameGenInvestigated):
 
 start_time = time.time()
 dir_name = os.path.dirname(sys.argv[0])
-dir_settings = f"{dir_name}/Settings.xlsx"
+dir_settings_ = f"{dir_name}/Settings.xlsx"
 
 dir_wb1 = input("Dir File EXP (C:\\Users\\EXP): ")
 kol_file = int(input("Kol Regim File -> 51: "))
@@ -444,6 +444,9 @@ Unom_kV = input("Unom KZ(3) -> 500 or 14_500: ")
 Unom_kV_exp2 = input("Unom KZ(3) EXP_2 -> 500 or 14_500: ")
 NameGenInvestigated = input("Name Generator, example (P/52601222) or (52601222),if 0 -> object #1: ")
 dir_file_1 = dir_wb1.replace('\\', '/')
+
+dir_name = os.path.dirname(sys.argv[0])
+dir_settings = f"{dir_file_1}/Settings.xlsx"
 
 dict_set = dict()
 wb_set = load_workbook(f"{dir_settings}")

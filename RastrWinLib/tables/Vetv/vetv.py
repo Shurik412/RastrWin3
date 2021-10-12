@@ -10,7 +10,7 @@ class Vetv:
     sta: str = 'sta'  # S, Cостояние ветви
     tip: str = 'tip'  # Тип, тип ветви
     name: str = 'name'  # Название
-    ip: str = 'iq'  # N_нач, номер начала
+    ip: str = 'ip'  # N_нач, номер начала
     iq: str = 'iq'  # N_кон, номер конца
     np: str = 'np'  # N_п, номер параллельной
     groupid: str = 'groupid'  # ID Группы, принадлежность к группе одной линии

@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/delete/delete_vetv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/CSVpandas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/TestCSV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_str_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/excel_poisk_resist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/string_procent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Node/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/variables/variable_parametrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurostag/Eurostag_Output_No_PSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/Eurostag_Output_No_PSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/getting/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/loading/shablon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tables/Vetv/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tables/Vetv/vetv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/VBScript/macroMSK" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="timeTracker.activityTracker" value="null" />
@@ -100,8 +108,8 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsRegime\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Creator_PRG_and_SQL">
-    <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.excel_poisk_resist">
+    <configuration name="excel_poisk_resist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,11 +117,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/excel_poisk_resist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="string_proc_ex" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,11 +138,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,7 +151,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="for_breack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="string_procent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/string_procent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_str" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -155,7 +184,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/for_breack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +193,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="selection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_str_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,32 +201,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/selection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/selection/selection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="timer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tools/timer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/tests/test_str_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Creator_PRG_and_SQL" />
-        <item itemvalue="Python.Eurostag_Output_PSS" />
-        <item itemvalue="Python.for_breack" />
-        <item itemvalue="Python.selection" />
-        <item itemvalue="Python.timer" />
+        <item itemvalue="Python.excel_poisk_resist" />
+        <item itemvalue="Python.string_proc_ex" />
+        <item itemvalue="Python.string_procent" />
+        <item itemvalue="Python.test_str_" />
+        <item itemvalue="Python.test_str" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +235,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00180" summary="Add documentation in DFW421UEL_Filling.py">
-      <created>1622787355775</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1622787355775</updated>
     </task>
     <task id="LOCAL-00181" summary="init">
       <created>1622787550277</created>
@@ -571,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630584348683</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="add function Equvivalent_generator">
+      <created>1630657649798</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1630657649798</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +595,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add AVR45M_bsv.py" />
     <MESSAGE value="Add AVR45M_res.py" />
     <MESSAGE value="Add corr AVR45M_bsv.py" />
     <MESSAGE value="Add AVR_2.py" />
@@ -612,7 +619,8 @@
     <MESSAGE value="add timer" />
     <MESSAGE value="add function changing_number_of_semicolons" />
     <MESSAGE value="add function equivalent" />
-    <option name="LAST_COMMIT_MESSAGE" value="add function equivalent" />
+    <MESSAGE value="add function Equvivalent_generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function Equvivalent_generator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
