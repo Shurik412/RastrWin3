@@ -4,57 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="START NEW COMMINT 12/10/2021">
-      <change afterPath="$PROJECT_DIR$/Settings/proxy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutorialPython/test_pandas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutorialPython/test_prettytable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VBScript/DRM/Rename_Castom_Models.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/na_vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/na_vetv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC8B/AC8B.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC8B/AC8B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_BSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_static.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/ARV_REM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/STyr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/STyr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/Equvivalent_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/Equvivalent_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/RemovingSwitches.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/RemovingSwitches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/Graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/Graphics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/GraphicsRegime/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/delete/delete_vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Delete/delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Getting/get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/main/weight_coefficient_for_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/main/weight_coefficient_for_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/alt_unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/equivalence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/regim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/ut_common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/switch/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/switch/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_variable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tools/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tools/protocol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/string_procent.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/string_procent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/Create_DRM_v6.2.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/Create_DRM_v6.2.vb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/corr_brm.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/corr_brm.vb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/disconnection_of_lines_between_areas.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/disconnection_of_lines_between_areas.vb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/eq.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/eq.vb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VBScript/macroMSK/weight_coefficient_for_section.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/VBScript/macroMSK/weight_coefficient_for_section.vb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,13 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00182" summary="init">
-      <created>1622788019328</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1622788019328</updated>
     </task>
     <task id="LOCAL-00183" summary="Del file">
       <created>1622788207923</created>
@@ -616,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634024547487</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="Add class GetSettingsDynamic">
+      <created>1634049160494</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1634049160494</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -632,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add corr AVR45M_bsv.py" />
     <MESSAGE value="Add AVR_2.py" />
     <MESSAGE value="Add STyr.py" />
     <MESSAGE value="Add THYNE_1.py" />
@@ -657,7 +609,8 @@
     <MESSAGE value="add function equivalent" />
     <MESSAGE value="add function Equvivalent_generator" />
     <MESSAGE value="START NEW COMMINT 12/10/2021" />
-    <option name="LAST_COMMIT_MESSAGE" value="START NEW COMMINT 12/10/2021" />
+    <MESSAGE value="Add class GetSettingsDynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add class GetSettingsDynamic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -74,14 +74,9 @@ class Dynamic(GetSettingsDynamic):
                                         value=self.snap_max_count)
 
     def run(self):
-        if self.switch_command_line is not False:
-            start_time = time()
-        else:
-            start_time = 0
         print(Tools.separator_grid)
         print(f'Запуск расчета ЭМПП:')
         self.FWDynamic.Run()
-        print(f"Time: {Tras()}")
         if self.switch_command_line is not False:
             self.messageResult()
 
@@ -102,18 +97,8 @@ class Dynamic(GetSettingsDynamic):
         elif ResultMessage == 4:
             print('\t\tВыявлено превышение допустимой скорости вращения одного или нескольких генераторов.\n'
                   '\t\tДопустимая скорость вращения задается уставкой автомата безопасности в настройках динамики.')
-
-        if self.switch_command_line is not False:
-            time_calc = time() - start_time
-            print(
-                f'\tВремя расчета ЭМПП: {strftime("M: %M [минут] S: %S [секунд]", localtime(time_calc))}'
-                f' (Seconds: {"%.2f" % time_calc} [секунд])')
-        print(Tools.separator_grid)
         return ResultMessage
 
-
-def log(self, message: str) -> None:
-    pass
 
 
 if __name__ == '__main__':

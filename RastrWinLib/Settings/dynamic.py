@@ -807,6 +807,311 @@ class GetSettingsDynamic(GettingParameter):
         return ComDynamics.table_name
 
 
+class VariableSettingsDynamic(Variable):
+    def __init__(self):
+        super().__init__(rastr_win=RASTR)
+
+    def Tras(self, value: float) -> float:
+        """
+        Метод возвращает установленное значение: Время расчета: (Tras);
+        :return: t_ras -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Tras,
+                                     row_id=0,
+                                     value=value)
+
+    def Hint(self, value: float) -> float:
+        """
+        Начальный шаг интегрирования (H_инт)
+        :return: Hint -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Hint,
+                                     row_id=0,
+                                     value=value)
+
+    def Hmin(self, value: float) -> float:
+        """
+        Минимальный шаг интегрирования (H_мин)
+        :return: Hmin -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Hmin,
+                                     row_id=0,
+                                     value=value)
+
+    def Hmax(self, value: float) -> float:
+        """
+        Максимальный шаг интегрирования (H_макс)
+        :return: Hmax -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Hmax,
+                                     row_id=0,
+                                     value=value)
+
+    def Hout(self, value: float) -> float:
+        """
+        Шаг печати (H_печ)
+        :return: Hout -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Hout,
+                                     row_id=0,
+                                     value=value)
+
+    def Mint(self, value: int) -> int:
+        """
+        Основной метод интегрирования (Осн.Метод)
+        :return: Mint -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Mint,
+                                     row_id=0,
+                                     value=value)
+
+    def SMint(self, value: int) -> int:
+        """
+        Стартовый метод интегрирования (Старт.Метод)
+        :return: SMint -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.SMint,
+                                     row_id=0,
+                                     value=value)
+
+    def IntEpsilon(self, value: float) -> float:
+        """
+        Точность шага интегрирования (dInt)
+        :return: IntEpsilon -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.IntEpsilon,
+                                     row_id=0,
+                                     value=value)
+
+    def InformOnStepChange(self, value: bool) -> bool:
+        """
+        Информировать об изменении шага (Выводить шаг)
+        :return: InformOnStepChange -> bool
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.InformOnStepChange,
+                                     row_id=0,
+                                     value=value)
+
+    def Tf(self, value: float) -> float:
+        """
+        Постоянная сглаживания угловой скорости (частоты) узла (Tf)
+        :return: Tf -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Tf,
+                                     row_id=0,
+                                     value=value)
+
+    def dEf(self, value: float) -> float:
+        """
+        Точность балансировки эдс при учете явнополюсности (dEf)
+        :return: dEf -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.dEf,
+                                     row_id=0,
+                                     value=value)
+
+    def Npf(self, value: int) -> int:
+        """
+        Макс число пересчетов УР на шаге при учете явнополюсности (Ит)
+        :return: Npf -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Npf,
+                                     row_id=0,
+                                     value=value)
+
+    def Valid(self, value: int) -> int:
+        """
+        Контроль входных параметров (Контр.)
+        :return: Valid -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.Valid,
+                                     row_id=0,
+                                     value=value)
+
+    def dempfrec(self, value: int) -> int:
+        """
+        Демпфирование в уравнениях движения (Демпф)
+        :return: dempfrec -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.dempfrec,
+                                     row_id=0,
+                                     value=value)
+
+    def corrT(self, value: int) -> int:
+        """
+        Корректировать Т в парковских моделях (Корр Т)
+        :return: corrT -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.corrT,
+                                     row_id=0,
+                                     value=value)
+
+    def IsDemp(self, value: int) -> int:
+        """
+        Учет демп. момента в моделях с демп контурами (Уч Демп)
+        :return: IsDemp -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.IsDemp,
+                                     row_id=0,
+                                     value=value)
+
+    def frSXNtoY(self, value: float) -> float:
+        """
+        Напряжения перехода с СХН на шунт (V_минСХРН)
+        :return: frSXNtoY -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.frSXNtoY,
+                                     row_id=0,
+                                     value=value)
+
+    def SXNTolerance(self, value: float) -> float:
+        """
+        Допустимый небаланс СХН (SXNTol)
+        :return: SXNTolerance -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.SXNTolerance,
+                                     row_id=0,
+                                     value=value)
+
+    def SnapPath(self, value: str) -> str:
+        """
+        Выходной каталог файлов результатов (Кат. результатов)
+        :return: SnapPath -> str
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.SnapPath,
+                                     row_id=0,
+                                     value=value)
+
+    def MaxResultFiles(self, value: int) -> int:
+        """
+        Максимальное кол-во файлов результатов (Макс. файлов)
+        :return: MaxResultFiles -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.MaxResultFiles,
+                                     row_id=0,
+                                     value=value)
+
+    def SnapTemplate(self, value: str) -> str:
+        """
+        Шаблон имени выходного файла (Шаблон имени)
+        :return: SnapTemplate -> str
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.SnapTemplate,
+                                     row_id=0,
+                                     value=value)
+
+    def SnapAutoLoad(self, value: bool) -> bool:
+        """
+        Автозагрузка последнего результата (Автозагрузка)
+        :return: SnapAutoLoad -> bool
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.SnapAutoLoad,
+                                     row_id=0,
+                                     value=value)
+
+    def SnapMaxCount(self, value: int) -> int:
+        """
+        Метод возвращает установленное максимальное кол-во слотов результатов: (Макс. рез-тов);
+        :return: snap_max_count -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.SnapMaxCount,
+                                     row_id=0,
+                                     value=value)
+
+    def TripGeneratorOnSpeed(self, value: float) -> float:
+        """
+        Отключать генератор при превышении скорости % (Уставка автоматов безопасности)
+        :return: TripGeneratorOnSpeed -> float
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.TripGeneratorOnSpeed,
+                                     row_id=0,
+                                     value=value)
+
+    def PickupDropout(self, value: bool) -> bool:
+        """
+        Информировать о пуске/возврате автоматики (Информировать о пуске/возврате автоматики)
+        :return: PickupDropout -> bool
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.PickupDropout,
+                                     row_id=0,
+                                     value=value)
+
+    def RealtimeCSV(self, value: bool) -> bool:
+        """
+        Выводить контролируемые величины в CSV (Выводить контролируемые величины в CSV)
+        :return: RealtimeCSV -> bool
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.RealtimeCSV,
+                                     row_id=0,
+                                     value=value)
+
+    def PeriodAngle(self, value: int) -> int:
+        """
+        Отображать углы в диапазоне +/-180 (Отображать углы в диапазоне +/-180)
+        :return:
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.PeriodAngle,
+                                     row_id=0,
+                                     value=value)
+
+    def ResultFlowDirection(self, value: int) -> int:
+        """
+        Положительное направление результатов (Положительное направление результатов)
+        :return: ResultFlowDirection -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.ResultFlowDirection,
+                                     row_id=0,
+                                     value=value)
+
+    def TreatWarningsAsErrors(self, value: int) -> int:
+        """
+        Считать предупреждения ошибками (Предупреждение=Ошибка)
+        :return: TreatWarningsAsErrors -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.TreatWarningsAsErrors,
+                                     row_id=0,
+                                     value=value)
+
+    def EventProcess(self, value: int) -> int:
+        """
+        Метод обработки дискретных изменений (Дискретные изменения)
+        :return: EventProcess -> int
+        """
+        return self.make_changes_row(table=ComDynamics.table,
+                                     column=ComDynamics.EventProcess,
+                                     row_id=0,
+                                     value=value)
+
+
 if __name__ == '__main__':
     from RastrWinLib.loading.load import load_file
     from RastrWinLib.loading.shablon import Shabl
@@ -831,15 +1136,12 @@ if __name__ == '__main__':
     load_file(rastr_win=RASTR)
 
     get = GetSettingsDynamic()
+    var = VariableSettingsDynamic()
 
-    class Test(GetSettingsDynamic):
-        def __init__(self):
-            super().__init__(rastr_win)
+    print(get.Tras())
+    print(type(get.Tras()))
 
-        def tr(self):
-            print(Tras())
+    var.Tras(200)
 
-    t = Test()
-    t.tr()
-    print(get.PeriodAngle())
-    print(type(get.PeriodAngle()))
+    print(get.Tras())
+    print(type(get.Tras()))
