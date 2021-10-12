@@ -21,7 +21,7 @@ if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
     from RastrWinLib.loading.load import load_file
     from RastrWinLib.loading.shablon import Shabl
-    from RastrWinLib.calculation.dynamic import Dynamic
+    from RastrWinLib.Calculation.dynamic import Dynamic
 
     # FWDynamic = RASTR.FWDynamic()
     # WithEvents(RASTR, RastrEvents)

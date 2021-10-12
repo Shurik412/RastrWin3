@@ -1,4 +1,4 @@
-from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import Shabl
 import RastrWinLib.tables.Dynamic.ExcControl as ExcControl

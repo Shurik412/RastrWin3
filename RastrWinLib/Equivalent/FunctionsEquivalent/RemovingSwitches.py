@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.tables.Dynamic.Generator import Generator
 from RastrWinLib.tables.Node.node import Node
 from RastrWinLib.tables.Vetv.vetv import Vetv

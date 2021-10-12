@@ -1,8 +1,8 @@
 # # -*- coding: utf-8 -*-
 
 from RastrWinLib.loading.load import load_file
-from RastrWinLib.calculation.regim import SteadyState
-from RastrWinLib.calculation.dynamic import Dynamic
+from RastrWinLib.Calculation.regim import SteadyState
+from RastrWinLib.Calculation.dynamic import Dynamic
 from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.AstraRastr import RASTR
 

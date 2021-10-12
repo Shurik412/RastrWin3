@@ -5,8 +5,8 @@ from openpyxl.chart import ScatterChart
 
 from OAPV_simulation.create_file_scn import create_file_scn
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.calculation.dynamic import Dynamic
-from RastrWinLib.calculation.regim import SteadyState
+from RastrWinLib.Calculation.dynamic import Dynamic
+from RastrWinLib.Calculation.regim import SteadyState
 from RastrWinLib.excel.chart import ChartExcelOtherSheet
 from RastrWinLib.export.export_data_rustab import ExportDataRUSTab
 from RastrWinLib.loading.load import load_file

@@ -30,3 +30,4 @@ class Delete:
         table_ = self.rastr_win.Tables(table)
         table_.SetSel(key)
         table_.delete()
+

@@ -6,7 +6,7 @@
 
 from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.tools.tools import separator_two
 from RastrWinLib.variables.variable_parametrs import Variable
 

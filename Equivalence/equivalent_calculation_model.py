@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.calculation.equivalent import Equivalent
-from RastrWinLib.calculation.regim import SteadyState
-# from RastrWinLib.getting.get import G
+from RastrWinLib.Calculation.equivalent import Equivalent
+from RastrWinLib.Calculation.regim import SteadyState
+# from RastrWinLib.Getting.get import G
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_regime
-from RastrWinLib.settings.equivalence import set_com_ekviv
+from RastrWinLib.Settings.equivalence import set_com_ekviv
 from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
 from gen_equivalent import equivalent_gen
 # from gen_equivalent import equivalent_smart

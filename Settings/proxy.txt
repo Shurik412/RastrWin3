@@ -1,0 +1,5 @@
+
+
+pip install --proxy http://Ohrimenko_AG:Shurik4122@172.31.1.12:9090 pyqt5
+
+git config --global http.proxy http://Ohrimenko_AG:Shurik4122@172.31.1.12:9090

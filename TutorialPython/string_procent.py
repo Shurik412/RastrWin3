@@ -3,7 +3,7 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.tables.Vetv.vetv import Vetv
-from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.tools.timer import timethis
 from icecream import ic
 from openpyxl import load_workbook, workbook

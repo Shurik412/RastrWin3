@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template, redirect, request
 
-from RastrWinLib.calculation.regim import SteadyState
-from RastrWinLib.getting.get import GettingParameter
+from RastrWinLib.Calculation.regim import SteadyState
+from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.tables.Node.node import Node
 from load_file_rastr import load_file_rgm
 from RastrWinLib.AstraRastr import RASTR
