@@ -3,7 +3,7 @@ import re
 
 
 class DirectoryCheck:
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
 
     def get_expansion(self):

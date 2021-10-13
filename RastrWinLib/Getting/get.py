@@ -23,7 +23,10 @@ class GettingParameter:
          :param rastr_win: ;
         """
 
-    def get_cell_row(self, table, column, row_id):
+    def get_cell_row(self,
+                     table: str,
+                     column: str,
+                     row_id: str):
         """
         Метод get_cell - возвращает значение ячейки.
         :param table: название таблицы RastrWin3 (generator);
@@ -35,7 +38,10 @@ class GettingParameter:
         value_cell_of_row = table_.Cols(column).Z(row_id)
         return value_cell_of_row
 
-    def get_cell_param(self, table, column, key):
+    def get_cell_param(self,
+                       table: str,
+                       column: str,
+                       key: str):
         """
         get_param - метод для получения значения ячейки.
         :param table: название таблицы RastrWin3 (generator);
@@ -49,7 +55,10 @@ class GettingParameter:
         value_cell_of_set_sel = table_.Cols(column).Z(row_)
         return value_cell_of_set_sel
 
-    def get_cell_id(self, table, column, Id):
+    def get_cell_id(self,
+                    table: str,
+                    column: str,
+                    Id: str):
         """
         Метод get_param - метод для получения значения ячейки.
         :param table: название таблицы RastrWin3 (generator);
@@ -63,7 +72,10 @@ class GettingParameter:
         value_cell_of_set_sel = table_.Cols(column).Z(row_)
         return value_cell_of_set_sel
 
-    def get_row_vetv(self, ip, iq, np):
+    def get_row_vetv(self,
+                     ip: int,
+                     iq: int,
+                     np: int):
         """
         Метод get_row_line - возвращает порядковый номер строки таблицы "Ветви".
         :param ip: начало ветви;
@@ -76,7 +88,8 @@ class GettingParameter:
         row_vetv = table_.FindNextSel(-1)
         return row_vetv
 
-    def get_row_vetv_a_node(self, ny):
+    def get_row_vetv_a_node(self,
+                            ny: int):
         """
         :param ny: номер узла для которого тренбуется найти ветвь;
         :return: row_vetv - порядковый номер ветви;
@@ -89,18 +102,20 @@ class GettingParameter:
         else:
             print('Ветвь отсутствует в таблице ветвей!')
 
-    def get_row_node(self, node_ny):
+    def get_row_node(self,
+                     ny: int):
         """
         Метод get_row_node - возвращает порядковый номер узла.
-        :param node_ny: номер узла;
+        :param ny: номер узла;
         :return: row_node: порядковый номер узла.
         """
         table_ = self.rastr_win.Tables(Node.table)
-        table_.SetSel(f'({Node.ny}={node_ny})')
+        table_.SetSel(f'({Node.ny}={ny})')
         row_node = table_.FindNextSel(-1)
         return row_node
 
-    def get_row_gen(self, Num):
+    def get_row_gen(self,
+                    Num: int):
         """
         Метод get_row_gen - возвращает порядковый номер генератора.
         :param Num: номер генератора;
@@ -122,7 +137,9 @@ class GettingParameter:
         row_vozb_IEEE = table_.FindNextSel(-1)
         return row_vozb_IEEE
 
-    def get_row_id(self, table, formula):
+    def get_row_id(self,
+                   table: str,
+                   formula):
         """
         Метод get_row_line - возвращает порядковый номер строки таблицы "Ветви".
         :param table: ;
@@ -134,7 +151,7 @@ class GettingParameter:
         row_vetv = table_.FindNextSel(-1)
         return row_vetv
 
-    def get_count_table(self, table):
+    def get_count_table(self, table: str):
         """
         :param table:
         :return:

@@ -19,7 +19,7 @@ class SteadyState:
     def __init__(self,
                  rastr_win=RASTR,
                  par='',
-                 switch_command_line=False):
+                 switch_command_line: bool = False):
         """
 
         :param rastr_win: COM - объект Rastr.Astra (win32com);

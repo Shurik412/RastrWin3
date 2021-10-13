@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TutorialPython/test_texttable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Delete/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Delete/delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Getting/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/directory_rastrwin/DirFileAndName.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/directory_rastrwin/DirFileAndName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/ExportResults/export_data_rustab.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,13 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00184" summary="Add doc and corr DFWIEEE421PSS4B.py">
-      <created>1622792695952</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1622792695952</updated>
     </task>
     <task id="LOCAL-00185" summary="Full corr RastrWin3">
       <created>1622814376317</created>
@@ -570,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634050995578</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="Corr Daynamic">
+      <created>1634144051455</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1634144051455</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -586,7 +590,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add STyr.py" />
     <MESSAGE value="Add THYNE_1.py" />
     <MESSAGE value="Add Thyripol6RV.py" />
     <MESSAGE value="Add u6800_lite.py" />
@@ -611,7 +614,8 @@
     <MESSAGE value="START NEW COMMINT 12/10/2021" />
     <MESSAGE value="Add class GetSettingsDynamic" />
     <MESSAGE value="Add class VariableSettingsDynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add class VariableSettingsDynamic" />
+    <MESSAGE value="Corr Daynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr Daynamic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,7 +8,7 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Calculation.dynamic import Dynamic
 from RastrWinLib.Calculation.regim import SteadyState
 from RastrWinLib.excel.chart import ChartExcelOtherSheet
-from RastrWinLib.export.export_data_rustab import ExportDataRUSTab
+from RastrWinLib.ExportResults.export_data_rustab import ExportDataRUSTab
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.tables.Node.node import Node

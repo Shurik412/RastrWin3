@@ -11,7 +11,7 @@ class ExportDataRUSTab:
     def __init__(self,
                  table: str,
                  rastr_win=RASTR,
-                 switch_command_line=False):
+                 switch_command_line: bool = False):
         f"""
         :param table: название таблицы;
         :param rastr_win: ;
