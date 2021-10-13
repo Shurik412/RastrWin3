@@ -6,6 +6,7 @@
 # при работе во внешней среде – должен создаваться обычным образом,
 # например, в Python:
 from win32com.client import Dispatch, WithEvents
+from prettytable import PrettyTable
 
 
 class RastrEvents:
@@ -15,18 +16,16 @@ class RastrEvents:
     """
 
     def OnLog(self, code, level, id, name, index, description, formName):
-        # print(f"[{code}] {description}")
-        # self.file.write(f"[{code}=info] {description}")
         if code == 2:
-            print(f"[{'Error'}] {description}")
+            print('[Error]', description)
         elif code == 3:
-            print(f"[{'Warning'}] {description}")
+            print('[Warning]', description)
         elif code == 4:
-            print(f"[{'Lightbulb'}] {description}")
+            print('[Lightbulb]', description)
         elif code == 5:
-            print(f"[{'Info'}] {description}")
+            print('[Info]', description)
         else:
-            print(f"[{code}] {description}")
+            print([code, description])
 
     def Onprot(self, message):
         print(message)

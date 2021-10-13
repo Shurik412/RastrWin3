@@ -1,33 +1,16 @@
 # -*- coding: utf-8 -*-
-from time import time, localtime, strftime
+from prettytable import PrettyTable
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Settings.com_dynamics import ComDynamics
-from RastrWinLib.tools.tools import Tools
-from RastrWinLib.variables.variable_parametrs import Variable
-from win32com.client import Dispatch, WithEvents, constants
-from RastrWinLib.Settings.dynamic import GetSettingsDynamic
+from RastrWinLib.Settings.dynamic import GetSettingsDynamic, VariableSettingsDynamic
 
 
-class RastrEvents:
+class Dynamic(VariableSettingsDynamic, GetSettingsDynamic, PrettyTable):
     """
-    Метод Onprot - выводит сообщения написанные: rastr.Printp ("Сообщение из Printp")
-    Метод OnLog
+    Class
     """
 
-    def OnLog(self, code, level, id, name, index, description, formName):
-        print(f"[{code}] {description}")
-
-    def Onprot(self, message):
-        print(message)
-
-
-class Dynamic(GetSettingsDynamic):
-
-    def __init__(self,
-                 rastr_win=RASTR,
-                 calc_time: float = 1.0,
-                 snap_max_count: int = 1,
+    def __init__(self, rastr_win=RASTR, calc_time: float = 1.0, snap_max_count: int = 1,
                  switch_command_line: bool = False):
         """
         Функции для расчтета ЭМПП доступны в интерфейсе IFWDynamic.
@@ -37,68 +20,51 @@ class Dynamic(GetSettingsDynamic):
         :param snap_max_count: макс. число сохраняемых файлов *.sna с результатами;
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
-        super().__init__(rastr_win)
+        super().__init__()
         self.rastr_win = rastr_win
         self.calc_time = calc_time
         self.snap_max_count = snap_max_count
+
         self.FWDynamic = self.rastr_win.FWDynamic()
         self.TimeReached = self.FWDynamic.TimeReached  # Вывод времени, достигнутого в расчете
         self.switch_command_line = switch_command_line
 
         if self.snap_max_count == 1.0:
-            snap_max_count = Variable(rastr_win=self.rastr_win,
-                                      switch_command_line=self.switch_command_line)
-            snap_max_count.make_changes_row(table=ComDynamics.table,
-                                            column=ComDynamics.SnapMaxCount,
-                                            row_id=0,
-                                            value=self.snap_max_count)
+            VariableSettingsDynamic.SnapMaxCount(self, value=self.snap_max_count)
         else:
-            print(f'snap_max_count больше 1.0 => {self.snap_max_count}')
+            print(f'snap_max_count больше 1.0 => {GetSettingsDynamic.SnapMaxCount(self)}')
 
     def change_calc_time(self):
-        settlement_time = Variable(rastr_win=self.rastr_win,
-                                   switch_command_line=True)
-
-        settlement_time.make_changes_row(table=ComDynamics.table,
-                                         column=ComDynamics.Tras,
-                                         row_id=0,
-                                         value=self.calc_time)
+        VariableSettingsDynamic.Tras(self, value=self.calc_time)
 
     def change_snap_max_count(self):
-        snap_max_count = Variable(rastr_win=self.rastr_win,
-                                  switch_command_line=True)
-
-        snap_max_count.make_changes_row(table=ComDynamics.table,
-                                        column=ComDynamics.SnapMaxCount,
-                                        row_id=0,
-                                        value=self.snap_max_count)
+        VariableSettingsDynamic.SnapMaxCount(self, value=self.snap_max_count)
 
     def run(self):
-        print(Tools.separator_grid)
-        print(f'Запуск расчета ЭМПП:')
         self.FWDynamic.Run()
-        if self.switch_command_line is not False:
-            self.messageResult()
+        self.messageResult()
 
     def messageResult(self):
         ResultMessage = self.FWDynamic.ResultMessage  # Вывод сообщения о результатах расчета
-        settlement_time = Tras()
-        # self.rastr_win.Tables(ComDynamics.table).Cols(ComDynamics.Tras).Z(0)
-        print(f'\tВремя расчета (T_расч): {settlement_time}')
-        print(f'\tСообщение о результатх расчета ЭМПП: {ResultMessage}')
-        if ResultMessage == '':
-            print('\t\tРасчет завершен успешно, потери синхронизма не выявлено.')
-        elif ResultMessage == 0:
-            print('\t\tРасчет завершен успешно, потери синхронизма не выявлено.')
-        elif ResultMessage == 1:
-            print('\t\tВыявлено превышение угла по ветви значения 180°.')
-        elif ResultMessage == 2:
-            print('\t\tВыявлено превышение угла по сопротивлению генератора значения 180°.')
-        elif ResultMessage == 4:
-            print('\t\tВыявлено превышение допустимой скорости вращения одного или нескольких генераторов.\n'
-                  '\t\tДопустимая скорость вращения задается уставкой автомата безопасности в настройках динамики.')
-        return ResultMessage
+        pt = PrettyTable()
+        pt.field_names = ['Описание', 'Параметр']
+        pt.add_row(['Время расчета для динамики', f'{GetSettingsDynamic.Tras(self)} cек.'])
+        pt.add_row(['Сообщение о результатх расчета ЭМПП', ResultMessage])
 
+        if ResultMessage == '':
+            pt.add_row(['Расчет завершен успешно, потери синхронизма не выявлено.', ''])
+        elif ResultMessage == 0:
+            pt.add_row(['Расчет завершен успешно, потери синхронизма не выявлено.', ''])
+        elif ResultMessage == 1:
+            pt.add_row(['Выявлено превышение угла по ветви значения 180°.', ''])
+        elif ResultMessage == 2:
+            pt.add_row(['Выявлено превышение угла по сопротивлению генератора значения 180°.', ''])
+        elif ResultMessage == 4:
+            pt.add_row(['Выявлено превышение допустимой скорости вращения одного или нескольких генераторов.'
+                        'Допустимая скорость вращения задается уставкой автомата безопасности в настройках динамики.',
+                        ''])
+        print(pt)
+        return ResultMessage
 
 
 if __name__ == '__main__':
@@ -112,18 +78,18 @@ if __name__ == '__main__':
               switch_command_line=True)
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
+              file_path=r'L:\SecretDisk\SER\Динамическая модель\02-Архив\2019 новая модель\ДРМ 2019\КалАЭС_КЗ(3).scn',
               shabl=Shabl.shablon_file_scenario,
               switch_command_line=True)
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test92.rst',
+              file_path=r'L:\SecretDisk\SER\Динамическая модель\02-Архив\2020\4.Дин_Модели - 2020 (14.10.2020)\1. Зима\ДРМ Зима макс 2020.rst',
               shabl=Shabl.shablon_file_dynamic,
               switch_command_line=True)
 
     load_file(rastr_win=RASTR)
 
     calc = Dynamic(rastr_win=RASTR,
-                   calc_time=100)
+                   calc_time=1.7)
     calc.change_calc_time()
     calc.run()
