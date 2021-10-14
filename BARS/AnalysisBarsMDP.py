@@ -1,21 +1,19 @@
 # -*- coding: utf-8 -*-
-import csv
+from csv import reader, writer
 from os import mkdir
 
 import matplotlib.pyplot as plt
-import numpy as np
+from numpy import arange
 from pandas import read_csv
 
 
 # ROOT_PATH = os.getcwd()
-
-
 def create_csv(path_read, path_save='ogrsech_new.csv'):
     list_one = []
     list_three = []
     with open(path_read, newline='') as File:
-        reader = csv.reader(File)
-        for row in reader:
+        reader_ = reader(File)
+        for row in reader_:
             list_one.append(row[0].split(sep=';'))
     for num in list_one:
         list_two = [num[0], num[1], num[2]]
@@ -23,10 +21,10 @@ def create_csv(path_read, path_save='ogrsech_new.csv'):
     list_three.insert(0, ['sech', 'time', 'P'])
 
     with open(path_save, 'w', encoding='UTF8', newline='') as f:
-        writer = csv.writer(f)
+        writer_ = writer(f)
         for row in list_three:
             list_ = [row[0], row[1], row[2]]
-            writer.writerow(list_)
+            writer_.writerow(list_)
     try:
         mkdir("file_bars_mdp_sech_csv")
     except FileExistsError:
@@ -86,23 +84,23 @@ def plot():
     sech_1_min = min([data_sech_2.P.min(), data_sech_18.P.min()])
     sech_2_min = min([data_sech_10.P.min(), data_sech_19.P.min()])
     ##############################
-    fig, ax_1 = plt.subplots()
+    # fig, ax_1 = plt.subplots()
     fig, ax_4 = plt.subplots()
 
-    ax_1.grid()
+    # ax_1.grid()
     ax_4.grid()
 
-    ax_1.set_xlabel('Точка (час)')
-    ax_1.set_ylabel('МДП (МВт)')
+    # ax_1.set_xlabel('Точка (час)')
+    # ax_1.set_ylabel('МДП (МВт)')
 
     ax_4.set_xlabel('Точка (час)')
     ax_4.set_ylabel('МДП (МВт)')
 
-    ax_1.plot(data_sech_2.time,
-              data_sech_2.P,
-              linewidth=3,
-              color='r',
-              label=dict_sech[str(2)])
+    # ax_1.plot(data_sech_2.time,
+    #           data_sech_2.P,
+    #           linewidth=3,
+    #           color='r',
+    #           label=dict_sech[str(2)])
 
     ax_4.step(data_sech_2_list_time,
               data_sech_2_list_P,
@@ -111,11 +109,11 @@ def plot():
               where='post',
               label=dict_sech[str(2)])
 
-    ax_1.plot(data_sech_18.time,
-              data_sech_18.P,
-              linewidth=1.5,
-              color='b',
-              label=dict_sech[str(18)])
+    # ax_1.plot(data_sech_18.time,
+    #           data_sech_18.P,
+    #           linewidth=1.5,
+    #           color='b',
+    #           label=dict_sech[str(18)])
 
     ax_4.step(data_sech_18_list_time,
               data_sech_18_list_P,
@@ -124,32 +122,32 @@ def plot():
               where='post',
               label=dict_sech[str(18)])
 
-    ax_1.set_xlim([25, 48])
-    ax_1.legend()
-    ax_1.set_title(f'Анализ МДП => {sech_1_min} МВт')
+    # ax_1.set_xlim([25, 48])
+    # ax_1.legend()
+    # ax_1.set_title(f'Анализ МДП => {sech_1_min} МВт')
 
     ax_4.set_xlim([25, 48])
     ax_4.legend()
-    ax_4.set_title(f'Анализ МДП => {sech_1_min} МВт')
+    ax_4.set_title(f'Анализ МДП\n МДП в КС {dict_sech[str(2)]} {sech_1_min} МВт')
 
-    plt.xticks(np.arange(25, 48, 1))
+    plt.xticks(arange(25, 48, 1))
     ##############################
-    fid, ax_2 = plt.subplots()
+    # fid, ax_2 = plt.subplots()
     fid, ax_3 = plt.subplots()
 
-    ax_2.grid()
+    # ax_2.grid()
     ax_3.grid()
 
-    ax_2.set_xlabel('Точка (час)')
-    ax_2.set_ylabel('МДП (МВт)')
+    # ax_2.set_xlabel('Точка (час)')
+    # ax_2.set_ylabel('МДП (МВт)')
 
     ax_3.set_xlabel('Точка (час)')
     ax_3.set_ylabel('МДП (МВт)')
 
-    ax_2.plot(data_sech_10.time, data_sech_10.P,
-              linewidth=3,
-              color="r",
-              label=dict_sech[str(10)])
+    # ax_2.plot(data_sech_10.time, data_sech_10.P,
+    #           linewidth=3,
+    #           color="r",
+    #           label=dict_sech[str(10)])
 
     ax_3.step(data_sech_10_list_time,
               data_sech_10_list_P,
@@ -158,11 +156,11 @@ def plot():
               where='post',
               label=dict_sech[str(10)])
 
-    ax_2.plot(data_sech_19.time,
-              data_sech_19.P,
-              linewidth=1.5,
-              color="b",
-              label=dict_sech[str(19)])
+    # ax_2.plot(data_sech_19.time,
+    #           data_sech_19.P,
+    #           linewidth=1.5,
+    #           color="b",
+    #           label=dict_sech[str(19)])
 
     ax_3.step(data_sech_19_list_time,
               data_sech_19_list_P,
@@ -172,15 +170,15 @@ def plot():
               label=dict_sech[str(19)])
 
     ax_3.set_xlim([25, 48])
-    ax_2.set_xlim([25, 48])
+    # ax_2.set_xlim([25, 48])
 
     ax_3.legend()
-    ax_2.legend()
+    # ax_2.legend()
 
-    ax_3.set_title(f"Анализ МДП => {sech_2_min} МВт")
-    ax_2.set_title(f"Анализ МДП => {sech_2_min} МВт")
+    ax_3.set_title(f'Анализ МДП\n МДП в КС {dict_sech[str(10)]} {sech_2_min} МВт')
+    # ax_2.set_title(f"Анализ МДП => {sech_2_min} МВт")
     ##############################
-    plt.xticks(np.arange(25, 48, 1))
+    plt.xticks(arange(25, 48, 1))
     plt.show()
 
 

@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARS/MDP_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/MDP_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/catalog.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/catalog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/panda_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/panda_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BARS/AnalysisBarsMDP.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/AnalysisBarsMDP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BARS/ogrsech123.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/ogrsech.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +98,28 @@
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AnalysisBarsMDP">
+  <component name="RunManager" selected="Python.AnalysisBarsMDP (1)">
+    <configuration name="AnalysisBarsMDP (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/AnalysisBarsMDP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="AnalysisBarsMDP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,34 +204,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_prettytable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_prettytable.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AnalysisBarsMDP (1)" />
         <item itemvalue="Python.AnalysisBarsMDP" />
         <item itemvalue="Python.panda_test" />
         <item itemvalue="Python.catalog" />
         <item itemvalue="Python.test_list-2" />
-        <item itemvalue="Python.test_prettytable" />
       </list>
     </recent_temporary>
   </component>
@@ -226,20 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00189" summary="Add testing code FuncPQ_Filling.py">
-      <created>1623072322424</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1623072322424</updated>
-    </task>
-    <task id="LOCAL-00190" summary="Add testing code GeneratorsFilling.py">
-      <created>1623076613584</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1623076613584</updated>
     </task>
     <task id="LOCAL-00191" summary="Add testing code GovernorFilling.py">
       <created>1623130703024</created>
@@ -570,7 +555,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634244947420</updated>
     </task>
-    <option name="localTasksCounter" value="238" />
+    <task id="LOCAL-00238" summary="Optimization and rename AnalysisBarsMDP.py">
+      <created>1634247611223</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1634247611223</updated>
+    </task>
+    <task id="LOCAL-00239" summary="Optimization and rename AnalysisBarsMDP.py">
+      <created>1634247646818</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1634247646818</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -586,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add EX2100_BSV_lite.py" />
     <MESSAGE value="Add ARVSDE_lite.py" />
     <MESSAGE value="Add ARVNL_BSV_lite.py" />
     <MESSAGE value="Add ARVNL_static_lite.py" />
@@ -611,7 +609,8 @@
     <MESSAGE value="Corr Calculation" />
     <MESSAGE value="Add MDP_analysis.py" />
     <MESSAGE value="add step plot Bars" />
-    <option name="LAST_COMMIT_MESSAGE" value="add step plot Bars" />
+    <MESSAGE value="Optimization and rename AnalysisBarsMDP.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimization and rename AnalysisBarsMDP.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
