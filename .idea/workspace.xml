@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BARS/MDP_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/MDP_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TutorialPython/catalog.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/catalog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TutorialPython/panda_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/panda_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +99,8 @@
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MDP_analysis">
-    <configuration name="MDP_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.AnalysisBarsMDP">
+    <configuration name="AnalysisBarsMDP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +112,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/MDP_analysis.py" />
+      <option name="SCRIPT_NAME" value="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS\AnalysisBarsMDP.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,9 +207,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MDP_analysis" />
-        <item itemvalue="Python.catalog" />
+        <item itemvalue="Python.AnalysisBarsMDP" />
         <item itemvalue="Python.panda_test" />
+        <item itemvalue="Python.catalog" />
         <item itemvalue="Python.test_list-2" />
         <item itemvalue="Python.test_prettytable" />
       </list>
@@ -225,13 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00188" summary="Add testing code ForcerFilling.py">
-      <created>1623071736817</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1623071736817</updated>
     </task>
     <task id="LOCAL-00189" summary="Add testing code FuncPQ_Filling.py">
       <created>1623072322424</created>
@@ -569,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634228150647</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="add step plot Bars">
+      <created>1634244947420</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1634244947420</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add u1020_lite.py" />
     <MESSAGE value="Add EX2100_BSV_lite.py" />
     <MESSAGE value="Add ARVSDE_lite.py" />
     <MESSAGE value="Add ARVNL_BSV_lite.py" />
@@ -610,7 +610,8 @@
     <MESSAGE value="General adjustments of all modules" />
     <MESSAGE value="Corr Calculation" />
     <MESSAGE value="Add MDP_analysis.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MDP_analysis.py" />
+    <MESSAGE value="add step plot Bars" />
+    <option name="LAST_COMMIT_MESSAGE" value="add step plot Bars" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 import csv
-from os import getcwd, mkdir
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas
+from os import mkdir
 
-ROOT_PATH = getcwd()
+import matplotlib.pyplot as plt
+import numpy as np
+from pandas import read_csv
+
+
+# ROOT_PATH = os.getcwd()
 
 
 def create_csv(path_read, path_save='ogersech_new.csv'):
@@ -32,7 +34,7 @@ def create_csv(path_read, path_save='ogersech_new.csv'):
     except PermissionError:
         print("Отсутствуют права на доступ к каталогу!")
 
-    data = pandas.read_csv(path_save)
+    data = read_csv(path_save)
     data_sech_2 = data[data.sech == 2]
     data_sech_18 = data[data.sech == 18]
     data_sech_10 = data[data.sech == 10]
@@ -58,16 +60,16 @@ def plot():
     ]
 
     dict_sech = {
-        '2': "Воронежское-2 на Север (Ток)",
+        '2': "Воронежское-2 на Север",
         '18': "Воронежское-2 на Север (Статика)",
-        '10': "Донское (Ток)",
+        '10': "Донское",
         '19': "Донское (Статика)",
     }
 
-    data_sech_2 = pandas.read_csv(FILE_CSV[0])
-    data_sech_18 = pandas.read_csv(FILE_CSV[1])
-    data_sech_10 = pandas.read_csv(FILE_CSV[2])
-    data_sech_19 = pandas.read_csv(FILE_CSV[3])
+    data_sech_2 = read_csv(FILE_CSV[0])
+    data_sech_18 = read_csv(FILE_CSV[1])
+    data_sech_10 = read_csv(FILE_CSV[2])
+    data_sech_19 = read_csv(FILE_CSV[3])
 
     data_sech_2_list_time = data_sech_2.time.to_list()
     data_sech_2_list_P = data_sech_2.P.to_list()
@@ -81,11 +83,8 @@ def plot():
     data_sech_19_list_time = data_sech_19.time.to_list()
     data_sech_19_list_P = data_sech_19.P.to_list()
 
-    print(f'Вор_2_2 = {data_sech_2.P.max()}')
-    print(f'Вор_2_2 = {data_sech_2.P.min()}')
-    print(f'Вор_2_18 = {data_sech_18.P.max()}')
-    print(f'Вор_2_18 = {data_sech_18.P.min()}')
-
+    sech_1_min = min([data_sech_2.P.min(), data_sech_18.P.min()])
+    sech_2_min = min([data_sech_10.P.min(), data_sech_19.P.min()])
     ##############################
     fig, ax_1 = plt.subplots()
     fig, ax_4 = plt.subplots()
@@ -127,11 +126,11 @@ def plot():
 
     ax_1.set_xlim([25, 48])
     ax_1.legend()
-    ax_1.set_title('Анализ МДП')
+    ax_1.set_title(f'Анализ МДП => {sech_1_min} МВт')
 
     ax_4.set_xlim([25, 48])
     ax_4.legend()
-    ax_4.set_title('Анализ МДП')
+    ax_4.set_title(f'Анализ МДП => {sech_1_min} МВт')
 
     plt.xticks(np.arange(25, 48, 1))
     ##############################
@@ -178,12 +177,12 @@ def plot():
     ax_3.legend()
     ax_2.legend()
 
-    ax_3.set_title("Анализ МДП")
-    ax_2.set_title("Анализ МДП")
+    ax_3.set_title(f"Анализ МДП => {sech_2_min} МВт")
+    ax_2.set_title(f"Анализ МДП => {sech_2_min} МВт")
     ##############################
     plt.xticks(np.arange(25, 48, 1))
     plt.show()
 
 
-create_csv(path_read='ogrsech123.csv')
+create_csv(path_read='ogrsech.csv')
 plot()
