@@ -69,77 +69,117 @@ def plot():
     data_sech_10 = pandas.read_csv(FILE_CSV[2])
     data_sech_19 = pandas.read_csv(FILE_CSV[3])
 
+    data_sech_2_list_time = data_sech_2.time.to_list()
+    data_sech_2_list_P = data_sech_2.P.to_list()
+
+    data_sech_18_list_time = data_sech_18.time.to_list()
+    data_sech_18_list_P = data_sech_18.P.to_list()
+
+    data_sech_10_list_time = data_sech_10.time.to_list()
+    data_sech_10_list_P = data_sech_10.P.to_list()
+
+    data_sech_19_list_time = data_sech_19.time.to_list()
+    data_sech_19_list_P = data_sech_19.P.to_list()
+
     print(f'Вор_2_2 = {data_sech_2.P.max()}')
     print(f'Вор_2_2 = {data_sech_2.P.min()}')
     print(f'Вор_2_18 = {data_sech_18.P.max()}')
     print(f'Вор_2_18 = {data_sech_18.P.min()}')
 
-    class Plot:
-        def __init__(self, sech_1, sech_2, num_sech_1, num_sech_2):
-            super().__init__()
-            self.sech_1 = sech_1
-            self.sech_2 = sech_2
-            self.num_sech_1 = num_sech_1
-            self.num_sech_2 = num_sech_2
-            self.ax = subplots()
-            # self.ax.grid()
-
-        def plot_graf(self):
-            self.ax.set_xlabel('Точка (час)')
-            self.ax.set_ylabel('МДП (МВт)')
-            self.ax.plot(self.sech_1.time, self.sech_1.P,
-                         linewidth=3,
-                         color='r',
-                         label=dict_sech[str(self.num_sech_1)])
-
-            self.ax.plot(self.sech_2.time, self.sech_2.P,
-                         linewidth=1.5,
-                         color='b',
-                         label=dict_sech[str(self.num_sech_2)])
-
-            self.ax.legend()
-            self.ax.set_title('Анализ МДП')
-            plt.show()
-
     ##############################
     fig, ax_1 = plt.subplots()
+    fig, ax_4 = plt.subplots()
+
     ax_1.grid()
+    ax_4.grid()
+
     ax_1.set_xlabel('Точка (час)')
     ax_1.set_ylabel('МДП (МВт)')
-    ax_1.plot(data_sech_2.time, data_sech_2.P,
+
+    ax_4.set_xlabel('Точка (час)')
+    ax_4.set_ylabel('МДП (МВт)')
+
+    ax_1.plot(data_sech_2.time,
+              data_sech_2.P,
               linewidth=3,
               color='r',
               label=dict_sech[str(2)])
 
-    ax_1.plot(data_sech_18.time, data_sech_18.P,
+    ax_4.step(data_sech_2_list_time,
+              data_sech_2_list_P,
+              color="r",
+              linewidth=3,
+              where='post',
+              label=dict_sech[str(2)])
+
+    ax_1.plot(data_sech_18.time,
+              data_sech_18.P,
               linewidth=1.5,
               color='b',
+              label=dict_sech[str(18)])
+
+    ax_4.step(data_sech_18_list_time,
+              data_sech_18_list_P,
+              color="b",
+              linewidth=1.5,
+              where='post',
               label=dict_sech[str(18)])
 
     ax_1.set_xlim([25, 48])
     ax_1.legend()
     ax_1.set_title('Анализ МДП')
+
+    ax_4.set_xlim([25, 48])
+    ax_4.legend()
+    ax_4.set_title('Анализ МДП')
+
     plt.xticks(np.arange(25, 48, 1))
     ##############################
     fid, ax_2 = plt.subplots()
+    fid, ax_3 = plt.subplots()
+
     ax_2.grid()
+    ax_3.grid()
+
     ax_2.set_xlabel('Точка (час)')
     ax_2.set_ylabel('МДП (МВт)')
+
+    ax_3.set_xlabel('Точка (час)')
+    ax_3.set_ylabel('МДП (МВт)')
+
     ax_2.plot(data_sech_10.time, data_sech_10.P,
               linewidth=3,
-              color='r',
+              color="r",
               label=dict_sech[str(10)])
 
-    ax_2.plot(data_sech_19.time, data_sech_19.P,
+    ax_3.step(data_sech_10_list_time,
+              data_sech_10_list_P,
+              color="r",
+              linewidth=3,
+              where='post',
+              label=dict_sech[str(10)])
+
+    ax_2.plot(data_sech_19.time,
+              data_sech_19.P,
               linewidth=1.5,
-              color='b',
+              color="b",
               label=dict_sech[str(19)])
 
-    ax_2.set_xlim([25, 48])
-    # ax_2.xticks([25,26,27,28,29,30, 48])
-    ax_2.legend()
-    ax_2.set_title('Анализ МДП')
+    ax_3.step(data_sech_19_list_time,
+              data_sech_19_list_P,
+              linewidth=1.5,
+              color="b",
+              where='post',
+              label=dict_sech[str(19)])
 
+    ax_3.set_xlim([25, 48])
+    ax_2.set_xlim([25, 48])
+
+    ax_3.legend()
+    ax_2.legend()
+
+    ax_3.set_title("Анализ МДП")
+    ax_2.set_title("Анализ МДП")
     ##############################
     plt.xticks(np.arange(25, 48, 1))
     plt.show()
