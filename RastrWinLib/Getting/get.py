@@ -139,7 +139,7 @@ class GettingParameter:
 
     def get_row_id(self,
                    table: str,
-                   formula):
+                   formula: str):
         """
         Метод get_row_line - возвращает порядковый номер строки таблицы "Ветви".
         :param table: ;

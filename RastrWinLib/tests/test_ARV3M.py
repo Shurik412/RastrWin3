@@ -1,9 +1,7 @@
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_dynamic
-from RastrWinLib.CustomModels.AC5B.AC5B import change_parameters_AC5B
-from RastrWinLib.CustomModels.ARV3M.ARV3M import change_parameters_ARV3M
-
+from CustomModels.AC5B.AC5B import change_parameters_AC5B
 
 file = r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst'
 file_save = r'C:\Users\Ohrimenko_AG\Desktop\test9.rst'

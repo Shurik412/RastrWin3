@@ -47,7 +47,7 @@ class SteadyState:
             pt.add_row(['Сообщение о результатх расчета УР', 'Режим не сбалансирован!'])
         elif kod == 0:
             pt.add_row(['Сообщение о результатх расчета УР', 'Расчет УР завершен успешно!'])
-        print(pt)
+        print(pt.get_string(title="Расчет режима: УР"))
         return kod
 
 

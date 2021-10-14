@@ -66,7 +66,7 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
             pt.add_row(['Выявлено превышение допустимой скорости вращения одного или нескольких генераторов.'
                         'Допустимая скорость вращения задается уставкой автомата безопасности в настройках динамики.',
                         ''])
-        print(pt)
+        print(pt.get_string(title="Расчет ЭМПП"))
         return ResultMessage
 
 

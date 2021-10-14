@@ -5,16 +5,121 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Equivalent/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutorialPython/test_Emoje.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/ogrsech123.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/ARVSDP1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/ARVSG/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/ARV_REM/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/AVR45/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/AVR_2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/Alstom/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/BESSCH/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/DECS_400/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/EAA/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/EX2100/EX2100_static_lite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/EX2100/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/Hydrot/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/KOSUR2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/Mitsubishi/Mitsubishi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/Mitsubishi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/Prismic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/Semipol/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/THYNE_4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/THYRIPOL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U1020/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U1020_lite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U5000/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U6800/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U6800_lite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/UNITROL/UNITROL_F/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/UNITROL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/basket/Parameter_ARVSDP1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/basket/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomModels/gglite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/catalog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/ogrsech.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/ogrsech2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/ogrsech3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/panda_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/test_list-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/weather_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/Equvivalent_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/Equvivalent_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/RemovingSwitches.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/RemovingSwitches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AC5B/AC5B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AC8B/AC8B.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AC8B/AC8B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV2M/ARV2M_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV2M/ARV2M_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV2M/ARV2M_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV3M/ARV3MTK.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV3M/ARV3MTK.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV4M/ARV4M.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV4M/ARV4M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVNL/ARVNL_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVNL/ARVNL_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVNL/ARVNL_BSV_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVNL/ARVNL_BSV_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVNL/ARVNL_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVNL/ARVNL_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVNL/ARVNL_static_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVNL/ARVNL_static_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVP/ARVP.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVP/ARVP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDE/ARVSDE.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSDE/ARVSDE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDE/ARVSDE_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSDE/ARVSDE_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDP1/ARVSDP1.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/MDP_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSDS/ARVSDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSDS/ARVSDS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSG/ARVSG_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSG/ARVSG_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSG/ARVSG_BSV_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSG/ARVSG_BSV_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSG/ARVSG_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSG/ARVSG_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARVSG/ARVSG_static_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSG/ARVSG_static_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/ARV_REM/ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV_REM/ARV_REM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR45/AVR45M_bsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AVR45/AVR45M_bsv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR45/AVR45_res.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AVR45/AVR45_res.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AVR_2/AVR_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AVR_2/AVR_2_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2_br.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AVR_2/AVR_2_br.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/AVR_2/AVR_2_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AVR_2/AVR_2_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/Alstom/Alstom.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/Alstom/Alstom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/Alstom/Alstom_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/Alstom/Alstom_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/BESSCH/BESSCH.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/BESSCH/BESSCH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/DECS_400/DECS_400.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/DECS_400/DECS_400.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/DECS_400/DECS_400_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/DECS_400/DECS_400_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/EAA/EAA.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/EAA/EAA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/EX2100/EX2100_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_BSV_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/EX2100/EX2100_BSV_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/EX2100/EX2100_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/EX2100/EX2100_static_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSDE/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/Hydrot/Hydrot.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/Hydrot/Hydrot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/KOSUR2/KOSUR2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/KOSUR2/KOSUR2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/KOSUR2/KOSUR2_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/KOSUR2/KOSUR2_BSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/Mitsubishi/Mitsubishi.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSDP1/ARVSDP1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/Prismic/Prismic.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/Prismic/Prismic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/Semipol/Semipol.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/Semipol/Semipol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/THYNE_4/THYNE_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYNE_4/THYNE_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/THYNE_4/THYNE_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/STyr.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/THYRIPOL/STyr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/THYRIPOL_6RV80_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/THYRIPOL/THYRIPOL_6RV80_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/THYRIPOL_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/THYRIPOL/THYRIPOL_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/THYRIPOL/Thyripol6RV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/THYRIPOL/Thyripol6RV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U1020/U1020.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U1020/U1020.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U1020/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AC5B/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U1020_lite/u1020_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U1020_lite/u1020_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U5000/U5000.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U5000/U5000.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U5000/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AC8B/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U6800/U6800.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U6800/U6800.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U6800/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV2M/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/U6800_lite/u6800_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/UNITROL/U6800_lite/u6800_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/UNITROL_F/UNITROL_F.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/UNITROL/UNITROL_F/UNITROL_F.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/UNITROL_F/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV3M/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/UNITROL/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV4M/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVNL/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameter_ARVSDP1.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVSDS/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/basket/Parameters_AC5B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/basket/Parameters_ARV3M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/Parameters_ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/basket/Parameters_ARV_REM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/basket/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARVP/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/gglite/gglite.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/gglite/gglite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/CustomModels/gglite/gglite_strs.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/gglite/gglite_strs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Delete/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Delete/delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Getting/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_ARV3M.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TutorialPython/test_prettytable.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/test_prettytable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +161,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BARS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="timeTracker.activityTracker" value="null" />
     <property name="timeTracker.comment" value="" />
     <property name="timeTracker.inactivityPeriodInMills" value="600000" />
@@ -91,11 +196,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS" />
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\TutorialPython" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript\macroMSK" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript" />
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsHTML" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\Eurostag" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\VBScript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3" />
@@ -105,8 +210,8 @@
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.regim">
-    <configuration name="AstraRastr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.MDP_analysis">
+    <configuration name="MDP_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,11 +219,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/MDP_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,49 +232,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Calculation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="regim" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Calculation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_Emoje" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="catalog" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,7 +244,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_Emoje.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/catalog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,7 +253,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_texttable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="panda_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,7 +265,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_texttable.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/panda_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_list-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_list-2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_prettytable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_prettytable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -213,11 +318,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.regim" />
-        <item itemvalue="Python.test_Emoje" />
-        <item itemvalue="Python.dynamic" />
-        <item itemvalue="Python.AstraRastr" />
-        <item itemvalue="Python.test_texttable" />
+        <item itemvalue="Python.MDP_analysis" />
+        <item itemvalue="Python.catalog" />
+        <item itemvalue="Python.panda_test" />
+        <item itemvalue="Python.test_list-2" />
+        <item itemvalue="Python.test_prettytable" />
       </list>
     </recent_temporary>
   </component>
@@ -232,13 +337,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00186" summary="Run Macro">
-      <created>1623055244154</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1623055244154</updated>
     </task>
     <task id="LOCAL-00187" summary="Add testing code DFWTHYNE14_Filling.py">
       <created>1623070015771</created>
@@ -576,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634145725495</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="Corr Calculation">
+      <created>1634194642610</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1634194642610</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +697,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Thyripol6RV.py" />
     <MESSAGE value="Add u6800_lite.py" />
     <MESSAGE value="Add u1020_lite.py" />
     <MESSAGE value="Add EX2100_BSV_lite.py" />
@@ -617,7 +721,8 @@
     <MESSAGE value="Add class VariableSettingsDynamic" />
     <MESSAGE value="Corr Daynamic" />
     <MESSAGE value="General adjustments of all modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="General adjustments of all modules" />
+    <MESSAGE value="Corr Calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corr Calculation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
