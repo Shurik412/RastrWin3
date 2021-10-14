@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
+from prettytable import PrettyTable
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tools.tools import separator_noun
-from RastrWinLib.tools.tools import Tools
 
 
 class Equivalent:
@@ -14,7 +13,6 @@ class Equivalent:
                  rastr_win=RASTR,
                  switch_command_line: bool = False):
         f"""
-
         :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param switch_command_line: True/False - вывод сообщений в протокол.
         """
@@ -24,15 +22,19 @@ class Equivalent:
     def __bool__(self):
         return self.switch_command_line
 
-    def ekv(self, par=""):
+    def ekv(self, par: str = ""):
         kod = self.rastr_win.Ekv(par)
-        if self.switch_command_line is not False:
-            print(Tools.separator_noun)
-            print(f'Запуск "Эквивалентирование режима":')
-            print(f'\tСообщение о результатх расчета УР: {kod}')
-            if kod != 0:
-                print('\t\tРежим не сбалансирован!')
-            elif kod == 0:
-                print('\t\tРасчет УР завершен успешно!')
-            print(Tools.separator_noun)
+        if self.switch_command_line:
+            self.messageResult(kod)
+        return kod
+
+    def messageResult(self, kod):
+        pt = PrettyTable()
+        pt.field_names = ['Описание', 'Параметр']
+        pt.add_row(['Запуск "Эквивалентирование режима', ''])
+        if kod != 0:
+            pt.add_row(['Сообщение о результатх расчета УР', 'Режим не сбалансирован!'])
+        elif kod == 0:
+            pt.add_row(['Сообщение о результатх расчета УР', 'Расчет УР завершен успешно!'])
+        print(pt)
         return kod

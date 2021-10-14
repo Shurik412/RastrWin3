@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Equivalent/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/test_Emoje.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Delete/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Delete/delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Getting/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Getting/get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/directory_rastrwin/DirFileAndName.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/directory_rastrwin/DirFileAndName.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/export/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/ExportResults/export_data_rustab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/Equvivalent_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/Equvivalent_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/RemovingSwitches.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/RemovingSwitches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Equivalent/FunctionsEquivalent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +98,14 @@
       <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\VBScript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript\macroMSK" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\CustomModels\UNITROL" />
-      <recent name="L:\SER\Охрименко\Project_Py3\RastrWin3\RastrWinLib\GraphicsRegime\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dynamic">
+  <component name="RunManager" selected="Python.regim">
     <configuration name="AstraRastr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,27 +119,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dynamic (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RastrWin3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Settings" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,7 +148,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_pandas (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="regim" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RastrWin3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Calculation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Calculation/regim.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_Emoje" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -179,7 +181,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_pandas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_Emoje.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -211,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.regim" />
+        <item itemvalue="Python.test_Emoje" />
         <item itemvalue="Python.dynamic" />
         <item itemvalue="Python.AstraRastr" />
         <item itemvalue="Python.test_texttable" />
-        <item itemvalue="Python.dynamic (1)" />
-        <item itemvalue="Python.test_pandas (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -230,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00185" summary="Full corr RastrWin3">
-      <created>1622814376317</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1622814376317</updated>
     </task>
     <task id="LOCAL-00186" summary="Run Macro">
       <created>1623055244154</created>
@@ -574,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634144051455</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <task id="LOCAL-00234" summary="General adjustments of all modules">
+      <created>1634145725495</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1634145725495</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +592,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add THYNE_1.py" />
     <MESSAGE value="Add Thyripol6RV.py" />
     <MESSAGE value="Add u6800_lite.py" />
     <MESSAGE value="Add u1020_lite.py" />
@@ -615,7 +616,8 @@
     <MESSAGE value="Add class GetSettingsDynamic" />
     <MESSAGE value="Add class VariableSettingsDynamic" />
     <MESSAGE value="Corr Daynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr Daynamic" />
+    <MESSAGE value="General adjustments of all modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="General adjustments of all modules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

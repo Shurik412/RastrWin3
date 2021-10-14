@@ -5,9 +5,9 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Settings.dynamic import GetSettingsDynamic, VariableSettingsDynamic
 
 
-class Dynamic(VariableSettingsDynamic, GetSettingsDynamic, PrettyTable):
+class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
     """
-    Class
+    Расчет Электро Механических Переходных Процессов (ЭМехПП)
     """
 
     def __init__(self, rastr_win=RASTR, calc_time: float = 1.0, snap_max_count: int = 1,
@@ -24,15 +24,18 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic, PrettyTable):
         self.rastr_win = rastr_win
         self.calc_time = calc_time
         self.snap_max_count = snap_max_count
+        self.switch_command_line = switch_command_line
 
         self.FWDynamic = self.rastr_win.FWDynamic()
         self.TimeReached = self.FWDynamic.TimeReached  # Вывод времени, достигнутого в расчете
-        self.switch_command_line = switch_command_line
 
         if self.snap_max_count == 1.0:
             VariableSettingsDynamic.SnapMaxCount(self, value=self.snap_max_count)
         else:
             print(f'snap_max_count больше 1.0 => {GetSettingsDynamic.SnapMaxCount(self)}')
+
+    def __bool__(self):
+        return self.switch_command_line
 
     def change_calc_time(self):
         VariableSettingsDynamic.Tras(self, value=self.calc_time)
@@ -42,7 +45,8 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic, PrettyTable):
 
     def run(self):
         self.FWDynamic.Run()
-        self.messageResult()
+        if self.switch_command_line:
+            self.messageResult()
 
     def messageResult(self):
         ResultMessage = self.FWDynamic.ResultMessage  # Вывод сообщения о результатах расчета
@@ -50,7 +54,6 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic, PrettyTable):
         pt.field_names = ['Описание', 'Параметр']
         pt.add_row(['Время расчета для динамики', f'{GetSettingsDynamic.Tras(self)} cек.'])
         pt.add_row(['Сообщение о результатх расчета ЭМПП', ResultMessage])
-
         if ResultMessage == '':
             pt.add_row(['Расчет завершен успешно, потери синхронизма не выявлено.', ''])
         elif ResultMessage == 0:
