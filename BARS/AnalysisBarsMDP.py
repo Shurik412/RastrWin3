@@ -10,7 +10,7 @@ from pandas import read_csv
 # ROOT_PATH = os.getcwd()
 
 
-def create_csv(path_read, path_save='ogersech_new.csv'):
+def create_csv(path_read, path_save='ogrsech_new.csv'):
     list_one = []
     list_three = []
     with open(path_read, newline='') as File:
