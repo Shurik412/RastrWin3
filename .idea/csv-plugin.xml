@@ -17,20 +17,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\BARS\ogersech_new.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\BARS\ogrsech123.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\TutorialPython\csv_test.csv">
           <value>
             <Attribute>

@@ -6,11 +6,11 @@
 # 2.Релейная форсировка: AVR-2M_RF.xmldev.
 # Параметры модели AVR-2M_res.xmldev заносятся в таблицу «АРВ (ИД)».
 
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Getting.get import GettingParameter
-from RastrWinLib.tools.tools import separator_two
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tools.tools import separator_two
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 class Parameters:

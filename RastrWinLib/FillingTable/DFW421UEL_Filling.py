@@ -2,8 +2,8 @@
 # Модуль заполнения таблицы  "ОМВ" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Dynamic.DFW421UEL import DFW421UEL, DFW421UEL_Description
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.DFW421UEL import DFW421UEL, DFW421UEL_Description
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def filling_DFW421UEL(
@@ -242,7 +242,7 @@ def filling_DFW421UEL(
 
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.tables.Dynamic.DFW421UEL import DFW421UEL
+    from RastrWinLib.Tables.Dynamic.DFW421UEL import DFW421UEL
     from RastrWinLib.loading.load import load_file
     from RastrWinLib.loading.save import save_file
     from RastrWinLib.loading.shablon import Shabl

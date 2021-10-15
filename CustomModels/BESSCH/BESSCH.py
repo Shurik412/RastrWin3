@@ -3,7 +3,7 @@
 # 1.Возбудитель: BESSCH.xmldev.
 # Параметры модели BESSCH.xmldev заносятся в таблицу «Возбудитель (ИД)».
 
-from RastrWinLib.tables.Dynamic.Exciter import Exciter
+from RastrWinLib.Tables.Dynamic.Exciter import Exciter
 
 
 class Parameters:

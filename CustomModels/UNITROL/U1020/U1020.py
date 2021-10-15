@@ -2,7 +2,7 @@
 # Модель системы возбуждения типа UNITROL 1020 (ABB), реализованная в ПК RUSTab, состоит из одного макроблока:
 # 1. Система возбуждения: Unitrol 1020.xmldev (таблица 39).
 # Параметры модели Unitrol 1020.xmldev заносятся в таблицу «ВозбудителиIEEE».
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 
 
 class Parameters:

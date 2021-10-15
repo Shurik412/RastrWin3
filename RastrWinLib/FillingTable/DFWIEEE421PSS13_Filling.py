@@ -2,8 +2,8 @@
 # Модуль заполнения таблицы  "Стабилизаторы IEEE 1-3" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Dynamic.DFWIEEE421PSS13 import DFWIEEE421PSS13, DFWIEEE421PSS13_Description
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.DFWIEEE421PSS13 import DFWIEEE421PSS13, DFWIEEE421PSS13_Description
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def filling_DFWIEEE421PSS13(
@@ -341,7 +341,7 @@ if __name__ == '__main__':
     from RastrWinLib.loading.load import load_file
     from RastrWinLib.loading.save import save_file
     from RastrWinLib.loading.shablon import Shabl
-    from RastrWinLib.tables.Dynamic.DFWIEEE421PSS13 import DFWIEEE421PSS13
+    from RastrWinLib.Tables.Dynamic.DFWIEEE421PSS13 import DFWIEEE421PSS13
 
     load_file(rastr_win=RASTR,
               file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',

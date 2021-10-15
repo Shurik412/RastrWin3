@@ -5,7 +5,7 @@ from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.FillingTable.ARV_Filling import filling_ExcControl
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 
 file_rst_dir = r'C:\Users\Ohrimenko_AG\Desktop\test_filling'
 file_name = r'\test.rst'

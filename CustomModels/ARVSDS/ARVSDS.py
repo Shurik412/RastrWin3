@@ -6,7 +6,7 @@
 # Типовые значение параметров настройки, приняты экспертно.
 # В случае наличия, необходимо использовать фактические параметры настройки.
 
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 
 
 class Parameters:

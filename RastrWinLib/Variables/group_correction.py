@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tools.tools import Tools
+from RastrWinLib.Tools.tools import Tools
 
 
 class GroupCorr:

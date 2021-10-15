@@ -2,8 +2,8 @@
 # Модуль заполнения таблицы  "АРВ(ИД)" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl, ExcControlDescription
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl, ExcControlDescription
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def filling_ExcControl(

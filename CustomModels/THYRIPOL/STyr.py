@@ -6,11 +6,11 @@
 # 2. Системный стабилизатор: STPSS.xmldev (таблица 35).
 # Параметры модели STyr.xmldev заносятся в таблицу «ВозбудителиIEEE».
 
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Getting.get import GettingParameter
-from RastrWinLib.tools.tools import separator_two
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tools.tools import separator_two
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 class Parameters:

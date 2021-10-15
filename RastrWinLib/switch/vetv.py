@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Vetv.vetv import Vetv
-from RastrWinLib.tools.tools import Tools
+from RastrWinLib.Tables.Vetv.vetv import Vetv
+from RastrWinLib.Tools.tools import Tools
 
 
 class SwitchVetv:

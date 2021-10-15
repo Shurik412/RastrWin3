@@ -2,8 +2,8 @@
 # Модуль заполнения таблицы  "Возбудитель DECS-400" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Dynamic.DECS_400 import DFWDECS400, DFWDECS400_Description
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.DECS_400 import DFWDECS400, DFWDECS400_Description
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def filling_DECS400(
@@ -230,7 +230,7 @@ if __name__ == '__main__':
     from RastrWinLib.loading.load import load_file
     from RastrWinLib.loading.save import save_file
     from RastrWinLib.loading.shablon import Shabl
-    from RastrWinLib.tables.Dynamic.DECS_400 import DFWDECS400
+    from RastrWinLib.Tables.Dynamic.DECS_400 import DFWDECS400
 
     load_file(rastr_win=RASTR,
               file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',

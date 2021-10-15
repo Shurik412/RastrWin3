@@ -4,11 +4,11 @@
 # реализованная в ПК RUSTab, состоит одного макроблока.
 # Параметры системы возбуждения AC5B.xmldev заносятся в ПК RUSTab в таблицу «ВозбудителиIEEE».
 
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Getting.get import GettingParameter
-from RastrWinLib.tools.tools import separator_two
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tools.tools import separator_two
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 class Parameters:

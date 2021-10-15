@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.Calculation.regim import SteadyState
-from RastrWinLib.tables.area.area import Area
+from RastrWinLib.Tables.area.area import Area
 from RastrWinLib.selection.selection import Selection
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Calculation.equivalent import Equivalent

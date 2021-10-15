@@ -3,7 +3,7 @@
 # реализованная в ПК RUSTab, состоит из одного макроблока:
 # 1. Система возбуждения: EX2100br simp.xmldev (таблица 71).
 # Параметры модели EX2100br simp.xmldev заносятся в таблицу «ВозбудителиIEEE».
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 
 
 class Parameters:

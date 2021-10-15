@@ -4,9 +4,9 @@ from openpyxl import load_workbook
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.tables.Scenario.DFWAutoActionScn import DFWAutoActionScn
-from RastrWinLib.tables.Scenario.DFWAutoLogicScn import DFWAutoLogicScn
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Scenario.DFWAutoActionScn import DFWAutoActionScn
+from RastrWinLib.Tables.Scenario.DFWAutoLogicScn import DFWAutoLogicScn
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def create_file_scn(WorkSheet):

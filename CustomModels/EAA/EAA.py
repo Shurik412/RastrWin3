@@ -5,7 +5,7 @@
 # 2.Релейная форсировка возбуждения: EAA_RF.xmldev.
 # Параметры модели EAA.xmldev заносятся в таблицу «АРВ (ИД)».
 
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 
 
 class Parameters:

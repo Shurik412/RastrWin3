@@ -2,7 +2,7 @@
 from time import time, localtime, strftime
 from prettytable import PrettyTable
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tools.tools import Tools
+from RastrWinLib.Tools.tools import Tools
 
 
 class SteadyState:

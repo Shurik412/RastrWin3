@@ -3,8 +3,8 @@ from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.tables.tables_attributes import vetv_table, node_table
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.tables_attributes import vetv_table, node_table
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 load_file(file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\02-БРМ Зима максимум [уст].rg2',
           shabl=Shabl.shablon_file_regime, switch_command_line=True)

@@ -3,7 +3,7 @@
 # 1.Система возбуждения: Prismic.xmldev.
 # Параметры модели Prismic.xmldev заносятся в таблицу «ВозбудителиIEEE».
 # Типовые значение параметров настройки, приняты экспертно.
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 
 
 class Parameters:

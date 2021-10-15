@@ -11,8 +11,8 @@ from RastrWinLib.excel.chart import ChartExcelOtherSheet
 from RastrWinLib.ExportResults.export_data_rustab import ExportDataRUSTab
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.tables.Node.node import Node
-from RastrWinLib.tables.Vetv.vetv import Vetv
+from RastrWinLib.Tables.Node.node import Node
+from RastrWinLib.Tables.Vetv.vetv import Vetv
 from create_file_scn import CreateActionsSCN
 
 file_excel = r'L:\SER\Охрименко\03. RastrWin3\19\ВЛ 500 кВ Нововоронежская АЭС – Воронежская.xlsx'

@@ -3,7 +3,7 @@
 # 1.Система возбуждения: STyr simp.xmldev.
 # Параметры модели STyr simp.xmldev заносятся в таблицу «ВозбудителиIEEE».
 
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 
 
 class Parameters:

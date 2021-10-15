@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Dynamic.Generator import Generator
-from RastrWinLib.tools.tools import Tools
+from RastrWinLib.Tables.Dynamic.Generator import Generator
+from RastrWinLib.Tools.tools import Tools
 
 
 class SwitchGenerator:

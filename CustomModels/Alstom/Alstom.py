@@ -3,7 +3,7 @@
 # реализованная в ПК RUSTab, состоит из одного макроблока:
 # 1.Система возбуждения: Alstom2 simp.xmldev.
 # Параметры модели Alstom2 simp.xmldev заносятся в таблицу «ВозбудителиIEEE».
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 
 
 class Parameters:

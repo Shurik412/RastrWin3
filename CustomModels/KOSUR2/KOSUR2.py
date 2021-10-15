@@ -3,7 +3,7 @@
 # реализованная в ПК RUSTab, состоит из одного макроблока:
 # 1.АРВ: KOSUR2.xmldev.
 # Параметры модели KOSUR2.xmldev заносятся в таблицу «АРВ (ИД)».
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 
 
 class Parameters:

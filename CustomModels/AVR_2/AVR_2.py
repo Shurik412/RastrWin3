@@ -7,7 +7,7 @@
 # Типовые значение параметров настройки, приняты согласно информации
 # от производителя системы возбуждения. В случае наличия листинга настроек
 # для конкретного энергообъекта необходимо использовать фактические параметры настройки.
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 
 
 class Parameters:

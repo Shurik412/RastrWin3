@@ -3,7 +3,7 @@ from os import path
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.tools.tools import Tools
+from RastrWinLib.Tools.tools import Tools
 
 
 def save_file(rastr_win=RASTR,

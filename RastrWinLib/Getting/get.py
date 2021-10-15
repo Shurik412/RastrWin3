@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
-from RastrWinLib.tables.Dynamic.Generator import Generator
-from RastrWinLib.tables.Node.node import Node
-from RastrWinLib.tables.Vetv.vetv import Vetv
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.Generator import Generator
+from RastrWinLib.Tables.Node.node import Node
+from RastrWinLib.Tables.Vetv.vetv import Vetv
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tools.tools import Tools
+from RastrWinLib.Tools.tools import Tools
 
 
 class GettingParameter:

@@ -1,10 +1,10 @@
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Getting.get import GettingParameter
-from RastrWinLib.tables.Dynamic.Generator import Generator
-from RastrWinLib.tables.Node.node import Node
-from RastrWinLib.tables.Vetv.vetv import Vetv
-from RastrWinLib.variables.variable_parametrs import FindNextSel, FindNextSel_ROW
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.Generator import Generator
+from RastrWinLib.Tables.Node.node import Node
+from RastrWinLib.Tables.Vetv.vetv import Vetv
+from RastrWinLib.Variables.variable_parametrs import FindNextSel, FindNextSel_ROW
+from RastrWinLib.Variables.variable_parametrs import Variable
 from RastrWinLib.selection.selection import selection
 
 

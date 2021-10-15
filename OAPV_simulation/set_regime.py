@@ -4,12 +4,12 @@ from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.tables.Dynamic.Generator import Generator
-from RastrWinLib.tables.Node.node import Node
-from RastrWinLib.tables.Vetv.vetv import Vetv
-from RastrWinLib.tables.area.area import Area
-from RastrWinLib.variables.group_correction import GroupCorr
-from RastrWinLib.variables.variable_parametrs import FindNextSel, Variable
+from RastrWinLib.Tables.Dynamic.Generator import Generator
+from RastrWinLib.Tables.Node.node import Node
+from RastrWinLib.Tables.Vetv.vetv import Vetv
+from RastrWinLib.Tables.area.area import Area
+from RastrWinLib.Variables.group_correction import GroupCorr
+from RastrWinLib.Variables.variable_parametrs import FindNextSel, Variable
 from RastrWinLib.switch.vetv import SwitchVetv
 
 dir_file = r'L:\SER\Охрименко\03. RastrWin3\18'

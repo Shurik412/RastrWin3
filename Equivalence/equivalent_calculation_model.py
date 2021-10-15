@@ -8,7 +8,7 @@ from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
 from RastrWinLib.loading.shablon import shablon_file_regime
 from RastrWinLib.Settings.equivalence import set_com_ekviv
-from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
+from RastrWinLib.Variables.removal_marked_objects import RemoveSelObjects
 from gen_equivalent import equivalent_gen
 # from gen_equivalent import equivalent_smart
 

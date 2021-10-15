@@ -1,4 +1,4 @@
-from RastrWinLib.tools.timer import timethis
+from RastrWinLib.Tools.timer import timethis
 
 
 @timethis

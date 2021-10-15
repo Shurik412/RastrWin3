@@ -6,7 +6,7 @@
 # Типовые значение параметров настройки, приняты согласно информации от
 # производителя системы возбуждения. В случае наличия листинга настроек для
 # конкретного энергообъекта необходимо использовать фактические параметры настройки.
-from RastrWinLib.tables.Dynamic.ExcControl import ExcControl
+from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 
 
 class Parameters:

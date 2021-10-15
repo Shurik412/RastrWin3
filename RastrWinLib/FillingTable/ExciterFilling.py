@@ -2,8 +2,8 @@
 # Модуль заполнения таблицы  "Возбудитель (ИД)" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Dynamic.Exciter import Exciter, ExciterDescription
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.Exciter import Exciter, ExciterDescription
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def filling_exciter(
@@ -201,7 +201,7 @@ if __name__ == '__main__':
     from RastrWinLib.loading.load import load_file
     from RastrWinLib.loading.save import save_file
     from RastrWinLib.loading.shablon import Shabl
-    from RastrWinLib.tables.Dynamic.Exciter import Exciter
+    from RastrWinLib.Tables.Dynamic.Exciter import Exciter
 
     load_file(rastr_win=RASTR,
               file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',

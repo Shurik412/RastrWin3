@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.tables.Node.node import Node
-from RastrWinLib.tables.Vetv.vetv import Vetv
-from RastrWinLib.variables.group_correction import GroupCorr
+from RastrWinLib.Tables.Node.node import Node
+from RastrWinLib.Tables.Vetv.vetv import Vetv
+from RastrWinLib.Variables.group_correction import GroupCorr
 
 
 def selection(switch_command_line=False):

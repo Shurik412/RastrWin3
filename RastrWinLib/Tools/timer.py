@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import time
 from functools import wraps
-from RastrWinLib.tools.tools import changing_number_of_semicolons
+from RastrWinLib.Tools.tools import changing_number_of_semicolons
 
 
 def timethis(func):

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.tables.Settings.com_dynamics import ComDynamics
+from RastrWinLib.Tables.Settings.com_dynamics import ComDynamics
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Getting.get import GettingParameter
-from RastrWinLib.tools.tools import Tools
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tools.tools import Tools
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def set_dynamic(

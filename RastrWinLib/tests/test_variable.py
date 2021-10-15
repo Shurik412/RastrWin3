@@ -1,7 +1,7 @@
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.save import save_file
-from RastrWinLib.tables.Dynamic.Generator import Generator, GeneratorsDescription
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.Generator import Generator, GeneratorsDescription
+from RastrWinLib.Variables.variable_parametrs import Variable
 from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.loading.shablon import Shabl
 from RastrWinLib.AstraRastr import RASTR

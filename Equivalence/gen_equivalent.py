@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-import RastrWinLib.tables.Vetv.vetv as vetv
+import RastrWinLib.Tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Calculation.equivalent import Equivalent
 from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.Settings.equivalence import set_com_ekviv
-from RastrWinLib.tables.tables_attributes import node_table, vetv_table, node_attributes_list
-from RastrWinLib.variables.group_correction import GroupCorr
-from RastrWinLib.variables.removal_marked_objects import RemoveSelObjects
-from RastrWinLib.variables.variable_parametrs import Variable
+from RastrWinLib.Tables.tables_attributes import node_table, vetv_table, node_attributes_list
+from RastrWinLib.Variables.group_correction import GroupCorr
+from RastrWinLib.Variables.removal_marked_objects import RemoveSelObjects
+from RastrWinLib.Variables.variable_parametrs import Variable
 
 
 def equivalent_gen(viborka_gen):

@@ -38,10 +38,15 @@ def create_csv(path_read, path_save='ogrsech_new.csv'):
     data_sech_10 = data[data.sech == 10]
     data_sech_19 = data[data.sech == 19]
 
-    update_sech_2 = data_sech_2.drop([data_sech_2.index[23]])
-    update_sech_18 = data_sech_18.drop([data_sech_18.index[23]])
-    update_sech_10 = data_sech_10.drop([data_sech_10.index[23]])
-    update_sech_19 = data_sech_19.drop([data_sech_19.index[23]])
+    # update_sech_2 = data_sech_2.drop([data_sech_2.index[23]])
+    # update_sech_18 = data_sech_18.drop([data_sech_18.index[23]])
+    # update_sech_10 = data_sech_10.drop([data_sech_10.index[23]])
+    # update_sech_19 = data_sech_19.drop([data_sech_19.index[23]])
+
+    update_sech_2 = data_sech_2
+    update_sech_18 = data_sech_18
+    update_sech_10 = data_sech_10
+    update_sech_19 = data_sech_19
 
     update_sech_2.to_csv("file_bars_mdp_sech_csv/date_sech_2.csv")
     update_sech_18.to_csv("file_bars_mdp_sech_csv/date_sech_18.csv")

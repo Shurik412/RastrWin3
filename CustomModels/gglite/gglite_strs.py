@@ -4,7 +4,7 @@
 # 1.Автоматический регулятор скорости: gglite_strs.xmldev.
 # Параметры модели gglite_strs.xmldev заносятся в таблицу «Турбины(ИД)».
 # Типовые значение параметров настройки, приняты экспертно.
-from RastrWinLib.tables.Dynamic.ARS import ARS
+from RastrWinLib.Tables.Dynamic.ARS import ARS
 
 
 class Parameters:

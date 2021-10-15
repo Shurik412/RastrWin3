@@ -4,7 +4,7 @@
 # 1. Система возбуждения: Alstom2 simp.xmldev (таблица 68).
 # Параметры модели Alstom2 simp.xmldev заносятся в таблицу «ВозбудителиIEEE».
 
-from RastrWinLib.tables.Dynamic.DFWIEEE421 import DFWIEEE421
+from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 
 
 class Parameters:

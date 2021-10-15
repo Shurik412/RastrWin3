@@ -1,7 +1,7 @@
 from RastrWinLib.Getting.get import GettingParameter
 from RastrWinLib.loading.load import load_file
 from RastrWinLib.loading.shablon import Shabl
-import RastrWinLib.tables.Dynamic.ExcControl as ExcControl
+import RastrWinLib.Tables.Dynamic.ExcControl as ExcControl
 from RastrWinLib.AstraRastr import RASTR
 
 file = r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst'
