@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.ActionsObject.GroupCorrection import GroupCorr
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.Variables.group_correction import GroupCorr
 
 
 def selection(switch_command_line=False):
@@ -26,13 +25,13 @@ def selection(switch_command_line=False):
 
 
 if __name__ == '__main__':
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.save import save_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
+    from RastrWinLib.Load.save import save_file
+    from RastrWinLib.Load.shablon import Shabl
     from RastrWinLib.AstraRastr import RASTR
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\БРМ 2021 версия 4\БРМ лето 2020 минимум_4.rg2',
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\БРМ 2021 версия 4\БРМ лето 2020 минимум_4.rg2',
               shabl=Shabl.shablon_file_regime)
 
     selection(switch_command_line=False)

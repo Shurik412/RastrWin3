@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-from openpyxl import load_workbook
 
-from RastrWinLib.loading.load import load_file
-from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import Shabl
+from RastrWinLib.Load import load_file
+from RastrWinLib.Load.save import save_file
+from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.Tables.Scenario.DFWAutoActionScn import DFWAutoActionScn
 from RastrWinLib.Tables.Scenario.DFWAutoLogicScn import DFWAutoLogicScn
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 def create_file_scn(WorkSheet):
@@ -554,7 +553,6 @@ class CreateActionsSCN(Variable):
 
 
 if __name__ == '__main__':
-    import win32com.client
     from openpyxl import load_workbook
 
     wb = load_workbook(
@@ -566,10 +564,10 @@ if __name__ == '__main__':
     wb.save(filename='L:\\SER\\Охрименко\\03. RastrWin3\\19\\ВЛ 500 кВ Нововоронежская АЭС – Воронежская.xlsx')
 
     # from openpyxl import load_workbook
-    # from RastrWinLib.loading.shablons_dir import shablon_file_scenario
-    # from RastrWinLib.loading.save_file_rastrwin import save_file
-    # from RastrWinLib.loading.load_file_rastrwin import load_file
-    # from RastrWinLib.loading.shablon import Shabl
+    # from RastrWinLib.Load.shablons_dir import shablon_file_scenario
+    # from RastrWinLib.Load.save_file_rastrwin import save_file
+    # from RastrWinLib.Load.load_file_rastrwin import load_file
+    # from RastrWinLib.Load.shablon import Shabl
     #
     # rastr = win32com.client.Dispatch('Astra.Rastr')
     # load_file(rastr_win=rastr, shabl=Shabl.shablon_file_scenario)

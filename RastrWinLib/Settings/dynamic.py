@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.Tables.Settings.com_dynamics import ComDynamics
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Getting.get import GettingParameter
-from RastrWinLib.Tools.tools import Tools
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.ActionsObject.Variable import Variable
+
+from prettytable import PrettyTable
 
 
 def set_dynamic(
@@ -439,77 +440,52 @@ def set_dynamic(
                                                       column=ComDynamics.EventProcess,
                                                       row_id=0)
 
-    if switch_command_line is not False:
-        print(
-            f'{Tools.separator_noun}\n'
-            f' Параметры настройки "Общие данные для расчета динамики" (таблица: {ComDynamics.table}):\n\n'
-            f'- t_ras: Время расчета: Tras "до" = {get_t_ras}; "после" = {get_t_ras_after};\n'
-            f'- h_int: Начальный шаг интегрирования: H_инт "до" = {get_h_int}; "после" = {get_h_int_after};\n'
-            f'- h_min: Минимальный шаг интегрирования: H_мин "до" = {get_h_min}; "после" = {get_h_min_after};\n'
-            f'- h_max: Максимальный шаг интегрирования: H_макс "до" = {get_h_max}; "после" = {get_h_max_after};\n'
-            f'- h_out: Шаг печати: H_печ до = {get_h_out}; "после" = {get_h_out_after};\n'
-            f'- mint: Основной метод интегрирования: Осн.Метод "до" = {get_mint}; "после" = {get_mint_after};\n'
-            f'- smint: Стартовый метод интегрирования: Старт.Метод "до" = {get_smint}; "после" = {get_smint_after};\n'
-            f'- int_epsilon: Точность шага интегрирования: dInt "до" = {get_int_epsilon}; "после" = {get_int_epsilon_after};\n'
-            f'- inform_on_step_change: Информировать об изменении шага: Выводить шаг "до" = {get_inform_on_step_change}; "после" = {get_inform_on_step_change_after};\n'
-            f'- tf: Постоянная сглаживания угловой скорости (частоты) узла: Tf "до" = {get_tf}; "после" = {get_tf_after};\n'
-            f'- dEf: Точность балансировки эдс при учете явнополюсности: dEf "до" = {get_def}; "после" = {get_def_after};\n'
-            f'- npf: Макс число пересчетов УР на шаге при учете явнополюсности: Ит "до" = {get_npf}; "после" = {get_npf_after};\n'
-            f'- valid: Контроль входных параметров: Контр. "до" = {get_valid}; "после" = {get_valid_after};\n'
-            f'- dempfrec: Демпфирование в уравнениях движения: Демпф "до" = {get_dempfrec}; "после" = {get_dempfrec_after};\n'
-            f'- corrT: Корректировать Т в парковских моделях: Корр Т "до" = {get_corr_t}; "после" = {get_corr_t_after};\n'
-            f'- is_demp: Учет демп. момента в моделях с демп контурами: Уч Демп "до" = {get_is_demp}; "после" = {get_is_demp_after};\n'
-            f'- frSXNtoY: Напряжения перехода с СХН на шунт: V_минСХРН "до" = {get_frsxntoy}; "после" = {get_frsxntoy_after};\n'
-            f'- SXNTolerance: Допустимый небаланс СХН: SXNTol "до" = {get_sxntolerance}; "после" = {get_sxntolerance_after};\n'
-            f'- SnapPath: Выходной каталог файлов результатов: Кат. результатов "до" = {get_snap_path}; "после" = {get_snap_path_after};\n'
-            f'- MaxResultFiles: Максимальное кол-во файлов результатов: Макс. файлов "до" = {get_max_result_files}; "после" = {get_max_result_files_after};\n'
-            f'- SnapTemplate: Шаблон имени выходного файла: Шаблон имени "до" = {get_snap_template}; "после" = {get_snap_template_after};\n'
-            f'- SnapAutoLoad: Автозагрузка последнего результата: Автозагрузка "до" = {get_snap_auto_load}; "после" = {get_snap_auto_load_after};\n'
-            f'- SnapMaxCount: Максимальное кол-во слотов результатов: Макс. рез-тов "до" = {get_snap_max_count}; "после" = {get_snap_max_count_after};\n'
-            f'- TripGeneratorOnSpeed: Отключать генератор при превышении скорости %: Уставка автоматов безопасности "до" = {get_trip_generator_on_speed}; "после" = {get_trip_generator_on_speed_after};\n'
-            f'- PickupDropout: Информировать о пуске/возврате автоматики: Информировать о пуске/возврате автоматики "до" = {get_pickup_dropout}; "после" = {get_pickup_dropout_after};\n'
-            f'- RealtimeCSV: Выводить контролируемые величины в CSV: Выводить контролируемые величины в CSV "до" = {get_realtime_csv}; "после" = {get_realtime_csv_after};\n'
-            f'- PeriodAngle: Отображать углы в диапазоне +/-180: Отображать углы в диапазоне +/-180 "до" = {get_period_angle}; "после" = {get_period_angle_after};\n'
-            f'- ResultFlowDirection: Положительное направление результатов: Положительное направление результатов "до" = {get_result_flow_direction}; "после" = {get_result_flow_direction_after};\n'
-            f'- TreatWarningsAsErrors: Считать предупреждения ошибками: Предупреждение=Ошибка "до" = {get_treat_warnings_as_errors}; "после" = {get_treat_warnings_as_errors_after};\n'
-            f'- EventProcess: Метод обработки дискретных изменений: Дискретные изменения "до" = {get_event_process}; "после" = {get_event_process_after};\n'
-            f'{Tools.separator_noun}\n'
-        )
-    return (
-        f'{Tools.separator_noun}\n'
-        f' Параметры настройки "Общие данные для расчета динамики" (таблица: {ComDynamics.table}):\n'
-        f'- t_ras: Время расчета: Tras "до" = {get_t_ras}; "после" = {get_t_ras_after};\n'
-        f'- h_int: Начальный шаг интегрирования: H_инт "до" = {get_h_int}; "после" = {get_h_int_after};\n'
-        f'- h_min: Минимальный шаг интегрирования: H_мин "до" = {get_h_min}; "после" = {get_h_min_after};\n'
-        f'- h_max: Максимальный шаг интегрирования: H_макс "до" = {get_h_max}; "после" = {get_h_max_after};\n'
-        f'- h_out: Шаг печати: H_печ до = {get_h_out}; "после" = {get_h_out_after};\n'
-        f'- mint: Основной метод интегрирования: Осн.Метод "до" = {get_mint}; "после" = {get_mint_after};\n'
-        f'- smint: Стартовый метод интегрирования: Старт.Метод "до" = {get_smint}; "после" = {get_smint_after};\n'
-        f'- int_epsilon: Точность шага интегрирования: dInt "до" = {get_int_epsilon}; "после" = {get_int_epsilon_after};\n'
-        f'- inform_on_step_change: Информировать об изменении шага: Выводить шаг "до" = {get_inform_on_step_change}; "после" = {get_inform_on_step_change_after};\n'
-        f'- tf: Постоянная сглаживания угловой скорости (частоты) узла: Tf "до" = {get_tf}; "после" = {get_tf_after};\n'
-        f'- dEf: Точность балансировки эдс при учете явнополюсности: dEf "до" = {get_def}; "после" = {get_def_after};\n'
-        f'- npf: Макс число пересчетов УР на шаге при учете явнополюсности: Ит "до" = {get_npf}; "после" = {get_npf_after};\n'
-        f'- valid: Контроль входных параметров: Контр. "до" = {get_valid}; "после" = {get_valid_after};\n'
-        f'- dempfrec: Демпфирование в уравнениях движения: Демпф "до" = {get_dempfrec}; "после" = {get_dempfrec_after};\n'
-        f'- corrT: Корректировать Т в парковских моделях: Корр Т "до" = {get_corr_t}; "после" = {get_corr_t_after};\n'
-        f'- is_demp: Учет демп. момента в моделях с демп контурами: Уч Демп "до" = {get_is_demp}; "после" = {get_is_demp_after};\n'
-        f'- frSXNtoY: Напряжения перехода с СХН на шунт: V_минСХРН "до" = {get_frsxntoy}; "после" = {get_frsxntoy_after};\n'
-        f'- SXNTolerance: Допустимый небаланс СХН: SXNTol "до" = {get_sxntolerance}; "после" = {get_sxntolerance_after};\n'
-        f'- SnapPath: Выходной каталог файлов результатов: Кат. результатов "до" = {get_snap_path}; "после" = {get_snap_path_after};\n'
-        f'- MaxResultFiles: Максимальное кол-во файлов результатов: Макс. файлов "до" = {get_max_result_files}; "после" = {get_max_result_files_after};\n'
-        f'- SnapTemplate: Шаблон имени выходного файла: Шаблон имени "до" = {get_snap_template}; "после" = {get_snap_template_after};\n'
-        f'- SnapAutoLoad: Автозагрузка последнего результата: Автозагрузка "до" = {get_snap_auto_load}; "после" = {get_snap_auto_load_after};\n'
-        f'- SnapMaxCount: Максимальное кол-во слотов результатов: Макс. рез-тов "до" = {get_snap_max_count}; "после" = {get_snap_max_count_after};\n'
-        f'- TripGeneratorOnSpeed: Отключать генератор при превышении скорости %: Уставка автоматов безопасности "до" = {get_trip_generator_on_speed}; "после" = {get_trip_generator_on_speed_after};\n'
-        f'- PickupDropout: Информировать о пуске/возврате автоматики: Информировать о пуске/возврате автоматики "до" = {get_pickup_dropout}; "после" = {get_pickup_dropout_after};\n'
-        f'- RealtimeCSV: Выводить контролируемые величины в CSV: Выводить контролируемые величины в CSV "до" = {get_realtime_csv}; "после" = {get_realtime_csv_after};\n'
-        f'- PeriodAngle: Отображать углы в диапазоне +/-180: Отображать углы в диапазоне +/-180 "до" = {get_period_angle}; "после" = {get_period_angle_after};\n'
-        f'- ResultFlowDirection: Положительное направление результатов: Положительное направление результатов "до" = {get_result_flow_direction}; "после" = {get_result_flow_direction_after};\n'
-        f'- TreatWarningsAsErrors: Считать предупреждения ошибками: Предупреждение=Ошибка "до" = {get_treat_warnings_as_errors}; "после" = {get_treat_warnings_as_errors_after};\n'
-        f'- EventProcess: Метод обработки дискретных изменений: Дискретные изменения "до" = {get_event_process}; "после" = {get_event_process_after};\n'
-        f'{Tools.separator_noun}\n'
-    )
+    if switch_command_line:
+        pt = PrettyTable()
+        pt.title = f'Параметры настройки "Общие данные для расчета динамики" (таблица: {ComDynamics.table})'
+        pt.field_names = ['Название параметра', '"ДО"', '"ПОСЛЕ"']
+        pt.add_row(['Время расчета: Tras', get_t_ras, get_t_ras_after])
+        pt.add_row(['Начальный шаг интегрирования: H_инт', get_h_int, get_h_int_after])
+        pt.add_row(['Минимальный шаг интегрирования: H_мин', get_h_min, get_h_min_after])
+        pt.add_row(['Максимальный шаг интегрирования: H_макс', get_h_max, get_h_max_after])
+        pt.add_row(['Шаг печати: H_печ', get_h_out, get_h_out_after])
+        pt.add_row(['Основной метод интегрирования: Осн.Метод', get_mint, get_mint_after])
+        pt.add_row(['Стартовый метод интегрирования: Старт.Метод', get_smint, get_smint_after])
+        pt.add_row(['Точность шага интегрирования: dInt', get_int_epsilon, get_int_epsilon_after])
+        pt.add_row(['Информировать об изменении шага: Выводить шаг', get_inform_on_step_change,
+                    get_inform_on_step_change_after])
+        pt.add_row(['Постоянная сглаживания угловой скорости (частоты) узла: Tf', get_tf, get_tf_after])
+        pt.add_row(['Точность балансировки эдс при учете явнополюсности: dEf', get_def, get_def_after])
+        pt.add_row(['Макс число пересчетов УР на шаге при учете явнополюсности: Ит', get_npf, get_npf_after])
+        pt.add_row(['Контроль входных параметров: Контр.', get_valid, get_valid_after])
+        pt.add_row(['Демпфирование в уравнениях движения: Демпф', get_dempfrec, get_dempfrec_after])
+        pt.add_row(['Корректировать Т в парковских моделях: Корр Т', get_corr_t, get_corr_t_after])
+        pt.add_row(['Учет демп. момента в моделях с демп контурами: Уч Демп', get_is_demp, get_is_demp_after])
+        pt.add_row(['Напряжения перехода с СХН на шунт: V_минСХРН', get_frsxntoy, get_frsxntoy_after])
+        pt.add_row(['Допустимый небаланс СХН: SXNTol', get_sxntolerance, get_sxntolerance_after])
+        pt.add_row(['Выходной каталог файлов результатов: Кат. результатов', get_snap_path, get_snap_path_after])
+        pt.add_row(
+            ['Максимальное кол-во файлов результатов: Макс. файлов', get_max_result_files, get_max_result_files_after])
+        pt.add_row(['Шаблон имени выходного файла: Шаблон имени', get_snap_template, get_snap_template_after])
+        pt.add_row(['Автозагрузка последнего результата: Автозагрузка', get_snap_auto_load, get_snap_auto_load_after])
+        pt.add_row(
+            ['Максимальное кол-во слотов результатов: Макс. рез-тов', get_snap_max_count, get_snap_max_count_after])
+        pt.add_row(['Отключать генератор при превышении скорости %: Уставка автоматов безопасности',
+                    get_trip_generator_on_speed,
+                    get_trip_generator_on_speed_after])
+        pt.add_row(['Информировать о пуске/возврате автоматики: Информировать о пуске/возврате автоматики',
+                    get_pickup_dropout, get_pickup_dropout_after])
+        pt.add_row(['Выводить контролируемые величины в CSV: Выводить контролируемые величины в CSV',
+                    get_realtime_csv, get_realtime_csv_after])
+        pt.add_row(['Отображать углы в диапазоне +/-180: Отображать углы в диапазоне +/-180',
+                    get_period_angle, get_period_angle_after])
+        pt.add_row(['Положительное направление результатов: Положительное направление результатов',
+                    get_result_flow_direction, get_result_flow_direction_after])
+        pt.add_row(['Считать предупреждения ошибками: Предупреждение=Ошибка',
+                    get_treat_warnings_as_errors, get_treat_warnings_as_errors_after])
+        pt.add_row(['Метод обработки дискретных изменений: Дискретные изменения',
+                    get_event_process, get_event_process_after])
+        print(pt)
 
 
 class GetSettingsDynamic(GettingParameter):
@@ -1113,35 +1089,29 @@ class VariableSettingsDynamic(Variable):
 
 
 if __name__ == '__main__':
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.Getting.get import GettingParameter
+    from RastrWinLib.ActionsObject.Get import GettingParameter
 
     load_file(rastr_win=RASTR,
-              file_path=r'',
-              shabl=Shabl.shablon_file_automation,
-              switch_command_line=True)
+              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
+              shabl='сценарий',
+              switch_command_line=False)
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
-              shabl=Shabl.shablon_file_scenario,
-              switch_command_line=True)
-
-    load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test92.rst',
-              shabl=Shabl.shablon_file_dynamic,
-              switch_command_line=True)
-
-    load_file(rastr_win=RASTR)
+              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test92.rst',
+              shabl='динамика',
+              switch_command_line=False)
 
     get = GetSettingsDynamic()
     var = VariableSettingsDynamic()
 
-    print(get.Tras())
-    print(type(get.Tras()))
+    # print(get.Tras())
+    # print(type(get.Tras()))
+    #
+    # var.Tras(200)
+    #
+    # print(get.Tras())
+    # print(type(get.Tras()))
 
-    var.Tras(200)
-
-    print(get.Tras())
-    print(type(get.Tras()))
+    set_dynamic(switch_command_line=True)

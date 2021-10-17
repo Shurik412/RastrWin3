@@ -1,10 +1,9 @@
 # # -*- coding: utf-8 -*-
 
-from RastrWinLib.loading.load import load_file
-from RastrWinLib.Calculation.regim import SteadyState
+from RastrWinLib.Load import load_file
+from RastrWinLib.Calculation.regime import SteadyState
 from RastrWinLib.Calculation.dynamic import Dynamic
-from RastrWinLib.loading.shablon import Shabl
-from RastrWinLib.AstraRastr import RASTR
+from RastrWinLib.Load.shablon import Shabl
 
 file_rst = r'C:\Users\Ohrimenko_AG\Desktop\тест АР\test9.rst'
 file_scn = r'C:\Users\Ohrimenko_AG\Desktop\тест АР\test9.scn'

@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from prettytable import PrettyTable
-from RastrWinLib.Tools.сonclutation_output import ErrorOutputProtocol
+
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Dynamic.Generator import Generator
+from RastrWinLib.Tables.Node.node import Node
+from RastrWinLib.Tables.Vetv.vetv import Vetv
+from RastrWinLib.Tools.сonclutation_output import ErrorOutputProtocol
 from RastrWinLib.Tools.сonclutation_output import OutputResultsProtocol
 
 
@@ -148,10 +149,9 @@ class Delete(ErrorOutputProtocol, OutputResultsProtocol):
 
 
 if __name__ == '__main__':
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
+    from RastrWinLib.Load.shablon import Shabl
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.Delete.delete import Delete
 
     load_file(rastr_win=RASTR,
               file_path=r'',
@@ -172,5 +172,5 @@ if __name__ == '__main__':
     # # output = ErrorOutput()
     # #
     # delete.delete_SetSel_any_table(table=Node.table, formula='ny=1')
-    tab= RASTR.Tables(Node.table)
+    tab = RASTR.Tables(Node.table)
     print(tab.Name)

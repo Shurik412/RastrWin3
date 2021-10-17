@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
-from time import time, localtime, strftime
 from prettytable import PrettyTable
+
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Tools.tools import Tools
 
 
-class SteadyState:
+class Regime:
     """
     Расчет режима
     """
 
     def __init__(self,
                  rastr_win=RASTR,
-                 par='',
+                 par: str = '',
                  switch_command_line: bool = False):
         """
         :param rastr_win: COM - объект Rastr.Astra (win32com);
@@ -36,30 +35,31 @@ class SteadyState:
     def rgm(self):
         kod = self.rastr_win.rgm(self.par)
         if self.switch_command_line:
-            self.messageResult(kod)
+            self.output_messages_results(kod)
         return kod
 
-    def messageResult(self, kod):
+    @staticmethod
+    def output_messages_results(kod):
         pt = PrettyTable()
+        pt.title = "Расчет УР режима"
         pt.field_names = ['Описание', 'Параметр']
         pt.add_row(['Запуск "Расчет режима"', ''])
         if kod != 0:
             pt.add_row(['Сообщение о результатх расчета УР', 'Режим не сбалансирован!'])
         elif kod == 0:
             pt.add_row(['Сообщение о результатх расчета УР', 'Расчет УР завершен успешно!'])
-        print(pt.get_string(title="Расчет режима: УР"))
+        print(pt)
         return kod
 
 
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
-              shabl=Shabl.shablon_file_dynamic)
-    load_file(rastr_win=RASTR)
+              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+              shabl='динамика')
 
-    regim = SteadyState(rastr_win=RASTR, switch_command_line=True)
+    regim = Regime(rastr_win=RASTR,
+                   switch_command_line=True)
     regim.rgm()

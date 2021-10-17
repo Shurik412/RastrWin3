@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Getting.get import GettingParameter
+from RastrWinLib.ActionsObject.Get import GettingParameter
 from RastrWinLib.Tables.Dynamic.Generator import Generator
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.Variables.group_correction import GroupCorr
-from RastrWinLib.Variables.variable_parametrs import Variable, FindNextSel
+from RastrWinLib.ActionsObject.GroupCorrection import GroupCorr
+from RastrWinLib.ActionsObject.Variable import Variable, FindNextSel
 
 
 def delete_switches(viborka):

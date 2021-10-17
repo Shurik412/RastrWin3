@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 from openpyxl.chart import ScatterChart
 from settingsKostrGRES import list_scn, dict_repairs, dict_cell_chart
-from RastrWinLib.excel.chart import ChartExcelOtherSheet
+from RastrWinLib.Excel.chart import ChartExcelOtherSheet
 from openpyxl.utils import get_column_letter
 from settings_alar import dict_output_results
 

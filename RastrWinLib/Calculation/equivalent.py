@@ -25,10 +25,11 @@ class Equivalent:
     def ekv(self, par: str = ""):
         kod = self.rastr_win.Ekv(par)
         if self.switch_command_line:
-            self.messageResult(kod)
+            self.output_messages_results(kod)
         return kod
 
-    def messageResult(self, kod):
+    @staticmethod
+    def output_messages_results(kod):
         pt = PrettyTable()
         pt.field_names = ['Описание', 'Параметр']
         pt.add_row(['Запуск "Эквивалентирование режима', ''])
@@ -38,3 +39,7 @@ class Equivalent:
             pt.add_row(['Сообщение о результатх расчета УР', 'Расчет УР завершен успешно!'])
         print(pt.get_string(title="Эквивалентирование"))
         return kod
+
+
+if __name__ == '__main__':
+    pass

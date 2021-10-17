@@ -3,12 +3,12 @@
 import RastrWinLib.Tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Calculation.equivalent import Equivalent
-from RastrWinLib.Getting.get import GettingParameter
+from RastrWinLib.ActionsObject.Get import GettingParameter
 from RastrWinLib.Settings.equivalence import set_com_ekviv
 from RastrWinLib.Tables.tables_attributes import node_table, vetv_table, node_attributes_list
-from RastrWinLib.Variables.group_correction import GroupCorr
-from RastrWinLib.Variables.removal_marked_objects import RemoveSelObjects
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.GroupCorrection import GroupCorr
+from RastrWinLib.ActionsObject.removal_marked_objects import RemoveSelObjects
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 def equivalent_gen(viborka_gen):

@@ -2,8 +2,7 @@
 # Модуль заполнения таблицы  "Форсировка (ИД)" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Tables.Dynamic.Forcer import Forcer, ForcerDescription
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 def filling_Forcer(
@@ -149,9 +148,9 @@ def filling_Forcer(
 
 
 if __name__ == '__main__':
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.save import save_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
+    from RastrWinLib.Load.save import save_file
+    from RastrWinLib.Load.shablon import Shabl
     from RastrWinLib.Tables.Dynamic.Forcer import Forcer
 
     load_file(rastr_win=RASTR,

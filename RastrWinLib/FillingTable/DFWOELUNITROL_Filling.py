@@ -2,8 +2,8 @@
 # Модуль заполнения таблицы  "БОР UNITROL" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Tables.Dynamic.DFWOELUNITROL import DFWOELUNITROL, DFWOELUNITROL_Description
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.Tables.Dynamic.DFWOELUNITROL import DFWOELUNITROL
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 def filling_DFWOELUNITROL(

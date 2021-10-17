@@ -5,9 +5,9 @@
 # Система возбуждения: AC8B.xmldev.
 # Параметры системы возбуждения AC8B.xmldev заносятся в таблицу «ВозбудителиIEEE».
 
-from RastrWinLib.Getting.get import GettingParameter
+from RastrWinLib.ActionsObject.Get import GettingParameter
 from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 class Parameters:

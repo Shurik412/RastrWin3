@@ -2,7 +2,7 @@
 from openpyxl import load_workbook
 from openpyxl.chart import ScatterChart
 
-from RastrWinLib.excel.chart import ChartExcelOtherSheet
+from RastrWinLib.Excel.chart import ChartExcelOtherSheet
 
 file_excel = r'L:\SER\Охрименко\03. RastrWinLib\16\ВЛ 500 кВ Рязанская ГРЭС – Липецкая Западная.xlsx'
 

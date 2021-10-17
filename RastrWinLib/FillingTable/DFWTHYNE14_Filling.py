@@ -2,8 +2,7 @@
 # Модуль заполнения таблицы  "Возбудители Thyne 1-4" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Tables.Dynamic.DFWTHYNE14 import DFWTHYNE14, DFWTHYNE14_Description
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 def filling_DFWTHYNE14(
@@ -415,9 +414,9 @@ def filling_DFWTHYNE14(
 
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.save import save_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
+    from RastrWinLib.Load.save import save_file
+    from RastrWinLib.Load.shablon import Shabl
     from RastrWinLib.Tables.Dynamic.DFWTHYNE14 import DFWTHYNE14
 
     load_file(rastr_win=RASTR,

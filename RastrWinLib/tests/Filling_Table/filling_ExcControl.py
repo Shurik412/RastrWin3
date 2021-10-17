@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from time import time, localtime, strftime
+from time import time
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.loading.load import load_file
-from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import Shabl
+from RastrWinLib.Load import load_file
+from RastrWinLib.Load.save import save_file
+from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.FillingTable.ARV_Filling import filling_ExcControl
 from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 

@@ -5,9 +5,9 @@
 # Модель автоматического регулятора возбуждения типа ARV-REM, реализованная в ПК RUSTab, состоит из одного макроблока:
 #   1.АРВ: ARV-REM.xmldev (таблица 11).
 # Параметры модели ARV-REM.xmldev заносятся в таблицу «АРВ (ИД)».
-from RastrWinLib.Getting.get import GettingParameter
+from RastrWinLib.ActionsObject.Get import GettingParameter
 from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 class Parameters:

@@ -2,13 +2,12 @@
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Calculation.equivalent import Equivalent
-from RastrWinLib.Calculation.regim import SteadyState
+from RastrWinLib.Calculation.regime import SteadyState
 # from RastrWinLib.Getting.get import G
-from RastrWinLib.loading.load import load_file
-from RastrWinLib.loading.save import save_file
-from RastrWinLib.loading.shablon import shablon_file_regime
-from RastrWinLib.Settings.equivalence import set_com_ekviv
-from RastrWinLib.Variables.removal_marked_objects import RemoveSelObjects
+from RastrWinLib.Load import load_file
+from RastrWinLib.Load.save import save_file
+from RastrWinLib.Load.shablon import shablon_file_regime
+from RastrWinLib.ActionsObject.removal_marked_objects import RemoveSelObjects
 from gen_equivalent import equivalent_gen
 # from gen_equivalent import equivalent_smart
 

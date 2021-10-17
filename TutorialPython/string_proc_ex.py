@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.loading.load import load_file
-from RastrWinLib.loading.shablon import Shabl
+from RastrWinLib.Load import load_file
+from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.Getting.get import GettingParameter
-from RastrWinLib.Tools.timer import timethis
-from icecream import ic
-from openpyxl import load_workbook, workbook
-from openpyxl.utils import get_column_letter, get_column_interval
+from RastrWinLib.ActionsObject.Get import GettingParameter
+from openpyxl import load_workbook
+from openpyxl.utils import get_column_letter
 
 
 def delete_letter(str_one, str_two):

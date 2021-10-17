@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+from prettytable import PrettyTable
+
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.Tools.tools import Tools
-from prettytable import PrettyTable
 
 
 class FindNextSelection:
@@ -20,7 +20,7 @@ class FindNextSelection:
         :param rastr_win: True/False - вывод сообщений в протокол;
         """
         self.rastr_win = rastr_win
-        if table is None:
+        if table is not None:
             self.table = self.rastr_win.Tables(table)
 
     def row(self,
@@ -46,7 +46,7 @@ class FindNextSelection:
             return row_id
 
 
-class Variable(FindNextSelection):
+class Variable:
     """
 
     """
@@ -59,7 +59,6 @@ class Variable(FindNextSelection):
         :param rastr_win: COM - объект Rastr.Astra (win32com);
         :param switch_command_line: True/False - вывод сообщений в протокол;
         """
-        super().__init__(rastr_win=RASTR)
         self.rastr_win = rastr_win
         self.switch_command_line = switch_command_line
         self.pt = PrettyTable()
@@ -207,6 +206,21 @@ class Variable(FindNextSelection):
 
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
+    from RastrWinLib.Load import load_file
 
-    name = RASTR.Tables.Description(1).Name
-    print(name)
+    load_file(rastr_win=RASTR,
+              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
+              shabl='сценарий',
+              switch_command_line=False)
+
+    load_file(rastr_win=RASTR,
+              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+              shabl='динамика',
+              switch_command_line=False)
+
+    find = FindNextSelection(rastr_win=RASTR,
+                             table="com_dynamics")
+
+    tras = RASTR.Tables("com_dynamics").Cols("Tras").Z(0)
+
+    print(find.row(key=tras))

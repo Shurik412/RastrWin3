@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Variables.variable_parametrs import Variable
+from RastrWinLib.ActionsObject.Variable import Variable
 
 
 def filling_generators(
@@ -219,9 +219,9 @@ def filling_generators(
 
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.save import save_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
+    from RastrWinLib.Load.save import save_file
+    from RastrWinLib.Load.shablon import Shabl
     from RastrWinLib.Tables.Dynamic.Generator import Generator
 
     load_file(rastr_win=RASTR,

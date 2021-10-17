@@ -44,10 +44,10 @@ class ErrorOutputProtocol(PrettyTable):
 
 
 if __name__ == '__main__':
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
+    from RastrWinLib.Load.shablon import Shabl
     from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.Delete.delete import Delete
+    from RastrWinLib.ActionsObject.Delete import Delete
 
     load_file(rastr_win=RASTR,
               file_path=r'',

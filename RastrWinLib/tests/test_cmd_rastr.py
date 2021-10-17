@@ -1,6 +1,6 @@
 import win32com.client
-from RastrWinLib.loading.load import load_file
-from RastrWinLib.loading.shablon import Shabl
+from RastrWinLib.Load import load_file
+from RastrWinLib.Load.shablon import Shabl
 
 RASTR = win32com.client.Dispatch('Astra.Rastr')
 RASTR_ = win32com.client.Dispatch('Rastr_')

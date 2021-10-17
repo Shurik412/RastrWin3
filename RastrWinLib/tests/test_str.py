@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.loading.load import load_file
-from RastrWinLib.loading.shablon import Shabl
+from RastrWinLib.Load import load_file
+from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.Getting.get import GettingParameter
+from RastrWinLib.ActionsObject.Get import GettingParameter
 from RastrWinLib.Tools.timer import timethis
-from icecream import ic
-from openpyxl import load_workbook, workbook
 
 
 def percentage_of_coincidence_two_str(string_one, string_two, print_results=False):

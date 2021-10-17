@@ -6,7 +6,6 @@
 # при работе во внешней среде – должен создаваться обычным образом,
 # например, в Python:
 from win32com.client import Dispatch, WithEvents
-from prettytable import PrettyTable
 
 
 class RastrEvents:

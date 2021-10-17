@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
+from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Tables.Dynamic.DFWIEEE421 import DFWIEEE421
 from RastrWinLib.Tables.Dynamic.Generator import Generator
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Tools.tools import Tools
 
 
 class GettingParameter:
@@ -20,13 +19,13 @@ class GettingParameter:
     def __init__(self, rastr_win=RASTR):
         self.rastr_win = rastr_win
         f"""
-         :param rastr_win: ;
+         :param rastr_win: COM - объект Rastr.Astra (win32com);
         """
 
     def get_cell_row(self,
                      table: str,
                      column: str,
-                     row_id: str):
+                     row_id):
         """
         Метод get_cell - возвращает значение ячейки.
         :param table: название таблицы RastrWin3 (generator);

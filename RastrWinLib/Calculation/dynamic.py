@@ -10,7 +10,9 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
     Расчет Электро Механических Переходных Процессов (ЭМехПП)
     """
 
-    def __init__(self, rastr_win=RASTR, calc_time: float = 1.0, snap_max_count: int = 1,
+    def __init__(self, rastr_win=RASTR,
+                 calc_time: float = 1.0,
+                 snap_max_count: int = 1,
                  switch_command_line: bool = False):
         """
         Функции для расчтета ЭМПП доступны в интерфейсе IFWDynamic.
@@ -71,28 +73,23 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
 
 
 if __name__ == '__main__':
-    from RastrWinLib.loading.load import load_file
-    from RastrWinLib.loading.shablon import Shabl
+    from RastrWinLib.Load import load_file
     from RastrWinLib.AstraRastr import RASTR
 
     load_file(rastr_win=RASTR,
-              file_path=r'',
-              shabl=Shabl.shablon_file_automation,
+              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
+              shabl='сценарий',
               switch_command_line=True)
 
     load_file(rastr_win=RASTR,
-              file_path=r'L:\SecretDisk\SER\Динамическая модель\02-Архив\2019 новая модель\ДРМ 2019\КалАЭС_КЗ(3).scn',
-              shabl=Shabl.shablon_file_scenario,
+              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+              shabl='динамика',
               switch_command_line=True)
-
-    load_file(rastr_win=RASTR,
-              file_path=r'L:\SecretDisk\SER\Динамическая модель\02-Архив\2020\4.Дин_Модели - 2020 (14.10.2020)\1. Зима\ДРМ Зима макс 2020.rst',
-              shabl=Shabl.shablon_file_dynamic,
-              switch_command_line=True)
-
-    load_file(rastr_win=RASTR)
 
     calc = Dynamic(rastr_win=RASTR,
-                   calc_time=1.7)
+                   calc_time=50.0,
+                   snap_max_count=1,
+                   switch_command_line=True)
     calc.change_calc_time()
+    calc.change_snap_max_count()
     calc.run()
