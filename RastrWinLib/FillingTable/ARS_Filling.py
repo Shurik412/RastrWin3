@@ -184,17 +184,16 @@ def filling_ARS(
 
 if __name__ == '__main__':
     from RastrWinLib.Load import load_file
-    from RastrWinLib.Load.save import save_file
-    from RastrWinLib.Load.shablon import Shabl
+    from RastrWinLib.Save import save_file
     from RastrWinLib.Tables.Dynamic.ARS import ARS
     from RastrWinLib.AstraRastr import RASTR
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
+              shabl='динамика')
 
     load_file(rastr_win=RASTR,
-              shabl=Shabl.shablon_file_automation)
+              shabl='автоматика')
 
     table_ = RASTR.Tables(ARS.table)
 
@@ -228,5 +227,5 @@ if __name__ == '__main__':
                     switch_command_line=False)
 
     save_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test22.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test22.rst',
+              shabl='динамика')

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 # Модуль заполнения таблицы  "БОР UNITROL" RastrWin3
 
+from RastrWinLib.ActionsObject.Variable import Variable
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Tables.Dynamic.DFWOELUNITROL import DFWOELUNITROL
-from RastrWinLib.ActionsObject.Variable import Variable
 
 
 def filling_DFWOELUNITROL(
@@ -202,3 +202,7 @@ def filling_DFWOELUNITROL(
                                column=DFWOELUNITROL.Output,
                                row_id=row_id,
                                value=Output)
+
+
+if __name__ == '__main__':
+    pass

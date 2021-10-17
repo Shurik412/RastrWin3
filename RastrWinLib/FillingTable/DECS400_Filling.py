@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Модуль заполнения таблицы  "Возбудитель DECS-400" RastrWin3
 
-from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.AstraRastr import RASTR
 
 
 def filling_DECS400(
@@ -227,16 +227,15 @@ def filling_DECS400(
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
     from RastrWinLib.Load import load_file
-    from RastrWinLib.Load.save import save_file
-    from RastrWinLib.Load.shablon import Shabl
+    from RastrWinLib.Save import save_file
     from RastrWinLib.Tables.Dynamic.DECS_400 import DFWDECS400
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
+              shabl='динамика')
 
     load_file(rastr_win=RASTR,
-              shabl=Shabl.shablon_file_automation)
+              shabl='автоматика')
 
     table_ = RASTR.Tables(DFWDECS400.table)
 
@@ -277,5 +276,5 @@ if __name__ == '__main__':
             switch_command_line=False)
 
     save_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test23.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test23.rst',
+              shabl='динамика')

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Модуль заполнения таблицы  "Возбудитель (ИД)" RastrWin3
 
-from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.AstraRastr import RASTR
 
 
 def filling_exciter(

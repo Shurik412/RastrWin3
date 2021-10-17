@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Модуль заполнения таблицы  "ОМВ" RastrWin3
 
-from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.AstraRastr import RASTR
 
 
 def filling_DFW421UEL(
@@ -243,16 +243,15 @@ if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
     from RastrWinLib.Tables.Dynamic.DFW421UEL import DFW421UEL
     from RastrWinLib.Load import load_file
-    from RastrWinLib.Load.save import save_file
-    from RastrWinLib.Load.shablon import Shabl
+    from RastrWinLib.Save import save_file
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
+              shabl='динамика')
 
     load_file(rastr_win=RASTR,
-              file_path='',
-              shabl=Shabl.shablon_file_automation)
+              path_file='',
+              shabl='динамика')
 
     table_ = RASTR.Tables(DFW421UEL.table)
 
@@ -295,5 +294,5 @@ if __name__ == '__main__':
             switch_command_line=False)
 
     save_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test_DFW421UEL.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test_DFW421UEL.rst',
+              shabl='динамика')

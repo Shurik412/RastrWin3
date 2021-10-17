@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Модуль заполнения таблицы  "Стабилизаторы IEEE 1-3" RastrWin3
 
-from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.AstraRastr import RASTR
 
 
 def filling_DFWIEEE421PSS13(
@@ -338,17 +338,16 @@ def filling_DFWIEEE421PSS13(
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
     from RastrWinLib.Load import load_file
-    from RastrWinLib.Load.save import save_file
-    from RastrWinLib.Load.shablon import Shabl
+    from RastrWinLib.Save import save_file
     from RastrWinLib.Tables.Dynamic.DFWIEEE421PSS13 import DFWIEEE421PSS13
 
     load_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test.rst',
+              shabl='динамика')
 
     load_file(rastr_win=RASTR,
-              file_path=r'',
-              shabl=Shabl.shablon_file_automation)
+              path_file=r'',
+              shabl='автоматика')
 
     table_ = RASTR.Tables(DFWIEEE421PSS13.table)
 
@@ -407,5 +406,5 @@ if __name__ == '__main__':
 
     RASTR.rgm('')
     save_file(rastr_win=RASTR,
-              file_path=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test_DFWIEEE421PSS13.rst',
-              shabl=Shabl.shablon_file_dynamic)
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_filling\test_DFWIEEE421PSS13.rst',
+              shabl='динамика')
