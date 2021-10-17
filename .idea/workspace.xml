@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,13 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00195" summary="Corr OAPV_calc.py">
-      <created>1623335919761</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1623335919761</updated>
     </task>
     <task id="LOCAL-00196" summary="Corr OAPV_calc.py #2">
       <created>1623336129384</created>
@@ -569,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634498675372</updated>
     </task>
-    <option name="localTasksCounter" value="244" />
+    <task id="LOCAL-00244" summary="Add module chart.py">
+      <created>1634500908126</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1634500908126</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add ARVSG_static_lite.py" />
     <MESSAGE value="Add DECS_400_lite.py" />
     <MESSAGE value="Add Alstom_lite.py" />
     <MESSAGE value="add tm_excel.py" />
@@ -610,7 +609,8 @@
     <MESSAGE value="Optimization RastrWinLib" />
     <MESSAGE value="New version of the package (lib.) RastrWinLib" />
     <MESSAGE value="Corr FillingTables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corr FillingTables" />
+    <MESSAGE value="Add module chart.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add module chart.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
