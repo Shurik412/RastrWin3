@@ -5,7 +5,7 @@ from RastrWinLib.Load.shablon import Shabl
 
 rast = Dispatch('Astra.Rastr')
 load_file(rastr_win=rast,
-          file_path='',
+          path_file='',
           shabl=Shabl.shablon_file_regime)
 
 sb = rast.SubstServer

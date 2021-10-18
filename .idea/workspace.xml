@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/FunRastrWin3.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FunRastrWin3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +99,8 @@
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.chart">
-    <configuration name="Save" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.AnalysisBarsСapacity">
+    <configuration name="AnalysisBarsСapacity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Save.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AnalysisBarsСapacity" />
         <item itemvalue="Python.chart" />
         <item itemvalue="Python.dynamic (1)" />
         <item itemvalue="Python.export_data_rustab" />
         <item itemvalue="Python.regime" />
-        <item itemvalue="Python.Save" />
       </list>
     </recent_temporary>
   </component>
@@ -225,13 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00196" summary="Corr OAPV_calc.py #2">
-      <created>1623336129384</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1623336129384</updated>
     </task>
     <task id="LOCAL-00197" summary="Add ScriptsMonitel.cs">
       <created>1623412100292</created>
@@ -569,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634500908126</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="Add in module chart.py -&gt; class Plot ...">
+      <created>1634502674317</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1634502674317</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add DECS_400_lite.py" />
     <MESSAGE value="Add Alstom_lite.py" />
     <MESSAGE value="add tm_excel.py" />
     <MESSAGE value="add tm_excel.py =&gt; add func create_list_tm" />
@@ -610,7 +610,8 @@
     <MESSAGE value="New version of the package (lib.) RastrWinLib" />
     <MESSAGE value="Corr FillingTables" />
     <MESSAGE value="Add module chart.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add module chart.py" />
+    <MESSAGE value="Add in module chart.py -&gt; class Plot ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add in module chart.py -&gt; class Plot ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
