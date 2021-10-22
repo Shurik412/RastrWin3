@@ -20,12 +20,26 @@ def set_cell_range(ws, cell_range_one):
             cell.border = thin_border
 
 
-wb = Workbook()
-ws = wb.active
+#
+# wb = Workbook()
+# ws = wb.active
+#
+# set_cell_range(ws=ws,
+#                cell_range_one='A5:C10')
+#
+# # ws.cell(row=3, column=2).border = thin_border
+# wb.save(r'C:\Users\Ohrimenko_AG\Desktop\22.xlsx')
+# # set_border(ws, 'A3:C10')
 
-set_cell_range(ws=ws,
-               cell_range_one='A5:C10')
+import os
 
-# ws.cell(row=3, column=2).border = thin_border
-wb.save(r'C:\Users\Ohrimenko_AG\Desktop\22.xlsx')
-# set_border(ws, 'A3:C10')
+from os import listdir
+from os.path import isfile, join
+
+mypath = r'L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS'
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+
+for file in onlyfiles:
+    filename, file_extension = os.path.splitext(file)
+    if file_extension == '.mpt':
+        print(filename)

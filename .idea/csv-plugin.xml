@@ -17,6 +17,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\BARS\Файлы CSV Территории ПДГ\Area2_PDG_25.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\BARS\Файлы CSV Территории СМЗУ\Area2_SMZU_25.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\BARS\Файлы CSV Территории СМЗУ\Area2_SMZU_29.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\TutorialPython\csv_test.csv">
           <value>
             <Attribute>
