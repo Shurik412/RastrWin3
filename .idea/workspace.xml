@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RastrWinLib/Tools/directory_rastrwin/defines_file_extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Full change Lib">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ohrimenko_ag.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/test_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/test_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +56,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/RastrWinLib/Tables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="timeTracker.activityTracker" value="null" />
     <property name="timeTracker.comment" value="" />
     <property name="timeTracker.inactivityPeriodInMills" value="600000" />
@@ -102,8 +105,8 @@
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AnalysisBarsСapacity (1)">
-    <configuration name="AnalysisBarsСapacity (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.tools">
+    <configuration name="AstraRastr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,11 +114,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/78" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/78/AnalysisBarsСapacity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="AnalysisBarsСapacity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Load" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -132,11 +135,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BARS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Load.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +148,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="chart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,11 +156,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/UploadResults" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Calculation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/UploadResults/chart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,7 +169,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="defines_file_extensions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="output_prettytable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -174,11 +177,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Tools/directory_rastrwin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Tools/directory_rastrwin/defines_file_extensions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Tools/output_prettytable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,7 +190,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -195,11 +198,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TutorialPython" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TutorialPython/test_excel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -210,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.AnalysisBarsСapacity (1)" />
-        <item itemvalue="Python.chart" />
-        <item itemvalue="Python.AnalysisBarsСapacity" />
-        <item itemvalue="Python.test_excel" />
-        <item itemvalue="Python.defines_file_extensions" />
+        <item itemvalue="Python.tools" />
+        <item itemvalue="Python.output_prettytable" />
+        <item itemvalue="Python.dynamic" />
+        <item itemvalue="Python.AstraRastr" />
+        <item itemvalue="Python.Load" />
       </list>
     </recent_temporary>
   </component>
@@ -229,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00198" summary="add file filling_excel_map_vetv.py">
-      <created>1624346347951</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1624346347951</updated>
     </task>
     <task id="LOCAL-00199" summary="Corr file create_bat_file_dynamic.py and create_bat_file_post_processor.py">
       <created>1625146291804</created>
@@ -573,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634568517567</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="Full change Lib">
+      <created>1634934671877</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1634934671877</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +592,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add tm_excel.py" />
     <MESSAGE value="add tm_excel.py =&gt; add func create_list_tm" />
     <MESSAGE value="add parsing_xml.py and XML_Excel.py" />
     <MESSAGE value="add excel_map_vetv.py" />
@@ -614,7 +616,8 @@
     <MESSAGE value="Add module chart.py" />
     <MESSAGE value="Add in module chart.py -&gt; class Plot ..." />
     <MESSAGE value="Add in module AnalysisBarsСapacity.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add in module AnalysisBarsСapacity.py" />
+    <MESSAGE value="Full change Lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full change Lib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

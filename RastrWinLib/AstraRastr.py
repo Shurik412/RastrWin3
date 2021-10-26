@@ -10,7 +10,7 @@ from win32com.client import Dispatch, WithEvents
 
 class RastrEvents:
     """
-    Метод Onprot - выводит сообщения написанные: rastr.Printp("Сообщение из Printp")
+    Метод Onprot - выводит сообщения написанные: rastr.Printp("Сообщение из Printp")\n
     Метод OnLog
     """
 

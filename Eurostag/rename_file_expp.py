@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
 import os
 
-dir = fr'C:\02_26_ZimaMin'
+dir = fr'L:\SER\Okhrimenko\02. EUROSTAG\!!! МОС РДУ\ТГ-5 ТЭЦ-23_\лето минимум'
 
-n = 58
+n = 24
 sezon_do = 1
 sezon_posle = 3
+sezon = 4
 
-flag1 = 0
+flag1 = 1
 if flag1 == 1:
     for i in range(1, n + 1):
         try:
-            os.rename(src=fr'{dir}\{i}N.expp', dst=fr'{dir}\1_{i}_N_220kV.exp')
-            os.rename(src=fr'{dir}\{i}Y.expp', dst=fr'{dir}\1_{i}_Y_220kV.exp')
+            os.rename(src=fr'{dir}\{i}N.expp', dst=fr'{dir}\{sezon}_{i}_N_220kV.exp')
+            os.rename(src=fr'{dir}\{i}Y.expp', dst=fr'{dir}\{sezon}_{i}_Y_220kV.exp')
         except FileNotFoundError:
             print(f'Не найден файл {i}.')
         print(f'i = {i}')
@@ -37,7 +38,7 @@ if flag3 == 1:
         print(f'i={i}')
 
 
-flag4 = 1
+flag4 = 0
 if flag4 == 1:
     for i in range(1, n + 1):
         try:

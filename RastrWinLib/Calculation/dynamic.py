@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from prettytable import PrettyTable
-
+from RastrWinLib.Tools.output_prettytable import TableOutput
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Settings.dynamic import GetSettingsDynamic, VariableSettingsDynamic
 
 
-class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
+class Dynamic(VariableSettingsDynamic, GetSettingsDynamic, TableOutput):
     """
     Расчет Электро Механических Переходных Процессов (ЭМехПП)
     """
@@ -52,8 +52,7 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
 
     def messageResult(self):
         ResultMessage = self.FWDynamic.ResultMessage  # Вывод сообщения о результатах расчета
-        pt = PrettyTable()
-        pt.field_names = ['Описание', 'Параметр']
+        pt = TableOutput(fieldName=['Описание', 'Параметр'])
         pt.add_row(['Время расчета для динамики', f'{GetSettingsDynamic.Tras(self)} cек.'])
         pt.add_row(['Сообщение о результатх расчета ЭМПП', ResultMessage])
         if ResultMessage == '':
@@ -68,6 +67,7 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
             pt.add_row(['Выявлено превышение допустимой скорости вращения одного или нескольких генераторов.'
                         'Допустимая скорость вращения задается уставкой автомата безопасности в настройках динамики.',
                         ''])
+        print(pt.show())
         print(pt.get_string(title="Расчет ЭМПП"))
         return ResultMessage
 
@@ -77,19 +77,20 @@ if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR
 
     load_file(rastr_win=RASTR,
-              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
+              path_file=r'',
               shabl='сценарий',
               switch_command_line=True)
 
     load_file(rastr_win=RASTR,
-              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+              path_file=r'C:\Users\Ohrimenko_AG\Desktop\ДРМ Зима максимум 2021_64.rst',
               shabl='динамика',
               switch_command_line=True)
 
     calc = Dynamic(rastr_win=RASTR,
-                   calc_time=50.0,
+                   calc_time=0.5,
                    snap_max_count=1,
                    switch_command_line=True)
     calc.change_calc_time()
     calc.change_snap_max_count()
     calc.run()
+    # del RASTR
