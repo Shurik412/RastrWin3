@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Full change Lib">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ohrimenko_ag.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,13 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00199" summary="Corr file create_bat_file_dynamic.py and create_bat_file_post_processor.py">
-      <created>1625146291804</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1625146291804</updated>
     </task>
     <task id="LOCAL-00200" summary="Corr">
       <created>1626075447615</created>
@@ -576,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634934671877</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="Add tools output result">
+      <created>1635249381365</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1635249381365</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +584,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add tm_excel.py =&gt; add func create_list_tm" />
     <MESSAGE value="add parsing_xml.py and XML_Excel.py" />
     <MESSAGE value="add excel_map_vetv.py" />
     <MESSAGE value="add file Equivalent.vbs" />
@@ -617,7 +608,8 @@
     <MESSAGE value="Add in module chart.py -&gt; class Plot ..." />
     <MESSAGE value="Add in module AnalysisBarsСapacity.py" />
     <MESSAGE value="Full change Lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full change Lib" />
+    <MESSAGE value="Add tools output result" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tools output result" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
