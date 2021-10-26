@@ -6,13 +6,13 @@ from RastrWinLib.Load.shablon import shablon_file_dynamic as sh_rst, shablon_fil
 from RastrWinLib.export_in_excel.export_data_rustab import ExportDataRUSTab
 from settingsKostrGRES import dir_file_rst, dir_file_scn, list_manual, list_scn, dict_repairs, dict_output_results, \
     dict_cell_chart, dir_fileSaveExcel, list_scn_name_AO
-from RastrWinLib.Calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
+from RastrWinLib.calculation.dyn_rgm_ekv_calc import Dynamic, SteadyState
 from openpyxl import Workbook
 from RastrWinLib.Excel.chart import ChartExcelOtherSheet
 from openpyxl.utils import get_column_letter
 from openpyxl.chart import ScatterChart
-from RastrWinLib.ActionsObject.Get import GettingParameterInstance, GettingParameterAttribute
-from RastrWinLib.ActionsObject.Switching.vetv import SwitchLine
+from RastrWinLib.operation.Get import GettingParameterInstance, GettingParameterAttribute
+from RastrWinLib.operation.switch_over.vetv import SwitchLine
 
 wb = Workbook()
 Rastr = win32com.client.Dispatch('Astra.Rastr')

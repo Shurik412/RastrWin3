@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.ActionsObject.GroupCorrection import GroupCorr
+from RastrWinLib.operation.GroupCorrection import GroupCorr
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Vetv.vetv import Vetv
 

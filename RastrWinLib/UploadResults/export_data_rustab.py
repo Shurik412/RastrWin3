@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from prettytable import PrettyTable
 
-from RastrWinLib.ActionsObject.Variable import FindNextSelection
+from RastrWinLib.operation.Variable import FindNextSelection
 from RastrWinLib.AstraRastr import RASTR
 
 
@@ -88,7 +88,7 @@ def get_array(column: str,
 
 if __name__ == '__main__':
     from RastrWinLib.Load import load_file
-    from RastrWinLib.Calculation.dynamic import Dynamic
+    from RastrWinLib.calculation.dynamic import Dynamic
     from pandas import DataFrame
     import numpy as np
     import matplotlib.pyplot as plt

@@ -1,11 +1,11 @@
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from RastrWinLib.Tables.Dynamic.Generator import Generator
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.ActionsObject.Variable import FindNextSel, FindNextSel_ROW
-from RastrWinLib.ActionsObject.Variable import Variable
-from RastrWinLib.ActionsObject.Selection import selection
+from RastrWinLib.operation.Variable import FindNextSel, FindNextSel_ROW
+from RastrWinLib.operation.Variable import Variable
+from RastrWinLib.operation.Selection import selection
 
 
 def equvivalent(viborka, u_min=430, u_max=580):

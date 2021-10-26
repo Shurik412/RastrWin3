@@ -1,6 +1,6 @@
 import win32com.client
 
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from RastrWinLib.Load import load_file
 from RastrWinLib.Load.save import save_file
 from RastrWinLib.Load.shablon import Shabl
@@ -8,9 +8,9 @@ from RastrWinLib.Tables.Dynamic.Generator import Generator
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Vetv.vetv import Vetv
 from RastrWinLib.Tables.area.area import Area
-from RastrWinLib.ActionsObject.GroupCorrection import GroupCorr
-from RastrWinLib.ActionsObject.Variable import FindNextSel, Variable
-from RastrWinLib.ActionsObject.Switching.vetv import SwitchVetv
+from RastrWinLib.operation.GroupCorrection import GroupCorr
+from RastrWinLib.operation.Variable import FindNextSel, Variable
+from RastrWinLib.operation.switch_over.vetv import SwitchVetv
 
 dir_file = r'L:\SER\Охрименко\03. RastrWin3\18'
 file_one_rg2 = rf'{dir_file}\4.rg2'

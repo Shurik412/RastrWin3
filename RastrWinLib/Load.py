@@ -45,5 +45,8 @@ def load_file(rastr_win=RASTR,
 if __name__ == '__main__':
     from RastrWinLib.AstraRastr import RASTR, WithEvents
 
-    load_file(rastr_win=RASTR, path_file='', shabl='режим')
-    load_file(rastr_win=RASTR, path_file='', shabl='динамика')
+    load_file(rastr_win=RASTR, path_file='', shabl='сценарий')
+    load_file(rastr_win=RASTR, path_file='', shabl='автоматика')
+    load_file(rastr_win=RASTR, path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_911.rst', shabl='динамика')
+
+    dyn = RASTR.DF

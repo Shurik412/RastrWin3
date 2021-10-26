@@ -7,8 +7,8 @@
 # Параметры модели AVR2M_bsv.xmldev заносятся в таблицу «АРВ (ИД)».
 
 from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
-from RastrWinLib.ActionsObject.Get import GettingParameter
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Get import GettingParameter
+from RastrWinLib.operation.Variable import Variable
 
 
 class Parameters:

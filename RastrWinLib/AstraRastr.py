@@ -32,3 +32,5 @@ class RastrEvents:
 
 RASTR = Dispatch('Astra.Rastr')
 WithEvents(RASTR, RastrEvents)
+
+

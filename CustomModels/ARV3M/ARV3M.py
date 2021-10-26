@@ -6,9 +6,9 @@
 
 from RastrWinLib.Tables.Dynamic.ExcControl import ExcControl
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from RastrWinLib.Tools.tools import separator_two
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Variable import Variable
 
 
 class Parameters:

@@ -119,8 +119,8 @@ if __name__ == '__main__':
     # Testing function changing_number_of_semicolons
     print(changing_number_of_semicolons(number=15315.00515, digits=5))
 
-
     # Testing @timethis
+
     @timethis
     def countdown(n):
         """

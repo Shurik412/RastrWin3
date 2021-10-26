@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from RastrWinLib.Load import load_file
 from RastrWinLib.Load.save import save_file
 from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.Tables.tables_attributes import vetv_table, node_table
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Variable import Variable
 
 load_file(file_path=r'C:\Users\Ohrimenko_AG\Desktop\Test_equiPy\02-БРМ Зима максимум [уст].rg2',
           shabl=Shabl.shablon_file_regime, switch_command_line=True)

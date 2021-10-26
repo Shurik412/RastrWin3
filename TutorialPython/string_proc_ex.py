@@ -3,7 +3,7 @@ from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Load import load_file
 from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.Tables.Vetv.vetv import Vetv
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 

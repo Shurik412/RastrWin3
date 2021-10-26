@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from RastrWinLib.Tools.tools import Tools
 from RastrWinLib.Tables.Settings.com_regim import ComRegim
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Variable import Variable
 
 
 def set_regim(neb_p: float = 1.000,

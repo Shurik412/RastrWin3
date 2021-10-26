@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from prettytable import PrettyTable
-from RastrWinLib.Tools.output_prettytable import TableOutput
+
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Settings.dynamic import GetSettingsDynamic, VariableSettingsDynamic
 
 
-class Dynamic(VariableSettingsDynamic, GetSettingsDynamic, TableOutput):
+class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
     """
     Расчет Электро Механических Переходных Процессов (ЭМехПП)
     """
@@ -93,4 +93,4 @@ if __name__ == '__main__':
     calc.change_calc_time()
     calc.change_snap_max_count()
     calc.run()
-    # del RASTR
+

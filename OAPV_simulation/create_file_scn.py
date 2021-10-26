@@ -5,7 +5,7 @@ from RastrWinLib.Load.save import save_file
 from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.Tables.Scenario.DFWAutoActionScn import DFWAutoActionScn
 from RastrWinLib.Tables.Scenario.DFWAutoLogicScn import DFWAutoLogicScn
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Variable import Variable
 
 
 def create_file_scn(WorkSheet):

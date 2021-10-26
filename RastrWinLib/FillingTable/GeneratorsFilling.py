@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Variable import Variable
 from RastrWinLib.AstraRastr import RASTR
 
 

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from prettytable import PrettyTable
 
-from RastrWinLib.ActionsObject.Get import GettingParameter
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Get import GettingParameter
+from RastrWinLib.operation.Variable import Variable
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Tables.Settings.AltUnit import AltUnit
 from RastrWinLib.Tools.tools import Tools

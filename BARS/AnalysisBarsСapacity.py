@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from RastrWinLib.Tables.area.area import Area
 from RastrWinLib.Tables.Vetv.vetv import Vetv
 from RastrWinLib.UploadResults.chart import Plot

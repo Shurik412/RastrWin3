@@ -2,7 +2,7 @@
 # Модуль заполнения таблицы  "Турбины (ИД)" RastrWin3
 
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWinLib.operation.Variable import Variable
 
 
 def filling_ARS(

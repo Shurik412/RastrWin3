@@ -1,4 +1,4 @@
-from RastrWinLib.ActionsObject.Get import GettingParameter
+from RastrWinLib.operation.Get import GettingParameter
 from RastrWinLib.Load import load_file
 from RastrWinLib.Load.shablon import Shabl
 from RastrWinLib.AstraRastr import RASTR
