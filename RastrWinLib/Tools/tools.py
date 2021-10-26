@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import time
 from functools import wraps
+from os import listdir
+from os.path import isfile, join, splitext, expanduser
 
 from prettytable import PrettyTable
 
@@ -50,10 +52,31 @@ def timethis(func):
         result = func(*args, **kwargs)
         end = time.time()
         print(
-            f'Название функции: {func.__name__}; время работы: {changing_number_of_semicolons(number=(end - start), digits=3)} сек.')
+            f'Название функции: {func.__name__}; время работы: '
+            f'{changing_number_of_semicolons(number=(end - start), digits=3)} сек.')
         return result
 
     return wrapper
+
+
+def file_extensions(path_file: str, extensions: str):
+    only_files = [f for f in listdir(path_file) if isfile(join(path_file, f))]
+    for file in only_files:
+        file_name, file_extension = splitext(file)
+        if file_extension == extensions:
+            return file_name, file_extension
+        else:
+            file_name = 'Нет данных!'
+            return file_name
+
+
+class StandardRastrwin3:
+    name_RUSTab_9_rst = 'test9.rst'
+    name_RUSTab_9_scn = 'test9.scn'
+    directory_file_RUSTab = expanduser('~\\Documents\\RastrWin3\\test-rastr\\RUSTab')
+
+    file_RUSTab_9_rst = f'{directory_file_RUSTab}\\{name_RUSTab_9_rst}'
+    file_RUSTab_9_scn = f'{directory_file_RUSTab}\\{name_RUSTab_9_scn}'
 
 
 if __name__ == '__main__':

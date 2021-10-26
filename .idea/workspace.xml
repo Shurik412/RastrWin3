@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Tools/directory_rastrwin/defines_file_extensions.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/Tools/сonclutation_output.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,27 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00200" summary="Corr">
-      <created>1626075447615</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1626075447630</updated>
-    </task>
-    <task id="LOCAL-00201" summary="Add U1020.py">
-      <created>1626082816224</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1626082816224</updated>
-    </task>
-    <task id="LOCAL-00202" summary="Add UNITROL_F.py">
-      <created>1626083179509</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1626083179509</updated>
     </task>
     <task id="LOCAL-00203" summary="Add AVR45M_bsv.py">
       <created>1626084011985</created>
@@ -568,7 +549,28 @@
       <option name="project" value="LOCAL" />
       <updated>1635249381365</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="correcting file tools.py">
+      <created>1635250059431</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1635250059431</updated>
+    </task>
+    <task id="LOCAL-00250" summary="delete file timer.py">
+      <created>1635250102369</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1635250102369</updated>
+    </task>
+    <task id="LOCAL-00251" summary="delete file console_output.py">
+      <created>1635250164385</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1635250164385</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,9 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add parsing_xml.py and XML_Excel.py" />
-    <MESSAGE value="add excel_map_vetv.py" />
-    <MESSAGE value="add file Equivalent.vbs" />
     <MESSAGE value="add timer" />
     <MESSAGE value="add function changing_number_of_semicolons" />
     <MESSAGE value="add function equivalent" />
@@ -609,7 +608,10 @@
     <MESSAGE value="Add in module AnalysisBarsСapacity.py" />
     <MESSAGE value="Full change Lib" />
     <MESSAGE value="Add tools output result" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tools output result" />
+    <MESSAGE value="correcting file tools.py" />
+    <MESSAGE value="delete file timer.py" />
+    <MESSAGE value="delete file console_output.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete file console_output.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
