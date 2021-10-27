@@ -3,7 +3,7 @@
 import RastrWinLib.Tables.Vetv.vetv as vetv
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.calculation.equivalent import Equivalent
-from RastrWinLib.operation.Get import GettingParameter
+from RastrWinLib.operation.get import GettingParameter
 from RastrWinLib.Settings.equivalence import set_com_ekviv
 from RastrWinLib.Tables.tables_attributes import node_table, vetv_table, node_attributes_list
 from RastrWinLib.operation.GroupCorrection import GroupCorr

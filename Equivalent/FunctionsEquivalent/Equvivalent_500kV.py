@@ -1,5 +1,5 @@
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.operation.Get import GettingParameter
+from RastrWinLib.operation.get import GettingParameter
 from RastrWinLib.Tables.Dynamic.Generator import Generator
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tables.Vetv.vetv import Vetv

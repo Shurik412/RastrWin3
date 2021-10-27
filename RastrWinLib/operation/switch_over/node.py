@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.operation.Get import GettingParameter
+from RastrWinLib.operation.get import GettingParameter
 from RastrWinLib.Tables.Node.node import Node
 from RastrWinLib.Tools.tools import Tools
 from RastrWinLib.operation.Variable import Variable

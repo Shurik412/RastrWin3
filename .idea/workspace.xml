@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="Add class DirectoryCheck">
-      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="correction file get.py class GettingParameter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" afterDir="false" />
@@ -15,51 +13,19 @@
       <change beforePath="$PROJECT_DIR$/CustomModels/ARV2M/ARV2M_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV2M/ARV2M_BSV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomModels/ARV_REM/ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV_REM/ARV_REM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/equivalent_calculation_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalence/na_vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/na_vetv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalent/Equvivalent_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/Equvivalent_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/RemovingSwitches.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/RemovingSwitches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/OAPV_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/create_file_scn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/Delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/Delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/Get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/Get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/GroupCorrection.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/GroupCorrection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/Selection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/Switching/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/switch_over/Generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/Switching/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/switch_over/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/Switching/vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/switch_over/vetv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/ActionsObject/Variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/Variable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Archive/protocol.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Calculation/regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/calculation/regime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARS_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARS_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARV_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ARV_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DECS400_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DECS400_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFW421UEL_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS13_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS13_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS4B_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421PSS4B_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWIEEE421_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWOELUNITROL_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWOELUNITROL_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWTHYNE14_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/DFWTHYNE14_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ExciterFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ExciterFilling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/ForcerFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/ForcerFilling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/FuncPQ_Filling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/FuncPQ_Filling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/GeneratorsFilling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/FillingTable/GovernorFilling.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/FillingTable/GovernorFilling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Load.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Load.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/alt_unit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/equivalence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/regim.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/ut_common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/UploadResults/export_data_rustab.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/UploadResults/export_data_rustab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_RunDynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/operation/Get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/operation/Variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/Variable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RastrWinLib/operation/switch_over/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/switch_over/node.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" afterDir="false" />
@@ -282,13 +248,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00206" summary="Add AVR_2.py">
-      <created>1626085427966</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1626085427966</updated>
     </task>
     <task id="LOCAL-00207" summary="Add STyr.py">
       <created>1626088551553</created>
@@ -626,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635250760309</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary="correction dir operation">
+      <created>1635260406903</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1635260406903</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -642,8 +608,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add function Equvivalent_generator" />
-    <MESSAGE value="START NEW COMMINT 12/10/2021" />
     <MESSAGE value="Add class GetSettingsDynamic" />
     <MESSAGE value="Add class VariableSettingsDynamic" />
     <MESSAGE value="Corr Daynamic" />
@@ -667,7 +631,9 @@
     <MESSAGE value="Add class StandardRastrWin3" />
     <MESSAGE value="Add class DirectoryCheck" />
     <MESSAGE value="Correction Tools" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction Tools" />
+    <MESSAGE value="correction dir operation" />
+    <MESSAGE value="correction file get.py class GettingParameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction file get.py class GettingParameter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

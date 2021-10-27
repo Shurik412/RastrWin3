@@ -11,7 +11,7 @@ from openpyxl import Workbook
 from RastrWinLib.Excel.chart import ChartExcelOtherSheet
 from openpyxl.utils import get_column_letter
 from openpyxl.chart import ScatterChart
-from RastrWinLib.operation.Get import GettingParameterInstance, GettingParameterAttribute
+from RastrWinLib.operation.get import GettingParameterInstance, GettingParameterAttribute
 from RastrWinLib.operation.switch_over.vetv import SwitchLine
 
 wb = Workbook()

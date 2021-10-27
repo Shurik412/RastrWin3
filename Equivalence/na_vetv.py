@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.operation.Get import GettingParameter
+from RastrWinLib.operation.get import GettingParameter
 from RastrWinLib.Load import load_file
 from RastrWinLib.Load.save import save_file
 from RastrWinLib.Load.shablon import Shabl
