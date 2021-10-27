@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-from prettytable import PrettyTable
 
 from RastrWinLib.AstraRastr import RASTR
 from RastrWinLib.Tables.Vetv.vetv import Vetv
 from RastrWinLib.Tools.tools import TableOutput
-
 
 
 class FindNextSelection:

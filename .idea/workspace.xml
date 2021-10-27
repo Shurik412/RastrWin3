@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="correction file get.py class GettingParameter">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALAR_simulation/ALAR_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARS/AnalysisBarsСapacity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomModels/AC5B/AC5B.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AC5B/AC5B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomModels/AC8B/AC8B.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/AC8B/AC8B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomModels/ARV2M/ARV2M_BSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV2M/ARV2M_BSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomModels/ARV3M/ARV3M.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV3M/ARV3M.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomModels/ARV_REM/ARV_REM.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomModels/ARV_REM/ARV_REM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/gen_equivalent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalence/na_vetv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalence/na_vetv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/Equvivalent_500kV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/RemovingSwitches.py" beforeDir="false" afterPath="$PROJECT_DIR$/Equivalent/FunctionsEquivalent/RemovingSwitches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" beforeDir="false" afterPath="$PROJECT_DIR$/OAPV_simulation/set_regime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/alt_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/alt_unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/equivalence.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/equivalence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/regim.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/regim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/Settings/ut_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/Settings/ut_common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/operation/Get.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/get.py" afterDir="false" />
+    <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/RastrWinLib/operation/Variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/Variable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/operation/switch_over/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/switch_over/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_getting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/tests/test_str.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/string_proc_ex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/string_procent.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/string_procent.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RastrWin3" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="timeTracker.activityTracker" value="null" />
@@ -248,13 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00207" summary="Add STyr.py">
-      <created>1626088551553</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1626088551553</updated>
     </task>
     <task id="LOCAL-00208" summary="Add THYNE_1.py">
       <created>1626093340054</created>
@@ -592,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635260406903</updated>
     </task>
-    <option name="localTasksCounter" value="256" />
+    <task id="LOCAL-00256" summary="correction file Variable.py class Variable">
+      <created>1635344483053</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1635344483053</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,7 +584,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add class GetSettingsDynamic" />
     <MESSAGE value="Add class VariableSettingsDynamic" />
     <MESSAGE value="Corr Daynamic" />
     <MESSAGE value="General adjustments of all modules" />
@@ -633,7 +608,8 @@
     <MESSAGE value="Correction Tools" />
     <MESSAGE value="correction dir operation" />
     <MESSAGE value="correction file get.py class GettingParameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction file get.py class GettingParameter" />
+    <MESSAGE value="correction file Variable.py class Variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction file Variable.py class Variable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
