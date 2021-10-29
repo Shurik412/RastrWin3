@@ -21,4 +21,3 @@ def directory_shabl(rus_name_shabl: str):
     else:
         full_dir = f'{ROOT_DIR_RASTR_WIN_SHABLON}\\{dict_shablon_name[key_]}'
     return full_dir
-
