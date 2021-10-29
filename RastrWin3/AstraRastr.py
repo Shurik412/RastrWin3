@@ -14,7 +14,8 @@ class RastrEvents:
     Метод OnLog
     """
 
-    def OnLog(self, code, level, id, name, index, description, formName):
+    @staticmethod
+    def OnLog(code, level, id, name, index, description, formName) -> None:
         if code == 2:
             print('[Error]', description)
         elif code == 3:
@@ -26,7 +27,8 @@ class RastrEvents:
         else:
             print([code, description])
 
-    def Onprot(self, message):
+    @staticmethod
+    def Onprot(message: str) -> None:
         print(message)
 
 

@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
-from prettytable import PrettyTable
-
-from RastrWinLib.AstraRastr import RASTR, WithEvents
-from RastrWinLib.Templates import directory_shabl
+from RastrWin3.AstraRastr import RASTR
+from RastrWin3.Templates import directory_shabl
+from RastrWin3.Tools.tools import TableOutput
 
 
 def load_file(rastr_win=RASTR,
               rg_kod: int = 1,
               path_file: str = None,
               shabl: str = None,
-              switch_command_line: bool = False):
+              switch_command_line: bool = False) -> None:
     """
     Загружает файл данных name в рабочую область в соответствии с шаблоном типа shabl.
     Если поле shabl пусто, то загружается name без шаблона, если пусто поле name, то загружается только шаблон.
@@ -35,15 +34,6 @@ def load_file(rastr_win=RASTR,
     rastr_win.Load(1, '', directory_shabl(rus_name_shabl='автоматика'))
 
     if switch_command_line:
-        pt = PrettyTable()
-        pt.title = 'Загружаен файл данных в рабочую область RastrWin3'
-        pt.field_names = ['Файл', 'Шаблон']
+        pt = TableOutput(fieldName=['Файл', 'Шаблон'])
         pt.add_row([path_file, shabl])
-        print(pt)
-
-
-if __name__ == '__main__':
-    from RastrWinLib.AstraRastr import RASTR, WithEvents
-
-    load_file(rastr_win=RASTR, path_file='', shabl='режим')
-    load_file(rastr_win=RASTR, path_file='', shabl='динамика')
+        pt.show(title_table='Загружаен файл данных в рабочую область RastrWin3')
