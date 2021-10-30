@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.AstraRastr import RASTR
+from RastrWin3.AstraRastr import RASTR
 
 
 class GettingParameter:

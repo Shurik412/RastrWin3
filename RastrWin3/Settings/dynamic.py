@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from RastrWinLib.Tables.Settings.com_dynamics import ComDynamics
-from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.ActionsObject.Get import GettingParameter
-from RastrWinLib.ActionsObject.Variable import Variable
+from RastrWin3.Tables.Settings.com_dynamics import ComDynamics
+from RastrWin3.AstraRastr import RASTR
+from RastrWin3.ActionsObject.get import GettingParameter
+from RastrWin3.ActionsObject.variable import Variable
 
 from prettytable import PrettyTable
 
@@ -1089,9 +1089,9 @@ class VariableSettingsDynamic(Variable):
 
 
 if __name__ == '__main__':
-    from RastrWinLib.Load import load_file
-    from RastrWinLib.AstraRastr import RASTR
-    from RastrWinLib.ActionsObject.Get import GettingParameter
+    from RastrWin3.Load import load_file
+    from RastrWin3.AstraRastr import RASTR
+    from RastrWin3.ActionsObject.get import GettingParameter
 
     load_file(rastr_win=RASTR,
               path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',

@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-from prettytable import PrettyTable
-
-from RastrWinLib.AstraRastr import RASTR
-from RastrWinLib.Settings.dynamic import GetSettingsDynamic, VariableSettingsDynamic
+from RastrWin3.AstraRastr import RASTR
+from RastrWin3.Settings.dynamic import GetSettingsDynamic, VariableSettingsDynamic
+from RastrWin3.Tools.tools import TableOutput
 
 
 class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
@@ -52,44 +51,20 @@ class Dynamic(VariableSettingsDynamic, GetSettingsDynamic):
 
     def messageResult(self):
         ResultMessage = self.FWDynamic.ResultMessage  # Вывод сообщения о результатах расчета
-        pt = PrettyTable()
-        pt.field_names = ['Описание', 'Параметр']
-        pt.add_row(['Время расчета для динамики', f'{GetSettingsDynamic.Tras(self)} cек.'])
-        pt.add_row(['Сообщение о результатх расчета ЭМПП', ResultMessage])
+        pt = TableOutput(fieldName=['Описание', 'Параметр'])
+        pt.row_add(['Время расчета для динамики', f'{GetSettingsDynamic.Tras(self)} cек.'])
+        pt.row_add(['Сообщение о результатх расчета ЭМПП', ResultMessage])
         if ResultMessage == '':
-            pt.add_row(['Расчет завершен успешно, потери синхронизма не выявлено.', ''])
+            pt.row_add(['Расчет завершен успешно, потери синхронизма не выявлено.', ''])
         elif ResultMessage == 0:
-            pt.add_row(['Расчет завершен успешно, потери синхронизма не выявлено.', ''])
+            pt.row_add(['Расчет завершен успешно, потери синхронизма не выявлено.', ''])
         elif ResultMessage == 1:
-            pt.add_row(['Выявлено превышение угла по ветви значения 180°.', ''])
+            pt.row_add(['Выявлено превышение угла по ветви значения 180°.', ''])
         elif ResultMessage == 2:
-            pt.add_row(['Выявлено превышение угла по сопротивлению генератора значения 180°.', ''])
+            pt.row_add(['Выявлено превышение угла по сопротивлению генератора значения 180°.', ''])
         elif ResultMessage == 4:
-            pt.add_row(['Выявлено превышение допустимой скорости вращения одного или нескольких генераторов.'
+            pt.row_add(['Выявлено превышение допустимой скорости вращения одного или нескольких генераторов.'
                         'Допустимая скорость вращения задается уставкой автомата безопасности в настройках динамики.',
                         ''])
-        print(pt.get_string(title="Расчет ЭМПП"))
+        pt.show(title_table="Расчет ЭМПП")
         return ResultMessage
-
-
-if __name__ == '__main__':
-    from RastrWinLib.Load import load_file
-    from RastrWinLib.AstraRastr import RASTR
-
-    load_file(rastr_win=RASTR,
-              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
-              shabl='сценарий',
-              switch_command_line=True)
-
-    load_file(rastr_win=RASTR,
-              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
-              shabl='динамика',
-              switch_command_line=True)
-
-    calc = Dynamic(rastr_win=RASTR,
-                   calc_time=50.0,
-                   snap_max_count=1,
-                   switch_command_line=True)
-    calc.change_calc_time()
-    calc.change_snap_max_count()
-    calc.run()
