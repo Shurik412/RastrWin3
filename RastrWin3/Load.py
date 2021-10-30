@@ -43,36 +43,49 @@ def load_file(rastr_win=RASTR,
             table_output = TableOutput(fieldName=['Сообщение'])
             table_output.row_add(message=[exc[2]])
             table_output.show(title_table=f'Ошибка при запуске функции: "{load_file.__name__}"')
+            return False
         except pythoncom.com_error as error:
             hr, msg, exc, arg = error.args
             table_output = TableOutput(fieldName=['Сообщение'])
             table_output.row_add(message=[exc[2]])
             table_output.show(title_table=f'Ошибка при запуске функции: "{load_file.__name__}"')
+            return False
         except ValueError as error:
             table_output = TableOutput(fieldName=['Сообщение'])
             table_output.row_add(message=[f'Тип аргумента "rg_kod" должен быть int а не "";\n {error}'])
             table_output.show(title_table=f'Ошибка при запуске функции: "{load_file.__name__}"')
+            return False
+        else:
+            return True
 
     if shabl is None or shabl == '' or shabl == ' ':
-        load_(kod_rg=rg_kod, pathFile=path_file, shablon='')
-        shabl = 'без шаблона'
-        shabl_automation = directory_shabl(rus_name_shabl='автоматика')
-        load_(kod_rg=1, pathFile='', shablon=shabl_automation)
-        if switch_command_line:
-            pt = TableOutput(fieldName=['Файл', 'Шаблон'])
-            pt.add_row([path_file, shabl])
-            pt.add_row(["загружен только шаблон", shabl_automation])
-            pt.show(title_table='Загружаен файл данных в рабочую область RastrWin3')
+        load = load_(kod_rg=rg_kod, pathFile=path_file, shablon='')
+        if load:
+            shabl = 'без шаблона'
+            shabl_automation = directory_shabl(rus_name_shabl='автоматика')
+            load_(kod_rg=1, pathFile='', shablon=shabl_automation)
+            if switch_command_line:
+                pt = TableOutput(fieldName=['Файл', 'Шаблон'])
+                if path_file == '' or path_file == "" or path_file == ' ':
+                    pt.add_row(["загружен только шаблон", shabl])
+                else:
+                    pt.add_row([path_file, shabl])
+                pt.add_row(["загружен только шаблон", shabl_automation])
+                pt.show(title_table='Загружаен файл данных в рабочую область RastrWin3')
     else:
         shabl_path_file = directory_shabl(rus_name_shabl=shabl)
-        load_(kod_rg=rg_kod, pathFile=path_file, shablon=shabl_path_file)
-        shabl_automation = directory_shabl(rus_name_shabl='автоматика')
-        load_(kod_rg=1, pathFile='', shablon=shabl_automation)
+        load = load_(kod_rg=rg_kod, pathFile=path_file, shablon=shabl_path_file)
+        if load:
+            shabl_automation = directory_shabl(rus_name_shabl='автоматика')
+            load_(kod_rg=1, pathFile='', shablon=shabl_automation)
 
-        if switch_command_line:
-            pt = TableOutput(fieldName=['Файл', 'Шаблон'])
-            if shabl_path_file == '':
-                shabl_path_file = 'без шаблона'
-            pt.add_row([path_file, shabl_path_file])
-            pt.add_row(["загружен только шаблон", shabl_automation])
-            pt.show(title_table='Загружаен файл данных в рабочую область RastrWin3')
+            if switch_command_line:
+                pt = TableOutput(fieldName=['Файл', 'Шаблон'])
+                if shabl_path_file == '':
+                    shabl_path_file = 'без шаблона'
+                if path_file == '' or path_file == "" or path_file == ' ':
+                    pt.add_row(["загружен только шаблон", shabl_path_file])
+                else:
+                    pt.add_row([path_file, shabl_path_file])
+                pt.add_row(["загружен только шаблон", shabl_automation])
+                pt.show(title_table='Загружаен файл данных в рабочую область RastrWin3')

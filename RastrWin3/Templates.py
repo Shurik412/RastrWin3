@@ -27,7 +27,8 @@ def directory_shabl(rus_name_shabl: str) -> str:
             input_load_without_shabl = input(f'Введите:\n'
                                              f' - "Y" если хотите загрузить файл без шаблона.\n '
                                              f' - одно из названий шаблона:\n'
-                                             f' {name_shabl_list}\n')
+                                             f' {name_shabl_list}\n'
+                                             f'=>  ')
 
             if input_load_without_shabl == "Y":
                 full_dir = ''
