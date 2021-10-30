@@ -5,7 +5,7 @@ from RastrWin3.Tools.error_handler import error_load_file
 from RastrWin3.ActionsObject.variable import Variable
 import pywintypes
 from RastrWin3.Templates import directory_shabl
-
+import win32com.client
 #
 # def decor_error(func):
 #     def wrapper(*args, **kwargs):
@@ -38,12 +38,21 @@ from RastrWin3.Templates import directory_shabl
 # print(f'tras={tras}')
 # var = Variable(rastr_win=RASTR, switch_command_line=False)
 
+# @error_load_file
+# def load(path):
+#     RASTR.Load(1, path, directory_shabl(rus_name_shabl='автоматика'))
+#
+#
+# load(path='')
+
 @error_load_file
-def load(path):
-    RASTR.Load(1, path, directory_shabl(rus_name_shabl='автоматика'))
+def load(path, kd):
+    ra = win32com.client.Dispatch("Astr.Rastr")
+    ra.Load(kd, path, directory_shabl(rus_name_shabl='автоматика'))
 
 
-load(path='')
+load(path='', kd=1)
+
 
 # @decor_error
 # def variable_str():

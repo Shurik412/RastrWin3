@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import pythoncom
+import pywintypes
 from RastrWin3.Tools.tools import TableOutput
 
 
@@ -7,6 +8,13 @@ def error_load_file(func):
     def wrapper(*args, **kwargs):
         try:
             func(*args, **kwargs)
+
+        except pywintypes.com_error as er:
+            hr, msg, exc, arg = er.args
+            pt = TableOutput(fieldName=['Сообщение'])
+            pt.row_add(message=msg)
+            pt.show(title_table=f'Ошибка при запуске функции: "{func.__name__}"')
+
         except pythoncom.com_error as error:
             hr, msg, exc, arg = error.args
             pt = TableOutput(fieldName=['Сообщение'])
