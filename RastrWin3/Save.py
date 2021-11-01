@@ -9,7 +9,7 @@ def save_file(rastr_win=RASTR,
               shabl: str = None,
               switch_command_line: bool = False) -> None:
     """
-    Сохраняет информацию из рабочей области в файле name по шаблону shabl.
+    Сохраняет информацию из рабочей области в файле path_file по шаблону shabl.
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
     :param path_file: директория и название файла сохранения файла;
@@ -57,8 +57,8 @@ def save_file(rastr_win=RASTR,
                 pt.show(title_table='Сохранение файла RastrWin3')
     else:
         shabl_path_file = directory_shabl(rus_name_shabl=shabl)
-        load = load_(kod_rg=rg_kod, pathFile=path_file, shablon=shabl_path_file)
-        if load:
+        save_ = save(path_file_save=path_file, shablon=shabl_path_file)
+        if save_:
             if switch_command_line:
                 pt = TableOutput(fieldName=['Файл', 'Шаблон'])
                 pt.add_row([path_file, shabl_path_file])
