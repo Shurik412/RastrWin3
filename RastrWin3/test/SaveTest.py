@@ -23,11 +23,11 @@ load_file(rastr_win=RASTR,
           path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
           shabl='сценарий',
           switch_command_line=True)
-
+print("Point 1")
 load_file(rastr_win=RASTR,
           path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
           shabl='динамика',
-          switch_command_line=True)
+          switch_command_line=False)
 
 save_file(path_file=r'C:\Users\Ohrimenko_AG\Desktop\test_9_2.rst',
           switch_command_line=True,
@@ -45,3 +45,7 @@ save_file(path_file=r'23',
           switch_command_line=True,
           shabl='сценарий')
 
+print("Point 2")
+save_file(path_file=r'',
+          switch_command_line=False,
+          shabl='сценарий')
