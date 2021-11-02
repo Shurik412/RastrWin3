@@ -12,26 +12,28 @@ load_obj.load(kod_rg=1,
               name_shabl_russian='режим')
 
 load_obj.load(kod_rg=1,
-              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\cx195.rg2',
-              name_shabl_russian='режим')
-
-# Проверка параметра switch_command_line=False and True (результат - выполнено)
-print('Проверка параметра switch_command_line=False and True')
-load_obj_two = LoadFile(rastr_win=RASTR, switch_command_line=False)
-load_obj_two.load(kod_rg=1,
-                  path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
-                  name_shabl_russian='динамика')
-
-load_obj_two.load(kod_rg=1,
-                  path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
-                  name_shabl_russian='сценарий')
-
-# Проверка параметра shabl = '' (результат - выполнено)
-print('Проверка параметра shabl = ""')
-load_obj.load(kod_rg=1,
               path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
               name_shabl_russian='динамика')
 
-load_obj.load(kod_rg=1,
-              path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
-              name_shabl_russian='сценарий')
+
+#
+# # Проверка параметра switch_command_line=False and True (результат - выполнено)
+# print('Проверка параметра switch_command_line=False and True')
+# load_obj_two = LoadFile(rastr_win=RASTR, switch_command_line=False)
+# load_obj_two.load(kod_rg=1,
+#                   path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+#                   name_shabl_russian='динамика')
+#
+# load_obj_two.load(kod_rg=1,
+#                   path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
+#                   name_shabl_russian='сценарий')
+#
+# # Проверка параметра shabl = '' (результат - выполнено)
+# print('Проверка параметра shabl = ""')
+# load_obj.load(kod_rg=1,
+#               path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.rst',
+#               name_shabl_russian='динамика')
+#
+# load_obj.load(kod_rg=1,
+#               path_file=r'C:\Users\Ohrimenko_AG\Documents\RastrWin3\test-rastr\RUSTab\test9.scn',
+#               name_shabl_russian='сценарий')
