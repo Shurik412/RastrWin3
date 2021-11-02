@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from RastrWin3.AstraRastr import RASTR
-from RastrWin3.Templates import directory_shabl
+from RastrWin3.Templates import ROOT_DIR_SHABLON, Key_to_select_location
 from RastrWin3.Tools.tools import TableOutput
 
 

@@ -102,7 +102,7 @@ class DirectoryCheck:
 
     def get_split(self):
         p = re.split(r'[.]', self.name)
-        for index, expansion in enumerate(p):
+        for expansion in p:
             if expansion == 'scn':
                 return expansion
 

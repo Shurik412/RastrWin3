@@ -19,7 +19,8 @@ class LoadFile(TableOutput, ROOT_DIR_SHABLON):
         """
         self.rastr_win = rastr_win
         self.switch_command_line = switch_command_line
-        super().__init__(fieldName=['Файл', 'Шаблон'])
+        self.field_name = ['Файл', 'Шаблон']
+        super().__init__(fieldName=self.field_name)
 
     def __bool__(self):
         return self.switch_command_line
@@ -91,7 +92,7 @@ class LoadFile(TableOutput, ROOT_DIR_SHABLON):
                                         path_file=path_file)
 
     def information_output(self, shabl_path_file: str, path_file: str) -> None:
-        pt = TableOutput(fieldName=['Файл', 'Шаблон'])
+        pt = TableOutput(fieldName=self.field_name)
         if shabl_path_file == '':
             shabl_path_file = 'без шаблона'
         if path_file == '' or path_file == "" or path_file == ' ':

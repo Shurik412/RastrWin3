@@ -32,7 +32,7 @@ class GettingParameter:
 
         """
         table_ = self.rastr_win.Tables(table)
-        value_cell_of_row = table_.Cols(column).SetZ(row_id)
+        value_cell_of_row = table_.Cols(column).Z(row_id)
         return value_cell_of_row
 
     def get_cell_SetSel(self,
@@ -49,41 +49,40 @@ class GettingParameter:
         table_ = self.rastr_win.Tables(table)
         table_.SetSel(key)
         row_ = table_.FindNextSel(-1)
-        value_cell_of_set_sel = table_.Cols(column).Z(row_)
-        return value_cell_of_set_sel
+        if row_ != (-1):
+            value_cell_of_set_sel = table_.Cols(column).Z(row_)
+            return value_cell_of_set_sel
 
     def get_cell_index(self,
                        table: str,
-                       column: str,
-                       value: str):
+                       key: str) -> int:
         """
-        Метод get_cell_index - метод возвращает порядковый номер таблицы.\n
-        :param table: название таблицы RastrWin3 (generator);\n
-        :param column: навание колонки (столбца) RastrWin3 (Num);\n
-        :param value: значение, напрмер номер генератора;\n
+        Метод get_cell_index - метод возвращает порядковый номер таблицы.
+        :param key: формула выборки;
+        :param table: название таблицы RastrWin3 (generator);
         :return: row - порядковый номер таблицы.
         """
         table_ = self.rastr_win.Tables(table)
-        table_.SetSel(f'{column}={value}')
+        table_.SetSel(key)
         row = table_.FindNextSel(-1)
         return row
 
     def get_count_table_starting_zero(self, table: str) -> int:
         """
-        Метод get_count_table_starting_zero - возвращает количество строк таблице начиная с нуля.\n
-        :param table: название таблицы RastrWin3 (generator);\n
+        Метод get_count_table_starting_zero - возвращает количество строк таблице начиная с нуля.
+        :param table: название таблицы RastrWin3 (generator);
         :return: count - максимальное число строк в таблице.
         """
         table_ = self.rastr_win.Tables(table)
-        count = table_.Size
+        count = table_.Count - 1
         return count
 
-    def get_count_table(self, table: str):
+    def get_count_table(self, table: str) -> int:
         """
         Метод get_count_table - метод возвращает количество строк таблице.\n
         :param table: название таблицы RastrWin3 (generator);\n
         :return: count - максимальное число строк в таблице.
         """
         table_ = self.rastr_win.Tables(table)
-        count = table_.Size
+        count = table_.Count
         return count
