@@ -15,7 +15,7 @@ def save_file(rastr_win=RASTR,
     :param path_file: директория и название файла сохранения файла;
     :param shabl: шаблон RastrWin3 для сохранения;
     :param switch_command_line: True/False - выводит сообщения в протокол;
-    :return: None;
+    :return: Nothing;
     """
 
     def save(path_file_save: str, shablon: str) -> bool:

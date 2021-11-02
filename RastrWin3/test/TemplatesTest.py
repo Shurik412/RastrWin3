@@ -1,10 +1,31 @@
-from RastrWin3.Templates import directory_shabl, ROOT_DIR_SHABLON
+from RastrWin3.Templates import ROOT_DIR_SHABLON
 
-print(directory_shabl(rus_name_shabl='', location_of_files=ROOT_DIR_SHABLON.LOCATION_SCRIPT))
-print(directory_shabl(rus_name_shabl=' ', location_of_files=ROOT_DIR_SHABLON.LOCATION_ROOT_FOLDER_RASTR))
-print(directory_shabl(rus_name_shabl="", location_of_files=ROOT_DIR_SHABLON.LOCATION_FOLDER_DOCUMENTS))
-print(directory_shabl(rus_name_shabl=" "))
-print(directory_shabl(rus_name_shabl='режим'))
-print(directory_shabl(rus_name_shabl='Режим'))
-print(directory_shabl(rus_name_shabl='реЖим'))
 
+dir = ROOT_DIR_SHABLON()
+
+print(dir.directory_shabl(russian_name_shabl='динамика',
+                          location_of_files=dir.LOCATION_FOLDER_DOCUMENTS))
+
+print(dir.directory_shabl(russian_name_shabl='режим',
+                          location_of_files=dir.LOCATION_FOLDER_DOCUMENTS))
+
+print(dir.directory_shabl(russian_name_shabl='',
+                          location_of_files=dir.LOCATION_FOLDER_DOCUMENTS))
+
+print(dir.directory_shabl(russian_name_shabl='динамика',
+                          location_of_files=dir.LOCATION_SCRIPT))
+
+print(dir.directory_shabl(russian_name_shabl='режим',
+                          location_of_files=dir.LOCATION_SCRIPT))
+
+print(dir.directory_shabl(russian_name_shabl='',
+                          location_of_files=dir.LOCATION_SCRIPT))
+
+print(dir.directory_shabl(russian_name_shabl='динамика',
+                          location_of_files=dir.LOCATION_ROOT_FOLDER_RASTR))
+
+print(dir.directory_shabl(russian_name_shabl='режим',
+                          location_of_files=dir.LOCATION_ROOT_FOLDER_RASTR))
+
+print(dir.directory_shabl(russian_name_shabl='',
+                          location_of_files=dir.LOCATION_ROOT_FOLDER_RASTR))
