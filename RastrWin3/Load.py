@@ -11,12 +11,14 @@ def load_file(rastr_win=RASTR,
               rg_kod: int = 1,
               path_file: str = None,
               shabl: str = None,
+              location_of_shabl_files: str = 'location_folder_documents',
               switch_command_line: bool = False) -> None:
     """
     Загружает файл данных name в рабочую область в соответствии с шаблоном типа shabl.
     Если поле shabl пусто, то загружается name без шаблона, если пусто поле name, то загружается только шаблон.
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);
+
     :param rg_kod: числовое значение, определяет режим загрузки при наличии таблицы
             в рабочей области и может быть одним из следующих:
             Константа   Значение           Описание
@@ -29,13 +31,21 @@ def load_file(rastr_win=RASTR,
                                     Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»)
 
     :param shabl: шаблон RastrWin3 для загрузки;
+
+    :param location_of_shabl_files: location_script - в корневой папку пакета;
+                                    location_folder_documents - в корневой директории Мои документы (OS Windows);
+                                    location_root_folder_rastr - в корневой директории RastrWin3;
+                                    если параметр не задан то используется директория Мои документа;
+
     :param path_file: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);
+
     :param switch_command_line: True/False - выводит сообщения в протокол;
-    :return: True
+
+    :return: Noting
     """
 
-    def load_(kod_rg: int = 1, pathFile: str = '', shablon=directory_shabl(rus_name_shabl='автоматика')):
-
+    def load_(kod_rg: int = 1, pathFile: str = '', shablon=directory_shabl(rus_name_shabl='автоматика',
+                                                                           location_of_files=location_of_shabl_files)):
         try:
             rastr_win.Load(kod_rg, pathFile, shablon)
         except pywintypes.com_error as er:
@@ -62,7 +72,8 @@ def load_file(rastr_win=RASTR,
         load = load_(kod_rg=rg_kod, pathFile=path_file, shablon='')
         if load:
             shabl = 'без шаблона'
-            shabl_automation = directory_shabl(rus_name_shabl='автоматика')
+            shabl_automation = directory_shabl(rus_name_shabl='автоматика',
+                                               location_of_files=location_of_shabl_files)
             load_(kod_rg=1, pathFile='', shablon=shabl_automation)
             if switch_command_line:
                 pt = TableOutput(fieldName=['Файл', 'Шаблон'])
@@ -73,12 +84,13 @@ def load_file(rastr_win=RASTR,
                 pt.add_row(["загружен только шаблон", shabl_automation])
                 pt.show(title_table='Загружаен файл данных в рабочую область RastrWin3')
     else:
-        shabl_path_file = directory_shabl(rus_name_shabl=shabl)
+        shabl_path_file = directory_shabl(rus_name_shabl=shabl,
+                                          location_of_files=location_of_shabl_files)
         load = load_(kod_rg=rg_kod, pathFile=path_file, shablon=shabl_path_file)
         if load:
-            shabl_automation = directory_shabl(rus_name_shabl='автоматика')
+            shabl_automation = directory_shabl(rus_name_shabl='автоматика',
+                                               location_of_files=location_of_shabl_files)
             load_(kod_rg=1, pathFile='', shablon=shabl_automation)
-
             if switch_command_line:
                 pt = TableOutput(fieldName=['Файл', 'Шаблон'])
                 if shabl_path_file == '':
