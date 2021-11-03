@@ -103,7 +103,7 @@ Python является основным динамическим языком �
 <a id="2-python-language-rules"></a>
 
 <a id="python-language-rules"></a>
-## 2 Python Language Rules 
+## 2 Правила языка Python 
 
 <a id="s2.1-lint"></a>
 <a id="21-lint"></a>
@@ -111,153 +111,153 @@ Python является основным динамическим языком �
 <a id="lint"></a>
 ### 2.1 Lint 
 
-Run `pylint` over your code using this [pylintrc](https://google.github.io/styleguide/pylintrc).
+Запуск `pylint` на Вашем коде используется этот [pylintrc](https://google.github.io/styleguide/pylintrc).
 
 <a id="s2.1.1-definition"></a>
 <a id="211-definition"></a>
 
 <a id="lint-definition"></a>
-#### 2.1.1 Definition 
+#### 2.1.1 Определения (описание) 
 
 `pylint`
-is a tool for finding bugs and style problems in Python source code. It finds
-problems that are typically caught by a compiler for less dynamic languages like
-C and C++. Because of the dynamic nature of Python, some
-warnings may be incorrect; however, spurious warnings should be fairly
-infrequent.
+это инструмент для поиска ошибок (bugs) и проблем стилей в коде Python.
+Он находит проблемы, которые ловяться (находятся) компилятором для не динмаических язык как C и C++. 
+Из-за динамической природы Python, некоторые предупреждения могут быть неверными;
+Тем не менее, ложные предупреждения должны быть нечастыми.
 
 <a id="s2.1.2-pros"></a>
 <a id="212-pros"></a>
 
 <a id="lint-pros"></a>
-#### 2.1.2 Pros 
+#### 2.1.2 Плюсы 
 
-Catches easy-to-miss errors like typos, using-vars-before-assignment, etc.
+Легко обнаруживает ошибки, такие как опечатки, using-vars-before-assignment, и т.д.
 
 <a id="s2.1.3-cons"></a>
 <a id="213-cons"></a>
 
 <a id="lint-cons"></a>
-#### 2.1.3 Cons 
+#### 2.1.3 Минусы 
 
 `pylint`
-isn't perfect. To take advantage of it, sometimes we'll need to write around it,
-suppress its warnings or fix it.
+не идеален. Чтобы воспользоваться этим, иногда нам нужно написать об этом,... 
+подавить его предупреждения или исправить.
 
 <a id="s2.1.4-decision"></a>
 <a id="214-decision"></a>
 
 <a id="lint-decision"></a>
-#### 2.1.4 Decision 
+#### 2.1.4 Решение 
 
-Make sure you run
+Убедитесь, что Вы используете 
 `pylint`
-on your code.
+в Вашем коде.
 
 
-Suppress warnings if they are inappropriate so that other issues are not hidden.
-To suppress warnings, you can set a line-level comment:
+Подавлять предупреждения, если они неуместны, с тем чтобы не скрывать другие.
+Для подавления предупреждений вы можете задать line-level коментарий:
 
 ```python
-dict = 'something awful'  # Bad Idea... pylint: disable=redefined-builtin
+dict = 'something awful'  # (Плохая идея) Bad Idea... pylint: disable=redefined-builtin
 ```
 
 `pylint`
-warnings are each identified by symbolic name (`empty-docstring`)
-Google-specific warnings start with `g-`.
+предупреждения идентифицируются по (названию) имени (`empty-docstring`)
+Специальные предупреждения Google начинаются с `g-`.
 
-If the reason for the suppression is not clear from the symbolic name, add an
-explanation.
+Если причина подавления не ясна из имени, добавьте объяснение.
 
-Suppressing in this way has the advantage that we can easily search for
-suppressions and revisit them.
+Подавление таким образом имеет то преимущество, 
+что мы можем легко искать подавления и пересматривать их.
 
-You can get a list of
+Вы можете получать лист
 `pylint`
-warnings by doing:
+предупреждений слудеющим путем:
 
 ```shell
 pylint --list-msgs
 ```
 
-To get more information on a particular message, use:
+Чтобы получить больше информации о конкретном сообщении, используйте:
 
 ```shell
 pylint --help-msg=C6409
 ```
 
-Prefer `pylint: disable` to the deprecated older form `pylint: disable-msg`.
+Предпочитаете `pylint: disable` устаревшую форму `pylint: disable-msg`.
 
-Unused argument warnings can be suppressed by deleting the variables at the
-beginning of the function. Always include a comment explaining why you are
-deleting it. "Unused." is sufficient. For example:
+Предупреждение о неиспользованном аргументе может быть удалено путём удаления переменных в начале функции. 
+Всегда включите комментарий, поясняющий, почему вы его удаляете. 
+"Неиспользованный" достаточно. 
+Например:
 
 ```python
 def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
-    del beans, eggs  # Unused by vikings.
+    del beans, eggs  # Unused by vikings.(неиспользуется в vikings)
     return spam + spam + spam
 ```
 
-Other common forms of suppressing this warning include using '`_`' as the
-identifier for the unused argument or prefixing the argument name with
-'`unused_`', or assigning them to '`_`'. These forms are allowed but no longer
-encouraged. These break callers that pass arguments by name and do not enforce
-that the arguments are actually unused.
+Другие распространенные формы подавления этого предупреждения включают использование '`_`'
+в качестве идентификатора неиспользуемого аргумента или префикса имени аргумента
+'`unused_`', или присвоение им '`_`'. Эти формы разрешены, но больше не рекомендуются.
+Эти break callers, которые передают аргументы по имени и не настаивают на том,
+что аргументы фактически не используются.
 
 <a id="s2.2-imports"></a>
 <a id="22-imports"></a>
 
 <a id="imports"></a>
-### 2.2 Imports 
+### 2.2 (Импорты) Imports 
 
-Use `import` statements for packages and modules only, not for individual
-classes or functions. Imports from the [typing module](#typing-imports),
+Использовать инструкции `import` для пакетов (packages) и модулей (modules), 
+а не для отдельных классов (classes) или функций (functions).
+Импорт из [typing module](#typing-imports),
 [typing_extensions module](https://github.com/python/typing/tree/master/typing_extensions),
-and the
+и
 [six.moves module](https://six.readthedocs.io/#module-six.moves)
-are exempt from this rule.
+освобождены от этого правила.
 
 <a id="s2.2.1-definition"></a>
 <a id="221-definition"></a>
 
 <a id="imports-definition"></a>
-#### 2.2.1 Definition 
+#### 2.2.1 Определение 
 
-Reusability mechanism for sharing code from one module to another.
+Механизм многократного использования для обмена кодами из одного модуля в другой.
 
 <a id="s2.2.2-pros"></a>
 <a id="222-pros"></a>
 
 <a id="imports-pros"></a>
-#### 2.2.2 Pros 
+#### 2.2.2 Плюсы 
 
-The namespace management convention is simple. The source of each identifier is
-indicated in a consistent way; `x.Obj` says that object `Obj` is defined in
-module `x`.
+Простаое упраление пространством имен. 
+Источник каждого идентификатора указывается последовательным образом; 
+`x.Obj` говорит что объект `Obj` определяется в модуле `x`.
 
 <a id="s2.2.3-cons"></a>
 <a id="223-cons"></a>
 
 <a id="imports-cons"></a>
-#### 2.2.3 Cons 
+#### 2.2.3 Минусы 
 
-Module names can still collide. Some module names are inconveniently long.
+Имена молулей могут сталкиваться (конфликтовать, вступать в противоречия).
+Некоторые имена модулей слишком длинные, это может вызвать неудобства.
 
 <a id="s2.2.4-decision"></a>
 <a id="224-decision"></a>
 
 <a id="imports-decision"></a>
-#### 2.2.4 Decision 
+#### 2.2.4 Решение 
 
-*   Use `import x` for importing packages and modules.
-*   Use `from x import y` where `x` is the package prefix and `y` is the module
-    name with no prefix.
-*   Use `from x import y as z` if two modules named `y` are to be imported or if
-    `y` is an inconveniently long name.
-*   Use `import y as z` only when `z` is a standard abbreviation (e.g., `np` for
+*   Используйте `import x` для импорта пакетов и модулей.
+*   Используйте `from x import y` где `x` это пакет (package) и `y` имя модулья.
+*   Используйте `from x import y as z` если два модуля с именем `y`  или если модуль
+    `y` имеет слишком длинное название (неудобное).
+*   Исмользуйте `import y as z` только тогда когда `z` является стандартной аббревиатурой (напрмимер `np` для
     `numpy`).
 
-For example the module `sound.effects.echo` may be imported as follows:
+Например, модуль `sound.effects.echo` может быть импортирован следующим образом:
 
 ```python
 from sound.effects import echo
@@ -265,49 +265,52 @@ from sound.effects import echo
 echo.EchoFilter(input, output, delay=0.7, atten=4)
 ```
 
-Do not use relative names in imports. Even if the module is in the same package,
-use the full package name. This helps prevent unintentionally importing a
-package twice.
+Не использовать относительные имена при импорте. 
+Даже если модуль находится в том же пакете, используйте полное имя пакета. 
+Это помогает предотвратить непреднамеренный импорт пакта (package) дважды.
 
 <a id="s2.3-packages"></a>
 <a id="23-packages"></a>
 
 <a id="packages"></a>
-### 2.3 Packages 
+### 2.3 Пакеты (Packages) 
 
-Import each module using the full pathname location of the module.
+Импортировать каждый модуль, используйте полное имя пути модуля.
 
 <a id="s2.3.1-pros"></a>
 <a id="231-pros"></a>
 
 <a id="packages-pros"></a>
-#### 2.3.1 Pros 
+#### 2.3.1 Плюсы 
 
-Avoids conflicts in module names or incorrect imports due to the module search
-path not being what the author expected. Makes it easier to find modules.
+Избегает конфликтов в именах модулей или неправильного импорта из-за того,
+что путь поиска модуля не соответствует ожиданиям автора.
+Это облегчает поиск модулей.
 
 <a id="s2.3.2-cons"></a>
 <a id="232-cons"></a>
 
 <a id="packages-cons"></a>
-#### 2.3.2 Cons 
+#### 2.3.2 Минусы 
 
-Makes it harder to deploy code because you have to replicate the package
-hierarchy. Not really a problem with modern deployment mechanisms.
+(Makes it harder to deploy code because you have to replicate the package
+hierarchy. Not really a problem with modern deployment mechanisms.)
+Усложняет установку кода, так как вам нужно воспроизвести иерархию пакетов. 
+Не проблема с современными механизмами развертывания.
 
 <a id="s2.3.3-decision"></a>
 <a id="233-decision"></a>
 
 <a id="packages-decision"></a>
-#### 2.3.3 Decision 
+#### 2.3.3 Решение 
 
-All new code should import each module by its full package name.
+Все новые коды должны импортировать каждый модуль по его полному имени пакета.
 
-Imports should be as follows:
+Импорт должен быть следующим:
 
 ```python
 Yes:
-  # Reference absl.flags in code with the complete name (verbose).
+  # Reference absl.flags in code with the complete name (verbose). (Ссылки absl.flags в коде с полным именем (verbose).)
   import absl.flags
   from doctor.who import jodie
 
@@ -316,83 +319,84 @@ Yes:
 
 ```python
 Yes:
-  # Reference flags in code with just the module name (common).
+  # Reference flags in code with just the module name (common).(Ссылки флаги в коде только с именем модуля (общий))
   from absl import flags
   from doctor.who import jodie
 
   FLAGS = flags.FLAGS
 ```
 
-_(assume this file lives in `doctor/who/` where `jodie.py` also exists)_
+_(предположим, что этот файл находится в `doctor/who/` где `jodie.py` также существует)_
 
 ```python
 No:
-  # Unclear what module the author wanted and what will be imported.  The actual
-  # import behavior depends on external factors controlling sys.path.
-  # Which possible jodie module did the author intend to import?
+  # Неясно, какой модуль хотел автор и что будет импортировано. Фактически.  
+  # Реальное поведение импорта зависит от внешних факторов, контролирующих sys.path.
+  # Какой возможный модуль джоди намеревался импортировать автор?
   import jodie
 ```
 
-The directory the main binary is located in should not be assumed to be in
-`sys.path` despite that happening in some environments. This being the case,
-code should assume that `import jodie` refers to a third party or top level
-package named `jodie`, not a local `jodie.py`.
+Каталог, в котором расположена основная двоичная папка, не следует рассматривать как каталог,
+находящийся в файловой `sys.path`, несмотря на то, что это происходит в некоторых средах.
+В этом случае код должен предполагать, что `import jodie` относится к третьей стороне или 
+пакету верхнего уровня с именем `jodie`, а не к локальному `jodie.py`.
 
 
 <a id="s2.4-exceptions"></a>
 <a id="24-exceptions"></a>
 
 <a id="exceptions"></a>
-### 2.4 Exceptions 
+### 2.4 Исключения 
 
-Exceptions are allowed but must be used carefully.
+Исключения допускаются, но должны применяться осторожно.
 
 <a id="s2.4.1-definition"></a>
 <a id="241-definition"></a>
 
 <a id="exceptions-definition"></a>
-#### 2.4.1 Definition 
+#### 2.4.1 Определение 
 
-Exceptions are a means of breaking out of normal control flow to handle errors
-or other exceptional conditions.
+Исключения являются средством выхода из нормального потока управления 
+для обработки ошибок или других исключительных условий.
 
 <a id="s2.4.2-pros"></a>
 <a id="242-pros"></a>
 
 <a id="exceptions-pros"></a>
-#### 2.4.2 Pros 
+#### 2.4.2 Плюсы 
 
-The control flow of normal operation code is not cluttered by error-handling
-code. It also allows the control flow to skip multiple frames when a certain
-condition occurs, e.g., returning from N nested functions in one step instead of
-having to plumb error codes through.
+Управляющий поток обычного операционного кода не загроможден кодом обработки ошибок. 
+Это также позволяет управляющему потоку пропускать несколько кадров, 
+когда происходит определенное условие, например, возвращение из вложенных функций N в один шаг вместо того, 
+чтобы пропускать коды ошибок.
 
 <a id="s2.4.3-cons"></a>
 <a id="243-cons"></a>
 
 <a id="exceptions-cons"></a>
-#### 2.4.3 Cons 
+#### 2.4.3 Минусы 
 
-May cause the control flow to be confusing. Easy to miss error cases when making
-library calls.
+Может вызвать путаницу в потоке управления. 
+При вызове библиотеки легко пропустить случаи ошибок.
 
 <a id="s2.4.4-decision"></a>
 <a id="244-decision"></a>
 
 <a id="exceptions-decision"></a>
-#### 2.4.4 Decision 
+#### 2.4.4 Решение 
 
-Exceptions must follow certain conditions:
+Исключения должны осуществляться при соблюдении определенных условий:
 
--   Make use of built-in exception classes when it makes sense. For example,
-    raise a `ValueError` to indicate a programming mistake like a violated
-    precondition (such as if you were passed a negative number but required a
-    positive one). Do not use `assert` statements for validating argument values
-    of a public API. `assert` is used to ensure internal correctness, not to
-    enforce correct usage nor to indicate that some unexpected event occurred.
-    If an exception is desired in the latter cases, use a raise statement. For
-    example:
-
+-  Используйте встроенные классы исключений, когда это имеет смысл. 
+   Например,  поднимите значение `ValueError`,  чтобы указать на ошибку программирования, 
+   подобную нарушенному предварительному условию 
+   (например, если вы получили отрицательное число, но требовали положительное). 
+   Не используйте `assert` утверждения для проверки значений аргументов публичного API.
+   `assert` используется для обеспечения внутренней корректности,
+   а не для обеспечения правильного использования или указания на какое-либо неожиданное событие.
+   Если в последнем случае желательно сделать исключение, 
+   используйте заявление о поднятии вопроса.
+   Например:
     
     ```python
     Yes:
@@ -438,131 +442,135 @@ Exceptions must follow certain conditions:
         assert port is not None
         return port
     ```
+-   Библиотеки или пакеты могут определять свои собственные исключения. 
+    При этом они должны наследовать от существующего класса исключений. 
+    Имена исключений должны заканчиваться на `Error` и не должны вводить повторение
+    (`foo.FooError`).
 
--   Libraries or packages may define their own exceptions. When doing so they
-    must inherit from an existing exception class. Exception names should end in
-    `Error` and should not introduce repetition (`foo.FooError`).
+-   Никогда не используйте обработку всех типов (catch-all) `except:` заявление или уловка `Exception` или
+    `StandardError`, за исключением
 
--   Never use catch-all `except:` statements, or catch `Exception` or
-    `StandardError`, unless you are
+    -   повторное выдвижение исключения или
+    -   создание изолированной точки в программе, где исключения не распространяются, 
+        а регистрируются и подавляются вместо этого, например, 
+        защита потока от падения путем охраны его самого внешнего блока..
+    
+    Python является очень терпимым в этом отношении и `except:` действительно уловит все,
+    включая имена с ошибками, sys.exit() вызовы, прерывания Ctrl+C, 
+    unittest сбои (failures) и все виды исключений, которые вы просто не хотите ловить.
 
-    -   re-raising the exception, or
-    -   creating an isolation point in the program where exceptions are not
-        propagated but are recorded and suppressed instead, such as protecting a
-        thread from crashing by guarding its outermost block.
+-   Минимизация количества кода в блоке `try`/`except`. 
+    Чем больше тело `try`, тем больше вероятность того, 
+    что исключение будет поднято строкой кода, который вы не ожидали создать исключение.
+    В этих случаях блок `try`/`except` скрывает реальную ошибку.
 
-    Python is very tolerant in this regard and `except:` will really catch
-    everything including misspelled names, sys.exit() calls, Ctrl+C interrupts,
-    unittest failures and all kinds of other exceptions that you simply don't
-    want to catch.
+-   Для выполнения кода используйте `finally` независимо от того, сделано ли исключение в блоке `try`. 
+    Это часто полезно для очистки, то есть закрытия файла.
 
--   Minimize the amount of code in a `try`/`except` block. The larger the body
-    of the `try`, the more likely that an exception will be raised by a line of
-    code that you didn't expect to raise an exception. In those cases, the
-    `try`/`except` block hides a real error.
-
--   Use the `finally` clause to execute code whether or not an exception is
-    raised in the `try` block. This is often useful for cleanup, i.e., closing a
-    file.
 
 <a id="s2.5-global-variables"></a>
 <a id="25-global-variables"></a>
 
 <a id="global-variables"></a>
-### 2.5 Global variables 
+### 2.5 Глобальные переменные (Global variables) 
 
-Avoid global variables.
+Избегайте глобальных переменных.
 
 <a id="s2.5.1-definition"></a>
 <a id="251-definition"></a>
 
 <a id="global-variables-definition"></a>
-#### 2.5.1 Definition 
+#### 2.5.1 Определение 
 
-Variables that are declared at the module level or as class attributes.
+Переменные, объявленные на уровне модуля или в качестве атрибутов класса.
 
 <a id="s2.5.2-pros"></a>
 <a id="252-pros"></a>
 
 <a id="global-variables-pros"></a>
-#### 2.5.2 Pros 
+#### 2.5.2 Плюсы 
 
-Occasionally useful.
+Иногда полезно.
 
 <a id="s2.5.3-cons"></a>
 <a id="253-cons"></a>
 
 <a id="global-variables-cons"></a>
-#### 2.5.3 Cons 
+#### 2.5.3 Минусы 
 
-Has the potential to change module behavior during the import, because
-assignments to global variables are done when the module is first imported.
+Имеет возможность изменить поведение модуля во время импорта, 
+потому что назначения глобальным переменным производятся при первом импорте модуля.
 
 <a id="s2.5.4-decision"></a>
 <a id="254-decision"></a>
 
 <a id="global-variables-decision"></a>
-#### 2.5.4 Decision 
+#### 2.5.4 Решение 
 
-Avoid global variables.
+Избегать глобальных переменных.
 
-While they are technically variables, module-level constants are permitted and
-encouraged. For example: `_MAX_HOLY_HANDGRENADE_COUNT = 3`. Constants must be
-named using all caps with underscores. See [Naming](#s3.16-naming) below.
+Хотя технически они являются переменными, допускаются и поощряются константы уровня модуля. 
+Например: `_MAX_HOLY_HANDGRENADE_COUNT = 3`. 
+Константы должны называться с использованием все заглавных букв с подчеркиванием.
+Смотреть (Название) [Naming](#s3.16-naming) ниже.
 
-If needed, globals should be declared at the module level and made internal to
-the module by prepending an `_` to the name. External access must be done
-through public module-level functions. See [Naming](#s3.16-naming) below.
+В случае необходимости глобальные переменные должны быть объявлены на уровне модулей и 
+введены в модуль путем добавления "_" к названию.
+Внешний доступ должен осуществляться через публичные функции уровня модуля.
+Смотерть (Название) [Naming](#s3.16-naming) ниже.
 
 <a id="s2.6-nested"></a>
 <a id="26-nested"></a>
 
 <a id="nested-classes-functions"></a>
-### 2.6 Nested/Local/Inner Classes and Functions 
+### 2.6 Вложенные/локальные/внутренние классы и функции (Nested/Local/Inner Classes and Functions)
 
-Nested local functions or classes are fine when used to close over a local
-variable. Inner classes are fine.
+Вложенные локальные функции или классы хороши, когда используются для закрытия локальной переменной. 
+Внутренние классы хороши.
 
 <a id="s2.6.1-definition"></a>
 <a id="261-definition"></a>
 
 <a id="nested-classes-functions-definition"></a>
-#### 2.6.1 Definition 
+#### 2.6.1 Определение 
 
-A class can be defined inside of a method, function, or class. A function can be
-defined inside a method or function. Nested functions have read-only access to
-variables defined in enclosing scopes.
+Класс может быть определен внутри метода, функции или класса.
+Функция может быть определена внутри метода или функции.
+Вложенные функции имеют доступ только для чтения к переменным, 
+определенным в вложенных областях.
 
 <a id="s2.6.2-pros"></a>
 <a id="262-pros"></a>
 
 <a id="nested-classes-functions-pros"></a>
-#### 2.6.2 Pros 
+#### 2.6.2 Плюсы
 
-Allows definition of utility classes and functions that are only used inside of
-a very limited scope. Very
+Позволяет определить классы и функции полезности, которые используются только в очень ограниченном масштабе. 
+Очень
 [ADT](http://www.google.com/url?sa=D&q=http://en.wikipedia.org/wiki/Abstract_data_type)-y.
-Commonly used for implementing decorators.
+Обычно используется для декораторов.
 
 <a id="s2.6.3-cons"></a>
 <a id="263-cons"></a>
 
 <a id="nested-classes-functions-cons"></a>
-#### 2.6.3 Cons 
+#### 2.6.3 Минусы 
 
-Nested functions and classes cannot be directly tested. Nesting can make the
-outer function longer and less readable.
+Вложенные функции и классы не могут быть проверены напрямую.
+Вложение может сделать внешнюю функцию длиннее и менее читаемой.
 
 <a id="s2.6.4-decision"></a>
 <a id="264-decision"></a>
 
 <a id="nested-classes-functions-decision"></a>
-#### 2.6.4 Decision 
+#### 2.6.4 Решение 
 
-They are fine with some caveats. Avoid nested functions or classes except when
-closing over a local value other than `self` or `cls`. Do not nest a function
-just to hide it from users of a module. Instead, prefix its name with an \_ at
-the module level so that it can still be accessed by tests.
+Они хороши с некоторыми оговорками.
+Избегайте вложенных функций или классов, за исключением тех случаев, 
+когда они закрываются над локальным значением, отличным `self` или `cls`.
+Не вложивайте функцию, чтобы скрыть ее от пользователей модуля.
+Вместо этого, префикс его имени с  \_ на уровне модуля, чтобы его можно было получить с помощью тестов.
+
 
 <a id="s2.7-comprehensions"></a>
 <a id="s2.7-list_comprehensions"></a>
@@ -571,48 +579,48 @@ the module level so that it can still be accessed by tests.
 <a id="list-comprehensions"></a>
 
 <a id="comprehensions"></a>
-### 2.7 Comprehensions & Generator Expressions 
+### 2.7 Понимание и генераторные выражения (Comprehensions & Generator Expressions) 
 
-Okay to use for simple cases.
+Можно использовать для простых случаев.
 
 <a id="s2.7.1-definition"></a>
 <a id="271-definition"></a>
 
 <a id="comprehensions-definition"></a>
-#### 2.7.1 Definition 
+#### 2.7.1 Определение 
 
-List, Dict, and Set comprehensions as well as generator expressions provide a
-concise and efficient way to create container types and iterators without
-resorting to the use of traditional loops, `map()`, `filter()`, or `lambda`.
+Понимание List, Dict и Set, а также выражения генераторов обеспечивают сжатый и эффективный
+способ создания типов контейнеров и итераторов без использования 
+традиционных циклов, `map()`, `filter()`, или `lambda`.
 
 <a id="s2.7.2-pros"></a>
 <a id="272-pros"></a>
 
 <a id="comprehensions-pros"></a>
-#### 2.7.2 Pros 
+#### 2.7.2 Плюсы 
 
-Simple comprehensions can be clearer and simpler than other dict, list, or set
-creation techniques. Generator expressions can be very efficient, since they
-avoid the creation of a list entirely.
+Простое понимание может быть более ясным и простым, чем другие методы создания диктов, списков или множеств. 
+Генераторные выражения могут быть очень эффективными, поскольку они избегают создания списка полностью.
 
 <a id="s2.7.3-cons"></a>
 <a id="273-cons"></a>
 
 <a id="comprehensions-cons"></a>
-#### 2.7.3 Cons 
+#### 2.7.3 Минусы 
 
-Complicated comprehensions or generator expressions can be hard to read.
+Сложные понимания или генераторные выражения могут быть трудно читаемы.
 
 <a id="s2.7.4-decision"></a>
 <a id="274-decision"></a>
 
 <a id="comprehensions-decision"></a>
-#### 2.7.4 Decision 
+#### 2.7.4 Решение 
 
-Okay to use for simple cases. Each portion must fit on one line: mapping
-expression, `for` clause, filter expression. Multiple `for` clauses or filter
-expressions are not permitted. Use loops instead when things get more
-complicated.
+Можно использовать для простых случаев. 
+Каждая часть должна соответствовать одной строке: 
+выражение отображения, условие `for`, выражение фильтра. 
+Множественные `for` условия или выражения фильтров не допускаются.
+Вместо этого используйте циклов, когда все становится более сложным.
 
 ```python
 Yes:
@@ -667,49 +675,52 @@ No:
 <a id="s2.8-default-iterators-and-operators"></a>
 
 <a id="default-iterators-operators"></a>
-### 2.8 Default Iterators and Operators 
+### 2.8 Итераторы и операторы по умолчанию
 
-Use default iterators and operators for types that support them, like lists,
-dictionaries, and files.
+Используйте стандартные итераторы и операторы для типов, поддерживающих их,
+таких как списки, словари и файлы.
 
 <a id="s2.8.1-definition"></a>
 <a id="281-definition"></a>
 
 <a id="default-iterators-operators-definition"></a>
-#### 2.8.1 Definition 
+#### 2.8.1 Определение 
 
-Container types, like dictionaries and lists, define default iterators and
-membership test operators ("in" and "not in").
+Типы контейнеров, такие как словари и списки, 
+определяют стандартные итераторы и операторов тестирования принадлежности 
+("in" и "not in").
 
 <a id="s2.8.2-pros"></a>
 <a id="282-pros"></a>
 
 <a id="default-iterators-operators-pros"></a>
-#### 2.8.2 Pros 
+#### 2.8.2 Плюсы 
 
-The default iterators and operators are simple and efficient. They express the
-operation directly, without extra method calls. A function that uses default
-operators is generic. It can be used with any type that supports the operation.
+По умолчанию итераторы и операторы просты и эффективны. 
+Они выражают операцию напрямую, без дополнительных вызовов метода.
+Функция, использующая операторы по умолчанию, является обобщённой.
+Она может быть использована для любого типа, поддерживающего операцию.
 
 <a id="s2.8.3-cons"></a>
 <a id="283-cons"></a>
 
 <a id="default-iterators-operators-cons"></a>
-#### 2.8.3 Cons 
+#### 2.8.3 Минусы 
 
-You can't tell the type of objects by reading the method names (e.g. `has_key()`
-means a dictionary). This is also an advantage.
+Вы не можете определить тип объектов, прочитав имена методов 
+(например, "has_key()" означает словарь). 
+Это также преимущество.
 
 <a id="s2.8.4-decision"></a>
 <a id="284-decision"></a>
 
 <a id="default-iterators-operators-decision"></a>
-#### 2.8.4 Decision 
+#### 2.8.4 Решение 
 
-Use default iterators and operators for types that support them, like lists,
-dictionaries, and files. The built-in types define iterator methods, too. Prefer
-these methods to methods that return lists, except that you should not mutate a
-container while iterating over it.
+Используйте стандартные итераторы и операторы для типов, поддерживающих их, 
+таких как списки, словари и файлы. Встроенные типы также определяют методы итератора. 
+Эти методы предпочтительнее методов, которые возвращают списки, за исключением того,
+что вы не должны (мутировать, изменять) трансформировать контейнер, перебирая его.
 
 ```python
 Yes:  for key in adict: ...
@@ -731,140 +742,145 @@ No:   for key in adict.keys(): ...
 <a id="29-generators"></a>
 
 <a id="generators"></a>
-### 2.9 Generators 
+### 2.9 Генераторы (Generators) 
 
-Use generators as needed.
+Используйте генераторы по мере необходимости.
 
 <a id="s2.9.1-definition"></a>
 <a id="291-definition"></a>
 
 <a id="generators-definition"></a>
-#### 2.9 Definition 
+#### 2.9 Определение 
 
-A generator function returns an iterator that yields a value each time it
-executes a yield statement. After it yields a value, the runtime state of the
-generator function is suspended until the next value is needed.
+Функция генератора возвращает итератор, который даёт значение при выполнении
+инструкции параметризованная. После получения значения состояние выполнения функции
+генератора приостанавливается до следующего значения.
 
 <a id="s2.9.2-pros"></a>
 <a id="292-pros"></a>
 
 <a id="generators-pros"></a>
-#### 2.9.2 Pros 
+#### 2.9.2 Плюсы 
 
-Simpler code, because the state of local variables and control flow are
-preserved for each call. A generator uses less memory than a function that
-creates an entire list of values at once.
+Более простой код, поскольку состояние локальных переменных и поток управления 
+сохраняются для каждого вызова. Генератор использует меньше памяти, чем функция,
+которая создает целый список значений одновременно.
 
 <a id="s2.9.3-cons"></a>
 <a id="293-cons"></a>
 
 <a id="generators-cons"></a>
-#### 2.9.3 Cons 
+#### 2.9.3 Минусы 
 
-None.
+Ни одного.
 
 <a id="s2.9.4-decision"></a>
 <a id="294-decision"></a>
 
 <a id="generators-decision"></a>
-#### 2.9.4 Decision 
+#### 2.9.4 Решение 
 
-Fine. Use "Yields:" rather than "Returns:" in the docstring for generator
-functions.
+Хорошо. Используйте "Yields:" вместо "Returns:" в docstring для функций генератора.
+
 
 <a id="s2.10-lambda-functions"></a>
 <a id="210-lambda-functions"></a>
 
 <a id="lambdas"></a>
-### 2.10 Lambda Functions 
+### 2.10 Лямбда-функции (Lambda Functions) 
 
-Okay for one-liners. Prefer generator expressions over `map()` or `filter()`
-with a `lambda`.
+Хорошо для одного лайнера. Предпочитаем выражения генератора вместо `map()` или `filter()`
+с `lambda`.
+
 
 <a id="s2.10.1-definition"></a>
 <a id="2101-definition"></a>
 
 <a id="lambdas-definition"></a>
-#### 2.10.1 Definition 
+#### 2.10.1 Определение 
 
-Lambdas define anonymous functions in an expression, as opposed to a statement.
+Lambdas определяет анонимные функции в выражении, в отличие от заявления.
 
 <a id="s2.10.2-pros"></a>
 <a id="2102-pros"></a>
 
 <a id="lambdas-pros"></a>
-#### 2.10.2 Pros 
+#### 2.10.2 Плюсы 
 
-Convenient.
+Удобно.
 
 <a id="s2.10.3-cons"></a>
 <a id="2103-cons"></a>
 
 <a id="lambdas-cons"></a>
-#### 2.10.3 Cons 
+#### 2.10.3 Минусы 
 
-Harder to read and debug than local functions. The lack of names means stack
-traces are more difficult to understand. Expressiveness is limited because the
-function may only contain an expression.
+Труднее прочитать и отладить, чем локальные функции. Отсутствие имен означает, 
+что стек следов труднее понять. Выразительность ограничена, 
+так как функция может содержать только выражение.
 
 <a id="s2.10.4-decision"></a>
 <a id="2104-decision"></a>
 
 <a id="lambdas-decision"></a>
-#### 2.10.4 Decision 
+#### 2.10.4 Решение 
 
-Okay to use them for one-liners. If the code inside the lambda function is
-longer than 60-80 chars, it's probably better to define it as a regular
-[nested function](#lexical-scoping).
+Хорошо использовать их для одного лайнера.
+Если код внутри лямбда-функции длиннее 60-80 шаров,
+вероятно, лучше определить его как обычный
+(вложенная функция)[nested function](#lexical-scoping).
 
-For common operations like multiplication, use the functions from the `operator`
-module instead of lambda functions. For example, prefer `operator.mul` to
-`lambda x, y: x * y`.
+
+Для общих операций, таких как умножение, используйте функции 
+из модуля `operator` вместо лямбда-функций.
+Например, предпочитаем `operator.mul` для `lambda x, y: x * y`.
 
 <a id="s2.11-conditional-expressions"></a>
 <a id="211-conditional-expressions"></a>
 
 <a id="conditional-expressions"></a>
-### 2.11 Conditional Expressions 
+### 2.11 Условные выражения (Conditional Expressions) 
 
-Okay for simple cases.
+Хорошо для простых случаев.
 
 <a id="s2.11.1-definition"></a>
 <a id="2111-definition"></a>
 
 <a id="conditional-expressions-definition"></a>
-#### 2.11.1 Definition 
+#### 2.11.1 Определение 
 
-Conditional expressions (sometimes called a “ternary operator”) are mechanisms
-that provide a shorter syntax for if statements. For example: `x = 1 if cond
-else 2`.
+Условные выражения (иногда называемые "тернарным оператором") являются механизмами, 
+которые обеспечивают более короткий синтаксис для утверждений.
+К примеру: `x = 1 if cond else 2`.
 
 <a id="s2.11.2-pros"></a>
 <a id="2112-pros"></a>
 
 <a id="conditional-expressions-pros"></a>
-#### 2.11.2 Pros 
+#### 2.11.2 Плюсы 
 
-Shorter and more convenient than an if statement.
+Короче и удобнее, чем заявление.
 
 <a id="s2.11.3-cons"></a>
 <a id="2113-cons"></a>
 
 <a id="conditional-expressions-cons"></a>
-#### 2.11.3 Cons 
+#### 2.11.3 Минусы 
 
-May be harder to read than an if statement. The condition may be difficult to
-locate if the expression is long.
+Может быть труднее прочитать, чем заявление.
+Условие может быть трудно найти, если выражение длинное.
 
 <a id="s2.11.4-decision"></a>
 <a id="2114-decision"></a>
 
 <a id="conditional-expressions-decision"></a>
-#### 2.11.4 Decision 
+#### 2.11.4 Решение 
 
-Okay to use for simple cases. Each portion must fit on one line:
-true-expression, if-expression, else-expression. Use a complete if statement
-when things get more complicated.
+Хорошо использовать для простых случаев.
+Каждая часть должна соответствовать одной строке: 
+истинное выражение, если-выражение, другое-выражение 
+(true-expression, if-expression, else-expression).
+Используйте полный текст, если ситуация усложняется.
 
 ```python
 Yes:
@@ -891,54 +907,53 @@ No:
 <a id="212-default-argument-values"></a>
 
 <a id="default-arguments"></a>
-### 2.12 Default Argument Values 
+### 2.12 Значения аргумента по умолчанию (Default Argument Values) 
 
-Okay in most cases.
+Хорошо в большинстве случаев.
 
 <a id="s2.12.1-definition"></a>
 <a id="2121-definition"></a>
 
 <a id="default-arguments-definition"></a>
-#### 2.12.1 Definition 
+#### 2.12.1 Определение 
 
-You can specify values for variables at the end of a function's parameter list,
-e.g., `def foo(a, b=0):`. If `foo` is called with only one argument, `b` is set
-to 0. If it is called with two arguments, `b` has the value of the second
-argument.
+Значения переменных можно задать в конце списка параметров функции, например, 
+`def foo(a, b=0):`. Если `foo` вызывается только с одним аргументом, `b` имеет значение 0.
+Если оно вызывается с двумя аргументами, `b` имеет значение второго аргумента.
 
 <a id="s2.12.2-pros"></a>
 <a id="2122-pros"></a>
 
 <a id="default-arguments-pros"></a>
-#### 2.12.2 Pros 
+#### 2.12.2 Плюсы 
 
-Often you have a function that uses lots of default values, but on rare
-occasions you want to override the defaults. Default argument values provide an
-easy way to do this, without having to define lots of functions for the rare
-exceptions. As Python does not support overloaded methods/functions, default
-arguments are an easy way of "faking" the overloading behavior.
+Часто у вас есть функция, которая использует множество значений по умолчанию, 
+но в редких случаях вы хотите отменить значения по умолчанию. 
+Значения аргументов по умолчанию обеспечивают простой способ сделать это, 
+не требуя определения множества функций для редких исключений. 
+Поскольку Python не поддерживает перегруженные методы/функции, 
+аргументы по умолчанию являются простым способом "фальсификации" ("faking") поведения перегрузки.
 
 <a id="s2.12.3-cons"></a>
 <a id="2123-cons"></a>
 
 <a id="default-arguments-cons"></a>
-#### 2.12.3 Cons 
+#### 2.12.3 Минусы 
 
-Default arguments are evaluated once at module load time. This may cause
-problems if the argument is a mutable object such as a list or a dictionary. If
-the function modifies the object (e.g., by appending an item to a list), the
-default value is modified.
+Аргументы по умолчанию оцениваются один раз во время загрузки модуля. 
+Это может вызвать проблемы, если аргумент является изменяемым объектом, 
+таким как список или словарь. Если функция изменяет объект 
+(например, с помощью элемента в список), значение по умолчанию изменяется.
 
 <a id="s2.12.4-decision"></a>
 <a id="2124-decision"></a>
 
 <a id="default-arguments-decision"></a>
-#### 2.12.4 Decision 
+#### 2.12.4 Определение 
 
-Okay to use with the following caveat:
-
-Do not use mutable objects as default values in the function or method
-definition.
+Можно использовать со следующей оговоркой:
+Не используйте изменяемые объекты в качестве значений по умолчанию в определении функции 
+или метода.
 
 ```python
 Yes: def foo(a, b=None):
@@ -966,21 +981,22 @@ No:  def foo(a, b: Mapping = {}):  # Could still get passed to unchecked code
 <a id="213-properties"></a>
 
 <a id="properties"></a>
-### 2.13 Properties 
+### 2.13 Свойства (Properties) 
 
-Properties may be used to control getting or setting attributes that require
-trivial, but unsurprising, computations or logic. Property implementations must
-match the general expectations of regular attribute access: that they are cheap,
-straightforward, and unsurprising.
+Свойства могут использоваться для контроля получения или установки атрибутов, 
+которые требуют тривиального, но не вызывающего удивления вычисления или логики. 
+Реализации свойств должны соответствовать общим ожиданиям регулярного доступа к атрибутам:
+они дешевы, прямолинейны и не вызывают удивления.
 
 <a id="s2.13.1-definition"></a>
 <a id="2131-definition"></a>
 
 <a id="properties-definition"></a>
-#### 2.13.1 Definition 
+#### 2.13.1 Определение 
 
-A way to wrap method calls for getting and setting an attribute as a standard
-attribute access when the computation is lightweight.
+Способ обтекания метода требует получения и установки атрибута в
+качестве стандартного доступа к атрибутам,
+когда вычисление является легким.
 
 <a id="s2.13.2-pros"></a>
 <a id="2132-pros"></a>
