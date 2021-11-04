@@ -13,9 +13,9 @@ class LoadFile(TableOutput, ROOT_DIR_SHABLON):
     def __init__(self,
                  rastr_win=RASTR,
                  switch_command_line: bool = False):
-        """
-        :param rastr_win: COM - объект Rastr.Astra (win32com);
-        :param switch_command_line: True/False - выводит сообщения в протокол;
+        f"""
+        :param rastr_win: COM - объект Rastr.Astra (win32com);\n
+        :param switch_command_line: True/False - выводит сообщения в протокол;\n
         """
         self.rastr_win = rastr_win
         self.switch_command_line = switch_command_line
@@ -30,31 +30,33 @@ class LoadFile(TableOutput, ROOT_DIR_SHABLON):
              path_file: str = '',
              name_shabl_russian: str = 'автоматика',
              location_of_files: str = ROOT_DIR_SHABLON.LOCATION_FOLDER_DOCUMENTS) -> None:
-        """
-        Загружает файл данных path_file в рабочую область в соответствии с шаблоном типа name_shabl_russian.
-        Если поле name_shabl_russian пусто, то загружается name без шаблона, если пусто поле name, то загружается только шаблон.
+        f"""
+        Загружает файл данных path_file в рабочую область в соответствии с шаблоном типа "name_shabl_russian".\n
+        Если поле "name_shabl_russian" пусто, то загружается name без шаблона, если пусто поле name, то загружается только шаблон.\n
 
-        :param kod_rg: числовое значение, определяет режим загрузки при наличии таблицы в рабочей области и может быть одним из следующих:
+        :param kod_rg: числовое значение, определяет режим загрузки при наличии таблицы в рабочей области и может быть одним из следующих:\n
 
-            Константа   Значение           Описание
-
-            RG_ADD          0       Таблица добавляется к имеющейся в рабочей области, совпадение ключевых полей не
-                                     контролируются (соответствует режиму «Присоединить» в меню);
-            RG_REPL         1       Таблица в рабочей области замещается (соответствует режиму «Загрузить» в меню);
+            Константа    Значение   Описание\n
+            :param RG_ADD          0       Таблица добавляется к имеющейся в рабочей области, совпадение ключевых полей не
+                                    контролируются (соответствует режиму «Присоединить» в меню);\n
+             
+            RG_REPL         1       Таблица в рабочей области замещается (соответствует режиму «Загрузить» в меню);\n
+             
             RG_KEY          2       Данные в таблице, имеющие одинаковые ключевые поля, заменяются. Если ключ не
-                                     найден, то данные игнорируются (соответствует режиму «Обновить» в меню);
+                                    найден, то данные игнорируются (соответствует режиму «Обновить» в меню);\n
+             
             RG_ADDKEY       3       Данные в таблице, имеющие одинаковые ключевые поля, заменяются.
-                                    Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»);
+                                    Если ключ не найден, то данные вставляются (соответствует режиму «Объединить»);\n
 
-        :param path_file: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);
+        :param path_file: абсолютный путь с именем файла (пример:C:\\Folder\\ДРМ.rst);\n
 
-        :param name_shabl_russian: шаблон RastrWin3 для загрузки пример: "режим", "динамика", "сценарий";
+        :param name_shabl_russian: шаблон RastrWin3 для загрузки пример: "режим", "динамика", "сценарий";\n
 
         :param location_of_files: location_script - в корневой папку пакета;
                                   location_folder_documents - в корневой директории Мои документы (OS Windows);
                                   location_root_folder_rastr - в корневой директории RastrWin3;
-                                  если параметр не задан то используется директория Мои документа;
-        :return: Noting;
+                                  если параметр не задан то используется директория Мои документа;\n
+        :return: Noting;\n
         """
         directory_shabl = self.directory_shabl(russian_name_shabl=name_shabl_russian,
                                                location_of_files=location_of_files)

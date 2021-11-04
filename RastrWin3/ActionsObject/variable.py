@@ -5,9 +5,7 @@ from RastrWin3.Tools.tools import TableOutput
 
 
 class FindNextSelection:
-    """
-    Класс FindNextSelection - поиск номера строки по выборке SetSel(key)
-    """
+    """Класс FindNextSelection - поиск номера строки по выборке SetSel(key)"""
 
     def __init__(self,
                  table: str = None,
@@ -24,11 +22,12 @@ class FindNextSelection:
 
     def row(self,
             table: str = None,
-            select: str = None):
+            select: str = None) -> None:
         f"""
         Метод "row" - возвращает порядковый  номер из таблицы.\n
+        :param table: 
         :param select: выборка SetSel;\n
-        :return: row_: возвращает порядковый номер или -1 в случае отсутствия искомого элемента;
+        :return: row_: возвращает порядковый номер или -1 в случае отсутствия искомого элемента;\n
         """
         if table is not None:
             self.table = self.rastr_win.Tables(table)
@@ -40,7 +39,7 @@ class FindNextSelection:
             row_ = table_.FindNextSel(-1)
 
         if row_ == (-1):
-            return False
+            return None
         else:
             return row_
 
@@ -102,7 +101,7 @@ class Variable(FindNextSelection):
         :param column: название колонки RastrWin3;\n
         :param select: выборка SetSel("ny=52135156") - задается в виде value='ny=52135156';\n
         :param value: значение для замены;\n
-        :return: Nothing returns.
+        :return: Nothing returns.\n
         """
 
         if table and column and select and value is not None:
@@ -143,7 +142,7 @@ class Variable(FindNextSelection):
         :param iq: номер конца ветви;\n
         :param np: номер параллельности ветви;\n
         :param value: значение;\n
-        :return: Nothing returns
+        :return: Nothing returns.\n
         """
         if (table and column and ip and iq and np and value) is not None:
             table_ = self.rastr_win.Tables(table)
@@ -167,4 +166,3 @@ class Variable(FindNextSelection):
             row_add(['Выборка', f'ip={ip} iq={iq} np={np}'])
             row_add(['Значение', value])
             pretty_table.show(title_table='ERROR: class Variable method make_changes_setsel')
-

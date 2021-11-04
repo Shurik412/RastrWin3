@@ -8,14 +8,14 @@ def save_file(rastr_win=RASTR,
               path_file: str = None,
               shabl: str = None,
               switch_command_line: bool = False) -> None:
-    """
-    Сохраняет информацию из рабочей области в файле path_file по шаблону shabl.
+    f"""
+    Сохраняет информацию из рабочей области в файле path_file по шаблону shabl.\n
 
-    :param rastr_win: COM - объект Rastr.Astra (win32com);
-    :param path_file: директория и название файла сохранения файла;
-    :param shabl: шаблон RastrWin3 для сохранения;
-    :param switch_command_line: True/False - выводит сообщения в протокол;
-    :return: Nothing;
+    :param rastr_win: COM - объект Rastr.Astra (win32com);\n
+    :param path_file: директория и название файла сохранения файла;\n
+    :param shabl: шаблон RastrWin3 для сохранения;\n
+    :param switch_command_line: True/False - выводит сообщения в протокол;\n
+    :return: Nothing;\n
     """
 
     def save(path_file_save: str, shablon: str) -> bool:

@@ -5,7 +5,7 @@ from os import path
 
 class Key_to_select_location:
 
-    """Ключи для выбора локации"""
+    """Ключи для выбора директории"""
 
     LOCATION_SCRIPT = 'location_script'
     LOCATION_FOLDER_DOCUMENTS = 'location_folder_documents'
@@ -43,11 +43,12 @@ class ROOT_DIR_SHABLON(Key_to_select_location):
     def directory_shabl(self,
                         russian_name_shabl: str,
                         location_of_files: str = Key_to_select_location.LOCATION_FOLDER_DOCUMENTS) -> str:
-        """
-
-        :param russian_name_shabl: название шаблона (пример: 'режим');
-        :param location_of_files: выбор директории для чтения файлов шаблонов;
-        :return: полный путь к файлу шаблона;
+        f"""
+        Формирует полную путь к Шаблону\n
+        
+        :param russian_name_shabl: название шаблона (пример: 'режим');\n
+        :param location_of_files: выбор директории для чтения файлов шаблонов;\n
+        :return: полный путь к файлу шаблона;\n
         """
         russian_name_shabl_ = self.russian_names_shabl(name_shabl=russian_name_shabl)
         if russian_name_shabl_ != '':
@@ -65,10 +66,11 @@ class ROOT_DIR_SHABLON(Key_to_select_location):
             return full_dir
 
     def russian_names_shabl(self, name_shabl: str) -> str:
-        """
-        Производит поиск по заданному названию
-        :param name_shabl: название шаблона;
-        :return: полное название шаблона (пример: режим.pg2);
+        f"""
+        Производит поиск по заданному названию\n
+        
+        :param name_shabl: название шаблона;\n
+        :return: полное название шаблона (пример: режим.pg2);\n
         """
 
         key_ = name_shabl.lower()
