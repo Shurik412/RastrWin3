@@ -9,6 +9,7 @@ from prettytable import PrettyTable
 
 
 def changing_number_of_semicolons(number, digits=0):
+    """ """
     return f"{number:.{digits}f}"
 
 
