@@ -79,7 +79,7 @@ class Variable(GettingParameter):
         :return: Nothing returns
         """
 
-        if table and column and row is not None:
+        if (table and column and row) is not None:
             if switch_command_line:
                 _parametr_old = self._getting_parameter.get_cell_row(table=table,
                                                                      column=column,
@@ -130,17 +130,17 @@ class Variable(GettingParameter):
         :return: Nothing returns.\n
         """
 
-        if table and column and select and value is not None:
+        if (table and column and select and value) is not None:
 
             if switch_command_line:
                 _name_parametr = self._getting_parameter.get_cell_SetSel(table=table,
-                                                                         column=Vetv.name,
-                                                                         key=_key,
+                                                                         column='name',
+                                                                         key=select,
                                                                          rounding_to=None)
 
                 _parametr_old = self._getting_parameter.get_cell_SetSel(table=table,
                                                                         column=column,
-                                                                        key=_key,
+                                                                        key=select,
                                                                         rounding_to=2)
             else:
                 _parametr_old = ''
@@ -156,7 +156,7 @@ class Variable(GettingParameter):
                 if switch_command_line:
                     _parametr_new = self._getting_parameter.get_cell_SetSel(table=table,
                                                                             column=column,
-                                                                            key=_key,
+                                                                            key=select,
                                                                             rounding_to=2)
 
                     _pretty_table = TableOutput(fieldName=['id', 'Название', 'Параметр',
@@ -198,8 +198,8 @@ class Variable(GettingParameter):
         :param value: значение;\n
         :return: Nothing returns.\n
         """
-        if table and column and ip and iq and np and value is not None:
-            _key = f'(ip={ip} & iq={iq} & np={np})|(ip={iq} & iq={ip} & np={np})'
+        if (table and column and ip and iq and np and value) is not None:
+            _key = f'(ip={ip}&iq={iq}&np={np})|(ip={iq}&iq={ip}&np={np})'
 
             if switch_command_line:
                 _name_parametr = self._getting_parameter.get_cell_SetSel(table=table,
@@ -227,9 +227,13 @@ class Variable(GettingParameter):
                                                                             key=_key,
                                                                             rounding_to=2)
 
-                    _pretty_table = TableOutput(fieldName=['id', 'Название', 'Параметр',
+                    _pretty_table = TableOutput(fieldName=['id', 'Нач_ip', 'Кон_iq',
+                                                           'Номер.парр_np', 'Название', 'Параметр',
                                                            'Значение праметра: старое -> новое'])
-                    _pretty_table.row_add([_row, _name_parametr, column, f'{_parametr_old} -> {_parametr_new}'])
+
+                    _pretty_table.row_add([_row, ip, iq, np, _name_parametr, column,
+                                           f'{_parametr_old} -> {_parametr_new}'])
+
                     _pretty_table.show(title_table=f'Изменения в таблице: {table}')
             else:
                 _pretty_table = TableOutput(fieldName=['ERROR', 'Описание'])
@@ -237,7 +241,7 @@ class Variable(GettingParameter):
                 _pretty_table.row_add(['Колонка (стоблец)', column])
                 _pretty_table.row_add(['Выборка', f'ip={ip} iq={iq} np={np}'])
                 _pretty_table.row_add(['Значение', value])
-                _pretty_table.show(title_table='ERROR: class Variable method make_changes_setsel\n'
+                _pretty_table.show(title_table='ERROR: class Variable; Метод: make_changes_setsel\n'
                                                f'Не найдена строка с выборкой:"ip={ip} iq={iq} np={np}" -> row=(-1).')
         else:
             _pretty_table = TableOutput(fieldName=['ERROR', 'Описание'])
@@ -245,4 +249,4 @@ class Variable(GettingParameter):
             _pretty_table.row_add(['Колонка (стоблец)', column])
             _pretty_table.row_add(['Выборка', f'ip={ip} iq={iq} np={np}'])
             _pretty_table.row_add(['Значение', value])
-            _pretty_table.show(title_table='ERROR: class Variable method make_changes_setsel')
+            _pretty_table.show(title_table='ERROR: class Variable; Метод: make_changes_setsel')
