@@ -2,21 +2,23 @@
 from RastrWin3.AstraRastr import RASTR
 from RastrWin3.Templates import ROOT_DIR_SHABLON, Key_to_select_location
 from RastrWin3.Tools.tools import TableOutput
+from RastrWin3.Templates import ROOT_DIR_SHABLON
 
 
 def save_file(rastr_win=RASTR,
               path_file: str = None,
-              shabl: str = None,
+              name_shabl_russian: str = None,
               switch_command_line: bool = False) -> None:
     f"""
-    Сохраняет информацию из рабочей области в файле path_file по шаблону shabl.\n
+    Сохраняет информацию из рабочей области в файле path_file по шаблону name_shabl_russian.\n
 
     :param rastr_win: COM - объект Rastr.Astra (win32com);\n
     :param path_file: директория и название файла сохранения файла;\n
-    :param shabl: шаблон RastrWin3 для сохранения;\n
+    :param name_shabl_russian: шаблон RastrWin3 для сохранения;\n
     :param switch_command_line: True/False - выводит сообщения в протокол;\n
     :return: Nothing;\n
     """
+    _root_dir_shablon_obj = ROOT_DIR_SHABLON()
 
     def save(path_file_save: str, shablon: str) -> bool:
         try:
@@ -41,25 +43,25 @@ def save_file(rastr_win=RASTR,
         else:
             return True
 
-    if shabl is None or shabl == '' or shabl == ' ':
-        save_ = save(path_file_save=path_file, shablon="")
-        if save_:
-            shabl = 'без шаблона \n по-умолчанию выбран: "режим"'
-            shabl_rgm = directory_shabl(rus_name_shabl='режим')
-            save(path_file_save=path_file, shablon=shabl_rgm)
+    if name_shabl_russian is None or name_shabl_russian == '' or name_shabl_russian == ' ':
+        _save = save(path_file_save=path_file, shablon="")
+        if _save:
+            _name_shabl_russian = 'без шаблона \n по-умолчанию выбран: "режим"'
+            _shabl_rgm = _root_dir_shablon_obj.directory_shabl(russian_name_shabl=str(name_shabl_russian))
+            save(path_file_save=path_file, shablon=_shabl_rgm)
             if switch_command_line:
-                pt = TableOutput(fieldName=['Файл', 'Шаблон'])
-                pt.title = 'Сохранение файла RastrWin3'
+                _pretty_table = TableOutput(fieldName=['Файл', 'Шаблон'])
+                _pretty_table.title = 'Сохранение файла RastrWin3'
                 if path_file == '' or path_file == ' ' or path_file is None:
-                    pt.row_add(['Ссылка для сохранения файла не задана!', shabl])
+                    _pretty_table.row_add(['Ссылка для сохранения файла не задана!', _name_shabl_russian])
                 else:
-                    pt.row_add([path_file, shabl])
-                pt.show(title_table='Сохранение файла RastrWin3')
+                    _pretty_table.row_add([path_file, name_shabl_russian])
+                _pretty_table.show(title_table='Сохранение файла RastrWin3')
     else:
-        shabl_path_file = directory_shabl(rus_name_shabl=shabl)
-        save_ = save(path_file_save=path_file, shablon=shabl_path_file)
-        if save_:
+        _shabl_path_file = _root_dir_shablon_obj.directory_shabl(russian_name_shabl=str(name_shabl_russian))
+        _save = save(path_file_save=path_file, shablon=_shabl_path_file)
+        if _save:
             if switch_command_line:
-                pt = TableOutput(fieldName=['Файл', 'Шаблон'])
-                pt.add_row([path_file, shabl_path_file])
-                pt.show(title_table='Сохранение файла RastrWin3')
+                _pretty_table = TableOutput(fieldName=['Файл', 'Шаблон'])
+                _pretty_table.add_row([path_file, _shabl_path_file])
+                _pretty_table.show(title_table='Сохранение файла RastrWin3')

@@ -4,7 +4,6 @@ from os import path
 
 
 class Key_to_select_location:
-
     """Ключи для выбора директории"""
 
     LOCATION_SCRIPT = 'location_script'
@@ -65,7 +64,8 @@ class ROOT_DIR_SHABLON(Key_to_select_location):
             full_dir = russian_name_shabl_
             return full_dir
 
-    def russian_names_shabl(self, name_shabl: str) -> str:
+    @staticmethod
+    def russian_names_shabl(name_shabl: str) -> str:
         f"""
         Производит поиск по заданному названию\n
         
