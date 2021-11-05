@@ -15,7 +15,7 @@ class FindNextSelection:
         Класс для поиска по выборке порядкового номера в таблице.\n
         Метод "row" возвращает порядковый номер строки в таблице.\n
         :param table: название таблицы;\n
-        :param rastr_win: True/False - вывод сообщений в протокол;\n
+        :param rastr_win: COM - объект Rastr.Astra (win32com);\n
         """
         self.rastr_win = rastr_win
         if table is not None:
@@ -26,7 +26,7 @@ class FindNextSelection:
             select: str = None) -> int:
         f"""
         Метод "row" - возвращает порядковый  номер из таблицы.\n
-        :param table: 
+        :param table: название таблицы;\n
         :param select: выборка SetSel;\n
         :return: row_: возвращает порядковый номер или -1 в случае отсутствия искомого элемента;\n
         """
@@ -76,7 +76,7 @@ class Variable(GettingParameter):
         :param row: значение порядкового номера строки в таблице;\n
         :param value: значение новой величины заменяемого значения;\n
         :param switch_command_line: True/False - выводит сообщения в протокол;\n
-        :return: Nothing returns
+        :return: Nothing returns;\n
         """
 
         if (table and column and row) is not None:
