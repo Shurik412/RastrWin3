@@ -20,26 +20,37 @@ def set_cell_range(ws, cell_range_one):
             cell.border = thin_border
 
 
-#
-# wb = Workbook()
-# ws = wb.active
-#
-# set_cell_range(ws=ws,
-#                cell_range_one='A5:C10')
-#
-# # ws.cell(row=3, column=2).border = thin_border
-# wb.save(r'C:\Users\Ohrimenko_AG\Desktop\22.xlsx')
-# # set_border(ws, 'A3:C10')
+import openpyxl
+from openpyxl import load_workbook, Workbook
+from openpyxl.styles import PatternFill
+from openpyxl.utils import get_column_letter
+fill = PatternFill(start_color='FFFF0000',
+                   end_color='FFFF0000',
+                   fill_type='solid')
 
-import os
+# create a new workbook and select the active worksheet
+workbook = openpyxl.Workbook()
+worksheet = workbook.active
 
-from os import listdir
-from os.path import isfile, join
+# populate some sample data
+worksheet["A1"] = "Fruit"
+worksheet["B1"] = "Color"
+worksheet["A2"] = "Apple"
+worksheet["B2"] = "Red"
+worksheet["A3"] = "Banana"
+worksheet["B3"] = "Yellow"
+worksheet["A4"] = "Coconut"
+worksheet["B4"] = "Brown"
+worksheet[f'B4'].fill = fill
+# define a table style
+mediumStyle = openpyxl.worksheet.table.TableStyleInfo(name='TableStyleMedium2',
+                                                      showRowStripes=True)
+# create a table
+table = openpyxl.worksheet.table.Table(ref='A1:B4',
+                                       displayName='FruitColors',
+                                       tableStyleInfo=mediumStyle)
+# add the table to the worksheet
+worksheet.add_table(table)
 
-mypath = r'L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS'
-onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-
-for file in onlyfiles:
-    filename, file_extension = os.path.splitext(file)
-    if file_extension == '.mpt':
-        print(filename)
+# save the workbook file
+workbook.save('fruit.xlsx')

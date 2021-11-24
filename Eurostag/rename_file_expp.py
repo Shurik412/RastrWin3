@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 
-dir = fr'L:\SER\Okhrimenko\02. EUROSTAG\!!! МОС РДУ\ТГ-5 ТЭЦ-23_\лето минимум'
+dir = fr'L:\SER\Okhrimenko\02.EUROSTAG\Москва Графики\ТГ-2 ТЭЦ-23\лето минимум'
 
-n = 24
+n = 48
 sezon_do = 1
 sezon_posle = 3
 sezon = 4

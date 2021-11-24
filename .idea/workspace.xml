@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/RastrWinLib/operation/Variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/RastrWinLib/operation/Variable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/analysis/consumption_by_districts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/analysis/file.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/analysis/file_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BARS/file_regim/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/jinja2_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutorialPython/testingfor/exe_test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison_of_models/Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison_of_models/analis_vetv/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison_of_models/column_dyn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison_of_models/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison_of_models/module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison_of_models/playgraund.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TutorialPython/test_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/test_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TutorialPython/test_list-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/test_list-2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +66,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RastrWin3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/comparison_of_models/analis_vetv" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="timeTracker.activityTracker" value="null" />
@@ -83,22 +101,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\comparison_of_models\analis_vetv" />
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\comparison_of_models" />
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\BARS\analysis" />
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\BARS\file_regim" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\Tables" />
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\BARS" />
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\TutorialPython" />
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript\macroMSK" />
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\VBScript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\TutorialPython\testingfor" />
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\BARS\analysis" />
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\BARS\analysis\arhiv" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\Archive" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib" />
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\Tools" />
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\ActionsObject" />
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dynamic">
-    <configuration name="AstraRastr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Eurostag_Output_PSS">
+    <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,11 +124,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/AstraRastr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Creator_PRG_and_SQL.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Load" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Eurostag_Output_PSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +145,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Load.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/Eurostag_Output_PSS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +158,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,11 +166,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/calculation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comparison_of_models/analis_vetv" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/calculation/dynamic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comparison_of_models/analis_vetv/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,7 +179,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="protocol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="playgraund" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -169,11 +187,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Archive" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comparison_of_models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Archive/protocol.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comparison_of_models/playgraund.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,7 +200,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="rename_file_expp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,11 +208,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RastrWinLib/Tools" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Eurostag" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RastrWinLib/Tools/tools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eurostag/rename_file_expp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dynamic" />
-        <item itemvalue="Python.protocol" />
-        <item itemvalue="Python.Load" />
-        <item itemvalue="Python.AstraRastr" />
-        <item itemvalue="Python.tools" />
+        <item itemvalue="Python.Eurostag_Output_PSS" />
+        <item itemvalue="Python.Creator_PRG_and_SQL" />
+        <item itemvalue="Python.rename_file_expp" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.playgraund" />
       </list>
     </recent_temporary>
   </component>
@@ -224,13 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00208" summary="Add THYNE_1.py">
-      <created>1626093340054</created>
-      <option name="number" value="00208" />
-      <option name="presentableId" value="LOCAL-00208" />
-      <option name="project" value="LOCAL" />
-      <updated>1626093340054</updated>
     </task>
     <task id="LOCAL-00209" summary="Add Thyripol6RV.py">
       <created>1626095648300</created>
@@ -568,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635344483053</updated>
     </task>
-    <option name="localTasksCounter" value="257" />
+    <task id="LOCAL-00257" summary="correction RastrWin3_Old file Variable.py class Variable">
+      <created>1635345784956</created>
+      <option name="number" value="00257" />
+      <option name="presentableId" value="LOCAL-00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1635345784956</updated>
+    </task>
+    <option name="localTasksCounter" value="258" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +602,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add class VariableSettingsDynamic" />
     <MESSAGE value="Corr Daynamic" />
     <MESSAGE value="General adjustments of all modules" />
     <MESSAGE value="Corr Calculation" />
@@ -609,7 +626,8 @@
     <MESSAGE value="correction dir operation" />
     <MESSAGE value="correction file get.py class GettingParameter" />
     <MESSAGE value="correction file Variable.py class Variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction file Variable.py class Variable" />
+    <MESSAGE value="correction RastrWin3_Old file Variable.py class Variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction RastrWin3_Old file Variable.py class Variable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -623,6 +641,11 @@
           <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/site-packages/openpyxl/utils/__init__.py</url>
           <line>3</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RastrWinLib/Tools/tools.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
