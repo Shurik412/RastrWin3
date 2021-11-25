@@ -115,13 +115,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\comparison_of_models\vetv.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

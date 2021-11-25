@@ -8,6 +8,7 @@ from openpyxl.styles import PatternFill
 from openpyxl.utils import get_column_letter
 
 from Generator import Generator, param_gen, par_gen_x
+from Exciter import Exciter, param_exciter, param_exciter_x
 from module import CellExcelDyn, RASTR, generator
 
 path_file_name_excel = r'L:\SER\Okhrimenko\10.Проекты\29 (Костромская ГРЭС)\Расчетный период А\Дин_набор ДРМ х64 (08.11.21)_.xlsm'
@@ -44,7 +45,7 @@ def percentage_agreement(arg_1, arg_2):
     return abs(result)
 
 
-def unloading_rst_in_excel(file_name_rst: str, file_name: str):
+def unloading_rst_in_excel_gen(file_name_rst: str, file_name: str):
     RASTR.Load(1, file_name_rst, SHABLON)
     _wb = Workbook()
     _ws = _wb.active
@@ -198,10 +199,29 @@ def data_comparison(file_name: str, file_dyn: str):
     wb_.save(filename=f'{file_name}.xlsx')
 
 
+def unloading_rst_in_excel_exiter(file_name_rst: str, file_name: str):
+    RASTR.Load(1, file_name_rst, SHABLON)
+    _wb = load_workbook(filename=file_name)
+    _wb.create_sheet(title='Возбудители')
+    _ws = _wb['Возбудители']
+    table_ = RASTR.Tables(Exciter.table)
+    for index, i_ in enumerate(param_exciter):
+        _ws[f'{get_column_letter(index + 1)}{1}'].value = i_
+    for row in range(0, table_.Count - 1):
+        for index, j in enumerate(param_exciter):
+            if j in param_exciter_x:
+                _ws[f'{get_column_letter(index + 1)}{row + 2}'].value = \
+                    changing_number_of_semicolons((table_.Cols(j).Z(row)), digits=3)
+            else:
+                _ws[f'{get_column_letter(index + 1)}{row + 2}'].value = table_.Cols(j).Z(row)
+    _wb.save(filename=f'{file_name}.xlsx')
+
+
 start = time.time()
 file_name_rst, file_name = file_rst()
 for index, file in enumerate(file_name_rst):
-    unloading_rst_in_excel(file_name_rst=file, file_name=file_name[index])
+    unloading_rst_in_excel_gen(file_name_rst=file, file_name=file_name[index])
+    unloading_rst_in_excel_exiter(file_name_rst=file, file_name=file_name[index])
     data_comparison(file_name=file_name[index], file_dyn='Дин_набор ДРМ х64 (08.11.21).xlsm')
 end = time.time()
 print(f'Время работы: {changing_number_of_semicolons(number=(end - start), digits=1)} сек.')

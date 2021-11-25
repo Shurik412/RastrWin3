@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8a0623-c5cf-4fe4-91ce-3cafff29d267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BARS/analysis/consumption_by_districts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BARS/analysis/file.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BARS/analysis/file_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BARS/file_regim/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutorialPython/jinja2_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutorialPython/testingfor/exe_test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison_of_models/Generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison_of_models/analis_vetv/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison_of_models/column_dyn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison_of_models/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison_of_models/module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison_of_models/playgraund.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RastrWin3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RastrWin3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison_of_models/Exciter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eurostag/rename_file_expp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/test_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/test_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutorialPython/test_list-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/TutorialPython/test_list-2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison_of_models/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparison_of_models/Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison_of_models/analis_vetv/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparison_of_models/analis_vetv/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison_of_models/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparison_of_models/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/comparison_of_models/analis_vetv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/comparison_of_models" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="timeTracker.activityTracker" value="null" />
@@ -101,8 +88,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\comparison_of_models\analis_vetv" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\comparison_of_models" />
+      <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\comparison_of_models\analis_vetv" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\BARS\analysis" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3_Old\BARS\file_regim" />
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib\Tables" />
@@ -115,7 +102,7 @@
       <recent name="L:\SER\Okhrimenko\Project_Py3\RastrWin3\RastrWinLib" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Eurostag_Output_PSS">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="Creator_PRG_and_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RastrWin3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,10 +210,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.Eurostag_Output_PSS" />
         <item itemvalue="Python.Creator_PRG_and_SQL" />
         <item itemvalue="Python.rename_file_expp" />
-        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.playgraund" />
       </list>
     </recent_temporary>
@@ -242,13 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617115314606</updated>
-    </task>
-    <task id="LOCAL-00209" summary="Add Thyripol6RV.py">
-      <created>1626095648300</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1626095648300</updated>
     </task>
     <task id="LOCAL-00210" summary="Add u6800_lite.py">
       <created>1626096530516</created>
@@ -586,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635345784956</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="correction RastrWin3_Old">
+      <created>1637743093701</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1637743093701</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +589,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corr Daynamic" />
     <MESSAGE value="General adjustments of all modules" />
     <MESSAGE value="Corr Calculation" />
     <MESSAGE value="Add MDP_analysis.py" />
@@ -627,7 +613,8 @@
     <MESSAGE value="correction file get.py class GettingParameter" />
     <MESSAGE value="correction file Variable.py class Variable" />
     <MESSAGE value="correction RastrWin3_Old file Variable.py class Variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction RastrWin3_Old file Variable.py class Variable" />
+    <MESSAGE value="correction RastrWin3_Old" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction RastrWin3_Old" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

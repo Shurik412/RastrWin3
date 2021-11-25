@@ -158,3 +158,4 @@ param_gen = [Generator.Num, Generator.Name, Generator.ModelType, Generator.Pnom,
 
 par_gen_x = [Generator.xd1, Generator.xd, Generator.xq, Generator.xd2, Generator.xq2,
              Generator.td01, Generator.td02, Generator.tq02, Generator.xq1, Generator.xl]
+
